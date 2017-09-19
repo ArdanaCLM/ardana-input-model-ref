@@ -27,7 +27,7 @@
     # External API  10.0.1.0/24      101 (tagged)
     # External VM   see note 1       102 (tagged)
     # Guest         10.1.1.0/24      103 (tagged)
-    # Management   192.168.10.0/24  100 (untagged)
+    # Management    192.168.110.0/24 100 (untagged)
     #
     # Notes:
     # 1. Defined as part of Neutron configuration
@@ -58,8 +58,8 @@
     - name: MANAGEMENT-NET
       vlanid: 100
       tagged-vlan: false
-      cidr: 192.168.10.0/24
-      gateway-ip: 192.168.10.1
+      cidr: 192.168.110.0/24
+      gateway-ip: 192.168.110.1
       network-group: MANAGEMENT
-      #start-address: 192.168.10.10
-      #end-address: 192.168.10.250
+      #start-address: 192.168.110.10
+      #end-address: 192.168.110.250

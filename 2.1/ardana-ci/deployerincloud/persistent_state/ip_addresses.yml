@@ -1,21 +1,21 @@
-192.168.10.3:
-  addr: 192.168.10.3
+192.168.110.3:
+  addr: 192.168.110.3
   allocated: true
   free: false
   host: deployerincloud-ccp-c0-m1
   persisted: false
   server-id: ccn-0001
   used-by: server
-192.168.10.4:
-  addr: 192.168.10.4
+192.168.110.4:
+  addr: 192.168.110.4
   allocated: true
   free: false
   host: deployerincloud-ccp-compute0001
   persisted: false
   server-id: cpn-0001
   used-by: server
-192.168.10.5:
-  addr: 192.168.10.5
+192.168.110.5:
+  addr: 192.168.110.5
   allocated: true
   free: false
   host: deployerincloud-ccp-compute0002

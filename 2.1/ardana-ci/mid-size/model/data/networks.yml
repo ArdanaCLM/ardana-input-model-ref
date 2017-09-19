@@ -68,8 +68,8 @@
     - name: CONF-NET
       vlanid: 3380
       tagged-vlan: false
-      cidr: 192.168.10.0/24
-      gateway-ip: 192.168.10.1
+      cidr: 192.168.110.0/24
+      gateway-ip: 192.168.110.1
       network-group: CONF
 
 

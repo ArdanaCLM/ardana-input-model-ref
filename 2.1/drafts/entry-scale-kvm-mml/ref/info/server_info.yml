@@ -12,7 +12,7 @@ compute1:
                 tagged-vlan: true
                 vlan-id: 103
             MANAGEMENT-NET:
-                addr: 192.168.10.11
+                addr: 192.168.110.11
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -34,7 +34,7 @@ controller1:
                 tagged-vlan: true
                 vlan-id: 103
             MANAGEMENT-NET:
-                addr: 192.168.10.3
+                addr: 192.168.110.3
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -56,7 +56,7 @@ controller2:
                 tagged-vlan: true
                 vlan-id: 103
             MANAGEMENT-NET:
-                addr: 192.168.10.4
+                addr: 192.168.110.4
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -66,7 +66,7 @@ dbmq1:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.8
+                addr: 192.168.110.8
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -76,7 +76,7 @@ dbmq2:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.9
+                addr: 192.168.110.9
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -86,7 +86,7 @@ dbmq3:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.10
+                addr: 192.168.110.10
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -96,7 +96,7 @@ mtmrmon1:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.5
+                addr: 192.168.110.5
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -106,7 +106,7 @@ mtmrmon2:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.6
+                addr: 192.168.110.6
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -116,7 +116,7 @@ mtmrmon3:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.7
+                addr: 192.168.110.7
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -126,7 +126,7 @@ vsa1:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.12
+                addr: 192.168.110.12
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -136,7 +136,7 @@ vsa2:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.13
+                addr: 192.168.110.13
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -146,7 +146,7 @@ vsa3:
     net_data:
         BOND0:
             MANAGEMENT-NET:
-                addr: 192.168.10.14
+                addr: 192.168.110.14
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated

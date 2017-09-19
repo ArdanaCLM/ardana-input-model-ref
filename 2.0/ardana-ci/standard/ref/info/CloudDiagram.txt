@@ -2,7 +2,7 @@
 |                                                                                                                                                              |
 | +-Cluster cluster0 ()------------------------------+                                                                                                         |
 | |                                                  |                                                                                                         |
-| | +-standard-ccp-c0-m1 (192.168.10.254)----------+ |                                                                                                         |
+| | +-standard-ccp-c0-m1 (192.168.110.254)---------+ |                                                                                                         |
 | | |                                              | |                                                                                                         |
 | | | foundation                                   | |                                                                                                         |
 | | |   stunnel                                    | |                                                                                                         |
@@ -17,7 +17,7 @@
 | | | eth1                                         | |                                                                                                         |
 | | |   MANAGEMENT-NET (192.168.245.2)             | |                                                                                                         |
 | | | eth2                                         | |                                                                                                         |
-| | |   ARDANA-NET (192.168.10.254)                   | |                                                                                                         |
+| | |   ARDANA-NET (192.168.110.254)               | |                                                                                                         |
 | | |                                              | |                                                                                                         |
 | | +----------------------------------------------+ |                                                                                                         |
 | |                                                  |                                                                                                         |
@@ -25,7 +25,7 @@
 |                                                                                                                                                              |
 | +-Cluster cluster1 ()--------------------------------------------------------------------------------------------------------------------------------------+ |
 | |                                                                                                                                                          | |
-| | +-standard-ccp-c1-m1 (192.168.10.3)------------+    +-standard-ccp-c1-m2 (192.168.10.4)------------+    +-standard-ccp-c1-m3 (192.168.10.5)------------+ | |
+| | +-standard-ccp-c1-m1 (192.168.110.3)-----------+    +-standard-ccp-c1-m2 (192.168.110.4)-----------+    +-standard-ccp-c1-m3 (192.168.110.5)-----------+ | |
 | | |                                              |    |                                              |    |                                              | | |
 | | | ceilometer                                   |    | ceilometer                                   |    | ceilometer                                   | | |
 | | |   ceilometer-agent-central                   |    |   ceilometer-agent-central                   |    |   ceilometer-agent-central                   | | |
@@ -118,7 +118,7 @@
 | | | eth1                                         |    | eth1                                         |    | eth1                                         | | |
 | | |   MANAGEMENT-NET (192.168.245.3)             |    |   MANAGEMENT-NET (192.168.245.4)             |    |   MANAGEMENT-NET (192.168.245.5)             | | |
 | | | eth2                                         |    | eth2                                         |    | eth2                                         | | |
-| | |   ARDANA-NET (192.168.10.3)                     |    |   ARDANA-NET (192.168.10.4)                     |    |   ARDANA-NET (192.168.10.5)                     | | |
+| | |   ARDANA-NET (192.168.110.3)                 |    |   ARDANA-NET (192.168.110.4)                 |    |   ARDANA-NET (192.168.110.5)                 | | |
 | | | eth3                                         |    | eth3                                         |    | eth3                                         | | |
 | | |   EXTERNAL-VM-NET                            |    |   EXTERNAL-VM-NET                            |    |   EXTERNAL-VM-NET                            | | |
 | | |                                              |    |                                              |    |                                              | | |
@@ -155,7 +155,7 @@
 | | | eth1                                         |    | eth1                                         |    | eth1                                         | | |
 | | |   MANAGEMENT-NET (192.168.245.0/24)          |    |   MANAGEMENT-NET (192.168.245.0/24)          |    |   MANAGEMENT-NET (192.168.245.0/24)          | | |
 | | | eth2                                         |    | eth2                                         |    | eth2                                         | | |
-| | |   ARDANA-NET (192.168.10.0/24)                  |    |   ARDANA-NET (192.168.10.0/24)                  |    |   ARDANA-NET (192.168.10.0/24)                  | | |
+| | |   ARDANA-NET (192.168.110.0/24)              |    |   ARDANA-NET (192.168.110.0/24)              |    |   ARDANA-NET (192.168.110.0/24)              | | |
 | | | eth3                                         |    | eth3                                         |    | eth3                                         | | |
 | | |   EXTERNAL-VM-NET                            |    |   EXTERNAL-VM-NET                            |    |   EXTERNAL-VM-NET                            | | |
 | | |                                              |    |                                              |    |                                              | | |

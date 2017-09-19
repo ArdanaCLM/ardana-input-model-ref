@@ -9,7 +9,7 @@ COMPUTE-0001:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.6
+                addr: 192.168.110.6
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -29,7 +29,7 @@ COMPUTE-0002:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.7
+                addr: 192.168.110.7
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -49,7 +49,7 @@ COMPUTE-0003:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.8
+                addr: 192.168.110.8
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -69,7 +69,7 @@ ccn-0001:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.3
+                addr: 192.168.110.3
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -89,7 +89,7 @@ ccn-0002:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.4
+                addr: 192.168.110.4
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -109,7 +109,7 @@ ccn-0003:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.5
+                addr: 192.168.110.5
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -129,7 +129,7 @@ deployer:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.254
+                addr: 192.168.110.254
                 tagged-vlan: false
                 vlan-id: 101
     state: allocated

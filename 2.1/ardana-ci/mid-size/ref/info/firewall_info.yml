@@ -1,13 +1,13 @@
 CONF:
 -   addresses:
-    - 192.168.10.4
-    - 192.168.10.10
-    - 192.168.10.8
-    - 192.168.10.6
-    - 192.168.10.7
-    - 192.168.10.5
-    - 192.168.10.11
-    - 192.168.10.9
+    - 192.168.110.4
+    - 192.168.110.10
+    - 192.168.110.8
+    - 192.168.110.6
+    - 192.168.110.7
+    - 192.168.110.5
+    - 192.168.110.11
+    - 192.168.110.9
     components:
     - ssh
     - lifecycle-manager-target
@@ -15,25 +15,25 @@ CONF:
     port: '22'
     protocol: tcp
 -   addresses:
-    - 192.168.10.4
+    - 192.168.110.4
     components:
     - lifecycle-manager
     port: '67'
     protocol: udp
 -   addresses:
-    - 192.168.10.4
+    - 192.168.110.4
     components:
     - lifecycle-manager
     port: '68'
     protocol: udp
 -   addresses:
-    - 192.168.10.4
+    - 192.168.110.4
     components:
     - lifecycle-manager
     port: '69'
     protocol: udp
 -   addresses:
-    - 192.168.10.4
+    - 192.168.110.4
     components:
     - lifecycle-manager
     port: '79'

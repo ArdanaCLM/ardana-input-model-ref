@@ -28,7 +28,7 @@ GUEST:
     GUEST-NET: {}
 MANAGEMENT:
     MANAGEMENT-NET:
-        192.168.10.2:
+        192.168.110.2:
         - ardana-cp1-vip-CEI-API-mgmt
         - ardana-cp1-vip-FND-MDB-mgmt
         - ardana-cp1-vip-FND-VDB-mgmt
@@ -70,13 +70,13 @@ MANAGEMENT:
         - ardana-cp1-vip-admin-NOV-API-mgmt
         - ardana-cp1-vip-admin-OPS-WEB-mgmt
         - ardana-cp1-vip-admin-SWF-PRX-mgmt
-        192.168.10.3:
+        192.168.110.3:
         - ardana-cp1-c1-m1-mgmt
-        192.168.10.4:
+        192.168.110.4:
         - ardana-cp1-c1-m2-mgmt
-        192.168.10.5:
+        192.168.110.5:
         - ardana-cp1-c1-m3-mgmt
-        192.168.10.6:
+        192.168.110.6:
         - ardana-cp1-ir-compute0001-mgmt
 guest-network:
     guest-network: {}

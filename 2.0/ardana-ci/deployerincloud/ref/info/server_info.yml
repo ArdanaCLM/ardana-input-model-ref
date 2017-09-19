@@ -9,7 +9,7 @@ ccn-0001:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.3
+                addr: 192.168.110.3
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -29,7 +29,7 @@ cpn-0001:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.4
+                addr: 192.168.110.4
                 tagged-vlan: false
                 vlan-id: 101
         eth3:
@@ -49,7 +49,7 @@ cpn-0002:
                 vlan-id: 102
         eth2:
             ARDANA-NET:
-                addr: 192.168.10.5
+                addr: 192.168.110.5
                 tagged-vlan: false
                 vlan-id: 101
         eth3:

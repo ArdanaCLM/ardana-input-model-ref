@@ -2,19 +2,19 @@ EXTERNAL-VM:
     EXTERNAL-VM-NET: {}
 ARDANA:
     ARDANA-NET:
-        192.168.10.254:
+        192.168.110.254:
         - standard-ccp-c0-m1-alm
-        192.168.10.3:
+        192.168.110.3:
         - standard-ccp-c1-m1-alm
-        192.168.10.4:
+        192.168.110.4:
         - standard-ccp-c1-m2-alm
-        192.168.10.5:
+        192.168.110.5:
         - standard-ccp-c1-m3-alm
-        192.168.10.6:
+        192.168.110.6:
         - standard-ccp-comp0001-alm
-        192.168.10.7:
+        192.168.110.7:
         - standard-ccp-comp0002-alm
-        192.168.10.8:
+        192.168.110.8:
         - standard-ccp-comp0003-alm
 MANAGEMENT:
     MANAGEMENT-NET:

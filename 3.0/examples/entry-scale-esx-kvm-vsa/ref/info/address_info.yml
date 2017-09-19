@@ -42,21 +42,21 @@ GUEST:
         - ardana-cp1-comp0001-guest
 MANAGEMENT:
     MANAGEMENT-NET:
-        192.168.10.11:
+        192.168.110.11:
         - ardana-cp1-comp0001-mgmt
-        192.168.10.12:
+        192.168.110.12:
         - ardana-cp1-vsa0001-mgmt
-        192.168.10.2:
+        192.168.110.2:
         - ardana-cp1-vsa0001-VSA-BLK-mgmt
-        192.168.10.3:
+        192.168.110.3:
         - ardana-cp1-c1-m1-mgmt
-        192.168.10.4:
+        192.168.110.4:
         - ardana-cp1-c1-m2-mgmt
-        192.168.10.5:
+        192.168.110.5:
         - ardana-cp1-c1-m3-mgmt
-        192.168.10.6:
+        192.168.110.6:
         - ardana-cp1-vsa-VSA-BLK-mgmt
-        192.168.10.7:
+        192.168.110.7:
         - ardana-cp1-vip-CEI-API-mgmt
         - ardana-cp1-vip-CND-API-mgmt
         - ardana-cp1-vip-DES-API-mgmt

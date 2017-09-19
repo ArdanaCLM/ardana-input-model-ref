@@ -22,7 +22,7 @@
     # NOTE: These values need to be changed to match your environment.
     # Define the network range that contains the ip-addr values for
     # the individual servers listed below.
-    subnet: 192.168.10.0
+    subnet: 192.168.110.0
     netmask: 255.255.255.0
 
   servers:
@@ -33,29 +33,29 @@
 
     # Controllers
     - id: controller1
-      ip-addr: 192.168.10.3
+      ip-addr: 192.168.110.3
       role: CONTROLLER-ROLE
       nic-mapping: ARDANA-DL360-4PORT
       mac-addr: b2:72:8d:ac:7c:6f
-      ilo-ip: 192.168.9.3
+      ilo-ip: 192.168.109.3
       ilo-password: password
       ilo-user: admin
 
     - id: controller2
-      ip-addr: 192.168.10.4
+      ip-addr: 192.168.110.4
       role: CONTROLLER-ROLE
       nic-mapping: ARDANA-DL360-4PORT
       mac-addr: 8a:8e:64:55:43:76
-      ilo-ip: 192.168.9.4
+      ilo-ip: 192.168.109.4
       ilo-password: password
       ilo-user: admin
 
     - id: controller3
-      ip-addr: 192.168.10.5
+      ip-addr: 192.168.110.5
       role: CONTROLLER-ROLE
       nic-mapping: ARDANA-DL360-4PORT
       mac-addr: 26:67:3e:49:5a:a7
-      ilo-ip: 192.168.9.5
+      ilo-ip: 192.168.109.5
       ilo-password: password
       ilo-user: admin
 

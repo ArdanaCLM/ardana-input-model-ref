@@ -3,9 +3,9 @@ service_ips:
     -   cluster: vsa
         cluster_ip:
             hostname: ardana-cp1-vsa-VSA-BLK-mgmt
-            ip_address: 192.168.10.6
+            ip_address: 192.168.110.6
         control_plane: control-plane-1
         hosts:
         -   hostname: ardana-cp1-vsa0001-VSA-BLK-mgmt
-            ip_address: 192.168.10.2
+            ip_address: 192.168.110.2
         network: MANAGEMENT-NET

@@ -2,7 +2,7 @@
 |                                                                                                                                                              |
 | +-Cluster cluster1 ()--------------------------------------------------------------------------------------------------------------------------------------+ |
 | |                                                                                                                                                          | |
-| | +-ardana-cp1-c1-m1 (192.168.10.3)--------------+    +-ardana-cp1-c1-m2 (192.168.10.4)--------------+    +-ardana-cp1-c1-m3 (192.168.10.5)--------------+ | |
+| | +-ardana-cp1-c1-m1 (192.168.110.3)-------------+    +-ardana-cp1-c1-m2 (192.168.110.4)-------------+    +-ardana-cp1-c1-m3 (192.168.110.5)-------------+ | |
 | | |                                              |    |                                              |    |                                              | | |
 | | | barbican                                     |    | barbican                                     |    | barbican                                     | | |
 | | |   barbican-api                               |    |   barbican-api                               |    |   barbican-api                               | | |
@@ -67,8 +67,8 @@
 | | |   heat-api-cfn                               |    |   heat-api-cfn                               |    |   heat-api-cfn                               | | |
 | | |   heat-api-cloudwatch                        |    |   heat-api-cloudwatch                        |    |   heat-api-cloudwatch                        | | |
 | | |   heat-engine                                |    |   heat-engine                                |    |   heat-engine                                | | |
-| | | ardana                                          |    | ardana                                          |    | ardana                                          | | |
-| | |   ardana-ux-services                            |    |   ardana-ux-services                            |    |   ardana-ux-services                            | | |
+| | | ardana                                       |    | ardana                                       |    | ardana                                       | | |
+| | |   ardana-ux-services                         |    |   ardana-ux-services                         |    |   ardana-ux-services                         | | |
 | | |   lifecycle-manager                          |    |   lifecycle-manager                          |    |   lifecycle-manager                          | | |
 | | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
 | | | horizon                                      |    | horizon                                      |    | horizon                                      | | |
@@ -124,7 +124,7 @@
 | | |   EXTERNAL-API-NET (10.0.1.2)                |    |   EXTERNAL-API-NET (10.0.1.3)                |    |   EXTERNAL-API-NET (10.0.1.4)                | | |
 | | |   EXTERNAL-VM-NET                            |    |   EXTERNAL-VM-NET                            |    |   EXTERNAL-VM-NET                            | | |
 | | |   GUEST-NET (10.1.1.1)                       |    |   GUEST-NET (10.1.1.2)                       |    |   GUEST-NET (10.1.1.3)                       | | |
-| | |   MANAGEMENT-NET (192.168.10.3)              |    |   MANAGEMENT-NET (192.168.10.4)              |    |   MANAGEMENT-NET (192.168.10.5)              | | |
+| | |   MANAGEMENT-NET (192.168.110.3)             |    |   MANAGEMENT-NET (192.168.110.4)             |    |   MANAGEMENT-NET (192.168.110.5)             | | |
 | | |                                              |    |                                              |    |                                              | | |
 | | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
 | |                                                                                                                                                          | |
@@ -139,7 +139,7 @@
 | | |   stunnel                                    | |                                                                                                         |
 | | | freezer                                      | |                                                                                                         |
 | | |   freezer-agent                              | |                                                                                                         |
-| | | ardana                                          | |                                                                                                         |
+| | | ardana                                       | |                                                                                                         |
 | | |   lifecycle-manager-target                   | |                                                                                                         |
 | | | logging                                      | |                                                                                                         |
 | | |   logging-producer                           | |                                                                                                         |
@@ -157,7 +157,7 @@
 | | |                                              | |                                                                                                         |
 | | | bond0 (hed3, hed4)                           | |                                                                                                         |
 | | |   GUEST-NET (10.1.1.0/24)                    | |                                                                                                         |
-| | |   MANAGEMENT-NET (192.168.10.0/24)           | |                                                                                                         |
+| | |   MANAGEMENT-NET (192.168.110.0/24)          | |                                                                                                         |
 | | |                                              | |                                                                                                         |
 | | +----------------------------------------------+ |                                                                                                         |
 | +--------------------------------------------------+                                                                                                         |
@@ -171,7 +171,7 @@
 | | |   stunnel                                    | |                                                                                                         |
 | | | freezer                                      | |                                                                                                         |
 | | |   freezer-agent                              | |                                                                                                         |
-| | | ardana                                          | |                                                                                                         |
+| | | ardana                                       | |                                                                                                         |
 | | |   lifecycle-manager-target                   | |                                                                                                         |
 | | | logging                                      | |                                                                                                         |
 | | |   logging-producer                           | |                                                                                                         |
@@ -184,7 +184,7 @@
 | | | -------------------------------------------- | |                                                                                                         |
 | | |                                              | |                                                                                                         |
 | | | bond0 (hed3, hed4)                           | |                                                                                                         |
-| | |   MANAGEMENT-NET (192.168.10.0/24)           | |                                                                                                         |
+| | |   MANAGEMENT-NET (192.168.110.0/24)          | |                                                                                                         |
 | | |                                              | |                                                                                                         |
 | | +----------------------------------------------+ |                                                                                                         |
 | +--------------------------------------------------+                                                                                                         |

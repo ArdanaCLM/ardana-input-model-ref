@@ -13,7 +13,7 @@ compute1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.8
+                addr: 192.168.110.8
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -28,7 +28,7 @@ core1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.4
+                addr: 192.168.110.4
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -43,7 +43,7 @@ dbmq1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.5
+                addr: 192.168.110.5
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -58,7 +58,7 @@ mtrmon1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.6
+                addr: 192.168.110.6
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -77,7 +77,7 @@ neut1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.9
+                addr: 192.168.110.9
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -92,7 +92,7 @@ singleton1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.10
+                addr: 192.168.110.10
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -107,7 +107,7 @@ swobj1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.11
+                addr: 192.168.110.11
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated
@@ -122,7 +122,7 @@ swpac1:
                 vlan-id: 3371
         eth2:
             CONF-NET:
-                addr: 192.168.10.7
+                addr: 192.168.110.7
                 tagged-vlan: false
                 vlan-id: 3380
     state: allocated

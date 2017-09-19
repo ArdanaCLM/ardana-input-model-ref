@@ -19,7 +19,7 @@
     version: 2
 
   baremetal:
-    subnet: 192.168.10.0
+    subnet: 192.168.110.0
     netmask: 255.255.255.0
     server-interface: eth2
 
@@ -29,10 +29,10 @@
     - id: core1
       role: CORE-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.4
+      ip-addr: 192.168.110.4
       mac-addr: b2:72:8d:ac:7c:6f
 #      nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.3
+      ilo-ip: 192.168.109.3
       ilo-user: admin
       ilo-password: password
 
@@ -40,10 +40,10 @@
     - id: mtrmon1
       role: MTRMON-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.6
+      ip-addr: 192.168.110.6
       mac-addr: 8e:8e:62:a6:ce:76
 #      nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.5
+      ilo-ip: 192.168.109.5
       ilo-user: admin
       ilo-password: password
 
@@ -51,10 +51,10 @@
     - id: dbmq1
       role: DBMQ-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.5
+      ip-addr: 192.168.110.5
       mac-addr: d6:70:c1:36:43:f7
 #      nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.4
+      ilo-ip: 192.168.109.4
       ilo-user: admin
       ilo-password: password
 
@@ -62,10 +62,10 @@
     - id: swpac1
       role: SWPAC-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.7
+      ip-addr: 192.168.110.7
       mac-addr: 22:f1:9d:ba:2c:2d
 #      nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.6
+      ilo-ip: 192.168.109.6
       ilo-user: admin
       ilo-password: password
 
@@ -73,10 +73,10 @@
     - id: neut1
       role: NEUTRON-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.9
+      ip-addr: 192.168.110.9
       mac-addr: 8a:8e:64:55:43:22
  #     nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.8
+      ilo-ip: 192.168.109.8
       ilo-user: admin
       ilo-password: password
 
@@ -85,8 +85,8 @@
       server-group: rack1
       mac-addr: 8c:dc:d4:b5:ca:e0
 #      nic-mapping: ARDANA-DL360-6PORT
-      ip-addr: 192.168.10.11
-      ilo-ip: 192.168.9.10
+      ip-addr: 192.168.110.11
+      ilo-ip: 192.168.109.10
       ilo-user: admin
       ilo-password: password
 
@@ -94,10 +94,10 @@
     - id: compute1
       role: COMPUTE-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.8
+      ip-addr: 192.168.110.8
       mac-addr: 24:f3:5d:b2:3c:5d
  #     nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.7
+      ilo-ip: 192.168.109.7
       ilo-user: admin
       ilo-password: password
 
@@ -105,9 +105,9 @@
     - id: singleton1
       role: CORE-ROLE
       server-group: rack1
-      ip-addr: 192.168.10.10
+      ip-addr: 192.168.110.10
       mac-addr: b2:72:8d:ac:7b:f8
 #      nic-mapping: ARDANA-DL360-6PORT
-      ilo-ip: 192.168.9.9
+      ilo-ip: 192.168.109.9
       ilo-user: admin
       ilo-password: password

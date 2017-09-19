@@ -2,7 +2,7 @@ compute1:
   cp_name: control-plane-1
   member_id: 1
   previous_config:
-    addr: 192.168.10.6
+    addr: 192.168.110.6
     ansible_options: null
     components:
       freezer-agent: {}
@@ -92,11 +92,11 @@ compute1:
           vlanid: 103
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT
@@ -150,7 +150,7 @@ controller1:
   cp_name: control-plane-1
   member_id: 1
   previous_config:
-    addr: 192.168.10.3
+    addr: 192.168.110.3
     ansible_options: null
     components:
       apache2: {}
@@ -366,11 +366,11 @@ controller1:
           vlanid: 103
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT
@@ -511,7 +511,7 @@ controller2:
   cp_name: control-plane-1
   member_id: 2
   previous_config:
-    addr: 192.168.10.4
+    addr: 192.168.110.4
     ansible_options: null
     components:
       apache2: {}
@@ -727,11 +727,11 @@ controller2:
           vlanid: 103
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT
@@ -872,7 +872,7 @@ controller3:
   cp_name: control-plane-1
   member_id: 3
   previous_config:
-    addr: 192.168.10.5
+    addr: 192.168.110.5
     ansible_options: null
     components:
       apache2: {}
@@ -1088,11 +1088,11 @@ controller3:
           vlanid: 103
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT
@@ -1232,7 +1232,7 @@ vsa1:
   cp_name: control-plane-1
   member_id: 1
   previous_config:
-    addr: 192.168.10.9
+    addr: 192.168.110.9
     ansible_options: null
     components:
       freezer-agent: {}
@@ -1301,11 +1301,11 @@ vsa1:
       networks:
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT
@@ -1352,7 +1352,7 @@ vsa2:
   cp_name: control-plane-1
   member_id: 2
   previous_config:
-    addr: 192.168.10.10
+    addr: 192.168.110.10
     ansible_options: null
     components:
       freezer-agent: {}
@@ -1421,11 +1421,11 @@ vsa2:
       networks:
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT
@@ -1472,7 +1472,7 @@ vsa3:
   cp_name: control-plane-1
   member_id: 3
   previous_config:
-    addr: 192.168.10.11
+    addr: 192.168.110.11
     ansible_options: null
     components:
       freezer-agent: {}
@@ -1541,11 +1541,11 @@ vsa3:
       networks:
         MANAGEMENT-NET:
           addresses:
-          - 192.168.10.1-192.168.10.254
-          cidr: 192.168.10.0/24
+          - 192.168.110.1-192.168.110.254
+          cidr: 192.168.110.0/24
           explicit_mtu: false
           forced: false
-          gateway-ip: 192.168.10.1
+          gateway-ip: 192.168.110.1
           mtu: 1500
           name: MANAGEMENT-NET
           network-group: MANAGEMENT

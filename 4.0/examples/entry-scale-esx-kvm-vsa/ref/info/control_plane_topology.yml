@@ -415,7 +415,7 @@ control_planes:
                             port: '8080'
                             vip-tls: true
             lb:
-                address: 192.168.10.7
+                address: 192.168.110.7
                 cert-file: ardana-internal-cert
                 external-name: ''
                 network: MANAGEMENT-NET

@@ -2,7 +2,7 @@
 |                                                      |
 | +-Cluster cluster0 ()------------------------------+ |
 | |                                                  | |
-| | +-deployerincloud-ccp-c0-m1 (192.168.10.3)-----+ | |
+| | +-deployerincloud-ccp-c0-m1 (192.168.110.3)----+ | |
 | | |                                              | | |
 | | | ceilometer                                   | | |
 | | |   ceilometer-agent-central                   | | |
@@ -96,7 +96,7 @@
 | | | eth1                                         | | |
 | | |   MANAGEMENT-NET (192.168.245.2)             | | |
 | | | eth2                                         | | |
-| | |   ARDANA-NET (192.168.10.3)                     | | |
+| | |   ARDANA-NET (192.168.110.3)                 | | |
 | | | eth3                                         | | |
 | | |   EXTERNAL-VM-NET                            | | |
 | | |                                              | | |
@@ -133,7 +133,7 @@
 | | | eth1                                         | | |
 | | |   MANAGEMENT-NET (192.168.245.0/24)          | | |
 | | | eth2                                         | | |
-| | |   ARDANA-NET (192.168.10.0/24)                  | | |
+| | |   ARDANA-NET (192.168.110.0/24)              | | |
 | | | eth3                                         | | |
 | | |   EXTERNAL-VM-NET                            | | |
 | | |                                              | | |

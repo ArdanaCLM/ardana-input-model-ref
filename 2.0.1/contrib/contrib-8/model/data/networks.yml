@@ -27,7 +27,7 @@
     # External API  10.0.1.0/24      101 (tagged)
     # External VM   see note 1       102 (tagged)
     # Guest         10.1.1.0/24      103 (tagged)
-    # Management    192.168.10.0/24  100 (untagged)
+    # Management    192.168.110.0/24 100 (untagged)
     # Trunk         10.3.1.0/24      untagged
     #
     # Notes:

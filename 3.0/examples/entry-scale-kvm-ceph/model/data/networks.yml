@@ -27,9 +27,9 @@
     # External API  10.0.1.0/24      101 (tagged)
     # External VM   see note 1       102 (tagged)
     # Guest         10.1.1.0/24      103 (tagged)
-    # Management   192.168.10.0/24  100 (untagged)
-    # OSD Internal 192.168.11.0/24  104 (tagged)
-    # OSD Client   192.168.12.0/24  105 (tagged)
+    # Management    192.168.110.0/24 100 (untagged)
+    # OSD Internal  192.168.11.0/24  104 (tagged)
+    # OSD Client    192.168.12.0/24  105 (tagged)
     #
     # Notes:
     # 1. Defined as part of Neutron configuration
@@ -60,11 +60,11 @@
     - name: MANAGEMENT-NET
       vlanid: 100
       tagged-vlan: false
-      cidr: 192.168.10.0/24
-      gateway-ip: 192.168.10.1
+      cidr: 192.168.110.0/24
+      gateway-ip: 192.168.110.1
       network-group: MANAGEMENT
       #addresses:
-      #  - 192.168.10.1-192.168.10.250
+      #  - 192.168.110.1-192.168.110.250
 
     - name: OSD-INTERNAL-NET
       vlanid: 104

@@ -1,20 +1,20 @@
 CONF:
     CONF-NET:
-        192.168.10.10:
+        192.168.110.10:
         - mid-size-cp1-singleton-m1-conf
-        192.168.10.11:
+        192.168.110.11:
         - mid-size-cp1-swobj0001-conf
-        192.168.10.4:
+        192.168.110.4:
         - mid-size-cp1-core-m1-conf
-        192.168.10.5:
+        192.168.110.5:
         - mid-size-cp1-dbmq-m1-conf
-        192.168.10.6:
+        192.168.110.6:
         - mid-size-cp1-mtrmon-m1-conf
-        192.168.10.7:
+        192.168.110.7:
         - mid-size-cp1-swpac-m1-conf
-        192.168.10.8:
+        192.168.110.8:
         - mid-size-cp1-comp0001-conf
-        192.168.10.9:
+        192.168.110.9:
         - mid-size-cp1-neut-m1-conf
 EXTERNAL-VM:
     EXTERNAL-VM-NET: {}

@@ -42,7 +42,7 @@ server: standard-ccp-c0-m1
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
   Allocated address 192.168.245.2 for server standard-ccp-c0-m1 on network MANAGEMENT-NET
-  Using address 192.168.10.254 for server standard-ccp-c0-m1 on network ARDANA-NET
+  Using address 192.168.110.254 for server standard-ccp-c0-m1 on network ARDANA-NET
 
 server: standard-ccp-c1-m1
 -------------------------
@@ -121,7 +121,7 @@ server: standard-ccp-c1-m1
   add MANAGEMENT for swift-rsync (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
   Allocated address 192.168.245.3 for server standard-ccp-c1-m1 on network MANAGEMENT-NET
-  Using address 192.168.10.3 for server standard-ccp-c1-m1 on network ARDANA-NET
+  Using address 192.168.110.3 for server standard-ccp-c1-m1 on network ARDANA-NET
 
 server: standard-ccp-c1-m2
 -------------------------
@@ -200,7 +200,7 @@ server: standard-ccp-c1-m2
   add MANAGEMENT for swift-rsync (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
   Allocated address 192.168.245.4 for server standard-ccp-c1-m2 on network MANAGEMENT-NET
-  Using address 192.168.10.4 for server standard-ccp-c1-m2 on network ARDANA-NET
+  Using address 192.168.110.4 for server standard-ccp-c1-m2 on network ARDANA-NET
 
 server: standard-ccp-c1-m3
 -------------------------
@@ -279,7 +279,7 @@ server: standard-ccp-c1-m3
   add MANAGEMENT for swift-rsync (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
   Allocated address 192.168.245.5 for server standard-ccp-c1-m3 on network MANAGEMENT-NET
-  Using address 192.168.10.5 for server standard-ccp-c1-m3 on network ARDANA-NET
+  Using address 192.168.110.5 for server standard-ccp-c1-m3 on network ARDANA-NET
 
 server: standard-ccp-comp0001
 ----------------------------
@@ -300,7 +300,7 @@ server: standard-ccp-comp0001
   add MANAGEMENT for stunnel (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
   Allocated address 192.168.245.6 for server standard-ccp-comp0001 on network MANAGEMENT-NET
-  Using address 192.168.10.6 for server standard-ccp-comp0001 on network ARDANA-NET
+  Using address 192.168.110.6 for server standard-ccp-comp0001 on network ARDANA-NET
 
 server: standard-ccp-comp0002
 ----------------------------
@@ -321,7 +321,7 @@ server: standard-ccp-comp0002
   add MANAGEMENT for stunnel (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
   Allocated address 192.168.245.7 for server standard-ccp-comp0002 on network MANAGEMENT-NET
-  Using address 192.168.10.7 for server standard-ccp-comp0002 on network ARDANA-NET
+  Using address 192.168.110.7 for server standard-ccp-comp0002 on network ARDANA-NET
 
 server: standard-ccp-comp0003
 ----------------------------
@@ -342,7 +342,7 @@ server: standard-ccp-comp0003
   add MANAGEMENT for stunnel (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
   Allocated address 192.168.245.8 for server standard-ccp-comp0003 on network MANAGEMENT-NET
-  Using address 192.168.10.8 for server standard-ccp-comp0003 on network ARDANA-NET
+  Using address 192.168.110.8 for server standard-ccp-comp0003 on network ARDANA-NET
 
 Resolve Network Routes
 ======================

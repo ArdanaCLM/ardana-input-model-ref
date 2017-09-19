@@ -30,56 +30,56 @@
   persisted: false
   server-id: null
   used-by: vip extlb
-192.168.10.2:
-  addr: 192.168.10.2
+192.168.110.2:
+  addr: 192.168.110.2
   allocated: true
   free: false
   host: ardana-cp1-esx-ovsvapp0001
   persisted: false
   server-id: 23537a1742972553251f159521058890e8f945d8
   used-by: server
-192.168.10.3:
-  addr: 192.168.10.3
+192.168.110.3:
+  addr: 192.168.110.3
   allocated: true
   free: false
   host: ardana-cp1-c1-m1
   persisted: false
   server-id: controller1
   used-by: server
-192.168.10.4:
-  addr: 192.168.10.4
+192.168.110.4:
+  addr: 192.168.110.4
   allocated: true
   free: false
   host: ardana-cp1-c1-m2
   persisted: false
   server-id: controller2
   used-by: server
-192.168.10.5:
-  addr: 192.168.10.5
+192.168.110.5:
+  addr: 192.168.110.5
   allocated: true
   free: false
   host: ardana-cp1-c1-m3
   persisted: false
   server-id: controller3
   used-by: server
-192.168.10.6:
-  addr: 192.168.10.6
+192.168.110.6:
+  addr: 192.168.110.6
   allocated: true
   free: false
   host: ardana-cp1-esx-ovsvapp0002
   persisted: false
   server-id: 5d9ac33807943abd4b4a4485f8ee8dd13f50f230
   used-by: server
-192.168.10.7:
-  addr: 192.168.10.7
+192.168.110.7:
+  addr: 192.168.110.7
   allocated: true
   free: false
   host: ardana-cp1-esx-comp0001
   persisted: false
   server-id: 7d8c415b541ca9ecf9608b35b32261e6c0bf275a
   used-by: server
-192.168.10.8:
-  addr: 192.168.10.8
+192.168.110.8:
+  addr: 192.168.110.8
   allocated: true
   free: false
   host: ardana-cp1-vip-lb-mgmt

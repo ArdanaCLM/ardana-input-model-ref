@@ -2,11 +2,11 @@ EXTERNAL-VM:
     EXTERNAL-VM-NET: {}
 ARDANA:
     ARDANA-NET:
-        192.168.10.3:
+        192.168.110.3:
         - deployerincloud-ccp-c0-m1-alm
-        192.168.10.4:
+        192.168.110.4:
         - deployerincloud-ccp-compute0001-alm
-        192.168.10.5:
+        192.168.110.5:
         - deployerincloud-ccp-compute0002-alm
 MANAGEMENT:
     MANAGEMENT-NET:

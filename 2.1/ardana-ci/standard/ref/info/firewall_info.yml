@@ -1,24 +1,24 @@
 ARDANA:
 -   addresses:
-    - 192.168.10.254
-    - 192.168.10.5
-    - 192.168.10.4
-    - 192.168.10.3
-    - 192.168.10.6
-    - 192.168.10.8
-    - 192.168.10.7
+    - 192.168.110.254
+    - 192.168.110.5
+    - 192.168.110.4
+    - 192.168.110.3
+    - 192.168.110.6
+    - 192.168.110.8
+    - 192.168.110.7
     components:
     - user-PING
     port: '8:0'
     protocol: icmp
 -   addresses:
-    - 192.168.10.254
-    - 192.168.10.5
-    - 192.168.10.4
-    - 192.168.10.3
-    - 192.168.10.6
-    - 192.168.10.8
-    - 192.168.10.7
+    - 192.168.110.254
+    - 192.168.110.5
+    - 192.168.110.4
+    - 192.168.110.3
+    - 192.168.110.6
+    - 192.168.110.8
+    - 192.168.110.7
     components:
     - ssh
     - lifecycle-manager-target
@@ -26,25 +26,25 @@ ARDANA:
     port: '22'
     protocol: tcp
 -   addresses:
-    - 192.168.10.254
+    - 192.168.110.254
     components:
     - lifecycle-manager
     port: '67'
     protocol: udp
 -   addresses:
-    - 192.168.10.254
+    - 192.168.110.254
     components:
     - lifecycle-manager
     port: '68'
     protocol: udp
 -   addresses:
-    - 192.168.10.254
+    - 192.168.110.254
     components:
     - lifecycle-manager
     port: '69'
     protocol: udp
 -   addresses:
-    - 192.168.10.254
+    - 192.168.110.254
     components:
     - lifecycle-manager
     port: '79'

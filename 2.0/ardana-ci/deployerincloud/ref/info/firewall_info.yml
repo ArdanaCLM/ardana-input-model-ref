@@ -1,8 +1,8 @@
 ARDANA:
 -   addresses:
-    - 192.168.10.4
-    - 192.168.10.5
-    - 192.168.10.3
+    - 192.168.110.4
+    - 192.168.110.5
+    - 192.168.110.3
     components:
     - ssh
     - lifecycle-manager-target
@@ -10,25 +10,25 @@ ARDANA:
     port: '22'
     protocol: tcp
 -   addresses:
-    - 192.168.10.3
+    - 192.168.110.3
     components:
     - lifecycle-manager
     port: '67'
     protocol: udp
 -   addresses:
-    - 192.168.10.3
+    - 192.168.110.3
     components:
     - lifecycle-manager
     port: '68'
     protocol: udp
 -   addresses:
-    - 192.168.10.3
+    - 192.168.110.3
     components:
     - lifecycle-manager
     port: '69'
     protocol: udp
 -   addresses:
-    - 192.168.10.3
+    - 192.168.110.3
     components:
     - lifecycle-manager
     port: '79'

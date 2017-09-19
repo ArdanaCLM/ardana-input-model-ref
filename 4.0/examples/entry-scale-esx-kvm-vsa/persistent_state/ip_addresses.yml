@@ -62,64 +62,64 @@
   persisted: false
   server-id: compute1
   used-by: server
-192.168.10.11:
-  addr: 192.168.10.11
+192.168.110.11:
+  addr: 192.168.110.11
   allocated: true
   free: false
   host: ardana-cp1-comp0001
   persisted: false
   server-id: compute1
   used-by: server
-192.168.10.12:
-  addr: 192.168.10.12
+192.168.110.12:
+  addr: 192.168.110.12
   allocated: true
   free: false
   host: ardana-cp1-vsa0001
   persisted: false
   server-id: vsa1
   used-by: server
-192.168.10.2:
-  addr: 192.168.10.2
+192.168.110.2:
+  addr: 192.168.110.2
   allocated: true
   free: false
   host: ardana-cp1-vsa0001
   persisted: false
   server-id: null
   used-by: vsa
-192.168.10.3:
-  addr: 192.168.10.3
+192.168.110.3:
+  addr: 192.168.110.3
   allocated: true
   free: false
   host: ardana-cp1-c1-m1
   persisted: false
   server-id: controller1
   used-by: server
-192.168.10.4:
-  addr: 192.168.10.4
+192.168.110.4:
+  addr: 192.168.110.4
   allocated: true
   free: false
   host: ardana-cp1-c1-m2
   persisted: false
   server-id: controller2
   used-by: server
-192.168.10.5:
-  addr: 192.168.10.5
+192.168.110.5:
+  addr: 192.168.110.5
   allocated: true
   free: false
   host: ardana-cp1-c1-m3
   persisted: false
   server-id: controller3
   used-by: server
-192.168.10.6:
-  addr: 192.168.10.6
+192.168.110.6:
+  addr: 192.168.110.6
   allocated: true
   free: false
   host: ardana-cp1-vsa
   persisted: false
   server-id: null
   used-by: vsa--cluster
-192.168.10.7:
-  addr: 192.168.10.7
+192.168.110.7:
+  addr: 192.168.110.7
   allocated: true
   free: false
   host: ardana-cp1-vip-lb-mgmt

@@ -101,7 +101,7 @@ server: mid-size-cp1-core-m1
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
   add MANAGEMENT for nova-metadata (default)
-  Using address 192.168.10.4 for server mid-size-cp1-core-m1 on network CONF-NET
+  Using address 192.168.110.4 for server mid-size-cp1-core-m1 on network CONF-NET
   Allocated address 192.168.245.2 for server mid-size-cp1-core-m1 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-mtrmon-m1
@@ -132,7 +132,7 @@ server: mid-size-cp1-mtrmon-m1
   add MANAGEMENT for monasca-agent (default)
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
-  Using address 192.168.10.6 for server mid-size-cp1-mtrmon-m1 on network CONF-NET
+  Using address 192.168.110.6 for server mid-size-cp1-mtrmon-m1 on network CONF-NET
   Allocated address 192.168.245.3 for server mid-size-cp1-mtrmon-m1 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-dbmq-m1
@@ -148,7 +148,7 @@ server: mid-size-cp1-dbmq-m1
   add MANAGEMENT for monasca-agent (default)
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
-  Using address 192.168.10.5 for server mid-size-cp1-dbmq-m1 on network CONF-NET
+  Using address 192.168.110.5 for server mid-size-cp1-dbmq-m1 on network CONF-NET
   Allocated address 192.168.245.4 for server mid-size-cp1-dbmq-m1 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-swpac-m1
@@ -166,7 +166,7 @@ server: mid-size-cp1-swpac-m1
   add MANAGEMENT for stunnel (default)
   add MANAGEMENT for swift-common (default)
   add MANAGEMENT for swift-rsync (default)
-  Using address 192.168.10.7 for server mid-size-cp1-swpac-m1 on network CONF-NET
+  Using address 192.168.110.7 for server mid-size-cp1-swpac-m1 on network CONF-NET
   Allocated address 192.168.245.5 for server mid-size-cp1-swpac-m1 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-neut-m1
@@ -184,7 +184,7 @@ server: mid-size-cp1-neut-m1
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
-  Using address 192.168.10.9 for server mid-size-cp1-neut-m1 on network CONF-NET
+  Using address 192.168.110.9 for server mid-size-cp1-neut-m1 on network CONF-NET
   Allocated address 192.168.245.6 for server mid-size-cp1-neut-m1 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-singleton-m1
@@ -195,7 +195,7 @@ server: mid-size-cp1-singleton-m1
   add MANAGEMENT for monasca-agent (default)
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
-  Using address 192.168.10.10 for server mid-size-cp1-singleton-m1 on network CONF-NET
+  Using address 192.168.110.10 for server mid-size-cp1-singleton-m1 on network CONF-NET
   Allocated address 192.168.245.7 for server mid-size-cp1-singleton-m1 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-swobj0001
@@ -209,7 +209,7 @@ server: mid-size-cp1-swobj0001
   add MANAGEMENT for stunnel (default)
   add MANAGEMENT for swift-common (default)
   add MANAGEMENT for swift-rsync (default)
-  Using address 192.168.10.11 for server mid-size-cp1-swobj0001 on network CONF-NET
+  Using address 192.168.110.11 for server mid-size-cp1-swobj0001 on network CONF-NET
   Allocated address 192.168.245.8 for server mid-size-cp1-swobj0001 on network MANAGEMENT-NET-RACK1
 
 server: mid-size-cp1-comp0001
@@ -229,7 +229,7 @@ server: mid-size-cp1-comp0001
   add MANAGEMENT for freezer-agent (default)
   add MANAGEMENT for stunnel (default)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
-  Using address 192.168.10.8 for server mid-size-cp1-comp0001 on network CONF-NET
+  Using address 192.168.110.8 for server mid-size-cp1-comp0001 on network CONF-NET
   Allocated address 192.168.245.9 for server mid-size-cp1-comp0001 on network MANAGEMENT-NET-RACK1
 
 Resolve Network Routes

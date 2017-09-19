@@ -12,7 +12,7 @@ controller1:
                 tagged-vlan: true
                 vlan-id: 102
             MANAGEMENT-NET:
-                addr: 192.168.10.3
+                addr: 192.168.110.3
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -30,7 +30,7 @@ controller2:
                 tagged-vlan: true
                 vlan-id: 102
             MANAGEMENT-NET:
-                addr: 192.168.10.4
+                addr: 192.168.110.4
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -48,7 +48,7 @@ controller3:
                 tagged-vlan: true
                 vlan-id: 102
             MANAGEMENT-NET:
-                addr: 192.168.10.5
+                addr: 192.168.110.5
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated
@@ -62,7 +62,7 @@ ironic-compute-1:
                 tagged-vlan: true
                 vlan-id: 102
             MANAGEMENT-NET:
-                addr: 192.168.10.6
+                addr: 192.168.110.6
                 tagged-vlan: false
                 vlan-id: 100
     state: allocated

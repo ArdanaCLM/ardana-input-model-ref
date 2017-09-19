@@ -30,40 +30,40 @@
   persisted: false
   server-id: null
   used-by: vip extlb
-192.168.10.2:
-  addr: 192.168.10.2
+192.168.110.2:
+  addr: 192.168.110.2
   allocated: true
   free: false
   host: ardana-cp1-vip-lb-mgmt
   persisted: false
   server-id: null
   used-by: vip lb
-192.168.10.3:
-  addr: 192.168.10.3
+192.168.110.3:
+  addr: 192.168.110.3
   allocated: true
   free: false
   host: ardana-cp1-c1-m1
   persisted: false
   server-id: controller1
   used-by: server
-192.168.10.4:
-  addr: 192.168.10.4
+192.168.110.4:
+  addr: 192.168.110.4
   allocated: true
   free: false
   host: ardana-cp1-c1-m2
   persisted: false
   server-id: controller2
   used-by: server
-192.168.10.5:
-  addr: 192.168.10.5
+192.168.110.5:
+  addr: 192.168.110.5
   allocated: true
   free: false
   host: ardana-cp1-c1-m3
   persisted: false
   server-id: controller3
   used-by: server
-192.168.10.6:
-  addr: 192.168.10.6
+192.168.110.6:
+  addr: 192.168.110.6
   allocated: true
   free: false
   host: ardana-cp1-ir-compute0001

@@ -1,61 +1,61 @@
-192.168.10.254:
-  addr: 192.168.10.254
+192.168.110.254:
+  addr: 192.168.110.254
   allocated: true
   free: false
   host: standard-ceph-ccp-c0-m1
   persisted: false
   server-id: deployer
   used-by: server
-192.168.10.3:
-  addr: 192.168.10.3
+192.168.110.3:
+  addr: 192.168.110.3
   allocated: true
   free: false
   host: standard-ceph-ccp-c1-m1
   persisted: false
   server-id: ccn-0001
   used-by: server
-192.168.10.4:
-  addr: 192.168.10.4
+192.168.110.4:
+  addr: 192.168.110.4
   allocated: true
   free: false
   host: standard-ceph-ccp-c1-m2
   persisted: false
   server-id: ccn-0002
   used-by: server
-192.168.10.5:
-  addr: 192.168.10.5
+192.168.110.5:
+  addr: 192.168.110.5
   allocated: true
   free: false
   host: standard-ceph-ccp-c1-m3
   persisted: false
   server-id: ccn-0003
   used-by: server
-192.168.10.6:
-  addr: 192.168.10.6
+192.168.110.6:
+  addr: 192.168.110.6
   allocated: true
   free: false
   host: standard-ceph-ccp-comp0001
   persisted: false
   server-id: COMPUTE-0001
   used-by: server
-192.168.10.7:
-  addr: 192.168.10.7
+192.168.110.7:
+  addr: 192.168.110.7
   allocated: true
   free: false
   host: standard-ceph-ccp-ceph0001
   persisted: false
   server-id: OSD-0001
   used-by: server
-192.168.10.8:
-  addr: 192.168.10.8
+192.168.110.8:
+  addr: 192.168.110.8
   allocated: true
   free: false
   host: standard-ceph-ccp-ceph0002
   persisted: false
   server-id: OSD-0002
   used-by: server
-192.168.10.9:
-  addr: 192.168.10.9
+192.168.110.9:
+  addr: 192.168.110.9
   allocated: true
   free: false
   host: standard-ceph-ccp-ceph0003

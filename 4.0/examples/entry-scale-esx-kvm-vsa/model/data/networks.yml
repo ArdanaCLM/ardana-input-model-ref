@@ -28,7 +28,7 @@
     # External VM   see note 1       102 (tagged)
     # Guest         10.1.1.0/24      103 (tagged)
     # ESX Conf      192.168.50.0/23  104 (tagged)
-    # Management    192.168.10.0/24  100 (untagged)
+    # Management    192.168.110.0/24 100 (untagged)
     # Trunk         see note 2       untagged
     #
     # Notes:
@@ -61,11 +61,11 @@
     - name: MANAGEMENT-NET
       tagged-vlan: false
       vlanid: 100
-      cidr: 192.168.10.0/24
-      gateway-ip: 192.168.10.1
+      cidr: 192.168.110.0/24
+      gateway-ip: 192.168.110.1
       network-group: MANAGEMENT
       #addresses:
-      #  - 192.168.10.1-192.168.10.250
+      #  - 192.168.110.1-192.168.110.250
 
     - name: TRUNK-NET
       tagged-vlan: false

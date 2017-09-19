@@ -32,15 +32,15 @@ network_groups:
                     clusters:
                         cluster1:
                             servers:
-                                ardana-cp1-c1-m1: 192.168.10.3
-                                ardana-cp1-c1-m2: 192.168.10.4
-                                ardana-cp1-c1-m3: 192.168.10.5
+                                ardana-cp1-c1-m1: 192.168.110.3
+                                ardana-cp1-c1-m2: 192.168.110.4
+                                ardana-cp1-c1-m3: 192.168.110.5
                             vips:
-                                192.168.10.2: lb
+                                192.168.110.2: lb
                     resources:
                         ironic-compute:
                             servers:
-                                ardana-cp1-ir-compute0001: 192.168.10.6
+                                ardana-cp1-ir-compute0001: 192.168.110.6
     guest-network:
         guest-network:
             control_planes: {}

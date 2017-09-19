@@ -42,36 +42,36 @@ network_groups:
                     clusters:
                         core:
                             servers:
-                                ardana-cp1-core-m1: 192.168.10.3
-                                ardana-cp1-core-m2: 192.168.10.4
+                                ardana-cp1-core-m1: 192.168.110.3
+                                ardana-cp1-core-m2: 192.168.110.4
                             vips:
-                                192.168.10.18: lb
+                                192.168.110.18: lb
                         dbmq:
                             servers:
-                                ardana-cp1-dbmq-m1: 192.168.10.8
-                                ardana-cp1-dbmq-m2: 192.168.10.9
-                                ardana-cp1-dbmq-m3: 192.168.10.10
+                                ardana-cp1-dbmq-m1: 192.168.110.8
+                                ardana-cp1-dbmq-m2: 192.168.110.9
+                                ardana-cp1-dbmq-m3: 192.168.110.10
                         mtrmon:
                             servers:
-                                ardana-cp1-mtrmon-m1: 192.168.10.5
-                                ardana-cp1-mtrmon-m2: 192.168.10.6
-                                ardana-cp1-mtrmon-m3: 192.168.10.7
+                                ardana-cp1-mtrmon-m1: 192.168.110.5
+                                ardana-cp1-mtrmon-m2: 192.168.110.6
+                                ardana-cp1-mtrmon-m3: 192.168.110.7
                     resources:
                         kvm-compute:
                             servers:
-                                ardana-cp1-kvm-comp0001: 192.168.10.11
+                                ardana-cp1-kvm-comp0001: 192.168.110.11
                         vsa:
                             servers:
-                                ardana-cp1-vsa0001: 192.168.10.12
-                                ardana-cp1-vsa0002: 192.168.10.13
-                                ardana-cp1-vsa0003: 192.168.10.14
+                                ardana-cp1-vsa0001: 192.168.110.12
+                                ardana-cp1-vsa0002: 192.168.110.13
+                                ardana-cp1-vsa0003: 192.168.110.14
                             service_ips:
                                 vsa:
                                     hosts:
-                                        ardana-cp1-vsa0001: 192.168.10.2
-                                        ardana-cp1-vsa0002: 192.168.10.16
-                                        ardana-cp1-vsa0003: 192.168.10.17
-                                    vip: 192.168.10.15
+                                        ardana-cp1-vsa0001: 192.168.110.2
+                                        ardana-cp1-vsa0002: 192.168.110.16
+                                        ardana-cp1-vsa0003: 192.168.110.17
+                                    vip: 192.168.110.15
     TRUNK:
         TRUNK-NET:
             control_planes: {}

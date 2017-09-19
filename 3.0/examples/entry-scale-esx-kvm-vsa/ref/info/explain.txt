@@ -125,7 +125,7 @@ server: ardana-cp1-c1-m1
   add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
   Using persisted address 10.0.1.2 for server ardana-cp1-c1-m1 on network EXTERNAL-API-NET
-  Using address 192.168.10.3 for server ardana-cp1-c1-m1 on network MANAGEMENT-NET
+  Using address 192.168.110.3 for server ardana-cp1-c1-m1 on network MANAGEMENT-NET
   Using persisted address 10.1.1.1 for server ardana-cp1-c1-m1 on network GUEST-NET
 
 server: ardana-cp1-c1-m2
@@ -217,7 +217,7 @@ server: ardana-cp1-c1-m2
   add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
   Using persisted address 10.0.1.3 for server ardana-cp1-c1-m2 on network EXTERNAL-API-NET
-  Using address 192.168.10.4 for server ardana-cp1-c1-m2 on network MANAGEMENT-NET
+  Using address 192.168.110.4 for server ardana-cp1-c1-m2 on network MANAGEMENT-NET
   Using persisted address 10.1.1.2 for server ardana-cp1-c1-m2 on network GUEST-NET
 
 server: ardana-cp1-c1-m3
@@ -309,7 +309,7 @@ server: ardana-cp1-c1-m3
   add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
   add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
   Using persisted address 10.0.1.4 for server ardana-cp1-c1-m3 on network EXTERNAL-API-NET
-  Using address 192.168.10.5 for server ardana-cp1-c1-m3 on network MANAGEMENT-NET
+  Using address 192.168.110.5 for server ardana-cp1-c1-m3 on network MANAGEMENT-NET
   Using persisted address 10.1.1.3 for server ardana-cp1-c1-m3 on network GUEST-NET
 
 server: ardana-cp1-vsa0001
@@ -322,9 +322,9 @@ server: ardana-cp1-vsa0001
   add MANAGEMENT for lifecycle-manager-target (default)
   add MANAGEMENT for ntp-client (default)
   add MANAGEMENT for stunnel (default)
-  Using address 192.168.10.12 for server ardana-cp1-vsa0001 on network MANAGEMENT-NET
-  Using persisted address 192.168.10.2 for vsa ardana-cp1-vsa0001 on network MANAGEMENT-NET
-  Using persisted address 192.168.10.6 for vsa--cluster ardana-cp1-vsa on network MANAGEMENT-NET
+  Using address 192.168.110.12 for server ardana-cp1-vsa0001 on network MANAGEMENT-NET
+  Using persisted address 192.168.110.2 for vsa ardana-cp1-vsa0001 on network MANAGEMENT-NET
+  Using persisted address 192.168.110.6 for vsa--cluster ardana-cp1-vsa on network MANAGEMENT-NET
 
 server: ardana-cp1-comp0001
 ---------------------------
@@ -339,7 +339,7 @@ server: ardana-cp1-comp0001
   add MANAGEMENT for ntp-client (default)
   add MANAGEMENT for nova-compute-kvm (default)
   add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
-  Using address 192.168.10.11 for server ardana-cp1-comp0001 on network MANAGEMENT-NET
+  Using address 192.168.110.11 for server ardana-cp1-comp0001 on network MANAGEMENT-NET
   Using persisted address 10.1.1.4 for server ardana-cp1-comp0001 on network GUEST-NET
 
 Resolve Network Routes
@@ -380,7 +380,7 @@ Define load balancers
 
 Load balancer: lb
 -----------------
-  Using persisted address 192.168.10.7 for vip lb ardana-cp1-vip-lb-mgmt on network MANAGEMENT-NET
+  Using persisted address 192.168.110.7 for vip lb ardana-cp1-vip-lb-mgmt on network MANAGEMENT-NET
   Add nova-api for roles ['internal', 'admin'] due to 'default'
   Add eon-api for roles ['internal', 'admin'] due to 'default'
   Add keystone-api for roles ['internal'] due to 'default'
@@ -457,28 +457,28 @@ Network EXTERNAL-API-NET
 
 Network MANAGEMENT-NET
 ----------------------
-  192.168.10.7: ip-cluster nova-api roles: ['internal', 'admin'] vip-port: 8774 host-port: 8774
-  192.168.10.7: ip-cluster eon-api roles: ['internal', 'admin'] vip-port: 8282 host-port: 8282
-  192.168.10.7: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
-  192.168.10.7: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
-  192.168.10.7: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
-  192.168.10.7: ip-cluster designate-api roles: ['internal', 'admin'] vip-port: 9001 host-port: 9001
-  192.168.10.7: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
-  192.168.10.7: ip-cluster heat-api-cfn roles: ['internal', 'admin'] vip-port: 8000 host-port: 8000
-  192.168.10.7: ip-cluster neutron-server roles: ['internal', 'admin'] vip-port: 9696 host-port: 9696
-  192.168.10.7: ip-cluster cinder-api roles: ['internal', 'admin'] vip-port: 8776 host-port: 8776
-  192.168.10.7: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
-  192.168.10.7: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601
-  192.168.10.7: ip-cluster ardana-ux-services roles: ['internal', 'admin'] vip-port: 9085 host-port: 9085
-  192.168.10.7: ip-cluster ops-console-web roles: ['internal', 'admin'] vip-port: 9095 host-port: 9095
-  192.168.10.7: ip-cluster nova-metadata roles: ['internal'] vip-port: 8775 host-port: 8775
-  192.168.10.7: ip-cluster heat-api-cloudwatch roles: ['internal', 'admin'] vip-port: 8003 host-port: 8003
-  192.168.10.7: ip-cluster glance-api roles: ['internal', 'admin'] vip-port: 9292 host-port: 9292
-  192.168.10.7: ip-cluster horizon roles: ['internal', 'admin'] vip-port: 443 host-port: 80
-  192.168.10.7: ip-cluster monasca-api roles: ['internal', 'admin'] vip-port: 8070 host-port: 8070
-  192.168.10.7: ip-cluster heat-api roles: ['internal', 'admin'] vip-port: 8004 host-port: 8004
-  192.168.10.7: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
-  192.168.10.7: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
-  192.168.10.7: ip-cluster barbican-api roles: ['internal', 'admin'] vip-port: 9311 host-port: 9311
-  192.168.10.7: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
-  192.168.10.7: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090
+  192.168.110.7: ip-cluster nova-api roles: ['internal', 'admin'] vip-port: 8774 host-port: 8774
+  192.168.110.7: ip-cluster eon-api roles: ['internal', 'admin'] vip-port: 8282 host-port: 8282
+  192.168.110.7: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  192.168.110.7: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  192.168.110.7: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
+  192.168.110.7: ip-cluster designate-api roles: ['internal', 'admin'] vip-port: 9001 host-port: 9001
+  192.168.110.7: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  192.168.110.7: ip-cluster heat-api-cfn roles: ['internal', 'admin'] vip-port: 8000 host-port: 8000
+  192.168.110.7: ip-cluster neutron-server roles: ['internal', 'admin'] vip-port: 9696 host-port: 9696
+  192.168.110.7: ip-cluster cinder-api roles: ['internal', 'admin'] vip-port: 8776 host-port: 8776
+  192.168.110.7: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
+  192.168.110.7: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601
+  192.168.110.7: ip-cluster ardana-ux-services roles: ['internal', 'admin'] vip-port: 9085 host-port: 9085
+  192.168.110.7: ip-cluster ops-console-web roles: ['internal', 'admin'] vip-port: 9095 host-port: 9095
+  192.168.110.7: ip-cluster nova-metadata roles: ['internal'] vip-port: 8775 host-port: 8775
+  192.168.110.7: ip-cluster heat-api-cloudwatch roles: ['internal', 'admin'] vip-port: 8003 host-port: 8003
+  192.168.110.7: ip-cluster glance-api roles: ['internal', 'admin'] vip-port: 9292 host-port: 9292
+  192.168.110.7: ip-cluster horizon roles: ['internal', 'admin'] vip-port: 443 host-port: 80
+  192.168.110.7: ip-cluster monasca-api roles: ['internal', 'admin'] vip-port: 8070 host-port: 8070
+  192.168.110.7: ip-cluster heat-api roles: ['internal', 'admin'] vip-port: 8004 host-port: 8004
+  192.168.110.7: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
+  192.168.110.7: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
+  192.168.110.7: ip-cluster barbican-api roles: ['internal', 'admin'] vip-port: 9311 host-port: 9311
+  192.168.110.7: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
+  192.168.110.7: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090

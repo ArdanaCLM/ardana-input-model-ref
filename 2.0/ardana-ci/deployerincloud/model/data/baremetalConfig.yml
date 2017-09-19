@@ -18,7 +18,7 @@
   product:
     version: 2
   baremetal_network:
-    subnet: "192.168.10.0"
+    subnet: "192.168.110.0"
     netmask: "255.255.255.0"
     server_interface: "eth2"
   baremetal_servers:
@@ -27,8 +27,8 @@
       role: "ROLE-CONTROLLER"
       pxe_mac_addr: "b2:72:8d:ac:7c:6f"
       pxe_interface: "eth2"
-      pxe_ip_addr: "192.168.10.3"
-      ilo_ip: "192.168.9.3"
+      pxe_ip_addr: "192.168.110.3"
+      ilo_ip: "192.168.109.3"
       ilo_user: "admin"
       ilo_password: "password"
       is_deployer: true
@@ -37,8 +37,8 @@
       role: "ROLE-COMPUTE"
       pxe_mac_addr: "d6:70:c1:36:43:f7"
       pxe_interface: "eth2"
-      pxe_ip_addr: "192.168.10.4"
-      ilo_ip: "192.168.9.4"
+      pxe_ip_addr: "192.168.110.4"
+      ilo_ip: "192.168.109.4"
       ilo_user: "admin"
       ilo_password: "password"
     -
@@ -46,7 +46,7 @@
       role: "ROLE-COMPUTE"
       pxe_mac_addr: "8e:8e:62:a6:ce:76"
       pxe_interface: "eth2"
-      pxe_ip_addr: "192.168.10.5"
-      ilo_ip: "192.168.9.5"
+      pxe_ip_addr: "192.168.110.5"
+      ilo_ip: "192.168.109.5"
       ilo_user: "admin"
       ilo_password: "password"
