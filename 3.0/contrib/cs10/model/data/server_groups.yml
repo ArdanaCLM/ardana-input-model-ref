@@ -1,0 +1,50 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+---
+  product:
+    version: 2
+
+  server-groups:
+
+    #
+    # At the top of the tree we have a
+    # group for any global networks
+    #
+    - name: CLOUD
+      server-groups:
+        - AZ1
+        - AZ2
+        - AZ3
+      networks:
+        - VxLAN-R1
+        - CONF-R1
+        - CAN-R1
+        - iSCSI-R1
+        - DCM-R1
+        - CLM-R1
+
+    #
+    # Create a group for each failure zone
+    #
+    - name: AZ1
+      server-groups:
+        - RACK1
+
+    - name: AZ2
+      server-groups:
+        - RACK2
+
+    - name: AZ3
+      server-groups:
+        - RACK3
+
+    #
+    # Create a group for each rack zone
+    #
+    - name: RACK1
+
+    - name: RACK2
+
+    - name: RACK3

@@ -1,0 +1,442 @@
+compute1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-comp0001-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3367
+            GUEST-NET-RACK1:
+                addr: 10.243.127.3
+                tagged-vlan: true
+                vlan-id: 3368
+            ISCSI-NET:
+                addr: 10.243.133.11
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.9
+                tagged-vlan: false
+                vlan-id: 3371
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.16
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+compute2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-comp0002-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3367
+            GUEST-NET-RACK2:
+                addr: 10.243.128.3
+                tagged-vlan: true
+                vlan-id: 3369
+            ISCSI-NET:
+                addr: 10.243.133.12
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.9
+                tagged-vlan: false
+                vlan-id: 3372
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.24
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+compute3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-comp0003-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3367
+            GUEST-NET-RACK3:
+                addr: 10.243.129.2
+                tagged-vlan: true
+                vlan-id: 3370
+            ISCSI-NET:
+                addr: 10.243.133.13
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK3:
+                addr: 10.243.132.7
+                tagged-vlan: false
+                vlan-id: 3373
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.30
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+core1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-core-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.243.125.2
+                tagged-vlan: true
+                vlan-id: 3365
+            INTERNAL-API-NET:
+                addr: 10.243.126.2
+                tagged-vlan: true
+                vlan-id: 3366
+            ISCSI-NET:
+                addr: 10.243.133.2
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.2
+                tagged-vlan: false
+                vlan-id: 3371
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.10
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+core2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-core-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.243.125.3
+                tagged-vlan: true
+                vlan-id: 3365
+            INTERNAL-API-NET:
+                addr: 10.243.126.3
+                tagged-vlan: true
+                vlan-id: 3366
+            ISCSI-NET:
+                addr: 10.243.133.3
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.2
+                tagged-vlan: false
+                vlan-id: 3372
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.18
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+dbmq1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-dbmq-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.4
+                tagged-vlan: false
+                vlan-id: 3371
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.12
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+dbmq2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-dbmq-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.4
+                tagged-vlan: false
+                vlan-id: 3372
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.20
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+dbmq3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-dbmq-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK3:
+                addr: 10.243.132.3
+                tagged-vlan: false
+                vlan-id: 3373
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.27
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+mtrmon1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-mtrmon-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.3
+                tagged-vlan: false
+                vlan-id: 3371
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.11
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+mtrmon2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-mtrmon-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.3
+                tagged-vlan: false
+                vlan-id: 3372
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.19
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+mtrmon3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-mtrmon-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK3:
+                addr: 10.243.132.2
+                tagged-vlan: false
+                vlan-id: 3373
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.26
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+neut1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-neut-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3367
+            GUEST-NET-RACK1:
+                addr: 10.243.127.2
+                tagged-vlan: true
+                vlan-id: 3368
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.6
+                tagged-vlan: false
+                vlan-id: 3371
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.14
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+neut2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-neut-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3367
+            GUEST-NET-RACK2:
+                addr: 10.243.128.2
+                tagged-vlan: true
+                vlan-id: 3369
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.6
+                tagged-vlan: false
+                vlan-id: 3372
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.22
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+swobj1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-swobj0001-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.7
+                tagged-vlan: false
+                vlan-id: 3371
+            SWIFT-NET-RACK1:
+                addr: 10.243.136.3
+                tagged-vlan: true
+                vlan-id: 3377
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.15
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+swobj2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-swobj0002-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.7
+                tagged-vlan: false
+                vlan-id: 3372
+            SWIFT-NET-RACK2:
+                addr: 10.243.137.3
+                tagged-vlan: true
+                vlan-id: 3378
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.23
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+swobj3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-swobj0003-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK3:
+                addr: 10.243.132.5
+                tagged-vlan: false
+                vlan-id: 3373
+            SWIFT-NET-RACK3:
+                addr: 10.243.138.3
+                tagged-vlan: true
+                vlan-id: 3379
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.29
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+swpac1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-swpac-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.5
+                tagged-vlan: false
+                vlan-id: 3371
+            SWIFT-NET-RACK1:
+                addr: 10.243.136.2
+                tagged-vlan: true
+                vlan-id: 3377
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.13
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+swpac2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-swpac-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.5
+                tagged-vlan: false
+                vlan-id: 3372
+            SWIFT-NET-RACK2:
+                addr: 10.243.137.2
+                tagged-vlan: true
+                vlan-id: 3378
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.21
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+swpac3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-swpac-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET-RACK3:
+                addr: 10.243.132.4
+                tagged-vlan: false
+                vlan-id: 3373
+            SWIFT-NET-RACK3:
+                addr: 10.243.138.2
+                tagged-vlan: true
+                vlan-id: 3379
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.28
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-vsa0001-mgmt
+    net_data:
+        BOND0:
+            ISCSI-NET:
+                addr: 10.243.133.4
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK1:
+                addr: 10.243.130.8
+                tagged-vlan: false
+                vlan-id: 3371
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.17
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+vsa2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-vsa0002-mgmt
+    net_data:
+        BOND0:
+            ISCSI-NET:
+                addr: 10.243.133.7
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK2:
+                addr: 10.243.131.8
+                tagged-vlan: false
+                vlan-id: 3372
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.25
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated
+vsa3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-vsa0003-mgmt
+    net_data:
+        BOND0:
+            ISCSI-NET:
+                addr: 10.243.133.9
+                tagged-vlan: true
+                vlan-id: 3374
+            MANAGEMENT-NET-RACK3:
+                addr: 10.243.132.6
+                tagged-vlan: false
+                vlan-id: 3373
+        hed3:
+            CONF-NET:
+                addr: 10.243.140.31
+                tagged-vlan: false
+                vlan-id: 3380
+    state: allocated

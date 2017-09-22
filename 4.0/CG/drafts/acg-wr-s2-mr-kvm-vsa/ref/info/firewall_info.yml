@@ -1,0 +1,655 @@
+BLS:
+-   addresses:
+    - 10.244.47.17
+    - 10.244.47.16
+    - 10.244.47.15
+    - 10.244.47.14
+    - 10.244.47.13
+    - 10.244.47.12
+    components:
+    - user-PING
+    port: '8:0'
+    protocol: icmp
+-   addresses:
+    - 10.244.47.13
+    - 10.244.47.12
+    components:
+    - swift-rsync
+    port: '873'
+    protocol: tcp
+-   addresses:
+    - 10.244.47.13
+    - 10.244.47.12
+    components:
+    - swift-object
+    port: '6000'
+    protocol: tcp
+-   addresses:
+    - 10.244.47.13
+    - 10.244.47.12
+    components:
+    - swift-container
+    port: '6001'
+    protocol: tcp
+-   addresses:
+    - 10.244.47.13
+    - 10.244.47.12
+    components:
+    - swift-account
+    port: '6002'
+    protocol: tcp
+-   addresses:
+    - 10.244.47.19
+    - 10.244.47.18
+    components:
+    - vsa
+    port: '8081'
+    protocol: tcp
+-   addresses:
+    - 10.244.47.19
+    - 10.244.47.18
+    components:
+    - vsa
+    port: '16022'
+    protocol: tcp
+CAN:
+-   addresses:
+    - 10.244.45.15
+    - 10.244.45.14
+    - 10.244.45.13
+    - 10.244.45.12
+    components:
+    - user-PING
+    port: '8:0'
+    protocol: icmp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - user-SSH
+    port: '22'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - keystone-api
+    port: '5000'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - logging-api
+    port: '5607'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - monasca-api
+    port: '8070'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - swift-proxy
+    port: '8080'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - cinder-api
+    port: '8776'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - ceilometer-api
+    port: '8777'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - ardana-ux-services
+    port: '9085'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - freezer-api
+    port: '9090'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - ops-console-web
+    port: '9095'
+    protocol: tcp
+-   addresses:
+    - 10.244.45.15
+    components:
+    - glance-api
+    port: '9292'
+    protocol: tcp
+CLM:
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.23
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    - 10.244.44.21
+    - 10.244.44.13
+    - 10.244.44.12
+    - 10.244.44.20
+    components:
+    - monasca-agent
+    - user-PING
+    port: '8:0'
+    protocol: icmp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.23
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    - 10.244.44.21
+    - 10.244.44.13
+    - 10.244.44.12
+    - 10.244.44.20
+    components:
+    - vertica
+    - user-SSH
+    port: '22'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.13
+    - 10.244.44.12
+    components:
+    - ntp-server
+    port: '123'
+    protocol: udp
+-   addresses:
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - ip-cluster
+    port: '1993'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - zookeeper
+    port: '2181'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - zookeeper
+    port: '2888'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - cinder-volume
+    port: '3260'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - mysql
+    port: '3306'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - zookeeper
+    port: '3888'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - rabbitmq
+    port: '4369'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - mysql
+    port: '4444'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - mysql
+    port: '4567'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - mysql
+    port: '4568'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - vertica
+    port: 4803:4804
+    protocol: udp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - vertica
+    port: '4803'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - keystone-api
+    port: '5000'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - vertica
+    port: '5433'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - vertica
+    port: '5434'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.24
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - logging-server
+    port: '5601'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.24
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - logging-api
+    port: '5607'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - rabbitmq
+    port: '5671'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - rabbitmq
+    port: '5672'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - cmc-service
+    port: 5900:5905
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - storm
+    port: '6627'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - monasca-threshold
+    port: 6701:6704
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.24
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - monasca-api
+    port: '8070'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.13
+    - 10.244.44.12
+    components:
+    - swift-proxy
+    port: '8080'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - monasca-api
+    port: '8081'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - monasca-persister
+    port: '8090'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - monasca-persister
+    port: '8091'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.23
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    - 10.244.44.21
+    - 10.244.44.13
+    - 10.244.44.12
+    - 10.244.44.20
+    components:
+    - monasca-agent
+    port: '8125'
+    protocol: udp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - cinder-api
+    port: '8776'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.24
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - ceilometer-api
+    port: '8777'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.13
+    - 10.244.44.12
+    components:
+    - ardana-ux-services
+    port: '9085'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.24
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - freezer-api
+    port: '9090'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - kafka
+    port: '9092'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - ops-console-web
+    port: '9095'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - glance-registry
+    port: '9191'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - logging-server
+    port: '9200'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - glance-api
+    port: '9292'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.21
+    - 10.244.44.20
+    components:
+    - logging-server
+    port: '9300'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - mysql
+    port: '9500'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - memcached
+    port: '11211'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - cmc-service
+    port: 13990:13999
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    components:
+    - vertica
+    port: '15433'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - rabbitmq
+    port: '15672'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.22
+    - 10.244.44.23
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    - 10.244.44.21
+    - 10.244.44.13
+    - 10.244.44.12
+    - 10.244.44.20
+    components:
+    - monasca-agent
+    port: '17123'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.24
+    - 10.244.44.16
+    - 10.244.44.15
+    - 10.244.44.14
+    components:
+    - keystone-api
+    port: '35357'
+    protocol: tcp
+-   addresses:
+    - 10.244.44.17
+    - 10.244.44.19
+    - 10.244.44.18
+    components:
+    - rabbitmq
+    port: '61000'
+    protocol: tcp
+PXE:
+-   addresses:
+    - 10.244.43.113
+    - 10.244.43.117
+    - 10.244.43.107
+    - 10.244.43.106
+    - 10.244.43.105
+    - 10.244.43.108
+    - 10.244.43.110
+    - 10.244.43.109
+    - 10.244.43.112
+    - 10.244.43.103
+    - 10.244.43.102
+    - 10.244.43.111
+    components:
+    - user-PING
+    port: '8:0'
+    protocol: icmp
+-   addresses:
+    - 10.244.43.113
+    - 10.244.43.117
+    - 10.244.43.107
+    - 10.244.43.106
+    - 10.244.43.105
+    - 10.244.43.108
+    - 10.244.43.110
+    - 10.244.43.109
+    - 10.244.43.112
+    - 10.244.43.103
+    - 10.244.43.102
+    - 10.244.43.111
+    components:
+    - ssh
+    - lifecycle-manager-target
+    - user-SSH
+    - lifecycle-manager
+    port: '22'
+    protocol: tcp
+-   addresses:
+    - 10.244.43.103
+    - 10.244.43.102
+    components:
+    - lifecycle-manager
+    port: '67'
+    protocol: udp
+-   addresses:
+    - 10.244.43.103
+    - 10.244.43.102
+    components:
+    - lifecycle-manager
+    port: '68'
+    protocol: udp
+-   addresses:
+    - 10.244.43.103
+    - 10.244.43.102
+    components:
+    - lifecycle-manager
+    port: '69'
+    protocol: udp
+-   addresses:
+    - 10.244.43.103
+    - 10.244.43.102
+    components:
+    - lifecycle-manager
+    port: '79'
+    protocol: tcp
+-   addresses:
+    - 10.244.43.113
+    - 10.244.43.117
+    - 10.244.43.107
+    - 10.244.43.106
+    - 10.244.43.105
+    - 10.244.43.108
+    - 10.244.43.110
+    - 10.244.43.109
+    - 10.244.43.112
+    - 10.244.43.103
+    - 10.244.43.102
+    - 10.244.43.111
+    components:
+    - lifecycle-manager-target
+    port: '5099'
+    protocol: tcp

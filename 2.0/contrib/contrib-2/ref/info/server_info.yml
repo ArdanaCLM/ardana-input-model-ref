@@ -1,0 +1,153 @@
+compute1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-comp0001-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.16
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            EXTERNAL-NET:
+                addr: 16.92.4.57
+                tagged-vlan: true
+                vlan-id: 303
+            GUEST-NET:
+                addr: 10.1.5.5
+                tagged-vlan: true
+                vlan-id: 305
+            MANAGEMENT-NET:
+                addr: 10.1.2.8
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated
+compute2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-comp0002-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.17
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            EXTERNAL-NET:
+                addr: 16.92.4.58
+                tagged-vlan: true
+                vlan-id: 303
+            GUEST-NET:
+                addr: 10.1.5.6
+                tagged-vlan: true
+                vlan-id: 305
+            MANAGEMENT-NET:
+                addr: 10.1.2.9
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated
+compute3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-comp0003-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.18
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            EXTERNAL-NET:
+                addr: 16.92.4.59
+                tagged-vlan: true
+                vlan-id: 303
+            GUEST-NET:
+                addr: 10.1.5.7
+                tagged-vlan: true
+                vlan-id: 305
+            MANAGEMENT-NET:
+                addr: 10.1.2.10
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated
+controller1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-c1-m1-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.12
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            EXTERNAL-NET:
+                addr: 16.92.4.54
+                tagged-vlan: true
+                vlan-id: 303
+            GUEST-NET:
+                addr: 10.1.5.2
+                tagged-vlan: true
+                vlan-id: 305
+            MANAGEMENT-NET:
+                addr: 10.1.2.2
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated
+controller2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-c1-m2-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.13
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            EXTERNAL-NET:
+                addr: 16.92.4.55
+                tagged-vlan: true
+                vlan-id: 303
+            GUEST-NET:
+                addr: 10.1.5.3
+                tagged-vlan: true
+                vlan-id: 305
+            MANAGEMENT-NET:
+                addr: 10.1.2.3
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated
+controller3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-c1-m3-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.14
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            EXTERNAL-NET:
+                addr: 16.92.4.56
+                tagged-vlan: true
+                vlan-id: 303
+            GUEST-NET:
+                addr: 10.1.5.4
+                tagged-vlan: true
+                vlan-id: 305
+            MANAGEMENT-NET:
+                addr: 10.1.2.4
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-vsa0001-mgmt
+    net_data:
+        HED0:
+            PXE-NET:
+                addr: 10.1.1.15
+                tagged-vlan: false
+                vlan-id: 301
+        HED3:
+            MANAGEMENT-NET:
+                addr: 10.1.2.5
+                tagged-vlan: false
+                vlan-id: 302
+    state: allocated

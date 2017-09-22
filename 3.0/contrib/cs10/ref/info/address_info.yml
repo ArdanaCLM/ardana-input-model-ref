@@ -1,0 +1,126 @@
+CAN:
+    CAN-R1:
+        10.200.192.221:
+        - cs-ccp-mgmt-m1-CAN
+        10.200.192.222:
+        - cs-ccp-nn-m1-CAN
+        10.200.192.223:
+        - cs-ccp-nn-m2-CAN
+        10.200.192.224:
+        - cs-ccp-vip-public-CEI-API-CAN
+        - cs-ccp-vip-public-CND-API-CAN
+        - cs-ccp-vip-public-DES-API-CAN
+        - cs-ccp-vip-public-EON-API-CAN
+        - cs-ccp-vip-public-FRE-API-CAN
+        - cs-ccp-vip-public-GLA-API-CAN
+        - cs-ccp-vip-public-HEA-ACF-CAN
+        - cs-ccp-vip-public-HEA-ACW-CAN
+        - cs-ccp-vip-public-HEA-API-CAN
+        - cs-ccp-vip-public-HUX-SVC-CAN
+        - cs-ccp-vip-public-HZN-WEB-CAN
+        - cs-ccp-vip-public-KEY-API-CAN
+        - cs-ccp-vip-public-KEYMGR-API-CAN
+        - cs-ccp-vip-public-MON-API-CAN
+        - cs-ccp-vip-public-NEU-SVR-CAN
+        - cs-ccp-vip-public-NOV-API-CAN
+        - cs-ccp-vip-public-NOV-VNC-CAN
+        - cs-ccp-vip-public-OPS-WEB-CAN
+        - cs-ccp-vip-public-SWF-PRX-CAN
+CLM:
+    CLM-R1:
+        25.25.0.1:
+        - cs-ccp-c0-m1-clm
+        25.25.0.2:
+        - cs-ccp-mgmt-m1-clm
+        25.25.0.3:
+        - cs-ccp-mon-m1-clm
+        25.25.0.4:
+        - cs-ccp-db-m1-clm
+        25.25.0.5:
+        - cs-ccp-cc-m1-clm
+        25.25.0.6:
+        - cs-ccp-nn-m1-clm
+        25.25.0.7:
+        - cs-ccp-nn-m2-clm
+        25.25.0.8:
+        - cs-ccp-vip-CEI-API-clm
+        - cs-ccp-vip-CND-API-clm
+        - cs-ccp-vip-DES-API-clm
+        - cs-ccp-vip-EON-API-clm
+        - cs-ccp-vip-FND-MDB-clm
+        - cs-ccp-vip-FND-RMQ-clm
+        - cs-ccp-vip-FND-VDB-clm
+        - cs-ccp-vip-FRE-API-clm
+        - cs-ccp-vip-GLA-API-clm
+        - cs-ccp-vip-GLA-REG-clm
+        - cs-ccp-vip-HEA-ACF-clm
+        - cs-ccp-vip-HEA-ACW-clm
+        - cs-ccp-vip-HEA-API-clm
+        - cs-ccp-vip-HUX-SVC-clm
+        - cs-ccp-vip-HZN-WEB-clm
+        - cs-ccp-vip-KEY-API-clm
+        - cs-ccp-vip-KEYMGR-API-clm
+        - cs-ccp-vip-LOG-SVR-clm
+        - cs-ccp-vip-MON-API-clm
+        - cs-ccp-vip-NEU-SVR-clm
+        - cs-ccp-vip-NOV-API-clm
+        - cs-ccp-vip-NOV-MTD-clm
+        - cs-ccp-vip-OPS-WEB-clm
+        - cs-ccp-vip-SWF-PRX-clm
+CONF:
+    CONF-R1:
+        10.254.5.30:
+        - cs-ccp-c0-m1-conf
+        10.254.5.31:
+        - cs-ccp-mgmt-m1-conf
+        10.254.5.32:
+        - cs-ccp-mon-m1-conf
+        10.254.5.33:
+        - cs-ccp-db-m1-conf
+        10.254.5.34:
+        - cs-ccp-cc-m1-conf
+        10.254.5.35:
+        - cs-ccp-nn-m1-conf
+        10.254.5.36:
+        - cs-ccp-nn-m2-conf
+DCM:
+    DCM-R1:
+        192.168.219.36:
+        - cs-ccp-c0-m1-dcm
+        192.168.219.37:
+        - cs-ccp-mgmt-m1-dcm
+        192.168.219.38:
+        - cs-ccp-cc-m1-dcm
+        192.168.219.39:
+        - cs-ccp-nn-m1-dcm
+        192.168.219.40:
+        - cs-ccp-nn-m2-dcm
+        192.168.219.41:
+        - cs-ccp-vip-admin-CEI-API-dcm
+        - cs-ccp-vip-admin-CND-API-dcm
+        - cs-ccp-vip-admin-DES-API-dcm
+        - cs-ccp-vip-admin-EON-API-dcm
+        - cs-ccp-vip-admin-FND-MDB-dcm
+        - cs-ccp-vip-admin-FRE-API-dcm
+        - cs-ccp-vip-admin-GLA-API-dcm
+        - cs-ccp-vip-admin-HEA-ACF-dcm
+        - cs-ccp-vip-admin-HEA-ACW-dcm
+        - cs-ccp-vip-admin-HEA-API-dcm
+        - cs-ccp-vip-admin-HUX-SVC-dcm
+        - cs-ccp-vip-admin-HZN-WEB-dcm
+        - cs-ccp-vip-admin-KEY-API-dcm
+        - cs-ccp-vip-admin-KEYMGR-API-dcm
+        - cs-ccp-vip-admin-MON-API-dcm
+        - cs-ccp-vip-admin-NEU-SVR-dcm
+        - cs-ccp-vip-admin-NOV-API-dcm
+        - cs-ccp-vip-admin-OPS-WEB-dcm
+        - cs-ccp-vip-admin-SWF-PRX-dcm
+TRUNK: {}
+VxLAN:
+    VxLAN-R1:
+        25.0.2.1:
+        - cs-ccp-nn-m1-VxLAN
+        25.0.2.2:
+        - cs-ccp-nn-m2-VxLAN
+iSCSI:
+    iSCSI-R1: {}

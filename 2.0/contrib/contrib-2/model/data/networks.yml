@@ -1,0 +1,73 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  networks:
+    #
+    # This example uses the following networks
+    #
+    # Network       CIDR             VLAN
+    # -------       ----             ----
+    # External     16.92.4.0/22      303 (tagged, API + ext VM)
+    # Guest        10.1.1.5/24       305 (tagged)
+    # Management   10.1.2.0/24       302 (untagged)
+    # Service      10.1.6.0/24       306 (tagged, neutron defined)
+    #
+    # Notes:
+    # 1. Defined as part of Neutron configuration
+    #
+    # Modify these values to match your environment
+    #
+    - name: EXTERNAL-NET
+      vlanid: 303
+      tagged-vlan: true
+      cidr: 16.92.4.0/22
+      gateway-ip: 16.92.4.1
+      start-address: 16.92.4.54
+      end-address: 16.92.4.64
+      network-group: EXTERNAL
+
+    - name: GUEST-NET
+      vlanid: 305
+      tagged-vlan: true
+      cidr: 10.1.5.0/24
+      gateway-ip: 10.1.5.1
+      network-group: GUEST
+
+    - name: MANAGEMENT-NET
+      vlanid: 302
+      tagged-vlan: false
+      cidr: 10.1.2.0/24
+      gateway-ip: 10.1.2.1
+      network-group: MANAGEMENT
+
+    - name: PXE-NET
+      vlanid: 301
+      tagged-vlan: false
+      cidr: 10.1.1.0/24
+      gateway-ip: 10.1.1.1
+      network-group: PXE
+
+    - name: SERVICE-NET
+      vlanid: 306
+      tagged-vlan: true
+      cidr: 10.1.6.0/24
+      gateway-ip: 10.1.6.1
+      network-group: SERVICE
+

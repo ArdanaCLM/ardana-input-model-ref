@@ -1,0 +1,271 @@
+cp1:
+    barbican:
+        barbican-api:
+        - hcg-cp1-controller-m1-clm
+        barbican-worker:
+        - hcg-cp1-controller-m1-clm
+    ceilometer:
+        ceilometer-agent-notification:
+        - hcg-cp1-mml-m1-clm
+        ceilometer-api:
+        - hcg-cp1-mml-m1-clm
+        ceilometer-common:
+        - hcg-cp1-mml-m1-clm
+        ceilometer-polling:
+        - hcg-cp1-mml-m1-clm
+    cinder:
+        cinder-api:
+        - hcg-cp1-controller-m1-clm
+        cinder-backup:
+        - hcg-cp1-controller-m1-clm
+        cinder-scheduler:
+        - hcg-cp1-controller-m1-clm
+        cinder-volume:
+        - hcg-cp1-controller-m1-clm
+    clients:
+        barbican-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        ceilometer-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        cinder-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        designate-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        eon-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        glance-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        heat-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        keystone-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-mml-m1-clm
+        monasca-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-mml-m1-clm
+        neutron-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        nova-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-mml-m1-clm
+        openstack-client:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        swift-client:
+        - hcg-cp1-alm-hyp-m1-clm
+    designate:
+        designate-api:
+        - hcg-cp1-controller-m1-clm
+        designate-central:
+        - hcg-cp1-controller-m1-clm
+        designate-mdns:
+        - hcg-cp1-controller-m1-clm
+        designate-pool-manager:
+        - hcg-cp1-controller-m1-clm
+        designate-zone-manager:
+        - hcg-cp1-controller-m1-clm
+    eon:
+        eon-api:
+        - hcg-cp1-controller-m1-clm
+        eon-conductor:
+        - hcg-cp1-controller-m1-clm
+    foundation:
+        apache2:
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-mml-m1-clm
+        ardana-ca:
+        - hcg-cp1-alm-hyp-m1-clm
+        ip-cluster:
+        - hcg-cp1-controller-m1-clm
+        kafka:
+        - hcg-cp1-mml-m1-clm
+        memcached:
+        - hcg-cp1-controller-m1-clm
+        mysql:
+        - hcg-cp1-rmq-mysql-m1-clm
+        ntp-client:
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        ntp-server:
+        - hcg-cp1-alm-hyp-m1-clm
+        openvswitch:
+        - hcg-cp1-comp0001-clm
+        powerdns:
+        - hcg-cp1-controller-m1-clm
+        powerdns-ext:
+        - hcg-cp1-controller-m1-clm
+        rabbitmq:
+        - hcg-cp1-rmq-mysql-m1-clm
+        storm:
+        - hcg-cp1-mml-m1-clm
+        stunnel:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        vertica:
+        - hcg-cp1-mml-m1-clm
+        zookeeper:
+        - hcg-cp1-mml-m1-clm
+    freezer:
+        freezer-agent:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        freezer-api:
+        - hcg-cp1-mml-m1-clm
+    glance:
+        glance-api:
+        - hcg-cp1-controller-m1-clm
+        glance-registry:
+        - hcg-cp1-controller-m1-clm
+    heat:
+        heat-api:
+        - hcg-cp1-controller-m1-clm
+        heat-api-cfn:
+        - hcg-cp1-controller-m1-clm
+        heat-api-cloudwatch:
+        - hcg-cp1-controller-m1-clm
+        heat-engine:
+        - hcg-cp1-controller-m1-clm
+    ardana:
+        ardana-ux-services:
+        - hcg-cp1-alm-hyp-m1-clm
+        lifecycle-manager:
+        - hcg-cp1-alm-hyp-m1-clm
+        lifecycle-manager-target:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+    horizon:
+        horizon:
+        - hcg-cp1-controller-m1-clm
+    keystone:
+        keystone-api:
+        - hcg-cp1-controller-m1-clm
+    logging:
+        logging-api:
+        - hcg-cp1-mml-m1-clm
+        logging-producer:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        logging-rotate:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        logging-server:
+        - hcg-cp1-mml-m1-clm
+    monasca:
+        monasca-agent:
+        - hcg-cp1-alm-hyp-m1-clm
+        - hcg-cp1-controller-m1-clm
+        - hcg-cp1-rmq-mysql-m1-clm
+        - hcg-cp1-mml-m1-clm
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        monasca-api:
+        - hcg-cp1-mml-m1-clm
+        monasca-liveness-check:
+        - hcg-cp1-mml-m1-clm
+        monasca-notifier:
+        - hcg-cp1-mml-m1-clm
+        monasca-persister:
+        - hcg-cp1-mml-m1-clm
+        monasca-threshold:
+        - hcg-cp1-mml-m1-clm
+    neutron:
+        neutron-dhcp-agent:
+        - hcg-cp1-network-m1-clm
+        neutron-l3-agent:
+        - hcg-cp1-comp0001-clm
+        neutron-lbaasv2-agent:
+        - hcg-cp1-comp0001-clm
+        neutron-metadata-agent:
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        neutron-ml2-plugin:
+        - hcg-cp1-controller-m1-clm
+        neutron-openvswitch-agent:
+        - hcg-cp1-network-m1-clm
+        - hcg-cp1-comp0001-clm
+        neutron-server:
+        - hcg-cp1-controller-m1-clm
+        neutron-sriov-nic-agent:
+        - hcg-cp1-comp0001-clm
+        neutron-vpn-agent:
+        - hcg-cp1-network-m1-clm
+    nova:
+        nova-api:
+        - hcg-cp1-controller-m1-clm
+        nova-compute:
+        - hcg-cp1-comp0001-clm
+        nova-compute-kvm:
+        - hcg-cp1-comp0001-clm
+        nova-conductor:
+        - hcg-cp1-controller-m1-clm
+        nova-console-auth:
+        - hcg-cp1-controller-m1-clm
+        nova-metadata:
+        - hcg-cp1-controller-m1-clm
+        nova-novncproxy:
+        - hcg-cp1-controller-m1-clm
+        nova-scheduler:
+        - hcg-cp1-controller-m1-clm
+    octavia:
+        octavia-api:
+        - hcg-cp1-controller-m1-clm
+        octavia-health-manager:
+        - hcg-cp1-controller-m1-clm
+    operations:
+        ops-console-monitor:
+        - hcg-cp1-controller-m1-clm
+        ops-console-web:
+        - hcg-cp1-controller-m1-clm
+    swift:
+        swift-account:
+        - hcg-cp1-alm-hyp-m1-clm
+        swift-common:
+        - hcg-cp1-alm-hyp-m1-clm
+        swift-container:
+        - hcg-cp1-alm-hyp-m1-clm
+        swift-object:
+        - hcg-cp1-alm-hyp-m1-clm
+        swift-proxy:
+        - hcg-cp1-alm-hyp-m1-clm
+        swift-ring-builder:
+        - hcg-cp1-alm-hyp-m1-clm
+        swift-rsync:
+        - hcg-cp1-alm-hyp-m1-clm
+    tempest:
+        tempest:
+        - hcg-cp1-alm-hyp-m1-clm
+    vsa-storage:
+        cmc-service:
+        - hcg-cp1-controller-m1-clm
+        vsa:
+        - hcg-cp1-alm-hyp-m1-clm

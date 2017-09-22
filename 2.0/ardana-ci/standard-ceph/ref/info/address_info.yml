@@ -1,0 +1,87 @@
+EXTERNAL-VM:
+    EXTERNAL-VM-NET: {}
+ARDANA:
+    ARDANA-NET:
+        192.168.10.254:
+        - standard-ceph-ccp-c0-m1-alm
+        192.168.10.3:
+        - standard-ceph-ccp-c1-m1-alm
+        192.168.10.4:
+        - standard-ceph-ccp-c1-m2-alm
+        192.168.10.5:
+        - standard-ceph-ccp-c1-m3-alm
+        192.168.10.6:
+        - standard-ceph-ccp-comp0001-alm
+        192.168.10.7:
+        - standard-ceph-ccp-ceph0001-alm
+        192.168.10.8:
+        - standard-ceph-ccp-ceph0002-alm
+        192.168.10.9:
+        - standard-ceph-ccp-ceph0003-alm
+MANAGEMENT:
+    MANAGEMENT-NET:
+        192.168.245.10:
+        - standard-ceph-ccp-vip-CEI-API-mgmt
+        - standard-ceph-ccp-vip-CND-API-mgmt
+        - standard-ceph-ccp-vip-FND-MDB-mgmt
+        - standard-ceph-ccp-vip-FND-RMQ-mgmt
+        - standard-ceph-ccp-vip-FND-VDB-mgmt
+        - standard-ceph-ccp-vip-FRE-API-mgmt
+        - standard-ceph-ccp-vip-GLA-API-mgmt
+        - standard-ceph-ccp-vip-GLA-REG-mgmt
+        - standard-ceph-ccp-vip-HEA-ACF-mgmt
+        - standard-ceph-ccp-vip-HEA-ACW-mgmt
+        - standard-ceph-ccp-vip-HEA-API-mgmt
+        - standard-ceph-ccp-vip-HZN-WEB-mgmt
+        - standard-ceph-ccp-vip-KEY-API-mgmt
+        - standard-ceph-ccp-vip-LOG-SVR-mgmt
+        - standard-ceph-ccp-vip-MON-API-mgmt
+        - standard-ceph-ccp-vip-NEU-SVR-mgmt
+        - standard-ceph-ccp-vip-NOV-API-mgmt
+        - standard-ceph-ccp-vip-NOV-MTD-mgmt
+        - standard-ceph-ccp-vip-OPS-WEB-mgmt
+        - standard-ceph-ccp-vip-SHP-API-mgmt
+        - standard-ceph-ccp-vip-SWF-PRX-mgmt
+        - standard-ceph-ccp-vip-admin-CEI-API-mgmt
+        - standard-ceph-ccp-vip-admin-CND-API-mgmt
+        - standard-ceph-ccp-vip-admin-FND-MDB-mgmt
+        - standard-ceph-ccp-vip-admin-FRE-API-mgmt
+        - standard-ceph-ccp-vip-admin-GLA-API-mgmt
+        - standard-ceph-ccp-vip-admin-KEY-API-mgmt
+        - standard-ceph-ccp-vip-admin-NEU-SVR-mgmt
+        - standard-ceph-ccp-vip-admin-NOV-API-mgmt
+        - standard-ceph-ccp-vip-admin-SHP-API-mgmt
+        - standard-ceph-ccp-vip-admin-SWF-PRX-mgmt
+        192.168.245.11:
+        - standard-ceph-ccp-vip-public-CEI-API-mgmt
+        - standard-ceph-ccp-vip-public-CND-API-mgmt
+        - standard-ceph-ccp-vip-public-FRE-API-mgmt
+        - standard-ceph-ccp-vip-public-GLA-API-mgmt
+        - standard-ceph-ccp-vip-public-HEA-ACF-mgmt
+        - standard-ceph-ccp-vip-public-HEA-ACW-mgmt
+        - standard-ceph-ccp-vip-public-HEA-API-mgmt
+        - standard-ceph-ccp-vip-public-HZN-WEB-mgmt
+        - standard-ceph-ccp-vip-public-KEY-API-mgmt
+        - standard-ceph-ccp-vip-public-MON-API-mgmt
+        - standard-ceph-ccp-vip-public-NEU-SVR-mgmt
+        - standard-ceph-ccp-vip-public-NOV-API-mgmt
+        - standard-ceph-ccp-vip-public-NOV-VNC-mgmt
+        - standard-ceph-ccp-vip-public-OPS-WEB-mgmt
+        - standard-ceph-ccp-vip-public-SHP-API-mgmt
+        - standard-ceph-ccp-vip-public-SWF-PRX-mgmt
+        192.168.245.2:
+        - standard-ceph-ccp-c0-m1-mgmt
+        192.168.245.3:
+        - standard-ceph-ccp-c1-m1-mgmt
+        192.168.245.4:
+        - standard-ceph-ccp-c1-m2-mgmt
+        192.168.245.5:
+        - standard-ceph-ccp-c1-m3-mgmt
+        192.168.245.6:
+        - standard-ceph-ccp-comp0001-mgmt
+        192.168.245.7:
+        - standard-ceph-ccp-ceph0001-mgmt
+        192.168.245.8:
+        - standard-ceph-ccp-ceph0002-mgmt
+        192.168.245.9:
+        - standard-ceph-ccp-ceph0003-mgmt

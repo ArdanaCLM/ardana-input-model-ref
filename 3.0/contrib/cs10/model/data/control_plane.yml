@@ -1,0 +1,165 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+
+---
+  product:
+    version: 2
+
+  control-planes:
+    - name: ccp
+      control-plane-prefix: ccp
+      region-name: region1
+      failure-zones:
+        - AZ1
+        - AZ2
+        - AZ3
+      common-service-components:
+        - logging-producer
+        - monasca-agent
+        - freezer-agent
+        - stunnel
+        - lifecycle-manager-target
+
+
+      clusters:
+        - name: deployer
+          cluster-prefix: c0
+          server-role: ARDANA-ROLE
+          member-count: 1
+          allocation-policy: strict
+          service-components:
+            - lifecycle-manager
+            - freezer-agent
+            - ntp-client
+
+        - name: management
+          cluster-prefix: mgmt
+          server-role: MANAGEMENT-ROLE
+          member-count: 1
+          allocation-policy: strict
+          service-components:
+            - ip-cluster
+            - apache2
+            - memcached
+            - ntp-server
+            - keystone-api
+            - keystone-client
+            - openstack-client
+            - ops-console-web
+            - monasca-agent
+            #- attis
+            # foundation only services
+            - neutron-client
+            - nova-client
+            - eon-client
+            #- cs-ace
+            - eon-conductor
+            - eon-api
+
+        - name: monitoring
+          cluster-prefix: mon
+          server-role: MONITORING-ROLE
+          member-count: 1
+          allocation-policy: strict
+          service-components:
+            - vertica
+            - kafka
+            # Freezer-api need to be installed on same node as logging-server
+            # as they share elasticsearch
+            - freezer-api
+            - logging-server
+            # logging needs apache
+            - apache2
+            - storm
+            - monasca-api
+            - monasca-persister
+            - monasca-notifier
+            - monasca-threshold
+            - monasca-client
+            - ntp-client
+            - zookeeper
+            # foundation only services
+            - ceilometer-client
+            - ceilometer-common
+            - ceilometer-agent-notification
+            - ceilometer-polling
+            - ceilometer-api
+
+        - name: db_rabbit
+          cluster-prefix: db
+          server-role: DB_RABBIT-ROLE
+          member-count: 1
+          allocation-policy: strict
+          service-components:
+            - mysql
+            - ntp-client
+            - rabbitmq
+
+        - name: controller
+          cluster-prefix: cc
+          server-role: CONTROLLER-ROLE
+          member-count: 1
+          allocation-policy: strict
+          service-components:
+            - apache2
+            - cinder-api
+            - cinder-scheduler
+            - cinder-volume
+            - cinder-backup
+            - cinder-client
+            - cmc-service
+            - keystone-client
+            - glance-api
+            - glance-registry
+            - glance-client
+            - horizon
+            - heat-api
+            - heat-api-cfn
+            - heat-api-cloudwatch
+            - heat-engine
+            - heat-client
+            - memcached
+            - openstack-client
+            - nova-api
+            - nova-scheduler
+            - nova-conductor
+            - nova-console-auth
+            - nova-novncproxy
+            - nova-client
+            - neutron-server
+            - neutron-ml2-plugin
+            - neutron-client
+            - ntp-client
+            - barbican-api
+            - barbican-client
+            - barbican-worker
+            - designate-api
+            - designate-central
+            - designate-pool-manager
+            - designate-zone-manager
+            - designate-mdns
+            - designate-client
+            - powerdns
+#Uncomment the below entry for enabling ceph
+#            - ceph-monitor
+#Remove SWIFT Once Glance integration works
+            - swift-proxy
+            - swift-account
+            - swift-container
+            - swift-ring-builder
+            - swift-client
+            - swift-object
+
+        - name: network
+          cluster-prefix: nn
+          server-role: NETWORK-ROLE
+          member-count: 2
+          allocation-policy: strict
+          service-components:
+            - neutron-vpn-agent
+            - neutron-dhcp-agent
+            - neutron-metadata-agent
+            - neutron-openvswitch-agent
+      # End of clusters section: DO NOT MODIFY OR REMOVE THIS COMMENT

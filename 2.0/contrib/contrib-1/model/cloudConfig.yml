@@ -1,0 +1,55 @@
+# Copyright 2015 Hewlett-Packard Development Company, L.P
+# Copyright 2017 SUSE LLC
+---
+  product:
+    version: 2
+
+  cloud:
+    name: contrib-1
+
+    # The following values are used when
+    # building hostnames
+    hostname-data:
+        host-prefix: ardana
+        member-prefix: -m
+
+    # Path to the rest of the input model
+    data-dir: data
+
+    # List of ntp servers for your site
+    ntp-servers:
+        - 12.0.0.3 
+
+    # dns resolving configuration for your site
+    # refer to resolv.conf for details on each option
+    dns-settings:
+      nameservers:
+        - 12.0.0.4
+    #
+    #  domain: sub1.example.net
+    #
+    #  search:
+    #    - sub1.example.net
+    #    - sub2.example.net
+    #
+    #  sortlist:
+    #    - 192.168.160.0/255.255.240.0
+    #    - 192.168.0.0
+    #
+    #  # option flags are '<name>:' to enable, remove to unset
+    #  # options with values are '<name>:<value>' to set
+    #
+    #  options:
+    #    debug:
+    #    ndots: 2
+    #    timeout: 30
+    #    attempts: 5
+    #    rotate:
+    #    no-check-names:
+    #    inet6:
+
+    # Firewall 
+    firewall-settings:
+        enable: false
+        # log dropped packets
+        logging: true

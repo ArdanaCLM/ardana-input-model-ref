@@ -1,0 +1,240 @@
+10.1.1.12:
+  addr: 10.1.1.12
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.1.1.13:
+  addr: 10.1.1.13
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.1.1.14:
+  addr: 10.1.1.14
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.1.1.15:
+  addr: 10.1.1.15
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.1.1.16:
+  addr: 10.1.1.16
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.1.1.17:
+  addr: 10.1.1.17
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.1.1.18:
+  addr: 10.1.1.18
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.1.2.10:
+  addr: 10.1.2.10
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.1.2.11:
+  addr: 10.1.2.11
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.1.2.2:
+  addr: 10.1.2.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.1.2.3:
+  addr: 10.1.2.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.1.2.4:
+  addr: 10.1.2.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.1.2.5:
+  addr: 10.1.2.5
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.1.2.6:
+  addr: 10.1.2.6
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.1.2.7:
+  addr: 10.1.2.7
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+10.1.2.8:
+  addr: 10.1.2.8
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.1.2.9:
+  addr: 10.1.2.9
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.1.5.2:
+  addr: 10.1.5.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.1.5.3:
+  addr: 10.1.5.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.1.5.4:
+  addr: 10.1.5.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.1.5.5:
+  addr: 10.1.5.5
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.1.5.6:
+  addr: 10.1.5.6
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.1.5.7:
+  addr: 10.1.5.7
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+16.92.4.54:
+  addr: 16.92.4.54
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+16.92.4.55:
+  addr: 16.92.4.55
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+16.92.4.56:
+  addr: 16.92.4.56
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+16.92.4.57:
+  addr: 16.92.4.57
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+16.92.4.58:
+  addr: 16.92.4.58
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+16.92.4.59:
+  addr: 16.92.4.59
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+16.92.4.60:
+  addr: 16.92.4.60
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb

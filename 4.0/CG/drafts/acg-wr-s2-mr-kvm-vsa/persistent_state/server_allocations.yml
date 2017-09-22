@@ -1,0 +1,2247 @@
+controller1:
+  cluster_name: controller
+  cp_name: cp1
+  hypervisor-id: hypervisor1
+  member_id: 1
+  previous_config:
+    addr: 10.244.43.105
+    ansible_options: null
+    cluster-name: controller
+    components:
+      apache2: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      freezer-agent: {}
+      glance-api: {}
+      glance-registry: {}
+      ip-cluster: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      memcached: {}
+      monasca-agent: {}
+      ntp-client: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      stunnel: {}
+    control-plane-name: cp1
+    disk-model:
+      name: CONTROLLER-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 120G
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 40%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 35%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor1
+    id: controller1
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      forced-network-groups:
+      - BLS
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      - CAN
+      networks:
+        BLS-NET:
+          addresses:
+          - 10.244.47.12-10.244.47.29
+          cidr: 10.244.47.0/24
+          explicit_mtu: true
+          forced: true
+          gateway-ip: 10.244.47.1
+          mtu: 9000
+          name: BLS-NET
+          network-group: BLS
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3537
+        CAN-NET:
+          addresses:
+          - 10.244.45.12-10.244.45.29
+          cidr: 10.244.45.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.45.1
+          mtu: 1500
+          name: CAN-NET
+          network-group: CAN
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3535
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 1
+    name: hcg-cp1-controller-m1
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      - CAN
+      - BLS
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-controller1-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      cinder:
+      - cinder-backup
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      clients:
+      - keystone-client
+      - cinder-client
+      - openstack-client
+      foundation:
+      - stunnel
+      - ip-cluster
+      - ntp-client
+      - apache2
+      - memcached
+      freezer:
+      - freezer-agent
+      glance:
+      - glance-api
+      - glance-registry
+      ardana:
+      - lifecycle-manager-target
+      keystone:
+      - keystone-api
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      operations:
+      - ops-console-monitor
+      - ops-console-web
+      vsa-storage:
+      - cmc-service
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+controller2:
+  cluster_name: controller
+  cp_name: cp1
+  hypervisor-id: hypervisor2
+  member_id: 2
+  previous_config:
+    addr: 10.244.43.106
+    ansible_options: null
+    cluster-name: controller
+    components:
+      apache2: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      freezer-agent: {}
+      glance-api: {}
+      glance-registry: {}
+      ip-cluster: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      memcached: {}
+      monasca-agent: {}
+      ntp-client: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      stunnel: {}
+    control-plane-name: cp1
+    disk-model:
+      name: CONTROLLER-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 120G
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 40%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 35%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor2
+    id: controller2
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      forced-network-groups:
+      - BLS
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      - CAN
+      networks:
+        BLS-NET:
+          addresses:
+          - 10.244.47.12-10.244.47.29
+          cidr: 10.244.47.0/24
+          explicit_mtu: true
+          forced: true
+          gateway-ip: 10.244.47.1
+          mtu: 9000
+          name: BLS-NET
+          network-group: BLS
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3537
+        CAN-NET:
+          addresses:
+          - 10.244.45.12-10.244.45.29
+          cidr: 10.244.45.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.45.1
+          mtu: 1500
+          name: CAN-NET
+          network-group: CAN
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3535
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 2
+    name: hcg-cp1-controller-m2
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      - CAN
+      - BLS
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-controller2-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      cinder:
+      - cinder-backup
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      clients:
+      - keystone-client
+      - cinder-client
+      - openstack-client
+      foundation:
+      - stunnel
+      - ip-cluster
+      - ntp-client
+      - apache2
+      - memcached
+      freezer:
+      - freezer-agent
+      glance:
+      - glance-api
+      - glance-registry
+      ardana:
+      - lifecycle-manager-target
+      keystone:
+      - keystone-api
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      operations:
+      - ops-console-monitor
+      - ops-console-web
+      vsa-storage:
+      - cmc-service
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+controller3:
+  cluster_name: controller
+  cp_name: cp1
+  hypervisor-id: hypervisor2
+  member_id: 3
+  previous_config:
+    addr: 10.244.43.107
+    ansible_options: null
+    cluster-name: controller
+    components:
+      apache2: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      freezer-agent: {}
+      glance-api: {}
+      glance-registry: {}
+      ip-cluster: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      memcached: {}
+      monasca-agent: {}
+      ntp-client: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      stunnel: {}
+    control-plane-name: cp1
+    disk-model:
+      name: CONTROLLER-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 120G
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 40%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 35%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor2
+    id: controller3
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      forced-network-groups:
+      - BLS
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      - CAN
+      networks:
+        BLS-NET:
+          addresses:
+          - 10.244.47.12-10.244.47.29
+          cidr: 10.244.47.0/24
+          explicit_mtu: true
+          forced: true
+          gateway-ip: 10.244.47.1
+          mtu: 9000
+          name: BLS-NET
+          network-group: BLS
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3537
+        CAN-NET:
+          addresses:
+          - 10.244.45.12-10.244.45.29
+          cidr: 10.244.45.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.45.1
+          mtu: 1500
+          name: CAN-NET
+          network-group: CAN
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3535
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 3
+    name: hcg-cp1-controller-m3
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      - CAN
+      - BLS
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-controller3-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      cinder:
+      - cinder-backup
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      clients:
+      - keystone-client
+      - cinder-client
+      - openstack-client
+      foundation:
+      - stunnel
+      - ip-cluster
+      - ntp-client
+      - apache2
+      - memcached
+      freezer:
+      - freezer-agent
+      glance:
+      - glance-api
+      - glance-registry
+      ardana:
+      - lifecycle-manager-target
+      keystone:
+      - keystone-api
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      operations:
+      - ops-console-monitor
+      - ops-console-web
+      vsa-storage:
+      - cmc-service
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+hypervisor1:
+  cluster_name: ardana-hypervisor
+  cp_name: cp1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 10.244.43.102
+    ansible_options: null
+    cluster-name: ardana-hypervisor
+    components:
+      ceilometer-client: {}
+      cinder-client: {}
+      freezer-agent: {}
+      glance-client: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      monasca-client: {}
+      neutron-client: {}
+      nova-client: {}
+      ntp-server: {}
+      openstack-client: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+    control-plane-name: cp1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        name: swiftobj
+      name: ARDANA-HYPERVISOR-DISKS
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        - consumer:
+            name: ardana-hypervisor
+            usage: ardana-hypervisor-images
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/ardana-images
+          name: ardana-images
+          size: 65%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: hypervisor1
+    if-model: ARDANA-HYPERVISOR-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed1
+        - name: hed2
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed1
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - PXE
+      - CLM
+      - BLS
+      networks:
+        BLS-NET:
+          addresses:
+          - 10.244.47.12-10.244.47.29
+          cidr: 10.244.47.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.47.1
+          mtu: 9000
+          name: BLS-NET
+          network-group: BLS
+          passthrough: true
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3537
+        CAN-NET:
+          addresses:
+          - 10.244.45.12-10.244.45.29
+          cidr: 10.244.45.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.45.1
+          mtu: 1500
+          name: CAN-NET
+          network-group: CAN
+          passthrough: true
+          passthrough-only: true
+          tagged-vlan: true
+          vlanid: 3535
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: true
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: true
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+      passthrough-network-groups:
+      - PXE
+      - CLM
+      - BLS
+      - CAN
+    member_id: 1
+    name: hcg-cp1-alm-hyp-m1
+    nic_map:
+      name: ARDANA-ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:03:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:03:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:07:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:07:00.1'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: hcgregionone
+    role: ARDANA-HYPERVISOR-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      clients:
+      - ceilometer-client
+      - keystone-client
+      - nova-client
+      - openstack-client
+      - cinder-client
+      - swift-client
+      - glance-client
+      - monasca-client
+      - neutron-client
+      foundation:
+      - stunnel
+      - ntp-server
+      - ardana-ca
+      freezer:
+      - freezer-agent
+      ardana:
+      - ardana-ux-services
+      - lifecycle-manager
+      - lifecycle-manager-target
+      logging:
+      - logging-rotate
+      - logging-producer
+      monasca:
+      - monasca-agent
+      swift:
+      - swift-rsync
+      - swift-proxy
+      - swift-container
+      - swift-common
+      - swift-object
+      - swift-ring-builder
+      - swift-account
+      tempest:
+      - tempest
+    state: allocated
+    vm-factory: true
+  state: allocated
+  type: cluster
+  vm-factory: true
+hypervisor2:
+  cluster_name: ardana-hypervisor
+  cp_name: cp1
+  hypervisor-id: null
+  member_id: 2
+  previous_config:
+    addr: 10.244.43.103
+    ansible_options: null
+    cluster-name: ardana-hypervisor
+    components:
+      ceilometer-client: {}
+      cinder-client: {}
+      freezer-agent: {}
+      glance-client: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      monasca-client: {}
+      neutron-client: {}
+      nova-client: {}
+      ntp-server: {}
+      openstack-client: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+    control-plane-name: cp1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        name: swiftobj
+      name: ARDANA-HYPERVISOR-DISKS
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        - consumer:
+            name: ardana-hypervisor
+            usage: ardana-hypervisor-images
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/ardana-images
+          name: ardana-images
+          size: 65%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: hypervisor2
+    if-model: ARDANA-HYPERVISOR-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed1
+        - name: hed2
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed1
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - PXE
+      - CLM
+      - BLS
+      networks:
+        BLS-NET:
+          addresses:
+          - 10.244.47.12-10.244.47.29
+          cidr: 10.244.47.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.47.1
+          mtu: 9000
+          name: BLS-NET
+          network-group: BLS
+          passthrough: true
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3537
+        CAN-NET:
+          addresses:
+          - 10.244.45.12-10.244.45.29
+          cidr: 10.244.45.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.45.1
+          mtu: 1500
+          name: CAN-NET
+          network-group: CAN
+          passthrough: true
+          passthrough-only: true
+          tagged-vlan: true
+          vlanid: 3535
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: true
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: true
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+      passthrough-network-groups:
+      - PXE
+      - CLM
+      - BLS
+      - CAN
+    member_id: 2
+    name: hcg-cp1-alm-hyp-m2
+    nic_map:
+      name: ARDANA-ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:03:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:03:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:07:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:07:00.1'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: hcgregionone
+    role: ARDANA-HYPERVISOR-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      clients:
+      - ceilometer-client
+      - keystone-client
+      - nova-client
+      - openstack-client
+      - cinder-client
+      - swift-client
+      - glance-client
+      - monasca-client
+      - neutron-client
+      foundation:
+      - stunnel
+      - ntp-server
+      - ardana-ca
+      freezer:
+      - freezer-agent
+      ardana:
+      - ardana-ux-services
+      - lifecycle-manager
+      - lifecycle-manager-target
+      logging:
+      - logging-rotate
+      - logging-producer
+      monasca:
+      - monasca-agent
+      swift:
+      - swift-rsync
+      - swift-proxy
+      - swift-container
+      - swift-common
+      - swift-object
+      - swift-ring-builder
+      - swift-account
+      tempest:
+      - tempest
+    state: allocated
+    vm-factory: true
+  state: allocated
+  type: cluster
+  vm-factory: true
+mml1:
+  cluster_name: mml
+  cp_name: cp1
+  hypervisor-id: hypervisor1
+  member_id: 1
+  previous_config:
+    addr: 10.244.43.111
+    ansible_options: null
+    cluster-name: mml
+    components:
+      apache2: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      freezer-agent: {}
+      freezer-api: {}
+      kafka: {}
+      keystone-client: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      nova-client: {}
+      ntp-client: {}
+      storm: {}
+      stunnel: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: cp1
+    disk-model:
+      name: MML-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 600G
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 10%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 22%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 12%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 25%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 6%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor1
+    id: mml1
+    if-model: MML-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      networks:
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 1
+    name: hcg-cp1-mml-m1
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-mml1-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: MML-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      ceilometer:
+      - ceilometer-polling
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-api
+      clients:
+      - keystone-client
+      - monasca-client
+      - nova-client
+      foundation:
+      - zookeeper
+      - stunnel
+      - kafka
+      - vertica
+      - apache2
+      - storm
+      - ntp-client
+      freezer:
+      - freezer-api
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-api
+      - logging-producer
+      - logging-rotate
+      - logging-server
+      monasca:
+      - monasca-agent
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-api
+      - monasca-notifier
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+mml2:
+  cluster_name: mml
+  cp_name: cp1
+  hypervisor-id: hypervisor2
+  member_id: 2
+  previous_config:
+    addr: 10.244.43.112
+    ansible_options: null
+    cluster-name: mml
+    components:
+      apache2: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      freezer-agent: {}
+      freezer-api: {}
+      kafka: {}
+      keystone-client: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      nova-client: {}
+      ntp-client: {}
+      storm: {}
+      stunnel: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: cp1
+    disk-model:
+      name: MML-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 600G
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 10%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 22%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 12%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 25%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 6%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor2
+    id: mml2
+    if-model: MML-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      networks:
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 2
+    name: hcg-cp1-mml-m2
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-mml2-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: MML-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      ceilometer:
+      - ceilometer-polling
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-api
+      clients:
+      - keystone-client
+      - monasca-client
+      - nova-client
+      foundation:
+      - zookeeper
+      - stunnel
+      - kafka
+      - vertica
+      - apache2
+      - storm
+      - ntp-client
+      freezer:
+      - freezer-api
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-api
+      - logging-producer
+      - logging-rotate
+      - logging-server
+      monasca:
+      - monasca-agent
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-api
+      - monasca-notifier
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+mml3:
+  cluster_name: mml
+  cp_name: cp1
+  hypervisor-id: hypervisor2
+  member_id: 3
+  previous_config:
+    addr: 10.244.43.113
+    ansible_options: null
+    cluster-name: mml
+    components:
+      apache2: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      freezer-agent: {}
+      freezer-api: {}
+      kafka: {}
+      keystone-client: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      nova-client: {}
+      ntp-client: {}
+      storm: {}
+      stunnel: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: cp1
+    disk-model:
+      name: MML-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 600G
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 10%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 22%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 12%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 25%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 6%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor2
+    id: mml3
+    if-model: MML-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      networks:
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 3
+    name: hcg-cp1-mml-m3
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-mml3-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: MML-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      ceilometer:
+      - ceilometer-polling
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-api
+      clients:
+      - keystone-client
+      - monasca-client
+      - nova-client
+      foundation:
+      - zookeeper
+      - stunnel
+      - kafka
+      - vertica
+      - apache2
+      - storm
+      - ntp-client
+      freezer:
+      - freezer-api
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-api
+      - logging-producer
+      - logging-rotate
+      - logging-server
+      monasca:
+      - monasca-agent
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-api
+      - monasca-notifier
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+rmq-mysql1:
+  cluster_name: rmq-mysql
+  cp_name: cp1
+  hypervisor-id: hypervisor1
+  member_id: 1
+  previous_config:
+    addr: 10.244.43.108
+    ansible_options: null
+    cluster-name: rmq-mysql
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      mysql: {}
+      ntp-client: {}
+      rabbitmq: {}
+      stunnel: {}
+    control-plane-name: cp1
+    disk-model:
+      name: RMQ-MYSQL-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 180G
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 28%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 12%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 5%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 25%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 25%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor1
+    id: rmq-mysql1
+    if-model: RMQ-MYSQL-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      networks:
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 1
+    name: hcg-cp1-rmq-mysql-m1
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-rmq-mysql1-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: RMQ-MYSQL-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      foundation:
+      - rabbitmq
+      - stunnel
+      - mysql
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-rotate
+      - logging-producer
+      monasca:
+      - monasca-agent
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+rmq-mysql2:
+  cluster_name: rmq-mysql
+  cp_name: cp1
+  hypervisor-id: hypervisor2
+  member_id: 2
+  previous_config:
+    addr: 10.244.43.109
+    ansible_options: null
+    cluster-name: rmq-mysql
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      mysql: {}
+      ntp-client: {}
+      rabbitmq: {}
+      stunnel: {}
+    control-plane-name: cp1
+    disk-model:
+      name: RMQ-MYSQL-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 180G
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 28%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 12%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 5%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 25%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 25%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor2
+    id: rmq-mysql2
+    if-model: RMQ-MYSQL-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      networks:
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 2
+    name: hcg-cp1-rmq-mysql-m2
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-rmq-mysql2-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: RMQ-MYSQL-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      foundation:
+      - rabbitmq
+      - stunnel
+      - mysql
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-rotate
+      - logging-producer
+      monasca:
+      - monasca-agent
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+rmq-mysql3:
+  cluster_name: rmq-mysql
+  cp_name: cp1
+  hypervisor-id: hypervisor2
+  member_id: 3
+  previous_config:
+    addr: 10.244.43.110
+    ansible_options: null
+    cluster-name: rmq-mysql
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      mysql: {}
+      ntp-client: {}
+      rabbitmq: {}
+      stunnel: {}
+    control-plane-name: cp1
+    disk-model:
+      name: RMQ-MYSQL-DISKS
+      vm-size:
+        disks:
+        - name: /dev/vda_root
+          size: 180G
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 28%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 12%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 5%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 25%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 25%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/vda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: hypervisor2
+    id: rmq-mysql3
+    if-model: RMQ-MYSQL-INTERFACES
+    interfaces:
+    - device:
+        name: hed1
+      name: hed1
+      network-groups:
+      - PXE
+      - CLM
+      networks:
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 3
+    name: hcg-cp1-rmq-mysql-m3
+    nic_map:
+      name: VIRTUAL-1-PORT
+      physical-ports:
+      - bus-address: '0000:01:01.0'
+        logical-name: hed1
+        type: simple-port
+    port-groups:
+    - bus-address: '0000:01:01.0'
+      groups:
+      - PXE
+      - CLM
+      host-interface-name: BOND0
+      interface: hed1
+      name: ardana-rmq-mysql3-hed1
+      vm-interface-name: hed1
+    rack: null
+    region: hcgregionone
+    role: RMQ-MYSQL-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      foundation:
+      - rabbitmq
+      - stunnel
+      - mysql
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-rotate
+      - logging-producer
+      monasca:
+      - monasca-agent
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+vsa1:
+  cp_name: cp1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 10.244.43.117
+    ansible_options: null
+    cluster-name: vsa
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      vsa: {}
+    control-plane-name: cp1
+    disk-model:
+      device-groups:
+      - consumer:
+          name: vsa
+          usage: data
+        devices:
+        - name: /dev/sdc
+        name: vsa-data
+      - consumer:
+          name: vsa
+          usage: adaptive-optimization
+        devices:
+        - name: /dev/sdb
+        name: vsa-cache
+      name: VSA-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: vsa1
+    if-model: VSA-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed1
+        - name: hed2
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed1
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - PXE
+      - CLM
+      - BLS
+      networks:
+        BLS-NET:
+          addresses:
+          - 10.244.47.12-10.244.47.29
+          cidr: 10.244.47.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.47.1
+          mtu: 9000
+          name: BLS-NET
+          network-group: BLS
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3537
+        CLM-NET:
+          addresses:
+          - 10.244.44.12-10.244.44.29
+          cidr: 10.244.44.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.44.1
+          mtu: 1500
+          name: CLM-NET
+          network-group: CLM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 3534
+        PXE-NET:
+          addresses:
+          - 10.244.43.102-10.244.43.217
+          cidr: 10.244.43.0/24
+          explicit_mtu: true
+          forced: false
+          gateway-ip: 10.244.43.1
+          mtu: 9000
+          name: PXE-NET
+          network-group: PXE
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 3533
+    member_id: 1
+    name: hcg-cp1-vsa0001
+    nic_map:
+      name: VSA-2PORT
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed2
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: hcgregionone
+    role: VSA-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      vsa-storage:
+      - vsa
+    state: allocated
+    vm-factory: false
+  resource_name: vsa
+  state: allocated
+  type: resource
+  vm-factory: false

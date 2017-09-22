@@ -1,0 +1,64 @@
+192.168.10.3:
+  addr: 192.168.10.3
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-c0-m1
+  persisted: false
+  server-id: ccn-0001
+  used-by: server
+192.168.10.4:
+  addr: 192.168.10.4
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-compute0001
+  persisted: false
+  server-id: cpn-0001
+  used-by: server
+192.168.10.5:
+  addr: 192.168.10.5
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-compute0002
+  persisted: false
+  server-id: cpn-0002
+  used-by: server
+192.168.245.2:
+  addr: 192.168.245.2
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-c0-m1
+  persisted: false
+  server-id: ccn-0001
+  used-by: server
+192.168.245.3:
+  addr: 192.168.245.3
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-compute0001
+  persisted: false
+  server-id: cpn-0001
+  used-by: server
+192.168.245.4:
+  addr: 192.168.245.4
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-compute0002
+  persisted: false
+  server-id: cpn-0002
+  used-by: server
+192.168.245.5:
+  addr: 192.168.245.5
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+192.168.245.6:
+  addr: 192.168.245.6
+  allocated: true
+  free: false
+  host: deployerincloud-ccp-vip-extlb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip extlb

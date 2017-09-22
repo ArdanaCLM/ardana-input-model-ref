@@ -1,0 +1,25 @@
+service_ips:
+    vsa:
+    -   cluster: vsa
+        cluster_ip:
+            hostname: ardana-control-plane-vsa-VSA-BLK-iscsi
+            ip_address: 101.0.0.39
+        control_plane: control-plane
+        hosts:
+        -   hostname: ardana-control-plane-vsa0001-VSA-BLK-iscsi
+            ip_address: 101.0.0.38
+        -   hostname: ardana-control-plane-vsa0002-VSA-BLK-iscsi
+            ip_address: 101.0.0.41
+        -   hostname: ardana-control-plane-vsa0003-VSA-BLK-iscsi
+            ip_address: 101.0.0.43
+        network: NET_ISCSI
+    -   cluster: vsa
+        cluster_ip: {}
+        control_plane: control-plane
+        hosts: []
+        network: NET_ARDANA
+    -   cluster: vsa
+        cluster_ip: {}
+        control_plane: control-plane
+        hosts: []
+        network: NET_MGMT

@@ -1,0 +1,587 @@
+
+Allocate Servers for control plane cp1
+======================================
+
+cluster: ardana-hypervisor
+-----------------------
+  Searching for server with role ['ARDANA-HYPERVISOR-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'hypervisor1' (AZ1)
+  Searching for server with role ['ARDANA-HYPERVISOR-ROLE'] in zones: set(['AZ2', 'AZ3'])
+  Allocated server 'hypervisor2' (AZ2)
+
+cluster: controller
+-------------------
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'controller1' (AZ1)
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'controller2' (AZ2)
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'controller3' (AZ2)
+
+cluster: rmq-mysql
+------------------
+  Searching for server with role ['RMQ-MYSQL-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'rmq-mysql1' (AZ1)
+  Searching for server with role ['RMQ-MYSQL-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'rmq-mysql2' (AZ2)
+  Searching for server with role ['RMQ-MYSQL-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'rmq-mysql3' (AZ2)
+
+cluster: mml
+------------
+  Searching for server with role ['MML-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'mml1' (AZ1)
+  Searching for server with role ['MML-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'mml2' (AZ2)
+  Searching for server with role ['MML-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'mml3' (AZ2)
+
+resource: vsa
+-------------
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'vsa1' (AZ1)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ2', 'AZ3'])
+
+Allocate Servers for control plane wr1
+======================================
+
+cluster: cluster1
+-----------------
+  Searching for server with role ['WR-ROLE'] in zones: set([])
+
+Allocate Servers for control plane wr2
+======================================
+
+cluster: cluster2
+-----------------
+  Searching for server with role ['WR-ROLE'] in zones: set([])
+
+Resolve Networks for Servers
+============================
+
+server: hcg-cp1-alm-hyp-m1
+--------------------------
+  add BLS for component swift-rsync
+  add BLS for component swift-container
+  add BLS for component swift-object
+  add BLS for component swift-account
+  add PXE for component lifecycle-manager
+  add PXE for component lifecycle-manager-target
+  add CLM for ardana-ux-services (default)
+  add CLM for stunnel (default)
+  add CLM for ntp-server (default)
+  add CLM for swift-proxy (default)
+  add CLM for swift-common (default)
+  add CLM for monasca-agent (default)
+  add CLM for ceilometer-client (default)
+  add CLM for keystone-client (default)
+  add CLM for nova-client (default)
+  add CLM for swift-ring-builder (default)
+  add CLM for openstack-client (default)
+  add CLM for logging-rotate (default)
+  add CLM for ardana-ca (default)
+  add CLM for tempest (default)
+  add CLM for freezer-agent (default)
+  add CLM for cinder-client (default)
+  add CLM for logging-producer (default)
+  add CLM for swift-client (default)
+  add CLM for glance-client (default)
+  add CLM for monasca-client (default)
+  add CLM for neutron-client (default)
+  Using address 10.244.43.102 for server hcg-cp1-alm-hyp-m1 on network PXE-NET
+  Allocated address 10.244.44.12 for server hcg-cp1-alm-hyp-m1 on network CLM-NET
+  Allocated address 10.244.47.12 for server hcg-cp1-alm-hyp-m1 on network BLS-NET
+
+server: hcg-cp1-alm-hyp-m2
+--------------------------
+  add BLS for component swift-rsync
+  add BLS for component swift-container
+  add BLS for component swift-object
+  add BLS for component swift-account
+  add PXE for component lifecycle-manager
+  add PXE for component lifecycle-manager-target
+  add CLM for ardana-ux-services (default)
+  add CLM for stunnel (default)
+  add CLM for ntp-server (default)
+  add CLM for swift-proxy (default)
+  add CLM for swift-common (default)
+  add CLM for monasca-agent (default)
+  add CLM for ceilometer-client (default)
+  add CLM for keystone-client (default)
+  add CLM for nova-client (default)
+  add CLM for swift-ring-builder (default)
+  add CLM for openstack-client (default)
+  add CLM for logging-rotate (default)
+  add CLM for ardana-ca (default)
+  add CLM for tempest (default)
+  add CLM for freezer-agent (default)
+  add CLM for cinder-client (default)
+  add CLM for logging-producer (default)
+  add CLM for swift-client (default)
+  add CLM for glance-client (default)
+  add CLM for monasca-client (default)
+  add CLM for neutron-client (default)
+  Using address 10.244.43.103 for server hcg-cp1-alm-hyp-m2 on network PXE-NET
+  Allocated address 10.244.44.13 for server hcg-cp1-alm-hyp-m2 on network CLM-NET
+  Allocated address 10.244.47.13 for server hcg-cp1-alm-hyp-m2 on network BLS-NET
+
+server: hcg-cp1-controller-m1
+-----------------------------
+  add CLM for component ip-cluster
+  add CAN for component ip-cluster
+  add PXE for component lifecycle-manager-target
+  add CLM for cinder-backup (default)
+  add CLM for cmc-service (default)
+  add CLM for stunnel (default)
+  add CLM for keystone-api (default)
+  add CLM for ops-console-monitor (default)
+  add CLM for monasca-agent (default)
+  add CLM for keystone-client (default)
+  add CLM for ntp-client (default)
+  add CLM for cinder-client (default)
+  add CLM for glance-api (default)
+  add CLM for cinder-api (default)
+  add CLM for cinder-volume (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for openstack-client (default)
+  add CLM for logging-producer (default)
+  add CLM for logging-rotate (default)
+  add CLM for ops-console-web (default)
+  add CLM for glance-registry (default)
+  add CLM for memcached (default)
+  add CLM for cinder-scheduler (default)
+  Using address 10.244.43.105 for server hcg-cp1-controller-m1 on network PXE-NET
+  Allocated address 10.244.44.14 for server hcg-cp1-controller-m1 on network CLM-NET
+  Allocated address 10.244.47.14 for server hcg-cp1-controller-m1 on network BLS-NET
+  Allocated address 10.244.45.12 for server hcg-cp1-controller-m1 on network CAN-NET
+
+server: hcg-cp1-controller-m2
+-----------------------------
+  add CLM for component ip-cluster
+  add CAN for component ip-cluster
+  add PXE for component lifecycle-manager-target
+  add CLM for cinder-backup (default)
+  add CLM for cmc-service (default)
+  add CLM for stunnel (default)
+  add CLM for keystone-api (default)
+  add CLM for ops-console-monitor (default)
+  add CLM for monasca-agent (default)
+  add CLM for keystone-client (default)
+  add CLM for ntp-client (default)
+  add CLM for cinder-client (default)
+  add CLM for glance-api (default)
+  add CLM for cinder-api (default)
+  add CLM for cinder-volume (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for openstack-client (default)
+  add CLM for logging-producer (default)
+  add CLM for logging-rotate (default)
+  add CLM for ops-console-web (default)
+  add CLM for glance-registry (default)
+  add CLM for memcached (default)
+  add CLM for cinder-scheduler (default)
+  Using address 10.244.43.106 for server hcg-cp1-controller-m2 on network PXE-NET
+  Allocated address 10.244.44.15 for server hcg-cp1-controller-m2 on network CLM-NET
+  Allocated address 10.244.47.15 for server hcg-cp1-controller-m2 on network BLS-NET
+  Allocated address 10.244.45.13 for server hcg-cp1-controller-m2 on network CAN-NET
+
+server: hcg-cp1-controller-m3
+-----------------------------
+  add CLM for component ip-cluster
+  add CAN for component ip-cluster
+  add PXE for component lifecycle-manager-target
+  add CLM for cinder-backup (default)
+  add CLM for cmc-service (default)
+  add CLM for stunnel (default)
+  add CLM for keystone-api (default)
+  add CLM for ops-console-monitor (default)
+  add CLM for monasca-agent (default)
+  add CLM for keystone-client (default)
+  add CLM for ntp-client (default)
+  add CLM for cinder-client (default)
+  add CLM for glance-api (default)
+  add CLM for cinder-api (default)
+  add CLM for cinder-volume (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for openstack-client (default)
+  add CLM for logging-producer (default)
+  add CLM for logging-rotate (default)
+  add CLM for ops-console-web (default)
+  add CLM for glance-registry (default)
+  add CLM for memcached (default)
+  add CLM for cinder-scheduler (default)
+  Using address 10.244.43.107 for server hcg-cp1-controller-m3 on network PXE-NET
+  Allocated address 10.244.44.16 for server hcg-cp1-controller-m3 on network CLM-NET
+  Allocated address 10.244.47.16 for server hcg-cp1-controller-m3 on network BLS-NET
+  Allocated address 10.244.45.14 for server hcg-cp1-controller-m3 on network CAN-NET
+
+server: hcg-cp1-rmq-mysql-m1
+----------------------------
+  add PXE for component lifecycle-manager-target
+  add CLM for logging-rotate (default)
+  add CLM for monasca-agent (default)
+  add CLM for rabbitmq (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for stunnel (default)
+  add CLM for mysql (default)
+  add CLM for ntp-client (default)
+  Allocated address 10.244.44.17 for server hcg-cp1-rmq-mysql-m1 on network CLM-NET
+  Using address 10.244.43.108 for server hcg-cp1-rmq-mysql-m1 on network PXE-NET
+
+server: hcg-cp1-rmq-mysql-m2
+----------------------------
+  add PXE for component lifecycle-manager-target
+  add CLM for logging-rotate (default)
+  add CLM for monasca-agent (default)
+  add CLM for rabbitmq (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for stunnel (default)
+  add CLM for mysql (default)
+  add CLM for ntp-client (default)
+  Allocated address 10.244.44.18 for server hcg-cp1-rmq-mysql-m2 on network CLM-NET
+  Using address 10.244.43.109 for server hcg-cp1-rmq-mysql-m2 on network PXE-NET
+
+server: hcg-cp1-rmq-mysql-m3
+----------------------------
+  add PXE for component lifecycle-manager-target
+  add CLM for logging-rotate (default)
+  add CLM for monasca-agent (default)
+  add CLM for rabbitmq (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for stunnel (default)
+  add CLM for mysql (default)
+  add CLM for ntp-client (default)
+  Allocated address 10.244.44.19 for server hcg-cp1-rmq-mysql-m3 on network CLM-NET
+  Using address 10.244.43.110 for server hcg-cp1-rmq-mysql-m3 on network PXE-NET
+
+server: hcg-cp1-mml-m1
+----------------------
+  add PXE for component lifecycle-manager-target
+  add CLM for logging-api (default)
+  add CLM for zookeeper (default)
+  add CLM for ceilometer-polling (default)
+  add CLM for stunnel (default)
+  add CLM for kafka (default)
+  add CLM for monasca-agent (default)
+  add CLM for ceilometer-common (default)
+  add CLM for monasca-persister (default)
+  add CLM for ceilometer-agent-notification (default)
+  add CLM for keystone-client (default)
+  add CLM for monasca-client (default)
+  add CLM for monasca-threshold (default)
+  add CLM for vertica (default)
+  add CLM for freezer-api (default)
+  add CLM for ceilometer-api (default)
+  add CLM for monasca-liveness-check (default)
+  add CLM for monasca-api (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for monasca-notifier (default)
+  add CLM for logging-producer (default)
+  add CLM for storm (default)
+  add CLM for logging-rotate (default)
+  add CLM for logging-server (default)
+  add CLM for ntp-client (default)
+  add CLM for nova-client (default)
+  Allocated address 10.244.44.20 for server hcg-cp1-mml-m1 on network CLM-NET
+  Using address 10.244.43.111 for server hcg-cp1-mml-m1 on network PXE-NET
+
+server: hcg-cp1-mml-m2
+----------------------
+  add PXE for component lifecycle-manager-target
+  add CLM for logging-api (default)
+  add CLM for zookeeper (default)
+  add CLM for ceilometer-polling (default)
+  add CLM for stunnel (default)
+  add CLM for kafka (default)
+  add CLM for monasca-agent (default)
+  add CLM for ceilometer-common (default)
+  add CLM for monasca-persister (default)
+  add CLM for ceilometer-agent-notification (default)
+  add CLM for keystone-client (default)
+  add CLM for monasca-client (default)
+  add CLM for monasca-threshold (default)
+  add CLM for vertica (default)
+  add CLM for freezer-api (default)
+  add CLM for ceilometer-api (default)
+  add CLM for monasca-liveness-check (default)
+  add CLM for monasca-api (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for monasca-notifier (default)
+  add CLM for logging-producer (default)
+  add CLM for storm (default)
+  add CLM for logging-rotate (default)
+  add CLM for logging-server (default)
+  add CLM for ntp-client (default)
+  add CLM for nova-client (default)
+  Allocated address 10.244.44.21 for server hcg-cp1-mml-m2 on network CLM-NET
+  Using address 10.244.43.112 for server hcg-cp1-mml-m2 on network PXE-NET
+
+server: hcg-cp1-mml-m3
+----------------------
+  add PXE for component lifecycle-manager-target
+  add CLM for logging-api (default)
+  add CLM for zookeeper (default)
+  add CLM for ceilometer-polling (default)
+  add CLM for stunnel (default)
+  add CLM for kafka (default)
+  add CLM for monasca-agent (default)
+  add CLM for ceilometer-common (default)
+  add CLM for monasca-persister (default)
+  add CLM for ceilometer-agent-notification (default)
+  add CLM for keystone-client (default)
+  add CLM for monasca-client (default)
+  add CLM for monasca-threshold (default)
+  add CLM for vertica (default)
+  add CLM for freezer-api (default)
+  add CLM for ceilometer-api (default)
+  add CLM for monasca-liveness-check (default)
+  add CLM for monasca-api (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for monasca-notifier (default)
+  add CLM for logging-producer (default)
+  add CLM for storm (default)
+  add CLM for logging-rotate (default)
+  add CLM for logging-server (default)
+  add CLM for ntp-client (default)
+  add CLM for nova-client (default)
+  Allocated address 10.244.44.22 for server hcg-cp1-mml-m3 on network CLM-NET
+  Using address 10.244.43.113 for server hcg-cp1-mml-m3 on network PXE-NET
+
+server: hcg-cp1-vsa0001
+-----------------------
+  add BLS for component vsa
+  add PXE for component lifecycle-manager-target
+  add CLM for monasca-agent (default)
+  add CLM for stunnel (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for logging-rotate (default)
+  add CLM for ntp-client (default)
+  add BLS for tag vsa.iscsi (vsa)
+  Using address 10.244.43.117 for server hcg-cp1-vsa0001 on network PXE-NET
+  Allocated address 10.244.44.23 for server hcg-cp1-vsa0001 on network CLM-NET
+  Allocated address 10.244.47.17 for server hcg-cp1-vsa0001 on network BLS-NET
+  Allocated address 10.244.47.18 for vsa hcg-cp1-vsa0001 on network BLS-NET
+  Allocated address 10.244.47.19 for vsa--cluster hcg-cp1-vsa on network BLS-NET
+
+Resolve Network Routes
+======================
+Add route from BLS-NET to BLS-WR-2 (same group)
+Add route from BLS-NET to BLS-WR-1 (same group)
+Add route from CLM-NET to CLM-WR-2 (same group)
+Add route from CLM-NET to CLM-WR-1 (same group)
+Add route from CLM-NET to 0.0.0.0/0 (default)
+Add route from CAN-NET to CAN-WR-2 (same group)
+Add route from CAN-NET to CAN-WR-1 (same group)
+
+Resolve Network Routes for each server
+======================================
+
+server: hcg-cp1-alm-hyp-m1
+--------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-2)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-1)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-2)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-1)
+
+server: hcg-cp1-alm-hyp-m2
+--------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-2)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-1)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-2)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-1)
+
+server: hcg-cp1-controller-m1
+-----------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-2)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-1)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-2)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-1)
+
+server: hcg-cp1-controller-m2
+-----------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-2)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-1)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-2)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-1)
+
+server: hcg-cp1-controller-m3
+-----------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-2)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-1)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-2)
+  Add CAN-NET -> 10.244.45.0/24 (CAN-WR-1)
+
+server: hcg-cp1-rmq-mysql-m1
+----------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+
+server: hcg-cp1-rmq-mysql-m2
+----------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+
+server: hcg-cp1-rmq-mysql-m3
+----------------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+
+server: hcg-cp1-mml-m1
+----------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+
+server: hcg-cp1-mml-m2
+----------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+
+server: hcg-cp1-mml-m3
+----------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+
+server: hcg-cp1-vsa0001
+-----------------------
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-2)
+  Add CLM-NET -> 10.244.44.0/24 (CLM-WR-1)
+  Add CLM-NET -> 0.0.0.0/0 (None)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-2)
+  Add BLS-NET -> 10.244.47.0/24 (BLS-WR-1)
+
+Define load balancers
+=====================
+
+Load balancer: lb
+-----------------
+  Allocated address 10.244.44.24 for vip lb hcg-cp1-vip-lb-clm on network CLM-NET
+  Add logging-api for roles ['internal', 'admin'] due to 'default'
+  Add mysql for roles ['internal', 'admin'] due to 'default'
+  Add glance-api for roles ['internal', 'admin'] due to 'default'
+  Add keystone-api for roles ['internal'] due to 'default'
+  Add keystone-api for roles ['admin'] due to 'default'
+  Add swift-proxy for roles ['internal', 'admin'] due to 'default'
+  Add freezer-api for roles ['internal', 'admin'] due to 'default'
+  Add monasca-api for roles ['internal', 'admin'] due to 'default'
+  Add vertica for roles ['internal'] due to 'default'
+  Add ops-console-web for roles ['internal', 'admin'] due to 'default'
+  Add ardana-ux-services for roles ['internal', 'admin'] due to 'default'
+  Add logging-server for roles ['internal', 'admin'] due to 'default'
+  Add cinder-api for roles ['internal', 'admin'] due to 'default'
+  Add ceilometer-api for roles ['internal', 'admin'] due to 'default'
+  Add glance-registry for roles ['internal'] due to 'default'
+
+Load balancer: extlb
+--------------------
+  Allocated address 10.244.45.15 for vip extlb hcg-cp1-vip-extlb-can on network CAN-NET
+  Add logging-api for roles ['public'] due to 'default'
+  Add glance-api for roles ['public'] due to 'default'
+  Add keystone-api for roles ['public'] due to 'default'
+  Add swift-proxy for roles ['public'] due to 'default'
+  Add freezer-api for roles ['public'] due to 'default'
+  Add monasca-api for roles ['public'] due to 'default'
+  Add ops-console-web for roles ['public'] due to 'default'
+  Add ardana-ux-services for roles ['public'] due to 'default'
+  Add cinder-api for roles ['public'] due to 'default'
+  Add ceilometer-api for roles ['public'] due to 'default'
+
+Map load balancers to providers
+===============================
+
+Network CLM-NET
+---------------
+  10.244.44.24: ip-cluster logging-api roles: ['internal', 'admin'] vip-port: 5607 host-port: 5607
+  10.244.44.24: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
+  10.244.44.24: ip-cluster glance-api roles: ['internal', 'admin'] vip-port: 9292 host-port: 9292
+  10.244.44.24: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  10.244.44.24: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  10.244.44.24: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
+  10.244.44.24: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090
+  10.244.44.24: ip-cluster monasca-api roles: ['internal', 'admin'] vip-port: 8070 host-port: 8070
+  10.244.44.24: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  10.244.44.24: ip-cluster ops-console-web roles: ['internal', 'admin'] vip-port: 9095 host-port: 9095
+  10.244.44.24: ip-cluster ardana-ux-services roles: ['internal', 'admin'] vip-port: 9085 host-port: 9085
+  10.244.44.24: ip-cluster logging-server roles: ['internal', 'admin'] vip-port: 5601 host-port: 5601
+  10.244.44.24: ip-cluster cinder-api roles: ['internal', 'admin'] vip-port: 8776 host-port: 8776
+  10.244.44.24: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
+  10.244.44.24: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
+
+Network CAN-NET
+---------------
+  10.244.45.15: ip-cluster logging-api roles: ['public'] vip-port: 5607 host-port: 5607
+  10.244.45.15: ip-cluster glance-api roles: ['public'] vip-port: 9292 host-port: 9292
+  10.244.45.15: ip-cluster keystone-api roles: ['public'] vip-port: 5000 host-port: 5000
+  10.244.45.15: ip-cluster swift-proxy roles: ['public'] vip-port: 8080 host-port: 8080
+  10.244.45.15: ip-cluster freezer-api roles: ['public'] vip-port: 9090 host-port: 9090
+  10.244.45.15: ip-cluster monasca-api roles: ['public'] vip-port: 8070 host-port: 8070
+  10.244.45.15: ip-cluster ops-console-web roles: ['public'] vip-port: 9095 host-port: 9095
+  10.244.45.15: ip-cluster ardana-ux-services roles: ['public'] vip-port: 9085 host-port: 9085
+  10.244.45.15: ip-cluster cinder-api roles: ['public'] vip-port: 8776 host-port: 8776
+  10.244.45.15: ip-cluster ceilometer-api roles: ['public'] vip-port: 8777 host-port: 8777
+
+Resolve Network Routes
+======================
+
+Resolve Network Routes for each server
+======================================
+
+Define load balancers
+=====================
+
+Load balancer: wr-lb
+--------------------
+
+Load balancer: wr-extlb
+-----------------------
+
+Map load balancers to providers
+===============================
+
+Resolve Network Routes
+======================
+
+Resolve Network Routes for each server
+======================================
+
+Define load balancers
+=====================
+
+Load balancer: wr-lb
+--------------------
+
+Load balancer: wr-extlb
+-----------------------
+
+Map load balancers to providers
+===============================

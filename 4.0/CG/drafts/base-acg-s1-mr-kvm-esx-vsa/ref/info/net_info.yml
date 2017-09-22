@@ -1,0 +1,18 @@
+service_ips:
+    vsa:
+    -   cluster: ardana-hypervisor
+        cluster_ip:
+            hostname: hcg-cp1-alm-hypervisor-VSA-BLK-bls
+            ip_address: 10.244.47.104
+        control_plane: cp1
+        hosts:
+        -   hostname: hcg-cp1-alm-hyp-m1-VSA-BLK-bls
+            ip_address: 10.244.47.103
+            name: hcg-cp1-alm-hyp-m1
+        -   hostname: hcg-cp1-alm-hyp-m2-VSA-BLK-bls
+            ip_address: 10.244.47.106
+            name: hcg-cp1-alm-hyp-m2
+        -   hostname: hcg-cp1-alm-hyp-m3-VSA-BLK-bls
+            ip_address: 10.244.47.108
+            name: hcg-cp1-alm-hyp-m3
+        network: BLS-NET

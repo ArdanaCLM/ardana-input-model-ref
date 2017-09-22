@@ -1,0 +1,586 @@
+
+Add required services to control plane control-plane
+====================================================
+control-plane: Added nova-metadata required by nova-api
+control-plane: Added swift-common required by swift-proxy
+control-plane: Added swift-rsync required by swift-account
+
+Allocate Servers for control plane control-plane
+================================================
+
+cluster: cluster1
+-----------------
+  Searching for server with role ['ROLE-CONTROLLER'] in zones: set([])
+  Allocated server 'controller1' (None)
+  Searching for server with role ['ROLE-CONTROLLER'] in zones: set([])
+  Allocated server 'controller2' (None)
+  Searching for server with role ['ROLE-CONTROLLER'] in zones: set([])
+  Allocated server 'controller3' (None)
+
+resource: vsa
+-------------
+  Searching for server with role ['ROLE-VSA'] in zones: set([])
+  Allocated server 'vsa1' (None)
+  Searching for server with role ['ROLE-VSA'] in zones: set([])
+  Allocated server 'vsa2' (None)
+  Searching for server with role ['ROLE-VSA'] in zones: set([])
+  Allocated server 'vsa3' (None)
+  Searching for server with role ['ROLE-VSA'] in zones: set([])
+
+resource: compute
+-----------------
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+  Allocated server 'compute1' (None)
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+  Allocated server 'compute2' (None)
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+  Allocated server 'compute3' (None)
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+  Allocated server 'compute4' (None)
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+  Allocated server 'compute5' (None)
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+  Allocated server 'compute6' (None)
+  Searching for server with role ['ROLE-COMPUTE'] in zones: set([])
+
+Resolve Networks for Servers
+============================
+
+server: ardana-control-plane-cluster1-m1
+----------------------------------------
+  add EXTERNAL_API for component ip-cluster
+  add ARDANA for component lifecycle-manager
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for component ip-cluster
+  add MGMT for ntp-server (default)
+  add MGMT for mysql (default)
+  add MGMT for apache2 (default)
+  add MGMT for keystone-api (default)
+  add MGMT for keystone-client (default)
+  add MGMT for rabbitmq (default)
+  add MGMT for glance-api (default)
+  add MGMT for glance-registry (default)
+  add MGMT for glance-client (default)
+  add MGMT for cinder-api (default)
+  add MGMT for cinder-scheduler (default)
+  add MGMT for cinder-volume (default)
+  add MGMT for cinder-backup (default)
+  add MGMT for cinder-client (default)
+  add MGMT for nova-api (default)
+  add MGMT for nova-scheduler (default)
+  add MGMT for nova-conductor (default)
+  add MGMT for nova-console-auth (default)
+  add MGMT for nova-novncproxy (default)
+  add MGMT for nova-client (default)
+  add MGMT for neutron-server (default)
+  add MGMT for neutron-ml2-plugin (default)
+  add MGMT for neutron-dhcp-agent (default)
+  add MGMT for neutron-metadata-agent (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-client (default)
+  add MGMT for horizon (default)
+  add MGMT for sherpa-api (default)
+  add MGMT for swift-proxy (default)
+  add MGMT for memcached (default)
+  add MGMT for swift-account (default)
+  add MGMT for swift-container (default)
+  add MGMT for swift-object (default)
+  add MGMT for swift-ring-builder (default)
+  add MGMT for swift-client (default)
+  add MGMT for heat-api (default)
+  add MGMT for heat-api-cfn (default)
+  add MGMT for heat-api-cloudwatch (default)
+  add MGMT for heat-engine (default)
+  add MGMT for heat-client (default)
+  add MGMT for openstack-client (default)
+  add MGMT for ceilometer-api (default)
+  add MGMT for ceilometer-collector (default)
+  add MGMT for ceilometer-agent-central (default)
+  add MGMT for ceilometer-agent-notification (default)
+  add MGMT for ceilometer-expirer (default)
+  add MGMT for ceilometer-common (default)
+  add MGMT for ceilometer-client (default)
+  add MGMT for zookeeper (default)
+  add MGMT for kafka (default)
+  add MGMT for vertica (default)
+  add MGMT for storm (default)
+  add MGMT for monasca-api (default)
+  add MGMT for monasca-persister (default)
+  add MGMT for monasca-notifier (default)
+  add MGMT for monasca-threshold (default)
+  add MGMT for monasca-client (default)
+  add MGMT for logging-server (default)
+  add MGMT for ops-console-web (default)
+  add MGMT for ops-console-monitor (default)
+  add MGMT for cmc-service (default)
+  add MGMT for freezer-api (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  add MGMT for nova-metadata (default)
+  add MGMT for swift-common (default)
+  add MGMT for swift-rsync (default)
+  Allocated address 101.0.0.34 for server ardana-control-plane-cluster1-m1 on network NET_ISCSI
+  Allocated address 100.100.60.225 for server ardana-control-plane-cluster1-m1 on network NET_EXTERNAL_API
+  Allocated address 100.100.60.65 for server ardana-control-plane-cluster1-m1 on network NET_MGMT
+  Using address 10.10.206.75 for server ardana-control-plane-cluster1-m1 on network NET_ARDANA
+
+server: ardana-control-plane-cluster1-m2
+----------------------------------------
+  add EXTERNAL_API for component ip-cluster
+  add ARDANA for component lifecycle-manager
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for component ip-cluster
+  add MGMT for ntp-server (default)
+  add MGMT for mysql (default)
+  add MGMT for apache2 (default)
+  add MGMT for keystone-api (default)
+  add MGMT for keystone-client (default)
+  add MGMT for rabbitmq (default)
+  add MGMT for glance-api (default)
+  add MGMT for glance-registry (default)
+  add MGMT for glance-client (default)
+  add MGMT for cinder-api (default)
+  add MGMT for cinder-scheduler (default)
+  add MGMT for cinder-volume (default)
+  add MGMT for cinder-backup (default)
+  add MGMT for cinder-client (default)
+  add MGMT for nova-api (default)
+  add MGMT for nova-scheduler (default)
+  add MGMT for nova-conductor (default)
+  add MGMT for nova-console-auth (default)
+  add MGMT for nova-novncproxy (default)
+  add MGMT for nova-client (default)
+  add MGMT for neutron-server (default)
+  add MGMT for neutron-ml2-plugin (default)
+  add MGMT for neutron-dhcp-agent (default)
+  add MGMT for neutron-metadata-agent (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-client (default)
+  add MGMT for horizon (default)
+  add MGMT for sherpa-api (default)
+  add MGMT for swift-proxy (default)
+  add MGMT for memcached (default)
+  add MGMT for swift-account (default)
+  add MGMT for swift-container (default)
+  add MGMT for swift-object (default)
+  add MGMT for swift-ring-builder (default)
+  add MGMT for swift-client (default)
+  add MGMT for heat-api (default)
+  add MGMT for heat-api-cfn (default)
+  add MGMT for heat-api-cloudwatch (default)
+  add MGMT for heat-engine (default)
+  add MGMT for heat-client (default)
+  add MGMT for openstack-client (default)
+  add MGMT for ceilometer-api (default)
+  add MGMT for ceilometer-collector (default)
+  add MGMT for ceilometer-agent-central (default)
+  add MGMT for ceilometer-agent-notification (default)
+  add MGMT for ceilometer-expirer (default)
+  add MGMT for ceilometer-common (default)
+  add MGMT for ceilometer-client (default)
+  add MGMT for zookeeper (default)
+  add MGMT for kafka (default)
+  add MGMT for vertica (default)
+  add MGMT for storm (default)
+  add MGMT for monasca-api (default)
+  add MGMT for monasca-persister (default)
+  add MGMT for monasca-notifier (default)
+  add MGMT for monasca-threshold (default)
+  add MGMT for monasca-client (default)
+  add MGMT for logging-server (default)
+  add MGMT for ops-console-web (default)
+  add MGMT for ops-console-monitor (default)
+  add MGMT for cmc-service (default)
+  add MGMT for freezer-api (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  add MGMT for nova-metadata (default)
+  add MGMT for swift-common (default)
+  add MGMT for swift-rsync (default)
+  Allocated address 101.0.0.35 for server ardana-control-plane-cluster1-m2 on network NET_ISCSI
+  Allocated address 100.100.60.226 for server ardana-control-plane-cluster1-m2 on network NET_EXTERNAL_API
+  Allocated address 100.100.60.66 for server ardana-control-plane-cluster1-m2 on network NET_MGMT
+  Using address 10.10.206.66 for server ardana-control-plane-cluster1-m2 on network NET_ARDANA
+
+server: ardana-control-plane-cluster1-m3
+----------------------------------------
+  add EXTERNAL_API for component ip-cluster
+  add ARDANA for component lifecycle-manager
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for component ip-cluster
+  add MGMT for ntp-server (default)
+  add MGMT for mysql (default)
+  add MGMT for apache2 (default)
+  add MGMT for keystone-api (default)
+  add MGMT for keystone-client (default)
+  add MGMT for rabbitmq (default)
+  add MGMT for glance-api (default)
+  add MGMT for glance-registry (default)
+  add MGMT for glance-client (default)
+  add MGMT for cinder-api (default)
+  add MGMT for cinder-scheduler (default)
+  add MGMT for cinder-volume (default)
+  add MGMT for cinder-backup (default)
+  add MGMT for cinder-client (default)
+  add MGMT for nova-api (default)
+  add MGMT for nova-scheduler (default)
+  add MGMT for nova-conductor (default)
+  add MGMT for nova-console-auth (default)
+  add MGMT for nova-novncproxy (default)
+  add MGMT for nova-client (default)
+  add MGMT for neutron-server (default)
+  add MGMT for neutron-ml2-plugin (default)
+  add MGMT for neutron-dhcp-agent (default)
+  add MGMT for neutron-metadata-agent (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-client (default)
+  add MGMT for horizon (default)
+  add MGMT for sherpa-api (default)
+  add MGMT for swift-proxy (default)
+  add MGMT for memcached (default)
+  add MGMT for swift-account (default)
+  add MGMT for swift-container (default)
+  add MGMT for swift-object (default)
+  add MGMT for swift-ring-builder (default)
+  add MGMT for swift-client (default)
+  add MGMT for heat-api (default)
+  add MGMT for heat-api-cfn (default)
+  add MGMT for heat-api-cloudwatch (default)
+  add MGMT for heat-engine (default)
+  add MGMT for heat-client (default)
+  add MGMT for openstack-client (default)
+  add MGMT for ceilometer-api (default)
+  add MGMT for ceilometer-collector (default)
+  add MGMT for ceilometer-agent-central (default)
+  add MGMT for ceilometer-agent-notification (default)
+  add MGMT for ceilometer-expirer (default)
+  add MGMT for ceilometer-common (default)
+  add MGMT for ceilometer-client (default)
+  add MGMT for zookeeper (default)
+  add MGMT for kafka (default)
+  add MGMT for vertica (default)
+  add MGMT for storm (default)
+  add MGMT for monasca-api (default)
+  add MGMT for monasca-persister (default)
+  add MGMT for monasca-notifier (default)
+  add MGMT for monasca-threshold (default)
+  add MGMT for monasca-client (default)
+  add MGMT for logging-server (default)
+  add MGMT for ops-console-web (default)
+  add MGMT for ops-console-monitor (default)
+  add MGMT for cmc-service (default)
+  add MGMT for freezer-api (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  add MGMT for nova-metadata (default)
+  add MGMT for swift-common (default)
+  add MGMT for swift-rsync (default)
+  Allocated address 101.0.0.36 for server ardana-control-plane-cluster1-m3 on network NET_ISCSI
+  Allocated address 100.100.60.227 for server ardana-control-plane-cluster1-m3 on network NET_EXTERNAL_API
+  Allocated address 100.100.60.67 for server ardana-control-plane-cluster1-m3 on network NET_MGMT
+  Using address 10.10.206.67 for server ardana-control-plane-cluster1-m3 on network NET_ARDANA
+
+server: ardana-control-plane-vsa0001
+------------------------------------
+  add ISCSI for component vsa
+  add ARDANA for component lifecycle-manager-target
+  add ISCSI for tag vsa.iscsi (vsa)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.37 for server ardana-control-plane-vsa0001 on network NET_ISCSI
+  Allocated address 100.100.60.68 for server ardana-control-plane-vsa0001 on network NET_MGMT
+  Using address 10.10.206.72 for server ardana-control-plane-vsa0001 on network NET_ARDANA
+  Allocated address 101.0.0.38 for vsa ardana-control-plane-vsa0001 on network NET_ISCSI
+  Allocated address 101.0.0.39 for vsa--cluster ardana-control-plane-vsa0001 on network NET_ISCSI
+
+server: ardana-control-plane-vsa0002
+------------------------------------
+  add ISCSI for component vsa
+  add ARDANA for component lifecycle-manager-target
+  add ISCSI for tag vsa.iscsi (vsa)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.40 for server ardana-control-plane-vsa0002 on network NET_ISCSI
+  Allocated address 100.100.60.69 for server ardana-control-plane-vsa0002 on network NET_MGMT
+  Using address 10.10.206.73 for server ardana-control-plane-vsa0002 on network NET_ARDANA
+  Allocated address 101.0.0.41 for vsa ardana-control-plane-vsa0002 on network NET_ISCSI
+
+server: ardana-control-plane-vsa0003
+------------------------------------
+  add ISCSI for component vsa
+  add ARDANA for component lifecycle-manager-target
+  add ISCSI for tag vsa.iscsi (vsa)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.42 for server ardana-control-plane-vsa0003 on network NET_ISCSI
+  Allocated address 100.100.60.70 for server ardana-control-plane-vsa0003 on network NET_MGMT
+  Using address 10.10.206.74 for server ardana-control-plane-vsa0003 on network NET_ARDANA
+  Allocated address 101.0.0.43 for vsa ardana-control-plane-vsa0003 on network NET_ISCSI
+
+server: ardana-control-plane-comp0001
+-------------------------------------
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for ntp-client (default)
+  add MGMT for nova-compute (default)
+  add MGMT for nova-compute-kvm (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-lbaasv2-agent (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.44 for server ardana-control-plane-comp0001 on network NET_ISCSI
+  Allocated address 100.100.60.71 for server ardana-control-plane-comp0001 on network NET_MGMT
+  Using address 10.10.206.68 for server ardana-control-plane-comp0001 on network NET_ARDANA
+
+server: ardana-control-plane-comp0002
+-------------------------------------
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for ntp-client (default)
+  add MGMT for nova-compute (default)
+  add MGMT for nova-compute-kvm (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-lbaasv2-agent (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.45 for server ardana-control-plane-comp0002 on network NET_ISCSI
+  Allocated address 100.100.60.72 for server ardana-control-plane-comp0002 on network NET_MGMT
+  Using address 10.10.206.69 for server ardana-control-plane-comp0002 on network NET_ARDANA
+
+server: ardana-control-plane-comp0003
+-------------------------------------
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for ntp-client (default)
+  add MGMT for nova-compute (default)
+  add MGMT for nova-compute-kvm (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-lbaasv2-agent (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.46 for server ardana-control-plane-comp0003 on network NET_ISCSI
+  Allocated address 100.100.60.73 for server ardana-control-plane-comp0003 on network NET_MGMT
+  Using address 10.10.206.70 for server ardana-control-plane-comp0003 on network NET_ARDANA
+
+server: ardana-control-plane-comp0004
+-------------------------------------
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for ntp-client (default)
+  add MGMT for nova-compute (default)
+  add MGMT for nova-compute-kvm (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-lbaasv2-agent (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.47 for server ardana-control-plane-comp0004 on network NET_ISCSI
+  Allocated address 100.100.60.74 for server ardana-control-plane-comp0004 on network NET_MGMT
+  Using address 10.10.206.71 for server ardana-control-plane-comp0004 on network NET_ARDANA
+
+server: ardana-control-plane-comp0005
+-------------------------------------
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for ntp-client (default)
+  add MGMT for nova-compute (default)
+  add MGMT for nova-compute-kvm (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-lbaasv2-agent (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.48 for server ardana-control-plane-comp0005 on network NET_ISCSI
+  Allocated address 100.100.60.75 for server ardana-control-plane-comp0005 on network NET_MGMT
+  Using address 10.10.206.76 for server ardana-control-plane-comp0005 on network NET_ARDANA
+
+server: ardana-control-plane-comp0006
+-------------------------------------
+  add ARDANA for component lifecycle-manager-target
+  add MGMT for ntp-client (default)
+  add MGMT for nova-compute (default)
+  add MGMT for nova-compute-kvm (default)
+  add MGMT for neutron-openvswitch-agent (default)
+  add MGMT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MGMT for neutron-lbaasv2-agent (default)
+  add MGMT for freezer-agent (default)
+  add MGMT for logging-producer (default)
+  add MGMT for monasca-agent (default)
+  add MGMT for stunnel (default)
+  Allocated address 101.0.0.49 for server ardana-control-plane-comp0006 on network NET_ISCSI
+  Allocated address 100.100.60.76 for server ardana-control-plane-comp0006 on network NET_MGMT
+  Using address 10.10.206.77 for server ardana-control-plane-comp0006 on network NET_ARDANA
+
+Resolve Network Routes
+======================
+Add route from NET_MGMT to 0.0.0.0/0 (default)
+
+Resolve Network Routes for each server
+======================================
+
+server: ardana-control-plane-cluster1-m1
+----------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-cluster1-m2
+----------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-cluster1-m3
+----------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-vsa0001
+------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-vsa0002
+------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-vsa0003
+------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-comp0001
+-------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-comp0002
+-------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-comp0003
+-------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-comp0004
+-------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-comp0005
+-------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+server: ardana-control-plane-comp0006
+-------------------------------------
+  Add NET_MGMT -> 0.0.0.0/0 (None)
+
+Define load balancers
+=====================
+
+Load balancer: extlb
+--------------------
+  Allocated address 100.100.60.228 for vip extlb ardana-control-plane-vip-extlb-extapi on network NET_EXTERNAL_API
+  Add nova-api for roles ['public'] due to 'default'
+  Add keystone-api for roles ['public'] due to 'default'
+  Add swift-proxy for roles ['public'] due to 'default'
+  Add monasca-api for roles ['public'] due to 'default'
+  Add sherpa-api for roles ['public'] due to 'default'
+  Add heat-api-cfn for roles ['public'] due to 'default'
+  Add ops-console-web for roles ['public'] due to 'default'
+  Add heat-api for roles ['public'] due to 'default'
+  Add nova-novncproxy for roles ['public'] due to 'default'
+  Add neutron-server for roles ['public'] due to 'default'
+  Add heat-api-cloudwatch for roles ['public'] due to 'default'
+  Add ceilometer-api for roles ['public'] due to 'default'
+  Add freezer-api for roles ['public'] due to 'default'
+  Add horizon for roles ['public'] due to 'default'
+  Add glance-api for roles ['public'] due to 'default'
+  Add cinder-api for roles ['public'] due to 'default'
+
+Load balancer: lb
+-----------------
+  Allocated address 100.100.60.77 for vip lb ardana-control-plane-vip-lb-mgmt on network NET_MGMT
+  Add nova-api for roles ['internal', 'admin'] due to 'default'
+  Add keystone-api for roles ['internal'] due to 'default'
+  Add keystone-api for roles ['admin'] due to 'default'
+  Add swift-proxy for roles ['internal', 'admin'] due to 'default'
+  Add monasca-api for roles ['internal'] due to 'default'
+  Add vertica for roles ['internal'] due to 'default'
+  Add sherpa-api for roles ['internal', 'admin'] due to 'default'
+  Add heat-api-cfn for roles ['internal'] due to 'default'
+  Add ops-console-web for roles ['internal'] due to 'default'
+  Add heat-api for roles ['internal'] due to 'default'
+  Add neutron-server for roles ['internal', 'admin'] due to 'default'
+  Add glance-registry for roles ['internal'] due to 'default'
+  Add heat-api-cloudwatch for roles ['internal'] due to 'default'
+  Add mysql for roles ['internal', 'admin'] due to 'default'
+  Add nova-metadata for roles ['internal'] due to 'default'
+  Add ceilometer-api for roles ['internal', 'admin'] due to 'default'
+  Add rabbitmq for roles ['internal'] due to 'default'
+  Add freezer-api for roles ['internal', 'admin'] due to 'default'
+  Add horizon for roles ['internal'] due to 'default'
+  Add glance-api for roles ['internal', 'admin'] due to 'default'
+  Add logging-server for roles ['internal'] due to 'default'
+  Add cinder-api for roles ['internal', 'admin'] due to 'default'
+
+Map load balancers to providers
+===============================
+
+Network NET_EXTERNAL_API
+------------------------
+  100.100.60.228: ip-cluster nova-api roles: ['public'] vip-port: 8774 host-port: 8774
+  100.100.60.228: ip-cluster keystone-api roles: ['public'] vip-port: 5000 host-port: 5000
+  100.100.60.228: ip-cluster swift-proxy roles: ['public'] vip-port: 8080 host-port: 8080
+  100.100.60.228: ip-cluster monasca-api roles: ['public'] vip-port: 8070 host-port: 8070
+  100.100.60.228: ip-cluster sherpa-api roles: ['public'] vip-port: 21131 host-port: 21131
+  100.100.60.228: ip-cluster heat-api-cfn roles: ['public'] vip-port: 8000 host-port: 8000
+  100.100.60.228: ip-cluster ops-console-web roles: ['public'] vip-port: 9095 host-port: 9095
+  100.100.60.228: ip-cluster heat-api roles: ['public'] vip-port: 8004 host-port: 8004
+  100.100.60.228: ip-cluster nova-novncproxy roles: ['public'] vip-port: 6080 host-port: 6080
+  100.100.60.228: ip-cluster neutron-server roles: ['public'] vip-port: 9696 host-port: 9696
+  100.100.60.228: ip-cluster heat-api-cloudwatch roles: ['public'] vip-port: 8003 host-port: 8003
+  100.100.60.228: ip-cluster ceilometer-api roles: ['public'] vip-port: 8777 host-port: 8777
+  100.100.60.228: ip-cluster freezer-api roles: ['public'] vip-port: 9090 host-port: 9090
+  100.100.60.228: ip-cluster horizon roles: ['public'] vip-port: 80 host-port: 80
+  100.100.60.228: ip-cluster glance-api roles: ['public'] vip-port: 9292 host-port: 9292
+  100.100.60.228: ip-cluster cinder-api roles: ['public'] vip-port: 8776 host-port: 8776
+
+Network NET_MGMT
+----------------
+  100.100.60.77: ip-cluster nova-api roles: ['internal', 'admin'] vip-port: 8774 host-port: 8774
+  100.100.60.77: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  100.100.60.77: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  100.100.60.77: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
+  100.100.60.77: ip-cluster monasca-api roles: ['internal'] vip-port: 8070 host-port: 8070
+  100.100.60.77: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  100.100.60.77: ip-cluster sherpa-api roles: ['internal', 'admin'] vip-port: 21131 host-port: 21131
+  100.100.60.77: ip-cluster heat-api-cfn roles: ['internal'] vip-port: 8000 host-port: 8000
+  100.100.60.77: ip-cluster ops-console-web roles: ['internal'] vip-port: 9095 host-port: 9095
+  100.100.60.77: ip-cluster heat-api roles: ['internal'] vip-port: 8004 host-port: 8004
+  100.100.60.77: ip-cluster neutron-server roles: ['internal', 'admin'] vip-port: 9696 host-port: 9696
+  100.100.60.77: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
+  100.100.60.77: ip-cluster heat-api-cloudwatch roles: ['internal'] vip-port: 8003 host-port: 8003
+  100.100.60.77: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
+  100.100.60.77: ip-cluster nova-metadata roles: ['internal'] vip-port: 8775 host-port: 8775
+  100.100.60.77: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
+  100.100.60.77: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
+  100.100.60.77: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090
+  100.100.60.77: ip-cluster horizon roles: ['internal'] vip-port: 80 host-port: 80
+  100.100.60.77: ip-cluster glance-api roles: ['internal', 'admin'] vip-port: 9292 host-port: 9292
+  100.100.60.77: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601
+  100.100.60.77: ip-cluster cinder-api roles: ['internal', 'admin'] vip-port: 8776 host-port: 8776

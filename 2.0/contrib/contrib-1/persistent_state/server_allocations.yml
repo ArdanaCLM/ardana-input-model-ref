@@ -1,0 +1,72 @@
+compute1:
+  cp_name: control-plane
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+compute2:
+  cp_name: control-plane
+  member_id: 2
+  resource_name: compute
+  state: allocated
+  type: resource
+compute3:
+  cp_name: control-plane
+  member_id: 3
+  resource_name: compute
+  state: allocated
+  type: resource
+compute4:
+  cp_name: control-plane
+  member_id: 4
+  resource_name: compute
+  state: allocated
+  type: resource
+compute5:
+  cp_name: control-plane
+  member_id: 5
+  resource_name: compute
+  state: allocated
+  type: resource
+compute6:
+  cp_name: control-plane
+  member_id: 6
+  resource_name: compute
+  state: allocated
+  type: resource
+controller1:
+  cluster_name: cluster1
+  cp_name: control-plane
+  member_id: 1
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: cluster1
+  cp_name: control-plane
+  member_id: 2
+  state: allocated
+  type: cluster
+controller3:
+  cluster_name: cluster1
+  cp_name: control-plane
+  member_id: 3
+  state: allocated
+  type: cluster
+vsa1:
+  cp_name: control-plane
+  member_id: 1
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa2:
+  cp_name: control-plane
+  member_id: 2
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa3:
+  cp_name: control-plane
+  member_id: 3
+  resource_name: vsa
+  state: allocated
+  type: resource

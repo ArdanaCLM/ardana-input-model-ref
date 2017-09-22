@@ -1,0 +1,42 @@
+controller1:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+controller3:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+esx-compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: esx-compute
+  state: allocated
+  type: resource
+lifecycle-manager:
+  cluster_name: cluster0
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+ovsvapp1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: esx-ovsvapp
+  state: allocated
+  type: resource
+ovsvapp2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: esx-ovsvapp
+  state: allocated
+  type: resource

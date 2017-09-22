@@ -1,0 +1,723 @@
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        10.13.65.100:
+        - scale300-ccp-c1-m1-extapi
+        10.13.65.101:
+        - scale300-ccp-c1-m2-extapi
+        10.13.65.102:
+        - scale300-ccp-c1-m3-extapi
+        10.13.65.103:
+        - scale300-ccp-vip-public-CEI-API-extapi
+        - scale300-ccp-vip-public-CND-API-extapi
+        - scale300-ccp-vip-public-FRE-API-extapi
+        - scale300-ccp-vip-public-GLA-API-extapi
+        - scale300-ccp-vip-public-HEA-ACF-extapi
+        - scale300-ccp-vip-public-HEA-ACW-extapi
+        - scale300-ccp-vip-public-HEA-API-extapi
+        - scale300-ccp-vip-public-HZN-WEB-extapi
+        - scale300-ccp-vip-public-KEY-API-extapi
+        - scale300-ccp-vip-public-MON-API-extapi
+        - scale300-ccp-vip-public-NEU-SVR-extapi
+        - scale300-ccp-vip-public-NOV-API-extapi
+        - scale300-ccp-vip-public-NOV-VNC-extapi
+        - scale300-ccp-vip-public-OPS-WEB-extapi
+        - scale300-ccp-vip-public-SHP-API-extapi
+        - scale300-ccp-vip-public-SWF-PRX-extapi
+EXTERNAL-VM:
+    EXTERNAL-VM-NET:
+        10.13.32.0:
+        - scale300-ccp-c1-m1-EXTERNAL-VM
+        10.13.32.1:
+        - scale300-ccp-c1-m2-EXTERNAL-VM
+        10.13.32.10:
+        - scale300-ccp-comp0008-EXTERNAL-VM
+        10.13.32.100:
+        - scale300-ccp-comp0098-EXTERNAL-VM
+        10.13.32.101:
+        - scale300-ccp-comp0099-EXTERNAL-VM
+        10.13.32.102:
+        - scale300-ccp-comp0100-EXTERNAL-VM
+        10.13.32.103:
+        - scale300-ccp-comp0101-EXTERNAL-VM
+        10.13.32.104:
+        - scale300-ccp-comp0102-EXTERNAL-VM
+        10.13.32.105:
+        - scale300-ccp-comp0103-EXTERNAL-VM
+        10.13.32.106:
+        - scale300-ccp-comp0104-EXTERNAL-VM
+        10.13.32.11:
+        - scale300-ccp-comp0009-EXTERNAL-VM
+        10.13.32.12:
+        - scale300-ccp-comp0010-EXTERNAL-VM
+        10.13.32.13:
+        - scale300-ccp-comp0011-EXTERNAL-VM
+        10.13.32.14:
+        - scale300-ccp-comp0012-EXTERNAL-VM
+        10.13.32.15:
+        - scale300-ccp-comp0013-EXTERNAL-VM
+        10.13.32.16:
+        - scale300-ccp-comp0014-EXTERNAL-VM
+        10.13.32.17:
+        - scale300-ccp-comp0015-EXTERNAL-VM
+        10.13.32.18:
+        - scale300-ccp-comp0016-EXTERNAL-VM
+        10.13.32.19:
+        - scale300-ccp-comp0017-EXTERNAL-VM
+        10.13.32.2:
+        - scale300-ccp-c1-m3-EXTERNAL-VM
+        10.13.32.20:
+        - scale300-ccp-comp0018-EXTERNAL-VM
+        10.13.32.21:
+        - scale300-ccp-comp0019-EXTERNAL-VM
+        10.13.32.22:
+        - scale300-ccp-comp0020-EXTERNAL-VM
+        10.13.32.23:
+        - scale300-ccp-comp0021-EXTERNAL-VM
+        10.13.32.24:
+        - scale300-ccp-comp0022-EXTERNAL-VM
+        10.13.32.25:
+        - scale300-ccp-comp0023-EXTERNAL-VM
+        10.13.32.26:
+        - scale300-ccp-comp0024-EXTERNAL-VM
+        10.13.32.27:
+        - scale300-ccp-comp0025-EXTERNAL-VM
+        10.13.32.28:
+        - scale300-ccp-comp0026-EXTERNAL-VM
+        10.13.32.29:
+        - scale300-ccp-comp0027-EXTERNAL-VM
+        10.13.32.3:
+        - scale300-ccp-comp0001-EXTERNAL-VM
+        10.13.32.30:
+        - scale300-ccp-comp0028-EXTERNAL-VM
+        10.13.32.31:
+        - scale300-ccp-comp0029-EXTERNAL-VM
+        10.13.32.32:
+        - scale300-ccp-comp0030-EXTERNAL-VM
+        10.13.32.33:
+        - scale300-ccp-comp0031-EXTERNAL-VM
+        10.13.32.34:
+        - scale300-ccp-comp0032-EXTERNAL-VM
+        10.13.32.35:
+        - scale300-ccp-comp0033-EXTERNAL-VM
+        10.13.32.36:
+        - scale300-ccp-comp0034-EXTERNAL-VM
+        10.13.32.37:
+        - scale300-ccp-comp0035-EXTERNAL-VM
+        10.13.32.38:
+        - scale300-ccp-comp0036-EXTERNAL-VM
+        10.13.32.39:
+        - scale300-ccp-comp0037-EXTERNAL-VM
+        10.13.32.4:
+        - scale300-ccp-comp0002-EXTERNAL-VM
+        10.13.32.40:
+        - scale300-ccp-comp0038-EXTERNAL-VM
+        10.13.32.41:
+        - scale300-ccp-comp0039-EXTERNAL-VM
+        10.13.32.42:
+        - scale300-ccp-comp0040-EXTERNAL-VM
+        10.13.32.43:
+        - scale300-ccp-comp0041-EXTERNAL-VM
+        10.13.32.44:
+        - scale300-ccp-comp0042-EXTERNAL-VM
+        10.13.32.45:
+        - scale300-ccp-comp0043-EXTERNAL-VM
+        10.13.32.46:
+        - scale300-ccp-comp0044-EXTERNAL-VM
+        10.13.32.47:
+        - scale300-ccp-comp0045-EXTERNAL-VM
+        10.13.32.48:
+        - scale300-ccp-comp0046-EXTERNAL-VM
+        10.13.32.49:
+        - scale300-ccp-comp0047-EXTERNAL-VM
+        10.13.32.5:
+        - scale300-ccp-comp0003-EXTERNAL-VM
+        10.13.32.50:
+        - scale300-ccp-comp0048-EXTERNAL-VM
+        10.13.32.51:
+        - scale300-ccp-comp0049-EXTERNAL-VM
+        10.13.32.52:
+        - scale300-ccp-comp0050-EXTERNAL-VM
+        10.13.32.53:
+        - scale300-ccp-comp0051-EXTERNAL-VM
+        10.13.32.54:
+        - scale300-ccp-comp0052-EXTERNAL-VM
+        10.13.32.55:
+        - scale300-ccp-comp0053-EXTERNAL-VM
+        10.13.32.56:
+        - scale300-ccp-comp0054-EXTERNAL-VM
+        10.13.32.57:
+        - scale300-ccp-comp0055-EXTERNAL-VM
+        10.13.32.58:
+        - scale300-ccp-comp0056-EXTERNAL-VM
+        10.13.32.59:
+        - scale300-ccp-comp0057-EXTERNAL-VM
+        10.13.32.6:
+        - scale300-ccp-comp0004-EXTERNAL-VM
+        10.13.32.60:
+        - scale300-ccp-comp0058-EXTERNAL-VM
+        10.13.32.61:
+        - scale300-ccp-comp0059-EXTERNAL-VM
+        10.13.32.62:
+        - scale300-ccp-comp0060-EXTERNAL-VM
+        10.13.32.63:
+        - scale300-ccp-comp0061-EXTERNAL-VM
+        10.13.32.64:
+        - scale300-ccp-comp0062-EXTERNAL-VM
+        10.13.32.65:
+        - scale300-ccp-comp0063-EXTERNAL-VM
+        10.13.32.66:
+        - scale300-ccp-comp0064-EXTERNAL-VM
+        10.13.32.67:
+        - scale300-ccp-comp0065-EXTERNAL-VM
+        10.13.32.68:
+        - scale300-ccp-comp0066-EXTERNAL-VM
+        10.13.32.69:
+        - scale300-ccp-comp0067-EXTERNAL-VM
+        10.13.32.7:
+        - scale300-ccp-comp0005-EXTERNAL-VM
+        10.13.32.70:
+        - scale300-ccp-comp0068-EXTERNAL-VM
+        10.13.32.71:
+        - scale300-ccp-comp0069-EXTERNAL-VM
+        10.13.32.72:
+        - scale300-ccp-comp0070-EXTERNAL-VM
+        10.13.32.73:
+        - scale300-ccp-comp0071-EXTERNAL-VM
+        10.13.32.74:
+        - scale300-ccp-comp0072-EXTERNAL-VM
+        10.13.32.75:
+        - scale300-ccp-comp0073-EXTERNAL-VM
+        10.13.32.76:
+        - scale300-ccp-comp0074-EXTERNAL-VM
+        10.13.32.77:
+        - scale300-ccp-comp0075-EXTERNAL-VM
+        10.13.32.78:
+        - scale300-ccp-comp0076-EXTERNAL-VM
+        10.13.32.79:
+        - scale300-ccp-comp0077-EXTERNAL-VM
+        10.13.32.8:
+        - scale300-ccp-comp0006-EXTERNAL-VM
+        10.13.32.80:
+        - scale300-ccp-comp0078-EXTERNAL-VM
+        10.13.32.81:
+        - scale300-ccp-comp0079-EXTERNAL-VM
+        10.13.32.82:
+        - scale300-ccp-comp0080-EXTERNAL-VM
+        10.13.32.83:
+        - scale300-ccp-comp0081-EXTERNAL-VM
+        10.13.32.84:
+        - scale300-ccp-comp0082-EXTERNAL-VM
+        10.13.32.85:
+        - scale300-ccp-comp0083-EXTERNAL-VM
+        10.13.32.86:
+        - scale300-ccp-comp0084-EXTERNAL-VM
+        10.13.32.87:
+        - scale300-ccp-comp0085-EXTERNAL-VM
+        10.13.32.88:
+        - scale300-ccp-comp0086-EXTERNAL-VM
+        10.13.32.89:
+        - scale300-ccp-comp0087-EXTERNAL-VM
+        10.13.32.9:
+        - scale300-ccp-comp0007-EXTERNAL-VM
+        10.13.32.90:
+        - scale300-ccp-comp0088-EXTERNAL-VM
+        10.13.32.91:
+        - scale300-ccp-comp0089-EXTERNAL-VM
+        10.13.32.92:
+        - scale300-ccp-comp0090-EXTERNAL-VM
+        10.13.32.93:
+        - scale300-ccp-comp0091-EXTERNAL-VM
+        10.13.32.94:
+        - scale300-ccp-comp0092-EXTERNAL-VM
+        10.13.32.95:
+        - scale300-ccp-comp0093-EXTERNAL-VM
+        10.13.32.96:
+        - scale300-ccp-comp0094-EXTERNAL-VM
+        10.13.32.97:
+        - scale300-ccp-comp0095-EXTERNAL-VM
+        10.13.32.98:
+        - scale300-ccp-comp0096-EXTERNAL-VM
+        10.13.32.99:
+        - scale300-ccp-comp0097-EXTERNAL-VM
+GUEST:
+    GUEST-NET:
+        10.13.67.100:
+        - scale300-ccp-c1-m1-guest
+        10.13.67.101:
+        - scale300-ccp-c1-m2-guest
+        10.13.67.102:
+        - scale300-ccp-c1-m3-guest
+        10.13.67.103:
+        - scale300-ccp-comp0001-guest
+        10.13.67.104:
+        - scale300-ccp-comp0002-guest
+        10.13.67.105:
+        - scale300-ccp-comp0003-guest
+        10.13.67.106:
+        - scale300-ccp-comp0004-guest
+        10.13.67.107:
+        - scale300-ccp-comp0005-guest
+        10.13.67.108:
+        - scale300-ccp-comp0006-guest
+        10.13.67.109:
+        - scale300-ccp-comp0007-guest
+        10.13.67.110:
+        - scale300-ccp-comp0008-guest
+        10.13.67.111:
+        - scale300-ccp-comp0009-guest
+        10.13.67.112:
+        - scale300-ccp-comp0010-guest
+        10.13.67.113:
+        - scale300-ccp-comp0011-guest
+        10.13.67.114:
+        - scale300-ccp-comp0012-guest
+        10.13.67.115:
+        - scale300-ccp-comp0013-guest
+        10.13.67.116:
+        - scale300-ccp-comp0014-guest
+        10.13.67.117:
+        - scale300-ccp-comp0015-guest
+        10.13.67.118:
+        - scale300-ccp-comp0016-guest
+        10.13.67.119:
+        - scale300-ccp-comp0017-guest
+        10.13.67.120:
+        - scale300-ccp-comp0018-guest
+        10.13.67.121:
+        - scale300-ccp-comp0019-guest
+        10.13.67.122:
+        - scale300-ccp-comp0020-guest
+        10.13.67.123:
+        - scale300-ccp-comp0021-guest
+        10.13.67.124:
+        - scale300-ccp-comp0022-guest
+        10.13.67.125:
+        - scale300-ccp-comp0023-guest
+        10.13.67.126:
+        - scale300-ccp-comp0024-guest
+        10.13.67.127:
+        - scale300-ccp-comp0025-guest
+        10.13.67.128:
+        - scale300-ccp-comp0026-guest
+        10.13.67.129:
+        - scale300-ccp-comp0027-guest
+        10.13.67.130:
+        - scale300-ccp-comp0028-guest
+        10.13.67.131:
+        - scale300-ccp-comp0029-guest
+        10.13.67.132:
+        - scale300-ccp-comp0030-guest
+        10.13.67.133:
+        - scale300-ccp-comp0031-guest
+        10.13.67.134:
+        - scale300-ccp-comp0032-guest
+        10.13.67.135:
+        - scale300-ccp-comp0033-guest
+        10.13.67.136:
+        - scale300-ccp-comp0034-guest
+        10.13.67.137:
+        - scale300-ccp-comp0035-guest
+        10.13.67.138:
+        - scale300-ccp-comp0036-guest
+        10.13.67.139:
+        - scale300-ccp-comp0037-guest
+        10.13.67.140:
+        - scale300-ccp-comp0038-guest
+        10.13.67.141:
+        - scale300-ccp-comp0039-guest
+        10.13.67.142:
+        - scale300-ccp-comp0040-guest
+        10.13.67.143:
+        - scale300-ccp-comp0041-guest
+        10.13.67.144:
+        - scale300-ccp-comp0042-guest
+        10.13.67.145:
+        - scale300-ccp-comp0043-guest
+        10.13.67.146:
+        - scale300-ccp-comp0044-guest
+        10.13.67.147:
+        - scale300-ccp-comp0045-guest
+        10.13.67.148:
+        - scale300-ccp-comp0046-guest
+        10.13.67.149:
+        - scale300-ccp-comp0047-guest
+        10.13.67.150:
+        - scale300-ccp-comp0048-guest
+        10.13.67.151:
+        - scale300-ccp-comp0049-guest
+        10.13.67.152:
+        - scale300-ccp-comp0050-guest
+        10.13.67.153:
+        - scale300-ccp-comp0051-guest
+        10.13.67.154:
+        - scale300-ccp-comp0052-guest
+        10.13.67.155:
+        - scale300-ccp-comp0053-guest
+        10.13.67.156:
+        - scale300-ccp-comp0054-guest
+        10.13.67.157:
+        - scale300-ccp-comp0055-guest
+        10.13.67.158:
+        - scale300-ccp-comp0056-guest
+        10.13.67.159:
+        - scale300-ccp-comp0057-guest
+        10.13.67.160:
+        - scale300-ccp-comp0058-guest
+        10.13.67.161:
+        - scale300-ccp-comp0059-guest
+        10.13.67.162:
+        - scale300-ccp-comp0060-guest
+        10.13.67.163:
+        - scale300-ccp-comp0061-guest
+        10.13.67.164:
+        - scale300-ccp-comp0062-guest
+        10.13.67.165:
+        - scale300-ccp-comp0063-guest
+        10.13.67.166:
+        - scale300-ccp-comp0064-guest
+        10.13.67.167:
+        - scale300-ccp-comp0065-guest
+        10.13.67.168:
+        - scale300-ccp-comp0066-guest
+        10.13.67.169:
+        - scale300-ccp-comp0067-guest
+        10.13.67.170:
+        - scale300-ccp-comp0068-guest
+        10.13.67.171:
+        - scale300-ccp-comp0069-guest
+        10.13.67.172:
+        - scale300-ccp-comp0070-guest
+        10.13.67.173:
+        - scale300-ccp-comp0071-guest
+        10.13.67.174:
+        - scale300-ccp-comp0072-guest
+        10.13.67.175:
+        - scale300-ccp-comp0073-guest
+        10.13.67.176:
+        - scale300-ccp-comp0074-guest
+        10.13.67.177:
+        - scale300-ccp-comp0075-guest
+        10.13.67.178:
+        - scale300-ccp-comp0076-guest
+        10.13.67.179:
+        - scale300-ccp-comp0077-guest
+        10.13.67.180:
+        - scale300-ccp-comp0078-guest
+        10.13.67.181:
+        - scale300-ccp-comp0079-guest
+        10.13.67.182:
+        - scale300-ccp-comp0080-guest
+        10.13.67.183:
+        - scale300-ccp-comp0081-guest
+        10.13.67.184:
+        - scale300-ccp-comp0082-guest
+        10.13.67.185:
+        - scale300-ccp-comp0083-guest
+        10.13.67.186:
+        - scale300-ccp-comp0084-guest
+        10.13.67.187:
+        - scale300-ccp-comp0085-guest
+        10.13.67.188:
+        - scale300-ccp-comp0086-guest
+        10.13.67.189:
+        - scale300-ccp-comp0087-guest
+        10.13.67.190:
+        - scale300-ccp-comp0088-guest
+        10.13.67.191:
+        - scale300-ccp-comp0089-guest
+        10.13.67.192:
+        - scale300-ccp-comp0090-guest
+        10.13.67.193:
+        - scale300-ccp-comp0091-guest
+        10.13.67.194:
+        - scale300-ccp-comp0092-guest
+        10.13.67.195:
+        - scale300-ccp-comp0093-guest
+        10.13.67.196:
+        - scale300-ccp-comp0094-guest
+        10.13.67.197:
+        - scale300-ccp-comp0095-guest
+        10.13.67.198:
+        - scale300-ccp-comp0096-guest
+        10.13.67.199:
+        - scale300-ccp-comp0097-guest
+        10.13.67.200:
+        - scale300-ccp-comp0098-guest
+        10.13.67.201:
+        - scale300-ccp-comp0099-guest
+        10.13.67.202:
+        - scale300-ccp-comp0100-guest
+        10.13.67.203:
+        - scale300-ccp-comp0101-guest
+        10.13.67.204:
+        - scale300-ccp-comp0102-guest
+        10.13.67.205:
+        - scale300-ccp-comp0103-guest
+        10.13.67.206:
+        - scale300-ccp-comp0104-guest
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.12.49.101:
+        - scale300-ccp-c0-m1-mgmt
+        10.12.49.102:
+        - scale300-ccp-c1-m1-mgmt
+        10.12.49.103:
+        - scale300-ccp-c1-m2-mgmt
+        10.12.49.104:
+        - scale300-ccp-c1-m3-mgmt
+        10.12.49.105:
+        - scale300-ccp-vsa0001-mgmt
+        10.12.49.106:
+        - scale300-ccp-vsa0002-mgmt
+        10.12.49.107:
+        - scale300-ccp-vsa0003-mgmt
+        10.12.49.108:
+        - scale300-ccp-comp0001-mgmt
+        10.12.49.109:
+        - scale300-ccp-comp0036-mgmt
+        10.12.49.110:
+        - scale300-ccp-comp0071-mgmt
+        10.12.49.111:
+        - scale300-ccp-comp0002-mgmt
+        10.12.49.112:
+        - scale300-ccp-comp0037-mgmt
+        10.12.49.113:
+        - scale300-ccp-comp0072-mgmt
+        10.12.49.114:
+        - scale300-ccp-comp0003-mgmt
+        10.12.49.115:
+        - scale300-ccp-comp0038-mgmt
+        10.12.49.116:
+        - scale300-ccp-comp0073-mgmt
+        10.12.49.117:
+        - scale300-ccp-comp0004-mgmt
+        10.12.49.118:
+        - scale300-ccp-comp0039-mgmt
+        10.12.49.119:
+        - scale300-ccp-comp0074-mgmt
+        10.12.49.120:
+        - scale300-ccp-comp0005-mgmt
+        10.12.49.121:
+        - scale300-ccp-comp0040-mgmt
+        10.12.49.122:
+        - scale300-ccp-comp0075-mgmt
+        10.12.49.123:
+        - scale300-ccp-comp0006-mgmt
+        10.12.49.124:
+        - scale300-ccp-comp0041-mgmt
+        10.12.49.125:
+        - scale300-ccp-comp0076-mgmt
+        10.12.49.126:
+        - scale300-ccp-comp0007-mgmt
+        10.12.49.127:
+        - scale300-ccp-comp0042-mgmt
+        10.12.49.128:
+        - scale300-ccp-comp0077-mgmt
+        10.12.49.129:
+        - scale300-ccp-comp0008-mgmt
+        10.12.49.130:
+        - scale300-ccp-comp0043-mgmt
+        10.12.49.131:
+        - scale300-ccp-comp0078-mgmt
+        10.12.49.132:
+        - scale300-ccp-comp0009-mgmt
+        10.12.49.133:
+        - scale300-ccp-comp0044-mgmt
+        10.12.49.134:
+        - scale300-ccp-comp0079-mgmt
+        10.12.49.135:
+        - scale300-ccp-comp0010-mgmt
+        10.12.49.136:
+        - scale300-ccp-comp0045-mgmt
+        10.12.49.137:
+        - scale300-ccp-comp0080-mgmt
+        10.12.49.138:
+        - scale300-ccp-comp0011-mgmt
+        10.12.49.139:
+        - scale300-ccp-comp0046-mgmt
+        10.12.49.140:
+        - scale300-ccp-comp0081-mgmt
+        10.12.49.141:
+        - scale300-ccp-comp0012-mgmt
+        10.12.49.142:
+        - scale300-ccp-comp0047-mgmt
+        10.12.49.143:
+        - scale300-ccp-comp0082-mgmt
+        10.12.49.144:
+        - scale300-ccp-comp0013-mgmt
+        10.12.49.145:
+        - scale300-ccp-comp0048-mgmt
+        10.12.49.146:
+        - scale300-ccp-comp0083-mgmt
+        10.12.49.147:
+        - scale300-ccp-comp0014-mgmt
+        10.12.49.148:
+        - scale300-ccp-comp0049-mgmt
+        10.12.49.149:
+        - scale300-ccp-comp0084-mgmt
+        10.12.49.150:
+        - scale300-ccp-comp0015-mgmt
+        10.12.49.151:
+        - scale300-ccp-comp0050-mgmt
+        10.12.49.152:
+        - scale300-ccp-comp0085-mgmt
+        10.12.49.153:
+        - scale300-ccp-comp0016-mgmt
+        10.12.49.154:
+        - scale300-ccp-comp0051-mgmt
+        10.12.49.155:
+        - scale300-ccp-comp0086-mgmt
+        10.12.49.156:
+        - scale300-ccp-comp0017-mgmt
+        10.12.49.157:
+        - scale300-ccp-comp0052-mgmt
+        10.12.49.158:
+        - scale300-ccp-comp0087-mgmt
+        10.12.49.159:
+        - scale300-ccp-comp0018-mgmt
+        10.12.49.160:
+        - scale300-ccp-comp0053-mgmt
+        10.12.49.161:
+        - scale300-ccp-comp0088-mgmt
+        10.12.49.162:
+        - scale300-ccp-comp0019-mgmt
+        10.12.49.163:
+        - scale300-ccp-comp0054-mgmt
+        10.12.49.164:
+        - scale300-ccp-comp0089-mgmt
+        10.12.49.165:
+        - scale300-ccp-comp0020-mgmt
+        10.12.49.166:
+        - scale300-ccp-comp0055-mgmt
+        10.12.49.167:
+        - scale300-ccp-comp0090-mgmt
+        10.12.49.168:
+        - scale300-ccp-comp0021-mgmt
+        10.12.49.169:
+        - scale300-ccp-comp0056-mgmt
+        10.12.49.170:
+        - scale300-ccp-comp0091-mgmt
+        10.12.49.171:
+        - scale300-ccp-comp0022-mgmt
+        10.12.49.172:
+        - scale300-ccp-comp0057-mgmt
+        10.12.49.173:
+        - scale300-ccp-comp0092-mgmt
+        10.12.49.174:
+        - scale300-ccp-comp0023-mgmt
+        10.12.49.175:
+        - scale300-ccp-comp0058-mgmt
+        10.12.49.176:
+        - scale300-ccp-comp0093-mgmt
+        10.12.49.177:
+        - scale300-ccp-comp0024-mgmt
+        10.12.49.178:
+        - scale300-ccp-comp0059-mgmt
+        10.12.49.179:
+        - scale300-ccp-comp0094-mgmt
+        10.12.49.180:
+        - scale300-ccp-comp0025-mgmt
+        10.12.49.181:
+        - scale300-ccp-comp0060-mgmt
+        10.12.49.182:
+        - scale300-ccp-comp0095-mgmt
+        10.12.49.183:
+        - scale300-ccp-comp0026-mgmt
+        10.12.49.184:
+        - scale300-ccp-comp0061-mgmt
+        10.12.49.185:
+        - scale300-ccp-comp0096-mgmt
+        10.12.49.186:
+        - scale300-ccp-comp0027-mgmt
+        10.12.49.187:
+        - scale300-ccp-comp0062-mgmt
+        10.12.49.188:
+        - scale300-ccp-comp0097-mgmt
+        10.12.49.189:
+        - scale300-ccp-comp0028-mgmt
+        10.12.49.190:
+        - scale300-ccp-comp0063-mgmt
+        10.12.49.191:
+        - scale300-ccp-comp0098-mgmt
+        10.12.49.192:
+        - scale300-ccp-comp0029-mgmt
+        10.12.49.193:
+        - scale300-ccp-comp0064-mgmt
+        10.12.49.194:
+        - scale300-ccp-comp0099-mgmt
+        10.12.49.195:
+        - scale300-ccp-comp0030-mgmt
+        10.12.49.196:
+        - scale300-ccp-comp0065-mgmt
+        10.12.49.197:
+        - scale300-ccp-comp0100-mgmt
+        10.12.49.198:
+        - scale300-ccp-comp0031-mgmt
+        10.12.49.199:
+        - scale300-ccp-comp0066-mgmt
+        10.12.49.200:
+        - scale300-ccp-comp0101-mgmt
+        10.12.49.201:
+        - scale300-ccp-comp0032-mgmt
+        10.12.49.202:
+        - scale300-ccp-comp0067-mgmt
+        10.12.49.203:
+        - scale300-ccp-comp0102-mgmt
+        10.12.49.204:
+        - scale300-ccp-comp0033-mgmt
+        10.12.49.205:
+        - scale300-ccp-comp0068-mgmt
+        10.12.49.206:
+        - scale300-ccp-comp0103-mgmt
+        10.12.49.207:
+        - scale300-ccp-comp0034-mgmt
+        10.12.49.208:
+        - scale300-ccp-comp0069-mgmt
+        10.12.49.209:
+        - scale300-ccp-comp0104-mgmt
+        10.12.49.210:
+        - scale300-ccp-comp0035-mgmt
+        10.12.49.211:
+        - scale300-ccp-comp0070-mgmt
+        10.12.49.212:
+        - scale300-ccp-vsa0001-VSA-BLK-mgmt
+        10.12.49.213:
+        - scale300-ccp-vsa-VSA-BLK-mgmt
+        10.12.49.214:
+        - scale300-ccp-vsa0002-VSA-BLK-mgmt
+        10.12.49.215:
+        - scale300-ccp-vsa0003-VSA-BLK-mgmt
+        10.12.49.216:
+        - scale300-ccp-vip-CEI-API-mgmt
+        - scale300-ccp-vip-CND-API-mgmt
+        - scale300-ccp-vip-FND-MDB-mgmt
+        - scale300-ccp-vip-FND-RMQ-mgmt
+        - scale300-ccp-vip-FND-VDB-mgmt
+        - scale300-ccp-vip-FRE-API-mgmt
+        - scale300-ccp-vip-GLA-API-mgmt
+        - scale300-ccp-vip-GLA-REG-mgmt
+        - scale300-ccp-vip-HEA-ACF-mgmt
+        - scale300-ccp-vip-HEA-ACW-mgmt
+        - scale300-ccp-vip-HEA-API-mgmt
+        - scale300-ccp-vip-HZN-WEB-mgmt
+        - scale300-ccp-vip-KEY-API-mgmt
+        - scale300-ccp-vip-LOG-SVR-mgmt
+        - scale300-ccp-vip-MON-API-mgmt
+        - scale300-ccp-vip-NEU-SVR-mgmt
+        - scale300-ccp-vip-NOV-API-mgmt
+        - scale300-ccp-vip-NOV-MTD-mgmt
+        - scale300-ccp-vip-OPS-WEB-mgmt
+        - scale300-ccp-vip-SHP-API-mgmt
+        - scale300-ccp-vip-SWF-PRX-mgmt
+        - scale300-ccp-vip-admin-CEI-API-mgmt
+        - scale300-ccp-vip-admin-CND-API-mgmt
+        - scale300-ccp-vip-admin-FND-MDB-mgmt
+        - scale300-ccp-vip-admin-FRE-API-mgmt
+        - scale300-ccp-vip-admin-GLA-API-mgmt
+        - scale300-ccp-vip-admin-KEY-API-mgmt
+        - scale300-ccp-vip-admin-NEU-SVR-mgmt
+        - scale300-ccp-vip-admin-NOV-API-mgmt
+        - scale300-ccp-vip-admin-SHP-API-mgmt
+        - scale300-ccp-vip-admin-SWF-PRX-mgmt
+SERVICE:
+    SERVICE-NET: {}

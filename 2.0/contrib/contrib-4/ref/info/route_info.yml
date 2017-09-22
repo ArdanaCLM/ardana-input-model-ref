@@ -1,0 +1,9 @@
+ESX-CONF-NET:
+    DEPLOYER-NET:
+        default: false
+        used_by:
+            lifecycle-manager-target:
+                lifecycle-manager:
+                - ardana-cp1-esx-ovsvapp0001
+                - ardana-cp1-esx-ovsvapp0002
+                - ardana-cp1-esx-comp0001

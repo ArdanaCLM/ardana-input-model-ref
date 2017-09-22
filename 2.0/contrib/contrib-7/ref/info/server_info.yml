@@ -1,0 +1,1978 @@
+compute1:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0001-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.3
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.103
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.108
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute10:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0004-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.6
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.106
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.117
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute100:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0034-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.36
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.136
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.207
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute101:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0069-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.71
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.171
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.208
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute102:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0104-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.106
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.206
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.209
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute103:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0035-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.37
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.137
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.210
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute104:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0070-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.72
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.172
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.211
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute11:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0039-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.41
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.141
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.118
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute12:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0074-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.76
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.176
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.119
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute13:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0005-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.7
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.107
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.120
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute14:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0040-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.42
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.142
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.121
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute15:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0075-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.77
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.177
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.122
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute16:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0006-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.8
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.108
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.123
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute17:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0041-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.43
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.143
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.124
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute18:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0076-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.78
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.178
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.125
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute19:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0007-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.9
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.109
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.126
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute2:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0036-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.38
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.138
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.109
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute20:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0042-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.44
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.144
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.127
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute21:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0077-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.79
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.179
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.128
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute22:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0008-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.10
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.110
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.129
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute23:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0043-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.45
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.145
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.130
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute24:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0078-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.80
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.180
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.131
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute25:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0009-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.11
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.111
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.132
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute26:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0044-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.46
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.146
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.133
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute27:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0079-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.81
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.181
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.134
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute28:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0010-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.12
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.112
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.135
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute29:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0045-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.47
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.147
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.136
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute3:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0071-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.73
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.173
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.110
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute30:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0080-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.82
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.182
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.137
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute31:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0011-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.13
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.113
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.138
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute32:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0046-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.48
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.148
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.139
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute33:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0081-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.83
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.183
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.140
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute34:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0012-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.14
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.114
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.141
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute35:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0047-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.49
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.149
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.142
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute36:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0082-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.84
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.184
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.143
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute37:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0013-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.15
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.115
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.144
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute38:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0048-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.50
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.150
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.145
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute39:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0083-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.85
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.185
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.146
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute4:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0002-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.4
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.104
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.111
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute40:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0014-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.16
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.116
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.147
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute41:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0049-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.51
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.151
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.148
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute42:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0084-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.86
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.186
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.149
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute43:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0015-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.17
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.117
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.150
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute44:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0050-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.52
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.152
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.151
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute45:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0085-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.87
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.187
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.152
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute46:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0016-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.18
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.118
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.153
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute47:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0051-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.53
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.153
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.154
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute48:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0086-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.88
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.188
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.155
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute49:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0017-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.19
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.119
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.156
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute5:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0037-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.39
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.139
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.112
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute50:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0052-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.54
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.154
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.157
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute51:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0087-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.89
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.189
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.158
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute52:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0018-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.20
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.120
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.159
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute53:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0053-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.55
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.155
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.160
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute54:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0088-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.90
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.190
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.161
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute55:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0019-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.21
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.121
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.162
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute56:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0054-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.56
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.156
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.163
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute57:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0089-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.91
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.191
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.164
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute58:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0020-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.22
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.122
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.165
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute59:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0055-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.57
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.157
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.166
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute6:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0072-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.74
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.174
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.113
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute60:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0090-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.92
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.192
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.167
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute61:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0021-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.23
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.123
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.168
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute62:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0056-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.58
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.158
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.169
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute63:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0091-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.93
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.193
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.170
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute64:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0022-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.24
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.124
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.171
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute65:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0057-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.59
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.159
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.172
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute66:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0092-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.94
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.194
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.173
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute67:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0023-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.25
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.125
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.174
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute68:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0058-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.60
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.160
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.175
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute69:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0093-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.95
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.195
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.176
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute7:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0003-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.5
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.105
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.114
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute70:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0024-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.26
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.126
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.177
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute71:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0059-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.61
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.161
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.178
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute72:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0094-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.96
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.196
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.179
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute73:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0025-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.27
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.127
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.180
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute74:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0060-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.62
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.162
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.181
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute75:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0095-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.97
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.197
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.182
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute76:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0026-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.28
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.128
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.183
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute77:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0061-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.63
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.163
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.184
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute78:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0096-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.98
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.198
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.185
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute79:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0027-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.29
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.129
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.186
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute8:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0038-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.40
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.140
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.115
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute80:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0062-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.64
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.164
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.187
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute81:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0097-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.99
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.199
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.188
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute82:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0028-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.30
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.130
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.189
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute83:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0063-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.65
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.165
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.190
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute84:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0098-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.100
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.200
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.191
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute85:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0029-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.31
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.131
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.192
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute86:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0064-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.66
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.166
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.193
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute87:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0099-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.101
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.201
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.194
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute88:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0030-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.32
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.132
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.195
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute89:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0065-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.67
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.167
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.196
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute9:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0073-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.75
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.175
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.116
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute90:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0100-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.102
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.202
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.197
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute91:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0031-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.33
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.133
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.198
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute92:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0066-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.68
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.168
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.199
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute93:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0101-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.103
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.203
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.200
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute94:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0032-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.34
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.134
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.201
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute95:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0067-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.69
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.169
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.202
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute96:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0102-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.104
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.204
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.203
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute97:
+    failure-zone: AZ1
+    hostname: scale300-ccp-comp0033-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.35
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.135
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.204
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute98:
+    failure-zone: AZ2
+    hostname: scale300-ccp-comp0068-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.70
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.170
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.205
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+compute99:
+    failure-zone: AZ3
+    hostname: scale300-ccp-comp0103-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.105
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.205
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.206
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+controller1:
+    failure-zone: AZ1
+    hostname: scale300-ccp-c1-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.13.65.100
+                tagged-vlan: true
+                vlan-id: 1849
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.0
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.100
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.102
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+controller2:
+    failure-zone: AZ2
+    hostname: scale300-ccp-c1-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.13.65.101
+                tagged-vlan: true
+                vlan-id: 1849
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.1
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.101
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.103
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+controller3:
+    failure-zone: AZ3
+    hostname: scale300-ccp-c1-m3-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.13.65.102
+                tagged-vlan: true
+                vlan-id: 1849
+            EXTERNAL-VM-NET:
+                addr: 10.13.32.2
+                tagged-vlan: true
+                vlan-id: 1847
+            GUEST-NET:
+                addr: 10.13.67.102
+                tagged-vlan: true
+                vlan-id: 1850
+            MANAGEMENT-NET:
+                addr: 10.12.49.104
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+lifecycle-manager:
+    failure-zone: AZ1
+    hostname: scale300-ccp-c0-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.12.49.101
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: scale300-ccp-vsa0001-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.12.49.105
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+vsa2:
+    failure-zone: AZ2
+    hostname: scale300-ccp-vsa0002-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.12.49.106
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated
+vsa3:
+    failure-zone: AZ3
+    hostname: scale300-ccp-vsa0003-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.12.49.107
+                tagged-vlan: false
+                vlan-id: 1846
+    state: allocated

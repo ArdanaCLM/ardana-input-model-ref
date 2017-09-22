@@ -1,0 +1,18 @@
+ccn-0001:
+  cluster_name: cluster0
+  cp_name: ccp
+  member_id: 1
+  state: allocated
+  type: cluster
+cpn-0001:
+  cp_name: ccp
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+cpn-0002:
+  cp_name: ccp
+  member_id: 2
+  resource_name: compute
+  state: allocated
+  type: resource

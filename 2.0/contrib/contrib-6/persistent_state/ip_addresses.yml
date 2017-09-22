@@ -1,0 +1,1728 @@
+10.241.67.10:
+  addr: 10.241.67.10
+  allocated: true
+  free: false
+  host: ipc1-cp1-c3-m1
+  persisted: false
+  server-id: dbmq1
+  used-by: server
+10.241.67.11:
+  addr: 10.241.67.11
+  allocated: true
+  free: false
+  host: ipc1-cp1-c3-m2
+  persisted: false
+  server-id: dbmq2
+  used-by: server
+10.241.67.12:
+  addr: 10.241.67.12
+  allocated: true
+  free: false
+  host: ipc1-cp1-c3-m3
+  persisted: false
+  server-id: dbmq3
+  used-by: server
+10.241.67.13:
+  addr: 10.241.67.13
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.241.67.14:
+  addr: 10.241.67.14
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.241.67.15:
+  addr: 10.241.67.15
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+10.241.67.16:
+  addr: 10.241.67.16
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.241.67.17:
+  addr: 10.241.67.17
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0023
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.241.67.18:
+  addr: 10.241.67.18
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0044
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.241.67.19:
+  addr: 10.241.67.19
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0002
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.241.67.20:
+  addr: 10.241.67.20
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0024
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.241.67.21:
+  addr: 10.241.67.21
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0045
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.241.67.22:
+  addr: 10.241.67.22
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0003
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.241.67.23:
+  addr: 10.241.67.23
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0025
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.241.67.24:
+  addr: 10.241.67.24
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0046
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.241.67.25:
+  addr: 10.241.67.25
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0004
+  persisted: false
+  server-id: compute10
+  used-by: server
+10.241.67.26:
+  addr: 10.241.67.26
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0026
+  persisted: false
+  server-id: compute11
+  used-by: server
+10.241.67.27:
+  addr: 10.241.67.27
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0047
+  persisted: false
+  server-id: compute12
+  used-by: server
+10.241.67.28:
+  addr: 10.241.67.28
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0005
+  persisted: false
+  server-id: compute13
+  used-by: server
+10.241.67.29:
+  addr: 10.241.67.29
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0027
+  persisted: false
+  server-id: compute14
+  used-by: server
+10.241.67.30:
+  addr: 10.241.67.30
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0048
+  persisted: false
+  server-id: compute15
+  used-by: server
+10.241.67.31:
+  addr: 10.241.67.31
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0006
+  persisted: false
+  server-id: compute16
+  used-by: server
+10.241.67.32:
+  addr: 10.241.67.32
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0028
+  persisted: false
+  server-id: compute17
+  used-by: server
+10.241.67.33:
+  addr: 10.241.67.33
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0049
+  persisted: false
+  server-id: compute18
+  used-by: server
+10.241.67.34:
+  addr: 10.241.67.34
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0007
+  persisted: false
+  server-id: compute19
+  used-by: server
+10.241.67.35:
+  addr: 10.241.67.35
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0029
+  persisted: false
+  server-id: compute20
+  used-by: server
+10.241.67.36:
+  addr: 10.241.67.36
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0050
+  persisted: false
+  server-id: compute21
+  used-by: server
+10.241.67.37:
+  addr: 10.241.67.37
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0008
+  persisted: false
+  server-id: compute22
+  used-by: server
+10.241.67.38:
+  addr: 10.241.67.38
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0030
+  persisted: false
+  server-id: compute23
+  used-by: server
+10.241.67.39:
+  addr: 10.241.67.39
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0051
+  persisted: false
+  server-id: compute24
+  used-by: server
+10.241.67.4:
+  addr: 10.241.67.4
+  allocated: true
+  free: false
+  host: ipc1-cp1-c0-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+10.241.67.40:
+  addr: 10.241.67.40
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0009
+  persisted: false
+  server-id: compute25
+  used-by: server
+10.241.67.41:
+  addr: 10.241.67.41
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0031
+  persisted: false
+  server-id: compute26
+  used-by: server
+10.241.67.42:
+  addr: 10.241.67.42
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0052
+  persisted: false
+  server-id: compute27
+  used-by: server
+10.241.67.43:
+  addr: 10.241.67.43
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0010
+  persisted: false
+  server-id: compute28
+  used-by: server
+10.241.67.44:
+  addr: 10.241.67.44
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0032
+  persisted: false
+  server-id: compute29
+  used-by: server
+10.241.67.45:
+  addr: 10.241.67.45
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0053
+  persisted: false
+  server-id: compute30
+  used-by: server
+10.241.67.46:
+  addr: 10.241.67.46
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0011
+  persisted: false
+  server-id: compute31
+  used-by: server
+10.241.67.47:
+  addr: 10.241.67.47
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0033
+  persisted: false
+  server-id: compute32
+  used-by: server
+10.241.67.48:
+  addr: 10.241.67.48
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0054
+  persisted: false
+  server-id: compute33
+  used-by: server
+10.241.67.49:
+  addr: 10.241.67.49
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0012
+  persisted: false
+  server-id: compute34
+  used-by: server
+10.241.67.5:
+  addr: 10.241.67.5
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.241.67.50:
+  addr: 10.241.67.50
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0034
+  persisted: false
+  server-id: compute35
+  used-by: server
+10.241.67.51:
+  addr: 10.241.67.51
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0055
+  persisted: false
+  server-id: compute36
+  used-by: server
+10.241.67.52:
+  addr: 10.241.67.52
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0013
+  persisted: false
+  server-id: compute37
+  used-by: server
+10.241.67.53:
+  addr: 10.241.67.53
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0035
+  persisted: false
+  server-id: compute38
+  used-by: server
+10.241.67.54:
+  addr: 10.241.67.54
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0056
+  persisted: false
+  server-id: compute39
+  used-by: server
+10.241.67.55:
+  addr: 10.241.67.55
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0014
+  persisted: false
+  server-id: compute40
+  used-by: server
+10.241.67.56:
+  addr: 10.241.67.56
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0036
+  persisted: false
+  server-id: compute41
+  used-by: server
+10.241.67.57:
+  addr: 10.241.67.57
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0057
+  persisted: false
+  server-id: compute42
+  used-by: server
+10.241.67.58:
+  addr: 10.241.67.58
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0015
+  persisted: false
+  server-id: compute43
+  used-by: server
+10.241.67.59:
+  addr: 10.241.67.59
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0037
+  persisted: false
+  server-id: compute44
+  used-by: server
+10.241.67.6:
+  addr: 10.241.67.6
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.241.67.60:
+  addr: 10.241.67.60
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0058
+  persisted: false
+  server-id: compute45
+  used-by: server
+10.241.67.61:
+  addr: 10.241.67.61
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0016
+  persisted: false
+  server-id: compute46
+  used-by: server
+10.241.67.62:
+  addr: 10.241.67.62
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0038
+  persisted: false
+  server-id: compute47
+  used-by: server
+10.241.67.63:
+  addr: 10.241.67.63
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0059
+  persisted: false
+  server-id: compute48
+  used-by: server
+10.241.67.64:
+  addr: 10.241.67.64
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0017
+  persisted: false
+  server-id: compute49
+  used-by: server
+10.241.67.65:
+  addr: 10.241.67.65
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0039
+  persisted: false
+  server-id: compute50
+  used-by: server
+10.241.67.66:
+  addr: 10.241.67.66
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0060
+  persisted: false
+  server-id: compute51
+  used-by: server
+10.241.67.67:
+  addr: 10.241.67.67
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0018
+  persisted: false
+  server-id: compute52
+  used-by: server
+10.241.67.68:
+  addr: 10.241.67.68
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0040
+  persisted: false
+  server-id: compute53
+  used-by: server
+10.241.67.69:
+  addr: 10.241.67.69
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0061
+  persisted: false
+  server-id: compute54
+  used-by: server
+10.241.67.7:
+  addr: 10.241.67.7
+  allocated: true
+  free: false
+  host: ipc1-cp1-c2-m1
+  persisted: false
+  server-id: mtrmon1
+  used-by: server
+10.241.67.70:
+  addr: 10.241.67.70
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0019
+  persisted: false
+  server-id: compute55
+  used-by: server
+10.241.67.71:
+  addr: 10.241.67.71
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0041
+  persisted: false
+  server-id: compute56
+  used-by: server
+10.241.67.72:
+  addr: 10.241.67.72
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0062
+  persisted: false
+  server-id: compute57
+  used-by: server
+10.241.67.73:
+  addr: 10.241.67.73
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0020
+  persisted: false
+  server-id: compute58
+  used-by: server
+10.241.67.74:
+  addr: 10.241.67.74
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0042
+  persisted: false
+  server-id: compute59
+  used-by: server
+10.241.67.75:
+  addr: 10.241.67.75
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0063
+  persisted: false
+  server-id: compute60
+  used-by: server
+10.241.67.76:
+  addr: 10.241.67.76
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0021
+  persisted: false
+  server-id: compute61
+  used-by: server
+10.241.67.77:
+  addr: 10.241.67.77
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0043
+  persisted: false
+  server-id: compute62
+  used-by: server
+10.241.67.78:
+  addr: 10.241.67.78
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0064
+  persisted: false
+  server-id: compute63
+  used-by: server
+10.241.67.79:
+  addr: 10.241.67.79
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0022
+  persisted: false
+  server-id: compute64
+  used-by: server
+10.241.67.8:
+  addr: 10.241.67.8
+  allocated: true
+  free: false
+  host: ipc1-cp1-c2-m2
+  persisted: false
+  server-id: mtrmon2
+  used-by: server
+10.241.67.80:
+  addr: 10.241.67.80
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.241.67.81:
+  addr: 10.241.67.81
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+10.241.67.82:
+  addr: 10.241.67.82
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0002
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.241.67.83:
+  addr: 10.241.67.83
+  allocated: true
+  free: false
+  host: ipc1-cp1-vsa0003
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.241.67.84:
+  addr: 10.241.67.84
+  allocated: true
+  free: false
+  host: ipc1-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.241.67.9:
+  addr: 10.241.67.9
+  allocated: true
+  free: false
+  host: ipc1-cp1-c2-m3
+  persisted: false
+  server-id: mtrmon3
+  used-by: server
+10.243.188.10:
+  addr: 10.243.188.10
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0005
+  persisted: false
+  server-id: compute13
+  used-by: server
+10.243.188.11:
+  addr: 10.243.188.11
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0006
+  persisted: false
+  server-id: compute16
+  used-by: server
+10.243.188.12:
+  addr: 10.243.188.12
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0007
+  persisted: false
+  server-id: compute19
+  used-by: server
+10.243.188.13:
+  addr: 10.243.188.13
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0008
+  persisted: false
+  server-id: compute22
+  used-by: server
+10.243.188.14:
+  addr: 10.243.188.14
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0009
+  persisted: false
+  server-id: compute25
+  used-by: server
+10.243.188.15:
+  addr: 10.243.188.15
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0010
+  persisted: false
+  server-id: compute28
+  used-by: server
+10.243.188.16:
+  addr: 10.243.188.16
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0011
+  persisted: false
+  server-id: compute31
+  used-by: server
+10.243.188.17:
+  addr: 10.243.188.17
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0012
+  persisted: false
+  server-id: compute34
+  used-by: server
+10.243.188.18:
+  addr: 10.243.188.18
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0013
+  persisted: false
+  server-id: compute37
+  used-by: server
+10.243.188.19:
+  addr: 10.243.188.19
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0014
+  persisted: false
+  server-id: compute40
+  used-by: server
+10.243.188.20:
+  addr: 10.243.188.20
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0015
+  persisted: false
+  server-id: compute43
+  used-by: server
+10.243.188.21:
+  addr: 10.243.188.21
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0016
+  persisted: false
+  server-id: compute46
+  used-by: server
+10.243.188.22:
+  addr: 10.243.188.22
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0017
+  persisted: false
+  server-id: compute49
+  used-by: server
+10.243.188.23:
+  addr: 10.243.188.23
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0018
+  persisted: false
+  server-id: compute52
+  used-by: server
+10.243.188.24:
+  addr: 10.243.188.24
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0019
+  persisted: false
+  server-id: compute55
+  used-by: server
+10.243.188.25:
+  addr: 10.243.188.25
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0020
+  persisted: false
+  server-id: compute58
+  used-by: server
+10.243.188.26:
+  addr: 10.243.188.26
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0021
+  persisted: false
+  server-id: compute61
+  used-by: server
+10.243.188.27:
+  addr: 10.243.188.27
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0022
+  persisted: false
+  server-id: compute64
+  used-by: server
+10.243.188.28:
+  addr: 10.243.188.28
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0023
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.243.188.29:
+  addr: 10.243.188.29
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0024
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.243.188.30:
+  addr: 10.243.188.30
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0025
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.243.188.31:
+  addr: 10.243.188.31
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0026
+  persisted: false
+  server-id: compute11
+  used-by: server
+10.243.188.32:
+  addr: 10.243.188.32
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0027
+  persisted: false
+  server-id: compute14
+  used-by: server
+10.243.188.33:
+  addr: 10.243.188.33
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0028
+  persisted: false
+  server-id: compute17
+  used-by: server
+10.243.188.34:
+  addr: 10.243.188.34
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0029
+  persisted: false
+  server-id: compute20
+  used-by: server
+10.243.188.35:
+  addr: 10.243.188.35
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0030
+  persisted: false
+  server-id: compute23
+  used-by: server
+10.243.188.36:
+  addr: 10.243.188.36
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0031
+  persisted: false
+  server-id: compute26
+  used-by: server
+10.243.188.37:
+  addr: 10.243.188.37
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0032
+  persisted: false
+  server-id: compute29
+  used-by: server
+10.243.188.38:
+  addr: 10.243.188.38
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0033
+  persisted: false
+  server-id: compute32
+  used-by: server
+10.243.188.39:
+  addr: 10.243.188.39
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0034
+  persisted: false
+  server-id: compute35
+  used-by: server
+10.243.188.4:
+  addr: 10.243.188.4
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.243.188.40:
+  addr: 10.243.188.40
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0035
+  persisted: false
+  server-id: compute38
+  used-by: server
+10.243.188.41:
+  addr: 10.243.188.41
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0036
+  persisted: false
+  server-id: compute41
+  used-by: server
+10.243.188.42:
+  addr: 10.243.188.42
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0037
+  persisted: false
+  server-id: compute44
+  used-by: server
+10.243.188.43:
+  addr: 10.243.188.43
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0038
+  persisted: false
+  server-id: compute47
+  used-by: server
+10.243.188.44:
+  addr: 10.243.188.44
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0039
+  persisted: false
+  server-id: compute50
+  used-by: server
+10.243.188.45:
+  addr: 10.243.188.45
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0040
+  persisted: false
+  server-id: compute53
+  used-by: server
+10.243.188.46:
+  addr: 10.243.188.46
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0041
+  persisted: false
+  server-id: compute56
+  used-by: server
+10.243.188.47:
+  addr: 10.243.188.47
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0042
+  persisted: false
+  server-id: compute59
+  used-by: server
+10.243.188.48:
+  addr: 10.243.188.48
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0043
+  persisted: false
+  server-id: compute62
+  used-by: server
+10.243.188.49:
+  addr: 10.243.188.49
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0044
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.243.188.5:
+  addr: 10.243.188.5
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.243.188.50:
+  addr: 10.243.188.50
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0045
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.243.188.51:
+  addr: 10.243.188.51
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0046
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.243.188.52:
+  addr: 10.243.188.52
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0047
+  persisted: false
+  server-id: compute12
+  used-by: server
+10.243.188.53:
+  addr: 10.243.188.53
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0048
+  persisted: false
+  server-id: compute15
+  used-by: server
+10.243.188.54:
+  addr: 10.243.188.54
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0049
+  persisted: false
+  server-id: compute18
+  used-by: server
+10.243.188.55:
+  addr: 10.243.188.55
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0050
+  persisted: false
+  server-id: compute21
+  used-by: server
+10.243.188.56:
+  addr: 10.243.188.56
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0051
+  persisted: false
+  server-id: compute24
+  used-by: server
+10.243.188.57:
+  addr: 10.243.188.57
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0052
+  persisted: false
+  server-id: compute27
+  used-by: server
+10.243.188.58:
+  addr: 10.243.188.58
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0053
+  persisted: false
+  server-id: compute30
+  used-by: server
+10.243.188.59:
+  addr: 10.243.188.59
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0054
+  persisted: false
+  server-id: compute33
+  used-by: server
+10.243.188.6:
+  addr: 10.243.188.6
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.243.188.60:
+  addr: 10.243.188.60
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0055
+  persisted: false
+  server-id: compute36
+  used-by: server
+10.243.188.61:
+  addr: 10.243.188.61
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0056
+  persisted: false
+  server-id: compute39
+  used-by: server
+10.243.188.62:
+  addr: 10.243.188.62
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0057
+  persisted: false
+  server-id: compute42
+  used-by: server
+10.243.188.63:
+  addr: 10.243.188.63
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0058
+  persisted: false
+  server-id: compute45
+  used-by: server
+10.243.188.64:
+  addr: 10.243.188.64
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0059
+  persisted: false
+  server-id: compute48
+  used-by: server
+10.243.188.65:
+  addr: 10.243.188.65
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0060
+  persisted: false
+  server-id: compute51
+  used-by: server
+10.243.188.66:
+  addr: 10.243.188.66
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0061
+  persisted: false
+  server-id: compute54
+  used-by: server
+10.243.188.67:
+  addr: 10.243.188.67
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0062
+  persisted: false
+  server-id: compute57
+  used-by: server
+10.243.188.68:
+  addr: 10.243.188.68
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0063
+  persisted: false
+  server-id: compute60
+  used-by: server
+10.243.188.69:
+  addr: 10.243.188.69
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0064
+  persisted: false
+  server-id: compute63
+  used-by: server
+10.243.188.7:
+  addr: 10.243.188.7
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0002
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.243.188.8:
+  addr: 10.243.188.8
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0003
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.243.188.9:
+  addr: 10.243.188.9
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0004
+  persisted: false
+  server-id: compute10
+  used-by: server
+10.243.189.4:
+  addr: 10.243.189.4
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.243.189.5:
+  addr: 10.243.189.5
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.243.189.6:
+  addr: 10.243.189.6
+  allocated: true
+  free: false
+  host: ipc1-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+10.243.192.10:
+  addr: 10.243.192.10
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0005
+  persisted: false
+  server-id: compute13
+  used-by: server
+10.243.192.11:
+  addr: 10.243.192.11
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0006
+  persisted: false
+  server-id: compute16
+  used-by: server
+10.243.192.12:
+  addr: 10.243.192.12
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0007
+  persisted: false
+  server-id: compute19
+  used-by: server
+10.243.192.13:
+  addr: 10.243.192.13
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0008
+  persisted: false
+  server-id: compute22
+  used-by: server
+10.243.192.14:
+  addr: 10.243.192.14
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0009
+  persisted: false
+  server-id: compute25
+  used-by: server
+10.243.192.15:
+  addr: 10.243.192.15
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0010
+  persisted: false
+  server-id: compute28
+  used-by: server
+10.243.192.16:
+  addr: 10.243.192.16
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0011
+  persisted: false
+  server-id: compute31
+  used-by: server
+10.243.192.17:
+  addr: 10.243.192.17
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0012
+  persisted: false
+  server-id: compute34
+  used-by: server
+10.243.192.18:
+  addr: 10.243.192.18
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0013
+  persisted: false
+  server-id: compute37
+  used-by: server
+10.243.192.19:
+  addr: 10.243.192.19
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0014
+  persisted: false
+  server-id: compute40
+  used-by: server
+10.243.192.20:
+  addr: 10.243.192.20
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0015
+  persisted: false
+  server-id: compute43
+  used-by: server
+10.243.192.21:
+  addr: 10.243.192.21
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0016
+  persisted: false
+  server-id: compute46
+  used-by: server
+10.243.192.22:
+  addr: 10.243.192.22
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0017
+  persisted: false
+  server-id: compute49
+  used-by: server
+10.243.192.23:
+  addr: 10.243.192.23
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0018
+  persisted: false
+  server-id: compute52
+  used-by: server
+10.243.192.24:
+  addr: 10.243.192.24
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0019
+  persisted: false
+  server-id: compute55
+  used-by: server
+10.243.192.25:
+  addr: 10.243.192.25
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0020
+  persisted: false
+  server-id: compute58
+  used-by: server
+10.243.192.26:
+  addr: 10.243.192.26
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0021
+  persisted: false
+  server-id: compute61
+  used-by: server
+10.243.192.27:
+  addr: 10.243.192.27
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0022
+  persisted: false
+  server-id: compute64
+  used-by: server
+10.243.192.28:
+  addr: 10.243.192.28
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0023
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.243.192.29:
+  addr: 10.243.192.29
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0024
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.243.192.30:
+  addr: 10.243.192.30
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0025
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.243.192.31:
+  addr: 10.243.192.31
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0026
+  persisted: false
+  server-id: compute11
+  used-by: server
+10.243.192.32:
+  addr: 10.243.192.32
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0027
+  persisted: false
+  server-id: compute14
+  used-by: server
+10.243.192.33:
+  addr: 10.243.192.33
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0028
+  persisted: false
+  server-id: compute17
+  used-by: server
+10.243.192.34:
+  addr: 10.243.192.34
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0029
+  persisted: false
+  server-id: compute20
+  used-by: server
+10.243.192.35:
+  addr: 10.243.192.35
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0030
+  persisted: false
+  server-id: compute23
+  used-by: server
+10.243.192.36:
+  addr: 10.243.192.36
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0031
+  persisted: false
+  server-id: compute26
+  used-by: server
+10.243.192.37:
+  addr: 10.243.192.37
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0032
+  persisted: false
+  server-id: compute29
+  used-by: server
+10.243.192.38:
+  addr: 10.243.192.38
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0033
+  persisted: false
+  server-id: compute32
+  used-by: server
+10.243.192.39:
+  addr: 10.243.192.39
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0034
+  persisted: false
+  server-id: compute35
+  used-by: server
+10.243.192.4:
+  addr: 10.243.192.4
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.243.192.40:
+  addr: 10.243.192.40
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0035
+  persisted: false
+  server-id: compute38
+  used-by: server
+10.243.192.41:
+  addr: 10.243.192.41
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0036
+  persisted: false
+  server-id: compute41
+  used-by: server
+10.243.192.42:
+  addr: 10.243.192.42
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0037
+  persisted: false
+  server-id: compute44
+  used-by: server
+10.243.192.43:
+  addr: 10.243.192.43
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0038
+  persisted: false
+  server-id: compute47
+  used-by: server
+10.243.192.44:
+  addr: 10.243.192.44
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0039
+  persisted: false
+  server-id: compute50
+  used-by: server
+10.243.192.45:
+  addr: 10.243.192.45
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0040
+  persisted: false
+  server-id: compute53
+  used-by: server
+10.243.192.46:
+  addr: 10.243.192.46
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0041
+  persisted: false
+  server-id: compute56
+  used-by: server
+10.243.192.47:
+  addr: 10.243.192.47
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0042
+  persisted: false
+  server-id: compute59
+  used-by: server
+10.243.192.48:
+  addr: 10.243.192.48
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0043
+  persisted: false
+  server-id: compute62
+  used-by: server
+10.243.192.49:
+  addr: 10.243.192.49
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0044
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.243.192.5:
+  addr: 10.243.192.5
+  allocated: true
+  free: false
+  host: ipc1-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.243.192.50:
+  addr: 10.243.192.50
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0045
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.243.192.51:
+  addr: 10.243.192.51
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0046
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.243.192.52:
+  addr: 10.243.192.52
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0047
+  persisted: false
+  server-id: compute12
+  used-by: server
+10.243.192.53:
+  addr: 10.243.192.53
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0048
+  persisted: false
+  server-id: compute15
+  used-by: server
+10.243.192.54:
+  addr: 10.243.192.54
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0049
+  persisted: false
+  server-id: compute18
+  used-by: server
+10.243.192.55:
+  addr: 10.243.192.55
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0050
+  persisted: false
+  server-id: compute21
+  used-by: server
+10.243.192.56:
+  addr: 10.243.192.56
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0051
+  persisted: false
+  server-id: compute24
+  used-by: server
+10.243.192.57:
+  addr: 10.243.192.57
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0052
+  persisted: false
+  server-id: compute27
+  used-by: server
+10.243.192.58:
+  addr: 10.243.192.58
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0053
+  persisted: false
+  server-id: compute30
+  used-by: server
+10.243.192.59:
+  addr: 10.243.192.59
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0054
+  persisted: false
+  server-id: compute33
+  used-by: server
+10.243.192.6:
+  addr: 10.243.192.6
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.243.192.60:
+  addr: 10.243.192.60
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0055
+  persisted: false
+  server-id: compute36
+  used-by: server
+10.243.192.61:
+  addr: 10.243.192.61
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0056
+  persisted: false
+  server-id: compute39
+  used-by: server
+10.243.192.62:
+  addr: 10.243.192.62
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0057
+  persisted: false
+  server-id: compute42
+  used-by: server
+10.243.192.63:
+  addr: 10.243.192.63
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0058
+  persisted: false
+  server-id: compute45
+  used-by: server
+10.243.192.64:
+  addr: 10.243.192.64
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0059
+  persisted: false
+  server-id: compute48
+  used-by: server
+10.243.192.65:
+  addr: 10.243.192.65
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0060
+  persisted: false
+  server-id: compute51
+  used-by: server
+10.243.192.66:
+  addr: 10.243.192.66
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0061
+  persisted: false
+  server-id: compute54
+  used-by: server
+10.243.192.67:
+  addr: 10.243.192.67
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0062
+  persisted: false
+  server-id: compute57
+  used-by: server
+10.243.192.68:
+  addr: 10.243.192.68
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0063
+  persisted: false
+  server-id: compute60
+  used-by: server
+10.243.192.69:
+  addr: 10.243.192.69
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0064
+  persisted: false
+  server-id: compute63
+  used-by: server
+10.243.192.7:
+  addr: 10.243.192.7
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0002
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.243.192.8:
+  addr: 10.243.192.8
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0003
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.243.192.9:
+  addr: 10.243.192.9
+  allocated: true
+  free: false
+  host: ipc1-cp1-comp0004
+  persisted: false
+  server-id: compute10
+  used-by: server

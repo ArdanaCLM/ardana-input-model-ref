@@ -1,0 +1,3390 @@
+
+Add required services to control plane ccp
+==========================================
+ccp: Added nova-metadata required by nova-api
+ccp: Added swift-common required by swift-proxy
+ccp: Added swift-rsync required by swift-account
+
+Allocate Servers for control plane ccp
+======================================
+
+cluster: c0
+-----------
+  Searching for server with role ['LIFECYCLE-MANAGER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'lifecycle-manager' (AZ1)
+
+cluster: c1
+-----------
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'controller1' (AZ1)
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ2', 'AZ3'])
+  Allocated server 'controller2' (AZ2)
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ3'])
+  Allocated server 'controller3' (AZ3)
+
+resource: vsa
+-------------
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'vsa1' (AZ1)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ2', 'AZ3'])
+  Allocated server 'vsa2' (AZ2)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ3'])
+  Allocated server 'vsa3' (AZ3)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+
+resource: compute
+-----------------
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute1' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute4' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute7' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute10' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute13' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute16' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute19' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute22' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute25' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute28' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute31' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute34' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute37' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute40' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute43' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute46' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute49' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute52' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute55' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute58' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute61' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute64' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute67' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute70' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute73' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute76' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute79' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute82' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute85' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute88' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute91' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute94' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute97' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute100' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute103' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute2' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute5' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute8' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute11' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute14' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute17' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute20' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute23' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute26' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute29' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute32' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute35' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute38' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute41' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute44' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute47' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute50' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute53' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute56' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute59' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute62' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute65' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute68' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute71' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute74' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute77' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute80' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute83' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute86' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute89' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute92' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute95' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute98' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute101' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute104' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute3' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute6' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute9' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute12' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute15' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute18' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute21' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute24' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute27' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute30' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute33' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute36' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute39' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute42' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute45' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute48' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute51' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute54' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute57' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute60' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute63' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute66' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute69' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute72' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute75' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute78' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute81' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute84' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute87' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute90' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute93' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute96' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute99' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute102' (AZ3)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+
+Resolve Networks for Servers
+============================
+
+server: scale300-ccp-c0-m1
+--------------------------
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.12.49.101 for server scale300-ccp-c0-m1 on network MANAGEMENT-NET
+
+server: scale300-ccp-c1-m1
+--------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for glance-api (default)
+  add MANAGEMENT for glance-registry (default)
+  add MANAGEMENT for glance-client (default)
+  add MANAGEMENT for cinder-api (default)
+  add MANAGEMENT for cinder-scheduler (default)
+  add MANAGEMENT for cinder-volume (default)
+  add MANAGEMENT for cinder-backup (default)
+  add MANAGEMENT for cinder-client (default)
+  add MANAGEMENT for nova-api (default)
+  add MANAGEMENT for nova-scheduler (default)
+  add MANAGEMENT for nova-conductor (default)
+  add MANAGEMENT for nova-console-auth (default)
+  add MANAGEMENT for nova-novncproxy (default)
+  add MANAGEMENT for nova-client (default)
+  add MANAGEMENT for neutron-server (default)
+  add MANAGEMENT for neutron-ml2-plugin (default)
+  add MANAGEMENT for neutron-vpn-agent (default)
+  add MANAGEMENT for neutron-dhcp-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-client (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for sherpa-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-account (default)
+  add MANAGEMENT for swift-container (default)
+  add MANAGEMENT for swift-object (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for heat-api (default)
+  add MANAGEMENT for heat-api-cfn (default)
+  add MANAGEMENT for heat-api-cloudwatch (default)
+  add MANAGEMENT for heat-engine (default)
+  add MANAGEMENT for heat-client (default)
+  add MANAGEMENT for openstack-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for ceilometer-collector (default)
+  add MANAGEMENT for ceilometer-agent-central (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for ceilometer-expirer (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for logging-server (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for cmc-service (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for nova-metadata (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for swift-rsync (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  Allocated address 10.13.65.100 for server scale300-ccp-c1-m1 on network EXTERNAL-API-NET
+  Using address 10.12.49.102 for server scale300-ccp-c1-m1 on network MANAGEMENT-NET
+  Allocated address 10.13.32.0 for server scale300-ccp-c1-m1 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.100 for server scale300-ccp-c1-m1 on network GUEST-NET
+
+server: scale300-ccp-c1-m2
+--------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for glance-api (default)
+  add MANAGEMENT for glance-registry (default)
+  add MANAGEMENT for glance-client (default)
+  add MANAGEMENT for cinder-api (default)
+  add MANAGEMENT for cinder-scheduler (default)
+  add MANAGEMENT for cinder-volume (default)
+  add MANAGEMENT for cinder-backup (default)
+  add MANAGEMENT for cinder-client (default)
+  add MANAGEMENT for nova-api (default)
+  add MANAGEMENT for nova-scheduler (default)
+  add MANAGEMENT for nova-conductor (default)
+  add MANAGEMENT for nova-console-auth (default)
+  add MANAGEMENT for nova-novncproxy (default)
+  add MANAGEMENT for nova-client (default)
+  add MANAGEMENT for neutron-server (default)
+  add MANAGEMENT for neutron-ml2-plugin (default)
+  add MANAGEMENT for neutron-vpn-agent (default)
+  add MANAGEMENT for neutron-dhcp-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-client (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for sherpa-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-account (default)
+  add MANAGEMENT for swift-container (default)
+  add MANAGEMENT for swift-object (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for heat-api (default)
+  add MANAGEMENT for heat-api-cfn (default)
+  add MANAGEMENT for heat-api-cloudwatch (default)
+  add MANAGEMENT for heat-engine (default)
+  add MANAGEMENT for heat-client (default)
+  add MANAGEMENT for openstack-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for ceilometer-collector (default)
+  add MANAGEMENT for ceilometer-agent-central (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for ceilometer-expirer (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for logging-server (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for cmc-service (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for nova-metadata (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for swift-rsync (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  Allocated address 10.13.65.101 for server scale300-ccp-c1-m2 on network EXTERNAL-API-NET
+  Using address 10.12.49.103 for server scale300-ccp-c1-m2 on network MANAGEMENT-NET
+  Allocated address 10.13.32.1 for server scale300-ccp-c1-m2 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.101 for server scale300-ccp-c1-m2 on network GUEST-NET
+
+server: scale300-ccp-c1-m3
+--------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for glance-api (default)
+  add MANAGEMENT for glance-registry (default)
+  add MANAGEMENT for glance-client (default)
+  add MANAGEMENT for cinder-api (default)
+  add MANAGEMENT for cinder-scheduler (default)
+  add MANAGEMENT for cinder-volume (default)
+  add MANAGEMENT for cinder-backup (default)
+  add MANAGEMENT for cinder-client (default)
+  add MANAGEMENT for nova-api (default)
+  add MANAGEMENT for nova-scheduler (default)
+  add MANAGEMENT for nova-conductor (default)
+  add MANAGEMENT for nova-console-auth (default)
+  add MANAGEMENT for nova-novncproxy (default)
+  add MANAGEMENT for nova-client (default)
+  add MANAGEMENT for neutron-server (default)
+  add MANAGEMENT for neutron-ml2-plugin (default)
+  add MANAGEMENT for neutron-vpn-agent (default)
+  add MANAGEMENT for neutron-dhcp-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-client (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for sherpa-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-account (default)
+  add MANAGEMENT for swift-container (default)
+  add MANAGEMENT for swift-object (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for heat-api (default)
+  add MANAGEMENT for heat-api-cfn (default)
+  add MANAGEMENT for heat-api-cloudwatch (default)
+  add MANAGEMENT for heat-engine (default)
+  add MANAGEMENT for heat-client (default)
+  add MANAGEMENT for openstack-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for ceilometer-collector (default)
+  add MANAGEMENT for ceilometer-agent-central (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for ceilometer-expirer (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for logging-server (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for cmc-service (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for nova-metadata (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for swift-rsync (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  Allocated address 10.13.65.102 for server scale300-ccp-c1-m3 on network EXTERNAL-API-NET
+  Using address 10.12.49.104 for server scale300-ccp-c1-m3 on network MANAGEMENT-NET
+  Allocated address 10.13.32.2 for server scale300-ccp-c1-m3 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.102 for server scale300-ccp-c1-m3 on network GUEST-NET
+
+server: scale300-ccp-vsa0001
+----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for vsa (default)
+  add MANAGEMENT for tag vsa.iscsi (vsa)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.12.49.105 for server scale300-ccp-vsa0001 on network MANAGEMENT-NET
+  Allocated address 10.12.49.212 for vsa scale300-ccp-vsa0001 on network MANAGEMENT-NET
+  Allocated address 10.12.49.213 for vsa--cluster scale300-ccp-vsa0001 on network MANAGEMENT-NET
+
+server: scale300-ccp-vsa0002
+----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for vsa (default)
+  add MANAGEMENT for tag vsa.iscsi (vsa)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.12.49.106 for server scale300-ccp-vsa0002 on network MANAGEMENT-NET
+  Allocated address 10.12.49.214 for vsa scale300-ccp-vsa0002 on network MANAGEMENT-NET
+
+server: scale300-ccp-vsa0003
+----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for vsa (default)
+  add MANAGEMENT for tag vsa.iscsi (vsa)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.12.49.107 for server scale300-ccp-vsa0003 on network MANAGEMENT-NET
+  Allocated address 10.12.49.215 for vsa scale300-ccp-vsa0003 on network MANAGEMENT-NET
+
+server: scale300-ccp-comp0001
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.108 for server scale300-ccp-comp0001 on network MANAGEMENT-NET
+  Allocated address 10.13.32.3 for server scale300-ccp-comp0001 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.103 for server scale300-ccp-comp0001 on network GUEST-NET
+
+server: scale300-ccp-comp0002
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.111 for server scale300-ccp-comp0002 on network MANAGEMENT-NET
+  Allocated address 10.13.32.4 for server scale300-ccp-comp0002 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.104 for server scale300-ccp-comp0002 on network GUEST-NET
+
+server: scale300-ccp-comp0003
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.114 for server scale300-ccp-comp0003 on network MANAGEMENT-NET
+  Allocated address 10.13.32.5 for server scale300-ccp-comp0003 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.105 for server scale300-ccp-comp0003 on network GUEST-NET
+
+server: scale300-ccp-comp0004
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.117 for server scale300-ccp-comp0004 on network MANAGEMENT-NET
+  Allocated address 10.13.32.6 for server scale300-ccp-comp0004 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.106 for server scale300-ccp-comp0004 on network GUEST-NET
+
+server: scale300-ccp-comp0005
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.120 for server scale300-ccp-comp0005 on network MANAGEMENT-NET
+  Allocated address 10.13.32.7 for server scale300-ccp-comp0005 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.107 for server scale300-ccp-comp0005 on network GUEST-NET
+
+server: scale300-ccp-comp0006
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.123 for server scale300-ccp-comp0006 on network MANAGEMENT-NET
+  Allocated address 10.13.32.8 for server scale300-ccp-comp0006 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.108 for server scale300-ccp-comp0006 on network GUEST-NET
+
+server: scale300-ccp-comp0007
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.126 for server scale300-ccp-comp0007 on network MANAGEMENT-NET
+  Allocated address 10.13.32.9 for server scale300-ccp-comp0007 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.109 for server scale300-ccp-comp0007 on network GUEST-NET
+
+server: scale300-ccp-comp0008
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.129 for server scale300-ccp-comp0008 on network MANAGEMENT-NET
+  Allocated address 10.13.32.10 for server scale300-ccp-comp0008 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.110 for server scale300-ccp-comp0008 on network GUEST-NET
+
+server: scale300-ccp-comp0009
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.132 for server scale300-ccp-comp0009 on network MANAGEMENT-NET
+  Allocated address 10.13.32.11 for server scale300-ccp-comp0009 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.111 for server scale300-ccp-comp0009 on network GUEST-NET
+
+server: scale300-ccp-comp0010
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.135 for server scale300-ccp-comp0010 on network MANAGEMENT-NET
+  Allocated address 10.13.32.12 for server scale300-ccp-comp0010 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.112 for server scale300-ccp-comp0010 on network GUEST-NET
+
+server: scale300-ccp-comp0011
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.138 for server scale300-ccp-comp0011 on network MANAGEMENT-NET
+  Allocated address 10.13.32.13 for server scale300-ccp-comp0011 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.113 for server scale300-ccp-comp0011 on network GUEST-NET
+
+server: scale300-ccp-comp0012
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.141 for server scale300-ccp-comp0012 on network MANAGEMENT-NET
+  Allocated address 10.13.32.14 for server scale300-ccp-comp0012 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.114 for server scale300-ccp-comp0012 on network GUEST-NET
+
+server: scale300-ccp-comp0013
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.144 for server scale300-ccp-comp0013 on network MANAGEMENT-NET
+  Allocated address 10.13.32.15 for server scale300-ccp-comp0013 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.115 for server scale300-ccp-comp0013 on network GUEST-NET
+
+server: scale300-ccp-comp0014
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.147 for server scale300-ccp-comp0014 on network MANAGEMENT-NET
+  Allocated address 10.13.32.16 for server scale300-ccp-comp0014 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.116 for server scale300-ccp-comp0014 on network GUEST-NET
+
+server: scale300-ccp-comp0015
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.150 for server scale300-ccp-comp0015 on network MANAGEMENT-NET
+  Allocated address 10.13.32.17 for server scale300-ccp-comp0015 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.117 for server scale300-ccp-comp0015 on network GUEST-NET
+
+server: scale300-ccp-comp0016
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.153 for server scale300-ccp-comp0016 on network MANAGEMENT-NET
+  Allocated address 10.13.32.18 for server scale300-ccp-comp0016 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.118 for server scale300-ccp-comp0016 on network GUEST-NET
+
+server: scale300-ccp-comp0017
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.156 for server scale300-ccp-comp0017 on network MANAGEMENT-NET
+  Allocated address 10.13.32.19 for server scale300-ccp-comp0017 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.119 for server scale300-ccp-comp0017 on network GUEST-NET
+
+server: scale300-ccp-comp0018
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.159 for server scale300-ccp-comp0018 on network MANAGEMENT-NET
+  Allocated address 10.13.32.20 for server scale300-ccp-comp0018 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.120 for server scale300-ccp-comp0018 on network GUEST-NET
+
+server: scale300-ccp-comp0019
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.162 for server scale300-ccp-comp0019 on network MANAGEMENT-NET
+  Allocated address 10.13.32.21 for server scale300-ccp-comp0019 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.121 for server scale300-ccp-comp0019 on network GUEST-NET
+
+server: scale300-ccp-comp0020
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.165 for server scale300-ccp-comp0020 on network MANAGEMENT-NET
+  Allocated address 10.13.32.22 for server scale300-ccp-comp0020 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.122 for server scale300-ccp-comp0020 on network GUEST-NET
+
+server: scale300-ccp-comp0021
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.168 for server scale300-ccp-comp0021 on network MANAGEMENT-NET
+  Allocated address 10.13.32.23 for server scale300-ccp-comp0021 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.123 for server scale300-ccp-comp0021 on network GUEST-NET
+
+server: scale300-ccp-comp0022
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.171 for server scale300-ccp-comp0022 on network MANAGEMENT-NET
+  Allocated address 10.13.32.24 for server scale300-ccp-comp0022 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.124 for server scale300-ccp-comp0022 on network GUEST-NET
+
+server: scale300-ccp-comp0023
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.174 for server scale300-ccp-comp0023 on network MANAGEMENT-NET
+  Allocated address 10.13.32.25 for server scale300-ccp-comp0023 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.125 for server scale300-ccp-comp0023 on network GUEST-NET
+
+server: scale300-ccp-comp0024
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.177 for server scale300-ccp-comp0024 on network MANAGEMENT-NET
+  Allocated address 10.13.32.26 for server scale300-ccp-comp0024 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.126 for server scale300-ccp-comp0024 on network GUEST-NET
+
+server: scale300-ccp-comp0025
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.180 for server scale300-ccp-comp0025 on network MANAGEMENT-NET
+  Allocated address 10.13.32.27 for server scale300-ccp-comp0025 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.127 for server scale300-ccp-comp0025 on network GUEST-NET
+
+server: scale300-ccp-comp0026
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.183 for server scale300-ccp-comp0026 on network MANAGEMENT-NET
+  Allocated address 10.13.32.28 for server scale300-ccp-comp0026 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.128 for server scale300-ccp-comp0026 on network GUEST-NET
+
+server: scale300-ccp-comp0027
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.186 for server scale300-ccp-comp0027 on network MANAGEMENT-NET
+  Allocated address 10.13.32.29 for server scale300-ccp-comp0027 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.129 for server scale300-ccp-comp0027 on network GUEST-NET
+
+server: scale300-ccp-comp0028
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.189 for server scale300-ccp-comp0028 on network MANAGEMENT-NET
+  Allocated address 10.13.32.30 for server scale300-ccp-comp0028 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.130 for server scale300-ccp-comp0028 on network GUEST-NET
+
+server: scale300-ccp-comp0029
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.192 for server scale300-ccp-comp0029 on network MANAGEMENT-NET
+  Allocated address 10.13.32.31 for server scale300-ccp-comp0029 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.131 for server scale300-ccp-comp0029 on network GUEST-NET
+
+server: scale300-ccp-comp0030
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.195 for server scale300-ccp-comp0030 on network MANAGEMENT-NET
+  Allocated address 10.13.32.32 for server scale300-ccp-comp0030 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.132 for server scale300-ccp-comp0030 on network GUEST-NET
+
+server: scale300-ccp-comp0031
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.198 for server scale300-ccp-comp0031 on network MANAGEMENT-NET
+  Allocated address 10.13.32.33 for server scale300-ccp-comp0031 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.133 for server scale300-ccp-comp0031 on network GUEST-NET
+
+server: scale300-ccp-comp0032
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.201 for server scale300-ccp-comp0032 on network MANAGEMENT-NET
+  Allocated address 10.13.32.34 for server scale300-ccp-comp0032 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.134 for server scale300-ccp-comp0032 on network GUEST-NET
+
+server: scale300-ccp-comp0033
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.204 for server scale300-ccp-comp0033 on network MANAGEMENT-NET
+  Allocated address 10.13.32.35 for server scale300-ccp-comp0033 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.135 for server scale300-ccp-comp0033 on network GUEST-NET
+
+server: scale300-ccp-comp0034
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.207 for server scale300-ccp-comp0034 on network MANAGEMENT-NET
+  Allocated address 10.13.32.36 for server scale300-ccp-comp0034 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.136 for server scale300-ccp-comp0034 on network GUEST-NET
+
+server: scale300-ccp-comp0035
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.210 for server scale300-ccp-comp0035 on network MANAGEMENT-NET
+  Allocated address 10.13.32.37 for server scale300-ccp-comp0035 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.137 for server scale300-ccp-comp0035 on network GUEST-NET
+
+server: scale300-ccp-comp0036
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.109 for server scale300-ccp-comp0036 on network MANAGEMENT-NET
+  Allocated address 10.13.32.38 for server scale300-ccp-comp0036 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.138 for server scale300-ccp-comp0036 on network GUEST-NET
+
+server: scale300-ccp-comp0037
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.112 for server scale300-ccp-comp0037 on network MANAGEMENT-NET
+  Allocated address 10.13.32.39 for server scale300-ccp-comp0037 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.139 for server scale300-ccp-comp0037 on network GUEST-NET
+
+server: scale300-ccp-comp0038
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.115 for server scale300-ccp-comp0038 on network MANAGEMENT-NET
+  Allocated address 10.13.32.40 for server scale300-ccp-comp0038 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.140 for server scale300-ccp-comp0038 on network GUEST-NET
+
+server: scale300-ccp-comp0039
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.118 for server scale300-ccp-comp0039 on network MANAGEMENT-NET
+  Allocated address 10.13.32.41 for server scale300-ccp-comp0039 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.141 for server scale300-ccp-comp0039 on network GUEST-NET
+
+server: scale300-ccp-comp0040
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.121 for server scale300-ccp-comp0040 on network MANAGEMENT-NET
+  Allocated address 10.13.32.42 for server scale300-ccp-comp0040 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.142 for server scale300-ccp-comp0040 on network GUEST-NET
+
+server: scale300-ccp-comp0041
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.124 for server scale300-ccp-comp0041 on network MANAGEMENT-NET
+  Allocated address 10.13.32.43 for server scale300-ccp-comp0041 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.143 for server scale300-ccp-comp0041 on network GUEST-NET
+
+server: scale300-ccp-comp0042
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.127 for server scale300-ccp-comp0042 on network MANAGEMENT-NET
+  Allocated address 10.13.32.44 for server scale300-ccp-comp0042 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.144 for server scale300-ccp-comp0042 on network GUEST-NET
+
+server: scale300-ccp-comp0043
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.130 for server scale300-ccp-comp0043 on network MANAGEMENT-NET
+  Allocated address 10.13.32.45 for server scale300-ccp-comp0043 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.145 for server scale300-ccp-comp0043 on network GUEST-NET
+
+server: scale300-ccp-comp0044
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.133 for server scale300-ccp-comp0044 on network MANAGEMENT-NET
+  Allocated address 10.13.32.46 for server scale300-ccp-comp0044 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.146 for server scale300-ccp-comp0044 on network GUEST-NET
+
+server: scale300-ccp-comp0045
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.136 for server scale300-ccp-comp0045 on network MANAGEMENT-NET
+  Allocated address 10.13.32.47 for server scale300-ccp-comp0045 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.147 for server scale300-ccp-comp0045 on network GUEST-NET
+
+server: scale300-ccp-comp0046
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.139 for server scale300-ccp-comp0046 on network MANAGEMENT-NET
+  Allocated address 10.13.32.48 for server scale300-ccp-comp0046 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.148 for server scale300-ccp-comp0046 on network GUEST-NET
+
+server: scale300-ccp-comp0047
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.142 for server scale300-ccp-comp0047 on network MANAGEMENT-NET
+  Allocated address 10.13.32.49 for server scale300-ccp-comp0047 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.149 for server scale300-ccp-comp0047 on network GUEST-NET
+
+server: scale300-ccp-comp0048
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.145 for server scale300-ccp-comp0048 on network MANAGEMENT-NET
+  Allocated address 10.13.32.50 for server scale300-ccp-comp0048 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.150 for server scale300-ccp-comp0048 on network GUEST-NET
+
+server: scale300-ccp-comp0049
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.148 for server scale300-ccp-comp0049 on network MANAGEMENT-NET
+  Allocated address 10.13.32.51 for server scale300-ccp-comp0049 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.151 for server scale300-ccp-comp0049 on network GUEST-NET
+
+server: scale300-ccp-comp0050
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.151 for server scale300-ccp-comp0050 on network MANAGEMENT-NET
+  Allocated address 10.13.32.52 for server scale300-ccp-comp0050 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.152 for server scale300-ccp-comp0050 on network GUEST-NET
+
+server: scale300-ccp-comp0051
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.154 for server scale300-ccp-comp0051 on network MANAGEMENT-NET
+  Allocated address 10.13.32.53 for server scale300-ccp-comp0051 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.153 for server scale300-ccp-comp0051 on network GUEST-NET
+
+server: scale300-ccp-comp0052
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.157 for server scale300-ccp-comp0052 on network MANAGEMENT-NET
+  Allocated address 10.13.32.54 for server scale300-ccp-comp0052 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.154 for server scale300-ccp-comp0052 on network GUEST-NET
+
+server: scale300-ccp-comp0053
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.160 for server scale300-ccp-comp0053 on network MANAGEMENT-NET
+  Allocated address 10.13.32.55 for server scale300-ccp-comp0053 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.155 for server scale300-ccp-comp0053 on network GUEST-NET
+
+server: scale300-ccp-comp0054
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.163 for server scale300-ccp-comp0054 on network MANAGEMENT-NET
+  Allocated address 10.13.32.56 for server scale300-ccp-comp0054 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.156 for server scale300-ccp-comp0054 on network GUEST-NET
+
+server: scale300-ccp-comp0055
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.166 for server scale300-ccp-comp0055 on network MANAGEMENT-NET
+  Allocated address 10.13.32.57 for server scale300-ccp-comp0055 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.157 for server scale300-ccp-comp0055 on network GUEST-NET
+
+server: scale300-ccp-comp0056
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.169 for server scale300-ccp-comp0056 on network MANAGEMENT-NET
+  Allocated address 10.13.32.58 for server scale300-ccp-comp0056 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.158 for server scale300-ccp-comp0056 on network GUEST-NET
+
+server: scale300-ccp-comp0057
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.172 for server scale300-ccp-comp0057 on network MANAGEMENT-NET
+  Allocated address 10.13.32.59 for server scale300-ccp-comp0057 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.159 for server scale300-ccp-comp0057 on network GUEST-NET
+
+server: scale300-ccp-comp0058
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.175 for server scale300-ccp-comp0058 on network MANAGEMENT-NET
+  Allocated address 10.13.32.60 for server scale300-ccp-comp0058 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.160 for server scale300-ccp-comp0058 on network GUEST-NET
+
+server: scale300-ccp-comp0059
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.178 for server scale300-ccp-comp0059 on network MANAGEMENT-NET
+  Allocated address 10.13.32.61 for server scale300-ccp-comp0059 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.161 for server scale300-ccp-comp0059 on network GUEST-NET
+
+server: scale300-ccp-comp0060
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.181 for server scale300-ccp-comp0060 on network MANAGEMENT-NET
+  Allocated address 10.13.32.62 for server scale300-ccp-comp0060 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.162 for server scale300-ccp-comp0060 on network GUEST-NET
+
+server: scale300-ccp-comp0061
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.184 for server scale300-ccp-comp0061 on network MANAGEMENT-NET
+  Allocated address 10.13.32.63 for server scale300-ccp-comp0061 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.163 for server scale300-ccp-comp0061 on network GUEST-NET
+
+server: scale300-ccp-comp0062
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.187 for server scale300-ccp-comp0062 on network MANAGEMENT-NET
+  Allocated address 10.13.32.64 for server scale300-ccp-comp0062 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.164 for server scale300-ccp-comp0062 on network GUEST-NET
+
+server: scale300-ccp-comp0063
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.190 for server scale300-ccp-comp0063 on network MANAGEMENT-NET
+  Allocated address 10.13.32.65 for server scale300-ccp-comp0063 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.165 for server scale300-ccp-comp0063 on network GUEST-NET
+
+server: scale300-ccp-comp0064
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.193 for server scale300-ccp-comp0064 on network MANAGEMENT-NET
+  Allocated address 10.13.32.66 for server scale300-ccp-comp0064 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.166 for server scale300-ccp-comp0064 on network GUEST-NET
+
+server: scale300-ccp-comp0065
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.196 for server scale300-ccp-comp0065 on network MANAGEMENT-NET
+  Allocated address 10.13.32.67 for server scale300-ccp-comp0065 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.167 for server scale300-ccp-comp0065 on network GUEST-NET
+
+server: scale300-ccp-comp0066
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.199 for server scale300-ccp-comp0066 on network MANAGEMENT-NET
+  Allocated address 10.13.32.68 for server scale300-ccp-comp0066 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.168 for server scale300-ccp-comp0066 on network GUEST-NET
+
+server: scale300-ccp-comp0067
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.202 for server scale300-ccp-comp0067 on network MANAGEMENT-NET
+  Allocated address 10.13.32.69 for server scale300-ccp-comp0067 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.169 for server scale300-ccp-comp0067 on network GUEST-NET
+
+server: scale300-ccp-comp0068
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.205 for server scale300-ccp-comp0068 on network MANAGEMENT-NET
+  Allocated address 10.13.32.70 for server scale300-ccp-comp0068 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.170 for server scale300-ccp-comp0068 on network GUEST-NET
+
+server: scale300-ccp-comp0069
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.208 for server scale300-ccp-comp0069 on network MANAGEMENT-NET
+  Allocated address 10.13.32.71 for server scale300-ccp-comp0069 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.171 for server scale300-ccp-comp0069 on network GUEST-NET
+
+server: scale300-ccp-comp0070
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.211 for server scale300-ccp-comp0070 on network MANAGEMENT-NET
+  Allocated address 10.13.32.72 for server scale300-ccp-comp0070 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.172 for server scale300-ccp-comp0070 on network GUEST-NET
+
+server: scale300-ccp-comp0071
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.110 for server scale300-ccp-comp0071 on network MANAGEMENT-NET
+  Allocated address 10.13.32.73 for server scale300-ccp-comp0071 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.173 for server scale300-ccp-comp0071 on network GUEST-NET
+
+server: scale300-ccp-comp0072
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.113 for server scale300-ccp-comp0072 on network MANAGEMENT-NET
+  Allocated address 10.13.32.74 for server scale300-ccp-comp0072 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.174 for server scale300-ccp-comp0072 on network GUEST-NET
+
+server: scale300-ccp-comp0073
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.116 for server scale300-ccp-comp0073 on network MANAGEMENT-NET
+  Allocated address 10.13.32.75 for server scale300-ccp-comp0073 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.175 for server scale300-ccp-comp0073 on network GUEST-NET
+
+server: scale300-ccp-comp0074
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.119 for server scale300-ccp-comp0074 on network MANAGEMENT-NET
+  Allocated address 10.13.32.76 for server scale300-ccp-comp0074 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.176 for server scale300-ccp-comp0074 on network GUEST-NET
+
+server: scale300-ccp-comp0075
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.122 for server scale300-ccp-comp0075 on network MANAGEMENT-NET
+  Allocated address 10.13.32.77 for server scale300-ccp-comp0075 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.177 for server scale300-ccp-comp0075 on network GUEST-NET
+
+server: scale300-ccp-comp0076
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.125 for server scale300-ccp-comp0076 on network MANAGEMENT-NET
+  Allocated address 10.13.32.78 for server scale300-ccp-comp0076 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.178 for server scale300-ccp-comp0076 on network GUEST-NET
+
+server: scale300-ccp-comp0077
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.128 for server scale300-ccp-comp0077 on network MANAGEMENT-NET
+  Allocated address 10.13.32.79 for server scale300-ccp-comp0077 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.179 for server scale300-ccp-comp0077 on network GUEST-NET
+
+server: scale300-ccp-comp0078
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.131 for server scale300-ccp-comp0078 on network MANAGEMENT-NET
+  Allocated address 10.13.32.80 for server scale300-ccp-comp0078 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.180 for server scale300-ccp-comp0078 on network GUEST-NET
+
+server: scale300-ccp-comp0079
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.134 for server scale300-ccp-comp0079 on network MANAGEMENT-NET
+  Allocated address 10.13.32.81 for server scale300-ccp-comp0079 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.181 for server scale300-ccp-comp0079 on network GUEST-NET
+
+server: scale300-ccp-comp0080
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.137 for server scale300-ccp-comp0080 on network MANAGEMENT-NET
+  Allocated address 10.13.32.82 for server scale300-ccp-comp0080 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.182 for server scale300-ccp-comp0080 on network GUEST-NET
+
+server: scale300-ccp-comp0081
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.140 for server scale300-ccp-comp0081 on network MANAGEMENT-NET
+  Allocated address 10.13.32.83 for server scale300-ccp-comp0081 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.183 for server scale300-ccp-comp0081 on network GUEST-NET
+
+server: scale300-ccp-comp0082
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.143 for server scale300-ccp-comp0082 on network MANAGEMENT-NET
+  Allocated address 10.13.32.84 for server scale300-ccp-comp0082 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.184 for server scale300-ccp-comp0082 on network GUEST-NET
+
+server: scale300-ccp-comp0083
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.146 for server scale300-ccp-comp0083 on network MANAGEMENT-NET
+  Allocated address 10.13.32.85 for server scale300-ccp-comp0083 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.185 for server scale300-ccp-comp0083 on network GUEST-NET
+
+server: scale300-ccp-comp0084
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.149 for server scale300-ccp-comp0084 on network MANAGEMENT-NET
+  Allocated address 10.13.32.86 for server scale300-ccp-comp0084 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.186 for server scale300-ccp-comp0084 on network GUEST-NET
+
+server: scale300-ccp-comp0085
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.152 for server scale300-ccp-comp0085 on network MANAGEMENT-NET
+  Allocated address 10.13.32.87 for server scale300-ccp-comp0085 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.187 for server scale300-ccp-comp0085 on network GUEST-NET
+
+server: scale300-ccp-comp0086
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.155 for server scale300-ccp-comp0086 on network MANAGEMENT-NET
+  Allocated address 10.13.32.88 for server scale300-ccp-comp0086 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.188 for server scale300-ccp-comp0086 on network GUEST-NET
+
+server: scale300-ccp-comp0087
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.158 for server scale300-ccp-comp0087 on network MANAGEMENT-NET
+  Allocated address 10.13.32.89 for server scale300-ccp-comp0087 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.189 for server scale300-ccp-comp0087 on network GUEST-NET
+
+server: scale300-ccp-comp0088
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.161 for server scale300-ccp-comp0088 on network MANAGEMENT-NET
+  Allocated address 10.13.32.90 for server scale300-ccp-comp0088 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.190 for server scale300-ccp-comp0088 on network GUEST-NET
+
+server: scale300-ccp-comp0089
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.164 for server scale300-ccp-comp0089 on network MANAGEMENT-NET
+  Allocated address 10.13.32.91 for server scale300-ccp-comp0089 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.191 for server scale300-ccp-comp0089 on network GUEST-NET
+
+server: scale300-ccp-comp0090
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.167 for server scale300-ccp-comp0090 on network MANAGEMENT-NET
+  Allocated address 10.13.32.92 for server scale300-ccp-comp0090 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.192 for server scale300-ccp-comp0090 on network GUEST-NET
+
+server: scale300-ccp-comp0091
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.170 for server scale300-ccp-comp0091 on network MANAGEMENT-NET
+  Allocated address 10.13.32.93 for server scale300-ccp-comp0091 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.193 for server scale300-ccp-comp0091 on network GUEST-NET
+
+server: scale300-ccp-comp0092
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.173 for server scale300-ccp-comp0092 on network MANAGEMENT-NET
+  Allocated address 10.13.32.94 for server scale300-ccp-comp0092 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.194 for server scale300-ccp-comp0092 on network GUEST-NET
+
+server: scale300-ccp-comp0093
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.176 for server scale300-ccp-comp0093 on network MANAGEMENT-NET
+  Allocated address 10.13.32.95 for server scale300-ccp-comp0093 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.195 for server scale300-ccp-comp0093 on network GUEST-NET
+
+server: scale300-ccp-comp0094
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.179 for server scale300-ccp-comp0094 on network MANAGEMENT-NET
+  Allocated address 10.13.32.96 for server scale300-ccp-comp0094 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.196 for server scale300-ccp-comp0094 on network GUEST-NET
+
+server: scale300-ccp-comp0095
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.182 for server scale300-ccp-comp0095 on network MANAGEMENT-NET
+  Allocated address 10.13.32.97 for server scale300-ccp-comp0095 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.197 for server scale300-ccp-comp0095 on network GUEST-NET
+
+server: scale300-ccp-comp0096
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.185 for server scale300-ccp-comp0096 on network MANAGEMENT-NET
+  Allocated address 10.13.32.98 for server scale300-ccp-comp0096 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.198 for server scale300-ccp-comp0096 on network GUEST-NET
+
+server: scale300-ccp-comp0097
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.188 for server scale300-ccp-comp0097 on network MANAGEMENT-NET
+  Allocated address 10.13.32.99 for server scale300-ccp-comp0097 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.199 for server scale300-ccp-comp0097 on network GUEST-NET
+
+server: scale300-ccp-comp0098
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.191 for server scale300-ccp-comp0098 on network MANAGEMENT-NET
+  Allocated address 10.13.32.100 for server scale300-ccp-comp0098 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.200 for server scale300-ccp-comp0098 on network GUEST-NET
+
+server: scale300-ccp-comp0099
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.194 for server scale300-ccp-comp0099 on network MANAGEMENT-NET
+  Allocated address 10.13.32.101 for server scale300-ccp-comp0099 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.201 for server scale300-ccp-comp0099 on network GUEST-NET
+
+server: scale300-ccp-comp0100
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.197 for server scale300-ccp-comp0100 on network MANAGEMENT-NET
+  Allocated address 10.13.32.102 for server scale300-ccp-comp0100 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.202 for server scale300-ccp-comp0100 on network GUEST-NET
+
+server: scale300-ccp-comp0101
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.200 for server scale300-ccp-comp0101 on network MANAGEMENT-NET
+  Allocated address 10.13.32.103 for server scale300-ccp-comp0101 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.203 for server scale300-ccp-comp0101 on network GUEST-NET
+
+server: scale300-ccp-comp0102
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.203 for server scale300-ccp-comp0102 on network MANAGEMENT-NET
+  Allocated address 10.13.32.104 for server scale300-ccp-comp0102 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.204 for server scale300-ccp-comp0102 on network GUEST-NET
+
+server: scale300-ccp-comp0103
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.206 for server scale300-ccp-comp0103 on network MANAGEMENT-NET
+  Allocated address 10.13.32.105 for server scale300-ccp-comp0103 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.205 for server scale300-ccp-comp0103 on network GUEST-NET
+
+server: scale300-ccp-comp0104
+-----------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.12.49.209 for server scale300-ccp-comp0104 on network MANAGEMENT-NET
+  Allocated address 10.13.32.106 for server scale300-ccp-comp0104 on network EXTERNAL-VM-NET
+  Allocated address 10.13.67.206 for server scale300-ccp-comp0104 on network GUEST-NET
+
+Resolve Network Routes
+======================
+Add route from MANAGEMENT-NET to 0.0.0.0/0 (default)
+Add route from MANAGEMENT-NET to SERVICE-NET (another group)
+
+Resolve Network Routes for each server
+======================================
+
+server: scale300-ccp-c0-m1
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-c1-m1
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-c1-m2
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-c1-m3
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-vsa0001
+----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-vsa0002
+----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-vsa0003
+----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0001
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0002
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0003
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0004
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0005
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0006
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0007
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0008
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0009
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0010
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0011
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0012
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0013
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0014
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0015
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0016
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0017
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0018
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0019
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0020
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0021
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0022
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0023
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0024
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0025
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0026
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0027
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0028
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0029
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0030
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0031
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0032
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0033
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0034
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0035
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0036
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0037
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0038
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0039
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0040
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0041
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0042
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0043
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0044
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0045
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0046
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0047
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0048
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0049
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0050
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0051
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0052
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0053
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0054
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0055
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0056
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0057
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0058
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0059
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0060
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0061
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0062
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0063
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0064
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0065
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0066
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0067
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0068
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0069
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0070
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0071
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0072
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0073
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0074
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0075
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0076
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0077
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0078
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0079
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0080
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0081
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0082
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0083
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0084
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0085
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0086
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0087
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0088
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0089
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0090
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0091
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0092
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0093
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0094
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0095
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0096
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0097
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0098
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0099
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0100
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0101
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0102
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0103
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+server: scale300-ccp-comp0104
+-----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+  Add MANAGEMENT-NET -> 10.12.50.0/23 (SERVICE-NET)
+
+Define load balancers
+=====================
+
+Load balancer: extlb
+--------------------
+  Allocated address 10.13.65.103 for vip extlb scale300-ccp-vip-extlb-extapi on network EXTERNAL-API-NET
+  Add nova-api for roles ['public'] due to 'default'
+  Add glance-api for roles ['public'] due to 'default'
+  Add keystone-api for roles ['public'] due to 'default'
+  Add swift-proxy for roles ['public'] due to 'default'
+  Add monasca-api for roles ['public'] due to 'default'
+  Add sherpa-api for roles ['public'] due to 'default'
+  Add heat-api-cfn for roles ['public'] due to 'default'
+  Add ops-console-web for roles ['public'] due to 'default'
+  Add heat-api for roles ['public'] due to 'default'
+  Add nova-novncproxy for roles ['public'] due to 'default'
+  Add neutron-server for roles ['public'] due to 'default'
+  Add heat-api-cloudwatch for roles ['public'] due to 'default'
+  Add ceilometer-api for roles ['public'] due to 'default'
+  Add freezer-api for roles ['public'] due to 'default'
+  Add horizon for roles ['public'] due to 'default'
+  Add cinder-api for roles ['public'] due to 'default'
+
+Load balancer: lb
+-----------------
+  Allocated address 10.12.49.216 for vip lb scale300-ccp-vip-lb-mgmt on network MANAGEMENT-NET
+  Add glance-registry for roles ['internal'] due to 'default'
+  Add nova-api for roles ['internal', 'admin'] due to 'default'
+  Add glance-api for roles ['internal', 'admin'] due to 'default'
+  Add keystone-api for roles ['internal'] due to 'default'
+  Add keystone-api for roles ['admin'] due to 'default'
+  Add swift-proxy for roles ['internal', 'admin'] due to 'default'
+  Add mysql for roles ['internal', 'admin'] due to 'default'
+  Add monasca-api for roles ['internal'] due to 'default'
+  Add vertica for roles ['internal'] due to 'default'
+  Add sherpa-api for roles ['internal', 'admin'] due to 'default'
+  Add heat-api-cfn for roles ['internal'] due to 'default'
+  Add ops-console-web for roles ['internal'] due to 'default'
+  Add heat-api for roles ['internal'] due to 'default'
+  Add neutron-server for roles ['internal', 'admin'] due to 'default'
+  Add heat-api-cloudwatch for roles ['internal'] due to 'default'
+  Add nova-metadata for roles ['internal'] due to 'default'
+  Add ceilometer-api for roles ['internal', 'admin'] due to 'default'
+  Add rabbitmq for roles ['internal'] due to 'default'
+  Add freezer-api for roles ['internal', 'admin'] due to 'default'
+  Add horizon for roles ['internal'] due to 'default'
+  Add logging-server for roles ['internal'] due to 'default'
+  Add cinder-api for roles ['internal', 'admin'] due to 'default'
+
+Map load balancers to providers
+===============================
+
+Network EXTERNAL-API-NET
+------------------------
+  10.13.65.103: ip-cluster nova-api roles: ['public'] vip-port: 8774 host-port: 8774
+  10.13.65.103: ip-cluster glance-api roles: ['public'] vip-port: 9292 host-port: 9292
+  10.13.65.103: ip-cluster keystone-api roles: ['public'] vip-port: 5000 host-port: 5000
+  10.13.65.103: ip-cluster swift-proxy roles: ['public'] vip-port: 8080 host-port: 8080
+  10.13.65.103: ip-cluster monasca-api roles: ['public'] vip-port: 8070 host-port: 8070
+  10.13.65.103: ip-cluster sherpa-api roles: ['public'] vip-port: 21131 host-port: 21131
+  10.13.65.103: ip-cluster heat-api-cfn roles: ['public'] vip-port: 8000 host-port: 8000
+  10.13.65.103: ip-cluster ops-console-web roles: ['public'] vip-port: 9095 host-port: 9095
+  10.13.65.103: ip-cluster heat-api roles: ['public'] vip-port: 8004 host-port: 8004
+  10.13.65.103: ip-cluster nova-novncproxy roles: ['public'] vip-port: 6080 host-port: 6080
+  10.13.65.103: ip-cluster neutron-server roles: ['public'] vip-port: 9696 host-port: 9696
+  10.13.65.103: ip-cluster heat-api-cloudwatch roles: ['public'] vip-port: 8003 host-port: 8003
+  10.13.65.103: ip-cluster ceilometer-api roles: ['public'] vip-port: 8777 host-port: 8777
+  10.13.65.103: ip-cluster freezer-api roles: ['public'] vip-port: 9090 host-port: 9090
+  10.13.65.103: ip-cluster horizon roles: ['public'] vip-port: 443 host-port: 80
+  10.13.65.103: ip-cluster cinder-api roles: ['public'] vip-port: 8776 host-port: 8776
+
+Network MANAGEMENT-NET
+----------------------
+  10.12.49.216: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
+  10.12.49.216: ip-cluster nova-api roles: ['internal', 'admin'] vip-port: 8774 host-port: 8774
+  10.12.49.216: ip-cluster glance-api roles: ['internal', 'admin'] vip-port: 9292 host-port: 9292
+  10.12.49.216: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  10.12.49.216: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  10.12.49.216: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
+  10.12.49.216: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
+  10.12.49.216: ip-cluster monasca-api roles: ['internal'] vip-port: 8070 host-port: 8070
+  10.12.49.216: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  10.12.49.216: ip-cluster sherpa-api roles: ['internal', 'admin'] vip-port: 21131 host-port: 21131
+  10.12.49.216: ip-cluster heat-api-cfn roles: ['internal'] vip-port: 8000 host-port: 8000
+  10.12.49.216: ip-cluster ops-console-web roles: ['internal'] vip-port: 9095 host-port: 9095
+  10.12.49.216: ip-cluster heat-api roles: ['internal'] vip-port: 8004 host-port: 8004
+  10.12.49.216: ip-cluster neutron-server roles: ['internal', 'admin'] vip-port: 9696 host-port: 9696
+  10.12.49.216: ip-cluster heat-api-cloudwatch roles: ['internal'] vip-port: 8003 host-port: 8003
+  10.12.49.216: ip-cluster nova-metadata roles: ['internal'] vip-port: 8775 host-port: 8775
+  10.12.49.216: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
+  10.12.49.216: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
+  10.12.49.216: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090
+  10.12.49.216: ip-cluster horizon roles: ['internal'] vip-port: 80 host-port: 80
+  10.12.49.216: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601
+  10.12.49.216: ip-cluster cinder-api roles: ['internal', 'admin'] vip-port: 8776 host-port: 8776

@@ -1,0 +1,48 @@
+compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+core1:
+  cluster_name: core
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+dbmq1:
+  cluster_name: dbmq
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mtrmon1:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+neut1:
+  cluster_name: neut
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+singleton1:
+  cluster_name: singleton
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+swobj1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: swobj
+  state: allocated
+  type: resource
+swpac1:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster

@@ -1,0 +1,135 @@
+COMPUTE-0001:
+    failure-zone: AZ1
+    hostname: standard-ccp-comp0001-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.6
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.6
+                tagged-vlan: false
+                vlan-id: 101
+        eth3:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 103
+    state: allocated
+COMPUTE-0002:
+    failure-zone: AZ2
+    hostname: standard-ccp-comp0002-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.7
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.7
+                tagged-vlan: false
+                vlan-id: 101
+        eth3:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 103
+    state: allocated
+COMPUTE-0003:
+    failure-zone: AZ3
+    hostname: standard-ccp-comp0003-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.8
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.8
+                tagged-vlan: false
+                vlan-id: 101
+        eth3:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 103
+    state: allocated
+ccn-0001:
+    failure-zone: AZ1
+    hostname: standard-ccp-c1-m1-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.3
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.3
+                tagged-vlan: false
+                vlan-id: 101
+        eth3:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 103
+    state: allocated
+ccn-0002:
+    failure-zone: AZ2
+    hostname: standard-ccp-c1-m2-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.4
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.4
+                tagged-vlan: false
+                vlan-id: 101
+        eth3:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 103
+    state: allocated
+ccn-0003:
+    failure-zone: AZ3
+    hostname: standard-ccp-c1-m3-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.5
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.5
+                tagged-vlan: false
+                vlan-id: 101
+        eth3:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 103
+    state: allocated
+deployer:
+    failure-zone: AZ1
+    hostname: standard-ccp-c0-m1-mgmt
+    net_data:
+        eth1:
+            MANAGEMENT-NET:
+                addr: 192.168.245.2
+                tagged-vlan: false
+                vlan-id: 102
+        eth2:
+            ARDANA-NET:
+                addr: 192.168.10.254
+                tagged-vlan: false
+                vlan-id: 101
+    state: allocated

@@ -1,0 +1,59 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+#
+---
+  product:
+    version: 2
+
+#
+# Ardana OpenStack will create firewall rules to enable the required access for
+# all of the deployed services. Use this section to define any
+# additional access.
+#
+# Each group of rules can be applied to one or more network groups
+# Examples are given for ping and ssh
+#
+# Names of rules, (e.g. "PING") are arbitrary and have no special significance
+#
+
+
+  firewall-rules:
+
+    - name: SSH
+      # network-groups is a list of all the network group names
+      # that the rules apply to
+      network-groups:
+      - CONF
+      - CLM
+
+      rules:
+      - type: allow
+        # range of remote addresses in CIDR format that this
+        # rule applies to
+        remote-ip-prefix:  0.0.0.0/0
+        port-range-min: 22
+        port-range-max: 22
+        # protocol must be one of: null, tcp, udp or icmp
+        protocol: tcp
+
+    - name: PING
+      network-groups:
+      - CONF
+      - DCM
+      - CAN
+      - CLM
+      - VxLAN
+      - iSCSI
+
+      rules:
+      # open ICMP echo request (ping)
+      - type: allow
+        remote-ip-prefix:  0.0.0.0/0
+        # icmp type
+        port-range-min: 8
+        # icmp code
+        port-range-max: 0
+        protocol: icmp
+

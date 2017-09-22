@@ -1,0 +1,15 @@
+service_ips:
+    vsa:
+    -   cluster: vsa
+        cluster_ip:
+            hostname: eu-em2-cp1-vsa-VSA-BLK-mgmt
+            ip_address: 10.16.80.3
+        control_plane: control-plane-1
+        hosts:
+        -   hostname: eu-em2-cp1-vsa0001-VSA-BLK-mgmt
+            ip_address: 10.16.80.2
+        -   hostname: eu-em2-cp1-vsa0002-VSA-BLK-mgmt
+            ip_address: 10.16.80.4
+        -   hostname: eu-em2-cp1-vsa0003-VSA-BLK-mgmt
+            ip_address: 10.16.80.5
+        network: MANAGEMENT-NET

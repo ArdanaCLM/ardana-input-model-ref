@@ -1,0 +1,48 @@
+COMPUTE-0001:
+  cp_name: ccp
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+OSD-0001:
+  cp_name: ccp
+  member_id: 1
+  resource_name: osd
+  state: allocated
+  type: resource
+OSD-0002:
+  cp_name: ccp
+  member_id: 2
+  resource_name: osd
+  state: allocated
+  type: resource
+OSD-0003:
+  cp_name: ccp
+  member_id: 3
+  resource_name: osd
+  state: allocated
+  type: resource
+ccn-0001:
+  cluster_name: cluster1
+  cp_name: ccp
+  member_id: 1
+  state: allocated
+  type: cluster
+ccn-0002:
+  cluster_name: cluster1
+  cp_name: ccp
+  member_id: 2
+  state: allocated
+  type: cluster
+ccn-0003:
+  cluster_name: cluster1
+  cp_name: ccp
+  member_id: 3
+  state: allocated
+  type: cluster
+deployer:
+  cluster_name: cluster0
+  cp_name: ccp
+  member_id: 1
+  state: allocated
+  type: cluster

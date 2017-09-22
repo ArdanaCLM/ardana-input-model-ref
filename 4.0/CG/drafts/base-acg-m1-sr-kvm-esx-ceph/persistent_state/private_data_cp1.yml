@@ -1,0 +1,981 @@
+barbican_admin_password: 2kkaJ6FoNC
+barbican_admin_password__is_secure: false
+barbican_admin_password__metadata:
+- clusters:
+  - controller
+  component: barbican-api
+  consuming-cp: cp1
+  cp: cp1
+barbican_master_kek_db_plugin: XsI0Ulr3AezgxKpuqNEb5yI8OW652sG7
+barbican_master_kek_db_plugin__is_secure: false
+barbican_master_kek_db_plugin__metadata:
+- clusters:
+  - controller
+  component: barbican-api
+  consuming-cp: cp1
+  cp: cp1
+barbican_service_password: 55qK8f4iG9u
+barbican_service_password__is_secure: false
+barbican_service_password__metadata:
+- clusters:
+  - controller
+  component: barbican-api
+  consuming-cp: cp1
+  cp: cp1
+ceilometer_metering_secret: 6w1fFO2PcN4l8z38d
+ceilometer_metering_secret__is_secure: false
+ceilometer_metering_secret__metadata:
+- clusters:
+  - mml
+  component: ceilometer-common
+  consuming-cp: cp1
+  cp: cp1
+dbadmin_user_password: cj3Am3Xr7ds
+dbadmin_user_password__is_secure: false
+dbadmin_user_password__metadata:
+- clusters:
+  - mml
+  component: vertica
+  consuming-cp: cp1
+  cp: cp1
+erlang_cookie: epzumSQREPTooSzZKpLZg
+erlang_cookie__is_secure: false
+erlang_cookie__metadata:
+- clusters:
+  - rmq-mysql
+  component: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+haproxy_stats_password: d0aSxutXjHk
+haproxy_stats_password__is_secure: false
+haproxy_stats_password__metadata:
+- clusters:
+  - controller
+  component: ip-cluster
+  consuming-cp: cp1
+  cp: cp1
+heartbeat_key: LUSleVrhl43Q
+heartbeat_key__is_secure: false
+heartbeat_key__metadata:
+- clusters:
+  - controller
+  component: octavia-api
+  consumes: octavia-health-manager
+  consuming-cp: cp1
+  cp: cp1
+ardana_internal_ca:
+  private: '-----BEGIN RSA PRIVATE KEY-----
+
+    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
+
+    -----END RSA PRIVATE KEY-----'
+  public: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCxqswOQbl0mPDoUnivDbJQuqyeixO5TAnKop1BJY/i10/KlywUUjmncFqoOLzeA/VJiqpbgNURLXBaLzIgsSLDpSI66mtVNTIM6KnNSJvjBENRwKu7qMdTy4X4FN+gDPFjpwQ8UlMVm86BR2tYYoD7iOol+bRpjuU6ycedtEmGGgL9a0AYS7pL+YuXiDcFwEPDmE6fXMrtoKmMhVEtrJONJ+w//I+EN4R+C85eTuGZQsCRfH4ZNTMik0iE9Vtxd26E/bI3xDjqgM9W1XXRhKUbv9VI3Dd/xozcZeFqMIg4+NOPtNPHV0TTOy6u3mwjKHtKDOFhPybubG1BTyWBIOQIPpOobzIfK/8DOtaBJREz3jzNbtckzytoF6gOF6zT//JaUMIqXAU12zWqK3YgGps/W0VqMGwD3f+uAG/VTfu80Kh970GocKWbveTi4a1SNLXK4MlE5WmO4cZjG7uhkt9hlXcD2XaJRIGJMMVSQxQzVwoVfYOp88IZCoj+CGG/OFc1LC+TY+b5dfcnWgoXi0MnY2w/ZS8y0Kgfd58Fp7Gj6cwmfvLY2xJcP0VADjVwlkvDUspTAWAtlvHAPhsTh71ICQfcoCJxh7N0mzEm+cYC++JBg+eIkyBpWOf7xHc4I9rtgt9VGp31RHFLr+Ds+zVwihkNlg6Zmr9Pwjk5SsE04Q==
+    Generated Ardana OpenStack internal CA
+ardana_internal_ca__is_secure: false
+ardana_internal_ca__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: ardana-ca
+  consuming-cp: cp1
+  cp: cp1
+horizon_secret_key: 9u0HXvfwWpY0qNaT0Fa7P8bODohRhvUp8ejJbPlhDj9FPJhV09Hz0LlHC4LPxexy
+horizon_secret_key__is_secure: false
+horizon_secret_key__metadata:
+- clusters:
+  - controller
+  component: horizon
+  consuming-cp: cp1
+  cp: cp1
+keepalive_vrrp_password: WMzf2yB
+keepalive_vrrp_password__is_secure: false
+keepalive_vrrp_password__metadata:
+- clusters:
+  - controller
+  component: ip-cluster
+  consuming-cp: cp1
+  cp: cp1
+keepalived_vrrp_index: 0
+keepalived_vrrp_index__is_secure: false
+keepalived_vrrp_index__metadata:
+- clusters:
+  - controller
+  component: ip-cluster
+  consuming-cp: cp1
+  cp: cp1
+keystone_admin_pwd: Z3k9ml2U
+keystone_admin_pwd__is_secure: false
+keystone_admin_pwd__metadata:
+- clusters:
+  - controller
+  component: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_admin_token: TZ5oUgrlFVim
+keystone_admin_token__is_secure: false
+keystone_admin_token__metadata:
+- clusters:
+  - controller
+  component: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_backup_password: 4rBlv9aJMlF9
+keystone_backup_password__is_secure: false
+keystone_backup_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  - controller
+  - rmq-mysql
+  - mml
+  - network
+  - compute
+  - osd
+  component: freezer-agent
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_ceilometer_password: 7gmfjfBKMQlx4Xpe
+keystone_ceilometer_password__is_secure: false
+keystone_ceilometer_password__metadata:
+- clusters:
+  - mml
+  component: ceilometer-common
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_cinder_password: hsS87Lkp2N
+keystone_cinder_password__is_secure: false
+keystone_cinder_password__metadata:
+- clusters:
+  - controller
+  component: cinder-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_cinderinternal_password: j2lWkMqElKVb
+keystone_cinderinternal_password__is_secure: false
+keystone_cinderinternal_password__metadata:
+- clusters:
+  - controller
+  component: cinder-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_demo_pwd: Pcpw0XKKE
+keystone_demo_pwd__is_secure: false
+keystone_demo_pwd__metadata:
+- clusters:
+  - controller
+  component: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_designate_password: thmKcFuH
+keystone_designate_password__is_secure: false
+keystone_designate_password__metadata:
+- clusters:
+  - controller
+  component: designate-central
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_eon_password: Jnh78gRw1
+keystone_eon_password__is_secure: false
+keystone_eon_password__metadata:
+- clusters:
+  - controller
+  component: eon-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_freezer_password: JtxjS38iYMES
+keystone_freezer_password__is_secure: false
+keystone_freezer_password__metadata:
+- clusters:
+  - mml
+  component: freezer-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_glance_check_password: 3nN0OaqYYGa
+keystone_glance_check_password__is_secure: false
+keystone_glance_check_password__metadata:
+- clusters:
+  - controller
+  component: glance-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_glance_password: 3Wh87ZKDiO
+keystone_glance_password__is_secure: false
+keystone_glance_password__metadata:
+- clusters:
+  - controller
+  component: glance-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_glance_swift_password: UnudUjPuDG
+keystone_glance_swift_password__is_secure: false
+keystone_glance_swift_password__metadata:
+- clusters:
+  - controller
+  component: glance-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_heat_password: 0893Js8ST
+keystone_heat_password__is_secure: false
+keystone_heat_password__metadata:
+- clusters:
+  - controller
+  component: heat-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_monasca_agent_password: 3JZY2BfiU
+keystone_monasca_agent_password__is_secure: false
+keystone_monasca_agent_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  - controller
+  - rmq-mysql
+  - mml
+  - network
+  - compute
+  - osd
+  component: monasca-agent
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_monasca_password: AB6qYAMp5Q1u
+keystone_monasca_password__is_secure: false
+keystone_monasca_password__metadata:
+- clusters:
+  - mml
+  component: monasca-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_neutron_password: MtgmCA338
+keystone_neutron_password__is_secure: false
+keystone_neutron_password__metadata:
+- clusters:
+  - controller
+  component: neutron-server
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: octavia-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_nova_password: pd6ctGky
+keystone_nova_password__is_secure: false
+keystone_nova_password__metadata:
+- clusters:
+  - controller
+  component: nova-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_octavia_password: R9DJi2WP4a
+keystone_octavia_password__is_secure: false
+keystone_octavia_password__metadata:
+- clusters:
+  - controller
+  component: octavia-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_swift_dispersion_password: m7Nb6QNBBj4
+keystone_swift_dispersion_password__is_secure: false
+keystone_swift_dispersion_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: swift-proxy
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_swift_monitor_password: IUfLoa9djh
+keystone_swift_monitor_password__is_secure: false
+keystone_swift_monitor_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: swift-proxy
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+keystone_swift_password: 5iYNnCidQ7x
+keystone_swift_password__is_secure: false
+keystone_swift_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: swift-proxy
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+logging_api_password: 8JCI64Q3SD
+logging_api_password__is_secure: false
+logging_api_password__metadata:
+- clusters:
+  - mml
+  component: logging-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+logging_beaver_password: GaWNeHUCuJa
+logging_beaver_password__is_secure: false
+logging_beaver_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  - controller
+  - rmq-mysql
+  - mml
+  - network
+  - compute
+  - osd
+  component: logging-producer
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+logging_kibana_password: PDm6QQ4vD
+logging_kibana_password__is_secure: false
+logging_kibana_password__metadata:
+- clusters:
+  - mml
+  component: logging-server
+  consuming-cp: cp1
+  cp: cp1
+logging_monitor_password: II5iaw4Rno
+logging_monitor_password__is_secure: false
+logging_monitor_password__metadata:
+- clusters:
+  - mml
+  component: logging-server
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - ardana-hypervisor
+  - controller
+  - rmq-mysql
+  - mml
+  - network
+  - compute
+  - osd
+  component: logging-producer
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+metadata_proxy_shared_secret: QR0f79kAN8D1Ca
+metadata_proxy_shared_secret__is_secure: false
+metadata_proxy_shared_secret__metadata:
+- clusters:
+  - controller
+  component: nova-metadata
+  consuming-cp: cp1
+  cp: cp1
+monitor_user_password: 6yZYJdxS
+monitor_user_password__is_secure: false
+monitor_user_password__metadata:
+- clusters:
+  - mml
+  component: vertica
+  consuming-cp: cp1
+  cp: cp1
+mysql_admin_password: DWuRzy9ItD
+mysql_admin_password__is_secure: false
+mysql_admin_password__metadata:
+- clusters:
+  - controller
+  - compute
+  component: nova
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: glance
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: keystone
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  - compute
+  - network
+  component: neutron
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: heat
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - mml
+  component: ceilometer
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: eon
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: cinder
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: horizon
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_barbican_password: pvqSeqfRZ2
+mysql_barbican_password__is_secure: false
+mysql_barbican_password__metadata:
+- clusters:
+  - controller
+  component: barbican
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_cluster_name: QUdiKNsfi
+mysql_cluster_name__is_secure: false
+mysql_cluster_name__metadata:
+- clusters:
+  - rmq-mysql
+  component: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_clustercheck_pwd: 7wH0x4bY2C
+mysql_clustercheck_pwd__is_secure: false
+mysql_clustercheck_pwd__metadata:
+- clusters:
+  - rmq-mysql
+  component: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_designate_password: kkhHf1zHr41
+mysql_designate_password__is_secure: false
+mysql_designate_password__metadata:
+- clusters:
+  - controller
+  component: designate
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_monasca_api_password: qtamBzlyv
+mysql_monasca_api_password__is_secure: false
+mysql_monasca_api_password__metadata:
+- clusters:
+  - compute
+  - network
+  - ardana-hypervisor
+  - rmq-mysql
+  - mml
+  - controller
+  - osd
+  component: monasca
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_monasca_notifier_password: fxpKxATL
+mysql_monasca_notifier_password__is_secure: false
+mysql_monasca_notifier_password__metadata:
+- clusters:
+  - compute
+  - network
+  - ardana-hypervisor
+  - rmq-mysql
+  - mml
+  - controller
+  - osd
+  component: monasca
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_monasca_thresh_password: 1oZqkx7s
+mysql_monasca_thresh_password__is_secure: false
+mysql_monasca_thresh_password__metadata:
+- clusters:
+  - compute
+  - network
+  - ardana-hypervisor
+  - rmq-mysql
+  - mml
+  - controller
+  - osd
+  component: monasca
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_nova_api_password: fukZ2uxELC
+mysql_nova_api_password__is_secure: false
+mysql_nova_api_password__metadata:
+- clusters:
+  - controller
+  component: nova-api
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_octavia_password: yzoUFp8DV
+mysql_octavia_password__is_secure: false
+mysql_octavia_password__metadata:
+- clusters:
+  - controller
+  component: octavia
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_powerdns_password: 0bEinG5j95H
+mysql_powerdns_password__is_secure: false
+mysql_powerdns_password__metadata:
+- clusters:
+  - controller
+  component: powerdns
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_root_pwd: ttXyVUfhB
+mysql_root_pwd__is_secure: false
+mysql_root_pwd__metadata:
+- clusters:
+  - rmq-mysql
+  component: mysql
+  consuming-cp: cp1
+  cp: cp1
+mysql_sst_password: yn1LtUAShT
+mysql_sst_password__is_secure: false
+mysql_sst_password__metadata:
+- clusters:
+  - rmq-mysql
+  component: mysql
+  consuming-cp: cp1
+  cp: cp1
+nova_monasca_password: Azz1ontgw
+nova_monasca_password__is_secure: false
+nova_monasca_password__metadata:
+- clusters:
+  - controller
+  component: nova-api
+  consumes: keystone-api
+  consuming-cp: cp1
+  cp: cp1
+nova_ssh_key:
+  private: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEpQIBAAKCAQEAvLqoLUcXr+zql/BCSqcFVuX94LOSFsg/9Tdq1TIZ4U/dqQfD
+
+    Em6gFn+yJPnoELuVTVtCUj/df2nJ8Ofu3sQ06GHIPL0Umb64aTkRfnXYQ0W3tVm2
+
+    vLSRovy4gcHLEjpRhpcaRccifdA70AL8i1a11Cp7filLRGKqOmRg7GPB6Pqp50fn
+
+    b3dbzEwDcU8WrCm+yalufOWkp85zodhB97n2cc5mN1v90v18BDFt0DV/nYUsewUS
+
+    UheHAq9pjvw7v3McAjHmubgz2FjZZfKIvSolYQcmRQGufgr8GouUy828hajyLVxw
+
+    fSr+nNmOxhYcMDQl+/iYQMjN7IEQdrChfKu84QIDAQABAoIBAC3kNYDNCLV+pozL
+
+    n1MHygSXaGR7RcrEZsj58MBmrmRbR0sS2BxjSgouguL64bMv6d4lkrrtTK7uymwJ
+
+    +cuxaiwXmtkqIRhBiBYOCnL1tOCm00UFy6mXPtKjITpsJTUJeUmA9KKDCaAOQn0S
+
+    PNak/xHYQq8q22KFm18XiXnxx/Uek76aWo6/jNIKdIRNXFzHWPSVhpL0EBrhW0Mc
+
+    3UqJWz58umkx45AT+YE+K9dtTdYaOcOPuJGVWLtUn22nY+/QyOnTt7tj7r7yVd0v
+
+    zI4HFEimqUBNpqaGTby/rFPXTbnCctlRDKCPXbrH99uN1ic31sN8QNJHNRqX9RH9
+
+    NeYPbAECgYEA1QRoO5rV4zraSjfKUMzS1/ZtIup7CiM0Qhdvgra2VK/Qftj8A3Rv
+
+    v/sHSQMfOS+AgAEv8U7QuCmvMe7bFiN4bOBMNadVkxOesQkGlYXUtlNE/8xc3a5f
+
+    lFTTh4wi+tR8xn5qOdp1Aber5NiEPV//31zEVp5+h9VnHGNOREPOCb0CgYEA4s+g
+
+    jVrk4i5fHLbrDzg2Kr70Z7V1WYHAZFxFRU3CQP08u5QnOhSqXiMAS4W+SXWZfsKt
+
+    GEC9Y6fzczguOtOtsUZzCDf7I856FJRZSZzNK/lHANVR8N9lrqm+lrPJD4309s26
+
+    FfeYMzjgxR3Ms87ziYY5U+gSoxsBBu+e5WT9R/UCgYEAvLvk5jqvm16/ndaEiMaR
+
+    YQtTcwYx8a9zU8OT50qfjbUgk+MIlr8JbB2sPMJpXa96uO9UXQcp4qH8Oc+Zianv
+
+    vveUTk1ugpt1lQGcNcqXxttMXR/if/9JbBEkQgqly3uM+glzcMLfvJ/RyzcTI5X1
+
+    DSASTXSsQwmPDBXoeI9i9DkCgYEAr6nrSU+qkdskYxLwvxrkKPs4Q9JwjuBFZ/Vm
+
+    2SQ+XSNFFGrMbtlukfY91kBBfpeMSHbypSQPCs4baZOLiphDoFdV5HmnErZqKuIy
+
+    vSaqaXJpoaWWDx6WnE5vhDy+bkOeBECV7UmUIafdvg00a9bPHCZO5EOLm7PgecTA
+
+    ph4vZLkCgYEAiYSiktGluYxkYdi+/OepVQHmKlNqbkxpXrVX2343v0XF7iZKYnvh
+
+    Ae0z5TdXjkRRdSS6WKuj5hgUUVY4zsSyfgX6jAHzVH43BqOelZxZM612AlBpM9vV
+
+    Hp6yqXzNzUfikYRC1g2iT+7zcpebO6misjTFqrNymMEuxDWpqzytc8I=
+
+    -----END RSA PRIVATE KEY-----'
+  public: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8uqgtRxev7OqX8EJKpwVW5f3gs5IWyD/1N2rVMhnhT92pB8MSbqAWf7Ik+egQu5VNW0JSP91/acnw5+7exDToYcg8vRSZvrhpORF+ddhDRbe1Wba8tJGi/LiBwcsSOlGGlxpFxyJ90DvQAvyLVrXUKnt+KUtEYqo6ZGDsY8Ho+qnnR+dvd1vMTANxTxasKb7JqW585aSnznOh2EH3ufZxzmY3W/3S/XwEMW3QNX+dhSx7BRJSF4cCr2mO/Du/cxwCMea5uDPYWNll8oi9KiVhByZFAa5+Cvwai5TLzbyFqPItXHB9Kv6c2Y7GFhwwNCX7+JhAyM3sgRB2sKF8q7zh
+    Generated Key for Nova User
+nova_ssh_key__is_secure: false
+nova_ssh_key__metadata:
+- clusters:
+  - compute
+  component: nova-compute-kvm
+  consuming-cp: cp1
+  cp: cp1
+ops_mon_mdb_password: P6BYSoY0he0m
+ops_mon_mdb_password__is_secure: false
+ops_mon_mdb_password__metadata:
+- clusters:
+  - controller
+  component: operations
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+password: jvdTZZWszJe
+password__is_secure: false
+password__metadata:
+- clusters:
+  - ardana-hypervisor
+  - controller
+  - rmq-mysql
+  - mml
+  - network
+  - compute
+  - osd
+  component: freezer-agent
+  consumes: mysql
+  consuming-cp: cp1
+  cp: cp1
+rmq_barbican_password: hz6uC8wI
+rmq_barbican_password__is_secure: false
+rmq_barbican_password__metadata:
+- clusters:
+  - controller
+  component: barbican
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_ceilometer_password: OBCXScWoQF8tugtw
+rmq_ceilometer_password__is_secure: false
+rmq_ceilometer_password__metadata:
+- clusters:
+  - mml
+  component: ceilometer
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_cinder_password: 7iRDkhuxIEKR
+rmq_cinder_password__is_secure: false
+rmq_cinder_password__metadata:
+- clusters:
+  - controller
+  component: cinder
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_designate_password: GLdT1cyOX4U
+rmq_designate_password__is_secure: false
+rmq_designate_password__metadata:
+- clusters:
+  - controller
+  component: designate
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_eon_password: RAR8OntJE
+rmq_eon_password__is_secure: false
+rmq_eon_password__metadata:
+- clusters:
+  - controller
+  component: eon
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_keystone_password: sBFJgZEOLTzA
+rmq_keystone_password__is_secure: false
+rmq_keystone_password__metadata:
+- clusters:
+  - controller
+  component: keystone
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_monasca_monitor_password: aye5dbyxq0C
+rmq_monasca_monitor_password__is_secure: false
+rmq_monasca_monitor_password__metadata:
+- clusters:
+  - ardana-hypervisor
+  - controller
+  - rmq-mysql
+  - mml
+  - network
+  - compute
+  - osd
+  component: monasca-agent
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_nova_password: YLJ7gqpIUQW
+rmq_nova_password__is_secure: false
+rmq_nova_password__metadata:
+- clusters:
+  - controller
+  - compute
+  component: nova
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_octavia_password: Jezxm4rx
+rmq_octavia_password__is_secure: false
+rmq_octavia_password__metadata:
+- clusters:
+  - controller
+  component: octavia
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+rmq_service_password: NFiMxxGNJG
+rmq_service_password__is_secure: false
+rmq_service_password__metadata:
+- clusters:
+  - controller
+  component: glance
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  - compute
+  - network
+  component: neutron
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - controller
+  component: heat
+  consumes: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+- clusters:
+  - rmq-mysql
+  component: rabbitmq
+  consuming-cp: cp1
+  cp: cp1
+swift_hash_path_prefix: ADThjYhde
+swift_hash_path_prefix__is_secure: false
+swift_hash_path_prefix__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: swift-common
+  consuming-cp: cp1
+  cp: cp1
+swift_hash_path_suffix: NlbaXubqz
+swift_hash_path_suffix__is_secure: false
+swift_hash_path_suffix__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: swift-common
+  consuming-cp: cp1
+  cp: cp1
+swift_intracluster_sync_key: KTq4Jiy7T
+swift_intracluster_sync_key__is_secure: false
+swift_intracluster_sync_key__metadata:
+- clusters:
+  - ardana-hypervisor
+  component: swift-container
+  consuming-cp: cp1
+  cp: cp1
+vertica_monasca_api_password: lkM0r5tVQZo
+vertica_monasca_api_password__is_secure: false
+vertica_monasca_api_password__metadata:
+- clusters:
+  - mml
+  component: monasca-api
+  consumes: vertica
+  consuming-cp: cp1
+  cp: cp1
+vertica_monasca_persister_password: QsZWBHGcnUgp
+vertica_monasca_persister_password__is_secure: false
+vertica_monasca_persister_password__metadata:
+- clusters:
+  - mml
+  component: monasca-persister
+  consumes: vertica
+  consuming-cp: cp1
+  cp: cp1
+vertica_ssh_key:
+  private: '-----BEGIN RSA PRIVATE KEY-----
+
+    MIIEowIBAAKCAQEArMnsrr5nQ7F9ciu5B/kw6EJ6Pw9c/IKHa18EV7uXx/8RmGnJ
+
+    edlWaHbvUa4N+Rq/3Jz3k02Lu/n/nS1KyoHk+2ZK+B5HcZmJPS+Bxv9VZpVOAnZI
+
+    LkIPitBx9nZFPuVpcEcXbWWfYVVMxbywa/d7PPNGCO5vQP5sKOuquvz52N+OvHrP
+
+    wN5dgyxqC5YLP+At3+pIX5GjJE0uOGL0J+IjrQ+9LLkTJl7BHvVhDQLA9SKpC+rL
+
+    9G7N4eY7Mbh6YCvxMJqIcAuqJf5tBdAzA3ANwJ8v2qcn4aqoQ65ZjFogV0lj4SF4
+
+    I6aUnDpwxOYCuZmbmB7nHFoudXkqPTiU8kZWbQIDAQABAoIBAArCdDOZdbK4bbhb
+
+    UqVVdh8wbI5atY6fzjD4dLvF2bjBgGX+SGaHCyNsLJDohsQ5TzM8rwoELSxib/Fo
+
+    rZyYpBqnjwmOUSKYzfv6Zllu8vF1YKs0lGAVCwS44C/Zw4wcGwm705CjYF5eQm6Z
+
+    xl6ixZDREU5jEph4f2G48yO7tw8zGmDbhRKMOL7c6PrItzyouc7zVzoWsGatfNbb
+
+    MfRlB6gDujIclbvVVoIslZE7gZfEQguzwIln+u8AwjO/GJbhGDk2hKhj1DAT/AlG
+
+    nPZxdbJdaEFLCRYy64AlRe3b6GFcV31UpZHtxBM1dFEPFiGl/iuXk7vc+VyMDg4B
+
+    zzJqCCECgYEAxasCRQCiBwFwDqBwDV5jvwN9jHfdjCKW8JST0gp+ztaaAOJrdtqZ
+
+    p+gPX5FEj5y0mY7Ch9HsB0Rp0nFmdMaY6ko52qADzM9Z6YOjXN7GPDTYiVnUf/wl
+
+    LujaiC6D+g0dAtiA1Takl03xbVk/TKBEy3V8U9wSbpQVKPHnZUmYXkUCgYEA38dk
+
+    uUrJhi0SfrEcdJrKwM5tOYaaZxbr562331VYCW8OqEog9Ogmjx08dqyKw+18L7wG
+
+    cJmqNiZRnVmM522u72txj7VG/0fz/C8kmpvy48+0q7qEGCsGhya2lMLngryMDR8z
+
+    nk947L8qXkifbDhP3mamYZqxLyFZTaHkhoaKTgkCgYBsNOUVKPeJpjvVhfZRGy63
+
+    Tg3Ya3WYVQcTxAH3pU8to0TC3y+87IXY6KwhwMArbblfpkrPVxdCEy1qyjEwE9d5
+
+    yhBJofbykz/BGRLAsCMMqlEvP0GYnksslsOqcOxGYg9Tk3lTPopzWXOkTIreQ43l
+
+    YvcgYQSmC+JZe7MUO2lxkQKBgQDIaAWoe3WnGE5r76mQM+BIc5YV4pn8oOZ8AXOe
+
+    KwxAxpjV1i1Vp2KA4Kn5jeRoOxLwnO8XgEaTYBXPWRd7WxtDh3GYRbxjesjinEWn
+
+    wOnxY15mPQ93pXCfMOhqqXIz/y9dwQe1S278duc2sMs1W+kLP9rZpnPvxWn4wHes
+
+    kmjiIQKBgBjNMR5rXfWyYK/89LVEBGem7riYNVtLa0lh9J17mB3AisxDOKVzThKE
+
+    JXlHfVWbmcuKwPdYUhHZ2wzWwnLHnj5AkNNm+zpZMtFV1P6rEjHqp2qV5Mfjy+51
+
+    6wAUMQKsgedaukJcMTwTWHdJ2JdDsmfnyYuuAqhmr47MAfb310fY
+
+    -----END RSA PRIVATE KEY-----'
+  public: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsyeyuvmdDsX1yK7kH+TDoQno/D1z8godrXwRXu5fH/xGYacl52VZodu9Rrg35Gr/cnPeTTYu7+f+dLUrKgeT7Zkr4HkdxmYk9L4HG/1VmlU4CdkguQg+K0HH2dkU+5WlwRxdtZZ9hVUzFvLBr93s880YI7m9A/mwo66q6/PnY3468es/A3l2DLGoLlgs/4C3f6khfkaMkTS44YvQn4iOtD70suRMmXsEe9WENAsD1IqkL6sv0bs3h5jsxuHpgK/EwmohwC6ol/m0F0DMDcA3Any/apyfhqqhDrlmMWiBXSWPhIXgjppScOnDE5gK5mZuYHuccWi51eSo9OJTyRlZt
+    Generated Key for Vertica User
+vertica_ssh_key__is_secure: false
+vertica_ssh_key__metadata:
+- clusters:
+  - mml
+  component: vertica
+  consuming-cp: cp1
+  cp: cp1

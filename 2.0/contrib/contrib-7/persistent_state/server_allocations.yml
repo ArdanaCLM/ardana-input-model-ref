@@ -1,0 +1,666 @@
+compute1:
+  cp_name: ccp
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+compute10:
+  cp_name: ccp
+  member_id: 4
+  resource_name: compute
+  state: allocated
+  type: resource
+compute100:
+  cp_name: ccp
+  member_id: 34
+  resource_name: compute
+  state: allocated
+  type: resource
+compute101:
+  cp_name: ccp
+  member_id: 69
+  resource_name: compute
+  state: allocated
+  type: resource
+compute102:
+  cp_name: ccp
+  member_id: 104
+  resource_name: compute
+  state: allocated
+  type: resource
+compute103:
+  cp_name: ccp
+  member_id: 35
+  resource_name: compute
+  state: allocated
+  type: resource
+compute104:
+  cp_name: ccp
+  member_id: 70
+  resource_name: compute
+  state: allocated
+  type: resource
+compute11:
+  cp_name: ccp
+  member_id: 39
+  resource_name: compute
+  state: allocated
+  type: resource
+compute12:
+  cp_name: ccp
+  member_id: 74
+  resource_name: compute
+  state: allocated
+  type: resource
+compute13:
+  cp_name: ccp
+  member_id: 5
+  resource_name: compute
+  state: allocated
+  type: resource
+compute14:
+  cp_name: ccp
+  member_id: 40
+  resource_name: compute
+  state: allocated
+  type: resource
+compute15:
+  cp_name: ccp
+  member_id: 75
+  resource_name: compute
+  state: allocated
+  type: resource
+compute16:
+  cp_name: ccp
+  member_id: 6
+  resource_name: compute
+  state: allocated
+  type: resource
+compute17:
+  cp_name: ccp
+  member_id: 41
+  resource_name: compute
+  state: allocated
+  type: resource
+compute18:
+  cp_name: ccp
+  member_id: 76
+  resource_name: compute
+  state: allocated
+  type: resource
+compute19:
+  cp_name: ccp
+  member_id: 7
+  resource_name: compute
+  state: allocated
+  type: resource
+compute2:
+  cp_name: ccp
+  member_id: 36
+  resource_name: compute
+  state: allocated
+  type: resource
+compute20:
+  cp_name: ccp
+  member_id: 42
+  resource_name: compute
+  state: allocated
+  type: resource
+compute21:
+  cp_name: ccp
+  member_id: 77
+  resource_name: compute
+  state: allocated
+  type: resource
+compute22:
+  cp_name: ccp
+  member_id: 8
+  resource_name: compute
+  state: allocated
+  type: resource
+compute23:
+  cp_name: ccp
+  member_id: 43
+  resource_name: compute
+  state: allocated
+  type: resource
+compute24:
+  cp_name: ccp
+  member_id: 78
+  resource_name: compute
+  state: allocated
+  type: resource
+compute25:
+  cp_name: ccp
+  member_id: 9
+  resource_name: compute
+  state: allocated
+  type: resource
+compute26:
+  cp_name: ccp
+  member_id: 44
+  resource_name: compute
+  state: allocated
+  type: resource
+compute27:
+  cp_name: ccp
+  member_id: 79
+  resource_name: compute
+  state: allocated
+  type: resource
+compute28:
+  cp_name: ccp
+  member_id: 10
+  resource_name: compute
+  state: allocated
+  type: resource
+compute29:
+  cp_name: ccp
+  member_id: 45
+  resource_name: compute
+  state: allocated
+  type: resource
+compute3:
+  cp_name: ccp
+  member_id: 71
+  resource_name: compute
+  state: allocated
+  type: resource
+compute30:
+  cp_name: ccp
+  member_id: 80
+  resource_name: compute
+  state: allocated
+  type: resource
+compute31:
+  cp_name: ccp
+  member_id: 11
+  resource_name: compute
+  state: allocated
+  type: resource
+compute32:
+  cp_name: ccp
+  member_id: 46
+  resource_name: compute
+  state: allocated
+  type: resource
+compute33:
+  cp_name: ccp
+  member_id: 81
+  resource_name: compute
+  state: allocated
+  type: resource
+compute34:
+  cp_name: ccp
+  member_id: 12
+  resource_name: compute
+  state: allocated
+  type: resource
+compute35:
+  cp_name: ccp
+  member_id: 47
+  resource_name: compute
+  state: allocated
+  type: resource
+compute36:
+  cp_name: ccp
+  member_id: 82
+  resource_name: compute
+  state: allocated
+  type: resource
+compute37:
+  cp_name: ccp
+  member_id: 13
+  resource_name: compute
+  state: allocated
+  type: resource
+compute38:
+  cp_name: ccp
+  member_id: 48
+  resource_name: compute
+  state: allocated
+  type: resource
+compute39:
+  cp_name: ccp
+  member_id: 83
+  resource_name: compute
+  state: allocated
+  type: resource
+compute4:
+  cp_name: ccp
+  member_id: 2
+  resource_name: compute
+  state: allocated
+  type: resource
+compute40:
+  cp_name: ccp
+  member_id: 14
+  resource_name: compute
+  state: allocated
+  type: resource
+compute41:
+  cp_name: ccp
+  member_id: 49
+  resource_name: compute
+  state: allocated
+  type: resource
+compute42:
+  cp_name: ccp
+  member_id: 84
+  resource_name: compute
+  state: allocated
+  type: resource
+compute43:
+  cp_name: ccp
+  member_id: 15
+  resource_name: compute
+  state: allocated
+  type: resource
+compute44:
+  cp_name: ccp
+  member_id: 50
+  resource_name: compute
+  state: allocated
+  type: resource
+compute45:
+  cp_name: ccp
+  member_id: 85
+  resource_name: compute
+  state: allocated
+  type: resource
+compute46:
+  cp_name: ccp
+  member_id: 16
+  resource_name: compute
+  state: allocated
+  type: resource
+compute47:
+  cp_name: ccp
+  member_id: 51
+  resource_name: compute
+  state: allocated
+  type: resource
+compute48:
+  cp_name: ccp
+  member_id: 86
+  resource_name: compute
+  state: allocated
+  type: resource
+compute49:
+  cp_name: ccp
+  member_id: 17
+  resource_name: compute
+  state: allocated
+  type: resource
+compute5:
+  cp_name: ccp
+  member_id: 37
+  resource_name: compute
+  state: allocated
+  type: resource
+compute50:
+  cp_name: ccp
+  member_id: 52
+  resource_name: compute
+  state: allocated
+  type: resource
+compute51:
+  cp_name: ccp
+  member_id: 87
+  resource_name: compute
+  state: allocated
+  type: resource
+compute52:
+  cp_name: ccp
+  member_id: 18
+  resource_name: compute
+  state: allocated
+  type: resource
+compute53:
+  cp_name: ccp
+  member_id: 53
+  resource_name: compute
+  state: allocated
+  type: resource
+compute54:
+  cp_name: ccp
+  member_id: 88
+  resource_name: compute
+  state: allocated
+  type: resource
+compute55:
+  cp_name: ccp
+  member_id: 19
+  resource_name: compute
+  state: allocated
+  type: resource
+compute56:
+  cp_name: ccp
+  member_id: 54
+  resource_name: compute
+  state: allocated
+  type: resource
+compute57:
+  cp_name: ccp
+  member_id: 89
+  resource_name: compute
+  state: allocated
+  type: resource
+compute58:
+  cp_name: ccp
+  member_id: 20
+  resource_name: compute
+  state: allocated
+  type: resource
+compute59:
+  cp_name: ccp
+  member_id: 55
+  resource_name: compute
+  state: allocated
+  type: resource
+compute6:
+  cp_name: ccp
+  member_id: 72
+  resource_name: compute
+  state: allocated
+  type: resource
+compute60:
+  cp_name: ccp
+  member_id: 90
+  resource_name: compute
+  state: allocated
+  type: resource
+compute61:
+  cp_name: ccp
+  member_id: 21
+  resource_name: compute
+  state: allocated
+  type: resource
+compute62:
+  cp_name: ccp
+  member_id: 56
+  resource_name: compute
+  state: allocated
+  type: resource
+compute63:
+  cp_name: ccp
+  member_id: 91
+  resource_name: compute
+  state: allocated
+  type: resource
+compute64:
+  cp_name: ccp
+  member_id: 22
+  resource_name: compute
+  state: allocated
+  type: resource
+compute65:
+  cp_name: ccp
+  member_id: 57
+  resource_name: compute
+  state: allocated
+  type: resource
+compute66:
+  cp_name: ccp
+  member_id: 92
+  resource_name: compute
+  state: allocated
+  type: resource
+compute67:
+  cp_name: ccp
+  member_id: 23
+  resource_name: compute
+  state: allocated
+  type: resource
+compute68:
+  cp_name: ccp
+  member_id: 58
+  resource_name: compute
+  state: allocated
+  type: resource
+compute69:
+  cp_name: ccp
+  member_id: 93
+  resource_name: compute
+  state: allocated
+  type: resource
+compute7:
+  cp_name: ccp
+  member_id: 3
+  resource_name: compute
+  state: allocated
+  type: resource
+compute70:
+  cp_name: ccp
+  member_id: 24
+  resource_name: compute
+  state: allocated
+  type: resource
+compute71:
+  cp_name: ccp
+  member_id: 59
+  resource_name: compute
+  state: allocated
+  type: resource
+compute72:
+  cp_name: ccp
+  member_id: 94
+  resource_name: compute
+  state: allocated
+  type: resource
+compute73:
+  cp_name: ccp
+  member_id: 25
+  resource_name: compute
+  state: allocated
+  type: resource
+compute74:
+  cp_name: ccp
+  member_id: 60
+  resource_name: compute
+  state: allocated
+  type: resource
+compute75:
+  cp_name: ccp
+  member_id: 95
+  resource_name: compute
+  state: allocated
+  type: resource
+compute76:
+  cp_name: ccp
+  member_id: 26
+  resource_name: compute
+  state: allocated
+  type: resource
+compute77:
+  cp_name: ccp
+  member_id: 61
+  resource_name: compute
+  state: allocated
+  type: resource
+compute78:
+  cp_name: ccp
+  member_id: 96
+  resource_name: compute
+  state: allocated
+  type: resource
+compute79:
+  cp_name: ccp
+  member_id: 27
+  resource_name: compute
+  state: allocated
+  type: resource
+compute8:
+  cp_name: ccp
+  member_id: 38
+  resource_name: compute
+  state: allocated
+  type: resource
+compute80:
+  cp_name: ccp
+  member_id: 62
+  resource_name: compute
+  state: allocated
+  type: resource
+compute81:
+  cp_name: ccp
+  member_id: 97
+  resource_name: compute
+  state: allocated
+  type: resource
+compute82:
+  cp_name: ccp
+  member_id: 28
+  resource_name: compute
+  state: allocated
+  type: resource
+compute83:
+  cp_name: ccp
+  member_id: 63
+  resource_name: compute
+  state: allocated
+  type: resource
+compute84:
+  cp_name: ccp
+  member_id: 98
+  resource_name: compute
+  state: allocated
+  type: resource
+compute85:
+  cp_name: ccp
+  member_id: 29
+  resource_name: compute
+  state: allocated
+  type: resource
+compute86:
+  cp_name: ccp
+  member_id: 64
+  resource_name: compute
+  state: allocated
+  type: resource
+compute87:
+  cp_name: ccp
+  member_id: 99
+  resource_name: compute
+  state: allocated
+  type: resource
+compute88:
+  cp_name: ccp
+  member_id: 30
+  resource_name: compute
+  state: allocated
+  type: resource
+compute89:
+  cp_name: ccp
+  member_id: 65
+  resource_name: compute
+  state: allocated
+  type: resource
+compute9:
+  cp_name: ccp
+  member_id: 73
+  resource_name: compute
+  state: allocated
+  type: resource
+compute90:
+  cp_name: ccp
+  member_id: 100
+  resource_name: compute
+  state: allocated
+  type: resource
+compute91:
+  cp_name: ccp
+  member_id: 31
+  resource_name: compute
+  state: allocated
+  type: resource
+compute92:
+  cp_name: ccp
+  member_id: 66
+  resource_name: compute
+  state: allocated
+  type: resource
+compute93:
+  cp_name: ccp
+  member_id: 101
+  resource_name: compute
+  state: allocated
+  type: resource
+compute94:
+  cp_name: ccp
+  member_id: 32
+  resource_name: compute
+  state: allocated
+  type: resource
+compute95:
+  cp_name: ccp
+  member_id: 67
+  resource_name: compute
+  state: allocated
+  type: resource
+compute96:
+  cp_name: ccp
+  member_id: 102
+  resource_name: compute
+  state: allocated
+  type: resource
+compute97:
+  cp_name: ccp
+  member_id: 33
+  resource_name: compute
+  state: allocated
+  type: resource
+compute98:
+  cp_name: ccp
+  member_id: 68
+  resource_name: compute
+  state: allocated
+  type: resource
+compute99:
+  cp_name: ccp
+  member_id: 103
+  resource_name: compute
+  state: allocated
+  type: resource
+controller1:
+  cluster_name: c1
+  cp_name: ccp
+  member_id: 1
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: c1
+  cp_name: ccp
+  member_id: 2
+  state: allocated
+  type: cluster
+controller3:
+  cluster_name: c1
+  cp_name: ccp
+  member_id: 3
+  state: allocated
+  type: cluster
+lifecycle-manager:
+  cluster_name: c0
+  cp_name: ccp
+  member_id: 1
+  state: allocated
+  type: cluster
+vsa1:
+  cp_name: ccp
+  member_id: 1
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa2:
+  cp_name: ccp
+  member_id: 2
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa3:
+  cp_name: ccp
+  member_id: 3
+  resource_name: vsa
+  state: allocated
+  type: resource

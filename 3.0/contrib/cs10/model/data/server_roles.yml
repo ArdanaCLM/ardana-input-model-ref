@@ -1,0 +1,37 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+---
+  product:
+    version: 2
+
+  server-roles:
+
+    - name: ARDANA-ROLE
+      interface-model: ARDANA-INTERFACES
+      disk-model: ARDANA-DISKS
+
+    - name: CONTROLLER-ROLE
+      interface-model: CONTROLLER-INTERFACES
+      disk-model: CONTROLLER-DISKS
+
+    - name: NETWORK-ROLE
+      interface-model: NETWORK-INTERFACES
+      disk-model: NETWORK-DISKS
+
+    - name: ENTERPRISE-ROLE
+      interface-model: ENTERPRISE-INTERFACES
+      disk-model: ENTERPRISE-DISKS
+
+    - name: MANAGEMENT-ROLE
+      interface-model: MANAGEMENT-INTERFACES
+      disk-model: MANAGEMENT-DISKS
+
+    - name: MONITORING-ROLE
+      interface-model: MONITORING-INTERFACES
+      disk-model: MONITORING-DISKS
+
+    - name: DB_RABBIT-ROLE
+      interface-model: DB_RABBIT-INTERFACES
+      disk-model: DB_RABBIT-DISKS

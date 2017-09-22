@@ -1,0 +1,162 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  network-groups:
+    - name: PXE
+      hostname-suffix: pxe
+      component-endpoints:
+        - lifecycle-manager
+        - lifecycle-manager-target
+
+    # The PXE MTU is set to 9000 as BLS network is VLAN on the untagged PXE interface.
+    #If there is a dedicated device for PXE, MTU can be set to back to 1500
+      mtu: 9000
+
+    #
+    # CAN
+    #
+    # This is the network group that users will use to
+    # access the public API endpoints of your cloud
+    #
+    - name: CAN
+      hostname-suffix: can
+
+      load-balancers:
+        - extlb
+        - extlb2
+
+      mtu: 1500
+
+    #
+    # VxLAN-TUL (Tenant Underlay Network)
+    #
+    # This is the network group that will be used to provide
+    # private networks to VMs
+    #
+    # In this network group, both VxLAN and VLAN tenant networks are defined.
+    # Provide the VLAN ranges corresponding to each physnet if applicable.
+    # You need to create multiple network groups with tags:neutron.networks.vlan
+    # to support multiples of sriov or pcipt NICs from the same compute node.
+    #
+    - name: VxLAN-VLAN1-TUL
+      hostname-suffix: vxlan-vlan1-tul
+      tags:
+        - neutron.networks.vxlan
+        - neutron.networks.vlan:
+            provider-physical-network: physnet1
+      mtu: 1500
+
+    - name: VLAN2-TUL
+      hostname-suffix: vlan2-tul
+      tags:
+        - neutron.networks.vlan:
+            provider-physical-network: physnet2
+      mtu: 1500
+
+    - name: VLAN3-TUL
+      hostname-suffix: vlan3-tul
+      tags:
+        - neutron.networks.vlan:
+            provider-physical-network: physnet3
+      mtu: 1500
+
+      # To specify a specific set of vxlan IDs change the above to
+      #  - neutron.networks.vxlan:
+      #      tenant-vxlan-id-range: "1000:2000,3000:3500"
+
+      # Set the mtu to 1550 to allow VMs to use a 1500 MTU without
+      # underlying packet fragmentation.
+      #NOTE: If using OVS-DPDK networking for both VxLAN and VLAN tenant networks,
+      #ensure the MTU size is no more than 1500. This is due to limitation in current
+      #version of OVS-DPDK shipped with HCG 4.0.
+      #If these network-groups are consumed by SR-IOV and PCI-PT devices, there are no MTU restrictions.
+      #
+      #mtu: 1550
+
+
+    #
+    # CLM (Cloud Management Network)
+    #
+    # This is the network group that will be used to for
+    # management traffic within the cloud.
+    #
+    # The interface used by this group will be presented
+    # to Neutron as physnet1, and used by provider VLANS
+    #
+    # In this example this group is also used for BLS
+    # traffic between VMs and the VSA block storage
+    #
+    - name: CLM
+      hostname-suffix: clm
+      hostname: true
+      tags:
+        - neutron.ovsvapp.management_if
+
+      tls-component-endpoints:
+      # The following service endpoint is behind TLS
+        - barbican-api
+      component-endpoints:
+        - default
+
+      routes:
+        - default
+        - OCTAVIA-MGMT-NET-CP1
+        - OCTAVIA-MGMT-NET-CP2
+
+      load-balancers:
+        - lb
+        - lb2
+
+      mtu: 1500
+
+    #
+    # BLS (Block Storage Network)
+    #
+    # This is the network group that will be used to for
+    # BLS traffic between VMs and the VSA block storage and
+    # Swift back-end traffic bewtween proxy, container, account
+    # and object servers
+    #
+    - name: BLS
+      hostname-suffix: bls
+
+      # The following line enables 9000 MTU for BLS (iSCSI) traffic
+      # Note: this requires setting a 9000 mtu on any untagged network group on
+      #the same interface as BLS. In this case example configuration, it is PXE network group.
+      mtu: 9000
+
+      component-endpoints:
+        - swift-container
+        - swift-account
+        - swift-object
+        - swift-rsync
+        - vsa
+
+    #
+    # TRUNK
+    #
+    # This is the network group that will be used for
+    # trunk network on the OVSvApp service VM.
+    # The trunk network is used  to apply security
+    # group rules on tenant traffic.
+    - name: TRUNK
+      hostname-suffix: trunk
+      tags:
+        - neutron.ovsvapp.sec_bridge_if

@@ -1,0 +1,49 @@
+wr_ceilometer_password: pqHPyURm8
+wr_ceilometer_password__is_secure: false
+wr_ceilometer_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1
+wr_heat_admin_password: 1HVB0ySz
+wr_heat_admin_password__is_secure: false
+wr_heat_admin_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1
+wr_heat_password: KQtY93WRrPk
+wr_heat_password__is_secure: false
+wr_heat_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1
+wr_neutron_password: OTVA3wQNJHYq
+wr_neutron_password__is_secure: false
+wr_neutron_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1
+wr_nova_password: m0uy5NzH8ieF
+wr_nova_password__is_secure: false
+wr_nova_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1
+wr_patching_password: wRmpYoO9g
+wr_patching_password__is_secure: false
+wr_patching_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1
+wr_sysinv_password: 4PrsdsiVIVi
+wr_sysinv_password__is_secure: false
+wr_sysinv_password__metadata:
+- clusters: []
+  component: windriver-consumer
+  consuming-cp: wr1
+  cp: wr1

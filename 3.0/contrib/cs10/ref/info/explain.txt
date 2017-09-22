@@ -1,0 +1,401 @@
+
+Add required services to control plane ccp
+==========================================
+ccp: Added ardana-ux-services required by lifecycle-manager
+ccp: Added nova-metadata required by nova-api
+ccp: Added swift-common required by swift-proxy
+ccp: Added swift-rsync required by swift-container
+
+Allocate Servers for control plane ccp
+======================================
+
+cluster: deployer
+-----------------
+  Persisted allocation for server 'deployer' (AZ1)
+
+cluster: management
+-------------------
+  Persisted allocation for server 'ccn1-0001' (AZ1)
+
+cluster: monitoring
+-------------------
+  Persisted allocation for server 'ccn2-0001' (AZ1)
+
+cluster: db_rabbit
+------------------
+  Persisted allocation for server 'ccn3-0001' (AZ1)
+
+cluster: controller
+-------------------
+  Persisted allocation for server 'ccn4-0001' (AZ1)
+
+cluster: network
+----------------
+  Persisted allocation for server 'ccn5-0001' (AZ1)
+  Persisted allocation for server 'ccn5-0002' (AZ2)
+
+Resolve Networks for Servers
+============================
+
+server: cs-ccp-c0-m1
+--------------------
+  add CONF for component lifecycle-manager
+  add CONF for component lifecycle-manager-target
+  add CLM for ardana-ux-services (default)
+  add CLM for monasca-agent (default)
+  add CLM for stunnel (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for ntp-client (default)
+  Using persisted address 192.168.219.36 for server cs-ccp-c0-m1 on network DCM-R1
+  Using persisted address 25.25.0.1 for server cs-ccp-c0-m1 on network CLM-R1
+  Using address 10.254.5.30 for server cs-ccp-c0-m1 on network CONF-R1
+
+server: cs-ccp-mgmt-m1
+----------------------
+  add CLM for component ip-cluster
+  add DCM for component ip-cluster
+  add CAN for component ip-cluster
+  add CONF for component lifecycle-manager-target
+  add CLM for eon-client (default)
+  add CLM for openstack-client (default)
+  add CLM for eon-api (default)
+  add CLM for freezer-agent (default)
+  add CLM for stunnel (default)
+  add CLM for keystone-api (default)
+  add CLM for ntp-server (default)
+  add CLM for logging-producer (default)
+  add CLM for neutron-client (default)
+  add CLM for monasca-agent (default)
+  add CLM for apache2 (default)
+  add CLM for ops-console-web (default)
+  add CLM for keystone-client (default)
+  add CLM for memcached (default)
+  add CLM for nova-client (default)
+  add CLM for eon-conductor (default)
+  Using persisted address 192.168.219.37 for server cs-ccp-mgmt-m1 on network DCM-R1
+  Using persisted address 10.200.192.221 for server cs-ccp-mgmt-m1 on network CAN-R1
+  Using persisted address 25.25.0.2 for server cs-ccp-mgmt-m1 on network CLM-R1
+  Using address 10.254.5.31 for server cs-ccp-mgmt-m1 on network CONF-R1
+
+server: cs-ccp-mon-m1
+---------------------
+  add CONF for component lifecycle-manager-target
+  add CLM for zookeeper (default)
+  add CLM for ceilometer-polling (default)
+  add CLM for stunnel (default)
+  add CLM for kafka (default)
+  add CLM for monasca-agent (default)
+  add CLM for ceilometer-common (default)
+  add CLM for monasca-persister (default)
+  add CLM for ceilometer-client (default)
+  add CLM for monasca-client (default)
+  add CLM for monasca-threshold (default)
+  add CLM for ceilometer-agent-notification (default)
+  add CLM for vertica (default)
+  add CLM for freezer-api (default)
+  add CLM for ceilometer-api (default)
+  add CLM for monasca-api (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for monasca-notifier (default)
+  add CLM for logging-producer (default)
+  add CLM for storm (default)
+  add CLM for logging-server (default)
+  add CLM for ntp-client (default)
+  Using persisted address 25.25.0.3 for server cs-ccp-mon-m1 on network CLM-R1
+  Using address 10.254.5.32 for server cs-ccp-mon-m1 on network CONF-R1
+
+server: cs-ccp-db-m1
+--------------------
+  add CONF for component lifecycle-manager-target
+  add CLM for monasca-agent (default)
+  add CLM for rabbitmq (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for stunnel (default)
+  add CLM for mysql (default)
+  add CLM for ntp-client (default)
+  Using persisted address 25.25.0.4 for server cs-ccp-db-m1 on network CLM-R1
+  Using address 10.254.5.33 for server cs-ccp-db-m1 on network CONF-R1
+
+server: cs-ccp-cc-m1
+--------------------
+  add CONF for component lifecycle-manager-target
+  add CLM for powerdns (default)
+  add CLM for neutron-ml2-plugin (default)
+  add CLM for barbican-client (default)
+  add CLM for nova-api (default)
+  add CLM for stunnel (default)
+  add CLM for swift-proxy (default)
+  add CLM for designate-client (default)
+  add CLM for swift-container (default)
+  add CLM for designate-pool-manager (default)
+  add CLM for monasca-agent (default)
+  add CLM for designate-api (default)
+  add CLM for keystone-client (default)
+  add CLM for barbican-api (default)
+  add CLM for nova-console-auth (default)
+  add CLM for designate-zone-manager (default)
+  add CLM for heat-client (default)
+  add CLM for swift-ring-builder (default)
+  add CLM for apache2 (default)
+  add CLM for freezer-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for heat-api-cfn (default)
+  add CLM for designate-mdns (default)
+  add CLM for memcached (default)
+  add CLM for heat-api (default)
+  add CLM for nova-novncproxy (default)
+  add CLM for swift-rsync (default)
+  add CLM for barbican-worker (default)
+  add CLM for cinder-backup (default)
+  add CLM for nova-conductor (default)
+  add CLM for neutron-server (default)
+  add CLM for cmc-service (default)
+  add CLM for designate-central (default)
+  add CLM for nova-scheduler (default)
+  add CLM for neutron-client (default)
+  add CLM for nova-metadata (default)
+  add CLM for heat-engine (default)
+  add CLM for nova-client (default)
+  add CLM for swift-object (default)
+  add CLM for swift-account (default)
+  add CLM for heat-api-cloudwatch (default)
+  add CLM for cinder-client (default)
+  add CLM for glance-api (default)
+  add CLM for cinder-api (default)
+  add CLM for cinder-volume (default)
+  add CLM for swift-common (default)
+  add CLM for openstack-client (default)
+  add CLM for horizon (default)
+  add CLM for swift-client (default)
+  add CLM for glance-client (default)
+  add CLM for glance-registry (default)
+  add CLM for ntp-client (default)
+  add CLM for cinder-scheduler (default)
+  Using persisted address 192.168.219.38 for server cs-ccp-cc-m1 on network DCM-R1
+  Using persisted address 25.25.0.5 for server cs-ccp-cc-m1 on network CLM-R1
+  Using address 10.254.5.34 for server cs-ccp-cc-m1 on network CONF-R1
+
+server: cs-ccp-nn-m1
+--------------------
+  add CONF for component lifecycle-manager-target
+  add CLM for monasca-agent (default)
+  add CLM for neutron-openvswitch-agent (default)
+  add CLM for stunnel (default)
+  add CLM for neutron-metadata-agent (default)
+  add CLM for freezer-agent (default)
+  add CLM for neutron-dhcp-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for neutron-vpn-agent (default)
+  add CAN for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  add VxLAN for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  Using persisted address 192.168.219.39 for server cs-ccp-nn-m1 on network DCM-R1
+  Using persisted address 10.200.192.222 for server cs-ccp-nn-m1 on network CAN-R1
+  Using persisted address 25.25.0.6 for server cs-ccp-nn-m1 on network CLM-R1
+  Using address 10.254.5.35 for server cs-ccp-nn-m1 on network CONF-R1
+  Using persisted address 25.0.2.1 for server cs-ccp-nn-m1 on network VxLAN-R1
+
+server: cs-ccp-nn-m2
+--------------------
+  add CONF for component lifecycle-manager-target
+  add CLM for monasca-agent (default)
+  add CLM for neutron-openvswitch-agent (default)
+  add CLM for stunnel (default)
+  add CLM for neutron-metadata-agent (default)
+  add CLM for freezer-agent (default)
+  add CLM for neutron-dhcp-agent (default)
+  add CLM for logging-producer (default)
+  add CLM for neutron-vpn-agent (default)
+  add CAN for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  add VxLAN for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  Using persisted address 192.168.219.40 for server cs-ccp-nn-m2 on network DCM-R1
+  Using persisted address 10.200.192.223 for server cs-ccp-nn-m2 on network CAN-R1
+  Using persisted address 25.25.0.7 for server cs-ccp-nn-m2 on network CLM-R1
+  Using address 10.254.5.36 for server cs-ccp-nn-m2 on network CONF-R1
+  Using persisted address 25.0.2.2 for server cs-ccp-nn-m2 on network VxLAN-R1
+
+Resolve Network Routes
+======================
+Add route from DCM-R1 to 0.0.0.0/0 (default)
+
+Resolve Network Routes for each server
+======================================
+
+server: cs-ccp-c0-m1
+--------------------
+  Add DCM-R1 -> 0.0.0.0/0 (None)
+
+server: cs-ccp-mgmt-m1
+----------------------
+  Add DCM-R1 -> 0.0.0.0/0 (None)
+
+server: cs-ccp-mon-m1
+---------------------
+
+server: cs-ccp-db-m1
+--------------------
+
+server: cs-ccp-cc-m1
+--------------------
+  Add DCM-R1 -> 0.0.0.0/0 (None)
+
+server: cs-ccp-nn-m1
+--------------------
+  Add DCM-R1 -> 0.0.0.0/0 (None)
+
+server: cs-ccp-nn-m2
+--------------------
+  Add DCM-R1 -> 0.0.0.0/0 (None)
+
+Define load balancers
+=====================
+
+Load balancer: clm-loadbalancer
+-------------------------------
+  Using persisted address 25.25.0.8 for vip clm-loadbalancer cs-ccp-vip-clm-loadbalancer-clm on network CLM-R1
+  Add heat-api-cfn for roles ['internal'] due to 'default'
+  Add eon-api for roles ['internal'] due to 'default'
+  Add glance-api for roles ['internal'] due to 'default'
+  Add keystone-api for roles ['internal'] due to 'default'
+  Add swift-proxy for roles ['internal'] due to 'default'
+  Add barbican-api for roles ['internal'] due to 'default'
+  Add mysql for roles ['internal'] due to 'default'
+  Add freezer-api for roles ['internal'] due to 'default'
+  Add monasca-api for roles ['internal'] due to 'default'
+  Add vertica for roles ['internal'] due to 'default'
+  Add nova-api for roles ['internal'] due to 'default'
+  Add ops-console-web for roles ['internal'] due to 'default'
+  Add heat-api for roles ['internal'] due to 'default'
+  Add ardana-ux-services for roles ['internal'] due to 'default'
+  Add neutron-server for roles ['internal'] due to 'default'
+  Add designate-api for roles ['internal'] due to 'default'
+  Add nova-metadata for roles ['internal'] due to 'default'
+  Add glance-registry for roles ['internal'] due to 'default'
+  Add heat-api-cloudwatch for roles ['internal'] due to 'default'
+  Add cinder-api for roles ['internal'] due to 'default'
+  Add ceilometer-api for roles ['internal'] due to 'default'
+  Add rabbitmq for roles ['internal'] due to 'default'
+  Add horizon for roles ['internal'] due to 'default'
+  Add logging-server for roles ['internal'] due to 'default'
+
+Load balancer: dcm-loadbalancer
+-------------------------------
+  Using persisted address 192.168.219.41 for vip dcm-loadbalancer cs-ccp-vip-dcm-loadbalancer-dcm on network DCM-R1
+  Add heat-api-cfn for roles ['admin'] due to 'default'
+  Add eon-api for roles ['admin'] due to 'default'
+  Add glance-api for roles ['admin'] due to 'default'
+  Add keystone-api for roles ['admin'] due to 'default'
+  Add swift-proxy for roles ['admin'] due to 'default'
+  Add barbican-api for roles ['admin'] due to 'default'
+  Add mysql for roles ['admin'] due to 'default'
+  Add freezer-api for roles ['admin'] due to 'default'
+  Add monasca-api for roles ['admin'] due to 'default'
+  Add nova-api for roles ['admin'] due to 'default'
+  Add ops-console-web for roles ['admin'] due to 'default'
+  Add heat-api for roles ['admin'] due to 'default'
+  Add ardana-ux-services for roles ['admin'] due to 'default'
+  Add neutron-server for roles ['admin'] due to 'default'
+  Add designate-api for roles ['admin'] due to 'default'
+  Add heat-api-cloudwatch for roles ['admin'] due to 'default'
+  Add cinder-api for roles ['admin'] due to 'default'
+  Add ceilometer-api for roles ['admin'] due to 'default'
+  Add horizon for roles ['admin'] due to 'default'
+
+Load balancer: can-loadbalancer
+-------------------------------
+  Using persisted address 10.200.192.224 for vip can-loadbalancer cs-ccp-vip-can-loadbalancer-CAN on network CAN-R1
+  Add heat-api-cfn for roles ['public'] due to 'default'
+  Add eon-api for roles ['public'] due to 'default'
+  Add glance-api for roles ['public'] due to 'default'
+  Add keystone-api for roles ['public'] due to 'default'
+  Add swift-proxy for roles ['public'] due to 'default'
+  Add barbican-api for roles ['public'] due to 'default'
+  Add freezer-api for roles ['public'] due to 'default'
+  Add monasca-api for roles ['public'] due to 'default'
+  Add nova-api for roles ['public'] due to 'default'
+  Add ops-console-web for roles ['public'] due to 'default'
+  Add heat-api for roles ['public'] due to 'default'
+  Add ardana-ux-services for roles ['public'] due to 'default'
+  Add neutron-server for roles ['public'] due to 'default'
+  Add designate-api for roles ['public'] due to 'default'
+  Add heat-api-cloudwatch for roles ['public'] due to 'default'
+  Add cinder-api for roles ['public'] due to 'default'
+  Add ceilometer-api for roles ['public'] due to 'default'
+  Add nova-novncproxy for roles ['public'] due to 'default'
+  Add horizon for roles ['public'] due to 'default'
+
+Map load balancers to providers
+===============================
+
+Network DCM-R1
+--------------
+  192.168.219.41: ip-cluster heat-api-cfn roles: ['admin'] vip-port: 8000 host-port: 8000
+  192.168.219.41: ip-cluster eon-api roles: ['admin'] vip-port: 8282 host-port: 8282
+  192.168.219.41: ip-cluster glance-api roles: ['admin'] vip-port: 9292 host-port: 9292
+  192.168.219.41: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  192.168.219.41: ip-cluster swift-proxy roles: ['admin'] vip-port: 8080 host-port: 8080
+  192.168.219.41: ip-cluster barbican-api roles: ['admin'] vip-port: 9311 host-port: 9311
+  192.168.219.41: ip-cluster mysql roles: ['admin'] vip-port: 3306 host-port: 3306
+  192.168.219.41: ip-cluster freezer-api roles: ['admin'] vip-port: 9090 host-port: 9090
+  192.168.219.41: ip-cluster monasca-api roles: ['admin'] vip-port: 8070 host-port: 8070
+  192.168.219.41: ip-cluster nova-api roles: ['admin'] vip-port: 8774 host-port: 8774
+  192.168.219.41: ip-cluster ops-console-web roles: ['admin'] vip-port: 9095 host-port: 9095
+  192.168.219.41: ip-cluster heat-api roles: ['admin'] vip-port: 8004 host-port: 8004
+  192.168.219.41: ip-cluster ardana-ux-services roles: ['admin'] vip-port: 9085 host-port: 9085
+  192.168.219.41: ip-cluster neutron-server roles: ['admin'] vip-port: 9696 host-port: 9696
+  192.168.219.41: ip-cluster designate-api roles: ['admin'] vip-port: 9001 host-port: 9001
+  192.168.219.41: ip-cluster heat-api-cloudwatch roles: ['admin'] vip-port: 8003 host-port: 8003
+  192.168.219.41: ip-cluster cinder-api roles: ['admin'] vip-port: 8776 host-port: 8776
+  192.168.219.41: ip-cluster ceilometer-api roles: ['admin'] vip-port: 8777 host-port: 8777
+  192.168.219.41: ip-cluster horizon roles: ['admin'] vip-port: 80 host-port: 80
+
+Network CAN-R1
+--------------
+  10.200.192.224: ip-cluster heat-api-cfn roles: ['public'] vip-port: 8000 host-port: 8000
+  10.200.192.224: ip-cluster eon-api roles: ['public'] vip-port: 8282 host-port: 8282
+  10.200.192.224: ip-cluster glance-api roles: ['public'] vip-port: 9292 host-port: 9292
+  10.200.192.224: ip-cluster keystone-api roles: ['public'] vip-port: 5000 host-port: 5000
+  10.200.192.224: ip-cluster swift-proxy roles: ['public'] vip-port: 8080 host-port: 8080
+  10.200.192.224: ip-cluster barbican-api roles: ['public'] vip-port: 9311 host-port: 9311
+  10.200.192.224: ip-cluster freezer-api roles: ['public'] vip-port: 9090 host-port: 9090
+  10.200.192.224: ip-cluster monasca-api roles: ['public'] vip-port: 8070 host-port: 8070
+  10.200.192.224: ip-cluster nova-api roles: ['public'] vip-port: 8774 host-port: 8774
+  10.200.192.224: ip-cluster ops-console-web roles: ['public'] vip-port: 9095 host-port: 9095
+  10.200.192.224: ip-cluster heat-api roles: ['public'] vip-port: 8004 host-port: 8004
+  10.200.192.224: ip-cluster ardana-ux-services roles: ['public'] vip-port: 9085 host-port: 9085
+  10.200.192.224: ip-cluster neutron-server roles: ['public'] vip-port: 9696 host-port: 9696
+  10.200.192.224: ip-cluster designate-api roles: ['public'] vip-port: 9001 host-port: 9001
+  10.200.192.224: ip-cluster heat-api-cloudwatch roles: ['public'] vip-port: 8003 host-port: 8003
+  10.200.192.224: ip-cluster cinder-api roles: ['public'] vip-port: 8776 host-port: 8776
+  10.200.192.224: ip-cluster ceilometer-api roles: ['public'] vip-port: 8777 host-port: 8777
+  10.200.192.224: ip-cluster nova-novncproxy roles: ['public'] vip-port: 6080 host-port: 6080
+  10.200.192.224: ip-cluster horizon roles: ['public'] vip-port: 443 host-port: 80
+
+Network CLM-R1
+--------------
+  25.25.0.8: ip-cluster heat-api-cfn roles: ['internal'] vip-port: 8000 host-port: 8000
+  25.25.0.8: ip-cluster eon-api roles: ['internal'] vip-port: 8282 host-port: 8282
+  25.25.0.8: ip-cluster glance-api roles: ['internal'] vip-port: 9292 host-port: 9292
+  25.25.0.8: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  25.25.0.8: ip-cluster swift-proxy roles: ['internal'] vip-port: 8080 host-port: 8080
+  25.25.0.8: ip-cluster barbican-api roles: ['internal'] vip-port: 9311 host-port: 9311
+  25.25.0.8: ip-cluster mysql roles: ['internal'] vip-port: 3306 host-port: 3306
+  25.25.0.8: ip-cluster freezer-api roles: ['internal'] vip-port: 9090 host-port: 9090
+  25.25.0.8: ip-cluster monasca-api roles: ['internal'] vip-port: 8070 host-port: 8070
+  25.25.0.8: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  25.25.0.8: ip-cluster nova-api roles: ['internal'] vip-port: 8774 host-port: 8774
+  25.25.0.8: ip-cluster ops-console-web roles: ['internal'] vip-port: 9095 host-port: 9095
+  25.25.0.8: ip-cluster heat-api roles: ['internal'] vip-port: 8004 host-port: 8004
+  25.25.0.8: ip-cluster ardana-ux-services roles: ['internal'] vip-port: 9085 host-port: 9085
+  25.25.0.8: ip-cluster neutron-server roles: ['internal'] vip-port: 9696 host-port: 9696
+  25.25.0.8: ip-cluster designate-api roles: ['internal'] vip-port: 9001 host-port: 9001
+  25.25.0.8: ip-cluster nova-metadata roles: ['internal'] vip-port: 8775 host-port: 8775
+  25.25.0.8: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
+  25.25.0.8: ip-cluster heat-api-cloudwatch roles: ['internal'] vip-port: 8003 host-port: 8003
+  25.25.0.8: ip-cluster cinder-api roles: ['internal'] vip-port: 8776 host-port: 8776
+  25.25.0.8: ip-cluster ceilometer-api roles: ['internal'] vip-port: 8777 host-port: 8777
+  25.25.0.8: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
+  25.25.0.8: ip-cluster horizon roles: ['internal'] vip-port: 80 host-port: 80
+  25.25.0.8: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601

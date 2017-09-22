@@ -1,0 +1,119 @@
+regions:
+    hcgregionone:
+        control_planes:
+            cp1:
+                services:
+                    ceilometer:
+                    - ceilometer-common
+                    - ceilometer-agent-notification
+                    - ceilometer-api
+                    - ceilometer-polling
+                    cinder:
+                    - cinder-api
+                    - cinder-volume
+                    - cinder-scheduler
+                    - cinder-backup
+                    clients:
+                    - openstack-client
+                    - cinder-client
+                    - neutron-client
+                    - swift-client
+                    - glance-client
+                    - ceilometer-client
+                    - keystone-client
+                    - monasca-client
+                    - nova-client
+                    foundation:
+                    - ip-cluster
+                    - memcached
+                    - zookeeper
+                    - ardana-ca
+                    - stunnel
+                    - apache2
+                    - ntp-server
+                    - vertica
+                    - rabbitmq
+                    - storm
+                    - mysql
+                    - kafka
+                    - ntp-client
+                    freezer:
+                    - freezer-agent
+                    - freezer-api
+                    glance:
+                    - glance-api
+                    - glance-registry
+                    ardana:
+                    - lifecycle-manager-target
+                    - ardana-ux-services
+                    - lifecycle-manager
+                    keystone:
+                    - keystone-api
+                    logging:
+                    - logging-server
+                    - logging-producer
+                    - logging-api
+                    - logging-rotate
+                    monasca:
+                    - monasca-threshold
+                    - monasca-liveness-check
+                    - monasca-api
+                    - monasca-notifier
+                    - monasca-agent
+                    - monasca-persister
+                    operations:
+                    - ops-console-web
+                    - ops-console-monitor
+                    swift:
+                    - swift-ring-builder
+                    - swift-rsync
+                    - swift-account
+                    - swift-proxy
+                    - swift-container
+                    - swift-common
+                    - swift-object
+                    tempest:
+                    - tempest
+                    vsa-storage:
+                    - vsa
+                    - cmc-service
+    wrregionone:
+        control_planes:
+            cp1:
+                services:
+                    cinder:
+                    - cinder-api
+                    - cinder-volume
+                    - cinder-scheduler
+                    - cinder-backup
+                    glance:
+                    - glance-api
+                    - glance-registry
+                    keystone:
+                    - keystone-api
+            wr1:
+                services:
+                    ardana:
+                    - lifecycle-manager-target
+                    windriver:
+                    - windriver-consumer
+    wrregiontwo:
+        control_planes:
+            cp1:
+                services:
+                    cinder:
+                    - cinder-api
+                    - cinder-volume
+                    - cinder-scheduler
+                    - cinder-backup
+                    glance:
+                    - glance-api
+                    - glance-registry
+                    keystone:
+                    - keystone-api
+            wr2:
+                services:
+                    ardana:
+                    - lifecycle-manager-target
+                    windriver:
+                    - windriver-consumer

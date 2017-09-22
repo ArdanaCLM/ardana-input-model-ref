@@ -1,0 +1,112 @@
+10.107.26.130:
+  addr: 10.107.26.130
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0001
+  persisted: false
+  server-id: ovsvapp1
+  used-by: server
+10.107.26.131:
+  addr: 10.107.26.131
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0002
+  persisted: false
+  server-id: ovsvapp2
+  used-by: server
+10.107.26.132:
+  addr: 10.107.26.132
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-comp0001
+  persisted: false
+  server-id: esx-compute1
+  used-by: server
+10.107.26.133:
+  addr: 10.107.26.133
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.107.26.14:
+  addr: 10.107.26.14
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.107.26.15:
+  addr: 10.107.26.15
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.107.26.16:
+  addr: 10.107.26.16
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.107.26.168:
+  addr: 10.107.26.168
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.107.26.169:
+  addr: 10.107.26.169
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.107.26.17:
+  addr: 10.107.26.17
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+10.107.26.170:
+  addr: 10.107.26.170
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.107.26.224:
+  addr: 10.107.26.224
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-comp0001
+  persisted: false
+  server-id: esx-compute1
+  used-by: server
+10.107.26.225:
+  addr: 10.107.26.225
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0001
+  persisted: false
+  server-id: ovsvapp1
+  used-by: server
+10.107.26.226:
+  addr: 10.107.26.226
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0002
+  persisted: false
+  server-id: ovsvapp2
+  used-by: server

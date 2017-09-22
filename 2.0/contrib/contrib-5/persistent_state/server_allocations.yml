@@ -1,0 +1,300 @@
+cephmon1:
+  cluster_name: ceph-mon
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+cephmon2:
+  cluster_name: ceph-mon
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+cephmon3:
+  cluster_name: ceph-mon
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+compute2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: compute
+  state: allocated
+  type: resource
+compute3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: compute
+  state: allocated
+  type: resource
+compute4:
+  cp_name: control-plane-1
+  member_id: 4
+  resource_name: compute
+  state: allocated
+  type: resource
+compute5:
+  cp_name: control-plane-1
+  member_id: 5
+  resource_name: compute
+  state: allocated
+  type: resource
+compute6:
+  cp_name: control-plane-1
+  member_id: 6
+  resource_name: compute
+  state: allocated
+  type: resource
+compute7:
+  cp_name: control-plane-1
+  member_id: 7
+  resource_name: compute
+  state: allocated
+  type: resource
+compute8:
+  cp_name: control-plane-1
+  member_id: 8
+  resource_name: compute
+  state: allocated
+  type: resource
+compute9:
+  cp_name: control-plane-1
+  member_id: 9
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev1:
+  cp_name: control-plane-1
+  member_id: 10
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev2:
+  cp_name: control-plane-1
+  member_id: 11
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev3:
+  cp_name: control-plane-1
+  member_id: 12
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev4:
+  cp_name: control-plane-1
+  member_id: 13
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev5:
+  cp_name: control-plane-1
+  member_id: 14
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev6:
+  cp_name: control-plane-1
+  member_id: 15
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev7:
+  cp_name: control-plane-1
+  member_id: 16
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev8:
+  cp_name: control-plane-1
+  member_id: 17
+  resource_name: compute
+  state: allocated
+  type: resource
+computedev9:
+  cp_name: control-plane-1
+  member_id: 18
+  resource_name: compute
+  state: allocated
+  type: resource
+controller1:
+  cluster_name: controller
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: controller
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+controller3:
+  cluster_name: controller
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+lifecycle-manager:
+  cluster_name: cluster0
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mon1:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mon2:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+mon3:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+osd1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: osd
+  state: allocated
+  type: resource
+osd2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: osd
+  state: allocated
+  type: resource
+osd3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: osd
+  state: allocated
+  type: resource
+osd4:
+  cp_name: control-plane-1
+  member_id: 4
+  resource_name: osd
+  state: allocated
+  type: resource
+osd5:
+  cp_name: control-plane-1
+  member_id: 5
+  resource_name: osd
+  state: allocated
+  type: resource
+paascompute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute10:
+  cp_name: control-plane-1
+  member_id: 10
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute11:
+  cp_name: control-plane-1
+  member_id: 11
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute12:
+  cp_name: control-plane-1
+  member_id: 12
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute13:
+  cp_name: control-plane-1
+  member_id: 13
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute14:
+  cp_name: control-plane-1
+  member_id: 14
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute15:
+  cp_name: control-plane-1
+  member_id: 15
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute4:
+  cp_name: control-plane-1
+  member_id: 4
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute5:
+  cp_name: control-plane-1
+  member_id: 5
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute6:
+  cp_name: control-plane-1
+  member_id: 6
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute7:
+  cp_name: control-plane-1
+  member_id: 7
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute8:
+  cp_name: control-plane-1
+  member_id: 8
+  resource_name: passcompute
+  state: allocated
+  type: resource
+paascompute9:
+  cp_name: control-plane-1
+  member_id: 9
+  resource_name: passcompute
+  state: allocated
+  type: resource
+swpaco1:
+  cluster_name: swpaco
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+swpaco2:
+  cluster_name: swpaco
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster

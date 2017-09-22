@@ -1,0 +1,1142 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product: 
+    version: 2
+
+  baremetal:
+    # NOTE: These values need to be changed to match your environment.
+    # Define the network range that contains the ip-addr values for
+    # the individual servers listed below.
+    subnet: 10.12.48.0
+    netmask: 255.255.254.0
+
+  servers:
+    # NOTE: Addresses of servers need to be changed to match your environment.
+    #
+    #       Add additional servers as required
+    #
+
+    - id: lifecycle-manager
+      ip-addr: 10.12.49.101
+      role: LIFECYCLE-MANAGER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-2PORT
+      mac-addr: ec:b1:d7:91:b7:88
+      ilo-ip: 10.12.12.237
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: controller1
+      ip-addr: 10.12.49.102
+      role: CONTROLLER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-2PORT
+      mac-addr: f0:92:1c:05:79:18
+      ilo-ip: 10.12.12.233
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: controller2
+      ip-addr: 10.12.49.103
+      role: CONTROLLER-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-2PORT
+      mac-addr: f0:92:1c:05:b8:10
+      ilo-ip: 10.12.12.226
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: controller3
+      ip-addr: 10.12.49.104
+      role: CONTROLLER-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-2PORT
+      mac-addr: f0:92:1c:05:e6:c8
+      ilo-ip: 10.12.12.236
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: vsa1
+      ip-addr: 10.12.49.105
+      role: VSA-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:5b:50
+      ilo-ip: 10.12.8.92
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: vsa2
+      ip-addr: 10.12.49.106
+      role: VSA-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:66:48
+      ilo-ip: 10.12.8.73
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: vsa3
+      ip-addr: 10.12.49.107
+      role: VSA-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:66:f0
+      ilo-ip: 10.12.8.93
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute1
+      ip-addr: 10.12.49.108
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:35:30
+      ilo-ip: 10.12.9.74
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute2
+      ip-addr: 10.12.49.109
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:19:b0
+      ilo-ip: 10.12.10.105
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute3
+      ip-addr: 10.12.49.110
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:17:08
+      ilo-ip: 10.12.10.129
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute4
+      ip-addr: 10.12.49.111
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:15:d8
+      ilo-ip: 10.12.10.113
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute5
+      ip-addr: 10.12.49.112
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:46:c0
+      ilo-ip: 10.12.10.117
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute6
+      ip-addr: 10.12.49.113
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:35:c0
+      ilo-ip: 10.12.8.84
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute7
+      ip-addr: 10.12.49.114
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:35:d8
+      ilo-ip: 10.12.8.77
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute8
+      ip-addr: 10.12.49.115
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:14:90
+      ilo-ip: 10.12.10.124
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute9
+      ip-addr: 10.12.49.116
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:21:e0
+      ilo-ip: 10.12.10.109
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute10
+      ip-addr: 10.12.49.117
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:38:28
+      ilo-ip: 10.12.10.111
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute11
+      ip-addr: 10.12.49.118
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:27:b8
+      ilo-ip: 10.12.10.114
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute12
+      ip-addr: 10.12.49.119
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:19:f8
+      ilo-ip: 10.12.10.112
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute13
+      ip-addr: 10.12.49.120
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:69:a8
+      ilo-ip: 10.12.10.133
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute14
+      ip-addr: 10.12.49.121
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:1a:08
+      ilo-ip: 10.12.10.110
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute15
+      ip-addr: 10.12.49.122
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:4d:e0
+      ilo-ip: 10.12.8.96
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute16
+      ip-addr: 10.12.49.123
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:6b:d8
+      ilo-ip: 10.12.10.130
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute17
+      ip-addr: 10.12.49.124
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:1f:90
+      ilo-ip: 10.12.8.75
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute18
+      ip-addr: 10.12.49.125
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:19:e0
+      ilo-ip: 10.12.10.107
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute19
+      ip-addr: 10.12.49.126
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:35:70
+      ilo-ip: 10.12.8.83
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute20
+      ip-addr: 10.12.49.127
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:27:30
+      ilo-ip: 10.12.10.104
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute21
+      ip-addr: 10.12.49.128
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:58:90
+      ilo-ip: 10.12.10.103
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute22
+      ip-addr: 10.12.49.129
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:17:38
+      ilo-ip: 10.12.8.80
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute23
+      ip-addr: 10.12.49.130
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:24:60
+      ilo-ip: 10.12.8.94
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute24
+      ip-addr: 10.12.49.131
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:2b:50
+      ilo-ip: 10.12.9.75
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute25
+      ip-addr: 10.12.49.132
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:23:60
+      ilo-ip: 10.12.8.95
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute26
+      ip-addr: 10.12.49.133
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:41:40
+      ilo-ip: 10.12.10.123
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute27
+      ip-addr: 10.12.49.134
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:f4:20
+      ilo-ip: 10.12.10.115
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute28
+      ip-addr: 10.12.49.135
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:4c:98
+      ilo-ip: 10.12.10.132
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute29
+      ip-addr: 10.12.49.136
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:25:a8
+      ilo-ip: 10.12.8.78
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute30
+      ip-addr: 10.12.49.137
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:59:98
+      ilo-ip: 10.12.11.45
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute31
+      ip-addr: 10.12.49.138
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:26:f8
+      ilo-ip: 10.12.10.116
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute32
+      ip-addr: 10.12.49.139
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:27:60
+      ilo-ip: 10.12.10.121
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute33
+      ip-addr: 10.12.49.140
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:27:40
+      ilo-ip: 10.12.8.82
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute34
+      ip-addr: 10.12.49.141
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:e6:90
+      ilo-ip: 10.12.8.85
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute35
+      ip-addr: 10.12.49.142
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:67:e8
+      ilo-ip: 10.12.10.131
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute36
+      ip-addr: 10.12.49.143
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:39:08
+      ilo-ip: 10.12.8.130
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute37
+      ip-addr: 10.12.49.144
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:30:68
+      ilo-ip: 10.12.10.144
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute38
+      ip-addr: 10.12.49.145
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:09:d0
+      ilo-ip: 10.12.10.139
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute39
+      ip-addr: 10.12.49.146
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:0f:48
+      ilo-ip: 10.12.8.114
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute40
+      ip-addr: 10.12.49.147
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:35:38
+      ilo-ip: 10.12.8.131
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute41
+      ip-addr: 10.12.49.148
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:15:d0
+      ilo-ip: 10.12.10.143
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute42
+      ip-addr: 10.12.49.149
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:36:70
+      ilo-ip: 10.12.10.140
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute43
+      ip-addr: 10.12.49.150
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:45:60
+      ilo-ip: 10.12.10.152
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute44
+      ip-addr: 10.12.49.151
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:54:b8
+      ilo-ip: 10.12.8.109
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute45
+      ip-addr: 10.12.49.152
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a6:10
+      ilo-ip: 10.12.10.156
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute46
+      ip-addr: 10.12.49.153
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a7:20
+      ilo-ip: 10.12.8.132
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute47
+      ip-addr: 10.12.49.154
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a6:c0
+      ilo-ip: 10.12.10.150
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute48
+      ip-addr: 10.12.49.155
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:e5:68
+      ilo-ip: 10.12.8.104
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute49
+      ip-addr: 10.12.49.156
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a6:18
+      ilo-ip: 10.12.10.157
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute50
+      ip-addr: 10.12.49.157
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:ae:b8
+      ilo-ip: 10.12.10.149
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute51
+      ip-addr: 10.12.49.158
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a6:08
+      ilo-ip: 10.12.8.87
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute52
+      ip-addr: 10.12.49.159
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:25:f0
+      ilo-ip: 10.12.8.103
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute53
+      ip-addr: 10.12.49.160
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:ed:40
+      ilo-ip: 10.12.10.147
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute54
+      ip-addr: 10.12.49.161
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:4a:98
+      ilo-ip: 10.12.8.107
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute55
+      ip-addr: 10.12.49.162
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:18:50
+      ilo-ip: 10.12.8.108
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute56
+      ip-addr: 10.12.49.163
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:43:e8
+      ilo-ip: 10.12.10.138
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute57
+      ip-addr: 10.12.49.164
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:14:a8
+      ilo-ip: 10.12.10.135
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute58
+      ip-addr: 10.12.49.165
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:64:48
+      ilo-ip: 10.12.10.155
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute59
+      ip-addr: 10.12.49.166
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:1a:90
+      ilo-ip: 10.12.10.142
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute60
+      ip-addr: 10.12.49.167
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:67:40
+      ilo-ip: 10.12.10.145
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute61
+      ip-addr: 10.12.49.168
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:08:18
+      ilo-ip: 10.12.10.136
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute62
+      ip-addr: 10.12.49.169
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:36:18
+      ilo-ip: 10.12.10.151
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute63
+      ip-addr: 10.12.49.170
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:21:38
+      ilo-ip: 10.12.10.141
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute64
+      ip-addr: 10.12.49.171
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:0b:f8
+      ilo-ip: 10.12.8.134
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute65
+      ip-addr: 10.12.49.172
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:21:58
+      ilo-ip: 10.12.8.90
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute66
+      ip-addr: 10.12.49.173
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:2e:c0
+      ilo-ip: 10.12.8.106
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute67
+      ip-addr: 10.12.49.174
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:14:20
+      ilo-ip: 10.12.10.158
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute68
+      ip-addr: 10.12.49.175
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:46:a0
+      ilo-ip: 10.12.10.148
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute69
+      ip-addr: 10.12.49.176
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:58:68
+      ilo-ip: 10.12.8.115
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute70
+      ip-addr: 10.12.49.177
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:15:c0
+      ilo-ip: 10.12.8.133
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute71
+      ip-addr: 10.12.49.178
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:62:30
+      ilo-ip: 10.12.8.72
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute72
+      ip-addr: 10.12.49.179
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:36:c0
+      ilo-ip: 10.12.8.113
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute73
+      ip-addr: 10.12.49.180
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:36:10
+      ilo-ip: 10.12.8.98
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute74
+      ip-addr: 10.12.49.181
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:e5:20
+      ilo-ip: 10.12.8.89
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute75
+      ip-addr: 10.12.49.182
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:16:80
+      ilo-ip: 10.12.10.154
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute76
+      ip-addr: 10.12.49.183
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a6:30
+      ilo-ip: 10.12.8.125
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute77
+      ip-addr: 10.12.49.184
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a6:40
+      ilo-ip: 10.12.8.144
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute78
+      ip-addr: 10.12.49.185
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a7:30
+      ilo-ip: 10.12.10.163
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute79
+      ip-addr: 10.12.49.186
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a7:90
+      ilo-ip: 10.12.10.174
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute80
+      ip-addr: 10.12.49.187
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:e5:28
+      ilo-ip: 10.12.10.159
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute81
+      ip-addr: 10.12.49.188
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:e5:50
+      ilo-ip: 10.12.8.128
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute82
+      ip-addr: 10.12.49.189
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a7:f8
+      ilo-ip: 10.12.8.169
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute83
+      ip-addr: 10.12.49.190
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a7:88
+      ilo-ip: 10.12.8.137
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute84
+      ip-addr: 10.12.49.191
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:d3:e0
+      ilo-ip: 10.12.10.162
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute85
+      ip-addr: 10.12.49.192
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:37:70
+      ilo-ip: 10.12.10.176
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute86
+      ip-addr: 10.12.49.193
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:66:c8
+      ilo-ip: 10.12.10.175
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute87
+      ip-addr: 10.12.49.194
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:5e:b0
+      ilo-ip: 10.12.10.181
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute88
+      ip-addr: 10.12.49.195
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:27:a0
+      ilo-ip: 10.12.8.119
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute89
+      ip-addr: 10.12.49.196
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0f:13:88
+      ilo-ip: 10.12.8.156
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute90
+      ip-addr: 10.12.49.197
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:ef:90
+      ilo-ip: 10.12.8.146
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute91
+      ip-addr: 10.12.49.198
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:59:e0
+      ilo-ip: 10.12.8.126
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute92
+      ip-addr: 10.12.49.199
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:19:70
+      ilo-ip: 10.12.8.151
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute93
+      ip-addr: 10.12.49.200
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:1f:a0
+      ilo-ip: 10.12.10.179
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute94
+      ip-addr: 10.12.49.201
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:f3:20
+      ilo-ip: 10.12.8.168
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute95
+      ip-addr: 10.12.49.202
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:17:20
+      ilo-ip: 10.12.11.47
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute96
+      ip-addr: 10.12.49.203
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:ec:d0
+      ilo-ip: 10.12.8.155
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute97
+      ip-addr: 10.12.49.204
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:34:80
+      ilo-ip: 10.12.10.173
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute98
+      ip-addr: 10.12.49.205
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:01:f3:10
+      ilo-ip: 10.12.8.148
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute99
+      ip-addr: 10.12.49.206
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:21:30
+      ilo-ip: 10.12.10.164
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute100
+      ip-addr: 10.12.49.207
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:34:90
+      ilo-ip: 10.12.8.154
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute101
+      ip-addr: 10.12.49.208
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:13:e8
+      ilo-ip: 10.12.8.145
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute102
+      ip-addr: 10.12.49.209
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:02:30:30
+      ilo-ip: 10.12.8.149
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute103
+      ip-addr: 10.12.49.210
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:0c:a7:a0
+      ilo-ip: 10.12.8.173
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN
+
+    - id: compute104
+      ip-addr: 10.12.49.211
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL160-2PORT
+      mac-addr: 8c:dc:d4:16:5e:e8
+      ilo-ip: 10.12.8.118
+      ilo-password: '$now$hoe'
+      ilo-user: ADMIN

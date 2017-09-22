@@ -1,0 +1,36 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+CN = "ardana-vip"
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "hcg-cp1-vip-public-CEI-API-can"
+DNS.2 = "hcg-cp1-vip-public-CND-API-can"
+DNS.3 = "hcg-cp1-vip-public-DES-API-can"
+DNS.4 = "hcg-cp1-vip-public-EON-API-can"
+DNS.5 = "hcg-cp1-vip-public-FRE-API-can"
+DNS.6 = "hcg-cp1-vip-public-GLA-API-can"
+DNS.7 = "hcg-cp1-vip-public-HEA-ACF-can"
+DNS.8 = "hcg-cp1-vip-public-HEA-ACW-can"
+DNS.9 = "hcg-cp1-vip-public-HEA-API-can"
+DNS.10 = "hcg-cp1-vip-public-HUX-SVC-can"
+DNS.11 = "hcg-cp1-vip-public-HZN-WEB-can"
+DNS.12 = "hcg-cp1-vip-public-KEY-API-can"
+DNS.13 = "hcg-cp1-vip-public-KEYMGR-API-can"
+DNS.14 = "hcg-cp1-vip-public-LOG-API-can"
+DNS.15 = "hcg-cp1-vip-public-MON-API-can"
+DNS.16 = "hcg-cp1-vip-public-NEU-SVR-can"
+DNS.17 = "hcg-cp1-vip-public-NOV-API-can"
+DNS.18 = "hcg-cp1-vip-public-NOV-VNC-can"
+DNS.19 = "hcg-cp1-vip-public-OPS-WEB-can"
+DNS.20 = "hcg-cp1-vip-public-SWF-PRX-can"
+DNS.21 = "10.244.45.105"
+IP.1 = "10.244.45.105"

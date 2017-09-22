@@ -1,0 +1,401 @@
+control-plane-1:
+    ceilometer:
+        ceilometer-agent-central:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ceilometer-agent-notification:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ceilometer-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ceilometer-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ceilometer-collector:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ceilometer-common:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ceilometer-expirer:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    cinder:
+        cinder-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        cinder-backup:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        cinder-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        cinder-scheduler:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        cinder-volume:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    foundation:
+        apache2:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ip-cluster:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        kafka:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        memcached:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        mysql:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ntp-client:
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        ntp-server:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        openstack-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        rabbitmq:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        sherpa-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        storm:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        stunnel:
+        - eu-em2-cp1-c0-m1-mgmt
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        swift-common:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        swift-rsync:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        vertica:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        zookeeper:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    freezer:
+        freezer-agent:
+        - eu-em2-cp1-c0-m1-mgmt
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        freezer-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    glance:
+        glance-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        glance-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        glance-registry:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    heat:
+        heat-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        heat-api-cfn:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        heat-api-cloudwatch:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        heat-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        heat-engine:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    horizon:
+        horizon:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    keystone:
+        keystone-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        keystone-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    logging:
+        logging-producer:
+        - eu-em2-cp1-c0-m1-mgmt
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        logging-server:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    monasca:
+        monasca-agent:
+        - eu-em2-cp1-c0-m1-mgmt
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        monasca-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        monasca-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        monasca-notifier:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        monasca-persister:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        monasca-threshold:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    neutron:
+        neutron-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        neutron-dhcp-agent:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        neutron-l3-agent:
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        neutron-lbaasv2-agent:
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        neutron-metadata-agent:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        neutron-ml2-plugin:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        neutron-openvswitch-agent:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        neutron-server:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        neutron-vpn-agent:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    nova:
+        nova-api:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        nova-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        nova-compute:
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        nova-compute-kvm:
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        nova-conductor:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        nova-console-auth:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        nova-metadata:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        nova-novncproxy:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        nova-scheduler:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    operations:
+        lifecycle-manager:
+        - eu-em2-cp1-c0-m1-mgmt
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        lifecycle-manager-target:
+        - eu-em2-cp1-c0-m1-mgmt
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt
+        - eu-em2-cp1-comp0001-mgmt
+        - eu-em2-cp1-comp0002-mgmt
+        - eu-em2-cp1-comp0003-mgmt
+        - eu-em2-cp1-comp0004-mgmt
+        - eu-em2-cp1-comp0005-mgmt
+        ops-console-monitor:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        ops-console-web:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    swift:
+        swift-account:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        swift-client:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        swift-container:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        swift-object:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        swift-proxy:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        swift-ring-builder:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+    vsa-storage:
+        cmc-service:
+        - eu-em2-cp1-c1-m1-mgmt
+        - eu-em2-cp1-c1-m2-mgmt
+        - eu-em2-cp1-c1-m3-mgmt
+        vsa:
+        - eu-em2-cp1-vsa0001-mgmt
+        - eu-em2-cp1-vsa0002-mgmt
+        - eu-em2-cp1-vsa0003-mgmt

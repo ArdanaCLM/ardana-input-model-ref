@@ -1,0 +1,24 @@
+<dl class="dl-horizontal">
+  <dt>Compute Hypervisor</dt><dd>KVM</dd>
+  <dt>Storage</dt><dd>Ceph&reg;</dd>
+  <dt>Object Storage</dt><dd>minimal Swift Resources are provided by the control plane</dd>
+</dl>
+<p><b>Node roles</b></p>
+<ul>
+  <li>Control Plane (3), includes deployer</li>
+  <li>Ceph nodes (3)</li>
+  <li>Compute node (at least 1)</li>
+</ul>
+
+<p>This example separates network traffic into four logical networks which are carried on a pair of bonded NICs on two physical ports.</p>
+
+<p><b>Logical network separation:</b></p>
+<ol>
+<li>External API - used by consumers of the cloud to make requests to the cloud APIs</li>
+<li>External VM - used to provide external access to VMs (via floating IP addresses)</li>
+<li>Guest - carries traffic between VMs on private networks within the cloud (VxLAN encapsulated)</li>
+<li>Management - used for all internal traffic between the cloud services. This network is also used to provision and configure the cloud servers.</li>
+</ol>
+<p>
+In addition, each server is connected to a dedicated IPMI/iLO network.
+</p>

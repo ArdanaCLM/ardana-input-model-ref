@@ -1,0 +1,132 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+---
+  product:
+    version: 2
+
+  interface-models:
+
+    - name: DB_RABBIT-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         network-groups:
+           - CONF
+           - CLM
+
+    - name: MANAGEMENT-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+           - CAN
+
+    - name: MONITORING-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         network-groups:
+           - CONF
+           - CLM
+
+    - name: NETWORK-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+           - CAN
+       - name: eth1
+         device:
+           name: eth1
+         network-groups:
+           - VxLAN
+
+    - name: ESX-COMPUTE-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+
+    - name: CONTROLLER-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+
+    - name: ARDANA-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+
+    - name: ENTERPRISE-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+
+    - name: OVSVAPP-INTERFACES
+      network-interfaces:
+
+       - name: eth0
+         device:
+           name: eth0
+         forced-network-groups:
+           - DCM
+         network-groups:
+           - CONF
+           - CLM
+
+       # Trunk network group for ovsvapp appliance
+       - name: eth1
+         device:
+           name: eth1
+         network-groups:
+           - TRUNK
+       - name: eth2
+         device:
+           name: eth2
+         network-groups:
+           - VxLAN

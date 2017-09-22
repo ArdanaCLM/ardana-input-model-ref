@@ -1,0 +1,27 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+CN = "ardana-vip"
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "hcg-cp2-vip-HEA-ACF-clm"
+DNS.2 = "hcg-cp2-vip-HEA-ACW-clm"
+DNS.3 = "hcg-cp2-vip-HEA-API-clm"
+DNS.4 = "hcg-cp2-vip-NEU-SVR-clm"
+DNS.5 = "hcg-cp2-vip-NOV-API-clm"
+DNS.6 = "hcg-cp2-vip-OCT-API-clm"
+DNS.7 = "hcg-cp2-vip-admin-HEA-ACF-clm"
+DNS.8 = "hcg-cp2-vip-admin-HEA-ACW-clm"
+DNS.9 = "hcg-cp2-vip-admin-HEA-API-clm"
+DNS.10 = "hcg-cp2-vip-admin-NEU-SVR-clm"
+DNS.11 = "hcg-cp2-vip-admin-NOV-API-clm"
+DNS.12 = "10.244.44.132"
+IP.1 = "10.244.44.132"

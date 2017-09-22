@@ -1,0 +1,387 @@
+control-plane:
+    ceilometer:
+        ceilometer-agent-central:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ceilometer-agent-notification:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ceilometer-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ceilometer-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ceilometer-collector:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ceilometer-common:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ceilometer-expirer:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    cinder:
+        cinder-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        cinder-backup:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        cinder-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        cinder-scheduler:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        cinder-volume:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    foundation:
+        apache2:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ip-cluster:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        kafka:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        memcached:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        mysql:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ntp-client:
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        ntp-server:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        openstack-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        rabbitmq:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        sherpa-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        storm:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        stunnel:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        - ardana-control-plane-vsa0001-mgmt
+        - ardana-control-plane-vsa0002-mgmt
+        - ardana-control-plane-vsa0003-mgmt
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        swift-common:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        swift-rsync:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        vertica:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        zookeeper:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    freezer:
+        freezer-agent:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        - ardana-control-plane-vsa0001-mgmt
+        - ardana-control-plane-vsa0002-mgmt
+        - ardana-control-plane-vsa0003-mgmt
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        freezer-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    glance:
+        glance-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        glance-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        glance-registry:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    heat:
+        heat-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        heat-api-cfn:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        heat-api-cloudwatch:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        heat-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        heat-engine:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    horizon:
+        horizon:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    keystone:
+        keystone-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        keystone-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    logging:
+        logging-producer:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        - ardana-control-plane-vsa0001-mgmt
+        - ardana-control-plane-vsa0002-mgmt
+        - ardana-control-plane-vsa0003-mgmt
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        logging-server:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    monasca:
+        monasca-agent:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        - ardana-control-plane-vsa0001-mgmt
+        - ardana-control-plane-vsa0002-mgmt
+        - ardana-control-plane-vsa0003-mgmt
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        monasca-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        monasca-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        monasca-notifier:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        monasca-persister:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        monasca-threshold:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    neutron:
+        neutron-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        neutron-dhcp-agent:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        neutron-lbaasv2-agent:
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        neutron-metadata-agent:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        neutron-ml2-plugin:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        neutron-openvswitch-agent:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        neutron-server:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    nova:
+        nova-api:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        nova-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        nova-compute:
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        nova-compute-kvm:
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        nova-conductor:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        nova-console-auth:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        nova-metadata:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        nova-novncproxy:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        nova-scheduler:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    operations:
+        lifecycle-manager:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        lifecycle-manager-target:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        - ardana-control-plane-vsa0001-mgmt
+        - ardana-control-plane-vsa0002-mgmt
+        - ardana-control-plane-vsa0003-mgmt
+        - ardana-control-plane-comp0001-mgmt
+        - ardana-control-plane-comp0002-mgmt
+        - ardana-control-plane-comp0003-mgmt
+        - ardana-control-plane-comp0004-mgmt
+        - ardana-control-plane-comp0005-mgmt
+        - ardana-control-plane-comp0006-mgmt
+        ops-console-monitor:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        ops-console-web:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    swift:
+        swift-account:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        swift-client:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        swift-container:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        swift-object:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        swift-proxy:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        swift-ring-builder:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+    vsa-storage:
+        cmc-service:
+        - ardana-control-plane-cluster1-m1-mgmt
+        - ardana-control-plane-cluster1-m2-mgmt
+        - ardana-control-plane-cluster1-m3-mgmt
+        vsa:
+        - ardana-control-plane-vsa0001-mgmt
+        - ardana-control-plane-vsa0002-mgmt
+        - ardana-control-plane-vsa0003-mgmt

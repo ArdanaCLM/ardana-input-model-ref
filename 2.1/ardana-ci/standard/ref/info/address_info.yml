@@ -1,0 +1,83 @@
+EXTERNAL-VM:
+    EXTERNAL-VM-NET: {}
+ARDANA:
+    ARDANA-NET:
+        192.168.10.254:
+        - standard-ccp-c0-m1-alm
+        192.168.10.3:
+        - standard-ccp-c1-m1-alm
+        192.168.10.4:
+        - standard-ccp-c1-m2-alm
+        192.168.10.5:
+        - standard-ccp-c1-m3-alm
+        192.168.10.6:
+        - standard-ccp-comp0001-alm
+        192.168.10.7:
+        - standard-ccp-comp0002-alm
+        192.168.10.8:
+        - standard-ccp-comp0003-alm
+MANAGEMENT:
+    MANAGEMENT-NET:
+        192.168.245.10:
+        - standard-ccp-vip-public-CEI-API-mgmt
+        - standard-ccp-vip-public-CND-API-mgmt
+        - standard-ccp-vip-public-FRE-API-mgmt
+        - standard-ccp-vip-public-GLA-API-mgmt
+        - standard-ccp-vip-public-HEA-ACF-mgmt
+        - standard-ccp-vip-public-HEA-ACW-mgmt
+        - standard-ccp-vip-public-HEA-API-mgmt
+        - standard-ccp-vip-public-HZN-WEB-mgmt
+        - standard-ccp-vip-public-KEY-API-mgmt
+        - standard-ccp-vip-public-MON-API-mgmt
+        - standard-ccp-vip-public-NEU-SVR-mgmt
+        - standard-ccp-vip-public-NOV-API-mgmt
+        - standard-ccp-vip-public-NOV-VNC-mgmt
+        - standard-ccp-vip-public-OPS-WEB-mgmt
+        - standard-ccp-vip-public-SHP-API-mgmt
+        - standard-ccp-vip-public-SWF-PRX-mgmt
+        192.168.245.2:
+        - standard-ccp-c0-m1-mgmt
+        192.168.245.3:
+        - standard-ccp-c1-m1-mgmt
+        192.168.245.4:
+        - standard-ccp-c1-m2-mgmt
+        192.168.245.5:
+        - standard-ccp-c1-m3-mgmt
+        192.168.245.6:
+        - standard-ccp-comp0001-mgmt
+        192.168.245.7:
+        - standard-ccp-comp0002-mgmt
+        192.168.245.8:
+        - standard-ccp-comp0003-mgmt
+        192.168.245.9:
+        - standard-ccp-vip-CEI-API-mgmt
+        - standard-ccp-vip-CND-API-mgmt
+        - standard-ccp-vip-FND-MDB-mgmt
+        - standard-ccp-vip-FND-RMQ-mgmt
+        - standard-ccp-vip-FND-VDB-mgmt
+        - standard-ccp-vip-FRE-API-mgmt
+        - standard-ccp-vip-GLA-API-mgmt
+        - standard-ccp-vip-GLA-REG-mgmt
+        - standard-ccp-vip-HEA-ACF-mgmt
+        - standard-ccp-vip-HEA-ACW-mgmt
+        - standard-ccp-vip-HEA-API-mgmt
+        - standard-ccp-vip-HZN-WEB-mgmt
+        - standard-ccp-vip-KEY-API-mgmt
+        - standard-ccp-vip-LOG-SVR-mgmt
+        - standard-ccp-vip-MON-API-mgmt
+        - standard-ccp-vip-NEU-SVR-mgmt
+        - standard-ccp-vip-NOV-API-mgmt
+        - standard-ccp-vip-NOV-MTD-mgmt
+        - standard-ccp-vip-OPS-WEB-mgmt
+        - standard-ccp-vip-SHP-API-mgmt
+        - standard-ccp-vip-SWF-PRX-mgmt
+        - standard-ccp-vip-admin-CEI-API-mgmt
+        - standard-ccp-vip-admin-CND-API-mgmt
+        - standard-ccp-vip-admin-FND-MDB-mgmt
+        - standard-ccp-vip-admin-FRE-API-mgmt
+        - standard-ccp-vip-admin-GLA-API-mgmt
+        - standard-ccp-vip-admin-KEY-API-mgmt
+        - standard-ccp-vip-admin-NEU-SVR-mgmt
+        - standard-ccp-vip-admin-NOV-API-mgmt
+        - standard-ccp-vip-admin-SHP-API-mgmt
+        - standard-ccp-vip-admin-SWF-PRX-mgmt

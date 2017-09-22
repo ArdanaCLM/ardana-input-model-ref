@@ -1,0 +1,792 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product: 
+    version: 2
+
+  baremetal:
+    # NOTE: These values need to be changed to match your environment.
+    # Define the network range that contains the ip-addr values for
+    # the individual servers listed below.
+    subnet: 10.241.67.0
+    netmask: 255.255.255.0
+
+  servers:
+    # NOTE: Addresses of servers need to be changed to match your environment.
+    #
+    #       Add additional servers as required
+    #
+
+    - id: lifecycle-manager
+      ip-addr: 10.241.67.4
+      role: LIFECYCLE-MANAGER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:f0:4c
+      ilo-ip: 10.1.10.3
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: controller1
+      ip-addr: 10.241.67.5
+      role: CONTROLLER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:c8
+      ilo-ip: 10.1.10.2
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: controller2
+      ip-addr: 10.241.67.6
+      role: CONTROLLER-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:c7:80
+      ilo-ip: 10.1.13.255
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: mtrmon1
+      ip-addr: 10.241.67.7
+      role: MTRMON-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b4:10
+      ilo-ip: 10.1.13.250
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: mtrmon2
+      ip-addr: 10.241.67.8
+      role: MTRMON-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c4:80
+      ilo-ip: 10.1.14.2
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: mtrmon3
+      ip-addr: 10.241.67.9
+      role: MTRMON-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d4:48
+      ilo-ip: 10.1.9.251
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: dbmq1
+      ip-addr: 10.241.67.10
+      role: DBMQ-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:8c
+      ilo-ip: 10.1.10.0
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: dbmq2
+      ip-addr: 10.241.67.11
+      role: DBMQ-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b4:98
+      ilo-ip: 10.1.13.249
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: dbmq3
+      ip-addr: 10.241.67.12
+      role: DBMQ-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:cc:f8
+      ilo-ip: 10.1.14.46
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: vsa1
+      ip-addr: 10.241.67.13
+      role: VSA-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:cb:f0
+      ilo-ip: 10.1.14.42
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: vsa2
+      ip-addr: 10.241.67.14
+      role: VSA-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:cc:6c
+      ilo-ip: 10.1.14.57
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: vsa3
+      ip-addr: 10.241.67.15
+      role: VSA-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:83:10
+      ilo-ip: 10.1.14.49
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute1
+      ip-addr: 10.241.67.16
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7a:c0
+      ilo-ip: 10.1.10.15
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute2
+      ip-addr: 10.241.67.17
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:79:04
+      ilo-ip: 10.1.10.9
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute3
+      ip-addr: 10.241.67.18
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7a:34
+      ilo-ip: 10.1.14.43
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute4
+      ip-addr: 10.241.67.19
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:cc:38
+      ilo-ip: 10.1.10.11
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute5
+      ip-addr: 10.241.67.20
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7a:14
+      ilo-ip: 10.1.14.59
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute6
+      ip-addr: 10.241.67.21
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d1:4c
+      ilo-ip: 10.1.9.193
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute7
+      ip-addr: 10.241.67.22
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b6:f4
+      ilo-ip: 10.1.9.206
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute8
+      ip-addr: 10.241.67.23
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d1:44
+      ilo-ip: 10.1.9.210
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute9
+      ip-addr: 10.241.67.24
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d3:80
+      ilo-ip: 10.1.9.213
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute10
+      ip-addr: 10.241.67.25
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b8:0c
+      ilo-ip: 10.1.9.208
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute11
+      ip-addr: 10.241.67.26
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d4:b0
+      ilo-ip: 10.1.9.214
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute12
+      ip-addr: 10.241.67.27
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c0:28
+      ilo-ip: 10.1.13.215
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute13
+      ip-addr: 10.241.67.28
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b7:0c
+      ilo-ip: 10.1.9.194
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute14
+      ip-addr: 10.241.67.29
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d1:3c
+      ilo-ip: 10.1.9.205
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute15
+      ip-addr: 10.241.67.30
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:83:44
+      ilo-ip: 10.1.9.196
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute16
+      ip-addr: 10.241.67.31
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7d:74
+      ilo-ip: 10.1.9.199
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute17
+      ip-addr: 10.241.67.32
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7f:48
+      ilo-ip: 10.1.9.195
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute18
+      ip-addr: 10.241.67.33
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c6:cc
+      ilo-ip: 10.1.9.212
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute19
+      ip-addr: 10.241.67.34
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c3:08
+      ilo-ip: 10.1.9.222
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute20
+      ip-addr: 10.241.67.35
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c5:ac
+      ilo-ip: 10.1.9.220
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute21
+      ip-addr: 10.241.67.36
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c3:f0
+      ilo-ip: 10.1.9.207
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute22
+      ip-addr: 10.241.67.37
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7d:68
+      ilo-ip: 10.1.9.224
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute23
+      ip-addr: 10.241.67.38
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7b:84
+      ilo-ip: 10.1.9.200
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute24
+      ip-addr: 10.241.67.39
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b7:8c
+      ilo-ip: 10.1.9.215
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute25
+      ip-addr: 10.241.67.40
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c5:60
+      ilo-ip: 10.1.9.225
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute26
+      ip-addr: 10.241.67.41
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c2:f4
+      ilo-ip: 10.1.9.223
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute27
+      ip-addr: 10.241.67.42
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:ed:b8
+      ilo-ip: 10.1.9.202
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute28
+      ip-addr: 10.241.67.43
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7d:88
+      ilo-ip: 10.1.9.219
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute29
+      ip-addr: 10.241.67.44
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:ec:f4
+      ilo-ip: 10.1.13.232
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute30
+      ip-addr: 10.241.67.45
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:ea:54
+      ilo-ip: 10.1.9.204
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute31
+      ip-addr: 10.241.67.46
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c6:d8
+      ilo-ip: 10.1.9.218
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute32
+      ip-addr: 10.241.67.47
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:ed:c8
+      ilo-ip: 10.1.9.203
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute33
+      ip-addr: 10.241.67.48
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:eb:d8
+      ilo-ip: 10.1.9.211
+      ilo-password: 'b3rth0ud'
+      ilo-user: ipcadmin
+
+    - id: compute34
+      ip-addr: 10.241.67.49
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bb:c0
+      ilo-ip: 10.1.8.106
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute35
+      ip-addr: 10.241.67.50
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bd:84
+      ilo-ip: 10.1.12.106
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute36
+      ip-addr: 10.241.67.51
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d1:d0
+      ilo-ip: 10.1.8.113
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute37
+      ip-addr: 10.241.67.52
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b6:a0
+      ilo-ip: 10.1.12.80
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute38
+      ip-addr: 10.241.67.53
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d1:18
+      ilo-ip: 10.1.12.112
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute39
+      ip-addr: 10.241.67.54
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:c2:bc
+      ilo-ip: 10.1.8.100
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute40
+      ip-addr: 10.241.67.55
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b6:e8
+      ilo-ip: 10.1.8.108
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute41
+      ip-addr: 10.241.67.56
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:f8
+      ilo-ip: 10.1.12.114
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute42
+      ip-addr: 10.241.67.57
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:dc
+      ilo-ip: 10.1.12.111
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute43
+      ip-addr: 10.241.67.58
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:b8
+      ilo-ip: 10.1.8.104
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute44
+      ip-addr: 10.241.67.59
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b4:58
+      ilo-ip: 10.1.12.105
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute45
+      ip-addr: 10.241.67.60
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:e4
+      ilo-ip: 10.1.12.110
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute46
+      ip-addr: 10.241.67.61
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b8:10
+      ilo-ip: 10.1.12.79
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute47
+      ip-addr: 10.241.67.62
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d3:e8
+      ilo-ip: 10.1.12.82
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute48
+      ip-addr: 10.241.67.63
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b9:00
+      ilo-ip: 10.1.12.109
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute49
+      ip-addr: 10.241.67.64
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:be:14
+      ilo-ip: 10.1.12.115
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute50
+      ip-addr: 10.241.67.65
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b6:b0
+      ilo-ip: 10.1.8.103
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute51
+      ip-addr: 10.241.67.66
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b6:80
+      ilo-ip: 10.1.8.81
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute52
+      ip-addr: 10.241.67.67
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b7:50
+      ilo-ip: 10.1.12.95
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute53
+      ip-addr: 10.241.67.68
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7a:d0
+      ilo-ip: 10.1.8.85
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute54
+      ip-addr: 10.241.67.69
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:ca:64
+      ilo-ip: 10.1.12.84
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute55
+      ip-addr: 10.241.67.70
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:ca:70
+      ilo-ip: 10.1.12.92
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute56
+      ip-addr: 10.241.67.71
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7a:c8
+      ilo-ip: 10.1.12.89
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute57
+      ip-addr: 10.241.67.72
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7b:04
+      ilo-ip: 10.1.8.88
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute58
+      ip-addr: 10.241.67.73
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7d:4c
+      ilo-ip: 10.1.8.89
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute59
+      ip-addr: 10.241.67.74
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7f:b4
+      ilo-ip: 10.1.12.100
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute60
+      ip-addr: 10.241.67.75
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 8c:dc:d4:b5:7e:5c
+      ilo-ip: 10.1.8.92
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute61
+      ip-addr: 10.241.67.76
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d3:c8
+      ilo-ip: 10.1.8.94
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute62
+      ip-addr: 10.241.67.77
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:88:d1:28
+      ilo-ip: 10.1.12.87
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute63
+      ip-addr: 10.241.67.78
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:bf:a8
+      ilo-ip: 10.1.12.98
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm
+
+    - id: compute64
+      ip-addr: 10.241.67.79
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA-DL360-4PORT
+      mac-addr: 5c:b9:01:89:b4:ac
+      ilo-ip: 10.1.8.91
+      ilo-password: 'mul3d33r'
+      ilo-user: ardanaqaadm

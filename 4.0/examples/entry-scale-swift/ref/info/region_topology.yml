@@ -1,0 +1,68 @@
+regions:
+    region1:
+        control_planes:
+            control-plane-1:
+                services:
+                    ceilometer:
+                    - ceilometer-common
+                    - ceilometer-agent-notification
+                    - ceilometer-api
+                    - ceilometer-polling
+                    clients:
+                    - ceilometer-client
+                    - keystone-client
+                    - monasca-client
+                    - nova-client
+                    - swift-client
+                    foundation:
+                    - ip-cluster
+                    - ntp-client
+                    - zookeeper
+                    - ardana-ca
+                    - stunnel
+                    - kafka
+                    - ntp-server
+                    - vertica
+                    - rabbitmq
+                    - storm
+                    - mysql
+                    - spark
+                    - apache2
+                    - memcached
+                    freezer:
+                    - freezer-agent
+                    - freezer-api
+                    ardana:
+                    - lifecycle-manager-target
+                    - ardana-ux-services
+                    - lifecycle-manager
+                    horizon:
+                    - horizon
+                    keystone:
+                    - keystone-api
+                    logging:
+                    - logging-server
+                    - logging-producer
+                    - logging-rotate
+                    - logging-api
+                    monasca:
+                    - monasca-threshold
+                    - monasca-liveness-check
+                    - monasca-api
+                    - monasca-transform
+                    - monasca-notifier
+                    - monasca-agent
+                    - monasca-persister
+                    operations:
+                    - ops-console-web
+                    - ops-console-monitor
+                    swift:
+                    - swift-ring-builder
+                    - swift-rsync
+                    - swift-account
+                    - swift-proxy
+                    - swift-container
+                    - swift-common
+                    - swift-object
+                    tempest:
+                    - tempest

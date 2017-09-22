@@ -1,0 +1,258 @@
+network_groups:
+    CONF:
+        CONF-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        core:
+                            servers:
+                                ardana-cp1-core-m1: 10.243.140.10
+                                ardana-cp1-core-m2: 10.243.140.18
+                        dbmq:
+                            servers:
+                                ardana-cp1-dbmq-m1: 10.243.140.12
+                                ardana-cp1-dbmq-m2: 10.243.140.20
+                                ardana-cp1-dbmq-m3: 10.243.140.27
+                        mtrmon:
+                            servers:
+                                ardana-cp1-mtrmon-m1: 10.243.140.11
+                                ardana-cp1-mtrmon-m2: 10.243.140.19
+                                ardana-cp1-mtrmon-m3: 10.243.140.26
+                        neut:
+                            servers:
+                                ardana-cp1-neut-m1: 10.243.140.14
+                                ardana-cp1-neut-m2: 10.243.140.22
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m1: 10.243.140.13
+                                ardana-cp1-swpac-m2: 10.243.140.21
+                                ardana-cp1-swpac-m3: 10.243.140.28
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: 10.243.140.16
+                                ardana-cp1-comp0002: 10.243.140.24
+                                ardana-cp1-comp0003: 10.243.140.30
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0001: 10.243.140.15
+                                ardana-cp1-swobj0002: 10.243.140.23
+                                ardana-cp1-swobj0003: 10.243.140.29
+                        vsa:
+                            servers:
+                                ardana-cp1-vsa0001: 10.243.140.17
+                                ardana-cp1-vsa0002: 10.243.140.25
+                                ardana-cp1-vsa0003: 10.243.140.31
+    EXTERNAL-API:
+        EXTERNAL-API-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        core:
+                            servers:
+                                ardana-cp1-core-m1: 10.243.125.2
+                                ardana-cp1-core-m2: 10.243.125.3
+                            vips:
+                                10.243.125.4: extlb
+    EXTERNAL-VM:
+        EXTERNAL-VM-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        neut:
+                            servers:
+                                ardana-cp1-neut-m1: null
+                                ardana-cp1-neut-m2: null
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: null
+                                ardana-cp1-comp0002: null
+                                ardana-cp1-comp0003: null
+    GUEST:
+        GUEST-NET-RACK1:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        neut:
+                            servers:
+                                ardana-cp1-neut-m1: 10.243.127.2
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: 10.243.127.3
+        GUEST-NET-RACK2:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        neut:
+                            servers:
+                                ardana-cp1-neut-m2: 10.243.128.2
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0002: 10.243.128.3
+        GUEST-NET-RACK3:
+            control_planes:
+                control-plane-1:
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0003: 10.243.129.2
+    INTERNAL-API:
+        INTERNAL-API-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        core:
+                            servers:
+                                ardana-cp1-core-m1: 10.243.126.2
+                                ardana-cp1-core-m2: 10.243.126.3
+                            vips:
+                                10.243.126.4: lb
+    ISCSI:
+        ISCSI-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        core:
+                            servers:
+                                ardana-cp1-core-m1: 10.243.133.2
+                                ardana-cp1-core-m2: 10.243.133.3
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: 10.243.133.11
+                                ardana-cp1-comp0002: 10.243.133.12
+                                ardana-cp1-comp0003: 10.243.133.13
+                        vsa:
+                            servers:
+                                ardana-cp1-vsa0001: 10.243.133.4
+                                ardana-cp1-vsa0002: 10.243.133.7
+                                ardana-cp1-vsa0003: 10.243.133.9
+                            service_ips:
+                                vsa:
+                                    hosts:
+                                        ardana-cp1-vsa0001: 10.243.133.5
+                                        ardana-cp1-vsa0002: 10.243.133.8
+                                        ardana-cp1-vsa0003: 10.243.133.10
+                                    vip: 10.243.133.6
+    MANAGEMENT:
+        MANAGEMENT-NET-RACK1:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        core:
+                            servers:
+                                ardana-cp1-core-m1: 10.243.130.2
+                        dbmq:
+                            servers:
+                                ardana-cp1-dbmq-m1: 10.243.130.4
+                        mtrmon:
+                            servers:
+                                ardana-cp1-mtrmon-m1: 10.243.130.3
+                        neut:
+                            servers:
+                                ardana-cp1-neut-m1: 10.243.130.6
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m1: 10.243.130.5
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: 10.243.130.9
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0001: 10.243.130.7
+                        vsa:
+                            servers:
+                                ardana-cp1-vsa0001: 10.243.130.8
+        MANAGEMENT-NET-RACK2:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        core:
+                            servers:
+                                ardana-cp1-core-m2: 10.243.131.2
+                        dbmq:
+                            servers:
+                                ardana-cp1-dbmq-m2: 10.243.131.4
+                        mtrmon:
+                            servers:
+                                ardana-cp1-mtrmon-m2: 10.243.131.3
+                        neut:
+                            servers:
+                                ardana-cp1-neut-m2: 10.243.131.6
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m2: 10.243.131.5
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0002: 10.243.131.9
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0002: 10.243.131.7
+                        vsa:
+                            servers:
+                                ardana-cp1-vsa0002: 10.243.131.8
+        MANAGEMENT-NET-RACK3:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        dbmq:
+                            servers:
+                                ardana-cp1-dbmq-m3: 10.243.132.3
+                        mtrmon:
+                            servers:
+                                ardana-cp1-mtrmon-m3: 10.243.132.2
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m3: 10.243.132.4
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0003: 10.243.132.7
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0003: 10.243.132.5
+                        vsa:
+                            servers:
+                                ardana-cp1-vsa0003: 10.243.132.6
+    OCTAVIA-MGMT-NET:
+        OCTAVIA-MGMT-NET:
+            control_planes: {}
+    SWIFT:
+        SWIFT-NET-RACK1:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m1: 10.243.136.2
+                    resources:
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0001: 10.243.136.3
+        SWIFT-NET-RACK2:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m2: 10.243.137.2
+                    resources:
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0002: 10.243.137.3
+        SWIFT-NET-RACK3:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        swpac:
+                            servers:
+                                ardana-cp1-swpac-m3: 10.243.138.2
+                    resources:
+                        swobj:
+                            servers:
+                                ardana-cp1-swobj0003: 10.243.138.3

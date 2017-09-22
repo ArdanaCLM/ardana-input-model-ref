@@ -1,0 +1,67 @@
+EXTERNAL-VM:
+    EXTERNAL-VM-NET: {}
+ARDANA:
+    ARDANA-NET:
+        192.168.10.3:
+        - deployerincloud-ccp-c0-m1-alm
+        192.168.10.4:
+        - deployerincloud-ccp-compute0001-alm
+        192.168.10.5:
+        - deployerincloud-ccp-compute0002-alm
+MANAGEMENT:
+    MANAGEMENT-NET:
+        192.168.245.2:
+        - deployerincloud-ccp-c0-m1-mgmt
+        192.168.245.3:
+        - deployerincloud-ccp-compute0001-mgmt
+        192.168.245.4:
+        - deployerincloud-ccp-compute0002-mgmt
+        192.168.245.5:
+        - deployerincloud-ccp-vip-CEI-API-mgmt
+        - deployerincloud-ccp-vip-CND-API-mgmt
+        - deployerincloud-ccp-vip-FND-MDB-mgmt
+        - deployerincloud-ccp-vip-FND-RMQ-mgmt
+        - deployerincloud-ccp-vip-FND-VDB-mgmt
+        - deployerincloud-ccp-vip-FRE-API-mgmt
+        - deployerincloud-ccp-vip-GLA-API-mgmt
+        - deployerincloud-ccp-vip-GLA-REG-mgmt
+        - deployerincloud-ccp-vip-HEA-ACF-mgmt
+        - deployerincloud-ccp-vip-HEA-ACW-mgmt
+        - deployerincloud-ccp-vip-HEA-API-mgmt
+        - deployerincloud-ccp-vip-HZN-WEB-mgmt
+        - deployerincloud-ccp-vip-KEY-API-mgmt
+        - deployerincloud-ccp-vip-LOG-SVR-mgmt
+        - deployerincloud-ccp-vip-MON-API-mgmt
+        - deployerincloud-ccp-vip-NEU-SVR-mgmt
+        - deployerincloud-ccp-vip-NOV-API-mgmt
+        - deployerincloud-ccp-vip-NOV-MTD-mgmt
+        - deployerincloud-ccp-vip-OPS-WEB-mgmt
+        - deployerincloud-ccp-vip-SHP-API-mgmt
+        - deployerincloud-ccp-vip-SWF-PRX-mgmt
+        - deployerincloud-ccp-vip-admin-CEI-API-mgmt
+        - deployerincloud-ccp-vip-admin-CND-API-mgmt
+        - deployerincloud-ccp-vip-admin-FND-MDB-mgmt
+        - deployerincloud-ccp-vip-admin-FRE-API-mgmt
+        - deployerincloud-ccp-vip-admin-GLA-API-mgmt
+        - deployerincloud-ccp-vip-admin-KEY-API-mgmt
+        - deployerincloud-ccp-vip-admin-NEU-SVR-mgmt
+        - deployerincloud-ccp-vip-admin-NOV-API-mgmt
+        - deployerincloud-ccp-vip-admin-SHP-API-mgmt
+        - deployerincloud-ccp-vip-admin-SWF-PRX-mgmt
+        192.168.245.6:
+        - deployerincloud-ccp-vip-public-CEI-API-mgmt
+        - deployerincloud-ccp-vip-public-CND-API-mgmt
+        - deployerincloud-ccp-vip-public-FRE-API-mgmt
+        - deployerincloud-ccp-vip-public-GLA-API-mgmt
+        - deployerincloud-ccp-vip-public-HEA-ACF-mgmt
+        - deployerincloud-ccp-vip-public-HEA-ACW-mgmt
+        - deployerincloud-ccp-vip-public-HEA-API-mgmt
+        - deployerincloud-ccp-vip-public-HZN-WEB-mgmt
+        - deployerincloud-ccp-vip-public-KEY-API-mgmt
+        - deployerincloud-ccp-vip-public-MON-API-mgmt
+        - deployerincloud-ccp-vip-public-NEU-SVR-mgmt
+        - deployerincloud-ccp-vip-public-NOV-API-mgmt
+        - deployerincloud-ccp-vip-public-NOV-VNC-mgmt
+        - deployerincloud-ccp-vip-public-OPS-WEB-mgmt
+        - deployerincloud-ccp-vip-public-SHP-API-mgmt
+        - deployerincloud-ccp-vip-public-SWF-PRX-mgmt

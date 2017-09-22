@@ -1,0 +1,65 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  server-roles:
+
+    - name: ARDANA-HYPERVISOR-ROLE
+      interface-model: ARDANA-HYPERVISOR-INTERFACES
+      disk-model: ARDANA-HYPERVISOR-DISKS
+
+    - name: CONTROLLER-ROLE
+      interface-model: CONTROLLER-INTERFACES
+      disk-model: CONTROLLER-DISKS
+      cpu-model: CONTROLLER-CPU
+      memory-model: CONTROLLER-MEMORY
+
+    - name: RMQ-MYSQL-ROLE
+      interface-model: RMQ-MYSQL-INTERFACES
+      disk-model: RMQ-MYSQL-DISKS
+      cpu-model: RMQ-MYSQL-CPU
+      memory-model: RMQ-MYSQL-MEMORY
+
+    - name: MML-ROLE
+      interface-model: MML-INTERFACES
+      disk-model: MML-2TB-DISKS
+
+    - name: NETWORK-ROLE
+      interface-model: NETWORK-INTERFACES
+      disk-model: NETWORK-DISKS
+      cpu-model: NETWORK-CPU
+      memory-model: NETWORK-MEMORY
+
+    - name: OSD-ROLE
+      interface-model: OSD-INTERFACES
+      disk-model: OSD-DISKS
+
+    - name: COMPUTE-ROLE
+      interface-model: COMPUTE-INTERFACES
+      disk-model: COMPUTE-DISKS
+      cpu-model: COMPUTE-CPU
+      memory-model: COMPUTE-MEMORY-NUMA
+
+    - name: ESX-COMPUTE-ROLE
+      interface-model: ESX-COMPUTE-INTERFACES
+      disk-model: HLINUX-VM-DISKS
+
+    - name: OVSVAPP-ROLE
+      interface-model: OVSVAPP-INTERFACES
+      disk-model: HLINUX-VM-DISKS

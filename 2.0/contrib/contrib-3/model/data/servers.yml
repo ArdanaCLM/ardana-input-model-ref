@@ -1,0 +1,151 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  baremetal:
+    # NOTE: These values need to be changed to match your environment.
+    # Define the network range that contains the ip-addr values for
+    # the individual servers listed below.
+    subnet: 10.16.80.0
+    netmask: 255.255.255.0
+
+  servers:
+    # NOTE: Addresses of servers need to be changed to match your environment.
+    #
+    #       Add additional servers as required
+    #
+     #Lifecycle-manager
+    - id: lifecycle-manager
+      ip-addr: 10.16.80.10
+      role: LIFECYCLE-MANAGER-ROLE
+      server-group: RACK1
+      # ipmi information is not needed 
+
+# Controllers
+    - id: controller1
+      ip-addr: 10.16.80.11
+      role: CONTROLLER-ROLE
+      server-group: RACK1
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:DB:40
+      ilo-ip: 10.16.8.95
+      ilo-password: RQ6AVBVS
+      ilo-user: Administrator
+
+    - id: controller2
+      ip-addr: 10.16.80.12
+      role: CONTROLLER-ROLE
+      server-group: RACK2
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:d0:52:6c:48
+      ilo-ip: 10.16.8.18
+      ilo-password: XVVVGMWX
+      ilo-user: Administrator
+
+    - id: controller3
+      ip-addr: 10.16.80.13
+      role: CONTROLLER-ROLE
+      server-group: RACK3
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:9C:78
+      ilo-ip: 10.16.8.19
+      ilo-password: EHZ2GW6Y
+      ilo-user: Administrator
+
+# Compute Nodes
+    - id: compute1
+      ip-addr: 10.16.80.14
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:0D:88
+      ilo-ip: 10.16.8.20
+      ilo-password: 56TVAUQC
+      ilo-user: Administrator
+
+    - id: compute2
+      ip-addr: 10.16.80.15
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:BB:40
+      ilo-ip: 10.16.8.21
+      ilo-password: KA23UK4S
+      ilo-user: Administrator
+
+    - id: compute3
+      ip-addr: 10.16.80.16
+      role: COMPUTE-ROLE
+      server-group: RACK1
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:FA:18
+      ilo-ip: 10.16.8.22
+      ilo-password: X3H6R6JT
+      ilo-user: Administrator
+
+    - id: compute4
+      ip-addr: 10.16.80.17
+      server-group: RACK1
+      role: COMPUTE-ROLE
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:9C:48
+      ilo-ip: 10.16.8.23
+      ilo-password: 25R4SE64
+      ilo-user: Administrator
+
+    - id: compute5
+      ip-addr: 10.16.80.18
+      server-group: RACK2
+      role: COMPUTE-ROLE
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:EC:B0
+      ilo-ip: 10.16.8.25
+      ilo-password: NKH73XG3
+      ilo-user: Administrator
+
+# VSA
+    - id: vsa1
+      ip-addr: 10.16.80.19
+      role: VSA-ROLE
+      server-group: RACK1
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:7B:10
+      ilo-ip: 10.16.8.26
+      ilo-password: 3H47RVUV
+      ilo-user: Administrator
+
+    - id: vsa2
+      ip-addr: 10.16.80.20
+      role: VSA-ROLE
+      server-group: RACK2
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:6B:20
+      ilo-ip: 10.16.8.27
+      ilo-password: QAT2UF9F
+      ilo-user: Administrator
+
+    - id: vsa3
+      ip-addr: 10.16.80.21
+      role: VSA-ROLE
+      server-group: RACK3
+      nic-mapping: MY-2PORT-SERVER
+      mac-addr: 14:58:D0:52:7C:50
+      ilo-ip: 10.16.8.57
+      ilo-password: WFUGE5T9
+      ilo-user: Administrator

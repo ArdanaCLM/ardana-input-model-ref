@@ -1,0 +1,58 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+CN = "ardana-vip"
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "hcg-cp1-vip-CEI-API-clm"
+DNS.2 = "hcg-cp1-vip-CND-API-clm"
+DNS.3 = "hcg-cp1-vip-DES-API-clm"
+DNS.4 = "hcg-cp1-vip-EON-API-clm"
+DNS.5 = "hcg-cp1-vip-FRE-API-clm"
+DNS.6 = "hcg-cp1-vip-GLA-API-clm"
+DNS.7 = "hcg-cp1-vip-GLA-REG-clm"
+DNS.8 = "hcg-cp1-vip-HEA-ACF-clm"
+DNS.9 = "hcg-cp1-vip-HEA-ACW-clm"
+DNS.10 = "hcg-cp1-vip-HEA-API-clm"
+DNS.11 = "hcg-cp1-vip-HUX-SVC-clm"
+DNS.12 = "hcg-cp1-vip-HZN-WEB-clm"
+DNS.13 = "hcg-cp1-vip-KEY-API-clm"
+DNS.14 = "hcg-cp1-vip-KEYMGR-API-clm"
+DNS.15 = "hcg-cp1-vip-LOG-API-clm"
+DNS.16 = "hcg-cp1-vip-LOG-SVR-clm"
+DNS.17 = "hcg-cp1-vip-MON-API-clm"
+DNS.18 = "hcg-cp1-vip-NEU-SVR-clm"
+DNS.19 = "hcg-cp1-vip-NOV-API-clm"
+DNS.20 = "hcg-cp1-vip-OCT-API-clm"
+DNS.21 = "hcg-cp1-vip-OPS-WEB-clm"
+DNS.22 = "hcg-cp1-vip-SWF-PRX-clm"
+DNS.23 = "hcg-cp1-vip-admin-CEI-API-clm"
+DNS.24 = "hcg-cp1-vip-admin-CND-API-clm"
+DNS.25 = "hcg-cp1-vip-admin-DES-API-clm"
+DNS.26 = "hcg-cp1-vip-admin-EON-API-clm"
+DNS.27 = "hcg-cp1-vip-admin-FRE-API-clm"
+DNS.28 = "hcg-cp1-vip-admin-GLA-API-clm"
+DNS.29 = "hcg-cp1-vip-admin-HEA-ACF-clm"
+DNS.30 = "hcg-cp1-vip-admin-HEA-ACW-clm"
+DNS.31 = "hcg-cp1-vip-admin-HEA-API-clm"
+DNS.32 = "hcg-cp1-vip-admin-HUX-SVC-clm"
+DNS.33 = "hcg-cp1-vip-admin-HZN-WEB-clm"
+DNS.34 = "hcg-cp1-vip-admin-KEY-API-clm"
+DNS.35 = "hcg-cp1-vip-admin-KEYMGR-API-clm"
+DNS.36 = "hcg-cp1-vip-admin-LOG-API-clm"
+DNS.37 = "hcg-cp1-vip-admin-LOG-SVR-clm"
+DNS.38 = "hcg-cp1-vip-admin-MON-API-clm"
+DNS.39 = "hcg-cp1-vip-admin-NEU-SVR-clm"
+DNS.40 = "hcg-cp1-vip-admin-NOV-API-clm"
+DNS.41 = "hcg-cp1-vip-admin-OPS-WEB-clm"
+DNS.42 = "hcg-cp1-vip-admin-SWF-PRX-clm"
+DNS.43 = "10.244.44.108"
+IP.1 = "10.244.44.108"

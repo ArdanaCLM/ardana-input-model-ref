@@ -1,0 +1,115 @@
+EXTERNAL:
+    EXTERNAL-NET:
+        16.92.4.54:
+        - ardana-cp1-c1-m1-extapi
+        16.92.4.55:
+        - ardana-cp1-c1-m2-extapi
+        16.92.4.56:
+        - ardana-cp1-c1-m3-extapi
+        16.92.4.57:
+        - ardana-cp1-comp0001-extapi
+        16.92.4.58:
+        - ardana-cp1-comp0002-extapi
+        16.92.4.59:
+        - ardana-cp1-comp0003-extapi
+        16.92.4.60:
+        - ardana-cp1-vip-public-CEI-API-extapi
+        - ardana-cp1-vip-public-CND-API-extapi
+        - ardana-cp1-vip-public-FRE-API-extapi
+        - ardana-cp1-vip-public-GLA-API-extapi
+        - ardana-cp1-vip-public-HEA-ACF-extapi
+        - ardana-cp1-vip-public-HEA-ACW-extapi
+        - ardana-cp1-vip-public-HEA-API-extapi
+        - ardana-cp1-vip-public-HZN-WEB-extapi
+        - ardana-cp1-vip-public-KEY-API-extapi
+        - ardana-cp1-vip-public-MON-API-extapi
+        - ardana-cp1-vip-public-NEU-SVR-extapi
+        - ardana-cp1-vip-public-NOV-API-extapi
+        - ardana-cp1-vip-public-NOV-VNC-extapi
+        - ardana-cp1-vip-public-OPS-WEB-extapi
+        - ardana-cp1-vip-public-SHP-API-extapi
+        - ardana-cp1-vip-public-SWF-PRX-extapi
+GUEST:
+    GUEST-NET:
+        10.1.5.2:
+        - ardana-cp1-c1-m1-guest
+        10.1.5.3:
+        - ardana-cp1-c1-m2-guest
+        10.1.5.4:
+        - ardana-cp1-c1-m3-guest
+        10.1.5.5:
+        - ardana-cp1-comp0001-guest
+        10.1.5.6:
+        - ardana-cp1-comp0002-guest
+        10.1.5.7:
+        - ardana-cp1-comp0003-guest
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.1.2.10:
+        - ardana-cp1-comp0003-mgmt
+        10.1.2.11:
+        - ardana-cp1-vip-CEI-API-mgmt
+        - ardana-cp1-vip-CND-API-mgmt
+        - ardana-cp1-vip-FND-MDB-mgmt
+        - ardana-cp1-vip-FND-RMQ-mgmt
+        - ardana-cp1-vip-FND-VDB-mgmt
+        - ardana-cp1-vip-FRE-API-mgmt
+        - ardana-cp1-vip-GLA-API-mgmt
+        - ardana-cp1-vip-GLA-REG-mgmt
+        - ardana-cp1-vip-HEA-ACF-mgmt
+        - ardana-cp1-vip-HEA-ACW-mgmt
+        - ardana-cp1-vip-HEA-API-mgmt
+        - ardana-cp1-vip-HZN-WEB-mgmt
+        - ardana-cp1-vip-KEY-API-mgmt
+        - ardana-cp1-vip-LOG-SVR-mgmt
+        - ardana-cp1-vip-MON-API-mgmt
+        - ardana-cp1-vip-NEU-SVR-mgmt
+        - ardana-cp1-vip-NOV-API-mgmt
+        - ardana-cp1-vip-NOV-MTD-mgmt
+        - ardana-cp1-vip-OPS-WEB-mgmt
+        - ardana-cp1-vip-SHP-API-mgmt
+        - ardana-cp1-vip-SWF-PRX-mgmt
+        - ardana-cp1-vip-admin-CEI-API-mgmt
+        - ardana-cp1-vip-admin-CND-API-mgmt
+        - ardana-cp1-vip-admin-FND-MDB-mgmt
+        - ardana-cp1-vip-admin-FRE-API-mgmt
+        - ardana-cp1-vip-admin-GLA-API-mgmt
+        - ardana-cp1-vip-admin-KEY-API-mgmt
+        - ardana-cp1-vip-admin-NEU-SVR-mgmt
+        - ardana-cp1-vip-admin-NOV-API-mgmt
+        - ardana-cp1-vip-admin-SHP-API-mgmt
+        - ardana-cp1-vip-admin-SWF-PRX-mgmt
+        10.1.2.2:
+        - ardana-cp1-c1-m1-mgmt
+        10.1.2.3:
+        - ardana-cp1-c1-m2-mgmt
+        10.1.2.4:
+        - ardana-cp1-c1-m3-mgmt
+        10.1.2.5:
+        - ardana-cp1-vsa0001-mgmt
+        10.1.2.6:
+        - ardana-cp1-vsa0001-VSA-BLK-mgmt
+        10.1.2.7:
+        - ardana-cp1-vsa-VSA-BLK-mgmt
+        10.1.2.8:
+        - ardana-cp1-comp0001-mgmt
+        10.1.2.9:
+        - ardana-cp1-comp0002-mgmt
+PXE:
+    PXE-NET:
+        10.1.1.12:
+        - ardana-cp1-c1-m1-baremetal
+        10.1.1.13:
+        - ardana-cp1-c1-m2-baremetal
+        10.1.1.14:
+        - ardana-cp1-c1-m3-baremetal
+        10.1.1.15:
+        - ardana-cp1-vsa0001-baremetal
+        10.1.1.16:
+        - ardana-cp1-comp0001-baremetal
+        10.1.1.17:
+        - ardana-cp1-comp0002-baremetal
+        10.1.1.18:
+        - ardana-cp1-comp0003-baremetal
+SERVICE:
+    SERVICE-NET: {}

@@ -1,0 +1,144 @@
+192.168.10.10:
+  addr: 192.168.10.10
+  allocated: true
+  free: false
+  host: mid-size-cp1-singleton-m1
+  persisted: false
+  server-id: singleton1
+  used-by: server
+192.168.10.11:
+  addr: 192.168.10.11
+  allocated: true
+  free: false
+  host: mid-size-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+192.168.10.4:
+  addr: 192.168.10.4
+  allocated: true
+  free: false
+  host: mid-size-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+192.168.10.5:
+  addr: 192.168.10.5
+  allocated: true
+  free: false
+  host: mid-size-cp1-dbmq-m1
+  persisted: false
+  server-id: dbmq1
+  used-by: server
+192.168.10.6:
+  addr: 192.168.10.6
+  allocated: true
+  free: false
+  host: mid-size-cp1-mtrmon-m1
+  persisted: false
+  server-id: mtrmon1
+  used-by: server
+192.168.10.7:
+  addr: 192.168.10.7
+  allocated: true
+  free: false
+  host: mid-size-cp1-swpac-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+192.168.10.8:
+  addr: 192.168.10.8
+  allocated: true
+  free: false
+  host: mid-size-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+192.168.10.9:
+  addr: 192.168.10.9
+  allocated: true
+  free: false
+  host: mid-size-cp1-neut-m1
+  persisted: false
+  server-id: neut1
+  used-by: server
+192.168.245.10:
+  addr: 192.168.245.10
+  allocated: true
+  free: false
+  host: mid-size-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+192.168.245.11:
+  addr: 192.168.245.11
+  allocated: true
+  free: false
+  host: mid-size-cp1-vip-extlb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+192.168.245.2:
+  addr: 192.168.245.2
+  allocated: true
+  free: false
+  host: mid-size-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+192.168.245.3:
+  addr: 192.168.245.3
+  allocated: true
+  free: false
+  host: mid-size-cp1-mtrmon-m1
+  persisted: false
+  server-id: mtrmon1
+  used-by: server
+192.168.245.4:
+  addr: 192.168.245.4
+  allocated: true
+  free: false
+  host: mid-size-cp1-dbmq-m1
+  persisted: false
+  server-id: dbmq1
+  used-by: server
+192.168.245.5:
+  addr: 192.168.245.5
+  allocated: true
+  free: false
+  host: mid-size-cp1-swpac-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+192.168.245.6:
+  addr: 192.168.245.6
+  allocated: true
+  free: false
+  host: mid-size-cp1-neut-m1
+  persisted: false
+  server-id: neut1
+  used-by: server
+192.168.245.7:
+  addr: 192.168.245.7
+  allocated: true
+  free: false
+  host: mid-size-cp1-singleton-m1
+  persisted: false
+  server-id: singleton1
+  used-by: server
+192.168.245.8:
+  addr: 192.168.245.8
+  allocated: true
+  free: false
+  host: mid-size-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+192.168.245.9:
+  addr: 192.168.245.9
+  allocated: true
+  free: false
+  host: mid-size-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server

@@ -1,0 +1,1811 @@
+MANAGEMENT-NET-RACK1:
+    INTERNAL-API-NET:
+        default: false
+        used_by:
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            ceilometer-client:
+                ceilometer-api:
+                - ardana-cp1-mtrmon-m1
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+            ceilometer-common:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            freezer-agent:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            freezer-api:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                logging-server:
+                - ardana-cp1-mtrmon-m1
+            logging-server:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            monasca-agent:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            monasca-api:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                vertica:
+                - ardana-cp1-mtrmon-m1
+            monasca-client:
+                keystone-api:
+                - ardana-cp1-mtrmon-m1
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+            monasca-notifier:
+                mysql:
+                - ardana-cp1-mtrmon-m1
+            monasca-persister:
+                vertica:
+                - ardana-cp1-mtrmon-m1
+            monasca-threshold:
+                mysql:
+                - ardana-cp1-mtrmon-m1
+            neutron-dhcp-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            neutron-metadata-agent:
+                nova-metadata:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+                rabbitmq:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+            neutron-vpn-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+            nova-compute:
+                cinder-api:
+                - ardana-cp1-comp0001
+                glance-api:
+                - ardana-cp1-comp0001
+                keystone-api:
+                - ardana-cp1-comp0001
+                neutron-server:
+                - ardana-cp1-comp0001
+                rabbitmq:
+                - ardana-cp1-comp0001
+            swift-client:
+                keystone-api:
+                - ardana-cp1-swpac-m1
+                swift-proxy:
+                - ardana-cp1-swpac-m1
+            swift-proxy:
+                keystone-api:
+                - ardana-cp1-swpac-m1
+    MANAGEMENT-NET-RACK2:
+        default: false
+        used_by:
+            barbican-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            barbican-worker:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            ceilometer-common:
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            cinder-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            cinder-backup:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            cinder-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            cinder-volume:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-api:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-central:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-mdns:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-pool-manager:
+                designate-mdns:
+                - ardana-cp1-core-m1
+                memcached:
+                - ardana-cp1-core-m1
+                powerdns:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+                zookeeper:
+                - ardana-cp1-core-m1
+            designate-zone-manager:
+                memcached:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+                zookeeper:
+                - ardana-cp1-core-m1
+            freezer-agent:
+                mysql:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            freezer-api:
+                logging-server:
+                - ardana-cp1-mtrmon-m1
+            glance-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-api:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-api-cfn:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-api-cloudwatch:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-engine:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            horizon:
+                mysql:
+                - ardana-cp1-core-m1
+            ip-cluster:
+                barbican-api:
+                - ardana-cp1-core-m1
+                ceilometer-api:
+                - ardana-cp1-core-m1
+                cinder-api:
+                - ardana-cp1-core-m1
+                designate-api:
+                - ardana-cp1-core-m1
+                freezer-api:
+                - ardana-cp1-core-m1
+                glance-api:
+                - ardana-cp1-core-m1
+                glance-registry:
+                - ardana-cp1-core-m1
+                heat-api:
+                - ardana-cp1-core-m1
+                heat-api-cfn:
+                - ardana-cp1-core-m1
+                heat-api-cloudwatch:
+                - ardana-cp1-core-m1
+                ardana-ux-services:
+                - ardana-cp1-core-m1
+                horizon:
+                - ardana-cp1-core-m1
+                keystone-api:
+                - ardana-cp1-core-m1
+                logging-server:
+                - ardana-cp1-core-m1
+                monasca-api:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+                neutron-server:
+                - ardana-cp1-core-m1
+                nova-api:
+                - ardana-cp1-core-m1
+                nova-metadata:
+                - ardana-cp1-core-m1
+                nova-novncproxy:
+                - ardana-cp1-core-m1
+                octavia-api:
+                - ardana-cp1-core-m1
+                ops-console-web:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+                swift-proxy:
+                - ardana-cp1-core-m1
+                vertica:
+                - ardana-cp1-core-m1
+            kafka:
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            keystone-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            logging-producer:
+                kafka:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            logging-server:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-agent:
+                monasca-api:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+                rabbitmq:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            monasca-api:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                monasca-agent:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                vertica:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-client:
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+            monasca-notifier:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-persister:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                vertica:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-threshold:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            neutron-dhcp-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            neutron-metadata-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+            neutron-server:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            neutron-vpn-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+            nova-api:
+                monasca-api:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            nova-compute:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            nova-conductor:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            nova-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            ntp-client:
+                ntp-server:
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            octavia-api:
+                mysql:
+                - ardana-cp1-core-m1
+                octavia-health-manager:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            ops-console-web:
+                memcached:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+            powerdns:
+                designate-mdns:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+            storm:
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            swift-proxy:
+                memcached:
+                - ardana-cp1-swpac-m1
+    MANAGEMENT-NET-RACK3:
+        default: false
+        used_by:
+            barbican-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            barbican-worker:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            ceilometer-common:
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+            cinder-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            cinder-backup:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            cinder-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            cinder-volume:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-api:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-central:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-mdns:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            designate-pool-manager:
+                rabbitmq:
+                - ardana-cp1-core-m1
+                zookeeper:
+                - ardana-cp1-core-m1
+            designate-zone-manager:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+                zookeeper:
+                - ardana-cp1-core-m1
+            freezer-agent:
+                mysql:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            freezer-api:
+                logging-server:
+                - ardana-cp1-mtrmon-m1
+            glance-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-api:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-api-cfn:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-api-cloudwatch:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            heat-engine:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            horizon:
+                mysql:
+                - ardana-cp1-core-m1
+            ip-cluster:
+                ceilometer-api:
+                - ardana-cp1-core-m1
+                freezer-api:
+                - ardana-cp1-core-m1
+                logging-server:
+                - ardana-cp1-core-m1
+                monasca-api:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+                swift-proxy:
+                - ardana-cp1-core-m1
+                vertica:
+                - ardana-cp1-core-m1
+            kafka:
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            keystone-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            logging-producer:
+                kafka:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            logging-server:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                rabbitmq:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-agent:
+                monasca-api:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+                rabbitmq:
+                - ardana-cp1-core-m1
+                - ardana-cp1-mtrmon-m1
+                - ardana-cp1-dbmq-m1
+                - ardana-cp1-swpac-m1
+                - ardana-cp1-neut-m1
+                - ardana-cp1-swobj0001
+                - ardana-cp1-vsa0001
+                - ardana-cp1-comp0001
+            monasca-api:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                monasca-agent:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                vertica:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-client:
+                monasca-api:
+                - ardana-cp1-mtrmon-m1
+            monasca-notifier:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-persister:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                vertica:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            monasca-threshold:
+                kafka:
+                - ardana-cp1-mtrmon-m1
+                mysql:
+                - ardana-cp1-mtrmon-m1
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+            neutron-dhcp-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            neutron-metadata-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+                - ardana-cp1-comp0001
+            neutron-server:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            neutron-vpn-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m1
+            nova-api:
+                monasca-api:
+                - ardana-cp1-core-m1
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            nova-compute:
+                rabbitmq:
+                - ardana-cp1-comp0001
+            nova-conductor:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            nova-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m1
+            octavia-api:
+                mysql:
+                - ardana-cp1-core-m1
+                rabbitmq:
+                - ardana-cp1-core-m1
+            ops-console-web:
+                mysql:
+                - ardana-cp1-core-m1
+            powerdns:
+                mysql:
+                - ardana-cp1-core-m1
+            storm:
+                zookeeper:
+                - ardana-cp1-mtrmon-m1
+MANAGEMENT-NET-RACK2:
+    INTERNAL-API-NET:
+        default: false
+        used_by:
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            ceilometer-client:
+                ceilometer-api:
+                - ardana-cp1-mtrmon-m2
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+            ceilometer-common:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            freezer-agent:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            freezer-api:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                logging-server:
+                - ardana-cp1-mtrmon-m2
+            logging-server:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            monasca-agent:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            monasca-api:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                vertica:
+                - ardana-cp1-mtrmon-m2
+            monasca-client:
+                keystone-api:
+                - ardana-cp1-mtrmon-m2
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+            monasca-notifier:
+                mysql:
+                - ardana-cp1-mtrmon-m2
+            monasca-persister:
+                vertica:
+                - ardana-cp1-mtrmon-m2
+            monasca-threshold:
+                mysql:
+                - ardana-cp1-mtrmon-m2
+            neutron-dhcp-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            neutron-metadata-agent:
+                nova-metadata:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+                rabbitmq:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+            neutron-vpn-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+            nova-compute:
+                cinder-api:
+                - ardana-cp1-comp0002
+                glance-api:
+                - ardana-cp1-comp0002
+                keystone-api:
+                - ardana-cp1-comp0002
+                neutron-server:
+                - ardana-cp1-comp0002
+                rabbitmq:
+                - ardana-cp1-comp0002
+            swift-client:
+                keystone-api:
+                - ardana-cp1-swpac-m2
+                swift-proxy:
+                - ardana-cp1-swpac-m2
+            swift-proxy:
+                keystone-api:
+                - ardana-cp1-swpac-m2
+    MANAGEMENT-NET-RACK1:
+        default: false
+        used_by:
+            barbican-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            barbican-worker:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            ceilometer-common:
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            cinder-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            cinder-backup:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            cinder-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            cinder-volume:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-api:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-central:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-mdns:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-pool-manager:
+                designate-mdns:
+                - ardana-cp1-core-m2
+                memcached:
+                - ardana-cp1-core-m2
+                powerdns:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+                zookeeper:
+                - ardana-cp1-core-m2
+            designate-zone-manager:
+                memcached:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+                zookeeper:
+                - ardana-cp1-core-m2
+            freezer-agent:
+                mysql:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            freezer-api:
+                logging-server:
+                - ardana-cp1-mtrmon-m2
+            glance-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-api:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-api-cfn:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-api-cloudwatch:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-engine:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            horizon:
+                mysql:
+                - ardana-cp1-core-m2
+            ip-cluster:
+                barbican-api:
+                - ardana-cp1-core-m2
+                ceilometer-api:
+                - ardana-cp1-core-m2
+                cinder-api:
+                - ardana-cp1-core-m2
+                designate-api:
+                - ardana-cp1-core-m2
+                freezer-api:
+                - ardana-cp1-core-m2
+                glance-api:
+                - ardana-cp1-core-m2
+                glance-registry:
+                - ardana-cp1-core-m2
+                heat-api:
+                - ardana-cp1-core-m2
+                heat-api-cfn:
+                - ardana-cp1-core-m2
+                heat-api-cloudwatch:
+                - ardana-cp1-core-m2
+                ardana-ux-services:
+                - ardana-cp1-core-m2
+                horizon:
+                - ardana-cp1-core-m2
+                keystone-api:
+                - ardana-cp1-core-m2
+                logging-server:
+                - ardana-cp1-core-m2
+                monasca-api:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+                neutron-server:
+                - ardana-cp1-core-m2
+                nova-api:
+                - ardana-cp1-core-m2
+                nova-metadata:
+                - ardana-cp1-core-m2
+                nova-novncproxy:
+                - ardana-cp1-core-m2
+                octavia-api:
+                - ardana-cp1-core-m2
+                ops-console-web:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+                swift-proxy:
+                - ardana-cp1-core-m2
+                vertica:
+                - ardana-cp1-core-m2
+            kafka:
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            keystone-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            logging-producer:
+                kafka:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            logging-server:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-agent:
+                monasca-api:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+                rabbitmq:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            monasca-api:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                monasca-agent:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                vertica:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-client:
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+            monasca-notifier:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-persister:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                vertica:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-threshold:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            neutron-dhcp-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            neutron-metadata-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+            neutron-server:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            neutron-vpn-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+            nova-api:
+                monasca-api:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            nova-compute:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            nova-conductor:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            nova-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            ntp-client:
+                ntp-server:
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            octavia-api:
+                mysql:
+                - ardana-cp1-core-m2
+                octavia-health-manager:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            ops-console-web:
+                memcached:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+            powerdns:
+                designate-mdns:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+            storm:
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            swift-proxy:
+                memcached:
+                - ardana-cp1-swpac-m2
+    MANAGEMENT-NET-RACK3:
+        default: false
+        used_by:
+            barbican-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            barbican-worker:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            ceilometer-common:
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+            cinder-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            cinder-backup:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            cinder-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            cinder-volume:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-api:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-central:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-mdns:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            designate-pool-manager:
+                rabbitmq:
+                - ardana-cp1-core-m2
+                zookeeper:
+                - ardana-cp1-core-m2
+            designate-zone-manager:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+                zookeeper:
+                - ardana-cp1-core-m2
+            freezer-agent:
+                mysql:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            freezer-api:
+                logging-server:
+                - ardana-cp1-mtrmon-m2
+            glance-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-api:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-api-cfn:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-api-cloudwatch:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            heat-engine:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            horizon:
+                mysql:
+                - ardana-cp1-core-m2
+            ip-cluster:
+                ceilometer-api:
+                - ardana-cp1-core-m2
+                freezer-api:
+                - ardana-cp1-core-m2
+                logging-server:
+                - ardana-cp1-core-m2
+                monasca-api:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+                swift-proxy:
+                - ardana-cp1-core-m2
+                vertica:
+                - ardana-cp1-core-m2
+            kafka:
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            keystone-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            logging-producer:
+                kafka:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            logging-server:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                rabbitmq:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-agent:
+                monasca-api:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+                rabbitmq:
+                - ardana-cp1-core-m2
+                - ardana-cp1-mtrmon-m2
+                - ardana-cp1-dbmq-m2
+                - ardana-cp1-swpac-m2
+                - ardana-cp1-neut-m2
+                - ardana-cp1-swobj0002
+                - ardana-cp1-vsa0002
+                - ardana-cp1-comp0002
+            monasca-api:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                monasca-agent:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                vertica:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-client:
+                monasca-api:
+                - ardana-cp1-mtrmon-m2
+            monasca-notifier:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-persister:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                vertica:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            monasca-threshold:
+                kafka:
+                - ardana-cp1-mtrmon-m2
+                mysql:
+                - ardana-cp1-mtrmon-m2
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+            neutron-dhcp-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            neutron-metadata-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+                - ardana-cp1-comp0002
+            neutron-server:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            neutron-vpn-agent:
+                rabbitmq:
+                - ardana-cp1-neut-m2
+            nova-api:
+                monasca-api:
+                - ardana-cp1-core-m2
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            nova-compute:
+                rabbitmq:
+                - ardana-cp1-comp0002
+            nova-conductor:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            nova-scheduler:
+                rabbitmq:
+                - ardana-cp1-core-m2
+            octavia-api:
+                mysql:
+                - ardana-cp1-core-m2
+                rabbitmq:
+                - ardana-cp1-core-m2
+            ops-console-web:
+                mysql:
+                - ardana-cp1-core-m2
+            powerdns:
+                mysql:
+                - ardana-cp1-core-m2
+            storm:
+                zookeeper:
+                - ardana-cp1-mtrmon-m2
+MANAGEMENT-NET-RACK3:
+    INTERNAL-API-NET:
+        default: false
+        used_by:
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            ceilometer-client:
+                ceilometer-api:
+                - ardana-cp1-mtrmon-m3
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+            ceilometer-common:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            freezer-agent:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            freezer-api:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                logging-server:
+                - ardana-cp1-mtrmon-m3
+            logging-server:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            monasca-agent:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            monasca-api:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                vertica:
+                - ardana-cp1-mtrmon-m3
+            monasca-client:
+                keystone-api:
+                - ardana-cp1-mtrmon-m3
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+            monasca-notifier:
+                mysql:
+                - ardana-cp1-mtrmon-m3
+            monasca-persister:
+                vertica:
+                - ardana-cp1-mtrmon-m3
+            monasca-threshold:
+                mysql:
+                - ardana-cp1-mtrmon-m3
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-metadata-agent:
+                nova-metadata:
+                - ardana-cp1-comp0003
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            nova-compute:
+                cinder-api:
+                - ardana-cp1-comp0003
+                glance-api:
+                - ardana-cp1-comp0003
+                keystone-api:
+                - ardana-cp1-comp0003
+                neutron-server:
+                - ardana-cp1-comp0003
+                rabbitmq:
+                - ardana-cp1-comp0003
+            swift-client:
+                keystone-api:
+                - ardana-cp1-swpac-m3
+                swift-proxy:
+                - ardana-cp1-swpac-m3
+            swift-proxy:
+                keystone-api:
+                - ardana-cp1-swpac-m3
+    MANAGEMENT-NET-RACK1:
+        default: false
+        used_by:
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            ceilometer-common:
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            freezer-agent:
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            freezer-api:
+                logging-server:
+                - ardana-cp1-mtrmon-m3
+            kafka:
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            logging-producer:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            logging-server:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-agent:
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            monasca-api:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                monasca-agent:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                vertica:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-client:
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+            monasca-notifier:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-persister:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                vertica:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-threshold:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-metadata-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            nova-compute:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            ntp-client:
+                ntp-server:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            storm:
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            swift-proxy:
+                memcached:
+                - ardana-cp1-swpac-m3
+    MANAGEMENT-NET-RACK2:
+        default: false
+        used_by:
+            ceilometer-agent-notification:
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            ceilometer-common:
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+            freezer-agent:
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            freezer-api:
+                logging-server:
+                - ardana-cp1-mtrmon-m3
+            kafka:
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            logging-producer:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            logging-server:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-agent:
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+                rabbitmq:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            monasca-api:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                monasca-agent:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                vertica:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-client:
+                monasca-api:
+                - ardana-cp1-mtrmon-m3
+            monasca-notifier:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-persister:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                vertica:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            monasca-threshold:
+                kafka:
+                - ardana-cp1-mtrmon-m3
+                mysql:
+                - ardana-cp1-mtrmon-m3
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            neutron-l3-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-lbaasv2-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-metadata-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            neutron-openvswitch-agent:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            nova-compute:
+                rabbitmq:
+                - ardana-cp1-comp0003
+            ntp-client:
+                ntp-server:
+                - ardana-cp1-mtrmon-m3
+                - ardana-cp1-dbmq-m3
+                - ardana-cp1-swpac-m3
+                - ardana-cp1-swobj0003
+                - ardana-cp1-vsa0003
+                - ardana-cp1-comp0003
+            storm:
+                zookeeper:
+                - ardana-cp1-mtrmon-m3
+            swift-proxy:
+                memcached:
+                - ardana-cp1-swpac-m3
+SWIFT-NET-RACK1:
+    SWIFT-NET-RACK2:
+        default: false
+        used_by:
+            swift-ring-builder:
+                swift-account:
+                - ardana-cp1-swpac-m1
+                swift-container:
+                - ardana-cp1-swpac-m1
+                swift-object:
+                - ardana-cp1-swpac-m1
+    SWIFT-NET-RACK3:
+        default: false
+        used_by:
+            swift-ring-builder:
+                swift-account:
+                - ardana-cp1-swpac-m1
+                swift-container:
+                - ardana-cp1-swpac-m1
+                swift-object:
+                - ardana-cp1-swpac-m1
+SWIFT-NET-RACK2:
+    SWIFT-NET-RACK1:
+        default: false
+        used_by:
+            swift-ring-builder:
+                swift-account:
+                - ardana-cp1-swpac-m2
+                swift-container:
+                - ardana-cp1-swpac-m2
+                swift-object:
+                - ardana-cp1-swpac-m2
+    SWIFT-NET-RACK3:
+        default: false
+        used_by:
+            swift-ring-builder:
+                swift-account:
+                - ardana-cp1-swpac-m2
+                swift-container:
+                - ardana-cp1-swpac-m2
+                swift-object:
+                - ardana-cp1-swpac-m2
+SWIFT-NET-RACK3:
+    SWIFT-NET-RACK1:
+        default: false
+        used_by:
+            swift-ring-builder:
+                swift-account:
+                - ardana-cp1-swpac-m3
+                swift-container:
+                - ardana-cp1-swpac-m3
+                swift-object:
+                - ardana-cp1-swpac-m3
+    SWIFT-NET-RACK2:
+        default: false
+        used_by:
+            swift-ring-builder:
+                swift-account:
+                - ardana-cp1-swpac-m3
+                swift-container:
+                - ardana-cp1-swpac-m3
+                swift-object:
+                - ardana-cp1-swpac-m3

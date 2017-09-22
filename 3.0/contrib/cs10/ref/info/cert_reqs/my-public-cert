@@ -1,0 +1,39 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+CN = "ardana-vip"
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "cs-ccp-c0-m1-clm"
+DNS.2 = "cs-ccp-cc-m1-clm"
+DNS.3 = "cs-ccp-mgmt-m1-clm"
+DNS.4 = "cs-ccp-mon-m1-clm"
+DNS.5 = "cs-ccp-vip-public-CEI-API-CAN"
+DNS.6 = "cs-ccp-vip-public-CND-API-CAN"
+DNS.7 = "cs-ccp-vip-public-DES-API-CAN"
+DNS.8 = "cs-ccp-vip-public-EON-API-CAN"
+DNS.9 = "cs-ccp-vip-public-FRE-API-CAN"
+DNS.10 = "cs-ccp-vip-public-GLA-API-CAN"
+DNS.11 = "cs-ccp-vip-public-HEA-ACF-CAN"
+DNS.12 = "cs-ccp-vip-public-HEA-ACW-CAN"
+DNS.13 = "cs-ccp-vip-public-HEA-API-CAN"
+DNS.14 = "cs-ccp-vip-public-HUX-SVC-CAN"
+DNS.15 = "cs-ccp-vip-public-HZN-WEB-CAN"
+DNS.16 = "cs-ccp-vip-public-KEY-API-CAN"
+DNS.17 = "cs-ccp-vip-public-KEYMGR-API-CAN"
+DNS.18 = "cs-ccp-vip-public-MON-API-CAN"
+DNS.19 = "cs-ccp-vip-public-NEU-SVR-CAN"
+DNS.20 = "cs-ccp-vip-public-NOV-API-CAN"
+DNS.21 = "cs-ccp-vip-public-NOV-VNC-CAN"
+DNS.22 = "cs-ccp-vip-public-OPS-WEB-CAN"
+DNS.23 = "cs-ccp-vip-public-SWF-PRX-CAN"
+DNS.24 = "10.200.192.224"
+IP.1 = "10.200.192.224"

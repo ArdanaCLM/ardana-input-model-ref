@@ -1,0 +1,291 @@
+BLS:
+    BLS-NET:
+        10.244.47.102:
+        - hcg-cp1-alm-hyp-m1-bls
+        10.244.47.103:
+        - hcg-cp1-alm-hyp-m1-VSA-BLK-bls
+        10.244.47.104:
+        - hcg-cp1-alm-hypervisor-VSA-BLK-bls
+        10.244.47.105:
+        - hcg-cp1-alm-hyp-m2-bls
+        10.244.47.106:
+        - hcg-cp1-alm-hyp-m2-VSA-BLK-bls
+        10.244.47.107:
+        - hcg-cp1-alm-hyp-m3-bls
+        10.244.47.108:
+        - hcg-cp1-alm-hyp-m3-VSA-BLK-bls
+        10.244.47.109:
+        - hcg-cp1-controller-m1-bls
+        10.244.47.110:
+        - hcg-cp1-controller-m2-bls
+        10.244.47.111:
+        - hcg-cp1-controller-m3-bls
+        10.244.47.112:
+        - hcg-cp1-comp0001-bls
+        10.244.47.113:
+        - hcg-cp2-alm-hyp-m1-bls
+        10.244.47.114:
+        - hcg-cp2-alm-hyp-m2-bls
+        10.244.47.115:
+        - hcg-cp2-alm-hyp-m3-bls
+        10.244.47.116:
+        - hcg-cp2-controller-m1-bls
+        10.244.47.117:
+        - hcg-cp2-controller-m2-bls
+        10.244.47.118:
+        - hcg-cp2-controller-m3-bls
+        10.244.47.119:
+        - hcg-cp2-comp0001-bls
+CAN:
+    CAN-NET:
+        10.244.45.102:
+        - hcg-cp1-controller-m1-can
+        10.244.45.103:
+        - hcg-cp1-controller-m2-can
+        10.244.45.104:
+        - hcg-cp1-controller-m3-can
+        10.244.45.105:
+        - hcg-cp2-controller-m1-can
+        10.244.45.106:
+        - hcg-cp2-controller-m2-can
+        10.244.45.107:
+        - hcg-cp2-controller-m3-can
+        10.244.45.108:
+        - hcg-cp1-vip-public-CEI-API-can
+        - hcg-cp1-vip-public-CND-API-can
+        - hcg-cp1-vip-public-DES-API-can
+        - hcg-cp1-vip-public-EON-API-can
+        - hcg-cp1-vip-public-FRE-API-can
+        - hcg-cp1-vip-public-GLA-API-can
+        - hcg-cp1-vip-public-HEA-ACF-can
+        - hcg-cp1-vip-public-HEA-ACW-can
+        - hcg-cp1-vip-public-HEA-API-can
+        - hcg-cp1-vip-public-HUX-SVC-can
+        - hcg-cp1-vip-public-HZN-WEB-can
+        - hcg-cp1-vip-public-KEY-API-can
+        - hcg-cp1-vip-public-KEYMGR-API-can
+        - hcg-cp1-vip-public-LOG-API-can
+        - hcg-cp1-vip-public-MON-API-can
+        - hcg-cp1-vip-public-NEU-SVR-can
+        - hcg-cp1-vip-public-NOV-API-can
+        - hcg-cp1-vip-public-NOV-VNC-can
+        - hcg-cp1-vip-public-OPS-WEB-can
+        - hcg-cp1-vip-public-SWF-PRX-can
+        10.244.45.109:
+        - hcg-cp2-vip-public-HEA-ACF-can
+        - hcg-cp2-vip-public-HEA-ACW-can
+        - hcg-cp2-vip-public-HEA-API-can
+        - hcg-cp2-vip-public-NEU-SVR-can
+        - hcg-cp2-vip-public-NOV-API-can
+        - hcg-cp2-vip-public-NOV-VNC-can
+CLM:
+    CLM-NET:
+        10.244.44.102:
+        - hcg-cp1-alm-hyp-m1-clm
+        10.244.44.103:
+        - hcg-cp1-alm-hyp-m2-clm
+        10.244.44.104:
+        - hcg-cp1-alm-hyp-m3-clm
+        10.244.44.105:
+        - hcg-cp1-controller-m1-clm
+        10.244.44.106:
+        - hcg-cp1-controller-m2-clm
+        10.244.44.107:
+        - hcg-cp1-controller-m3-clm
+        10.244.44.108:
+        - hcg-cp1-rmq-mysql-m1-clm
+        10.244.44.109:
+        - hcg-cp1-rmq-mysql-m2-clm
+        10.244.44.110:
+        - hcg-cp1-rmq-mysql-m3-clm
+        10.244.44.111:
+        - hcg-cp1-mml-m1-clm
+        10.244.44.112:
+        - hcg-cp1-mml-m2-clm
+        10.244.44.113:
+        - hcg-cp1-mml-m3-clm
+        10.244.44.114:
+        - hcg-cp1-network-m1-clm
+        10.244.44.115:
+        - hcg-cp1-network-m2-clm
+        10.244.44.116:
+        - hcg-cp1-network-m3-clm
+        10.244.44.117:
+        - hcg-cp1-comp0001-clm
+        10.244.44.118:
+        - hcg-cp2-alm-hyp-m1-clm
+        10.244.44.119:
+        - hcg-cp2-alm-hyp-m2-clm
+        10.244.44.120:
+        - hcg-cp2-alm-hyp-m3-clm
+        10.244.44.121:
+        - hcg-cp2-controller-m1-clm
+        10.244.44.122:
+        - hcg-cp2-controller-m2-clm
+        10.244.44.123:
+        - hcg-cp2-controller-m3-clm
+        10.244.44.124:
+        - hcg-cp2-rmq-mysql-m1-clm
+        10.244.44.125:
+        - hcg-cp2-rmq-mysql-m2-clm
+        10.244.44.126:
+        - hcg-cp2-rmq-mysql-m3-clm
+        10.244.44.127:
+        - hcg-cp2-network-m1-clm
+        10.244.44.128:
+        - hcg-cp2-network-m2-clm
+        10.244.44.129:
+        - hcg-cp2-network-m3-clm
+        10.244.44.130:
+        - hcg-cp2-comp0001-clm
+        10.244.44.131:
+        - hcg-cp1-vip-CEI-API-clm
+        - hcg-cp1-vip-CND-API-clm
+        - hcg-cp1-vip-DES-API-clm
+        - hcg-cp1-vip-EON-API-clm
+        - hcg-cp1-vip-FND-MDB-clm
+        - hcg-cp1-vip-FND-VDB-clm
+        - hcg-cp1-vip-FRE-API-clm
+        - hcg-cp1-vip-GLA-API-clm
+        - hcg-cp1-vip-GLA-REG-clm
+        - hcg-cp1-vip-HEA-ACF-clm
+        - hcg-cp1-vip-HEA-ACW-clm
+        - hcg-cp1-vip-HEA-API-clm
+        - hcg-cp1-vip-HUX-SVC-clm
+        - hcg-cp1-vip-HZN-WEB-clm
+        - hcg-cp1-vip-KEY-API-clm
+        - hcg-cp1-vip-KEYMGR-API-clm
+        - hcg-cp1-vip-LOG-API-clm
+        - hcg-cp1-vip-LOG-SVR-clm
+        - hcg-cp1-vip-MON-API-clm
+        - hcg-cp1-vip-NEU-SVR-clm
+        - hcg-cp1-vip-NOV-API-clm
+        - hcg-cp1-vip-NOV-MTD-clm
+        - hcg-cp1-vip-OCT-API-clm
+        - hcg-cp1-vip-OPS-WEB-clm
+        - hcg-cp1-vip-SWF-PRX-clm
+        - hcg-cp1-vip-admin-CEI-API-clm
+        - hcg-cp1-vip-admin-CND-API-clm
+        - hcg-cp1-vip-admin-DES-API-clm
+        - hcg-cp1-vip-admin-EON-API-clm
+        - hcg-cp1-vip-admin-FND-MDB-clm
+        - hcg-cp1-vip-admin-FRE-API-clm
+        - hcg-cp1-vip-admin-GLA-API-clm
+        - hcg-cp1-vip-admin-HEA-ACF-clm
+        - hcg-cp1-vip-admin-HEA-ACW-clm
+        - hcg-cp1-vip-admin-HEA-API-clm
+        - hcg-cp1-vip-admin-HUX-SVC-clm
+        - hcg-cp1-vip-admin-HZN-WEB-clm
+        - hcg-cp1-vip-admin-KEY-API-clm
+        - hcg-cp1-vip-admin-KEYMGR-API-clm
+        - hcg-cp1-vip-admin-LOG-API-clm
+        - hcg-cp1-vip-admin-LOG-SVR-clm
+        - hcg-cp1-vip-admin-MON-API-clm
+        - hcg-cp1-vip-admin-NEU-SVR-clm
+        - hcg-cp1-vip-admin-NOV-API-clm
+        - hcg-cp1-vip-admin-OPS-WEB-clm
+        - hcg-cp1-vip-admin-SWF-PRX-clm
+        10.244.44.132:
+        - hcg-cp2-vip-FND-MDB-clm
+        - hcg-cp2-vip-HEA-ACF-clm
+        - hcg-cp2-vip-HEA-ACW-clm
+        - hcg-cp2-vip-HEA-API-clm
+        - hcg-cp2-vip-NEU-SVR-clm
+        - hcg-cp2-vip-NOV-API-clm
+        - hcg-cp2-vip-NOV-MTD-clm
+        - hcg-cp2-vip-OCT-API-clm
+        - hcg-cp2-vip-admin-FND-MDB-clm
+        - hcg-cp2-vip-admin-HEA-ACF-clm
+        - hcg-cp2-vip-admin-HEA-ACW-clm
+        - hcg-cp2-vip-admin-HEA-API-clm
+        - hcg-cp2-vip-admin-NEU-SVR-clm
+        - hcg-cp2-vip-admin-NOV-API-clm
+OCTAVIA-MGMT-NET-CP1:
+    OCTAVIA-MGMT-NET-CP1: {}
+OCTAVIA-MGMT-NET-CP2:
+    OCTAVIA-MGMT-NET-CP2: {}
+PXE:
+    ESX-CONF-NET: {}
+    PXE-NET:
+        10.244.43.102:
+        - hcg-cp1-alm-hyp-m1-pxe
+        10.244.43.103:
+        - hcg-cp1-alm-hyp-m2-pxe
+        10.244.43.104:
+        - hcg-cp1-alm-hyp-m3-pxe
+        10.244.43.105:
+        - hcg-cp1-controller-m1-pxe
+        10.244.43.106:
+        - hcg-cp1-controller-m2-pxe
+        10.244.43.107:
+        - hcg-cp1-controller-m3-pxe
+        10.244.43.108:
+        - hcg-cp1-rmq-mysql-m1-pxe
+        10.244.43.109:
+        - hcg-cp1-rmq-mysql-m2-pxe
+        10.244.43.110:
+        - hcg-cp1-rmq-mysql-m3-pxe
+        10.244.43.111:
+        - hcg-cp1-mml-m1-pxe
+        10.244.43.112:
+        - hcg-cp1-mml-m2-pxe
+        10.244.43.113:
+        - hcg-cp1-mml-m3-pxe
+        10.244.43.114:
+        - hcg-cp1-network-m1-pxe
+        10.244.43.115:
+        - hcg-cp1-network-m2-pxe
+        10.244.43.116:
+        - hcg-cp1-network-m3-pxe
+        10.244.43.117:
+        - hcg-cp1-comp0001-pxe
+        10.244.43.202:
+        - hcg-cp2-alm-hyp-m1-pxe
+        10.244.43.203:
+        - hcg-cp2-alm-hyp-m2-pxe
+        10.244.43.204:
+        - hcg-cp2-alm-hyp-m3-pxe
+        10.244.43.205:
+        - hcg-cp2-controller-m1-pxe
+        10.244.43.206:
+        - hcg-cp2-controller-m2-pxe
+        10.244.43.207:
+        - hcg-cp2-controller-m3-pxe
+        10.244.43.208:
+        - hcg-cp2-rmq-mysql-m1-pxe
+        10.244.43.209:
+        - hcg-cp2-rmq-mysql-m2-pxe
+        10.244.43.210:
+        - hcg-cp2-rmq-mysql-m3-pxe
+        10.244.43.214:
+        - hcg-cp2-network-m1-pxe
+        10.244.43.215:
+        - hcg-cp2-network-m2-pxe
+        10.244.43.216:
+        - hcg-cp2-network-m3-pxe
+        10.244.43.217:
+        - hcg-cp2-comp0001-pxe
+TRUNK:
+    TRUNK-NET: {}
+VLAN2-TUL:
+    VLAN2-TUL-NET: {}
+VLAN3-TUL:
+    VLAN3-TUL-NET: {}
+VxLAN-VLAN1-TUL:
+    VxLAN-VLAN1-TUL-NET:
+        10.244.48.102:
+        - hcg-cp1-network-m1-vxlan-vlan1-tul
+        10.244.48.103:
+        - hcg-cp1-network-m2-vxlan-vlan1-tul
+        10.244.48.104:
+        - hcg-cp1-network-m3-vxlan-vlan1-tul
+        10.244.48.105:
+        - hcg-cp1-comp0001-vxlan-vlan1-tul
+        10.244.48.106:
+        - hcg-cp2-network-m1-vxlan-vlan1-tul
+        10.244.48.107:
+        - hcg-cp2-network-m2-vxlan-vlan1-tul
+        10.244.48.108:
+        - hcg-cp2-network-m3-vxlan-vlan1-tul
+        10.244.48.109:
+        - hcg-cp2-comp0001-vxlan-vlan1-tul

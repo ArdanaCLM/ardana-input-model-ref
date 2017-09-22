@@ -1,0 +1,77 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+---
+  product:
+    version: 2
+
+  network-groups:
+    - name: CONF
+      hostname-suffix: conf
+      component-endpoints:
+        - lifecycle-manager
+        - lifecycle-manager-target
+
+
+    - name: DCM
+      hostname-suffix: dcm
+      routes:
+        - default
+      load-balancers:
+        - provider: ip-cluster
+          name: dcm-loadbalancer
+          components:
+            - default
+          roles:
+            - admin
+
+
+    - name: CAN
+      load-balancers:
+        - provider: ip-cluster
+          name: can-loadbalancer
+          external-name: weiwen.can.com
+          tls-components:
+            - default
+          roles:
+            - public
+          cert-file:
+            my-public-cert
+
+      tags:
+        - neutron.l3_agent.external_network_bridge
+
+    - name: CLM
+      hostname: true
+      hostname-suffix: clm
+      component-endpoints:
+        - default
+      load-balancers:
+        - provider: ip-cluster
+          name: clm-loadbalancer
+          components:
+            - default
+          roles:
+            - internal
+
+      tags:
+        - neutron.ovsvapp.management_if
+
+    - name: VxLAN
+
+      tags:
+        - neutron.networks.vxlan:
+            tenant-vxlan-id-range: "10000:20000"
+
+    - name: iSCSI
+      hostname-suffix: iscsi
+
+
+    # Trunk network for ESXi compute node
+    - name: TRUNK
+      hostname-suffix: trunk
+
+      tags:
+        - neutron.ovsvapp.sec_bridge_if
+

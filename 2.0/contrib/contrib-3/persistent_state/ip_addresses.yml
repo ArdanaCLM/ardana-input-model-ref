@@ -1,0 +1,232 @@
+10.16.80.10:
+  addr: 10.16.80.10
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c0-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+10.16.80.11:
+  addr: 10.16.80.11
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.16.80.12:
+  addr: 10.16.80.12
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.16.80.13:
+  addr: 10.16.80.13
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.16.80.14:
+  addr: 10.16.80.14
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.16.80.15:
+  addr: 10.16.80.15
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.16.80.16:
+  addr: 10.16.80.16
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.16.80.17:
+  addr: 10.16.80.17
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.16.80.18:
+  addr: 10.16.80.18
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.16.80.19:
+  addr: 10.16.80.19
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.16.80.2:
+  addr: 10.16.80.2
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.16.80.20:
+  addr: 10.16.80.20
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.16.80.21:
+  addr: 10.16.80.21
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+10.16.80.3:
+  addr: 10.16.80.3
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+10.16.80.4:
+  addr: 10.16.80.4
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0002
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.16.80.5:
+  addr: 10.16.80.5
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vsa0003
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.16.80.6:
+  addr: 10.16.80.6
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.16.81.2:
+  addr: 10.16.81.2
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.16.81.3:
+  addr: 10.16.81.3
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.16.81.4:
+  addr: 10.16.81.4
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.16.81.5:
+  addr: 10.16.81.5
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.16.81.6:
+  addr: 10.16.81.6
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.16.81.7:
+  addr: 10.16.81.7
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.16.81.8:
+  addr: 10.16.81.8
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.16.81.9:
+  addr: 10.16.81.9
+  allocated: true
+  free: false
+  host: eu-em2-cp1-comp0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+15.124.132.2:
+  addr: 15.124.132.2
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+15.124.132.3:
+  addr: 15.124.132.3
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+15.124.132.4:
+  addr: 15.124.132.4
+  allocated: true
+  free: false
+  host: eu-em2-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+15.124.132.5:
+  addr: 15.124.132.5
+  allocated: true
+  free: false
+  host: eu-em2-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb

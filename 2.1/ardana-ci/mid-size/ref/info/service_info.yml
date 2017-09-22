@@ -1,0 +1,222 @@
+control-plane-1:
+    ceilometer:
+        ceilometer-agent-central:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ceilometer-agent-notification:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ceilometer-api:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ceilometer-client:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ceilometer-collector:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ceilometer-common:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ceilometer-expirer:
+        - mid-size-cp1-mtrmon-m1-mgmt
+    cinder:
+        cinder-api:
+        - mid-size-cp1-core-m1-mgmt
+        cinder-backup:
+        - mid-size-cp1-core-m1-mgmt
+        cinder-client:
+        - mid-size-cp1-core-m1-mgmt
+        cinder-scheduler:
+        - mid-size-cp1-core-m1-mgmt
+        cinder-volume:
+        - mid-size-cp1-core-m1-mgmt
+    foundation:
+        apache2:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        influxdb:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        ip-cluster:
+        - mid-size-cp1-core-m1-mgmt
+        kafka:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        memcached:
+        - mid-size-cp1-core-m1-mgmt
+        mysql:
+        - mid-size-cp1-dbmq-m1-mgmt
+        ntp-client:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-singleton-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        ntp-server:
+        - mid-size-cp1-core-m1-mgmt
+        openstack-client:
+        - mid-size-cp1-core-m1-mgmt
+        rabbitmq:
+        - mid-size-cp1-dbmq-m1-mgmt
+        sherpa-api:
+        - mid-size-cp1-core-m1-mgmt
+        storm:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        stunnel:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-singleton-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        swift-common:
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        swift-rsync:
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        vertica:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        zookeeper:
+        - mid-size-cp1-mtrmon-m1-mgmt
+    freezer:
+        freezer-agent:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-singleton-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        freezer-api:
+        - mid-size-cp1-mtrmon-m1-mgmt
+    glance:
+        glance-api:
+        - mid-size-cp1-core-m1-mgmt
+        glance-client:
+        - mid-size-cp1-core-m1-mgmt
+        glance-registry:
+        - mid-size-cp1-core-m1-mgmt
+    heat:
+        heat-api:
+        - mid-size-cp1-core-m1-mgmt
+        heat-api-cfn:
+        - mid-size-cp1-core-m1-mgmt
+        heat-api-cloudwatch:
+        - mid-size-cp1-core-m1-mgmt
+        heat-client:
+        - mid-size-cp1-core-m1-mgmt
+        heat-engine:
+        - mid-size-cp1-core-m1-mgmt
+    horizon:
+        horizon:
+        - mid-size-cp1-core-m1-mgmt
+    keystone:
+        keystone-api:
+        - mid-size-cp1-dbmq-m1-mgmt
+        keystone-client:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+    logging:
+        logging-producer:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-singleton-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        logging-server:
+        - mid-size-cp1-mtrmon-m1-mgmt
+    monasca:
+        monasca-agent:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-singleton-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        monasca-api:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        monasca-client:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        monasca-notifier:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        monasca-persister:
+        - mid-size-cp1-mtrmon-m1-mgmt
+        monasca-threshold:
+        - mid-size-cp1-mtrmon-m1-mgmt
+    neutron:
+        neutron-client:
+        - mid-size-cp1-core-m1-mgmt
+        neutron-dhcp-agent:
+        - mid-size-cp1-neut-m1-mgmt
+        neutron-l3-agent:
+        - mid-size-cp1-comp0001-mgmt
+        neutron-lbaasv2-agent:
+        - mid-size-cp1-comp0001-mgmt
+        neutron-metadata-agent:
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        neutron-ml2-plugin:
+        - mid-size-cp1-core-m1-mgmt
+        neutron-openvswitch-agent:
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        neutron-server:
+        - mid-size-cp1-core-m1-mgmt
+        neutron-vpn-agent:
+        - mid-size-cp1-neut-m1-mgmt
+    nova:
+        nova-api:
+        - mid-size-cp1-core-m1-mgmt
+        nova-client:
+        - mid-size-cp1-core-m1-mgmt
+        nova-compute:
+        - mid-size-cp1-comp0001-mgmt
+        nova-compute-kvm:
+        - mid-size-cp1-comp0001-mgmt
+        nova-conductor:
+        - mid-size-cp1-core-m1-mgmt
+        nova-console-auth:
+        - mid-size-cp1-core-m1-mgmt
+        nova-metadata:
+        - mid-size-cp1-core-m1-mgmt
+        nova-novncproxy:
+        - mid-size-cp1-core-m1-mgmt
+        nova-scheduler:
+        - mid-size-cp1-core-m1-mgmt
+    operations:
+        lifecycle-manager:
+        - mid-size-cp1-core-m1-mgmt
+        lifecycle-manager-target:
+        - mid-size-cp1-core-m1-mgmt
+        - mid-size-cp1-mtrmon-m1-mgmt
+        - mid-size-cp1-dbmq-m1-mgmt
+        - mid-size-cp1-swpac-m1-mgmt
+        - mid-size-cp1-neut-m1-mgmt
+        - mid-size-cp1-singleton-m1-mgmt
+        - mid-size-cp1-swobj0001-mgmt
+        - mid-size-cp1-comp0001-mgmt
+        ops-console-monitor:
+        - mid-size-cp1-core-m1-mgmt
+        ops-console-web:
+        - mid-size-cp1-core-m1-mgmt
+    swift:
+        swift-account:
+        - mid-size-cp1-swpac-m1-mgmt
+        swift-client:
+        - mid-size-cp1-swpac-m1-mgmt
+        swift-container:
+        - mid-size-cp1-swpac-m1-mgmt
+        swift-object:
+        - mid-size-cp1-swobj0001-mgmt
+        swift-proxy:
+        - mid-size-cp1-swpac-m1-mgmt
+        swift-ring-builder:
+        - mid-size-cp1-swpac-m1-mgmt
+    vsa-storage:
+        cmc-service:
+        - mid-size-cp1-core-m1-mgmt

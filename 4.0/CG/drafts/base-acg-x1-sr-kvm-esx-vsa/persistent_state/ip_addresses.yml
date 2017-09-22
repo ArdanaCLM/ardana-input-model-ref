@@ -1,0 +1,176 @@
+10.244.43.102:
+  addr: 10.244.43.102
+  allocated: true
+  free: false
+  host: hcg-cp1-alm-hyp-m1
+  persisted: false
+  server-id: hypervisor1
+  used-by: server
+10.244.43.105:
+  addr: 10.244.43.105
+  allocated: true
+  free: false
+  host: hcg-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.244.43.108:
+  addr: 10.244.43.108
+  allocated: true
+  free: false
+  host: hcg-cp1-rmq-mysql-m1
+  persisted: false
+  server-id: rmq-mysql1
+  used-by: server
+10.244.43.111:
+  addr: 10.244.43.111
+  allocated: true
+  free: false
+  host: hcg-cp1-mml-m1
+  persisted: false
+  server-id: mml1
+  used-by: server
+10.244.43.114:
+  addr: 10.244.43.114
+  allocated: true
+  free: false
+  host: hcg-cp1-network-m1
+  persisted: false
+  server-id: network1
+  used-by: server
+10.244.43.117:
+  addr: 10.244.43.117
+  allocated: true
+  free: false
+  host: hcg-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.244.44.102:
+  addr: 10.244.44.102
+  allocated: true
+  free: false
+  host: hcg-cp1-alm-hyp-m1
+  persisted: false
+  server-id: hypervisor1
+  used-by: server
+10.244.44.103:
+  addr: 10.244.44.103
+  allocated: true
+  free: false
+  host: hcg-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.244.44.104:
+  addr: 10.244.44.104
+  allocated: true
+  free: false
+  host: hcg-cp1-rmq-mysql-m1
+  persisted: false
+  server-id: rmq-mysql1
+  used-by: server
+10.244.44.105:
+  addr: 10.244.44.105
+  allocated: true
+  free: false
+  host: hcg-cp1-mml-m1
+  persisted: false
+  server-id: mml1
+  used-by: server
+10.244.44.106:
+  addr: 10.244.44.106
+  allocated: true
+  free: false
+  host: hcg-cp1-network-m1
+  persisted: false
+  server-id: network1
+  used-by: server
+10.244.44.107:
+  addr: 10.244.44.107
+  allocated: true
+  free: false
+  host: hcg-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.244.44.108:
+  addr: 10.244.44.108
+  allocated: true
+  free: false
+  host: hcg-cp1-vip-lb-clm
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.244.45.102:
+  addr: 10.244.45.102
+  allocated: true
+  free: false
+  host: hcg-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.244.45.103:
+  addr: 10.244.45.103
+  allocated: true
+  free: false
+  host: hcg-cp1-vip-extlb-can
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+10.244.47.102:
+  addr: 10.244.47.102
+  allocated: true
+  free: false
+  host: hcg-cp1-alm-hyp-m1
+  persisted: false
+  server-id: hypervisor1
+  used-by: server
+10.244.47.103:
+  addr: 10.244.47.103
+  allocated: true
+  free: false
+  host: hcg-cp1-alm-hyp-m1
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.244.47.104:
+  addr: 10.244.47.104
+  allocated: true
+  free: false
+  host: hcg-cp1-alm-hypervisor
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+10.244.47.105:
+  addr: 10.244.47.105
+  allocated: true
+  free: false
+  host: hcg-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.244.47.106:
+  addr: 10.244.47.106
+  allocated: true
+  free: false
+  host: hcg-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.244.48.102:
+  addr: 10.244.48.102
+  allocated: true
+  free: false
+  host: hcg-cp1-network-m1
+  persisted: false
+  server-id: network1
+  used-by: server
+10.244.48.103:
+  addr: 10.244.48.103
+  allocated: true
+  free: false
+  host: hcg-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server

@@ -1,0 +1,31 @@
+---
+  product:
+    version: 2
+
+  disk-models:
+  - name: LIFECYCLE-MANAGER-DISKS
+    # Disk model to be used for Lifecycle Managers nodes
+    # /dev/sda_root is used as a volume group for /, /var/log and /var/crash
+    # sda_root is a templated value to align with whatever partition is really used
+    # This value is checked in os config and replaced by the partition actually used
+    # on sda e.g. sda1 or sda5
+
+    volume-groups:
+      - name: ardana-vg
+        physical-volumes:
+          - /dev/sda_root
+
+        logical-volumes:
+        # The policy is not to consume 100% of the space of each volume group.
+        # 5% should be left free for snapshots and to allow for some flexibility.
+          - name: root
+            size: 80%
+            fstype: ext4
+            mount: /
+          - name: crash
+            size: 15%
+            mount: /var/crash
+            fstype: ext4
+            mkfs-opts: -O large_file
+        consumer:
+          name: os

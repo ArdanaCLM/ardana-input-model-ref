@@ -1,0 +1,104 @@
+regions:
+    region1:
+        control_planes:
+            control-plane-1:
+                services:
+                    barbican:
+                    - barbican-api
+                    - barbican-worker
+                    ceilometer:
+                    - ceilometer-common
+                    - ceilometer-agent-notification
+                    - ceilometer-api
+                    - ceilometer-polling
+                    clients:
+                    - barbican-client
+                    - openstack-client
+                    - heat-client
+                    - swift-client
+                    - neutron-client
+                    - ironic-client
+                    - glance-client
+                    - ceilometer-client
+                    - keystone-client
+                    - monasca-client
+                    - nova-client
+                    foundation:
+                    - ip-cluster
+                    - ntp-client
+                    - zookeeper
+                    - ardana-ca
+                    - stunnel
+                    - apache2
+                    - ntp-server
+                    - vertica
+                    - rabbitmq
+                    - storm
+                    - mysql
+                    - spark
+                    - kafka
+                    - memcached
+                    freezer:
+                    - freezer-agent
+                    - freezer-api
+                    glance:
+                    - glance-api
+                    - glance-registry
+                    heat:
+                    - heat-api-cfn
+                    - heat-engine
+                    - heat-api
+                    - heat-api-cloudwatch
+                    ardana:
+                    - lifecycle-manager-target
+                    - ardana-ux-services
+                    - lifecycle-manager
+                    horizon:
+                    - horizon
+                    ironic:
+                    - ironic-conductor
+                    - ironic-api
+                    keystone:
+                    - keystone-api
+                    logging:
+                    - logging-api
+                    - logging-producer
+                    - logging-server
+                    - logging-rotate
+                    monasca:
+                    - monasca-threshold
+                    - monasca-liveness-check
+                    - monasca-api
+                    - monasca-transform
+                    - monasca-notifier
+                    - monasca-agent
+                    - monasca-persister
+                    neutron:
+                    - neutron-dhcp-agent
+                    - neutron-metadata-agent
+                    - neutron-ml2-plugin
+                    - neutron-server
+                    - neutron-openvswitch-agent
+                    nova:
+                    - nova-console-auth
+                    - nova-novncproxy
+                    - nova-scheduler-ironic
+                    - nova-compute
+                    - nova-conductor
+                    - nova-api
+                    - nova-compute-ironic
+                    - nova-scheduler
+                    - nova-metadata
+                    operations:
+                    - ops-console-web
+                    - ops-console-monitor
+                    swift:
+                    - swift-ring-builder
+                    - swift-rsync
+                    - swift-account
+                    - swift-proxy
+                    - swift-container
+                    - swift-common
+                    - swift-object
+                    tempest:
+                    - tempest

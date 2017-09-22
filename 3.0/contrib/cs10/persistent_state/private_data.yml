@@ -1,0 +1,600 @@
+barbican_admin_password: e9i9XNs5
+barbican_admin_password__is_secure: false
+barbican_admin_password__metadata:
+- clusters:
+  - controller
+  component: barbican-api
+  cp: ccp
+barbican_service_password: SW4hGLPs2
+barbican_service_password__is_secure: false
+barbican_service_password__metadata:
+- clusters:
+  - controller
+  component: barbican-api
+  cp: ccp
+ceilometer_metering_secret: QgthG1torcC7i
+ceilometer_metering_secret__is_secure: false
+ceilometer_metering_secret__metadata:
+- clusters:
+  - monitoring
+  component: ceilometer-common
+  cp: ccp
+dbadmin_user_password: 40GvHBW0zbjPsy
+dbadmin_user_password__is_secure: false
+dbadmin_user_password__metadata:
+- clusters:
+  - monitoring
+  component: vertica
+  cp: ccp
+erlang_cookie: Ft3IDYjYjD7IEY0vEPZH7
+erlang_cookie__is_secure: false
+erlang_cookie__metadata:
+- clusters:
+  - db_rabbit
+  component: rabbitmq
+  cp: ccp
+haproxy_stats_password: ITiYjI6xFR
+haproxy_stats_password__is_secure: false
+haproxy_stats_password__metadata:
+- clusters:
+  - management
+  component: ip-cluster
+  cp: ccp
+horizon_secret_key: zz4UF4VjJ5w8C9G1wRgU5U4HWl8H82bzxrKQGrbyBqBToVSsReTq4kywMtGOgTFJ
+horizon_secret_key__is_secure: false
+horizon_secret_key__metadata:
+- clusters:
+  - controller
+  component: horizon
+  cp: ccp
+influxdb_monasca_api_password: 1GfJQgQU
+influxdb_monasca_api_password__is_secure: false
+influxdb_monasca_api_password__metadata:
+- clusters:
+  - monitoring
+  component: monasca-api
+  consumes: influxdb
+  cp: ccp
+influxdb_monasca_persister_password: oCHVwMnu
+influxdb_monasca_persister_password__is_secure: false
+influxdb_monasca_persister_password__metadata:
+- clusters:
+  - monitoring
+  component: monasca-persister
+  consumes: influxdb
+  cp: ccp
+keepalive_vrrp_password: LWKkCRb
+keepalive_vrrp_password__is_secure: false
+keepalive_vrrp_password__metadata:
+- clusters:
+  - management
+  component: ip-cluster
+  cp: ccp
+keepalived_vrrp_index: 0
+keepalived_vrrp_index__is_secure: false
+keepalived_vrrp_index__metadata:
+- clusters:
+  - management
+  component: ip-cluster
+  cp: ccp
+keystone_admin_pwd: hCnZV8EE
+keystone_admin_pwd__is_secure: false
+keystone_admin_pwd__metadata:
+- clusters:
+  - management
+  component: keystone-api
+  cp: ccp
+keystone_admin_token: NXdkGLF5T6qs
+keystone_admin_token__is_secure: false
+keystone_admin_token__metadata:
+- clusters:
+  - management
+  component: keystone-api
+  cp: ccp
+keystone_backup_password: nBWJjheG7
+keystone_backup_password__is_secure: false
+keystone_backup_password__metadata:
+- clusters:
+  - deployer
+  - management
+  - monitoring
+  - db_rabbit
+  - controller
+  - network
+  component: freezer-agent
+  consumes: keystone-api
+  cp: ccp
+keystone_ceilometer_password: EuyaQ3aSKEtScFrO
+keystone_ceilometer_password__is_secure: false
+keystone_ceilometer_password__metadata:
+- clusters:
+  - monitoring
+  component: ceilometer-common
+  consumes: keystone-api
+  cp: ccp
+keystone_cinder_password: HDK5C7iALKdY
+keystone_cinder_password__is_secure: false
+keystone_cinder_password__metadata:
+- clusters:
+  - controller
+  component: cinder-api
+  consumes: keystone-api
+  cp: ccp
+keystone_cinderinternal_password: 9Mb3FDxA6C
+keystone_cinderinternal_password__is_secure: false
+keystone_cinderinternal_password__metadata:
+- clusters:
+  - controller
+  component: cinder-api
+  consumes: keystone-api
+  cp: ccp
+keystone_demo_pwd: 2H4VR5z8
+keystone_demo_pwd__is_secure: false
+keystone_demo_pwd__metadata:
+- clusters:
+  - management
+  component: keystone-api
+  cp: ccp
+keystone_designate_password: xQcRz5rE6
+keystone_designate_password__is_secure: false
+keystone_designate_password__metadata:
+- clusters:
+  - controller
+  component: designate-central
+  consumes: keystone-api
+  cp: ccp
+keystone_eon_password: ERqOgC37425P
+keystone_eon_password__is_secure: false
+keystone_eon_password__metadata:
+- clusters:
+  - management
+  component: eon-api
+  consumes: keystone-api
+  cp: ccp
+keystone_freezer_password: OdGz9qiPyk
+keystone_freezer_password__is_secure: false
+keystone_freezer_password__metadata:
+- clusters:
+  - monitoring
+  component: freezer-api
+  consumes: keystone-api
+  cp: ccp
+keystone_glance_check_password: vbbSwsx8WO1
+keystone_glance_check_password__is_secure: false
+keystone_glance_check_password__metadata:
+- clusters:
+  - controller
+  component: glance-api
+  consumes: keystone-api
+  cp: ccp
+keystone_glance_password: gQyaFPLQW9
+keystone_glance_password__is_secure: false
+keystone_glance_password__metadata:
+- clusters:
+  - controller
+  component: glance-api
+  consumes: keystone-api
+  cp: ccp
+keystone_glance_swift_password: hjWMfNzyVpuR
+keystone_glance_swift_password__is_secure: false
+keystone_glance_swift_password__metadata:
+- clusters:
+  - controller
+  component: glance-api
+  consumes: keystone-api
+  cp: ccp
+keystone_heat_password: TYv3vPOPS
+keystone_heat_password__is_secure: false
+keystone_heat_password__metadata:
+- clusters:
+  - controller
+  component: heat-api
+  consumes: keystone-api
+  cp: ccp
+keystone_monasca_agent_password: la31wytI
+keystone_monasca_agent_password__is_secure: false
+keystone_monasca_agent_password__metadata:
+- clusters:
+  - deployer
+  - management
+  - monitoring
+  - db_rabbit
+  - controller
+  - network
+  component: monasca-agent
+  consumes: keystone-api
+  cp: ccp
+keystone_monasca_password: 2nriGplj
+keystone_monasca_password__is_secure: false
+keystone_monasca_password__metadata:
+- clusters:
+  - monitoring
+  component: monasca-api
+  consumes: keystone-api
+  cp: ccp
+keystone_neutron_password: hMUIVfOJ1G6I
+keystone_neutron_password__is_secure: false
+keystone_neutron_password__metadata:
+- clusters:
+  - controller
+  component: neutron-server
+  consumes: keystone-api
+  cp: ccp
+keystone_nova_password: itb23m03
+keystone_nova_password__is_secure: false
+keystone_nova_password__metadata:
+- clusters:
+  - controller
+  component: nova-api
+  consumes: keystone-api
+  cp: ccp
+keystone_swift_dispersion_password: V6VZCcNjpa
+keystone_swift_dispersion_password__is_secure: false
+keystone_swift_dispersion_password__metadata:
+- clusters:
+  - controller
+  component: swift-proxy
+  consumes: keystone-api
+  cp: ccp
+keystone_swift_monitor_password: Ede0osi8YDI
+keystone_swift_monitor_password__is_secure: false
+keystone_swift_monitor_password__metadata:
+- clusters:
+  - controller
+  component: swift-proxy
+  consumes: keystone-api
+  cp: ccp
+keystone_swift_password: WzfN6v0anr5
+keystone_swift_password__is_secure: false
+keystone_swift_password__metadata:
+- clusters:
+  - controller
+  component: swift-proxy
+  consumes: keystone-api
+  cp: ccp
+logging_keystone_password: qNa5fIOBVX
+logging_keystone_password__is_secure: false
+logging_keystone_password__metadata:
+- clusters:
+  - monitoring
+  component: logging-server
+  consumes: keystone-api
+  cp: ccp
+logging_kibana_password: kMjWS4b9V
+logging_kibana_password__is_secure: false
+logging_kibana_password__metadata:
+- clusters:
+  - monitoring
+  component: logging-server
+  cp: ccp
+metadata_proxy_shared_secret: w298N8OYjtmyM
+metadata_proxy_shared_secret__is_secure: false
+metadata_proxy_shared_secret__metadata:
+- clusters:
+  - network
+  component: neutron-metadata-agent
+  cp: ccp
+- clusters:
+  - controller
+  component: nova-metadata
+  cp: ccp
+monitor_user_password: xwQbmcgOLdqTrbzp8
+monitor_user_password__is_secure: false
+monitor_user_password__metadata:
+- clusters:
+  - monitoring
+  component: vertica
+  cp: ccp
+mysql_admin_password: LirRDr9d3Fug0H7X
+mysql_admin_password__is_secure: false
+mysql_admin_password__metadata:
+- clusters:
+  - monitoring
+  component: ceilometer
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - management
+  component: eon
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  component: heat
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  - management
+  component: keystone
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  - management
+  component: nova
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  component: cinder
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  component: glance
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  - management
+  - network
+  component: neutron
+  consumes: mysql
+  cp: ccp
+- clusters:
+  - controller
+  component: horizon
+  consumes: mysql
+  cp: ccp
+mysql_barbican_password: ONiaCv8mU
+mysql_barbican_password__is_secure: false
+mysql_barbican_password__metadata:
+- clusters:
+  - controller
+  component: barbican
+  consumes: mysql
+  cp: ccp
+mysql_cluster_name: aOXatGBjH
+mysql_cluster_name__is_secure: false
+mysql_cluster_name__metadata:
+- clusters:
+  - db_rabbit
+  component: mysql
+  cp: ccp
+mysql_clustercheck_pwd: h7OblFsXm
+mysql_clustercheck_pwd__is_secure: false
+mysql_clustercheck_pwd__metadata:
+- clusters:
+  - db_rabbit
+  component: mysql
+  cp: ccp
+mysql_designate_password: 1nVIxnQJdLLX
+mysql_designate_password__is_secure: false
+mysql_designate_password__metadata:
+- clusters:
+  - controller
+  component: designate
+  consumes: mysql
+  cp: ccp
+mysql_monasca_api_password: iSCG2tDPzP
+mysql_monasca_api_password__is_secure: false
+mysql_monasca_api_password__metadata:
+- clusters:
+  - db_rabbit
+  - controller
+  - management
+  - monitoring
+  - network
+  - deployer
+  component: monasca
+  consumes: mysql
+  cp: ccp
+mysql_monasca_notifier_password: Out0j6hqhXx
+mysql_monasca_notifier_password__is_secure: false
+mysql_monasca_notifier_password__metadata:
+- clusters:
+  - db_rabbit
+  - controller
+  - management
+  - monitoring
+  - network
+  - deployer
+  component: monasca
+  consumes: mysql
+  cp: ccp
+mysql_monasca_thresh_password: t9aKRtzkFUqw
+mysql_monasca_thresh_password__is_secure: false
+mysql_monasca_thresh_password__metadata:
+- clusters:
+  - db_rabbit
+  - controller
+  - management
+  - monitoring
+  - network
+  - deployer
+  component: monasca
+  consumes: mysql
+  cp: ccp
+mysql_powerdns_password: 4BmQNKdV2
+mysql_powerdns_password__is_secure: false
+mysql_powerdns_password__metadata:
+- clusters:
+  - controller
+  component: powerdns
+  consumes: mysql
+  cp: ccp
+mysql_root_pwd: DJoU1Dsm1y
+mysql_root_pwd__is_secure: false
+mysql_root_pwd__metadata:
+- clusters:
+  - db_rabbit
+  component: mysql
+  cp: ccp
+mysql_sst_password: XeRYn3oC1
+mysql_sst_password__is_secure: false
+mysql_sst_password__metadata:
+- clusters:
+  - db_rabbit
+  component: mysql
+  cp: ccp
+nova_monasca_password: lhYF7n8d9y
+nova_monasca_password__is_secure: false
+nova_monasca_password__metadata:
+- clusters:
+  - controller
+  component: nova-api
+  consumes: keystone-api
+  cp: ccp
+ops_mon_mdb_password: yg7U4TsUqGg
+ops_mon_mdb_password__is_secure: false
+ops_mon_mdb_password__metadata:
+- clusters:
+  - db_rabbit
+  - controller
+  - management
+  - monitoring
+  - network
+  - deployer
+  component: operations
+  consumes: mysql
+  cp: ccp
+password: BSSYIq3R
+password__is_secure: false
+password__metadata:
+- clusters:
+  - deployer
+  - management
+  - monitoring
+  - db_rabbit
+  - controller
+  - network
+  component: freezer-agent
+  consumes: mysql
+  cp: ccp
+rmq_barbican_password: 5HXiCdkOibI
+rmq_barbican_password__is_secure: false
+rmq_barbican_password__metadata:
+- clusters:
+  - controller
+  component: barbican
+  consumes: rabbitmq
+  cp: ccp
+rmq_ceilometer_password: 3Qec5XhQrGj2uDuf
+rmq_ceilometer_password__is_secure: false
+rmq_ceilometer_password__metadata:
+- clusters:
+  - monitoring
+  component: ceilometer
+  consumes: rabbitmq
+  cp: ccp
+rmq_designate_password: bZmgxnzug
+rmq_designate_password__is_secure: false
+rmq_designate_password__metadata:
+- clusters:
+  - controller
+  component: designate
+  consumes: rabbitmq
+  cp: ccp
+rmq_keystone_password: Ii7MQCmIKB
+rmq_keystone_password__is_secure: false
+rmq_keystone_password__metadata:
+- clusters:
+  - controller
+  - management
+  component: keystone
+  consumes: rabbitmq
+  cp: ccp
+rmq_monasca_monitor_password: kSGMQBR5lV
+rmq_monasca_monitor_password__is_secure: false
+rmq_monasca_monitor_password__metadata:
+- clusters:
+  - deployer
+  - management
+  - monitoring
+  - db_rabbit
+  - controller
+  - network
+  component: monasca-agent
+  consumes: rabbitmq
+  cp: ccp
+rmq_nova_password: Mdw7xWiV
+rmq_nova_password__is_secure: false
+rmq_nova_password__metadata:
+- clusters:
+  - controller
+  - management
+  component: nova
+  consumes: rabbitmq
+  cp: ccp
+rmq_service_password: X3ivA1m4u
+rmq_service_password__is_secure: false
+rmq_service_password__metadata:
+- clusters:
+  - db_rabbit
+  - controller
+  - management
+  - monitoring
+  - network
+  - deployer
+  component: logging
+  consumes: rabbitmq
+  cp: ccp
+- clusters:
+  - management
+  component: eon
+  consumes: rabbitmq
+  cp: ccp
+- clusters:
+  - controller
+  component: heat
+  consumes: rabbitmq
+  cp: ccp
+- clusters:
+  - controller
+  component: cinder
+  consumes: rabbitmq
+  cp: ccp
+- clusters:
+  - controller
+  component: glance
+  consumes: rabbitmq
+  cp: ccp
+- clusters:
+  - controller
+  - management
+  - network
+  component: neutron
+  consumes: rabbitmq
+  cp: ccp
+- clusters:
+  - db_rabbit
+  component: rabbitmq
+  cp: ccp
+swift_hash_path_prefix: nhQel3cMh
+swift_hash_path_prefix__is_secure: false
+swift_hash_path_prefix__metadata:
+- clusters:
+  - controller
+  component: swift-common
+  cp: ccp
+swift_hash_path_suffix: ncvvTtITA
+swift_hash_path_suffix__is_secure: false
+swift_hash_path_suffix__metadata:
+- clusters:
+  - controller
+  component: swift-common
+  cp: ccp
+swift_intracluster_sync_key: VGO9aYlOi
+swift_intracluster_sync_key__is_secure: false
+swift_intracluster_sync_key__metadata:
+- clusters:
+  - controller
+  component: swift-container
+  cp: ccp
+vertica_monasca_api_password: GGjYpqiZ
+vertica_monasca_api_password__is_secure: false
+vertica_monasca_api_password__metadata:
+- clusters:
+  - monitoring
+  component: monasca-api
+  consumes: vertica
+  cp: ccp
+vertica_monasca_persister_password: 9E3uipRlmSv
+vertica_monasca_persister_password__is_secure: false
+vertica_monasca_persister_password__metadata:
+- clusters:
+  - monitoring
+  component: monasca-persister
+  consumes: vertica
+  cp: ccp

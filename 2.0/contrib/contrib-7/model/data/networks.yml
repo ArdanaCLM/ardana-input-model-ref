@@ -1,0 +1,84 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  networks:
+    #
+    # This example uses the following networks
+    #
+    # Network       CIDR             VLAN
+    # -------       ----             ----
+    # External API  10.0.1.0/24      101 (tagged)
+    # External VM   see note 1       102 (tagged)
+    # Guest         10.1.1.0/24      103 (tagged)
+    # Mgmt          10.2.1.0/24      100 (untagged)
+    #
+    # Notes:
+    # 1. Defined as part of Neutron configuration
+    #
+    # Vlan 1846 - Ardana Scale Mgmt (untagged) Network : 10.12.48.0/23 Gateway IP: 10.12.48.1 Subnet Mask: 255.255.254.0 Usable IPs: 10.12.48.4 - 10.12.49.254
+    # Vlan 1847 - Ardana Scale External Network : 10.13.0.0/18 Gateway IP: 10.13.0.1 Subnet Mask: 255.255.192.0 Usable IPs: 10.13.0.4 - 10.13.63.254
+    # Vlan 1848 - Ardana Scale Service Network : 10.12.50.0/23 Gateway IP: 10.12.50.1 Subnet Mask: 255.255.254.0 Usable IPs: 10.12.50.4 - 10.12.51.254
+    # Vlan 1849 - Ardana Scale external API 10.13.64.0/23
+    # Vlan 1850 - Ardana Scale guest - 10.13.66.0/23
+
+    - name: EXTERNAL-API-NET
+      vlanid: 1849
+      tagged-vlan: true
+      cidr: 10.13.64.0/23
+      start-address: 10.13.65.100
+      end-address: 10.13.65.253
+      gateway-ip: 10.13.64.1
+      network-group: EXTERNAL-API
+
+    - name: EXTERNAL-VM-NET
+      vlanid: 1847
+      tagged-vlan: true
+      cidr: 10.13.0.0/18
+      start-address: 10.13.32.0
+      end-address: 10.13.47.253
+      gateway-ip: 10.13.0.1
+      network-group: EXTERNAL-VM
+
+    - name: GUEST-NET
+      vlanid: 1850
+      tagged-vlan: true
+      cidr: 10.13.66.0/23
+      start-address: 10.13.67.100
+      end-address: 10.13.67.253
+      gateway-ip: 10.13.66.1
+      network-group: GUEST
+
+    - name: MANAGEMENT-NET
+      vlanid: 1846
+      tagged-vlan: false
+      cidr: 10.12.48.0/23
+      start-address: 10.12.49.101
+      end-address: 10.12.49.254
+      gateway-ip: 10.12.48.1
+      network-group: MANAGEMENT
+
+    - name: SERVICE-NET
+      vlanid: 1848
+      tagged-vlan: true
+      cidr: 10.12.50.0/23
+      start-address: 10.12.51.100
+      end-address: 10.12.51.254
+      gateway-ip: 10.12.50.1
+      network-group: SERVICE

@@ -1,0 +1,135 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  networks:
+    #
+    # This example uses the following networks
+    #
+    # Network       CIDR             VLAN
+    # -------       ----             ----
+    # PXE-NET       10.244.43.0/24   3553 (untagged)
+    # CLM-NET       10.244.44.0/24   3534 (tagged)
+    # CAN-NET       10.244.45.0/24   3535 (tagged)
+    # BLS-NET       10.244.47.0/24   3537 (tagged)
+    #
+    # Notes:
+    # 1. External Networks are provider networks and defined as part of neutron configuration. Refer neutron_config.yml
+    #
+    # Modify these values to match your environment
+    #
+    - name: PXE-NET
+      vlanid: 3533
+      tagged-vlan: false
+      cidr: 10.244.43.0/24
+      gateway-ip: 10.244.43.1
+      network-group: PXE
+      addresses:
+        - 10.244.43.102-10.244.43.217
+
+    - name: PXE-WR-1
+      cidr: 192.168.101.0/24
+      tagged-vlan: False
+      network-group: PXE-WR-1
+
+    - name: PXE-WR-2
+      cidr: 192.168.102.0/24
+      tagged-vlan: False
+      network-group: PXE-WR-2
+
+    - name: CLM-NET
+      vlanid: 3534
+      tagged-vlan: true
+      cidr: 10.244.44.0/24
+      gateway-ip: 10.244.44.1
+      network-group: CLM
+      addresses:
+        - 10.244.44.12-10.244.44.29
+
+    - name: CLM-WR-1
+      vlanid: 3534
+      tagged-vlan: true
+      cidr: 10.244.44.0/24
+      gateway-ip: 10.244.44.1
+      network-group: CLM
+      addresses:
+        - 10.244.44.30-10.244.44.139
+
+    - name: CLM-WR-2
+      vlanid: 3534
+      tagged-vlan: true
+      cidr: 10.244.44.0/24
+      gateway-ip: 10.244.44.1
+      network-group: CLM
+      addresses:
+        - 10.244.44.140-10.244.44.252
+
+    - name: CAN-NET
+      vlanid: 3535
+      tagged-vlan: true
+      cidr: 10.244.45.0/24
+      gateway-ip: 10.244.45.1
+      network-group: CAN
+      addresses:
+        - 10.244.45.12-10.244.45.29
+
+    - name: CAN-WR-1
+      vlanid: 3535
+      tagged-vlan: true
+      cidr: 10.244.45.0/24
+      gateway-ip: 10.244.45.1
+      network-group: CAN
+      addresses:
+        - 10.244.45.30-10.244.45.139
+
+    - name: CAN-WR-2
+      vlanid: 3535
+      tagged-vlan: true
+      cidr: 10.244.45.0/24
+      gateway-ip: 10.244.45.1
+      network-group: CAN
+      addresses:
+        - 10.244.45.140-10.244.45.252
+
+    - name: BLS-NET
+      vlanid: 3537
+      tagged-vlan: true
+      cidr: 10.244.47.0/24
+      gateway-ip: 10.244.47.1
+      network-group: BLS
+      addresses:
+        - 10.244.47.12-10.244.47.29
+
+    - name: BLS-WR-1
+      vlanid: 3537
+      tagged-vlan: true
+      cidr: 10.244.47.0/24
+      gateway-ip: 10.244.47.1
+      network-group: BLS
+      addresses:
+        - 10.244.47.30-10.244.47.139
+
+    - name: BLS-WR-2
+      vlanid: 3537
+      tagged-vlan: true
+      cidr: 10.244.47.0/24
+      gateway-ip: 10.244.47.1
+      network-group: BLS
+      addresses:
+        - 10.244.47.140-10.244.47.252

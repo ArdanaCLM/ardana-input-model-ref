@@ -1,0 +1,35 @@
+service_ips:
+    vsa:
+    -   cluster: vsa
+        cluster_ip:
+            hostname: ardana-cp1-vsa-VSA-BLK-iscsi
+            ip_address: 10.243.133.6
+        control_plane: control-plane-1
+        hosts:
+        -   hostname: ardana-cp1-vsa0001-VSA-BLK-iscsi
+            ip_address: 10.243.133.5
+        -   hostname: ardana-cp1-vsa0002-VSA-BLK-iscsi
+            ip_address: 10.243.133.8
+        -   hostname: ardana-cp1-vsa0003-VSA-BLK-iscsi
+            ip_address: 10.243.133.10
+        network: ISCSI-NET
+    -   cluster: vsa
+        cluster_ip: {}
+        control_plane: control-plane-1
+        hosts: []
+        network: MANAGEMENT-NET-RACK3
+    -   cluster: vsa
+        cluster_ip: {}
+        control_plane: control-plane-1
+        hosts: []
+        network: CONF-NET
+    -   cluster: vsa
+        cluster_ip: {}
+        control_plane: control-plane-1
+        hosts: []
+        network: MANAGEMENT-NET-RACK2
+    -   cluster: vsa
+        cluster_ip: {}
+        control_plane: control-plane-1
+        hosts: []
+        network: MANAGEMENT-NET-RACK1

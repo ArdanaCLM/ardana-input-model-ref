@@ -1,0 +1,196 @@
+compute1:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-comp0001-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.5
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.14
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+compute2:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-comp0002-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.6
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.15
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+compute3:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-comp0003-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.7
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.16
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+compute4:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-comp0004-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.8
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.17
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+compute5:
+    failure-zone: AZ2
+    hostname: eu-em2-cp1-comp0005-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.9
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.18
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+controller1:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-c1-m1-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-API-NET:
+                addr: 15.124.132.2
+                tagged-vlan: true
+                vlan-id: 1926
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.2
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.11
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+controller2:
+    failure-zone: AZ2
+    hostname: eu-em2-cp1-c1-m2-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-API-NET:
+                addr: 15.124.132.3
+                tagged-vlan: true
+                vlan-id: 1926
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.3
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.12
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+controller3:
+    failure-zone: AZ3
+    hostname: eu-em2-cp1-c1-m3-mgmt
+    net_data:
+        eth0:
+            EXTERNAL-API-NET:
+                addr: 15.124.132.4
+                tagged-vlan: true
+                vlan-id: 1926
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 1925
+            GUEST-NET:
+                addr: 10.16.81.4
+                tagged-vlan: true
+                vlan-id: 1927
+            MANAGEMENT-NET:
+                addr: 10.16.80.13
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+lifecycle-manager:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-c0-m1-mgmt
+    net_data:
+        eth0:
+            MANAGEMENT-NET:
+                addr: 10.16.80.10
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: eu-em2-cp1-vsa0001-mgmt
+    net_data:
+        eth0:
+            MANAGEMENT-NET:
+                addr: 10.16.80.19
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+vsa2:
+    failure-zone: AZ2
+    hostname: eu-em2-cp1-vsa0002-mgmt
+    net_data:
+        eth0:
+            MANAGEMENT-NET:
+                addr: 10.16.80.20
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated
+vsa3:
+    failure-zone: AZ3
+    hostname: eu-em2-cp1-vsa0003-mgmt
+    net_data:
+        eth0:
+            MANAGEMENT-NET:
+                addr: 10.16.80.21
+                tagged-vlan: false
+                vlan-id: 1924
+    state: allocated

@@ -1,0 +1,84 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  configuration-data:
+    - name:  NEUTRON-CONFIG-CP1
+      services:
+        - neutron
+      data:
+        neutron_provider_networks:
+        - name: OCTAVIA-MGMT-NET-CP1
+          provider:
+            - network_type: vlan
+              physical_network: physnet1
+              segmentation_id: 827
+          cidr: 10.246.86.0/24
+          no_gateway:  True
+          enable_dhcp: True
+          allocation_pools:
+            - start: 10.246.86.10
+              end: 10.246.86.250
+          host_routes:
+            # route to CLM-NET
+            - destination: 10.244.44.0/24
+              nexthop:  10.246.86.1
+        neutron_external_networks:
+        - name: ext-net-1-cp1
+          cidr: 10.246.87.0/24
+          gateway: 10.246.87.1
+          provider:
+            - network_type: vlan
+              physical_network: physnet1
+              segmentation_id: 828
+          allocation_pools:
+            - start: 10.246.87.2
+              end: 10.246.87.254
+
+    - name:  NEUTRON-CONFIG-CP2
+      services:
+        - neutron
+      data:
+        neutron_provider_networks:
+        - name: OCTAVIA-MGMT-NET-CP2
+          provider:
+            - network_type: vlan
+              physical_network: physnet1
+              segmentation_id: 1827
+          cidr: 10.246.186.0/24
+          no_gateway:  True
+          enable_dhcp: True
+          allocation_pools:
+            - start: 10.246.186.10
+              end: 10.246.186.250
+          host_routes:
+            # route to CLM-NET
+            - destination: 10.244.44.0/24
+              nexthop:  10.246.186.1
+        neutron_external_networks:
+        - name: ext-net-1-cp2
+          cidr: 10.246.187.0/24
+          gateway: 10.246.187.1
+          provider:
+            - network_type: vlan
+              physical_network: physnet1
+              segmentation_id: 1828
+          allocation_pools:
+            - start: 10.246.187.2
+              end: 10.246.187.254

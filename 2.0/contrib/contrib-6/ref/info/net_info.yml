@@ -1,0 +1,15 @@
+service_ips:
+    vsa:
+    -   cluster: vsa
+        cluster_ip:
+            hostname: ipc1-cp1-vsa-VSA-BLK-mgmt
+            ip_address: 10.241.67.81
+        control_plane: control-plane-1
+        hosts:
+        -   hostname: ipc1-cp1-vsa0001-VSA-BLK-mgmt
+            ip_address: 10.241.67.80
+        -   hostname: ipc1-cp1-vsa0002-VSA-BLK-mgmt
+            ip_address: 10.241.67.82
+        -   hostname: ipc1-cp1-vsa0003-VSA-BLK-mgmt
+            ip_address: 10.241.67.83
+        network: MANAGEMENT-NET

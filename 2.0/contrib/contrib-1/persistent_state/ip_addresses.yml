@@ -1,0 +1,360 @@
+10.10.206.66:
+  addr: 10.10.206.66
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.10.206.67:
+  addr: 10.10.206.67
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.10.206.68:
+  addr: 10.10.206.68
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.10.206.69:
+  addr: 10.10.206.69
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.10.206.70:
+  addr: 10.10.206.70
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.10.206.71:
+  addr: 10.10.206.71
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.10.206.72:
+  addr: 10.10.206.72
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.10.206.73:
+  addr: 10.10.206.73
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.10.206.74:
+  addr: 10.10.206.74
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+10.10.206.75:
+  addr: 10.10.206.75
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.10.206.76:
+  addr: 10.10.206.76
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.10.206.77:
+  addr: 10.10.206.77
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0006
+  persisted: false
+  server-id: compute6
+  used-by: server
+100.100.60.225:
+  addr: 100.100.60.225
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+100.100.60.226:
+  addr: 100.100.60.226
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+100.100.60.227:
+  addr: 100.100.60.227
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+100.100.60.228:
+  addr: 100.100.60.228
+  allocated: true
+  free: false
+  host: ardana-control-plane-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+100.100.60.65:
+  addr: 100.100.60.65
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+100.100.60.66:
+  addr: 100.100.60.66
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+100.100.60.67:
+  addr: 100.100.60.67
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+100.100.60.68:
+  addr: 100.100.60.68
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+100.100.60.69:
+  addr: 100.100.60.69
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+100.100.60.70:
+  addr: 100.100.60.70
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+100.100.60.71:
+  addr: 100.100.60.71
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+100.100.60.72:
+  addr: 100.100.60.72
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+100.100.60.73:
+  addr: 100.100.60.73
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+100.100.60.74:
+  addr: 100.100.60.74
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+100.100.60.75:
+  addr: 100.100.60.75
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+100.100.60.76:
+  addr: 100.100.60.76
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0006
+  persisted: false
+  server-id: compute6
+  used-by: server
+100.100.60.77:
+  addr: 100.100.60.77
+  allocated: true
+  free: false
+  host: ardana-control-plane-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+101.0.0.34:
+  addr: 101.0.0.34
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+101.0.0.35:
+  addr: 101.0.0.35
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+101.0.0.36:
+  addr: 101.0.0.36
+  allocated: true
+  free: false
+  host: ardana-control-plane-cluster1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+101.0.0.37:
+  addr: 101.0.0.37
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+101.0.0.38:
+  addr: 101.0.0.38
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa
+101.0.0.39:
+  addr: 101.0.0.39
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+101.0.0.40:
+  addr: 101.0.0.40
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+101.0.0.41:
+  addr: 101.0.0.41
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0002
+  persisted: false
+  server-id: null
+  used-by: vsa
+101.0.0.42:
+  addr: 101.0.0.42
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+101.0.0.43:
+  addr: 101.0.0.43
+  allocated: true
+  free: false
+  host: ardana-control-plane-vsa0003
+  persisted: false
+  server-id: null
+  used-by: vsa
+101.0.0.44:
+  addr: 101.0.0.44
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+101.0.0.45:
+  addr: 101.0.0.45
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+101.0.0.46:
+  addr: 101.0.0.46
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+101.0.0.47:
+  addr: 101.0.0.47
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+101.0.0.48:
+  addr: 101.0.0.48
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+101.0.0.49:
+  addr: 101.0.0.49
+  allocated: true
+  free: false
+  host: ardana-control-plane-comp0006
+  persisted: false
+  server-id: compute6
+  used-by: server

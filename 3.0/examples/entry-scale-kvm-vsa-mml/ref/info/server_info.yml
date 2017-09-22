@@ -1,0 +1,152 @@
+compute1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-comp0001-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 102
+            GUEST-NET:
+                addr: 10.1.1.4
+                tagged-vlan: true
+                vlan-id: 103
+            MANAGEMENT-NET:
+                addr: 192.168.10.11
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+controller1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-c1-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.0.1.2
+                tagged-vlan: true
+                vlan-id: 101
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 102
+            GUEST-NET:
+                addr: 10.1.1.2
+                tagged-vlan: true
+                vlan-id: 103
+            MANAGEMENT-NET:
+                addr: 192.168.10.3
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+controller2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-c1-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.0.1.3
+                tagged-vlan: true
+                vlan-id: 101
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 102
+            GUEST-NET:
+                addr: 10.1.1.3
+                tagged-vlan: true
+                vlan-id: 103
+            MANAGEMENT-NET:
+                addr: 192.168.10.4
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+dbmq1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-c3-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.8
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+dbmq2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-c3-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.9
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+dbmq3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-c3-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.10
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+mtmrmon1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-c2-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.5
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+mtmrmon2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-c2-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.6
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+mtmrmon3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-c2-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.7
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-vsa0001-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.12
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+vsa2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-vsa0002-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.13
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated
+vsa3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-vsa0003-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 192.168.10.14
+                tagged-vlan: false
+                vlan-id: 100
+    state: allocated

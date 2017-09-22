@@ -1,0 +1,2672 @@
+10.12.49.101:
+  addr: 10.12.49.101
+  allocated: true
+  free: false
+  host: scale300-ccp-c0-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+10.12.49.102:
+  addr: 10.12.49.102
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.12.49.103:
+  addr: 10.12.49.103
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.12.49.104:
+  addr: 10.12.49.104
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.12.49.105:
+  addr: 10.12.49.105
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.12.49.106:
+  addr: 10.12.49.106
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.12.49.107:
+  addr: 10.12.49.107
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+10.12.49.108:
+  addr: 10.12.49.108
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.12.49.109:
+  addr: 10.12.49.109
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0036
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.12.49.110:
+  addr: 10.12.49.110
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0071
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.12.49.111:
+  addr: 10.12.49.111
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0002
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.12.49.112:
+  addr: 10.12.49.112
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0037
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.12.49.113:
+  addr: 10.12.49.113
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0072
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.12.49.114:
+  addr: 10.12.49.114
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0003
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.12.49.115:
+  addr: 10.12.49.115
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0038
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.12.49.116:
+  addr: 10.12.49.116
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0073
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.12.49.117:
+  addr: 10.12.49.117
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0004
+  persisted: false
+  server-id: compute10
+  used-by: server
+10.12.49.118:
+  addr: 10.12.49.118
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0039
+  persisted: false
+  server-id: compute11
+  used-by: server
+10.12.49.119:
+  addr: 10.12.49.119
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0074
+  persisted: false
+  server-id: compute12
+  used-by: server
+10.12.49.120:
+  addr: 10.12.49.120
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0005
+  persisted: false
+  server-id: compute13
+  used-by: server
+10.12.49.121:
+  addr: 10.12.49.121
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0040
+  persisted: false
+  server-id: compute14
+  used-by: server
+10.12.49.122:
+  addr: 10.12.49.122
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0075
+  persisted: false
+  server-id: compute15
+  used-by: server
+10.12.49.123:
+  addr: 10.12.49.123
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0006
+  persisted: false
+  server-id: compute16
+  used-by: server
+10.12.49.124:
+  addr: 10.12.49.124
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0041
+  persisted: false
+  server-id: compute17
+  used-by: server
+10.12.49.125:
+  addr: 10.12.49.125
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0076
+  persisted: false
+  server-id: compute18
+  used-by: server
+10.12.49.126:
+  addr: 10.12.49.126
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0007
+  persisted: false
+  server-id: compute19
+  used-by: server
+10.12.49.127:
+  addr: 10.12.49.127
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0042
+  persisted: false
+  server-id: compute20
+  used-by: server
+10.12.49.128:
+  addr: 10.12.49.128
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0077
+  persisted: false
+  server-id: compute21
+  used-by: server
+10.12.49.129:
+  addr: 10.12.49.129
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0008
+  persisted: false
+  server-id: compute22
+  used-by: server
+10.12.49.130:
+  addr: 10.12.49.130
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0043
+  persisted: false
+  server-id: compute23
+  used-by: server
+10.12.49.131:
+  addr: 10.12.49.131
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0078
+  persisted: false
+  server-id: compute24
+  used-by: server
+10.12.49.132:
+  addr: 10.12.49.132
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0009
+  persisted: false
+  server-id: compute25
+  used-by: server
+10.12.49.133:
+  addr: 10.12.49.133
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0044
+  persisted: false
+  server-id: compute26
+  used-by: server
+10.12.49.134:
+  addr: 10.12.49.134
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0079
+  persisted: false
+  server-id: compute27
+  used-by: server
+10.12.49.135:
+  addr: 10.12.49.135
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0010
+  persisted: false
+  server-id: compute28
+  used-by: server
+10.12.49.136:
+  addr: 10.12.49.136
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0045
+  persisted: false
+  server-id: compute29
+  used-by: server
+10.12.49.137:
+  addr: 10.12.49.137
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0080
+  persisted: false
+  server-id: compute30
+  used-by: server
+10.12.49.138:
+  addr: 10.12.49.138
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0011
+  persisted: false
+  server-id: compute31
+  used-by: server
+10.12.49.139:
+  addr: 10.12.49.139
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0046
+  persisted: false
+  server-id: compute32
+  used-by: server
+10.12.49.140:
+  addr: 10.12.49.140
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0081
+  persisted: false
+  server-id: compute33
+  used-by: server
+10.12.49.141:
+  addr: 10.12.49.141
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0012
+  persisted: false
+  server-id: compute34
+  used-by: server
+10.12.49.142:
+  addr: 10.12.49.142
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0047
+  persisted: false
+  server-id: compute35
+  used-by: server
+10.12.49.143:
+  addr: 10.12.49.143
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0082
+  persisted: false
+  server-id: compute36
+  used-by: server
+10.12.49.144:
+  addr: 10.12.49.144
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0013
+  persisted: false
+  server-id: compute37
+  used-by: server
+10.12.49.145:
+  addr: 10.12.49.145
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0048
+  persisted: false
+  server-id: compute38
+  used-by: server
+10.12.49.146:
+  addr: 10.12.49.146
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0083
+  persisted: false
+  server-id: compute39
+  used-by: server
+10.12.49.147:
+  addr: 10.12.49.147
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0014
+  persisted: false
+  server-id: compute40
+  used-by: server
+10.12.49.148:
+  addr: 10.12.49.148
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0049
+  persisted: false
+  server-id: compute41
+  used-by: server
+10.12.49.149:
+  addr: 10.12.49.149
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0084
+  persisted: false
+  server-id: compute42
+  used-by: server
+10.12.49.150:
+  addr: 10.12.49.150
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0015
+  persisted: false
+  server-id: compute43
+  used-by: server
+10.12.49.151:
+  addr: 10.12.49.151
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0050
+  persisted: false
+  server-id: compute44
+  used-by: server
+10.12.49.152:
+  addr: 10.12.49.152
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0085
+  persisted: false
+  server-id: compute45
+  used-by: server
+10.12.49.153:
+  addr: 10.12.49.153
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0016
+  persisted: false
+  server-id: compute46
+  used-by: server
+10.12.49.154:
+  addr: 10.12.49.154
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0051
+  persisted: false
+  server-id: compute47
+  used-by: server
+10.12.49.155:
+  addr: 10.12.49.155
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0086
+  persisted: false
+  server-id: compute48
+  used-by: server
+10.12.49.156:
+  addr: 10.12.49.156
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0017
+  persisted: false
+  server-id: compute49
+  used-by: server
+10.12.49.157:
+  addr: 10.12.49.157
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0052
+  persisted: false
+  server-id: compute50
+  used-by: server
+10.12.49.158:
+  addr: 10.12.49.158
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0087
+  persisted: false
+  server-id: compute51
+  used-by: server
+10.12.49.159:
+  addr: 10.12.49.159
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0018
+  persisted: false
+  server-id: compute52
+  used-by: server
+10.12.49.160:
+  addr: 10.12.49.160
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0053
+  persisted: false
+  server-id: compute53
+  used-by: server
+10.12.49.161:
+  addr: 10.12.49.161
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0088
+  persisted: false
+  server-id: compute54
+  used-by: server
+10.12.49.162:
+  addr: 10.12.49.162
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0019
+  persisted: false
+  server-id: compute55
+  used-by: server
+10.12.49.163:
+  addr: 10.12.49.163
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0054
+  persisted: false
+  server-id: compute56
+  used-by: server
+10.12.49.164:
+  addr: 10.12.49.164
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0089
+  persisted: false
+  server-id: compute57
+  used-by: server
+10.12.49.165:
+  addr: 10.12.49.165
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0020
+  persisted: false
+  server-id: compute58
+  used-by: server
+10.12.49.166:
+  addr: 10.12.49.166
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0055
+  persisted: false
+  server-id: compute59
+  used-by: server
+10.12.49.167:
+  addr: 10.12.49.167
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0090
+  persisted: false
+  server-id: compute60
+  used-by: server
+10.12.49.168:
+  addr: 10.12.49.168
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0021
+  persisted: false
+  server-id: compute61
+  used-by: server
+10.12.49.169:
+  addr: 10.12.49.169
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0056
+  persisted: false
+  server-id: compute62
+  used-by: server
+10.12.49.170:
+  addr: 10.12.49.170
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0091
+  persisted: false
+  server-id: compute63
+  used-by: server
+10.12.49.171:
+  addr: 10.12.49.171
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0022
+  persisted: false
+  server-id: compute64
+  used-by: server
+10.12.49.172:
+  addr: 10.12.49.172
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0057
+  persisted: false
+  server-id: compute65
+  used-by: server
+10.12.49.173:
+  addr: 10.12.49.173
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0092
+  persisted: false
+  server-id: compute66
+  used-by: server
+10.12.49.174:
+  addr: 10.12.49.174
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0023
+  persisted: false
+  server-id: compute67
+  used-by: server
+10.12.49.175:
+  addr: 10.12.49.175
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0058
+  persisted: false
+  server-id: compute68
+  used-by: server
+10.12.49.176:
+  addr: 10.12.49.176
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0093
+  persisted: false
+  server-id: compute69
+  used-by: server
+10.12.49.177:
+  addr: 10.12.49.177
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0024
+  persisted: false
+  server-id: compute70
+  used-by: server
+10.12.49.178:
+  addr: 10.12.49.178
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0059
+  persisted: false
+  server-id: compute71
+  used-by: server
+10.12.49.179:
+  addr: 10.12.49.179
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0094
+  persisted: false
+  server-id: compute72
+  used-by: server
+10.12.49.180:
+  addr: 10.12.49.180
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0025
+  persisted: false
+  server-id: compute73
+  used-by: server
+10.12.49.181:
+  addr: 10.12.49.181
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0060
+  persisted: false
+  server-id: compute74
+  used-by: server
+10.12.49.182:
+  addr: 10.12.49.182
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0095
+  persisted: false
+  server-id: compute75
+  used-by: server
+10.12.49.183:
+  addr: 10.12.49.183
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0026
+  persisted: false
+  server-id: compute76
+  used-by: server
+10.12.49.184:
+  addr: 10.12.49.184
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0061
+  persisted: false
+  server-id: compute77
+  used-by: server
+10.12.49.185:
+  addr: 10.12.49.185
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0096
+  persisted: false
+  server-id: compute78
+  used-by: server
+10.12.49.186:
+  addr: 10.12.49.186
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0027
+  persisted: false
+  server-id: compute79
+  used-by: server
+10.12.49.187:
+  addr: 10.12.49.187
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0062
+  persisted: false
+  server-id: compute80
+  used-by: server
+10.12.49.188:
+  addr: 10.12.49.188
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0097
+  persisted: false
+  server-id: compute81
+  used-by: server
+10.12.49.189:
+  addr: 10.12.49.189
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0028
+  persisted: false
+  server-id: compute82
+  used-by: server
+10.12.49.190:
+  addr: 10.12.49.190
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0063
+  persisted: false
+  server-id: compute83
+  used-by: server
+10.12.49.191:
+  addr: 10.12.49.191
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0098
+  persisted: false
+  server-id: compute84
+  used-by: server
+10.12.49.192:
+  addr: 10.12.49.192
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0029
+  persisted: false
+  server-id: compute85
+  used-by: server
+10.12.49.193:
+  addr: 10.12.49.193
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0064
+  persisted: false
+  server-id: compute86
+  used-by: server
+10.12.49.194:
+  addr: 10.12.49.194
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0099
+  persisted: false
+  server-id: compute87
+  used-by: server
+10.12.49.195:
+  addr: 10.12.49.195
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0030
+  persisted: false
+  server-id: compute88
+  used-by: server
+10.12.49.196:
+  addr: 10.12.49.196
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0065
+  persisted: false
+  server-id: compute89
+  used-by: server
+10.12.49.197:
+  addr: 10.12.49.197
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0100
+  persisted: false
+  server-id: compute90
+  used-by: server
+10.12.49.198:
+  addr: 10.12.49.198
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0031
+  persisted: false
+  server-id: compute91
+  used-by: server
+10.12.49.199:
+  addr: 10.12.49.199
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0066
+  persisted: false
+  server-id: compute92
+  used-by: server
+10.12.49.200:
+  addr: 10.12.49.200
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0101
+  persisted: false
+  server-id: compute93
+  used-by: server
+10.12.49.201:
+  addr: 10.12.49.201
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0032
+  persisted: false
+  server-id: compute94
+  used-by: server
+10.12.49.202:
+  addr: 10.12.49.202
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0067
+  persisted: false
+  server-id: compute95
+  used-by: server
+10.12.49.203:
+  addr: 10.12.49.203
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0102
+  persisted: false
+  server-id: compute96
+  used-by: server
+10.12.49.204:
+  addr: 10.12.49.204
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0033
+  persisted: false
+  server-id: compute97
+  used-by: server
+10.12.49.205:
+  addr: 10.12.49.205
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0068
+  persisted: false
+  server-id: compute98
+  used-by: server
+10.12.49.206:
+  addr: 10.12.49.206
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0103
+  persisted: false
+  server-id: compute99
+  used-by: server
+10.12.49.207:
+  addr: 10.12.49.207
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0034
+  persisted: false
+  server-id: compute100
+  used-by: server
+10.12.49.208:
+  addr: 10.12.49.208
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0069
+  persisted: false
+  server-id: compute101
+  used-by: server
+10.12.49.209:
+  addr: 10.12.49.209
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0104
+  persisted: false
+  server-id: compute102
+  used-by: server
+10.12.49.210:
+  addr: 10.12.49.210
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0035
+  persisted: false
+  server-id: compute103
+  used-by: server
+10.12.49.211:
+  addr: 10.12.49.211
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0070
+  persisted: false
+  server-id: compute104
+  used-by: server
+10.12.49.212:
+  addr: 10.12.49.212
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.12.49.213:
+  addr: 10.12.49.213
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+10.12.49.214:
+  addr: 10.12.49.214
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0002
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.12.49.215:
+  addr: 10.12.49.215
+  allocated: true
+  free: false
+  host: scale300-ccp-vsa0003
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.12.49.216:
+  addr: 10.12.49.216
+  allocated: true
+  free: false
+  host: scale300-ccp-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.13.32.0:
+  addr: 10.13.32.0
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.13.32.1:
+  addr: 10.13.32.1
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.13.32.10:
+  addr: 10.13.32.10
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0008
+  persisted: false
+  server-id: compute22
+  used-by: server
+10.13.32.100:
+  addr: 10.13.32.100
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0098
+  persisted: false
+  server-id: compute84
+  used-by: server
+10.13.32.101:
+  addr: 10.13.32.101
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0099
+  persisted: false
+  server-id: compute87
+  used-by: server
+10.13.32.102:
+  addr: 10.13.32.102
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0100
+  persisted: false
+  server-id: compute90
+  used-by: server
+10.13.32.103:
+  addr: 10.13.32.103
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0101
+  persisted: false
+  server-id: compute93
+  used-by: server
+10.13.32.104:
+  addr: 10.13.32.104
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0102
+  persisted: false
+  server-id: compute96
+  used-by: server
+10.13.32.105:
+  addr: 10.13.32.105
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0103
+  persisted: false
+  server-id: compute99
+  used-by: server
+10.13.32.106:
+  addr: 10.13.32.106
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0104
+  persisted: false
+  server-id: compute102
+  used-by: server
+10.13.32.11:
+  addr: 10.13.32.11
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0009
+  persisted: false
+  server-id: compute25
+  used-by: server
+10.13.32.12:
+  addr: 10.13.32.12
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0010
+  persisted: false
+  server-id: compute28
+  used-by: server
+10.13.32.13:
+  addr: 10.13.32.13
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0011
+  persisted: false
+  server-id: compute31
+  used-by: server
+10.13.32.14:
+  addr: 10.13.32.14
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0012
+  persisted: false
+  server-id: compute34
+  used-by: server
+10.13.32.15:
+  addr: 10.13.32.15
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0013
+  persisted: false
+  server-id: compute37
+  used-by: server
+10.13.32.16:
+  addr: 10.13.32.16
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0014
+  persisted: false
+  server-id: compute40
+  used-by: server
+10.13.32.17:
+  addr: 10.13.32.17
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0015
+  persisted: false
+  server-id: compute43
+  used-by: server
+10.13.32.18:
+  addr: 10.13.32.18
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0016
+  persisted: false
+  server-id: compute46
+  used-by: server
+10.13.32.19:
+  addr: 10.13.32.19
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0017
+  persisted: false
+  server-id: compute49
+  used-by: server
+10.13.32.2:
+  addr: 10.13.32.2
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.13.32.20:
+  addr: 10.13.32.20
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0018
+  persisted: false
+  server-id: compute52
+  used-by: server
+10.13.32.21:
+  addr: 10.13.32.21
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0019
+  persisted: false
+  server-id: compute55
+  used-by: server
+10.13.32.22:
+  addr: 10.13.32.22
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0020
+  persisted: false
+  server-id: compute58
+  used-by: server
+10.13.32.23:
+  addr: 10.13.32.23
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0021
+  persisted: false
+  server-id: compute61
+  used-by: server
+10.13.32.24:
+  addr: 10.13.32.24
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0022
+  persisted: false
+  server-id: compute64
+  used-by: server
+10.13.32.25:
+  addr: 10.13.32.25
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0023
+  persisted: false
+  server-id: compute67
+  used-by: server
+10.13.32.26:
+  addr: 10.13.32.26
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0024
+  persisted: false
+  server-id: compute70
+  used-by: server
+10.13.32.27:
+  addr: 10.13.32.27
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0025
+  persisted: false
+  server-id: compute73
+  used-by: server
+10.13.32.28:
+  addr: 10.13.32.28
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0026
+  persisted: false
+  server-id: compute76
+  used-by: server
+10.13.32.29:
+  addr: 10.13.32.29
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0027
+  persisted: false
+  server-id: compute79
+  used-by: server
+10.13.32.3:
+  addr: 10.13.32.3
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.13.32.30:
+  addr: 10.13.32.30
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0028
+  persisted: false
+  server-id: compute82
+  used-by: server
+10.13.32.31:
+  addr: 10.13.32.31
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0029
+  persisted: false
+  server-id: compute85
+  used-by: server
+10.13.32.32:
+  addr: 10.13.32.32
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0030
+  persisted: false
+  server-id: compute88
+  used-by: server
+10.13.32.33:
+  addr: 10.13.32.33
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0031
+  persisted: false
+  server-id: compute91
+  used-by: server
+10.13.32.34:
+  addr: 10.13.32.34
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0032
+  persisted: false
+  server-id: compute94
+  used-by: server
+10.13.32.35:
+  addr: 10.13.32.35
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0033
+  persisted: false
+  server-id: compute97
+  used-by: server
+10.13.32.36:
+  addr: 10.13.32.36
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0034
+  persisted: false
+  server-id: compute100
+  used-by: server
+10.13.32.37:
+  addr: 10.13.32.37
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0035
+  persisted: false
+  server-id: compute103
+  used-by: server
+10.13.32.38:
+  addr: 10.13.32.38
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0036
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.13.32.39:
+  addr: 10.13.32.39
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0037
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.13.32.4:
+  addr: 10.13.32.4
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0002
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.13.32.40:
+  addr: 10.13.32.40
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0038
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.13.32.41:
+  addr: 10.13.32.41
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0039
+  persisted: false
+  server-id: compute11
+  used-by: server
+10.13.32.42:
+  addr: 10.13.32.42
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0040
+  persisted: false
+  server-id: compute14
+  used-by: server
+10.13.32.43:
+  addr: 10.13.32.43
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0041
+  persisted: false
+  server-id: compute17
+  used-by: server
+10.13.32.44:
+  addr: 10.13.32.44
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0042
+  persisted: false
+  server-id: compute20
+  used-by: server
+10.13.32.45:
+  addr: 10.13.32.45
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0043
+  persisted: false
+  server-id: compute23
+  used-by: server
+10.13.32.46:
+  addr: 10.13.32.46
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0044
+  persisted: false
+  server-id: compute26
+  used-by: server
+10.13.32.47:
+  addr: 10.13.32.47
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0045
+  persisted: false
+  server-id: compute29
+  used-by: server
+10.13.32.48:
+  addr: 10.13.32.48
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0046
+  persisted: false
+  server-id: compute32
+  used-by: server
+10.13.32.49:
+  addr: 10.13.32.49
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0047
+  persisted: false
+  server-id: compute35
+  used-by: server
+10.13.32.5:
+  addr: 10.13.32.5
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0003
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.13.32.50:
+  addr: 10.13.32.50
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0048
+  persisted: false
+  server-id: compute38
+  used-by: server
+10.13.32.51:
+  addr: 10.13.32.51
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0049
+  persisted: false
+  server-id: compute41
+  used-by: server
+10.13.32.52:
+  addr: 10.13.32.52
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0050
+  persisted: false
+  server-id: compute44
+  used-by: server
+10.13.32.53:
+  addr: 10.13.32.53
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0051
+  persisted: false
+  server-id: compute47
+  used-by: server
+10.13.32.54:
+  addr: 10.13.32.54
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0052
+  persisted: false
+  server-id: compute50
+  used-by: server
+10.13.32.55:
+  addr: 10.13.32.55
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0053
+  persisted: false
+  server-id: compute53
+  used-by: server
+10.13.32.56:
+  addr: 10.13.32.56
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0054
+  persisted: false
+  server-id: compute56
+  used-by: server
+10.13.32.57:
+  addr: 10.13.32.57
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0055
+  persisted: false
+  server-id: compute59
+  used-by: server
+10.13.32.58:
+  addr: 10.13.32.58
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0056
+  persisted: false
+  server-id: compute62
+  used-by: server
+10.13.32.59:
+  addr: 10.13.32.59
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0057
+  persisted: false
+  server-id: compute65
+  used-by: server
+10.13.32.6:
+  addr: 10.13.32.6
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0004
+  persisted: false
+  server-id: compute10
+  used-by: server
+10.13.32.60:
+  addr: 10.13.32.60
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0058
+  persisted: false
+  server-id: compute68
+  used-by: server
+10.13.32.61:
+  addr: 10.13.32.61
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0059
+  persisted: false
+  server-id: compute71
+  used-by: server
+10.13.32.62:
+  addr: 10.13.32.62
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0060
+  persisted: false
+  server-id: compute74
+  used-by: server
+10.13.32.63:
+  addr: 10.13.32.63
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0061
+  persisted: false
+  server-id: compute77
+  used-by: server
+10.13.32.64:
+  addr: 10.13.32.64
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0062
+  persisted: false
+  server-id: compute80
+  used-by: server
+10.13.32.65:
+  addr: 10.13.32.65
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0063
+  persisted: false
+  server-id: compute83
+  used-by: server
+10.13.32.66:
+  addr: 10.13.32.66
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0064
+  persisted: false
+  server-id: compute86
+  used-by: server
+10.13.32.67:
+  addr: 10.13.32.67
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0065
+  persisted: false
+  server-id: compute89
+  used-by: server
+10.13.32.68:
+  addr: 10.13.32.68
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0066
+  persisted: false
+  server-id: compute92
+  used-by: server
+10.13.32.69:
+  addr: 10.13.32.69
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0067
+  persisted: false
+  server-id: compute95
+  used-by: server
+10.13.32.7:
+  addr: 10.13.32.7
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0005
+  persisted: false
+  server-id: compute13
+  used-by: server
+10.13.32.70:
+  addr: 10.13.32.70
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0068
+  persisted: false
+  server-id: compute98
+  used-by: server
+10.13.32.71:
+  addr: 10.13.32.71
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0069
+  persisted: false
+  server-id: compute101
+  used-by: server
+10.13.32.72:
+  addr: 10.13.32.72
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0070
+  persisted: false
+  server-id: compute104
+  used-by: server
+10.13.32.73:
+  addr: 10.13.32.73
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0071
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.13.32.74:
+  addr: 10.13.32.74
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0072
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.13.32.75:
+  addr: 10.13.32.75
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0073
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.13.32.76:
+  addr: 10.13.32.76
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0074
+  persisted: false
+  server-id: compute12
+  used-by: server
+10.13.32.77:
+  addr: 10.13.32.77
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0075
+  persisted: false
+  server-id: compute15
+  used-by: server
+10.13.32.78:
+  addr: 10.13.32.78
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0076
+  persisted: false
+  server-id: compute18
+  used-by: server
+10.13.32.79:
+  addr: 10.13.32.79
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0077
+  persisted: false
+  server-id: compute21
+  used-by: server
+10.13.32.8:
+  addr: 10.13.32.8
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0006
+  persisted: false
+  server-id: compute16
+  used-by: server
+10.13.32.80:
+  addr: 10.13.32.80
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0078
+  persisted: false
+  server-id: compute24
+  used-by: server
+10.13.32.81:
+  addr: 10.13.32.81
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0079
+  persisted: false
+  server-id: compute27
+  used-by: server
+10.13.32.82:
+  addr: 10.13.32.82
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0080
+  persisted: false
+  server-id: compute30
+  used-by: server
+10.13.32.83:
+  addr: 10.13.32.83
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0081
+  persisted: false
+  server-id: compute33
+  used-by: server
+10.13.32.84:
+  addr: 10.13.32.84
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0082
+  persisted: false
+  server-id: compute36
+  used-by: server
+10.13.32.85:
+  addr: 10.13.32.85
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0083
+  persisted: false
+  server-id: compute39
+  used-by: server
+10.13.32.86:
+  addr: 10.13.32.86
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0084
+  persisted: false
+  server-id: compute42
+  used-by: server
+10.13.32.87:
+  addr: 10.13.32.87
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0085
+  persisted: false
+  server-id: compute45
+  used-by: server
+10.13.32.88:
+  addr: 10.13.32.88
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0086
+  persisted: false
+  server-id: compute48
+  used-by: server
+10.13.32.89:
+  addr: 10.13.32.89
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0087
+  persisted: false
+  server-id: compute51
+  used-by: server
+10.13.32.9:
+  addr: 10.13.32.9
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0007
+  persisted: false
+  server-id: compute19
+  used-by: server
+10.13.32.90:
+  addr: 10.13.32.90
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0088
+  persisted: false
+  server-id: compute54
+  used-by: server
+10.13.32.91:
+  addr: 10.13.32.91
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0089
+  persisted: false
+  server-id: compute57
+  used-by: server
+10.13.32.92:
+  addr: 10.13.32.92
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0090
+  persisted: false
+  server-id: compute60
+  used-by: server
+10.13.32.93:
+  addr: 10.13.32.93
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0091
+  persisted: false
+  server-id: compute63
+  used-by: server
+10.13.32.94:
+  addr: 10.13.32.94
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0092
+  persisted: false
+  server-id: compute66
+  used-by: server
+10.13.32.95:
+  addr: 10.13.32.95
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0093
+  persisted: false
+  server-id: compute69
+  used-by: server
+10.13.32.96:
+  addr: 10.13.32.96
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0094
+  persisted: false
+  server-id: compute72
+  used-by: server
+10.13.32.97:
+  addr: 10.13.32.97
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0095
+  persisted: false
+  server-id: compute75
+  used-by: server
+10.13.32.98:
+  addr: 10.13.32.98
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0096
+  persisted: false
+  server-id: compute78
+  used-by: server
+10.13.32.99:
+  addr: 10.13.32.99
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0097
+  persisted: false
+  server-id: compute81
+  used-by: server
+10.13.65.100:
+  addr: 10.13.65.100
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.13.65.101:
+  addr: 10.13.65.101
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.13.65.102:
+  addr: 10.13.65.102
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.13.65.103:
+  addr: 10.13.65.103
+  allocated: true
+  free: false
+  host: scale300-ccp-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+10.13.67.100:
+  addr: 10.13.67.100
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.13.67.101:
+  addr: 10.13.67.101
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.13.67.102:
+  addr: 10.13.67.102
+  allocated: true
+  free: false
+  host: scale300-ccp-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.13.67.103:
+  addr: 10.13.67.103
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.13.67.104:
+  addr: 10.13.67.104
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0002
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.13.67.105:
+  addr: 10.13.67.105
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0003
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.13.67.106:
+  addr: 10.13.67.106
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0004
+  persisted: false
+  server-id: compute10
+  used-by: server
+10.13.67.107:
+  addr: 10.13.67.107
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0005
+  persisted: false
+  server-id: compute13
+  used-by: server
+10.13.67.108:
+  addr: 10.13.67.108
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0006
+  persisted: false
+  server-id: compute16
+  used-by: server
+10.13.67.109:
+  addr: 10.13.67.109
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0007
+  persisted: false
+  server-id: compute19
+  used-by: server
+10.13.67.110:
+  addr: 10.13.67.110
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0008
+  persisted: false
+  server-id: compute22
+  used-by: server
+10.13.67.111:
+  addr: 10.13.67.111
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0009
+  persisted: false
+  server-id: compute25
+  used-by: server
+10.13.67.112:
+  addr: 10.13.67.112
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0010
+  persisted: false
+  server-id: compute28
+  used-by: server
+10.13.67.113:
+  addr: 10.13.67.113
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0011
+  persisted: false
+  server-id: compute31
+  used-by: server
+10.13.67.114:
+  addr: 10.13.67.114
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0012
+  persisted: false
+  server-id: compute34
+  used-by: server
+10.13.67.115:
+  addr: 10.13.67.115
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0013
+  persisted: false
+  server-id: compute37
+  used-by: server
+10.13.67.116:
+  addr: 10.13.67.116
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0014
+  persisted: false
+  server-id: compute40
+  used-by: server
+10.13.67.117:
+  addr: 10.13.67.117
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0015
+  persisted: false
+  server-id: compute43
+  used-by: server
+10.13.67.118:
+  addr: 10.13.67.118
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0016
+  persisted: false
+  server-id: compute46
+  used-by: server
+10.13.67.119:
+  addr: 10.13.67.119
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0017
+  persisted: false
+  server-id: compute49
+  used-by: server
+10.13.67.120:
+  addr: 10.13.67.120
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0018
+  persisted: false
+  server-id: compute52
+  used-by: server
+10.13.67.121:
+  addr: 10.13.67.121
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0019
+  persisted: false
+  server-id: compute55
+  used-by: server
+10.13.67.122:
+  addr: 10.13.67.122
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0020
+  persisted: false
+  server-id: compute58
+  used-by: server
+10.13.67.123:
+  addr: 10.13.67.123
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0021
+  persisted: false
+  server-id: compute61
+  used-by: server
+10.13.67.124:
+  addr: 10.13.67.124
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0022
+  persisted: false
+  server-id: compute64
+  used-by: server
+10.13.67.125:
+  addr: 10.13.67.125
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0023
+  persisted: false
+  server-id: compute67
+  used-by: server
+10.13.67.126:
+  addr: 10.13.67.126
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0024
+  persisted: false
+  server-id: compute70
+  used-by: server
+10.13.67.127:
+  addr: 10.13.67.127
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0025
+  persisted: false
+  server-id: compute73
+  used-by: server
+10.13.67.128:
+  addr: 10.13.67.128
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0026
+  persisted: false
+  server-id: compute76
+  used-by: server
+10.13.67.129:
+  addr: 10.13.67.129
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0027
+  persisted: false
+  server-id: compute79
+  used-by: server
+10.13.67.130:
+  addr: 10.13.67.130
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0028
+  persisted: false
+  server-id: compute82
+  used-by: server
+10.13.67.131:
+  addr: 10.13.67.131
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0029
+  persisted: false
+  server-id: compute85
+  used-by: server
+10.13.67.132:
+  addr: 10.13.67.132
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0030
+  persisted: false
+  server-id: compute88
+  used-by: server
+10.13.67.133:
+  addr: 10.13.67.133
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0031
+  persisted: false
+  server-id: compute91
+  used-by: server
+10.13.67.134:
+  addr: 10.13.67.134
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0032
+  persisted: false
+  server-id: compute94
+  used-by: server
+10.13.67.135:
+  addr: 10.13.67.135
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0033
+  persisted: false
+  server-id: compute97
+  used-by: server
+10.13.67.136:
+  addr: 10.13.67.136
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0034
+  persisted: false
+  server-id: compute100
+  used-by: server
+10.13.67.137:
+  addr: 10.13.67.137
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0035
+  persisted: false
+  server-id: compute103
+  used-by: server
+10.13.67.138:
+  addr: 10.13.67.138
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0036
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.13.67.139:
+  addr: 10.13.67.139
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0037
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.13.67.140:
+  addr: 10.13.67.140
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0038
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.13.67.141:
+  addr: 10.13.67.141
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0039
+  persisted: false
+  server-id: compute11
+  used-by: server
+10.13.67.142:
+  addr: 10.13.67.142
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0040
+  persisted: false
+  server-id: compute14
+  used-by: server
+10.13.67.143:
+  addr: 10.13.67.143
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0041
+  persisted: false
+  server-id: compute17
+  used-by: server
+10.13.67.144:
+  addr: 10.13.67.144
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0042
+  persisted: false
+  server-id: compute20
+  used-by: server
+10.13.67.145:
+  addr: 10.13.67.145
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0043
+  persisted: false
+  server-id: compute23
+  used-by: server
+10.13.67.146:
+  addr: 10.13.67.146
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0044
+  persisted: false
+  server-id: compute26
+  used-by: server
+10.13.67.147:
+  addr: 10.13.67.147
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0045
+  persisted: false
+  server-id: compute29
+  used-by: server
+10.13.67.148:
+  addr: 10.13.67.148
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0046
+  persisted: false
+  server-id: compute32
+  used-by: server
+10.13.67.149:
+  addr: 10.13.67.149
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0047
+  persisted: false
+  server-id: compute35
+  used-by: server
+10.13.67.150:
+  addr: 10.13.67.150
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0048
+  persisted: false
+  server-id: compute38
+  used-by: server
+10.13.67.151:
+  addr: 10.13.67.151
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0049
+  persisted: false
+  server-id: compute41
+  used-by: server
+10.13.67.152:
+  addr: 10.13.67.152
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0050
+  persisted: false
+  server-id: compute44
+  used-by: server
+10.13.67.153:
+  addr: 10.13.67.153
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0051
+  persisted: false
+  server-id: compute47
+  used-by: server
+10.13.67.154:
+  addr: 10.13.67.154
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0052
+  persisted: false
+  server-id: compute50
+  used-by: server
+10.13.67.155:
+  addr: 10.13.67.155
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0053
+  persisted: false
+  server-id: compute53
+  used-by: server
+10.13.67.156:
+  addr: 10.13.67.156
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0054
+  persisted: false
+  server-id: compute56
+  used-by: server
+10.13.67.157:
+  addr: 10.13.67.157
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0055
+  persisted: false
+  server-id: compute59
+  used-by: server
+10.13.67.158:
+  addr: 10.13.67.158
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0056
+  persisted: false
+  server-id: compute62
+  used-by: server
+10.13.67.159:
+  addr: 10.13.67.159
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0057
+  persisted: false
+  server-id: compute65
+  used-by: server
+10.13.67.160:
+  addr: 10.13.67.160
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0058
+  persisted: false
+  server-id: compute68
+  used-by: server
+10.13.67.161:
+  addr: 10.13.67.161
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0059
+  persisted: false
+  server-id: compute71
+  used-by: server
+10.13.67.162:
+  addr: 10.13.67.162
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0060
+  persisted: false
+  server-id: compute74
+  used-by: server
+10.13.67.163:
+  addr: 10.13.67.163
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0061
+  persisted: false
+  server-id: compute77
+  used-by: server
+10.13.67.164:
+  addr: 10.13.67.164
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0062
+  persisted: false
+  server-id: compute80
+  used-by: server
+10.13.67.165:
+  addr: 10.13.67.165
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0063
+  persisted: false
+  server-id: compute83
+  used-by: server
+10.13.67.166:
+  addr: 10.13.67.166
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0064
+  persisted: false
+  server-id: compute86
+  used-by: server
+10.13.67.167:
+  addr: 10.13.67.167
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0065
+  persisted: false
+  server-id: compute89
+  used-by: server
+10.13.67.168:
+  addr: 10.13.67.168
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0066
+  persisted: false
+  server-id: compute92
+  used-by: server
+10.13.67.169:
+  addr: 10.13.67.169
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0067
+  persisted: false
+  server-id: compute95
+  used-by: server
+10.13.67.170:
+  addr: 10.13.67.170
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0068
+  persisted: false
+  server-id: compute98
+  used-by: server
+10.13.67.171:
+  addr: 10.13.67.171
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0069
+  persisted: false
+  server-id: compute101
+  used-by: server
+10.13.67.172:
+  addr: 10.13.67.172
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0070
+  persisted: false
+  server-id: compute104
+  used-by: server
+10.13.67.173:
+  addr: 10.13.67.173
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0071
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.13.67.174:
+  addr: 10.13.67.174
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0072
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.13.67.175:
+  addr: 10.13.67.175
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0073
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.13.67.176:
+  addr: 10.13.67.176
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0074
+  persisted: false
+  server-id: compute12
+  used-by: server
+10.13.67.177:
+  addr: 10.13.67.177
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0075
+  persisted: false
+  server-id: compute15
+  used-by: server
+10.13.67.178:
+  addr: 10.13.67.178
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0076
+  persisted: false
+  server-id: compute18
+  used-by: server
+10.13.67.179:
+  addr: 10.13.67.179
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0077
+  persisted: false
+  server-id: compute21
+  used-by: server
+10.13.67.180:
+  addr: 10.13.67.180
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0078
+  persisted: false
+  server-id: compute24
+  used-by: server
+10.13.67.181:
+  addr: 10.13.67.181
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0079
+  persisted: false
+  server-id: compute27
+  used-by: server
+10.13.67.182:
+  addr: 10.13.67.182
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0080
+  persisted: false
+  server-id: compute30
+  used-by: server
+10.13.67.183:
+  addr: 10.13.67.183
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0081
+  persisted: false
+  server-id: compute33
+  used-by: server
+10.13.67.184:
+  addr: 10.13.67.184
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0082
+  persisted: false
+  server-id: compute36
+  used-by: server
+10.13.67.185:
+  addr: 10.13.67.185
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0083
+  persisted: false
+  server-id: compute39
+  used-by: server
+10.13.67.186:
+  addr: 10.13.67.186
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0084
+  persisted: false
+  server-id: compute42
+  used-by: server
+10.13.67.187:
+  addr: 10.13.67.187
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0085
+  persisted: false
+  server-id: compute45
+  used-by: server
+10.13.67.188:
+  addr: 10.13.67.188
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0086
+  persisted: false
+  server-id: compute48
+  used-by: server
+10.13.67.189:
+  addr: 10.13.67.189
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0087
+  persisted: false
+  server-id: compute51
+  used-by: server
+10.13.67.190:
+  addr: 10.13.67.190
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0088
+  persisted: false
+  server-id: compute54
+  used-by: server
+10.13.67.191:
+  addr: 10.13.67.191
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0089
+  persisted: false
+  server-id: compute57
+  used-by: server
+10.13.67.192:
+  addr: 10.13.67.192
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0090
+  persisted: false
+  server-id: compute60
+  used-by: server
+10.13.67.193:
+  addr: 10.13.67.193
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0091
+  persisted: false
+  server-id: compute63
+  used-by: server
+10.13.67.194:
+  addr: 10.13.67.194
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0092
+  persisted: false
+  server-id: compute66
+  used-by: server
+10.13.67.195:
+  addr: 10.13.67.195
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0093
+  persisted: false
+  server-id: compute69
+  used-by: server
+10.13.67.196:
+  addr: 10.13.67.196
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0094
+  persisted: false
+  server-id: compute72
+  used-by: server
+10.13.67.197:
+  addr: 10.13.67.197
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0095
+  persisted: false
+  server-id: compute75
+  used-by: server
+10.13.67.198:
+  addr: 10.13.67.198
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0096
+  persisted: false
+  server-id: compute78
+  used-by: server
+10.13.67.199:
+  addr: 10.13.67.199
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0097
+  persisted: false
+  server-id: compute81
+  used-by: server
+10.13.67.200:
+  addr: 10.13.67.200
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0098
+  persisted: false
+  server-id: compute84
+  used-by: server
+10.13.67.201:
+  addr: 10.13.67.201
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0099
+  persisted: false
+  server-id: compute87
+  used-by: server
+10.13.67.202:
+  addr: 10.13.67.202
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0100
+  persisted: false
+  server-id: compute90
+  used-by: server
+10.13.67.203:
+  addr: 10.13.67.203
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0101
+  persisted: false
+  server-id: compute93
+  used-by: server
+10.13.67.204:
+  addr: 10.13.67.204
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0102
+  persisted: false
+  server-id: compute96
+  used-by: server
+10.13.67.205:
+  addr: 10.13.67.205
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0103
+  persisted: false
+  server-id: compute99
+  used-by: server
+10.13.67.206:
+  addr: 10.13.67.206
+  allocated: true
+  free: false
+  host: scale300-ccp-comp0104
+  persisted: false
+  server-id: compute102
+  used-by: server

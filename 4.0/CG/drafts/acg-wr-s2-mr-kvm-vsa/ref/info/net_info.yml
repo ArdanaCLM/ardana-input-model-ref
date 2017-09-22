@@ -1,0 +1,12 @@
+service_ips:
+    vsa:
+    -   cluster: vsa
+        cluster_ip:
+            hostname: hcg-cp1-vsa-VSA-BLK-bls
+            ip_address: 10.244.47.19
+        control_plane: cp1
+        hosts:
+        -   hostname: hcg-cp1-vsa0001-VSA-BLK-bls
+            ip_address: 10.244.47.18
+            name: hcg-cp1-vsa0001
+        network: BLS-NET

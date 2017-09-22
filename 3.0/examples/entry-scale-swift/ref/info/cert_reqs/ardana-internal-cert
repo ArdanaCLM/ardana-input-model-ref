@@ -1,0 +1,40 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+CN = "ardana-vip"
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "ardana-cp1-c1-m1-mgmt"
+DNS.2 = "ardana-cp1-c1-m2-mgmt"
+DNS.3 = "ardana-cp1-c1-m3-mgmt"
+DNS.4 = "ardana-cp1-vip-CEI-API-mgmt"
+DNS.5 = "ardana-cp1-vip-FND-MDB-mgmt"
+DNS.6 = "ardana-cp1-vip-FND-RMQ-mgmt"
+DNS.7 = "ardana-cp1-vip-FND-VDB-mgmt"
+DNS.8 = "ardana-cp1-vip-FRE-API-mgmt"
+DNS.9 = "ardana-cp1-vip-HUX-SVC-mgmt"
+DNS.10 = "ardana-cp1-vip-HZN-WEB-mgmt"
+DNS.11 = "ardana-cp1-vip-KEY-API-mgmt"
+DNS.12 = "ardana-cp1-vip-LOG-SVR-mgmt"
+DNS.13 = "ardana-cp1-vip-MON-API-mgmt"
+DNS.14 = "ardana-cp1-vip-OPS-WEB-mgmt"
+DNS.15 = "ardana-cp1-vip-SWF-PRX-mgmt"
+DNS.16 = "ardana-cp1-vip-admin-CEI-API-mgmt"
+DNS.17 = "ardana-cp1-vip-admin-FND-MDB-mgmt"
+DNS.18 = "ardana-cp1-vip-admin-FRE-API-mgmt"
+DNS.19 = "ardana-cp1-vip-admin-HUX-SVC-mgmt"
+DNS.20 = "ardana-cp1-vip-admin-HZN-WEB-mgmt"
+DNS.21 = "ardana-cp1-vip-admin-KEY-API-mgmt"
+DNS.22 = "ardana-cp1-vip-admin-MON-API-mgmt"
+DNS.23 = "ardana-cp1-vip-admin-OPS-WEB-mgmt"
+DNS.24 = "ardana-cp1-vip-admin-SWF-PRX-mgmt"
+DNS.25 = "10.241.17.2"
+IP.1 = "10.241.17.2"

@@ -1,0 +1,129 @@
+---
+  product:
+    version: 2
+
+  baremetal:
+    # NOTE: These values need to be changed to match your environment.
+    # Define the network range that contains the ip-addr values for
+    # the individual servers listed below.
+    subnet: 10.10.206.64
+    netmask: 255.255.255.192
+
+
+  servers:
+    # NOTE: Addresses of servers need to be
+    #       changed to match your environment.
+    #
+    #       Add additional servers as required
+
+    # Controllers
+    - id: controller1
+      ip-addr: 10.10.206.75
+      role: ROLE-CONTROLLER
+      nic-mapping: ARDANA-DL380
+      mac-addr: 50:a8:f0:26:a4:e4
+      ilo-ip: 10.10.206.3
+      ilo-user: admin
+      ilo-password: ardana
+
+
+    - id: controller2
+      ip-addr: 10.10.206.66
+      role: ROLE-CONTROLLER
+      nic-mapping: ARDANA-DL380
+      mac-addr: 50:a8:f0:26:a4:10
+      ilo-ip: 10.10.206.4
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: controller3
+      ip-addr: 10.10.206.67
+      role: ROLE-CONTROLLER
+      nic-mapping: ARDANA-DL380
+      mac-addr: 50:a8:f0:26:c8:64
+      ilo-ip: 10.10.206.5
+      ilo-user: admin
+      ilo-password: ardana
+
+    # Compute Nodes
+    - id: compute1
+      ip-addr: 10.10.206.68
+      role: ROLE-COMPUTE
+      nic-mapping: EVIMS-BL460
+      mac-addr: 5C:DC:D4:B7:21:EC
+      ilo-ip: 10.10.206.11
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: compute2
+      ip-addr: 10.10.206.69
+      role: ROLE-COMPUTE
+      nic-mapping: EVIMS-BL460
+      mac-addr: 5C:DC:D4:B7:22:60
+      ilo-ip: 10.10.206.12
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: compute3
+      ip-addr: 10.10.206.70
+      role: ROLE-COMPUTE
+      nic-mapping: EVIMS-BL460
+      mac-addr: 5C:DC:D4:B7:0D:B8
+      ilo-ip: 10.10.206.13
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: compute4
+      ip-addr: 10.10.206.71
+      role: ROLE-COMPUTE
+      nic-mapping: EVIMS-BL460
+      mac-addr: 5C:DC:D4:B7:14:04
+      ilo-ip: 10.10.206.19
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: compute5
+      ip-addr: 10.10.206.76
+      role: ROLE-COMPUTE
+      nic-mapping: EVIMS-BL460
+      mac-addr: 5C:DC:D4:B7:BA:AC
+      ilo-ip: 10.10.206.20
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: compute6
+      ip-addr: 10.10.206.77
+      role: ROLE-COMPUTE
+      nic-mapping: EVIMS-BL460
+      mac-addr: 5C:DC:D4:B7:21:E8
+      ilo-ip: 10.10.206.21
+      ilo-user: admin
+      ilo-password: ardana
+
+    # VSA Storage Nodes
+    - id: vsa1
+      ip-addr: 10.10.206.72
+      role: ROLE-VSA
+      nic-mapping: VSA-DL380
+      mac-addr: 50:a8:f0:26:c8:a4
+      ilo-ip: 10.10.206.6
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: vsa2
+      ip-addr: 10.10.206.73
+      role: ROLE-VSA
+      nic-mapping: VSA-DL380
+      mac-addr: 50:a8:f0:26:a7:dc
+      ilo-ip: 10.10.206.7
+      ilo-user: admin
+      ilo-password: ardana
+
+    - id: vsa3
+      ip-addr: 10.10.206.74
+      role: ROLE-VSA
+      nic-mapping: VSA-DL380
+      mac-addr: 50:a8:f0:26:ac:44
+      ilo-ip: 10.10.206.8
+      ilo-user: admin
+      ilo-password: ardana

@@ -1,0 +1,326 @@
++-ControlPlane: region1 (control-plane-1)----------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                              |
+| +-Cluster cluster0 ()------------------------------+                                                                                                         |
+| |                                                  |                                                                                                         |
+| | +-ardana-cp1-alm-m1 (192.168.54.20)------------+ |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | foundation                                   | |                                                                                                         |
+| | |   stunnel                                    | |                                                                                                         |
+| | | freezer                                      | |                                                                                                         |
+| | |   freezer-agent                              | |                                                                                                         |
+| | | logging                                      | |                                                                                                         |
+| | |   logging-producer                           | |                                                                                                         |
+| | | monasca                                      | |                                                                                                         |
+| | |   monasca-agent                              | |                                                                                                         |
+| | | operations                                   | |                                                                                                         |
+| | |   lifecycle-manager                          | |                                                                                                         |
+| | |   lifecycle-manager-target                   | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | -------------------------------------------- | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | bond0 (nic2port1, nic3port1)                 | |                                                                                                         |
+| | |   MANAGEMENT-NET (10.40.10.20)               | |                                                                                                         |
+| | | nic1port2                                    | |                                                                                                         |
+| | |   ARDANA-NET (192.168.54.20)                 | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | +----------------------------------------------+ |                                                                                                         |
+| |                                                  |                                                                                                         |
+| +--------------------------------------------------+                                                                                                         |
+|                                                                                                                                                              |
+| +-Cluster controller ()------------------------------------------------------------------------------------------------------------------------------------+ |
+| |                                                                                                                                                          | |
+| | +-ardana-cp1-controller-m1 (192.168.54.21)-----+    +-ardana-cp1-controller-m2 (192.168.54.22)-----+    +-ardana-cp1-controller-m3 (192.168.54.23)-----+ | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | cinder                                       |    | cinder                                       |    | cinder                                       | | |
+| | |   cinder-api                                 |    |   cinder-api                                 |    |   cinder-api                                 | | |
+| | |   cinder-backup                              |    |   cinder-backup                              |    |   cinder-backup                              | | |
+| | |   cinder-client                              |    |   cinder-client                              |    |   cinder-client                              | | |
+| | |   cinder-scheduler                           |    |   cinder-scheduler                           |    |   cinder-scheduler                           | | |
+| | |   cinder-volume                              |    |   cinder-volume                              |    |   cinder-volume                              | | |
+| | | foundation                                   |    | foundation                                   |    | foundation                                   | | |
+| | |   apache2                                    |    |   apache2                                    |    |   apache2                                    | | |
+| | |   ip-cluster                                 |    |   ip-cluster                                 |    |   ip-cluster                                 | | |
+| | |   mysql                                      |    |   mysql                                      |    |   mysql                                      | | |
+| | |   ntp-server                                 |    |   ntp-server                                 |    |   ntp-server                                 | | |
+| | |   openstack-client                           |    |   openstack-client                           |    |   openstack-client                           | | |
+| | |   rabbitmq                                   |    |   rabbitmq                                   |    |   rabbitmq                                   | | |
+| | |   sherpa-api                                 |    |   sherpa-api                                 |    |   sherpa-api                                 | | |
+| | |   stunnel                                    |    |   stunnel                                    |    |   stunnel                                    | | |
+| | | freezer                                      |    | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | | glance                                       |    | glance                                       |    | glance                                       | | |
+| | |   glance-api                                 |    |   glance-api                                 |    |   glance-api                                 | | |
+| | |   glance-client                              |    |   glance-client                              |    |   glance-client                              | | |
+| | |   glance-registry                            |    |   glance-registry                            |    |   glance-registry                            | | |
+| | | heat                                         |    | heat                                         |    | heat                                         | | |
+| | |   heat-api                                   |    |   heat-api                                   |    |   heat-api                                   | | |
+| | |   heat-api-cfn                               |    |   heat-api-cfn                               |    |   heat-api-cfn                               | | |
+| | |   heat-api-cloudwatch                        |    |   heat-api-cloudwatch                        |    |   heat-api-cloudwatch                        | | |
+| | |   heat-client                                |    |   heat-client                                |    |   heat-client                                | | |
+| | |   heat-engine                                |    |   heat-engine                                |    |   heat-engine                                | | |
+| | | horizon                                      |    | horizon                                      |    | horizon                                      | | |
+| | |   horizon                                    |    |   horizon                                    |    |   horizon                                    | | |
+| | | keystone                                     |    | keystone                                     |    | keystone                                     | | |
+| | |   keystone-api                               |    |   keystone-api                               |    |   keystone-api                               | | |
+| | |   keystone-client                            |    |   keystone-client                            |    |   keystone-client                            | | |
+| | | logging                                      |    | logging                                      |    | logging                                      | | |
+| | |   logging-producer                           |    |   logging-producer                           |    |   logging-producer                           | | |
+| | | monasca                                      |    | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              |    |   monasca-agent                              | | |
+| | | neutron                                      |    | neutron                                      |    | neutron                                      | | |
+| | |   neutron-client                             |    |   neutron-client                             |    |   neutron-client                             | | |
+| | |   neutron-dhcp-agent                         |    |   neutron-dhcp-agent                         |    |   neutron-dhcp-agent                         | | |
+| | |   neutron-metadata-agent                     |    |   neutron-metadata-agent                     |    |   neutron-metadata-agent                     | | |
+| | |   neutron-ml2-plugin                         |    |   neutron-ml2-plugin                         |    |   neutron-ml2-plugin                         | | |
+| | |   neutron-openvswitch-agent                  |    |   neutron-openvswitch-agent                  |    |   neutron-openvswitch-agent                  | | |
+| | |   neutron-server                             |    |   neutron-server                             |    |   neutron-server                             | | |
+| | |   neutron-vpn-agent                          |    |   neutron-vpn-agent                          |    |   neutron-vpn-agent                          | | |
+| | | nova                                         |    | nova                                         |    | nova                                         | | |
+| | |   nova-api                                   |    |   nova-api                                   |    |   nova-api                                   | | |
+| | |   nova-client                                |    |   nova-client                                |    |   nova-client                                | | |
+| | |   nova-conductor                             |    |   nova-conductor                             |    |   nova-conductor                             | | |
+| | |   nova-console-auth                          |    |   nova-console-auth                          |    |   nova-console-auth                          | | |
+| | |   nova-metadata                              |    |   nova-metadata                              |    |   nova-metadata                              | | |
+| | |   nova-novncproxy                            |    |   nova-novncproxy                            |    |   nova-novncproxy                            | | |
+| | |   nova-scheduler                             |    |   nova-scheduler                             |    |   nova-scheduler                             | | |
+| | | operations                                   |    | operations                                   |    | operations                                   | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | |   ops-console-monitor                        |    |   ops-console-monitor                        |    |   ops-console-monitor                        | | |
+| | |   ops-console-web                            |    |   ops-console-web                            |    |   ops-console-web                            | | |
+| | | vsa-storage                                  |    | vsa-storage                                  |    | vsa-storage                                  | | |
+| | |   cmc-service                                |    |   cmc-service                                |    |   cmc-service                                | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 | | |
+| | |   CEPH-CLIENT-NET (192.168.55.20)            |    |   CEPH-CLIENT-NET (192.168.55.21)            |    |   CEPH-CLIENT-NET (192.168.55.22)            | | |
+| | |   EXTERNAL-API-NET (192.168.57.20)           |    |   EXTERNAL-API-NET (192.168.57.21)           |    |   EXTERNAL-API-NET (192.168.57.22)           | | |
+| | |   MANAGEMENT-NET (10.40.10.21)               |    |   MANAGEMENT-NET (10.40.10.22)               |    |   MANAGEMENT-NET (10.40.10.23)               | | |
+| | | nic1port1                                    |    | nic1port1                                    |    | nic1port1                                    | | |
+| | |   ARDANA-NET (192.168.54.21)                    |    |   ARDANA-NET (192.168.54.22)                    |    |   ARDANA-NET (192.168.54.23)                    | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                                                                          | |
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                                                              |
+| +-Cluster mtrmon ()----------------------------------------------------------------------------------------------------------------------------------------+ |
+| |                                                                                                                                                          | |
+| | +-ardana-cp1-mtrmon-m1 (192.168.54.26)---------+    +-ardana-cp1-mtrmon-m2 (192.168.54.27)---------+    +-ardana-cp1-mtrmon-m3 (192.168.54.28)---------+ | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | ceilometer                                   |    | ceilometer                                   |    | ceilometer                                   | | |
+| | |   ceilometer-agent-central                   |    |   ceilometer-agent-central                   |    |   ceilometer-agent-central                   | | |
+| | |   ceilometer-agent-notification              |    |   ceilometer-agent-notification              |    |   ceilometer-agent-notification              | | |
+| | |   ceilometer-api                             |    |   ceilometer-api                             |    |   ceilometer-api                             | | |
+| | |   ceilometer-client                          |    |   ceilometer-client                          |    |   ceilometer-client                          | | |
+| | |   ceilometer-collector                       |    |   ceilometer-collector                       |    |   ceilometer-collector                       | | |
+| | |   ceilometer-common                          |    |   ceilometer-common                          |    |   ceilometer-common                          | | |
+| | |   ceilometer-expirer                         |    |   ceilometer-expirer                         |    |   ceilometer-expirer                         | | |
+| | | foundation                                   |    | foundation                                   |    | foundation                                   | | |
+| | |   apache2                                    |    |   apache2                                    |    |   apache2                                    | | |
+| | |   kafka                                      |    |   kafka                                      |    |   kafka                                      | | |
+| | |   ntp-client                                 |    |   ntp-client                                 |    |   ntp-client                                 | | |
+| | |   storm                                      |    |   storm                                      |    |   storm                                      | | |
+| | |   stunnel                                    |    |   stunnel                                    |    |   stunnel                                    | | |
+| | |   vertica                                    |    |   vertica                                    |    |   vertica                                    | | |
+| | |   zookeeper                                  |    |   zookeeper                                  |    |   zookeeper                                  | | |
+| | | freezer                                      |    | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | |   freezer-api                                |    |   freezer-api                                |    |   freezer-api                                | | |
+| | | logging                                      |    | logging                                      |    | logging                                      | | |
+| | |   logging-producer                           |    |   logging-producer                           |    |   logging-producer                           | | |
+| | |   logging-server                             |    |   logging-server                             |    |   logging-server                             | | |
+| | | monasca                                      |    | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              |    |   monasca-agent                              | | |
+| | |   monasca-api                                |    |   monasca-api                                |    |   monasca-api                                | | |
+| | |   monasca-client                             |    |   monasca-client                             |    |   monasca-client                             | | |
+| | |   monasca-notifier                           |    |   monasca-notifier                           |    |   monasca-notifier                           | | |
+| | |   monasca-persister                          |    |   monasca-persister                          |    |   monasca-persister                          | | |
+| | |   monasca-threshold                          |    |   monasca-threshold                          |    |   monasca-threshold                          | | |
+| | | operations                                   |    | operations                                   |    | operations                                   | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 | | |
+| | |   MANAGEMENT-NET (10.40.10.24)               |    |   MANAGEMENT-NET (10.40.10.25)               |    |   MANAGEMENT-NET (10.40.10.26)               | | |
+| | | nic1port1                                    |    | nic1port1                                    |    | nic1port1                                    | | |
+| | |   ARDANA-NET (192.168.54.26)                    |    |   ARDANA-NET (192.168.54.27)                    |    |   ARDANA-NET (192.168.54.28)                    | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                                                                          | |
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                                                              |
+| +-Cluster swpaco ()------------------------------------------------------------------------------------+                                                     |
+| |                                                                                                      |                                                     |
+| | +-ardana-cp1-swpac-m1 (192.168.54.24)----------+    +-ardana-cp1-swpac-m2 (192.168.54.25)----------+ |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | foundation                                   |    | foundation                                   | |                                                     |
+| | |   memcached                                  |    |   memcached                                  | |                                                     |
+| | |   ntp-client                                 |    |   ntp-client                                 | |                                                     |
+| | |   stunnel                                    |    |   stunnel                                    | |                                                     |
+| | |   swift-common                               |    |   swift-common                               | |                                                     |
+| | |   swift-rsync                                |    |   swift-rsync                                | |                                                     |
+| | | freezer                                      |    | freezer                                      | |                                                     |
+| | |   freezer-agent                              |    |   freezer-agent                              | |                                                     |
+| | |   freezer-agent                              |    |   freezer-agent                              | |                                                     |
+| | | logging                                      |    | logging                                      | |                                                     |
+| | |   logging-producer                           |    |   logging-producer                           | |                                                     |
+| | | monasca                                      |    | monasca                                      | |                                                     |
+| | |   monasca-agent                              |    |   monasca-agent                              | |                                                     |
+| | | operations                                   |    | operations                                   | |                                                     |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | |                                                     |
+| | | swift                                        |    | swift                                        | |                                                     |
+| | |   swift-account                              |    |   swift-account                              | |                                                     |
+| | |   swift-client                               |    |   swift-client                               | |                                                     |
+| | |   swift-container                            |    |   swift-container                            | |                                                     |
+| | |   swift-object                               |    |   swift-object                               | |                                                     |
+| | |   swift-proxy                                |    |   swift-proxy                                | |                                                     |
+| | |   swift-ring-builder                         |    |   swift-ring-builder                         | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | -------------------------------------------- |    | -------------------------------------------- | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 | |                                                     |
+| | |   MANAGEMENT-NET (10.40.10.27)               |    |   MANAGEMENT-NET (10.40.10.28)               | |                                                     |
+| | | nic1port1                                    |    | nic1port1                                    | |                                                     |
+| | |   ARDANA-NET (192.168.54.24)                    |    |   ARDANA-NET (192.168.54.25)                    | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | +----------------------------------------------+    +----------------------------------------------+ |                                                     |
+| |                                                                                                      |                                                     |
+| +------------------------------------------------------------------------------------------------------+                                                     |
+|                                                                                                                                                              |
+| +-Cluster ceph-mon ()--------------------------------------------------------------------------------------------------------------------------------------+ |
+| |                                                                                                                                                          | |
+| | +-ardana-cp1-ceph-mon-m1 (192.168.54.65)-------+    +-ardana-cp1-ceph-mon-m2 (192.168.54.66)-------+    +-ardana-cp1-ceph-mon-m3 (192.168.54.64)-------+ | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | ceph                                         |    | ceph                                         |    | ceph                                         | | |
+| | |   ceph-monitor                               |    |   ceph-monitor                               |    |   ceph-monitor                               | | |
+| | | foundation                                   |    | foundation                                   |    | foundation                                   | | |
+| | |   ntp-client                                 |    |   ntp-client                                 |    |   ntp-client                                 | | |
+| | |   stunnel                                    |    |   stunnel                                    |    |   stunnel                                    | | |
+| | | freezer                                      |    | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | | logging                                      |    | logging                                      |    | logging                                      | | |
+| | |   logging-producer                           |    |   logging-producer                           |    |   logging-producer                           | | |
+| | | monasca                                      |    | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              |    |   monasca-agent                              | | |
+| | | operations                                   |    | operations                                   |    | operations                                   | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 |    | bond0 (nic2port1, nic3port1)                 | | |
+| | |   CEPH-CLIENT-NET (192.168.55.23)            |    |   CEPH-CLIENT-NET (192.168.55.24)            |    |   CEPH-CLIENT-NET (192.168.55.25)            | | |
+| | |   MANAGEMENT-NET (10.40.10.29)               |    |   MANAGEMENT-NET (10.40.10.30)               |    |   MANAGEMENT-NET (10.40.10.31)               | | |
+| | | nic1port1                                    |    | nic1port1                                    |    | nic1port1                                    | | |
+| | |   ARDANA-NET (192.168.54.65)                    |    |   ARDANA-NET (192.168.54.66)                    |    |   ARDANA-NET (192.168.54.64)                    | | |
+| | | nic2port2                                    |    | nic2port2                                    |    | nic2port2                                    | | |
+| | |   CEPH-CLUSTER-NET (192.168.56.20)           |    |   CEPH-CLUSTER-NET (192.168.56.21)           |    |   CEPH-CLUSTER-NET (192.168.56.22)           | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                                                                          | |
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                                                              |
+| +-compute----------------------------------------------------------------------------------------------+                                                     |
+| |                                                                                                      |                                                     |
+| | +-COMPUTE-ROLE (AZ2) (9 servers)---------------+    +-COMPUTE-ROLE (AZ3) (9 servers)---------------+ |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | foundation                                   |    | foundation                                   | |                                                     |
+| | |   ntp-client                                 |    |   ntp-client                                 | |                                                     |
+| | |   stunnel                                    |    |   stunnel                                    | |                                                     |
+| | | freezer                                      |    | freezer                                      | |                                                     |
+| | |   freezer-agent                              |    |   freezer-agent                              | |                                                     |
+| | | logging                                      |    | logging                                      | |                                                     |
+| | |   logging-producer                           |    |   logging-producer                           | |                                                     |
+| | | monasca                                      |    | monasca                                      | |                                                     |
+| | |   monasca-agent                              |    |   monasca-agent                              | |                                                     |
+| | | neutron                                      |    | neutron                                      | |                                                     |
+| | |   neutron-l3-agent                           |    |   neutron-l3-agent                           | |                                                     |
+| | |   neutron-lbaasv2-agent                      |    |   neutron-lbaasv2-agent                      | |                                                     |
+| | |   neutron-metadata-agent                     |    |   neutron-metadata-agent                     | |                                                     |
+| | |   neutron-openvswitch-agent                  |    |   neutron-openvswitch-agent                  | |                                                     |
+| | | nova                                         |    | nova                                         | |                                                     |
+| | |   nova-compute                               |    |   nova-compute                               | |                                                     |
+| | |   nova-compute-kvm                           |    |   nova-compute-kvm                           | |                                                     |
+| | | operations                                   |    | operations                                   | |                                                     |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | -------------------------------------------- |    | -------------------------------------------- | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | bond0 (nic2port1, nic4port1)                 |    | bond0 (nic2port1, nic4port1)                 | |                                                     |
+| | |   CEPH-CLIENT-NET (192.168.55.0/24)          |    |   CEPH-CLIENT-NET (192.168.55.0/24)          | |                                                     |
+| | |   MANAGEMENT-NET (10.40.10.0/25)             |    |   MANAGEMENT-NET (10.40.10.0/25)             | |                                                     |
+| | | nic1port1                                    |    | nic1port1                                    | |                                                     |
+| | |   ARDANA-NET (192.168.54.0/24)                  |    |   ARDANA-NET (192.168.54.0/24)                  | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | +----------------------------------------------+    +----------------------------------------------+ |                                                     |
+| +------------------------------------------------------------------------------------------------------+                                                     |
+|                                                                                                                                                              |
+| +-passcompute--------------------------------------+                                                                                                         |
+| |                                                  |                                                                                                         |
+| | +-PAAS-COMPUTE-ROLE (AZ5) (15 servers)---------+ |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | foundation                                   | |                                                                                                         |
+| | |   ntp-client                                 | |                                                                                                         |
+| | |   stunnel                                    | |                                                                                                         |
+| | | freezer                                      | |                                                                                                         |
+| | |   freezer-agent                              | |                                                                                                         |
+| | | logging                                      | |                                                                                                         |
+| | |   logging-producer                           | |                                                                                                         |
+| | | monasca                                      | |                                                                                                         |
+| | |   monasca-agent                              | |                                                                                                         |
+| | | neutron                                      | |                                                                                                         |
+| | |   neutron-l3-agent                           | |                                                                                                         |
+| | |   neutron-lbaasv2-agent                      | |                                                                                                         |
+| | |   neutron-metadata-agent                     | |                                                                                                         |
+| | |   neutron-openvswitch-agent                  | |                                                                                                         |
+| | | nova                                         | |                                                                                                         |
+| | |   nova-compute                               | |                                                                                                         |
+| | |   nova-compute-kvm                           | |                                                                                                         |
+| | | operations                                   | |                                                                                                         |
+| | |   lifecycle-manager-target                   | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | -------------------------------------------- | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | bond0 (nic2port1, nic3port1)                 | |                                                                                                         |
+| | |   CEPH-CLIENT-NET (192.168.55.0/24)          | |                                                                                                         |
+| | |   MANAGEMENT-NET (10.40.10.0/25)             | |                                                                                                         |
+| | | nic1port1                                    | |                                                                                                         |
+| | |   ARDANA-NET (192.168.54.0/24)                  | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | +----------------------------------------------+ |                                                                                                         |
+| +--------------------------------------------------+                                                                                                         |
+|                                                                                                                                                              |
+| +-osd----------------------------------------------+                                                                                                         |
+| |                                                  |                                                                                                         |
+| | +-OSD-ROLE (AZ4) (5 servers)-------------------+ |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | ceph                                         | |                                                                                                         |
+| | |   ceph-osd                                   | |                                                                                                         |
+| | | foundation                                   | |                                                                                                         |
+| | |   ntp-client                                 | |                                                                                                         |
+| | |   stunnel                                    | |                                                                                                         |
+| | | freezer                                      | |                                                                                                         |
+| | |   freezer-agent                              | |                                                                                                         |
+| | | logging                                      | |                                                                                                         |
+| | |   logging-producer                           | |                                                                                                         |
+| | | monasca                                      | |                                                                                                         |
+| | |   monasca-agent                              | |                                                                                                         |
+| | | operations                                   | |                                                                                                         |
+| | |   lifecycle-manager-target                   | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | -------------------------------------------- | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | bond0 (nic2port1, nic3port1)                 | |                                                                                                         |
+| | |   MANAGEMENT-NET (10.40.10.0/25)             | |                                                                                                         |
+| | | nic1port1                                    | |                                                                                                         |
+| | |   ARDANA-NET (192.168.54.0/24)                  | |                                                                                                         |
+| | | nic2port2                                    | |                                                                                                         |
+| | |   CEPH-CLIENT-NET (192.168.55.0/24)          | |                                                                                                         |
+| | |   CEPH-CLUSTER-NET (192.168.56.0/24)         | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | +----------------------------------------------+ |                                                                                                         |
+| +--------------------------------------------------+                                                                                                         |
+|                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+

@@ -1,0 +1,314 @@
+network_groups:
+    BLS:
+        BLS-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.47.109
+                                hcg-cp1-controller-m2: 10.244.47.110
+                                hcg-cp1-controller-m3: 10.244.47.111
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: 10.244.47.102
+                                hcg-cp1-alm-hyp-m2: 10.244.47.105
+                                hcg-cp1-alm-hyp-m3: 10.244.47.107
+                            service_ips:
+                                vsa:
+                                    hosts:
+                                        hcg-cp1-alm-hyp-m1: 10.244.47.103
+                                        hcg-cp1-alm-hyp-m2: 10.244.47.106
+                                        hcg-cp1-alm-hyp-m3: 10.244.47.108
+                                    vip: 10.244.47.104
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp1-comp0001: 10.244.47.112
+                cp2:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp2-controller-m1: 10.244.47.116
+                                hcg-cp2-controller-m2: 10.244.47.117
+                                hcg-cp2-controller-m3: 10.244.47.118
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: 10.244.47.113
+                                hcg-cp2-alm-hyp-m2: 10.244.47.114
+                                hcg-cp2-alm-hyp-m3: 10.244.47.115
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp2-comp0001: 10.244.47.119
+    CAN:
+        CAN-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.45.102
+                                hcg-cp1-controller-m2: 10.244.45.103
+                                hcg-cp1-controller-m3: 10.244.45.104
+                            vips:
+                                10.244.45.108: extlb
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: null
+                                hcg-cp1-alm-hyp-m2: null
+                                hcg-cp1-alm-hyp-m3: null
+                cp2:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp2-controller-m1: 10.244.45.105
+                                hcg-cp2-controller-m2: 10.244.45.106
+                                hcg-cp2-controller-m3: 10.244.45.107
+                            vips:
+                                10.244.45.109: extlb2
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: null
+                                hcg-cp2-alm-hyp-m2: null
+                                hcg-cp2-alm-hyp-m3: null
+    CLM:
+        CLM-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.44.105
+                                hcg-cp1-controller-m2: 10.244.44.106
+                                hcg-cp1-controller-m3: 10.244.44.107
+                            vips:
+                                10.244.44.131: lb
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: 10.244.44.102
+                                hcg-cp1-alm-hyp-m2: 10.244.44.103
+                                hcg-cp1-alm-hyp-m3: 10.244.44.104
+                        mml:
+                            servers:
+                                hcg-cp1-mml-m1: 10.244.44.111
+                                hcg-cp1-mml-m2: 10.244.44.112
+                                hcg-cp1-mml-m3: 10.244.44.113
+                        network:
+                            servers:
+                                hcg-cp1-network-m1: 10.244.44.114
+                                hcg-cp1-network-m2: 10.244.44.115
+                                hcg-cp1-network-m3: 10.244.44.116
+                        rmq-mysql:
+                            servers:
+                                hcg-cp1-rmq-mysql-m1: 10.244.44.108
+                                hcg-cp1-rmq-mysql-m2: 10.244.44.109
+                                hcg-cp1-rmq-mysql-m3: 10.244.44.110
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp1-comp0001: 10.244.44.117
+                cp2:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp2-controller-m1: 10.244.44.121
+                                hcg-cp2-controller-m2: 10.244.44.122
+                                hcg-cp2-controller-m3: 10.244.44.123
+                            vips:
+                                10.244.44.132: lb2
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: 10.244.44.118
+                                hcg-cp2-alm-hyp-m2: 10.244.44.119
+                                hcg-cp2-alm-hyp-m3: 10.244.44.120
+                        network:
+                            servers:
+                                hcg-cp2-network-m1: 10.244.44.127
+                                hcg-cp2-network-m2: 10.244.44.128
+                                hcg-cp2-network-m3: 10.244.44.129
+                        rmq-mysql:
+                            servers:
+                                hcg-cp2-rmq-mysql-m1: 10.244.44.124
+                                hcg-cp2-rmq-mysql-m2: 10.244.44.125
+                                hcg-cp2-rmq-mysql-m3: 10.244.44.126
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp2-comp0001: 10.244.44.130
+    OCTAVIA-MGMT-NET-CP1:
+        OCTAVIA-MGMT-NET-CP1:
+            control_planes: {}
+    OCTAVIA-MGMT-NET-CP2:
+        OCTAVIA-MGMT-NET-CP2:
+            control_planes: {}
+    PXE:
+        ESX-CONF-NET:
+            control_planes: {}
+        PXE-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.43.105
+                                hcg-cp1-controller-m2: 10.244.43.106
+                                hcg-cp1-controller-m3: 10.244.43.107
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: 10.244.43.102
+                                hcg-cp1-alm-hyp-m2: 10.244.43.103
+                                hcg-cp1-alm-hyp-m3: 10.244.43.104
+                        mml:
+                            servers:
+                                hcg-cp1-mml-m1: 10.244.43.111
+                                hcg-cp1-mml-m2: 10.244.43.112
+                                hcg-cp1-mml-m3: 10.244.43.113
+                        network:
+                            servers:
+                                hcg-cp1-network-m1: 10.244.43.114
+                                hcg-cp1-network-m2: 10.244.43.115
+                                hcg-cp1-network-m3: 10.244.43.116
+                        rmq-mysql:
+                            servers:
+                                hcg-cp1-rmq-mysql-m1: 10.244.43.108
+                                hcg-cp1-rmq-mysql-m2: 10.244.43.109
+                                hcg-cp1-rmq-mysql-m3: 10.244.43.110
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp1-comp0001: 10.244.43.117
+                cp2:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp2-controller-m1: 10.244.43.205
+                                hcg-cp2-controller-m2: 10.244.43.206
+                                hcg-cp2-controller-m3: 10.244.43.207
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: 10.244.43.202
+                                hcg-cp2-alm-hyp-m2: 10.244.43.203
+                                hcg-cp2-alm-hyp-m3: 10.244.43.204
+                        network:
+                            servers:
+                                hcg-cp2-network-m1: 10.244.43.214
+                                hcg-cp2-network-m2: 10.244.43.215
+                                hcg-cp2-network-m3: 10.244.43.216
+                        rmq-mysql:
+                            servers:
+                                hcg-cp2-rmq-mysql-m1: 10.244.43.208
+                                hcg-cp2-rmq-mysql-m2: 10.244.43.209
+                                hcg-cp2-rmq-mysql-m3: 10.244.43.210
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp2-comp0001: 10.244.43.217
+    TRUNK:
+        TRUNK-NET:
+            control_planes: {}
+    VLAN2-TUL:
+        VLAN2-TUL-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: null
+                                hcg-cp1-alm-hyp-m2: null
+                                hcg-cp1-alm-hyp-m3: null
+                        network:
+                            servers:
+                                hcg-cp1-network-m1: null
+                                hcg-cp1-network-m2: null
+                                hcg-cp1-network-m3: null
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp1-comp0001: null
+                cp2:
+                    clusters:
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: null
+                                hcg-cp2-alm-hyp-m2: null
+                                hcg-cp2-alm-hyp-m3: null
+                        network:
+                            servers:
+                                hcg-cp2-network-m1: null
+                                hcg-cp2-network-m2: null
+                                hcg-cp2-network-m3: null
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp2-comp0001: null
+    VLAN3-TUL:
+        VLAN3-TUL-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: null
+                                hcg-cp1-alm-hyp-m2: null
+                                hcg-cp1-alm-hyp-m3: null
+                        network:
+                            servers:
+                                hcg-cp1-network-m1: null
+                                hcg-cp1-network-m2: null
+                                hcg-cp1-network-m3: null
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp1-comp0001: null
+                cp2:
+                    clusters:
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: null
+                                hcg-cp2-alm-hyp-m2: null
+                                hcg-cp2-alm-hyp-m3: null
+                        network:
+                            servers:
+                                hcg-cp2-network-m1: null
+                                hcg-cp2-network-m2: null
+                                hcg-cp2-network-m3: null
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp2-comp0001: null
+    VxLAN-VLAN1-TUL:
+        VxLAN-VLAN1-TUL-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: null
+                                hcg-cp1-alm-hyp-m2: null
+                                hcg-cp1-alm-hyp-m3: null
+                        network:
+                            servers:
+                                hcg-cp1-network-m1: 10.244.48.102
+                                hcg-cp1-network-m2: 10.244.48.103
+                                hcg-cp1-network-m3: 10.244.48.104
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp1-comp0001: 10.244.48.105
+                cp2:
+                    clusters:
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp2-alm-hyp-m1: null
+                                hcg-cp2-alm-hyp-m2: null
+                                hcg-cp2-alm-hyp-m3: null
+                        network:
+                            servers:
+                                hcg-cp2-network-m1: 10.244.48.106
+                                hcg-cp2-network-m2: 10.244.48.107
+                                hcg-cp2-network-m3: 10.244.48.108
+                    resources:
+                        compute:
+                            servers:
+                                hcg-cp2-comp0001: 10.244.48.109

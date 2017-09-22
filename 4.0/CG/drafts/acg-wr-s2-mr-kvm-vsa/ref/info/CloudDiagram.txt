@@ -1,0 +1,224 @@
++-ControlPlane:  (cp1)-----------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                                                                                                              |
+| +-Cluster ardana-hypervisor ()----------------------------------------------------------------------------+                                                     |
+| |                                                                                                      |                                                     |
+| | +-hcg-cp1-alm-hyp-m1 (10.244.43.102)-----------+    +-hcg-cp1-alm-hyp-m2 (10.244.43.103)-----------+ |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | clients                                      |    | clients                                      | |                                                     |
+| | |   ceilometer-client                          |    |   ceilometer-client                          | |                                                     |
+| | |   cinder-client                              |    |   cinder-client                              | |                                                     |
+| | |   glance-client                              |    |   glance-client                              | |                                                     |
+| | |   keystone-client                            |    |   keystone-client                            | |                                                     |
+| | |   monasca-client                             |    |   monasca-client                             | |                                                     |
+| | |   neutron-client                             |    |   neutron-client                             | |                                                     |
+| | |   nova-client                                |    |   nova-client                                | |                                                     |
+| | |   openstack-client                           |    |   openstack-client                           | |                                                     |
+| | |   swift-client                               |    |   swift-client                               | |                                                     |
+| | | foundation                                   |    | foundation                                   | |                                                     |
+| | |   ardana-ca                                  |    |   ardana-ca                                  | |                                                     |
+| | |   ntp-server                                 |    |   ntp-server                                 | |                                                     |
+| | |   stunnel                                    |    |   stunnel                                    | |                                                     |
+| | | freezer                                      |    | freezer                                      | |                                                     |
+| | |   freezer-agent                              |    |   freezer-agent                              | |                                                     |
+| | | ardana                                          |    | ardana                                          | |                                                     |
+| | |   ardana-ux-services                            |    |   ardana-ux-services                            | |                                                     |
+| | |   lifecycle-manager                          |    |   lifecycle-manager                          | |                                                     |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | |                                                     |
+| | | logging                                      |    | logging                                      | |                                                     |
+| | |   logging-producer                           |    |   logging-producer                           | |                                                     |
+| | |   logging-rotate                             |    |   logging-rotate                             | |                                                     |
+| | | monasca                                      |    | monasca                                      | |                                                     |
+| | |   monasca-agent                              |    |   monasca-agent                              | |                                                     |
+| | | swift                                        |    | swift                                        | |                                                     |
+| | |   swift-account                              |    |   swift-account                              | |                                                     |
+| | |   swift-common                               |    |   swift-common                               | |                                                     |
+| | |   swift-container                            |    |   swift-container                            | |                                                     |
+| | |   swift-object                               |    |   swift-object                               | |                                                     |
+| | |   swift-proxy                                |    |   swift-proxy                                | |                                                     |
+| | |   swift-ring-builder                         |    |   swift-ring-builder                         | |                                                     |
+| | |   swift-rsync                                |    |   swift-rsync                                | |                                                     |
+| | | tempest                                      |    | tempest                                      | |                                                     |
+| | |   tempest                                    |    |   tempest                                    | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | -------------------------------------------- |    | -------------------------------------------- | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | | bond0 (hed1, hed2)                           |    | bond0 (hed1, hed2)                           | |                                                     |
+| | |   BLS-NET (10.244.47.12)                     |    |   BLS-NET (10.244.47.13)                     | |                                                     |
+| | |   CAN-NET                                    |    |   CAN-NET                                    | |                                                     |
+| | |   CLM-NET (10.244.44.12)                     |    |   CLM-NET (10.244.44.13)                     | |                                                     |
+| | |   PXE-NET (10.244.43.102)                    |    |   PXE-NET (10.244.43.103)                    | |                                                     |
+| | |                                              |    |                                              | |                                                     |
+| | +----------------------------------------------+    +----------------------------------------------+ |                                                     |
+| |                                                                                                      |                                                     |
+| +------------------------------------------------------------------------------------------------------+                                                     |
+|                                                                                                                                                              |
+| +-Cluster controller ()------------------------------------------------------------------------------------------------------------------------------------+ |
+| |                                                                                                                                                          | |
+| | +-hcg-cp1-controller-m1 (10.244.43.105)--------+    +-hcg-cp1-controller-m2 (10.244.43.106)--------+    +-hcg-cp1-controller-m3 (10.244.43.107)--------+ | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | cinder                                       |    | cinder                                       |    | cinder                                       | | |
+| | |   cinder-api                                 |    |   cinder-api                                 |    |   cinder-api                                 | | |
+| | |   cinder-backup                              |    |   cinder-backup                              |    |   cinder-backup                              | | |
+| | |   cinder-scheduler                           |    |   cinder-scheduler                           |    |   cinder-scheduler                           | | |
+| | |   cinder-volume                              |    |   cinder-volume                              |    |   cinder-volume                              | | |
+| | | clients                                      |    | clients                                      |    | clients                                      | | |
+| | |   cinder-client                              |    |   cinder-client                              |    |   cinder-client                              | | |
+| | |   keystone-client                            |    |   keystone-client                            |    |   keystone-client                            | | |
+| | |   openstack-client                           |    |   openstack-client                           |    |   openstack-client                           | | |
+| | | foundation                                   |    | foundation                                   |    | foundation                                   | | |
+| | |   apache2                                    |    |   apache2                                    |    |   apache2                                    | | |
+| | |   ip-cluster                                 |    |   ip-cluster                                 |    |   ip-cluster                                 | | |
+| | |   memcached                                  |    |   memcached                                  |    |   memcached                                  | | |
+| | |   ntp-client                                 |    |   ntp-client                                 |    |   ntp-client                                 | | |
+| | |   stunnel                                    |    |   stunnel                                    |    |   stunnel                                    | | |
+| | | freezer                                      |    | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | | glance                                       |    | glance                                       |    | glance                                       | | |
+| | |   glance-api                                 |    |   glance-api                                 |    |   glance-api                                 | | |
+| | |   glance-registry                            |    |   glance-registry                            |    |   glance-registry                            | | |
+| | | ardana                                          |    | ardana                                          |    | ardana                                          | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | | keystone                                     |    | keystone                                     |    | keystone                                     | | |
+| | |   keystone-api                               |    |   keystone-api                               |    |   keystone-api                               | | |
+| | | logging                                      |    | logging                                      |    | logging                                      | | |
+| | |   logging-producer                           |    |   logging-producer                           |    |   logging-producer                           | | |
+| | |   logging-rotate                             |    |   logging-rotate                             |    |   logging-rotate                             | | |
+| | | monasca                                      |    | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              |    |   monasca-agent                              | | |
+| | | operations                                   |    | operations                                   |    | operations                                   | | |
+| | |   ops-console-monitor                        |    |   ops-console-monitor                        |    |   ops-console-monitor                        | | |
+| | |   ops-console-web                            |    |   ops-console-web                            |    |   ops-console-web                            | | |
+| | | vsa-storage                                  |    | vsa-storage                                  |    | vsa-storage                                  | | |
+| | |   cmc-service                                |    |   cmc-service                                |    |   cmc-service                                | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | hed1                                         |    | hed1                                         |    | hed1                                         | | |
+| | |   BLS-NET (10.244.47.14)                     |    |   BLS-NET (10.244.47.15)                     |    |   BLS-NET (10.244.47.16)                     | | |
+| | |   CAN-NET (10.244.45.12)                     |    |   CAN-NET (10.244.45.13)                     |    |   CAN-NET (10.244.45.14)                     | | |
+| | |   CLM-NET (10.244.44.14)                     |    |   CLM-NET (10.244.44.15)                     |    |   CLM-NET (10.244.44.16)                     | | |
+| | |   PXE-NET (10.244.43.105)                    |    |   PXE-NET (10.244.43.106)                    |    |   PXE-NET (10.244.43.107)                    | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                                                                          | |
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                                                              |
+| +-Cluster rmq-mysql ()-------------------------------------------------------------------------------------------------------------------------------------+ |
+| |                                                                                                                                                          | |
+| | +-hcg-cp1-rmq-mysql-m1 (10.244.43.108)---------+    +-hcg-cp1-rmq-mysql-m2 (10.244.43.109)---------+    +-hcg-cp1-rmq-mysql-m3 (10.244.43.110)---------+ | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | foundation                                   |    | foundation                                   |    | foundation                                   | | |
+| | |   mysql                                      |    |   mysql                                      |    |   mysql                                      | | |
+| | |   ntp-client                                 |    |   ntp-client                                 |    |   ntp-client                                 | | |
+| | |   rabbitmq                                   |    |   rabbitmq                                   |    |   rabbitmq                                   | | |
+| | |   stunnel                                    |    |   stunnel                                    |    |   stunnel                                    | | |
+| | | freezer                                      |    | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | | ardana                                          |    | ardana                                          |    | ardana                                          | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | | logging                                      |    | logging                                      |    | logging                                      | | |
+| | |   logging-producer                           |    |   logging-producer                           |    |   logging-producer                           | | |
+| | |   logging-rotate                             |    |   logging-rotate                             |    |   logging-rotate                             | | |
+| | | monasca                                      |    | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              |    |   monasca-agent                              | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | hed1                                         |    | hed1                                         |    | hed1                                         | | |
+| | |   CLM-NET (10.244.44.17)                     |    |   CLM-NET (10.244.44.18)                     |    |   CLM-NET (10.244.44.19)                     | | |
+| | |   PXE-NET (10.244.43.108)                    |    |   PXE-NET (10.244.43.109)                    |    |   PXE-NET (10.244.43.110)                    | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                                                                          | |
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                                                              |
+| +-Cluster mml ()-------------------------------------------------------------------------------------------------------------------------------------------+ |
+| |                                                                                                                                                          | |
+| | +-hcg-cp1-mml-m1 (10.244.43.111)---------------+    +-hcg-cp1-mml-m2 (10.244.43.112)---------------+    +-hcg-cp1-mml-m3 (10.244.43.113)---------------+ | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | ceilometer                                   |    | ceilometer                                   |    | ceilometer                                   | | |
+| | |   ceilometer-agent-notification              |    |   ceilometer-agent-notification              |    |   ceilometer-agent-notification              | | |
+| | |   ceilometer-api                             |    |   ceilometer-api                             |    |   ceilometer-api                             | | |
+| | |   ceilometer-common                          |    |   ceilometer-common                          |    |   ceilometer-common                          | | |
+| | |   ceilometer-polling                         |    |   ceilometer-polling                         |    |   ceilometer-polling                         | | |
+| | | clients                                      |    | clients                                      |    | clients                                      | | |
+| | |   keystone-client                            |    |   keystone-client                            |    |   keystone-client                            | | |
+| | |   monasca-client                             |    |   monasca-client                             |    |   monasca-client                             | | |
+| | |   nova-client                                |    |   nova-client                                |    |   nova-client                                | | |
+| | | foundation                                   |    | foundation                                   |    | foundation                                   | | |
+| | |   apache2                                    |    |   apache2                                    |    |   apache2                                    | | |
+| | |   kafka                                      |    |   kafka                                      |    |   kafka                                      | | |
+| | |   ntp-client                                 |    |   ntp-client                                 |    |   ntp-client                                 | | |
+| | |   storm                                      |    |   storm                                      |    |   storm                                      | | |
+| | |   stunnel                                    |    |   stunnel                                    |    |   stunnel                                    | | |
+| | |   vertica                                    |    |   vertica                                    |    |   vertica                                    | | |
+| | |   zookeeper                                  |    |   zookeeper                                  |    |   zookeeper                                  | | |
+| | | freezer                                      |    | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              |    |   freezer-agent                              | | |
+| | |   freezer-api                                |    |   freezer-api                                |    |   freezer-api                                | | |
+| | | ardana                                          |    | ardana                                          |    | ardana                                          | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | | logging                                      |    | logging                                      |    | logging                                      | | |
+| | |   logging-api                                |    |   logging-api                                |    |   logging-api                                | | |
+| | |   logging-producer                           |    |   logging-producer                           |    |   logging-producer                           | | |
+| | |   logging-rotate                             |    |   logging-rotate                             |    |   logging-rotate                             | | |
+| | |   logging-server                             |    |   logging-server                             |    |   logging-server                             | | |
+| | | monasca                                      |    | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              |    |   monasca-agent                              | | |
+| | |   monasca-api                                |    |   monasca-api                                |    |   monasca-api                                | | |
+| | |   monasca-liveness-check                     |    |   monasca-liveness-check                     |    |   monasca-liveness-check                     | | |
+| | |   monasca-notifier                           |    |   monasca-notifier                           |    |   monasca-notifier                           | | |
+| | |   monasca-persister                          |    |   monasca-persister                          |    |   monasca-persister                          | | |
+| | |   monasca-threshold                          |    |   monasca-threshold                          |    |   monasca-threshold                          | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | | hed1                                         |    | hed1                                         |    | hed1                                         | | |
+| | |   CLM-NET (10.244.44.20)                     |    |   CLM-NET (10.244.44.21)                     |    |   CLM-NET (10.244.44.22)                     | | |
+| | |   PXE-NET (10.244.43.111)                    |    |   PXE-NET (10.244.43.112)                    |    |   PXE-NET (10.244.43.113)                    | | |
+| | |                                              |    |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                                                                          | |
+| +----------------------------------------------------------------------------------------------------------------------------------------------------------+ |
+|                                                                                                                                                              |
+| +-vsa----------------------------------------------+                                                                                                         |
+| |                                                  |                                                                                                         |
+| | +-VSA-ROLE (AZ1) (1 servers)-------------------+ |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | foundation                                   | |                                                                                                         |
+| | |   ntp-client                                 | |                                                                                                         |
+| | |   stunnel                                    | |                                                                                                         |
+| | | freezer                                      | |                                                                                                         |
+| | |   freezer-agent                              | |                                                                                                         |
+| | | ardana                                          | |                                                                                                         |
+| | |   lifecycle-manager-target                   | |                                                                                                         |
+| | | logging                                      | |                                                                                                         |
+| | |   logging-producer                           | |                                                                                                         |
+| | |   logging-rotate                             | |                                                                                                         |
+| | | monasca                                      | |                                                                                                         |
+| | |   monasca-agent                              | |                                                                                                         |
+| | | vsa-storage                                  | |                                                                                                         |
+| | |   vsa                                        | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | -------------------------------------------- | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | | bond0 (hed1, hed2)                           | |                                                                                                         |
+| | |   BLS-NET (10.244.47.0/24)                   | |                                                                                                         |
+| | |   CLM-NET (10.244.44.0/24)                   | |                                                                                                         |
+| | |   PXE-NET (10.244.43.0/24)                   | |                                                                                                         |
+| | |                                              | |                                                                                                         |
+| | +----------------------------------------------+ |                                                                                                         |
+| +--------------------------------------------------+                                                                                                         |
+|                                                                                                                                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++--+
+|  |
+|  |
++--+
+
++--+
+|  |
+|  |
++--+
+

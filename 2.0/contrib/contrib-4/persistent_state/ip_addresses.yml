@@ -1,0 +1,152 @@
+100.10.3.2:
+  addr: 100.10.3.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+100.10.3.3:
+  addr: 100.10.3.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+100.10.3.4:
+  addr: 100.10.3.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+100.10.3.5:
+  addr: 100.10.3.5
+  allocated: true
+  free: false
+  host: ardana-cp1-c0-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+100.13.3.3:
+  addr: 100.13.3.3
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-comp0001
+  persisted: false
+  server-id: esx-compute1
+  used-by: server
+100.13.3.4:
+  addr: 100.13.3.4
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0001
+  persisted: false
+  server-id: ovsvapp1
+  used-by: server
+100.13.3.5:
+  addr: 100.13.3.5
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0002
+  persisted: false
+  server-id: ovsvapp2
+  used-by: server
+100.14.0.2:
+  addr: 100.14.0.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c0-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+100.14.0.3:
+  addr: 100.14.0.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+100.14.0.4:
+  addr: 100.14.0.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+100.14.0.5:
+  addr: 100.14.0.5
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+100.14.0.6:
+  addr: 100.14.0.6
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0001
+  persisted: false
+  server-id: ovsvapp1
+  used-by: server
+100.14.0.7:
+  addr: 100.14.0.7
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-ovsvapp0002
+  persisted: false
+  server-id: ovsvapp2
+  used-by: server
+100.14.0.8:
+  addr: 100.14.0.8
+  allocated: true
+  free: false
+  host: ardana-cp1-esx-comp0001
+  persisted: false
+  server-id: esx-compute1
+  used-by: server
+100.14.0.9:
+  addr: 100.14.0.9
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+100.15.0.2:
+  addr: 100.15.0.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+100.15.0.3:
+  addr: 100.15.0.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+100.15.0.4:
+  addr: 100.15.0.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+100.15.0.5:
+  addr: 100.15.0.5
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb

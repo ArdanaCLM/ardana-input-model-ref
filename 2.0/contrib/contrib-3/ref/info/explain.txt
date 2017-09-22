@@ -1,0 +1,600 @@
+
+Add required services to control plane control-plane-1
+======================================================
+control-plane-1: Added nova-metadata required by nova-api
+control-plane-1: Added swift-common required by swift-proxy
+control-plane-1: Added swift-rsync required by swift-account
+
+Allocate Servers for control plane control-plane-1
+==================================================
+
+cluster: cluster0
+-----------------
+  Searching for server with role ['LIFECYCLE-MANAGER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'lifecycle-manager' (AZ1)
+
+cluster: cluster1
+-----------------
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'controller1' (AZ1)
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ2', 'AZ3'])
+  Allocated server 'controller2' (AZ2)
+  Searching for server with role ['CONTROLLER-ROLE'] in zones: set(['AZ3'])
+  Allocated server 'controller3' (AZ3)
+
+resource: vsa
+-------------
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'vsa1' (AZ1)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ2', 'AZ3'])
+  Allocated server 'vsa2' (AZ2)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ3'])
+  Allocated server 'vsa3' (AZ3)
+  Searching for server with role ['VSA-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+
+resource: compute
+-----------------
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute1' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute2' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute3' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute4' (AZ1)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+  Allocated server 'compute5' (AZ2)
+  Searching for server with role ['COMPUTE-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+
+Resolve Networks for Servers
+============================
+
+server: eu-em2-cp1-c0-m1
+------------------------
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.16.80.10 for server eu-em2-cp1-c0-m1 on network MANAGEMENT-NET
+
+server: eu-em2-cp1-c1-m1
+------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for glance-api (default)
+  add MANAGEMENT for glance-registry (default)
+  add MANAGEMENT for glance-client (default)
+  add MANAGEMENT for cinder-api (default)
+  add MANAGEMENT for cinder-scheduler (default)
+  add MANAGEMENT for cinder-volume (default)
+  add MANAGEMENT for cinder-backup (default)
+  add MANAGEMENT for cinder-client (default)
+  add MANAGEMENT for nova-api (default)
+  add MANAGEMENT for nova-scheduler (default)
+  add MANAGEMENT for nova-conductor (default)
+  add MANAGEMENT for nova-console-auth (default)
+  add MANAGEMENT for nova-novncproxy (default)
+  add MANAGEMENT for nova-client (default)
+  add MANAGEMENT for neutron-server (default)
+  add MANAGEMENT for neutron-ml2-plugin (default)
+  add MANAGEMENT for neutron-vpn-agent (default)
+  add MANAGEMENT for neutron-dhcp-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-client (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for sherpa-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-account (default)
+  add MANAGEMENT for swift-container (default)
+  add MANAGEMENT for swift-object (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for heat-api (default)
+  add MANAGEMENT for heat-api-cfn (default)
+  add MANAGEMENT for heat-api-cloudwatch (default)
+  add MANAGEMENT for heat-engine (default)
+  add MANAGEMENT for heat-client (default)
+  add MANAGEMENT for openstack-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for ceilometer-collector (default)
+  add MANAGEMENT for ceilometer-agent-central (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for ceilometer-expirer (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for logging-server (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for cmc-service (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for nova-metadata (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for swift-rsync (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  Allocated address 15.124.132.2 for server eu-em2-cp1-c1-m1 on network EXTERNAL-API-NET
+  Using address 10.16.80.11 for server eu-em2-cp1-c1-m1 on network MANAGEMENT-NET
+  Allocated address 10.16.81.2 for server eu-em2-cp1-c1-m1 on network GUEST-NET
+
+server: eu-em2-cp1-c1-m2
+------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for glance-api (default)
+  add MANAGEMENT for glance-registry (default)
+  add MANAGEMENT for glance-client (default)
+  add MANAGEMENT for cinder-api (default)
+  add MANAGEMENT for cinder-scheduler (default)
+  add MANAGEMENT for cinder-volume (default)
+  add MANAGEMENT for cinder-backup (default)
+  add MANAGEMENT for cinder-client (default)
+  add MANAGEMENT for nova-api (default)
+  add MANAGEMENT for nova-scheduler (default)
+  add MANAGEMENT for nova-conductor (default)
+  add MANAGEMENT for nova-console-auth (default)
+  add MANAGEMENT for nova-novncproxy (default)
+  add MANAGEMENT for nova-client (default)
+  add MANAGEMENT for neutron-server (default)
+  add MANAGEMENT for neutron-ml2-plugin (default)
+  add MANAGEMENT for neutron-vpn-agent (default)
+  add MANAGEMENT for neutron-dhcp-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-client (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for sherpa-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-account (default)
+  add MANAGEMENT for swift-container (default)
+  add MANAGEMENT for swift-object (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for heat-api (default)
+  add MANAGEMENT for heat-api-cfn (default)
+  add MANAGEMENT for heat-api-cloudwatch (default)
+  add MANAGEMENT for heat-engine (default)
+  add MANAGEMENT for heat-client (default)
+  add MANAGEMENT for openstack-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for ceilometer-collector (default)
+  add MANAGEMENT for ceilometer-agent-central (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for ceilometer-expirer (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for logging-server (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for cmc-service (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for nova-metadata (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for swift-rsync (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  Allocated address 15.124.132.3 for server eu-em2-cp1-c1-m2 on network EXTERNAL-API-NET
+  Using address 10.16.80.12 for server eu-em2-cp1-c1-m2 on network MANAGEMENT-NET
+  Allocated address 10.16.81.3 for server eu-em2-cp1-c1-m2 on network GUEST-NET
+
+server: eu-em2-cp1-c1-m3
+------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for glance-api (default)
+  add MANAGEMENT for glance-registry (default)
+  add MANAGEMENT for glance-client (default)
+  add MANAGEMENT for cinder-api (default)
+  add MANAGEMENT for cinder-scheduler (default)
+  add MANAGEMENT for cinder-volume (default)
+  add MANAGEMENT for cinder-backup (default)
+  add MANAGEMENT for cinder-client (default)
+  add MANAGEMENT for nova-api (default)
+  add MANAGEMENT for nova-scheduler (default)
+  add MANAGEMENT for nova-conductor (default)
+  add MANAGEMENT for nova-console-auth (default)
+  add MANAGEMENT for nova-novncproxy (default)
+  add MANAGEMENT for nova-client (default)
+  add MANAGEMENT for neutron-server (default)
+  add MANAGEMENT for neutron-ml2-plugin (default)
+  add MANAGEMENT for neutron-vpn-agent (default)
+  add MANAGEMENT for neutron-dhcp-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-client (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for sherpa-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-account (default)
+  add MANAGEMENT for swift-container (default)
+  add MANAGEMENT for swift-object (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for heat-api (default)
+  add MANAGEMENT for heat-api-cfn (default)
+  add MANAGEMENT for heat-api-cloudwatch (default)
+  add MANAGEMENT for heat-engine (default)
+  add MANAGEMENT for heat-client (default)
+  add MANAGEMENT for openstack-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for ceilometer-collector (default)
+  add MANAGEMENT for ceilometer-agent-central (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for ceilometer-expirer (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for logging-server (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for cmc-service (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for nova-metadata (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for swift-rsync (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-vpn-agent)
+  Allocated address 15.124.132.4 for server eu-em2-cp1-c1-m3 on network EXTERNAL-API-NET
+  Using address 10.16.80.13 for server eu-em2-cp1-c1-m3 on network MANAGEMENT-NET
+  Allocated address 10.16.81.4 for server eu-em2-cp1-c1-m3 on network GUEST-NET
+
+server: eu-em2-cp1-vsa0001
+--------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for vsa (default)
+  add MANAGEMENT for tag vsa.iscsi (vsa)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.16.80.19 for server eu-em2-cp1-vsa0001 on network MANAGEMENT-NET
+  Allocated address 10.16.80.2 for vsa eu-em2-cp1-vsa0001 on network MANAGEMENT-NET
+  Allocated address 10.16.80.3 for vsa--cluster eu-em2-cp1-vsa0001 on network MANAGEMENT-NET
+
+server: eu-em2-cp1-vsa0002
+--------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for vsa (default)
+  add MANAGEMENT for tag vsa.iscsi (vsa)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.16.80.20 for server eu-em2-cp1-vsa0002 on network MANAGEMENT-NET
+  Allocated address 10.16.80.4 for vsa eu-em2-cp1-vsa0002 on network MANAGEMENT-NET
+
+server: eu-em2-cp1-vsa0003
+--------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for vsa (default)
+  add MANAGEMENT for tag vsa.iscsi (vsa)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  Using address 10.16.80.21 for server eu-em2-cp1-vsa0003 on network MANAGEMENT-NET
+  Allocated address 10.16.80.5 for vsa eu-em2-cp1-vsa0003 on network MANAGEMENT-NET
+
+server: eu-em2-cp1-comp0001
+---------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.16.80.14 for server eu-em2-cp1-comp0001 on network MANAGEMENT-NET
+  Allocated address 10.16.81.5 for server eu-em2-cp1-comp0001 on network GUEST-NET
+
+server: eu-em2-cp1-comp0002
+---------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.16.80.15 for server eu-em2-cp1-comp0002 on network MANAGEMENT-NET
+  Allocated address 10.16.81.6 for server eu-em2-cp1-comp0002 on network GUEST-NET
+
+server: eu-em2-cp1-comp0003
+---------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.16.80.16 for server eu-em2-cp1-comp0003 on network MANAGEMENT-NET
+  Allocated address 10.16.81.7 for server eu-em2-cp1-comp0003 on network GUEST-NET
+
+server: eu-em2-cp1-comp0004
+---------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.16.80.17 for server eu-em2-cp1-comp0004 on network MANAGEMENT-NET
+  Allocated address 10.16.81.8 for server eu-em2-cp1-comp0004 on network GUEST-NET
+
+server: eu-em2-cp1-comp0005
+---------------------------
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for nova-compute (default)
+  add MANAGEMENT for nova-compute-kvm (default)
+  add MANAGEMENT for neutron-l3-agent (default)
+  add MANAGEMENT for neutron-metadata-agent (default)
+  add MANAGEMENT for neutron-openvswitch-agent (default)
+  add MANAGEMENT for tag neutron.networks.vlan (neutron-openvswitch-agent)
+  add MANAGEMENT for neutron-lbaasv2-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add GUEST for tag neutron.networks.vxlan (neutron-openvswitch-agent)
+  add EXTERNAL-VM for tag neutron.l3_agent.external_network_bridge (neutron-l3-agent)
+  Using address 10.16.80.18 for server eu-em2-cp1-comp0005 on network MANAGEMENT-NET
+  Allocated address 10.16.81.9 for server eu-em2-cp1-comp0005 on network GUEST-NET
+
+Resolve Network Routes
+======================
+Add route from MANAGEMENT-NET to 0.0.0.0/0 (default)
+
+Resolve Network Routes for each server
+======================================
+
+server: eu-em2-cp1-c0-m1
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-c1-m1
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-c1-m2
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-c1-m3
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-vsa0001
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-vsa0002
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-vsa0003
+--------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-comp0001
+---------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-comp0002
+---------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-comp0003
+---------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-comp0004
+---------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: eu-em2-cp1-comp0005
+---------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+Define load balancers
+=====================
+
+Load balancer: extlb
+--------------------
+  Allocated address 15.124.132.5 for vip extlb eu-em2-cp1-vip-extlb-extapi on network EXTERNAL-API-NET
+  Add nova-api for roles ['public'] due to 'default'
+  Add glance-api for roles ['public'] due to 'default'
+  Add keystone-api for roles ['public'] due to 'default'
+  Add swift-proxy for roles ['public'] due to 'default'
+  Add monasca-api for roles ['public'] due to 'default'
+  Add sherpa-api for roles ['public'] due to 'default'
+  Add heat-api-cfn for roles ['public'] due to 'default'
+  Add ops-console-web for roles ['public'] due to 'default'
+  Add heat-api for roles ['public'] due to 'default'
+  Add nova-novncproxy for roles ['public'] due to 'default'
+  Add neutron-server for roles ['public'] due to 'default'
+  Add heat-api-cloudwatch for roles ['public'] due to 'default'
+  Add ceilometer-api for roles ['public'] due to 'default'
+  Add freezer-api for roles ['public'] due to 'default'
+  Add horizon for roles ['public'] due to 'default'
+  Add cinder-api for roles ['public'] due to 'default'
+
+Load balancer: lb
+-----------------
+  Allocated address 10.16.80.6 for vip lb eu-em2-cp1-vip-lb-mgmt on network MANAGEMENT-NET
+  Add nova-api for roles ['internal', 'admin'] due to 'default'
+  Add glance-api for roles ['internal', 'admin'] due to 'default'
+  Add keystone-api for roles ['internal'] due to 'default'
+  Add keystone-api for roles ['admin'] due to 'default'
+  Add swift-proxy for roles ['internal', 'admin'] due to 'default'
+  Add mysql for roles ['internal', 'admin'] due to 'default'
+  Add monasca-api for roles ['internal'] due to 'default'
+  Add vertica for roles ['internal'] due to 'default'
+  Add sherpa-api for roles ['internal', 'admin'] due to 'default'
+  Add heat-api-cfn for roles ['internal'] due to 'default'
+  Add ops-console-web for roles ['internal'] due to 'default'
+  Add heat-api for roles ['internal'] due to 'default'
+  Add neutron-server for roles ['internal', 'admin'] due to 'default'
+  Add glance-registry for roles ['internal'] due to 'default'
+  Add heat-api-cloudwatch for roles ['internal'] due to 'default'
+  Add nova-metadata for roles ['internal'] due to 'default'
+  Add ceilometer-api for roles ['internal', 'admin'] due to 'default'
+  Add rabbitmq for roles ['internal'] due to 'default'
+  Add freezer-api for roles ['internal', 'admin'] due to 'default'
+  Add horizon for roles ['internal'] due to 'default'
+  Add logging-server for roles ['internal'] due to 'default'
+  Add cinder-api for roles ['internal', 'admin'] due to 'default'
+
+Map load balancers to providers
+===============================
+
+Network EXTERNAL-API-NET
+------------------------
+  15.124.132.5: ip-cluster nova-api roles: ['public'] vip-port: 8774 host-port: 8774
+  15.124.132.5: ip-cluster glance-api roles: ['public'] vip-port: 9292 host-port: 9292
+  15.124.132.5: ip-cluster keystone-api roles: ['public'] vip-port: 5000 host-port: 5000
+  15.124.132.5: ip-cluster swift-proxy roles: ['public'] vip-port: 8080 host-port: 8080
+  15.124.132.5: ip-cluster monasca-api roles: ['public'] vip-port: 8070 host-port: 8070
+  15.124.132.5: ip-cluster sherpa-api roles: ['public'] vip-port: 21131 host-port: 21131
+  15.124.132.5: ip-cluster heat-api-cfn roles: ['public'] vip-port: 8000 host-port: 8000
+  15.124.132.5: ip-cluster ops-console-web roles: ['public'] vip-port: 9095 host-port: 9095
+  15.124.132.5: ip-cluster heat-api roles: ['public'] vip-port: 8004 host-port: 8004
+  15.124.132.5: ip-cluster nova-novncproxy roles: ['public'] vip-port: 6080 host-port: 6080
+  15.124.132.5: ip-cluster neutron-server roles: ['public'] vip-port: 9696 host-port: 9696
+  15.124.132.5: ip-cluster heat-api-cloudwatch roles: ['public'] vip-port: 8003 host-port: 8003
+  15.124.132.5: ip-cluster ceilometer-api roles: ['public'] vip-port: 8777 host-port: 8777
+  15.124.132.5: ip-cluster freezer-api roles: ['public'] vip-port: 9090 host-port: 9090
+  15.124.132.5: ip-cluster horizon roles: ['public'] vip-port: 443 host-port: 80
+  15.124.132.5: ip-cluster cinder-api roles: ['public'] vip-port: 8776 host-port: 8776
+
+Network MANAGEMENT-NET
+----------------------
+  10.16.80.6: ip-cluster nova-api roles: ['internal', 'admin'] vip-port: 8774 host-port: 8774
+  10.16.80.6: ip-cluster glance-api roles: ['internal', 'admin'] vip-port: 9292 host-port: 9292
+  10.16.80.6: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  10.16.80.6: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  10.16.80.6: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
+  10.16.80.6: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
+  10.16.80.6: ip-cluster monasca-api roles: ['internal'] vip-port: 8070 host-port: 8070
+  10.16.80.6: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  10.16.80.6: ip-cluster sherpa-api roles: ['internal', 'admin'] vip-port: 21131 host-port: 21131
+  10.16.80.6: ip-cluster heat-api-cfn roles: ['internal'] vip-port: 8000 host-port: 8000
+  10.16.80.6: ip-cluster ops-console-web roles: ['internal'] vip-port: 9095 host-port: 9095
+  10.16.80.6: ip-cluster heat-api roles: ['internal'] vip-port: 8004 host-port: 8004
+  10.16.80.6: ip-cluster neutron-server roles: ['internal', 'admin'] vip-port: 9696 host-port: 9696
+  10.16.80.6: ip-cluster glance-registry roles: ['internal'] vip-port: 9191 host-port: 9191
+  10.16.80.6: ip-cluster heat-api-cloudwatch roles: ['internal'] vip-port: 8003 host-port: 8003
+  10.16.80.6: ip-cluster nova-metadata roles: ['internal'] vip-port: 8775 host-port: 8775
+  10.16.80.6: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
+  10.16.80.6: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
+  10.16.80.6: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090
+  10.16.80.6: ip-cluster horizon roles: ['internal'] vip-port: 80 host-port: 80
+  10.16.80.6: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601
+  10.16.80.6: ip-cluster cinder-api roles: ['internal', 'admin'] vip-port: 8776 host-port: 8776

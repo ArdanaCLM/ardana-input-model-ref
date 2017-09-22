@@ -1,0 +1,57 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  cpu-models:
+    - name: CONTROLLER-CPU
+      vm-size:
+        vcpus: 4
+
+    - name: RMQ-MYSQL-CPU
+      vm-size:
+        vcpus: 4
+
+    - name: MML-CPU
+      vm-size:
+        vcpus: 8
+
+    - name: NETWORK-CPU
+      vm-size:
+        vcpus: 4
+
+# On a typical compute with 2 sockets and 12 cores/socket and HT ON, you will get 48 cores - processor ids 0-47:
+# NUMA node0 CPU(s):     0-11,24-35
+# NUMA node1 CPU(s):     12-23,36-47
+#
+# These settings will be configured by Cloud Compute Resource Manager.
+    - name: COMPUTE-CPU
+      assignments:
+        - components:
+            - nova-compute-kvm
+          cpu:
+            - processor-ids: 2-11,12-23,26-35,36-47
+              role: vm
+        - components:
+            - openvswitch
+          cpu:
+            - processor-ids: 0
+              isolate: False
+              role: eal
+            - processor-ids: 1,25
+              role: pmd

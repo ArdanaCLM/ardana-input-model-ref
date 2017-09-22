@@ -1,0 +1,231 @@
+ccp:
+    barbican:
+        barbican-api:
+        - cs-ccp-cc-m1-clm
+        barbican-worker:
+        - cs-ccp-cc-m1-clm
+    ceilometer:
+        ceilometer-agent-notification:
+        - cs-ccp-mon-m1-clm
+        ceilometer-api:
+        - cs-ccp-mon-m1-clm
+        ceilometer-client:
+        - cs-ccp-mon-m1-clm
+        ceilometer-common:
+        - cs-ccp-mon-m1-clm
+        ceilometer-polling:
+        - cs-ccp-mon-m1-clm
+    cinder:
+        cinder-api:
+        - cs-ccp-cc-m1-clm
+        cinder-backup:
+        - cs-ccp-cc-m1-clm
+        cinder-client:
+        - cs-ccp-cc-m1-clm
+        cinder-scheduler:
+        - cs-ccp-cc-m1-clm
+        cinder-volume:
+        - cs-ccp-cc-m1-clm
+    designate:
+        designate-api:
+        - cs-ccp-cc-m1-clm
+        designate-central:
+        - cs-ccp-cc-m1-clm
+        designate-mdns:
+        - cs-ccp-cc-m1-clm
+        designate-pool-manager:
+        - cs-ccp-cc-m1-clm
+        designate-zone-manager:
+        - cs-ccp-cc-m1-clm
+    eon:
+        eon-api:
+        - cs-ccp-mgmt-m1-clm
+        eon-conductor:
+        - cs-ccp-mgmt-m1-clm
+    foundation:
+        apache2:
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-cc-m1-clm
+        barbican-client:
+        - cs-ccp-cc-m1-clm
+        designate-client:
+        - cs-ccp-cc-m1-clm
+        eon-client:
+        - cs-ccp-mgmt-m1-clm
+        ardana-ux-services:
+        - cs-ccp-c0-m1-clm
+        ip-cluster:
+        - cs-ccp-mgmt-m1-clm
+        kafka:
+        - cs-ccp-mon-m1-clm
+        memcached:
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-cc-m1-clm
+        mysql:
+        - cs-ccp-db-m1-clm
+        ntp-client:
+        - cs-ccp-c0-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-db-m1-clm
+        - cs-ccp-cc-m1-clm
+        ntp-server:
+        - cs-ccp-mgmt-m1-clm
+        openstack-client:
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-cc-m1-clm
+        powerdns:
+        - cs-ccp-cc-m1-clm
+        rabbitmq:
+        - cs-ccp-db-m1-clm
+        storm:
+        - cs-ccp-mon-m1-clm
+        stunnel:
+        - cs-ccp-c0-m1-clm
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-db-m1-clm
+        - cs-ccp-cc-m1-clm
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        swift-common:
+        - cs-ccp-cc-m1-clm
+        swift-rsync:
+        - cs-ccp-cc-m1-clm
+        vertica:
+        - cs-ccp-mon-m1-clm
+        zookeeper:
+        - cs-ccp-mon-m1-clm
+    freezer:
+        freezer-agent:
+        - cs-ccp-c0-m1-clm
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-db-m1-clm
+        - cs-ccp-cc-m1-clm
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        freezer-api:
+        - cs-ccp-mon-m1-clm
+    glance:
+        glance-api:
+        - cs-ccp-cc-m1-clm
+        glance-client:
+        - cs-ccp-cc-m1-clm
+        glance-registry:
+        - cs-ccp-cc-m1-clm
+    heat:
+        heat-api:
+        - cs-ccp-cc-m1-clm
+        heat-api-cfn:
+        - cs-ccp-cc-m1-clm
+        heat-api-cloudwatch:
+        - cs-ccp-cc-m1-clm
+        heat-client:
+        - cs-ccp-cc-m1-clm
+        heat-engine:
+        - cs-ccp-cc-m1-clm
+    horizon:
+        horizon:
+        - cs-ccp-cc-m1-clm
+    keystone:
+        keystone-api:
+        - cs-ccp-mgmt-m1-clm
+        keystone-client:
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-cc-m1-clm
+    logging:
+        logging-producer:
+        - cs-ccp-c0-m1-clm
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-db-m1-clm
+        - cs-ccp-cc-m1-clm
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        logging-server:
+        - cs-ccp-mon-m1-clm
+    monasca:
+        monasca-agent:
+        - cs-ccp-c0-m1-clm
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-db-m1-clm
+        - cs-ccp-cc-m1-clm
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        monasca-api:
+        - cs-ccp-mon-m1-clm
+        monasca-client:
+        - cs-ccp-mon-m1-clm
+        monasca-notifier:
+        - cs-ccp-mon-m1-clm
+        monasca-persister:
+        - cs-ccp-mon-m1-clm
+        monasca-threshold:
+        - cs-ccp-mon-m1-clm
+    neutron:
+        neutron-client:
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-cc-m1-clm
+        neutron-dhcp-agent:
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        neutron-metadata-agent:
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        neutron-ml2-plugin:
+        - cs-ccp-cc-m1-clm
+        neutron-openvswitch-agent:
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        neutron-server:
+        - cs-ccp-cc-m1-clm
+        neutron-vpn-agent:
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+    nova:
+        nova-api:
+        - cs-ccp-cc-m1-clm
+        nova-client:
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-cc-m1-clm
+        nova-conductor:
+        - cs-ccp-cc-m1-clm
+        nova-console-auth:
+        - cs-ccp-cc-m1-clm
+        nova-metadata:
+        - cs-ccp-cc-m1-clm
+        nova-novncproxy:
+        - cs-ccp-cc-m1-clm
+        nova-scheduler:
+        - cs-ccp-cc-m1-clm
+    operations:
+        lifecycle-manager:
+        - cs-ccp-c0-m1-clm
+        lifecycle-manager-target:
+        - cs-ccp-c0-m1-clm
+        - cs-ccp-mgmt-m1-clm
+        - cs-ccp-mon-m1-clm
+        - cs-ccp-db-m1-clm
+        - cs-ccp-cc-m1-clm
+        - cs-ccp-nn-m1-clm
+        - cs-ccp-nn-m2-clm
+        ops-console-web:
+        - cs-ccp-mgmt-m1-clm
+    swift:
+        swift-account:
+        - cs-ccp-cc-m1-clm
+        swift-client:
+        - cs-ccp-cc-m1-clm
+        swift-container:
+        - cs-ccp-cc-m1-clm
+        swift-object:
+        - cs-ccp-cc-m1-clm
+        swift-proxy:
+        - cs-ccp-cc-m1-clm
+        swift-ring-builder:
+        - cs-ccp-cc-m1-clm
+    vsa-storage:
+        cmc-service:
+        - cs-ccp-cc-m1-clm

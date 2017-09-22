@@ -1,0 +1,1341 @@
+swobj1:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 10.241.17.14
+    ansible_options: null
+    cluster-name: swobj
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      swift-common: {}
+      swift-object: {}
+      swift-rsync: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - object-0
+            - object-1
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        - name: /dev/sdd
+        - name: /dev/sde
+        - name: /dev/sdf
+        name: swiftobj
+      name: SWOBJ-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: swobj1
+    if-model: SWOBJ-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - SWIFT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 10.241.17.1-10.241.17.254
+          cidr: 10.241.17.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.241.17.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+        SWIFT-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: SWIFT-NET
+          network-group: SWIFT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+    member_id: 1
+    name: ardana-cp1-swobj0001
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:02:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:02:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:02:00.2'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:02:00.3'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: SWOBJ-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      swift:
+      - swift-rsync
+      - swift-common
+      - swift-object
+    state: allocated
+    vm-factory: false
+  resource_name: swobj
+  state: allocated
+  type: resource
+  vm-factory: false
+swobj2:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 2
+  previous_config:
+    addr: 10.241.17.15
+    ansible_options: null
+    cluster-name: swobj
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      swift-common: {}
+      swift-object: {}
+      swift-rsync: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - object-0
+            - object-1
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        - name: /dev/sdd
+        - name: /dev/sde
+        - name: /dev/sdf
+        name: swiftobj
+      name: SWOBJ-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: swobj2
+    if-model: SWOBJ-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - SWIFT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 10.241.17.1-10.241.17.254
+          cidr: 10.241.17.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.241.17.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+        SWIFT-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: SWIFT-NET
+          network-group: SWIFT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+    member_id: 2
+    name: ardana-cp1-swobj0002
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:02:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:02:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:02:00.2'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:02:00.3'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: SWOBJ-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      swift:
+      - swift-rsync
+      - swift-common
+      - swift-object
+    state: allocated
+    vm-factory: false
+  resource_name: swobj
+  state: allocated
+  type: resource
+  vm-factory: false
+swobj3:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 3
+  previous_config:
+    addr: 10.241.17.16
+    ansible_options: null
+    cluster-name: swobj
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      swift-common: {}
+      swift-object: {}
+      swift-rsync: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - object-0
+            - object-1
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        - name: /dev/sdd
+        - name: /dev/sde
+        - name: /dev/sdf
+        name: swiftobj
+      name: SWOBJ-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ3
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: swobj3
+    if-model: SWOBJ-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - SWIFT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 10.241.17.1-10.241.17.254
+          cidr: 10.241.17.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.241.17.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+        SWIFT-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: SWIFT-NET
+          network-group: SWIFT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+    member_id: 3
+    name: ardana-cp1-swobj0003
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:02:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:02:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:02:00.2'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:02:00.3'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: SWOBJ-ROLE
+    server-group-list:
+    - RACK3
+    - AZ3
+    - CLOUD
+    server_group: RACK3
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      swift:
+      - swift-rsync
+      - swift-common
+      - swift-object
+    state: allocated
+    vm-factory: false
+  resource_name: swobj
+  state: allocated
+  type: resource
+  vm-factory: false
+swpac1:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 10.241.17.11
+    ansible_options: null
+    cluster-name: swpac
+    components:
+      apache2: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      freezer-agent: {}
+      freezer-api: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      monasca-transform: {}
+      mysql: {}
+      nova-client: {}
+      ntp-server: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      rabbitmq: {}
+      spark: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftpac
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: swpac1
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - MANAGEMENT
+      - SWIFT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 101
+        MANAGEMENT-NET:
+          addresses:
+          - 10.241.17.1-10.241.17.254
+          cidr: 10.241.17.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.241.17.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+        SWIFT-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: SWIFT-NET
+          network-group: SWIFT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+    member_id: 1
+    name: ardana-cp1-c1-m1
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:02:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:02:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:02:00.2'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:02:00.3'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      ceilometer:
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-polling
+      - ceilometer-api
+      clients:
+      - ceilometer-client
+      - keystone-client
+      - swift-client
+      - nova-client
+      - monasca-client
+      foundation:
+      - ardana-ca
+      - zookeeper
+      - stunnel
+      - kafka
+      - mysql
+      - ip-cluster
+      - apache2
+      - vertica
+      - storm
+      - memcached
+      - ntp-server
+      - spark
+      - rabbitmq
+      freezer:
+      - freezer-agent
+      - freezer-api
+      ardana:
+      - ardana-ux-services
+      - lifecycle-manager
+      - lifecycle-manager-target
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      logging:
+      - logging-api
+      - logging-producer
+      - logging-rotate
+      - logging-server
+      monasca:
+      - monasca-notifier
+      - monasca-agent
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-transform
+      operations:
+      - ops-console-web
+      - ops-console-monitor
+      swift:
+      - swift-proxy
+      - swift-container
+      - swift-common
+      - swift-ring-builder
+      - swift-rsync
+      - swift-account
+      tempest:
+      - tempest
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+swpac2:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 2
+  previous_config:
+    addr: 10.241.17.12
+    ansible_options: null
+    cluster-name: swpac
+    components:
+      apache2: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      freezer-agent: {}
+      freezer-api: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      monasca-transform: {}
+      mysql: {}
+      nova-client: {}
+      ntp-server: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      rabbitmq: {}
+      spark: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftpac
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: swpac2
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - MANAGEMENT
+      - SWIFT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 101
+        MANAGEMENT-NET:
+          addresses:
+          - 10.241.17.1-10.241.17.254
+          cidr: 10.241.17.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.241.17.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+        SWIFT-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: SWIFT-NET
+          network-group: SWIFT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+    member_id: 2
+    name: ardana-cp1-c1-m2
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:02:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:02:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:02:00.2'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:02:00.3'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      ceilometer:
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-polling
+      - ceilometer-api
+      clients:
+      - ceilometer-client
+      - keystone-client
+      - swift-client
+      - nova-client
+      - monasca-client
+      foundation:
+      - ardana-ca
+      - zookeeper
+      - stunnel
+      - kafka
+      - mysql
+      - ip-cluster
+      - apache2
+      - vertica
+      - storm
+      - memcached
+      - ntp-server
+      - spark
+      - rabbitmq
+      freezer:
+      - freezer-agent
+      - freezer-api
+      ardana:
+      - ardana-ux-services
+      - lifecycle-manager
+      - lifecycle-manager-target
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      logging:
+      - logging-api
+      - logging-producer
+      - logging-rotate
+      - logging-server
+      monasca:
+      - monasca-notifier
+      - monasca-agent
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-transform
+      operations:
+      - ops-console-web
+      - ops-console-monitor
+      swift:
+      - swift-proxy
+      - swift-container
+      - swift-common
+      - swift-ring-builder
+      - swift-rsync
+      - swift-account
+      tempest:
+      - tempest
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+swpac3:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 3
+  previous_config:
+    addr: 10.241.17.13
+    ansible_options: null
+    cluster-name: swpac
+    components:
+      apache2: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      freezer-agent: {}
+      freezer-api: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      monasca-transform: {}
+      mysql: {}
+      nova-client: {}
+      ntp-server: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      rabbitmq: {}
+      spark: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftpac
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ3
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: swpac3
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - MANAGEMENT
+      - SWIFT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 101
+        MANAGEMENT-NET:
+          addresses:
+          - 10.241.17.1-10.241.17.254
+          cidr: 10.241.17.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.241.17.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+        SWIFT-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: SWIFT-NET
+          network-group: SWIFT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+    member_id: 3
+    name: ardana-cp1-c1-m3
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:02:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:02:00.1'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:02:00.2'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:02:00.3'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK3
+    - AZ3
+    - CLOUD
+    server_group: RACK3
+    services:
+      ceilometer:
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-polling
+      - ceilometer-api
+      clients:
+      - ceilometer-client
+      - keystone-client
+      - swift-client
+      - nova-client
+      - monasca-client
+      foundation:
+      - ardana-ca
+      - zookeeper
+      - stunnel
+      - kafka
+      - mysql
+      - ip-cluster
+      - apache2
+      - vertica
+      - storm
+      - memcached
+      - ntp-server
+      - spark
+      - rabbitmq
+      freezer:
+      - freezer-agent
+      - freezer-api
+      ardana:
+      - ardana-ux-services
+      - lifecycle-manager
+      - lifecycle-manager-target
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      logging:
+      - logging-api
+      - logging-producer
+      - logging-rotate
+      - logging-server
+      monasca:
+      - monasca-notifier
+      - monasca-agent
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-transform
+      operations:
+      - ops-console-web
+      - ops-console-monitor
+      swift:
+      - swift-proxy
+      - swift-container
+      - swift-common
+      - swift-ring-builder
+      - swift-rsync
+      - swift-account
+      tempest:
+      - tempest
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false

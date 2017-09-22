@@ -1,0 +1,52 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+---
+  product:
+    version: 2
+
+  networks:
+    - name: CONF-R1
+      tagged-vlan: false
+      network-group: CONF
+      cidr: 10.254.0.0/16
+      addresses:
+        - 10.254.5.30-10.254.5.63
+      gateway-ip: 10.254.0.1
+
+    - name: DCM-R1
+      tagged-vlan: true
+      vlanid: 1304
+      network-group: DCM
+      cidr: 192.168.216.0/21
+      addresses:
+        - 192.168.219.36-192.168.219.50
+      gateway-ip: 192.168.216.1
+
+    - name: CAN-R1
+      tagged-vlan: true
+      vlanid: 1692
+      network-group: CAN
+      cidr: 10.200.192.0/20
+      addresses:
+        - 10.200.192.221-10.200.192.225
+
+    - name: CLM-R1
+      tagged-vlan: true
+      vlanid: 2500
+      network-group: CLM
+      cidr: 25.25.0.0/24
+
+    - name: VxLAN-R1
+      tagged-vlan: true
+      vlanid: 2502
+      network-group: VxLAN
+      cidr: 25.0.2.0/24
+
+    - name: iSCSI-R1
+      tagged-vlan: true
+      vlanid: 3555
+      network-group: iSCSI
+      cidr: 35.5.5.0/24
+

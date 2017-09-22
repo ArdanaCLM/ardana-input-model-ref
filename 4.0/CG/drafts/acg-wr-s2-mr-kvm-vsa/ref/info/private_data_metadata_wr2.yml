@@ -1,0 +1,49 @@
+wr_ceilometer_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'
+wr_heat_admin_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'
+wr_heat_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'
+wr_neutron_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'
+wr_nova_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'
+wr_patching_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'
+wr_sysinv_password:
+  metadata:
+  - clusters: []
+    component: windriver-consumer
+    consuming-cp: wr2
+    cp: wr2
+  version: '2.0'

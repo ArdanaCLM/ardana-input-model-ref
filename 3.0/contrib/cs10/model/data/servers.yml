@@ -1,0 +1,49 @@
+#
+# (c) Copyright 2015-2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+---
+  product:
+    version: 2
+
+  baremetal:
+    netmask: 255.255.0.0
+    subnet: 10.254.0.0
+    server-interface: eth0
+
+  servers:
+
+  - id: deployer
+    ip-addr: 10.254.5.30
+    role: ARDANA-ROLE
+    server-group: RACK1
+
+  - id: ccn1-0001
+    ip-addr: 10.254.5.31
+    role: MANAGEMENT-ROLE
+    server-group: RACK1
+
+  - id: ccn2-0001
+    ip-addr: 10.254.5.32
+    role: MONITORING-ROLE
+    server-group: RACK1
+
+  - id: ccn3-0001
+    ip-addr: 10.254.5.33
+    role: DB_RABBIT-ROLE
+    server-group: RACK1
+
+  - id: ccn4-0001
+    ip-addr: 10.254.5.34
+    role: CONTROLLER-ROLE
+    server-group: RACK1
+
+  - id: ccn5-0001
+    ip-addr: 10.254.5.35
+    role: NETWORK-ROLE
+    server-group: RACK1
+
+  - id: ccn5-0002
+    ip-addr: 10.254.5.36
+    role: NETWORK-ROLE
+    server-group: RACK2
+

@@ -1,0 +1,72 @@
+compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+controller1:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+dbmq1:
+  cluster_name: cluster3
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+dbmq2:
+  cluster_name: cluster3
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+dbmq3:
+  cluster_name: cluster3
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+mtmrmon1:
+  cluster_name: cluster2
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mtmrmon2:
+  cluster_name: cluster2
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+mtmrmon3:
+  cluster_name: cluster2
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+vsa1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: vsa
+  state: allocated
+  type: resource

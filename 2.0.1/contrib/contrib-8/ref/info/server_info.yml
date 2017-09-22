@@ -1,0 +1,97 @@
+controller1:
+    failure-zone: null
+    hostname: ardana-cp1-c1-m1-mgmt
+    net_data:
+        INTERFACE_SET_1:
+            EXTERNAL-API-NET:
+                addr: 10.107.26.14
+                tagged-vlan: true
+                vlan-id: 160
+            MANAGEMENT-NET:
+                addr: 10.107.26.168
+                tagged-vlan: true
+                vlan-id: 161
+    state: allocated
+controller2:
+    failure-zone: null
+    hostname: ardana-cp1-c1-m2-mgmt
+    net_data:
+        INTERFACE_SET_1:
+            EXTERNAL-API-NET:
+                addr: 10.107.26.15
+                tagged-vlan: true
+                vlan-id: 160
+            MANAGEMENT-NET:
+                addr: 10.107.26.169
+                tagged-vlan: true
+                vlan-id: 161
+    state: allocated
+controller3:
+    failure-zone: null
+    hostname: ardana-cp1-c1-m3-mgmt
+    net_data:
+        INTERFACE_SET_1:
+            EXTERNAL-API-NET:
+                addr: 10.107.26.16
+                tagged-vlan: true
+                vlan-id: 160
+            MANAGEMENT-NET:
+                addr: 10.107.26.170
+                tagged-vlan: true
+                vlan-id: 161
+    state: allocated
+esx-compute1:
+    failure-zone: null
+    hostname: ardana-cp1-esx-comp0001-mgmt
+    net_data:
+        eth0:
+            ESX-CONF-NET:
+                addr: 10.107.26.224
+                tagged-vlan: true
+                vlan-id: 162
+        eth1:
+            MANAGEMENT-NET:
+                addr: 10.107.26.132
+                tagged-vlan: true
+                vlan-id: 161
+    state: allocated
+ovsvapp1:
+    failure-zone: null
+    hostname: ardana-cp1-esx-ovsvapp0001-mgmt
+    net_data:
+        eth0:
+            ESX-CONF-NET:
+                addr: 10.107.26.225
+                tagged-vlan: true
+                vlan-id: 162
+        eth1:
+            MANAGEMENT-NET:
+                addr: 10.107.26.130
+                tagged-vlan: true
+                vlan-id: 161
+        eth3:
+            TRUNK-NET:
+                addr: null
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated
+ovsvapp2:
+    failure-zone: null
+    hostname: ardana-cp1-esx-ovsvapp0002-mgmt
+    net_data:
+        eth0:
+            ESX-CONF-NET:
+                addr: 10.107.26.226
+                tagged-vlan: true
+                vlan-id: 162
+        eth1:
+            MANAGEMENT-NET:
+                addr: 10.107.26.131
+                tagged-vlan: true
+                vlan-id: 161
+        eth3:
+            TRUNK-NET:
+                addr: null
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated

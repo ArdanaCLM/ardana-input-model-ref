@@ -1,0 +1,132 @@
+regions:
+    region1:
+        control_planes:
+            cp1:
+                services:
+                    barbican:
+                    - barbican-api
+                    - barbican-worker
+                    ceilometer:
+                    - ceilometer-common
+                    - ceilometer-agent-notification
+                    - ceilometer-api
+                    - ceilometer-polling
+                    ceph:
+                    - ceph-osd
+                    - ceph-osd-internal
+                    - ceph-monitor
+                    cinder:
+                    - cinder-api
+                    - cinder-scheduler
+                    - cinder-volume
+                    - cinder-backup
+                    clients:
+                    - eon-client
+                    - barbican-client
+                    - openstack-client
+                    - heat-client
+                    - cinder-client
+                    - designate-client
+                    - neutron-client
+                    - swift-client
+                    - glance-client
+                    - ceilometer-client
+                    - keystone-client
+                    - monasca-client
+                    - nova-client
+                    designate:
+                    - designate-api
+                    - designate-zone-manager
+                    - designate-mdns
+                    - designate-pool-manager
+                    - designate-central
+                    eon:
+                    - eon-api
+                    - eon-conductor
+                    foundation:
+                    - powerdns
+                    - ip-cluster
+                    - openvswitch
+                    - ntp-client
+                    - zookeeper
+                    - ardana-ca
+                    - stunnel
+                    - apache2
+                    - ntp-server
+                    - vertica
+                    - rabbitmq
+                    - storm
+                    - mysql
+                    - powerdns-ext
+                    - kafka
+                    - memcached
+                    freezer:
+                    - freezer-agent
+                    - freezer-api
+                    glance:
+                    - glance-api
+                    - glance-registry
+                    heat:
+                    - heat-api-cfn
+                    - heat-engine
+                    - heat-api
+                    - heat-api-cloudwatch
+                    ardana:
+                    - lifecycle-manager-target
+                    - ardana-ux-services
+                    - lifecycle-manager
+                    horizon:
+                    - horizon
+                    keystone:
+                    - keystone-api
+                    logging:
+                    - logging-server
+                    - logging-producer
+                    - logging-api
+                    - logging-rotate
+                    monasca:
+                    - monasca-threshold
+                    - monasca-liveness-check
+                    - monasca-api
+                    - monasca-notifier
+                    - monasca-agent
+                    - monasca-persister
+                    neutron:
+                    - neutron-sriov-nic-agent
+                    - neutron-ml2-plugin
+                    - neutron-server
+                    - neutron-ovsvapp-agent
+                    - neutron-openvswitch-agent
+                    - neutron-metadata-agent
+                    - neutron-lbaasv2-agent
+                    - neutron-dhcp-agent
+                    - neutron-vpn-agent
+                    - neutron-l3-agent
+                    nova:
+                    - nova-console-auth
+                    - nova-novncproxy
+                    - nova-compute
+                    - nova-conductor
+                    - nova-api
+                    - nova-esx-compute-proxy
+                    - nova-scheduler
+                    - nova-metadata
+                    - nova-compute-kvm
+                    octavia:
+                    - octavia-health-manager
+                    - octavia-api
+                    operations:
+                    - ops-console-web
+                    - ops-console-monitor
+                    swift:
+                    - swift-ring-builder
+                    - swift-rsync
+                    - swift-account
+                    - swift-proxy
+                    - swift-container
+                    - swift-common
+                    - swift-object
+                    tempest:
+                    - tempest
+                    vsa-storage:
+                    - cmc-service

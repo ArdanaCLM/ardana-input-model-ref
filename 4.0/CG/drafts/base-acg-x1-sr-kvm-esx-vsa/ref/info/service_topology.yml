@@ -1,0 +1,982 @@
+services:
+    barbican:
+        components:
+            barbican-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            barbican-worker:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    ceilometer:
+        components:
+            ceilometer-agent-notification:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            ceilometer-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            ceilometer-common:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            ceilometer-polling:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+    cinder:
+        components:
+            cinder-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            cinder-backup:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            cinder-scheduler:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            cinder-volume:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    clients:
+        components:
+            barbican-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            ceilometer-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            cinder-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            designate-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            eon-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            esx-compute: []
+                            esx-ovsvapp: []
+            glance-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            heat-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            keystone-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            monasca-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            neutron-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            nova-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            openstack-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+    designate:
+        components:
+            designate-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            designate-central:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            designate-mdns:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            designate-pool-manager:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            designate-zone-manager:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    eon:
+        components:
+            eon-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            eon-conductor:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    foundation:
+        components:
+            apache2:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            ardana-ca:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            ip-cluster:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            kafka:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            memcached:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            mysql:
+                control_planes:
+                    cp1:
+                        clusters:
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+            ntp-client:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+            ntp-server:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            openvswitch:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            powerdns:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            powerdns-ext:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            rabbitmq:
+                control_planes:
+                    cp1:
+                        clusters:
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+            storm:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            stunnel:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+            vertica:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            zookeeper:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+    freezer:
+        components:
+            freezer-agent:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+            freezer-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+    glance:
+        components:
+            glance-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            glance-registry:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    heat:
+        components:
+            heat-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            heat-api-cfn:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            heat-api-cloudwatch:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            heat-engine:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    ardana:
+        components:
+            ardana-ux-services:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            lifecycle-manager:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            lifecycle-manager-target:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+    horizon:
+        components:
+            horizon:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    keystone:
+        components:
+            keystone-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    logging:
+        components:
+            logging-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            logging-producer:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+            logging-rotate:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+            logging-server:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+    monasca:
+        components:
+            monasca-agent:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                            network:
+                            - hcg-cp1-network-m1-clm
+                            rmq-mysql:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+                            esx-ovsvapp: []
+            monasca-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            monasca-liveness-check:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            monasca-notifier:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            monasca-persister:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+            monasca-threshold:
+                control_planes:
+                    cp1:
+                        clusters:
+                            mml:
+                            - hcg-cp1-mml-m1-clm
+                        regions:
+                        - region1
+    neutron:
+        components:
+            neutron-dhcp-agent:
+                control_planes:
+                    cp1:
+                        clusters:
+                            network:
+                            - hcg-cp1-network-m1-clm
+                        regions:
+                        - region1
+            neutron-l3-agent:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            neutron-lbaasv2-agent:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            neutron-metadata-agent:
+                control_planes:
+                    cp1:
+                        clusters:
+                            network:
+                            - hcg-cp1-network-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            neutron-ml2-plugin:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            neutron-openvswitch-agent:
+                control_planes:
+                    cp1:
+                        clusters:
+                            network:
+                            - hcg-cp1-network-m1-clm
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            neutron-ovsvapp-agent:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            esx-ovsvapp: []
+            neutron-server:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            neutron-sriov-nic-agent:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            neutron-vpn-agent:
+                control_planes:
+                    cp1:
+                        clusters:
+                            network:
+                            - hcg-cp1-network-m1-clm
+                        regions:
+                        - region1
+    nova:
+        components:
+            nova-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            nova-compute:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+                            esx-compute: []
+            nova-compute-kvm:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            compute:
+                            - hcg-cp1-comp0001-clm
+            nova-conductor:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            nova-console-auth:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            nova-esx-compute-proxy:
+                control_planes:
+                    cp1:
+                        regions:
+                        - region1
+                        resources:
+                            esx-compute: []
+            nova-metadata:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            nova-novncproxy:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            nova-scheduler:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    octavia:
+        components:
+            octavia-api:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            octavia-health-manager:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    operations:
+        components:
+            ops-console-monitor:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            ops-console-web:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+    swift:
+        components:
+            swift-account:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-common:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-container:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-object:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-proxy:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-ring-builder:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+            swift-rsync:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+    tempest:
+        components:
+            tempest:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1
+    vsa-storage:
+        components:
+            cmc-service:
+                control_planes:
+                    cp1:
+                        clusters:
+                            controller:
+                            - hcg-cp1-controller-m1-clm
+                        regions:
+                        - region1
+            vsa:
+                control_planes:
+                    cp1:
+                        clusters:
+                            ardana-hypervisor:
+                            - hcg-cp1-alm-hyp-m1-clm
+                        regions:
+                        - region1

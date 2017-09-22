@@ -1,0 +1,139 @@
+controller1:
+    failure-zone: null
+    hostname: ardana-cp1-c1-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 100.15.0.2
+                tagged-vlan: true
+                vlan-id: 15
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 16
+            MANAGEMENT-NET:
+                addr: 100.14.0.3
+                tagged-vlan: true
+                vlan-id: 14
+        HED2:
+            DEPLOYER-NET:
+                addr: 100.10.3.2
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated
+controller2:
+    failure-zone: null
+    hostname: ardana-cp1-c1-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 100.15.0.3
+                tagged-vlan: true
+                vlan-id: 15
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 16
+            MANAGEMENT-NET:
+                addr: 100.14.0.4
+                tagged-vlan: true
+                vlan-id: 14
+        HED2:
+            DEPLOYER-NET:
+                addr: 100.10.3.3
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated
+controller3:
+    failure-zone: null
+    hostname: ardana-cp1-c1-m3-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 100.15.0.4
+                tagged-vlan: true
+                vlan-id: 15
+            EXTERNAL-VM-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 16
+            MANAGEMENT-NET:
+                addr: 100.14.0.5
+                tagged-vlan: true
+                vlan-id: 14
+        HED2:
+            DEPLOYER-NET:
+                addr: 100.10.3.4
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated
+esx-compute1:
+    failure-zone: null
+    hostname: ardana-cp1-esx-comp0001-mgmt
+    net_data:
+        eth0:
+            ESX-CONF-NET:
+                addr: 100.13.3.3
+                tagged-vlan: false
+                vlan-id: 13
+        eth1:
+            MANAGEMENT-NET:
+                addr: 100.14.0.8
+                tagged-vlan: true
+                vlan-id: 14
+    state: allocated
+lifecycle-manager:
+    failure-zone: null
+    hostname: ardana-cp1-c0-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 100.14.0.2
+                tagged-vlan: true
+                vlan-id: 14
+        HED2:
+            DEPLOYER-NET:
+                addr: 100.10.3.5
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated
+ovsvapp1:
+    failure-zone: null
+    hostname: ardana-cp1-esx-ovsvapp0001-mgmt
+    net_data:
+        eth0:
+            ESX-CONF-NET:
+                addr: 100.13.3.4
+                tagged-vlan: false
+                vlan-id: 13
+        eth1:
+            MANAGEMENT-NET:
+                addr: 100.14.0.6
+                tagged-vlan: true
+                vlan-id: 14
+        eth3:
+            TRUNK-NET:
+                addr: null
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated
+ovsvapp2:
+    failure-zone: null
+    hostname: ardana-cp1-esx-ovsvapp0002-mgmt
+    net_data:
+        eth0:
+            ESX-CONF-NET:
+                addr: 100.13.3.5
+                tagged-vlan: false
+                vlan-id: 13
+        eth1:
+            MANAGEMENT-NET:
+                addr: 100.14.0.7
+                tagged-vlan: true
+                vlan-id: 14
+        eth3:
+            TRUNK-NET:
+                addr: null
+                tagged-vlan: false
+                vlan-id: null
+    state: allocated

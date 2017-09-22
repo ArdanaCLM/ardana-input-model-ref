@@ -1,0 +1,584 @@
+10.243.125.2:
+  addr: 10.243.125.2
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+10.243.125.3:
+  addr: 10.243.125.3
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m2
+  persisted: false
+  server-id: core2
+  used-by: server
+10.243.125.4:
+  addr: 10.243.125.4
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+10.243.126.2:
+  addr: 10.243.126.2
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+10.243.126.3:
+  addr: 10.243.126.3
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m2
+  persisted: false
+  server-id: core2
+  used-by: server
+10.243.126.4:
+  addr: 10.243.126.4
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-lb-intapi
+  persisted: false
+  server-id: null
+  used-by: vip lb
+10.243.127.2:
+  addr: 10.243.127.2
+  allocated: true
+  free: false
+  host: ardana-cp1-neut-m1
+  persisted: false
+  server-id: neut1
+  used-by: server
+10.243.127.3:
+  addr: 10.243.127.3
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.243.128.2:
+  addr: 10.243.128.2
+  allocated: true
+  free: false
+  host: ardana-cp1-neut-m2
+  persisted: false
+  server-id: neut2
+  used-by: server
+10.243.128.3:
+  addr: 10.243.128.3
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.243.129.2:
+  addr: 10.243.129.2
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.243.130.2:
+  addr: 10.243.130.2
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+10.243.130.3:
+  addr: 10.243.130.3
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m1
+  persisted: false
+  server-id: mtrmon1
+  used-by: server
+10.243.130.4:
+  addr: 10.243.130.4
+  allocated: true
+  free: false
+  host: ardana-cp1-dbmq-m1
+  persisted: false
+  server-id: dbmq1
+  used-by: server
+10.243.130.5:
+  addr: 10.243.130.5
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+10.243.130.6:
+  addr: 10.243.130.6
+  allocated: true
+  free: false
+  host: ardana-cp1-neut-m1
+  persisted: false
+  server-id: neut1
+  used-by: server
+10.243.130.7:
+  addr: 10.243.130.7
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+10.243.130.8:
+  addr: 10.243.130.8
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.243.130.9:
+  addr: 10.243.130.9
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.243.131.2:
+  addr: 10.243.131.2
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m2
+  persisted: false
+  server-id: core2
+  used-by: server
+10.243.131.3:
+  addr: 10.243.131.3
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m2
+  persisted: false
+  server-id: mtrmon2
+  used-by: server
+10.243.131.4:
+  addr: 10.243.131.4
+  allocated: true
+  free: false
+  host: ardana-cp1-dbmq-m2
+  persisted: false
+  server-id: dbmq2
+  used-by: server
+10.243.131.5:
+  addr: 10.243.131.5
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m2
+  persisted: false
+  server-id: swpac2
+  used-by: server
+10.243.131.6:
+  addr: 10.243.131.6
+  allocated: true
+  free: false
+  host: ardana-cp1-neut-m2
+  persisted: false
+  server-id: neut2
+  used-by: server
+10.243.131.7:
+  addr: 10.243.131.7
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0002
+  persisted: false
+  server-id: swobj2
+  used-by: server
+10.243.131.8:
+  addr: 10.243.131.8
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.243.131.9:
+  addr: 10.243.131.9
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.243.132.2:
+  addr: 10.243.132.2
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m3
+  persisted: false
+  server-id: mtrmon3
+  used-by: server
+10.243.132.3:
+  addr: 10.243.132.3
+  allocated: true
+  free: false
+  host: ardana-cp1-dbmq-m3
+  persisted: false
+  server-id: dbmq3
+  used-by: server
+10.243.132.4:
+  addr: 10.243.132.4
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m3
+  persisted: false
+  server-id: swpac3
+  used-by: server
+10.243.132.5:
+  addr: 10.243.132.5
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0003
+  persisted: false
+  server-id: swobj3
+  used-by: server
+10.243.132.6:
+  addr: 10.243.132.6
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+10.243.132.7:
+  addr: 10.243.132.7
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.243.133.10:
+  addr: 10.243.133.10
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0003
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.243.133.11:
+  addr: 10.243.133.11
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.243.133.12:
+  addr: 10.243.133.12
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.243.133.13:
+  addr: 10.243.133.13
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.243.133.2:
+  addr: 10.243.133.2
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+10.243.133.3:
+  addr: 10.243.133.3
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m2
+  persisted: false
+  server-id: core2
+  used-by: server
+10.243.133.4:
+  addr: 10.243.133.4
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.243.133.5:
+  addr: 10.243.133.5
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.243.133.6:
+  addr: 10.243.133.6
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: null
+  used-by: vsa--cluster
+10.243.133.7:
+  addr: 10.243.133.7
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.243.133.8:
+  addr: 10.243.133.8
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0002
+  persisted: false
+  server-id: null
+  used-by: vsa
+10.243.133.9:
+  addr: 10.243.133.9
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server
+10.243.136.2:
+  addr: 10.243.136.2
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+10.243.136.3:
+  addr: 10.243.136.3
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+10.243.137.2:
+  addr: 10.243.137.2
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m2
+  persisted: false
+  server-id: swpac2
+  used-by: server
+10.243.137.3:
+  addr: 10.243.137.3
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0002
+  persisted: false
+  server-id: swobj2
+  used-by: server
+10.243.138.2:
+  addr: 10.243.138.2
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m3
+  persisted: false
+  server-id: swpac3
+  used-by: server
+10.243.138.3:
+  addr: 10.243.138.3
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0003
+  persisted: false
+  server-id: swobj3
+  used-by: server
+10.243.140.10:
+  addr: 10.243.140.10
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m1
+  persisted: false
+  server-id: core1
+  used-by: server
+10.243.140.11:
+  addr: 10.243.140.11
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m1
+  persisted: false
+  server-id: mtrmon1
+  used-by: server
+10.243.140.12:
+  addr: 10.243.140.12
+  allocated: true
+  free: false
+  host: ardana-cp1-dbmq-m1
+  persisted: false
+  server-id: dbmq1
+  used-by: server
+10.243.140.13:
+  addr: 10.243.140.13
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+10.243.140.14:
+  addr: 10.243.140.14
+  allocated: true
+  free: false
+  host: ardana-cp1-neut-m1
+  persisted: false
+  server-id: neut1
+  used-by: server
+10.243.140.15:
+  addr: 10.243.140.15
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+10.243.140.16:
+  addr: 10.243.140.16
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.243.140.17:
+  addr: 10.243.140.17
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0001
+  persisted: false
+  server-id: vsa1
+  used-by: server
+10.243.140.18:
+  addr: 10.243.140.18
+  allocated: true
+  free: false
+  host: ardana-cp1-core-m2
+  persisted: false
+  server-id: core2
+  used-by: server
+10.243.140.19:
+  addr: 10.243.140.19
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m2
+  persisted: false
+  server-id: mtrmon2
+  used-by: server
+10.243.140.20:
+  addr: 10.243.140.20
+  allocated: true
+  free: false
+  host: ardana-cp1-dbmq-m2
+  persisted: false
+  server-id: dbmq2
+  used-by: server
+10.243.140.21:
+  addr: 10.243.140.21
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m2
+  persisted: false
+  server-id: swpac2
+  used-by: server
+10.243.140.22:
+  addr: 10.243.140.22
+  allocated: true
+  free: false
+  host: ardana-cp1-neut-m2
+  persisted: false
+  server-id: neut2
+  used-by: server
+10.243.140.23:
+  addr: 10.243.140.23
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0002
+  persisted: false
+  server-id: swobj2
+  used-by: server
+10.243.140.24:
+  addr: 10.243.140.24
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.243.140.25:
+  addr: 10.243.140.25
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0002
+  persisted: false
+  server-id: vsa2
+  used-by: server
+10.243.140.26:
+  addr: 10.243.140.26
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m3
+  persisted: false
+  server-id: mtrmon3
+  used-by: server
+10.243.140.27:
+  addr: 10.243.140.27
+  allocated: true
+  free: false
+  host: ardana-cp1-dbmq-m3
+  persisted: false
+  server-id: dbmq3
+  used-by: server
+10.243.140.28:
+  addr: 10.243.140.28
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m3
+  persisted: false
+  server-id: swpac3
+  used-by: server
+10.243.140.29:
+  addr: 10.243.140.29
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0003
+  persisted: false
+  server-id: swobj3
+  used-by: server
+10.243.140.30:
+  addr: 10.243.140.30
+  allocated: true
+  free: false
+  host: ardana-cp1-comp0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.243.140.31:
+  addr: 10.243.140.31
+  allocated: true
+  free: false
+  host: ardana-cp1-vsa0003
+  persisted: false
+  server-id: vsa3
+  used-by: server

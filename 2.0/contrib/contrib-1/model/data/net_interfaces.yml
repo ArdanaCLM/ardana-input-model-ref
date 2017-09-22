@@ -1,0 +1,73 @@
+# Copyright 2015 Hewlett-Packard Development Company, L.P
+# Copyright 2017 SUSE LLC
+---
+  product:
+    version: 2
+
+  interface-models:
+      # These examples uses eth3 and eth4 as a bonded
+      # pair for all networks on all three server roles
+      #
+      # Edit the device names and bond options
+      # to match your environment
+      #
+    - name: INTERFACE_SET_CONTROLLER
+      network-interfaces:
+        - name: BOND0
+          device:
+              name: bond0
+          bond-data:
+             options:
+                 mode: 802.3ad
+                 miimon: 200
+             provider: linux
+             devices:
+               - name: eth4
+               - name: eth5
+          network-groups:
+            - EXTERNAL_API
+            - MGMT
+          forced-network-groups:
+            - ISCSI
+        - name: ETH0
+          device:
+              name: eth0
+          network-groups:
+            - ARDANA
+
+    - name: INTERFACE_SET_COMPUTE
+      network-interfaces:
+        - name: ETH1
+          device:
+              name: eth1
+          network-groups:
+            - MGMT
+          forced-network-groups:
+            - ISCSI
+        - name: ETH0
+          device:
+              name: eth0
+          network-groups:
+            - ARDANA
+
+    - name: INTERFACE_SET_VSA
+      network-interfaces:
+        - name: BOND0
+          device:
+              name: bond0
+          bond-data:
+             options:
+                 mode: 802.3ad
+                 miimon: 200
+             provider: linux
+             devices:
+               - name: eth1
+               - name: eth2
+          network-groups:
+            - MGMT
+            - ISCSI
+        - name: ETH0
+          device:
+              name: eth0
+          network-groups:
+            - ARDANA

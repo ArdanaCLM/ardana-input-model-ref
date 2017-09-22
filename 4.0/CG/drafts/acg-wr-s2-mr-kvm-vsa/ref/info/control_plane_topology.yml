@@ -1,0 +1,646 @@
+control_planes:
+    cp1:
+        clusters:
+            controller:
+                failure_zones:
+                    AZ1:
+                    - hcg-cp1-controller-m1-clm
+                    AZ2:
+                    - hcg-cp1-controller-m2-clm
+                    - hcg-cp1-controller-m3-clm
+                services:
+                    cinder:
+                        components:
+                        - cinder-backup
+                        - cinder-api
+                        - cinder-volume
+                        - cinder-scheduler
+                        regions:
+                        - hcgregionone
+                        - wrregionone
+                        - wrregiontwo
+                    clients:
+                        components:
+                        - keystone-client
+                        - cinder-client
+                        - openstack-client
+                        regions:
+                        - hcgregionone
+                    foundation:
+                        components:
+                        - stunnel
+                        - ip-cluster
+                        - ntp-client
+                        - apache2
+                        - memcached
+                        regions:
+                        - hcgregionone
+                    freezer:
+                        components:
+                        - freezer-agent
+                        regions:
+                        - hcgregionone
+                    glance:
+                        components:
+                        - glance-api
+                        - glance-registry
+                        regions:
+                        - hcgregionone
+                        - wrregionone
+                        - wrregiontwo
+                    ardana:
+                        components:
+                        - lifecycle-manager-target
+                        regions:
+                        - hcgregionone
+                    keystone:
+                        components:
+                        - keystone-api
+                        regions:
+                        - hcgregionone
+                        - wrregionone
+                        - wrregiontwo
+                    logging:
+                        components:
+                        - logging-producer
+                        - logging-rotate
+                        regions:
+                        - hcgregionone
+                    monasca:
+                        components:
+                        - monasca-agent
+                        regions:
+                        - hcgregionone
+                    operations:
+                        components:
+                        - ops-console-monitor
+                        - ops-console-web
+                        regions:
+                        - hcgregionone
+                    vsa-storage:
+                        components:
+                        - cmc-service
+                        regions:
+                        - hcgregionone
+            ardana-hypervisor:
+                failure_zones:
+                    AZ1:
+                    - hcg-cp1-alm-hyp-m1-clm
+                    AZ2:
+                    - hcg-cp1-alm-hyp-m2-clm
+                services:
+                    clients:
+                        components:
+                        - ceilometer-client
+                        - keystone-client
+                        - nova-client
+                        - openstack-client
+                        - cinder-client
+                        - swift-client
+                        - glance-client
+                        - monasca-client
+                        - neutron-client
+                        regions:
+                        - hcgregionone
+                    foundation:
+                        components:
+                        - stunnel
+                        - ntp-server
+                        - ardana-ca
+                        regions:
+                        - hcgregionone
+                    freezer:
+                        components:
+                        - freezer-agent
+                        regions:
+                        - hcgregionone
+                    ardana:
+                        components:
+                        - ardana-ux-services
+                        - lifecycle-manager
+                        - lifecycle-manager-target
+                        regions:
+                        - hcgregionone
+                    logging:
+                        components:
+                        - logging-rotate
+                        - logging-producer
+                        regions:
+                        - hcgregionone
+                    monasca:
+                        components:
+                        - monasca-agent
+                        regions:
+                        - hcgregionone
+                    swift:
+                        components:
+                        - swift-rsync
+                        - swift-proxy
+                        - swift-container
+                        - swift-common
+                        - swift-object
+                        - swift-ring-builder
+                        - swift-account
+                        regions:
+                        - hcgregionone
+                    tempest:
+                        components:
+                        - tempest
+                        regions:
+                        - hcgregionone
+            mml:
+                failure_zones:
+                    AZ1:
+                    - hcg-cp1-mml-m1-clm
+                    AZ2:
+                    - hcg-cp1-mml-m2-clm
+                    - hcg-cp1-mml-m3-clm
+                services:
+                    ceilometer:
+                        components:
+                        - ceilometer-polling
+                        - ceilometer-common
+                        - ceilometer-agent-notification
+                        - ceilometer-api
+                        regions:
+                        - hcgregionone
+                    clients:
+                        components:
+                        - keystone-client
+                        - monasca-client
+                        - nova-client
+                        regions:
+                        - hcgregionone
+                    foundation:
+                        components:
+                        - zookeeper
+                        - stunnel
+                        - kafka
+                        - vertica
+                        - apache2
+                        - storm
+                        - ntp-client
+                        regions:
+                        - hcgregionone
+                    freezer:
+                        components:
+                        - freezer-api
+                        - freezer-agent
+                        regions:
+                        - hcgregionone
+                    ardana:
+                        components:
+                        - lifecycle-manager-target
+                        regions:
+                        - hcgregionone
+                    logging:
+                        components:
+                        - logging-api
+                        - logging-producer
+                        - logging-rotate
+                        - logging-server
+                        regions:
+                        - hcgregionone
+                    monasca:
+                        components:
+                        - monasca-agent
+                        - monasca-persister
+                        - monasca-threshold
+                        - monasca-liveness-check
+                        - monasca-api
+                        - monasca-notifier
+                        regions:
+                        - hcgregionone
+            rmq-mysql:
+                failure_zones:
+                    AZ1:
+                    - hcg-cp1-rmq-mysql-m1-clm
+                    AZ2:
+                    - hcg-cp1-rmq-mysql-m2-clm
+                    - hcg-cp1-rmq-mysql-m3-clm
+                services:
+                    foundation:
+                        components:
+                        - rabbitmq
+                        - stunnel
+                        - mysql
+                        - ntp-client
+                        regions:
+                        - hcgregionone
+                    freezer:
+                        components:
+                        - freezer-agent
+                        regions:
+                        - hcgregionone
+                    ardana:
+                        components:
+                        - lifecycle-manager-target
+                        regions:
+                        - hcgregionone
+                    logging:
+                        components:
+                        - logging-rotate
+                        - logging-producer
+                        regions:
+                        - hcgregionone
+                    monasca:
+                        components:
+                        - monasca-agent
+                        regions:
+                        - hcgregionone
+        load-balancers:
+            extlb:
+                address: 10.244.45.15
+                cert-file: cp1-extlb-cert
+                external-name: ''
+                network: CAN-NET
+                network-group: CAN
+                provider: ip-cluster
+                roles:
+                - public
+                services:
+                    ceilometer:
+                        ceilometer-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-CEI-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: '8777'
+                            vip-tls: true
+                    cinder:
+                        cinder-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-CND-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '8776'
+                            vip-tls: true
+                    freezer:
+                        freezer-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-FRE-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: '9090'
+                            vip-tls: true
+                    glance:
+                        glance-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-GLA-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '9292'
+                            vip-tls: true
+                    ardana:
+                        ardana-ux-services:
+                            aliases:
+                                public: hcg-cp1-vip-public-HUX-SVC-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            - hcg-cp1-alm-hyp-m2-clm
+                            port: '9085'
+                            vip-tls: true
+                    keystone:
+                        keystone-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-KEY-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '5000'
+                            vip-tls: true
+                    logging:
+                        logging-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-LOG-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: 5607
+                            vip-tls: true
+                    monasca:
+                        monasca-api:
+                            aliases:
+                                public: hcg-cp1-vip-public-MON-API-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: '8070'
+                            vip-tls: true
+                    operations:
+                        ops-console-web:
+                            aliases:
+                                public: hcg-cp1-vip-public-OPS-WEB-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '9095'
+                            vip-tls: true
+                    swift:
+                        swift-proxy:
+                            aliases:
+                                public: hcg-cp1-vip-public-SWF-PRX-can
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            - hcg-cp1-alm-hyp-m2-clm
+                            port: '8080'
+                            vip-tls: true
+            lb:
+                address: 10.244.44.24
+                cert-file: ''
+                external-name: ''
+                network: CLM-NET
+                network-group: CLM
+                provider: ip-cluster
+                roles:
+                - internal
+                - admin
+                services:
+                    ceilometer:
+                        ceilometer-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-CEI-API-clm
+                                internal: hcg-cp1-vip-CEI-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: '8777'
+                            vip-tls: false
+                    cinder:
+                        cinder-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-CND-API-clm
+                                internal: hcg-cp1-vip-CND-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '8776'
+                            vip-tls: false
+                    foundation:
+                        mysql:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-FND-MDB-clm
+                                internal: hcg-cp1-vip-FND-MDB-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-rmq-mysql-m1-clm
+                            - hcg-cp1-rmq-mysql-m2-clm
+                            - hcg-cp1-rmq-mysql-m3-clm
+                            port: '3306'
+                            vip-tls: false
+                        vertica:
+                            aliases:
+                                internal: hcg-cp1-vip-FND-VDB-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: 15433
+                            vip-tls: false
+                    freezer:
+                        freezer-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-FRE-API-clm
+                                internal: hcg-cp1-vip-FRE-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: '9090'
+                            vip-tls: false
+                    glance:
+                        glance-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-GLA-API-clm
+                                internal: hcg-cp1-vip-GLA-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '9292'
+                            vip-tls: false
+                        glance-registry:
+                            aliases:
+                                internal: hcg-cp1-vip-GLA-REG-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '9191'
+                            vip-tls: false
+                    ardana:
+                        ardana-ux-services:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-HUX-SVC-clm
+                                internal: hcg-cp1-vip-HUX-SVC-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            - hcg-cp1-alm-hyp-m2-clm
+                            port: '9085'
+                            vip-tls: false
+                    keystone:
+                        keystone-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-KEY-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '35357'
+                            vip-tls: false
+                    logging:
+                        logging-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-LOG-API-clm
+                                internal: hcg-cp1-vip-LOG-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: 5607
+                            vip-tls: false
+                        logging-server:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-LOG-SVR-clm
+                                internal: hcg-cp1-vip-LOG-SVR-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: 5601
+                            vip-tls: false
+                    monasca:
+                        monasca-api:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-MON-API-clm
+                                internal: hcg-cp1-vip-MON-API-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-mml-m1-clm
+                            - hcg-cp1-mml-m2-clm
+                            - hcg-cp1-mml-m3-clm
+                            port: '8070'
+                            vip-tls: false
+                    operations:
+                        ops-console-web:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-OPS-WEB-clm
+                                internal: hcg-cp1-vip-OPS-WEB-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-controller-m1-clm
+                            - hcg-cp1-controller-m2-clm
+                            - hcg-cp1-controller-m3-clm
+                            port: '9095'
+                            vip-tls: false
+                    swift:
+                        swift-proxy:
+                            aliases:
+                                admin: hcg-cp1-vip-admin-SWF-PRX-clm
+                                internal: hcg-cp1-vip-SWF-PRX-clm
+                            host-tls: false
+                            hosts:
+                            - hcg-cp1-alm-hyp-m1-clm
+                            - hcg-cp1-alm-hyp-m2-clm
+                            port: '8080'
+                            vip-tls: false
+        resources:
+            vsa:
+                failure_zones:
+                    AZ1:
+                    - hcg-cp1-vsa0001-clm
+                services:
+                    foundation:
+                        components:
+                        - stunnel
+                        - ntp-client
+                        regions:
+                        - hcgregionone
+                    freezer:
+                        components:
+                        - freezer-agent
+                        regions:
+                        - hcgregionone
+                    ardana:
+                        components:
+                        - lifecycle-manager-target
+                        regions:
+                        - hcgregionone
+                    logging:
+                        components:
+                        - logging-producer
+                        - logging-rotate
+                        regions:
+                        - hcgregionone
+                    monasca:
+                        components:
+                        - monasca-agent
+                        regions:
+                        - hcgregionone
+                    vsa-storage:
+                        components:
+                        - vsa
+                        regions:
+                        - hcgregionone
+    wr1:
+        clusters:
+            cluster1:
+                failure_zones: {}
+                services:
+                    ardana:
+                        components:
+                        - lifecycle-manager-target
+                        regions:
+                        - wrregionone
+                    windriver:
+                        components:
+                        - windriver-consumer
+                        regions:
+                        - wrregionone
+        load-balancers:
+            wr-extlb:
+                cert-file: my-public-cert-wr1
+                external-name: ''
+                network-group: CAN
+                provider: windriver-consumer
+                roles:
+                - public
+                services: {}
+            wr-lb:
+                cert-file: ''
+                external-name: ''
+                network-group: CLM
+                provider: windriver-consumer
+                roles:
+                - internal
+                - admin
+                services: {}
+        resources: {}
+    wr2:
+        clusters:
+            cluster2:
+                failure_zones: {}
+                services:
+                    ardana:
+                        components:
+                        - lifecycle-manager-target
+                        regions:
+                        - wrregiontwo
+                    windriver:
+                        components:
+                        - windriver-consumer
+                        regions:
+                        - wrregiontwo
+        load-balancers:
+            wr-extlb:
+                cert-file: my-public-cert-wr2
+                external-name: ''
+                network-group: CAN
+                provider: windriver-consumer
+                roles:
+                - public
+                services: {}
+            wr-lb:
+                cert-file: ''
+                external-name: ''
+                network-group: CLM
+                provider: windriver-consumer
+                roles:
+                - internal
+                - admin
+                services: {}
+        resources: {}

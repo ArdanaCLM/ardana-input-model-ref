@@ -1,0 +1,323 @@
++-ControlPlane:  (cp1)---------------------------------+
+|                                                      |
+| +-Cluster ardana-hypervisor ()------------------------+ |
+| |                                                  | |
+| | +-hcg-cp1-alm-hyp-m1 (10.244.43.102)-----------+ | |
+| | |                                              | | |
+| | | clients                                      | | |
+| | |   barbican-client                            | | |
+| | |   ceilometer-client                          | | |
+| | |   cinder-client                              | | |
+| | |   designate-client                           | | |
+| | |   eon-client                                 | | |
+| | |   glance-client                              | | |
+| | |   heat-client                                | | |
+| | |   keystone-client                            | | |
+| | |   monasca-client                             | | |
+| | |   neutron-client                             | | |
+| | |   nova-client                                | | |
+| | |   openstack-client                           | | |
+| | |   swift-client                               | | |
+| | | foundation                                   | | |
+| | |   ardana-ca                                  | | |
+| | |   ntp-server                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | ardana                                          | | |
+| | |   ardana-ux-services                            | | |
+| | |   lifecycle-manager                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-rotate                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | swift                                        | | |
+| | |   swift-account                              | | |
+| | |   swift-common                               | | |
+| | |   swift-container                            | | |
+| | |   swift-object                               | | |
+| | |   swift-proxy                                | | |
+| | |   swift-ring-builder                         | | |
+| | |   swift-rsync                                | | |
+| | | tempest                                      | | |
+| | |   tempest                                    | | |
+| | | vsa-storage                                  | | |
+| | |   vsa                                        | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (hed1, hed2)                           | | |
+| | |   BLS-NET (10.244.47.102)                    | | |
+| | |   CAN-NET                                    | | |
+| | |   CLM-NET (10.244.44.102)                    | | |
+| | |   PXE-NET (10.244.43.102)                    | | |
+| | | bond1 (hed3, hed4)                           | | |
+| | |   VLAN2-TUL-NET                              | | |
+| | |   VLAN3-TUL-NET                              | | |
+| | |   VxLAN-VLAN1-TUL-NET                        | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster controller ()----------------------------+ |
+| |                                                  | |
+| | +-hcg-cp1-controller-m1 (10.244.43.105)--------+ | |
+| | |                                              | | |
+| | | barbican                                     | | |
+| | |   barbican-api                               | | |
+| | |   barbican-worker                            | | |
+| | | cinder                                       | | |
+| | |   cinder-api                                 | | |
+| | |   cinder-backup                              | | |
+| | |   cinder-scheduler                           | | |
+| | |   cinder-volume                              | | |
+| | | clients                                      | | |
+| | |   barbican-client                            | | |
+| | |   cinder-client                              | | |
+| | |   eon-client                                 | | |
+| | |   glance-client                              | | |
+| | |   keystone-client                            | | |
+| | |   neutron-client                             | | |
+| | |   nova-client                                | | |
+| | |   openstack-client                           | | |
+| | | designate                                    | | |
+| | |   designate-api                              | | |
+| | |   designate-central                          | | |
+| | |   designate-mdns                             | | |
+| | |   designate-pool-manager                     | | |
+| | |   designate-zone-manager                     | | |
+| | | eon                                          | | |
+| | |   eon-api                                    | | |
+| | |   eon-conductor                              | | |
+| | | foundation                                   | | |
+| | |   apache2                                    | | |
+| | |   ip-cluster                                 | | |
+| | |   memcached                                  | | |
+| | |   ntp-client                                 | | |
+| | |   powerdns                                   | | |
+| | |   powerdns-ext                               | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | glance                                       | | |
+| | |   glance-api                                 | | |
+| | |   glance-registry                            | | |
+| | | heat                                         | | |
+| | |   heat-api                                   | | |
+| | |   heat-api-cfn                               | | |
+| | |   heat-api-cloudwatch                        | | |
+| | |   heat-engine                                | | |
+| | | ardana                                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | | horizon                                      | | |
+| | |   horizon                                    | | |
+| | | keystone                                     | | |
+| | |   keystone-api                               | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-rotate                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-ml2-plugin                         | | |
+| | |   neutron-server                             | | |
+| | | nova                                         | | |
+| | |   nova-api                                   | | |
+| | |   nova-conductor                             | | |
+| | |   nova-console-auth                          | | |
+| | |   nova-metadata                              | | |
+| | |   nova-novncproxy                            | | |
+| | |   nova-scheduler                             | | |
+| | | octavia                                      | | |
+| | |   octavia-api                                | | |
+| | |   octavia-health-manager                     | | |
+| | | operations                                   | | |
+| | |   ops-console-monitor                        | | |
+| | |   ops-console-web                            | | |
+| | | vsa-storage                                  | | |
+| | |   cmc-service                                | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | hed1                                         | | |
+| | |   BLS-NET (10.244.47.105)                    | | |
+| | |   CAN-NET (10.244.45.102)                    | | |
+| | |   CLM-NET (10.244.44.103)                    | | |
+| | |   PXE-NET (10.244.43.105)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster rmq-mysql ()-----------------------------+ |
+| |                                                  | |
+| | +-hcg-cp1-rmq-mysql-m1 (10.244.43.108)---------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   mysql                                      | | |
+| | |   ntp-client                                 | | |
+| | |   rabbitmq                                   | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | ardana                                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-rotate                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | hed1                                         | | |
+| | |   CLM-NET (10.244.44.104)                    | | |
+| | |   PXE-NET (10.244.43.108)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster mml ()-----------------------------------+ |
+| |                                                  | |
+| | +-hcg-cp1-mml-m1 (10.244.43.111)---------------+ | |
+| | |                                              | | |
+| | | ceilometer                                   | | |
+| | |   ceilometer-agent-notification              | | |
+| | |   ceilometer-api                             | | |
+| | |   ceilometer-common                          | | |
+| | |   ceilometer-polling                         | | |
+| | | clients                                      | | |
+| | |   keystone-client                            | | |
+| | |   monasca-client                             | | |
+| | |   nova-client                                | | |
+| | | foundation                                   | | |
+| | |   apache2                                    | | |
+| | |   kafka                                      | | |
+| | |   ntp-client                                 | | |
+| | |   storm                                      | | |
+| | |   stunnel                                    | | |
+| | |   vertica                                    | | |
+| | |   zookeeper                                  | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | |   freezer-api                                | | |
+| | | ardana                                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | | logging                                      | | |
+| | |   logging-api                                | | |
+| | |   logging-producer                           | | |
+| | |   logging-rotate                             | | |
+| | |   logging-server                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | |   monasca-api                                | | |
+| | |   monasca-liveness-check                     | | |
+| | |   monasca-notifier                           | | |
+| | |   monasca-persister                          | | |
+| | |   monasca-threshold                          | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | hed1                                         | | |
+| | |   CLM-NET (10.244.44.105)                    | | |
+| | |   PXE-NET (10.244.43.111)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster network ()-------------------------------+ |
+| |                                                  | |
+| | +-hcg-cp1-network-m1 (10.244.43.114)-----------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | ardana                                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-rotate                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-dhcp-agent                         | | |
+| | |   neutron-metadata-agent                     | | |
+| | |   neutron-openvswitch-agent                  | | |
+| | |   neutron-vpn-agent                          | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | hed1                                         | | |
+| | |   CLM-NET (10.244.44.106)                    | | |
+| | |   PXE-NET (10.244.43.114)                    | | |
+| | | hed2                                         | | |
+| | |   VxLAN-VLAN1-TUL-NET (10.244.48.102)        | | |
+| | | hed3                                         | | |
+| | |   VLAN2-TUL-NET                              | | |
+| | | hed4                                         | | |
+| | |   VLAN3-TUL-NET                              | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-compute------------------------------------------+ |
+| |                                                  | |
+| | +-COMPUTE-ROLE (AZ1) (1 servers)---------------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   openvswitch                                | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | ardana                                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-rotate                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-l3-agent                           | | |
+| | |   neutron-lbaasv2-agent                      | | |
+| | |   neutron-metadata-agent                     | | |
+| | |   neutron-openvswitch-agent                  | | |
+| | |   neutron-sriov-nic-agent                    | | |
+| | | nova                                         | | |
+| | |   nova-compute                               | | |
+| | |   nova-compute-kvm                           | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (hed1, hed2)                           | | |
+| | |   BLS-NET (10.244.47.0/24)                   | | |
+| | |   CLM-NET (10.244.44.0/24)                   | | |
+| | |   PXE-NET (10.244.43.0/24)                   | | |
+| | | bond1 (dpdk0, dpdk1)                         | | |
+| | |   VxLAN-VLAN1-TUL-NET (10.244.48.0/24)       | | |
+| | | hed5                                         | | |
+| | |   VLAN2-TUL-NET                              | | |
+| | | hed6                                         | | |
+| | |   VLAN3-TUL-NET                              | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| +--------------------------------------------------+ |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
+|                                                      |
++------------------------------------------------------+
+

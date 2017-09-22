@@ -1,0 +1,15 @@
+service_ips:
+    vsa:
+    -   cluster: vsa
+        cluster_ip:
+            hostname: scale300-ccp-vsa-VSA-BLK-mgmt
+            ip_address: 10.12.49.213
+        control_plane: ccp
+        hosts:
+        -   hostname: scale300-ccp-vsa0001-VSA-BLK-mgmt
+            ip_address: 10.12.49.212
+        -   hostname: scale300-ccp-vsa0002-VSA-BLK-mgmt
+            ip_address: 10.12.49.214
+        -   hostname: scale300-ccp-vsa0003-VSA-BLK-mgmt
+            ip_address: 10.12.49.215
+        network: MANAGEMENT-NET

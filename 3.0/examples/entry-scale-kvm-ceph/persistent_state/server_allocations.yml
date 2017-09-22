@@ -1,0 +1,2016 @@
+compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.6
+    ansible_options: null
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      monasca-agent: {}
+      neutron-l3-agent: {}
+      neutron-lbaasv2-agent: {}
+      neutron-metadata-agent: {}
+      neutron-openvswitch-agent: {}
+      nova-compute: {}
+      nova-compute-kvm: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      name: COMPUTE-DISKS
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 35%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 50%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+      - logical-volumes:
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/nova
+          name: compute
+          size: 95%
+        name: vg-comp
+        physical-volumes:
+        - /dev/sdb
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    id: compute1
+    if-model: COMPUTE-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      forced-network-groups:
+      - OSD-CLIENT
+      name: BOND0
+      network-groups:
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      networks:
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: true
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+    member_id: 1
+    name: ardana-cp1-comp0001
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: COMPUTE-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      logging:
+      - logging-producer
+      monasca:
+      - monasca-agent
+      neutron:
+      - neutron-openvswitch-agent
+      - neutron-metadata-agent
+      - neutron-lbaasv2-agent
+      - neutron-l3-agent
+      nova:
+      - nova-compute
+      - nova-compute-kvm
+      operations:
+      - lifecycle-manager-target
+    state: allocated
+  resource_name: compute
+  state: allocated
+  type: resource
+controller1:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.3
+    ansible_options: null
+    components:
+      apache2: {}
+      barbican-api: {}
+      barbican-client: {}
+      barbican-worker: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      ceph-monitor: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      designate-api: {}
+      designate-central: {}
+      designate-client: {}
+      designate-mdns: {}
+      designate-pool-manager: {}
+      designate-zone-manager: {}
+      freezer-agent: {}
+      freezer-api: {}
+      glance-api: {}
+      glance-client: {}
+      glance-registry: {}
+      heat-api: {}
+      heat-api-cfn: {}
+      heat-api-cloudwatch: {}
+      heat-client: {}
+      heat-engine: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      mysql: {}
+      neutron-client: {}
+      neutron-dhcp-agent: {}
+      neutron-metadata-agent: {}
+      neutron-ml2-plugin: {}
+      neutron-openvswitch-agent: {}
+      neutron-server: {}
+      neutron-vpn-agent: {}
+      nova-api: {}
+      nova-client: {}
+      nova-conductor: {}
+      nova-console-auth: {}
+      nova-metadata: {}
+      nova-novncproxy: {}
+      nova-scheduler: {}
+      ntp-server: {}
+      octavia-api: {}
+      octavia-health-manager: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      powerdns: {}
+      rabbitmq: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftobj
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    id: controller1
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      - OSD-CLIENT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          tagged-vlan: true
+          vlanid: 101
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+    member_id: 1
+    name: ardana-cp1-c1-m1
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:07:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:08:00.0'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:09:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: 0000:0a:00.0
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      barbican:
+      - barbican-api
+      - barbican-worker
+      ceilometer:
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-client
+      - ceilometer-polling
+      - ceilometer-api
+      ceph:
+      - ceph-monitor
+      cinder:
+      - cinder-backup
+      - cinder-client
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      designate:
+      - designate-pool-manager
+      - designate-mdns
+      - designate-zone-manager
+      - designate-central
+      - designate-api
+      foundation:
+      - powerdns
+      - barbican-client
+      - stunnel
+      - designate-client
+      - mysql
+      - swift-common
+      - vertica
+      - apache2
+      - storm
+      - memcached
+      - ip-cluster
+      - swift-rsync
+      - zookeeper
+      - ntp-server
+      - kafka
+      - rabbitmq
+      - openstack-client
+      - ardana-ux-services
+      freezer:
+      - freezer-agent
+      - freezer-api
+      glance:
+      - glance-api
+      - glance-client
+      - glance-registry
+      heat:
+      - heat-client
+      - heat-api-cfn
+      - heat-api
+      - heat-engine
+      - heat-api-cloudwatch
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      - keystone-client
+      logging:
+      - logging-producer
+      - logging-server
+      monasca:
+      - monasca-client
+      - monasca-notifier
+      - monasca-agent
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      neutron:
+      - neutron-ml2-plugin
+      - neutron-openvswitch-agent
+      - neutron-dhcp-agent
+      - neutron-metadata-agent
+      - neutron-server
+      - neutron-vpn-agent
+      - neutron-client
+      nova:
+      - nova-api
+      - nova-console-auth
+      - nova-conductor
+      - nova-scheduler
+      - nova-metadata
+      - nova-client
+      - nova-novncproxy
+      octavia:
+      - octavia-health-manager
+      - octavia-api
+      operations:
+      - ops-console-web
+      - ops-console-monitor
+      - lifecycle-manager
+      - lifecycle-manager-target
+      swift:
+      - swift-client
+      - swift-proxy
+      - swift-container
+      - swift-ring-builder
+      - swift-object
+      - swift-account
+      vsa-storage:
+      - cmc-service
+    state: allocated
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 2
+  previous_config:
+    addr: 192.168.10.4
+    ansible_options: null
+    components:
+      apache2: {}
+      barbican-api: {}
+      barbican-client: {}
+      barbican-worker: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      ceph-monitor: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      designate-api: {}
+      designate-central: {}
+      designate-client: {}
+      designate-mdns: {}
+      designate-pool-manager: {}
+      designate-zone-manager: {}
+      freezer-agent: {}
+      freezer-api: {}
+      glance-api: {}
+      glance-client: {}
+      glance-registry: {}
+      heat-api: {}
+      heat-api-cfn: {}
+      heat-api-cloudwatch: {}
+      heat-client: {}
+      heat-engine: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      mysql: {}
+      neutron-client: {}
+      neutron-dhcp-agent: {}
+      neutron-metadata-agent: {}
+      neutron-ml2-plugin: {}
+      neutron-openvswitch-agent: {}
+      neutron-server: {}
+      neutron-vpn-agent: {}
+      nova-api: {}
+      nova-client: {}
+      nova-conductor: {}
+      nova-console-auth: {}
+      nova-metadata: {}
+      nova-novncproxy: {}
+      nova-scheduler: {}
+      ntp-server: {}
+      octavia-api: {}
+      octavia-health-manager: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      powerdns: {}
+      rabbitmq: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftobj
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    id: controller2
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      - OSD-CLIENT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          tagged-vlan: true
+          vlanid: 101
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+    member_id: 2
+    name: ardana-cp1-c1-m2
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:07:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:08:00.0'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:09:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: 0000:0a:00.0
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      barbican:
+      - barbican-api
+      - barbican-worker
+      ceilometer:
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-client
+      - ceilometer-polling
+      - ceilometer-api
+      ceph:
+      - ceph-monitor
+      cinder:
+      - cinder-backup
+      - cinder-client
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      designate:
+      - designate-pool-manager
+      - designate-mdns
+      - designate-zone-manager
+      - designate-central
+      - designate-api
+      foundation:
+      - powerdns
+      - barbican-client
+      - stunnel
+      - designate-client
+      - mysql
+      - swift-common
+      - vertica
+      - apache2
+      - storm
+      - memcached
+      - ip-cluster
+      - swift-rsync
+      - zookeeper
+      - ntp-server
+      - kafka
+      - rabbitmq
+      - openstack-client
+      - ardana-ux-services
+      freezer:
+      - freezer-agent
+      - freezer-api
+      glance:
+      - glance-api
+      - glance-client
+      - glance-registry
+      heat:
+      - heat-client
+      - heat-api-cfn
+      - heat-api
+      - heat-engine
+      - heat-api-cloudwatch
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      - keystone-client
+      logging:
+      - logging-producer
+      - logging-server
+      monasca:
+      - monasca-client
+      - monasca-notifier
+      - monasca-agent
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      neutron:
+      - neutron-ml2-plugin
+      - neutron-openvswitch-agent
+      - neutron-dhcp-agent
+      - neutron-metadata-agent
+      - neutron-server
+      - neutron-vpn-agent
+      - neutron-client
+      nova:
+      - nova-api
+      - nova-console-auth
+      - nova-conductor
+      - nova-scheduler
+      - nova-metadata
+      - nova-client
+      - nova-novncproxy
+      octavia:
+      - octavia-health-manager
+      - octavia-api
+      operations:
+      - ops-console-web
+      - ops-console-monitor
+      - lifecycle-manager
+      - lifecycle-manager-target
+      swift:
+      - swift-client
+      - swift-proxy
+      - swift-container
+      - swift-ring-builder
+      - swift-object
+      - swift-account
+      vsa-storage:
+      - cmc-service
+    state: allocated
+  state: allocated
+  type: cluster
+controller3:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 3
+  previous_config:
+    addr: 192.168.10.5
+    ansible_options: null
+    components:
+      apache2: {}
+      barbican-api: {}
+      barbican-client: {}
+      barbican-worker: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      ceph-monitor: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      designate-api: {}
+      designate-central: {}
+      designate-client: {}
+      designate-mdns: {}
+      designate-pool-manager: {}
+      designate-zone-manager: {}
+      freezer-agent: {}
+      freezer-api: {}
+      glance-api: {}
+      glance-client: {}
+      glance-registry: {}
+      heat-api: {}
+      heat-api-cfn: {}
+      heat-api-cloudwatch: {}
+      heat-client: {}
+      heat-engine: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      mysql: {}
+      neutron-client: {}
+      neutron-dhcp-agent: {}
+      neutron-metadata-agent: {}
+      neutron-ml2-plugin: {}
+      neutron-openvswitch-agent: {}
+      neutron-server: {}
+      neutron-vpn-agent: {}
+      nova-api: {}
+      nova-client: {}
+      nova-conductor: {}
+      nova-console-auth: {}
+      nova-metadata: {}
+      nova-novncproxy: {}
+      nova-scheduler: {}
+      ntp-server: {}
+      octavia-api: {}
+      octavia-health-manager: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      powerdns: {}
+      rabbitmq: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftobj
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ3
+    fcoe_interfaces: []
+    id: controller3
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      - OSD-CLIENT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          tagged-vlan: true
+          vlanid: 101
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+    member_id: 3
+    name: ardana-cp1-c1-m3
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:07:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:08:00.0'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:09:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: 0000:0a:00.0
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK3
+    - AZ3
+    - CLOUD
+    server_group: RACK3
+    services:
+      barbican:
+      - barbican-api
+      - barbican-worker
+      ceilometer:
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-client
+      - ceilometer-polling
+      - ceilometer-api
+      ceph:
+      - ceph-monitor
+      cinder:
+      - cinder-backup
+      - cinder-client
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      designate:
+      - designate-pool-manager
+      - designate-mdns
+      - designate-zone-manager
+      - designate-central
+      - designate-api
+      foundation:
+      - powerdns
+      - barbican-client
+      - stunnel
+      - designate-client
+      - mysql
+      - swift-common
+      - vertica
+      - apache2
+      - storm
+      - memcached
+      - ip-cluster
+      - swift-rsync
+      - zookeeper
+      - ntp-server
+      - kafka
+      - rabbitmq
+      - openstack-client
+      - ardana-ux-services
+      freezer:
+      - freezer-agent
+      - freezer-api
+      glance:
+      - glance-api
+      - glance-client
+      - glance-registry
+      heat:
+      - heat-client
+      - heat-api-cfn
+      - heat-api
+      - heat-engine
+      - heat-api-cloudwatch
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      - keystone-client
+      logging:
+      - logging-producer
+      - logging-server
+      monasca:
+      - monasca-client
+      - monasca-notifier
+      - monasca-agent
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      neutron:
+      - neutron-ml2-plugin
+      - neutron-openvswitch-agent
+      - neutron-dhcp-agent
+      - neutron-metadata-agent
+      - neutron-server
+      - neutron-vpn-agent
+      - neutron-client
+      nova:
+      - nova-api
+      - nova-console-auth
+      - nova-conductor
+      - nova-scheduler
+      - nova-metadata
+      - nova-client
+      - nova-novncproxy
+      octavia:
+      - octavia-health-manager
+      - octavia-api
+      operations:
+      - ops-console-web
+      - ops-console-monitor
+      - lifecycle-manager
+      - lifecycle-manager-target
+      swift:
+      - swift-client
+      - swift-proxy
+      - swift-container
+      - swift-ring-builder
+      - swift-object
+      - swift-account
+      vsa-storage:
+      - cmc-service
+    state: allocated
+  state: allocated
+  type: cluster
+osd1:
+  cp_name: control-plane-1
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.9
+    ansible_options: null
+    components:
+      ceph-osd: {}
+      ceph-osd-internal: {}
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdd
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sdc
+        name: ceph-osd-data-and-journal
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdg
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sde
+        name: ceph-osd-data-and-shared-journal-set-1
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdg
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sdf
+        name: ceph-osd-data-and-shared-journal-set-2
+      name: OSD-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    id: osd1
+    if-model: OSD-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - OSD-INTERNAL
+      - OSD-CLIENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+        OSD-INTERNAL-NET:
+          addresses:
+          - 192.168.11.1-192.168.11.254
+          cidr: 192.168.11.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.11.1
+          mtu: 1500
+          name: OSD-INTERNAL-NET
+          network-group: OSD-INTERNAL
+          tagged-vlan: true
+          vlanid: 104
+    member_id: 1
+    name: ardana-cp1-ceph0001
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: OSD-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      ceph:
+      - ceph-osd
+      foundation:
+      - ceph-osd-internal
+      - ntp-client
+      - stunnel
+      freezer:
+      - freezer-agent
+      logging:
+      - logging-producer
+      monasca:
+      - monasca-agent
+      operations:
+      - lifecycle-manager-target
+    state: allocated
+  resource_name: osd
+  state: allocated
+  type: resource
+osd2:
+  cp_name: control-plane-1
+  member_id: 2
+  previous_config:
+    addr: 192.168.10.10
+    ansible_options: null
+    components:
+      ceph-osd: {}
+      ceph-osd-internal: {}
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdd
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sdc
+        name: ceph-osd-data-and-journal
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdg
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sde
+        name: ceph-osd-data-and-shared-journal-set-1
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdg
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sdf
+        name: ceph-osd-data-and-shared-journal-set-2
+      name: OSD-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    id: osd2
+    if-model: OSD-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - OSD-INTERNAL
+      - OSD-CLIENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+        OSD-INTERNAL-NET:
+          addresses:
+          - 192.168.11.1-192.168.11.254
+          cidr: 192.168.11.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.11.1
+          mtu: 1500
+          name: OSD-INTERNAL-NET
+          network-group: OSD-INTERNAL
+          tagged-vlan: true
+          vlanid: 104
+    member_id: 2
+    name: ardana-cp1-ceph0002
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: OSD-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      ceph:
+      - ceph-osd
+      foundation:
+      - ceph-osd-internal
+      - ntp-client
+      - stunnel
+      freezer:
+      - freezer-agent
+      logging:
+      - logging-producer
+      monasca:
+      - monasca-agent
+      operations:
+      - lifecycle-manager-target
+    state: allocated
+  resource_name: osd
+  state: allocated
+  type: resource
+osd3:
+  cp_name: control-plane-1
+  member_id: 3
+  previous_config:
+    addr: 192.168.10.11
+    ansible_options: null
+    components:
+      ceph-osd: {}
+      ceph-osd-internal: {}
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdd
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sdc
+        name: ceph-osd-data-and-journal
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdg
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sde
+        name: ceph-osd-data-and-shared-journal-set-1
+      - consumer:
+          attrs:
+            journal_disk: /dev/sdg
+            usage: data
+          name: ceph
+        devices:
+        - name: /dev/sdf
+        name: ceph-osd-data-and-shared-journal-set-2
+      name: OSD-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ3
+    fcoe_interfaces: []
+    id: osd3
+    if-model: OSD-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - OSD-INTERNAL
+      - OSD-CLIENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+        OSD-INTERNAL-NET:
+          addresses:
+          - 192.168.11.1-192.168.11.254
+          cidr: 192.168.11.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.11.1
+          mtu: 1500
+          name: OSD-INTERNAL-NET
+          network-group: OSD-INTERNAL
+          tagged-vlan: true
+          vlanid: 104
+    member_id: 3
+    name: ardana-cp1-ceph0003
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: OSD-ROLE
+    server-group-list:
+    - RACK3
+    - AZ3
+    - CLOUD
+    server_group: RACK3
+    services:
+      ceph:
+      - ceph-osd
+      foundation:
+      - ceph-osd-internal
+      - ntp-client
+      - stunnel
+      freezer:
+      - freezer-agent
+      logging:
+      - logging-producer
+      monasca:
+      - monasca-agent
+      operations:
+      - lifecycle-manager-target
+    state: allocated
+  resource_name: osd
+  state: allocated
+  type: resource
+rgw1:
+  cluster_name: rgw
+  cp_name: control-plane-1
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.12
+    ansible_options: null
+    components:
+      apache2: {}
+      ceph-radosgw: {}
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      name: RGW-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    id: rgw1
+    if-model: RGW-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - OSD-CLIENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+    member_id: 1
+    name: ardana-cp1-rgw-m1
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: RGW-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      ceph:
+      - ceph-radosgw
+      foundation:
+      - stunnel
+      - apache2
+      - ntp-client
+      freezer:
+      - freezer-agent
+      logging:
+      - logging-producer
+      monasca:
+      - monasca-agent
+      operations:
+      - lifecycle-manager-target
+    state: allocated
+  state: allocated
+  type: cluster
+rgw2:
+  cluster_name: rgw
+  cp_name: control-plane-1
+  member_id: 2
+  previous_config:
+    addr: 192.168.10.13
+    ansible_options: null
+    components:
+      apache2: {}
+      ceph-radosgw: {}
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      name: RGW-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    id: rgw2
+    if-model: RGW-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      - OSD-CLIENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          tagged-vlan: false
+          vlanid: 100
+        OSD-CLIENT-NET:
+          addresses:
+          - 192.168.12.1-192.168.12.254
+          cidr: 192.168.12.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.12.1
+          mtu: 1500
+          name: OSD-CLIENT-NET
+          network-group: OSD-CLIENT
+          tagged-vlan: true
+          vlanid: 105
+    member_id: 2
+    name: ardana-cp1-rgw-m2
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    rack: null
+    region: region1
+    role: RGW-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      ceph:
+      - ceph-radosgw
+      foundation:
+      - stunnel
+      - apache2
+      - ntp-client
+      freezer:
+      - freezer-agent
+      logging:
+      - logging-producer
+      monasca:
+      - monasca-agent
+      operations:
+      - lifecycle-manager-target
+    state: allocated
+  state: allocated
+  type: cluster

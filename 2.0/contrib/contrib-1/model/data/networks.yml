@@ -1,0 +1,49 @@
+# Copyright 2015 Hewlett-Packard Development Company, L.P
+# Copyright 2017 SUSE LLC
+---
+  product:
+    version: 2
+
+  networks:
+    #
+    # This example uses the following networks
+    #
+    # Network       CIDR             VLAN
+    # -------       ----             ----
+    # External API  10.0.1.0/24      101 (tagged)
+    # External VM   see note 1       102 (tagged)
+    # Guest         10.1.1.0/24      103 (tagged)
+    # Mgmt          10.2.1.0/24      100 (untagged)
+    #
+    # Notes:
+    # 1. Defined as part of Neutron configuration
+    #
+    # Modify these values to match your environment
+    #
+    - name: NET_EXTERNAL_API
+      vlanid: 1010
+      tagged-vlan: true
+      cidr: 100.100.60.224/28
+      gateway-ip: 100.100.60.238
+      network-group: EXTERNAL_API
+
+    - name: NET_MGMT
+      vlanid: 1011
+      tagged-vlan: false
+      cidr: 100.100.60.64/26
+      gateway-ip: 100.100.60.126
+      network-group: MGMT
+
+    - name: NET_ISCSI
+      vlanid: 1012
+      tagged-vlan: true
+      cidr: 101.0.0.32/27
+      gateway-ip: 101.0.0.33
+      network-group: ISCSI
+
+    - name: NET_ARDANA
+      vlanid: 1013
+      tagged-vlan: false
+      cidr: 10.10.206.64/26
+      gateway-ip: 10.10.206.65
+      network-group: ARDANA

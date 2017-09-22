@@ -1,0 +1,240 @@
+compute1:
+    failure-zone: null
+    hostname: ardana-control-plane-comp0001-mgmt
+    net_data:
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.68
+                tagged-vlan: false
+                vlan-id: 1013
+        ETH1:
+            NET_ISCSI:
+                addr: 101.0.0.44
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.71
+                tagged-vlan: false
+                vlan-id: 1011
+    state: allocated
+compute2:
+    failure-zone: null
+    hostname: ardana-control-plane-comp0002-mgmt
+    net_data:
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.69
+                tagged-vlan: false
+                vlan-id: 1013
+        ETH1:
+            NET_ISCSI:
+                addr: 101.0.0.45
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.72
+                tagged-vlan: false
+                vlan-id: 1011
+    state: allocated
+compute3:
+    failure-zone: null
+    hostname: ardana-control-plane-comp0003-mgmt
+    net_data:
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.70
+                tagged-vlan: false
+                vlan-id: 1013
+        ETH1:
+            NET_ISCSI:
+                addr: 101.0.0.46
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.73
+                tagged-vlan: false
+                vlan-id: 1011
+    state: allocated
+compute4:
+    failure-zone: null
+    hostname: ardana-control-plane-comp0004-mgmt
+    net_data:
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.71
+                tagged-vlan: false
+                vlan-id: 1013
+        ETH1:
+            NET_ISCSI:
+                addr: 101.0.0.47
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.74
+                tagged-vlan: false
+                vlan-id: 1011
+    state: allocated
+compute5:
+    failure-zone: null
+    hostname: ardana-control-plane-comp0005-mgmt
+    net_data:
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.76
+                tagged-vlan: false
+                vlan-id: 1013
+        ETH1:
+            NET_ISCSI:
+                addr: 101.0.0.48
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.75
+                tagged-vlan: false
+                vlan-id: 1011
+    state: allocated
+compute6:
+    failure-zone: null
+    hostname: ardana-control-plane-comp0006-mgmt
+    net_data:
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.77
+                tagged-vlan: false
+                vlan-id: 1013
+        ETH1:
+            NET_ISCSI:
+                addr: 101.0.0.49
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.76
+                tagged-vlan: false
+                vlan-id: 1011
+    state: allocated
+controller1:
+    failure-zone: null
+    hostname: ardana-control-plane-cluster1-m1-mgmt
+    net_data:
+        BOND0:
+            NET_EXTERNAL_API:
+                addr: 100.100.60.225
+                tagged-vlan: true
+                vlan-id: 1010
+            NET_ISCSI:
+                addr: 101.0.0.34
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.65
+                tagged-vlan: false
+                vlan-id: 1011
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.75
+                tagged-vlan: false
+                vlan-id: 1013
+    state: allocated
+controller2:
+    failure-zone: null
+    hostname: ardana-control-plane-cluster1-m2-mgmt
+    net_data:
+        BOND0:
+            NET_EXTERNAL_API:
+                addr: 100.100.60.226
+                tagged-vlan: true
+                vlan-id: 1010
+            NET_ISCSI:
+                addr: 101.0.0.35
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.66
+                tagged-vlan: false
+                vlan-id: 1011
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.66
+                tagged-vlan: false
+                vlan-id: 1013
+    state: allocated
+controller3:
+    failure-zone: null
+    hostname: ardana-control-plane-cluster1-m3-mgmt
+    net_data:
+        BOND0:
+            NET_EXTERNAL_API:
+                addr: 100.100.60.227
+                tagged-vlan: true
+                vlan-id: 1010
+            NET_ISCSI:
+                addr: 101.0.0.36
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.67
+                tagged-vlan: false
+                vlan-id: 1011
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.67
+                tagged-vlan: false
+                vlan-id: 1013
+    state: allocated
+vsa1:
+    failure-zone: null
+    hostname: ardana-control-plane-vsa0001-mgmt
+    net_data:
+        BOND0:
+            NET_ISCSI:
+                addr: 101.0.0.37
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.68
+                tagged-vlan: false
+                vlan-id: 1011
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.72
+                tagged-vlan: false
+                vlan-id: 1013
+    state: allocated
+vsa2:
+    failure-zone: null
+    hostname: ardana-control-plane-vsa0002-mgmt
+    net_data:
+        BOND0:
+            NET_ISCSI:
+                addr: 101.0.0.40
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.69
+                tagged-vlan: false
+                vlan-id: 1011
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.73
+                tagged-vlan: false
+                vlan-id: 1013
+    state: allocated
+vsa3:
+    failure-zone: null
+    hostname: ardana-control-plane-vsa0003-mgmt
+    net_data:
+        BOND0:
+            NET_ISCSI:
+                addr: 101.0.0.42
+                tagged-vlan: true
+                vlan-id: 1012
+            NET_MGMT:
+                addr: 100.100.60.70
+                tagged-vlan: false
+                vlan-id: 1011
+        ETH0:
+            NET_ARDANA:
+                addr: 10.10.206.74
+                tagged-vlan: false
+                vlan-id: 1013
+    state: allocated

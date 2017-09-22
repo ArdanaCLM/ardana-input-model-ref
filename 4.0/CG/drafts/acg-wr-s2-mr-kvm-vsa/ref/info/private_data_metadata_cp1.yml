@@ -1,0 +1,496 @@
+ceilometer_metering_secret:
+  metadata:
+  - clusters:
+    - mml
+    component: ceilometer-common
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+dbadmin_user_password:
+  metadata:
+  - clusters:
+    - mml
+    component: vertica
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+erlang_cookie:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+haproxy_stats_password:
+  metadata:
+  - clusters:
+    - controller
+    component: ip-cluster
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+ardana_internal_ca:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: ardana-ca
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keepalive_vrrp_password:
+  metadata:
+  - clusters:
+    - controller
+    component: ip-cluster
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keepalived_vrrp_index:
+  metadata:
+  - clusters:
+    - controller
+    component: ip-cluster
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_admin_pwd:
+  metadata:
+  - clusters:
+    - controller
+    component: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  - clusters: []
+    component: windriver-consumer
+    consumes: keystone-api
+    consuming-cp: wr2
+    cp: cp1
+  - clusters: []
+    component: windriver-consumer
+    consumes: keystone-api
+    consuming-cp: wr1
+    cp: cp1
+  version: '2.0'
+keystone_admin_token:
+  metadata:
+  - clusters:
+    - controller
+    component: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_backup_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - mml
+    - vsa
+    component: freezer-agent
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_ceilometer_password:
+  metadata:
+  - clusters:
+    - mml
+    component: ceilometer-common
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_cinder_password:
+  metadata:
+  - clusters:
+    - controller
+    component: cinder-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_cinderinternal_password:
+  metadata:
+  - clusters:
+    - controller
+    component: cinder-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_demo_pwd:
+  metadata:
+  - clusters:
+    - controller
+    component: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_freezer_password:
+  metadata:
+  - clusters:
+    - mml
+    component: freezer-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_glance_check_password:
+  metadata:
+  - clusters:
+    - controller
+    component: glance-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_glance_password:
+  metadata:
+  - clusters:
+    - controller
+    component: glance-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_glance_swift_password:
+  metadata:
+  - clusters:
+    - controller
+    component: glance-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_monasca_agent_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - mml
+    - vsa
+    component: monasca-agent
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_monasca_password:
+  metadata:
+  - clusters:
+    - mml
+    component: monasca-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_swift_dispersion_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: swift-proxy
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_swift_monitor_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: swift-proxy
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+keystone_swift_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: swift-proxy
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+logging_api_password:
+  metadata:
+  - clusters:
+    - mml
+    component: logging-api
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+logging_beaver_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - mml
+    - vsa
+    component: logging-producer
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+logging_kibana_password:
+  metadata:
+  - clusters:
+    - mml
+    component: logging-server
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+logging_monitor_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - mml
+    - vsa
+    component: logging-producer
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  - clusters:
+    - mml
+    component: logging-server
+    consumes: keystone-api
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+monitor_user_password:
+  metadata:
+  - clusters:
+    - mml
+    component: vertica
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_admin_password:
+  metadata:
+  - clusters:
+    - mml
+    component: ceilometer
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  - clusters:
+    - controller
+    component: keystone
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  - clusters:
+    - controller
+    component: cinder
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  - clusters:
+    - controller
+    component: glance
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_cluster_name:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_clustercheck_pwd:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_monasca_api_password:
+  metadata:
+  - clusters:
+    - mml
+    - controller
+    - vsa
+    - ardana-hypervisor
+    - rmq-mysql
+    component: monasca
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_monasca_notifier_password:
+  metadata:
+  - clusters:
+    - mml
+    - controller
+    - vsa
+    - ardana-hypervisor
+    - rmq-mysql
+    component: monasca
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_monasca_thresh_password:
+  metadata:
+  - clusters:
+    - mml
+    - controller
+    - vsa
+    - ardana-hypervisor
+    - rmq-mysql
+    component: monasca
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_root_pwd:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+mysql_sst_password:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+ops_mon_mdb_password:
+  metadata:
+  - clusters:
+    - controller
+    component: operations
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - mml
+    - vsa
+    component: freezer-agent
+    consumes: mysql
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+rmq_ceilometer_password:
+  metadata:
+  - clusters:
+    - mml
+    component: ceilometer
+    consumes: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+rmq_cinder_password:
+  metadata:
+  - clusters:
+    - controller
+    component: cinder
+    consumes: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+rmq_keystone_password:
+  metadata:
+  - clusters:
+    - controller
+    component: keystone
+    consumes: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+rmq_monasca_monitor_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - mml
+    - vsa
+    component: monasca-agent
+    consumes: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+rmq_service_password:
+  metadata:
+  - clusters:
+    - controller
+    component: glance
+    consumes: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  - clusters:
+    - rmq-mysql
+    component: rabbitmq
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+swift_hash_path_prefix:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: swift-common
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+swift_hash_path_suffix:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: swift-common
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+swift_intracluster_sync_key:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    component: swift-container
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+vertica_monasca_api_password:
+  metadata:
+  - clusters:
+    - mml
+    component: monasca-api
+    consumes: vertica
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+vertica_monasca_persister_password:
+  metadata:
+  - clusters:
+    - mml
+    component: monasca-persister
+    consumes: vertica
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'
+vertica_ssh_key:
+  metadata:
+  - clusters:
+    - mml
+    component: vertica
+    consuming-cp: cp1
+    cp: cp1
+  version: '2.0'

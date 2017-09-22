@@ -1,0 +1,1256 @@
+10.40.10.20:
+  addr: 10.40.10.20
+  allocated: true
+  free: false
+  host: ardana-cp1-alm-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+10.40.10.21:
+  addr: 10.40.10.21
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+10.40.10.22:
+  addr: 10.40.10.22
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+10.40.10.23:
+  addr: 10.40.10.23
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+10.40.10.24:
+  addr: 10.40.10.24
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m1
+  persisted: false
+  server-id: mon1
+  used-by: server
+10.40.10.25:
+  addr: 10.40.10.25
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m2
+  persisted: false
+  server-id: mon2
+  used-by: server
+10.40.10.26:
+  addr: 10.40.10.26
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m3
+  persisted: false
+  server-id: mon3
+  used-by: server
+10.40.10.27:
+  addr: 10.40.10.27
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m1
+  persisted: false
+  server-id: swpaco1
+  used-by: server
+10.40.10.28:
+  addr: 10.40.10.28
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m2
+  persisted: false
+  server-id: swpaco2
+  used-by: server
+10.40.10.29:
+  addr: 10.40.10.29
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m1
+  persisted: false
+  server-id: cephmon2
+  used-by: server
+10.40.10.30:
+  addr: 10.40.10.30
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m2
+  persisted: false
+  server-id: cephmon3
+  used-by: server
+10.40.10.31:
+  addr: 10.40.10.31
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m3
+  persisted: false
+  server-id: cephmon1
+  used-by: server
+10.40.10.32:
+  addr: 10.40.10.32
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0001
+  persisted: false
+  server-id: paascompute1
+  used-by: server
+10.40.10.33:
+  addr: 10.40.10.33
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0002
+  persisted: false
+  server-id: paascompute2
+  used-by: server
+10.40.10.34:
+  addr: 10.40.10.34
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0003
+  persisted: false
+  server-id: paascompute3
+  used-by: server
+10.40.10.35:
+  addr: 10.40.10.35
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0004
+  persisted: false
+  server-id: paascompute4
+  used-by: server
+10.40.10.36:
+  addr: 10.40.10.36
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0005
+  persisted: false
+  server-id: paascompute5
+  used-by: server
+10.40.10.37:
+  addr: 10.40.10.37
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0006
+  persisted: false
+  server-id: paascompute6
+  used-by: server
+10.40.10.38:
+  addr: 10.40.10.38
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0007
+  persisted: false
+  server-id: paascompute7
+  used-by: server
+10.40.10.39:
+  addr: 10.40.10.39
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0008
+  persisted: false
+  server-id: paascompute8
+  used-by: server
+10.40.10.40:
+  addr: 10.40.10.40
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0009
+  persisted: false
+  server-id: paascompute9
+  used-by: server
+10.40.10.41:
+  addr: 10.40.10.41
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0010
+  persisted: false
+  server-id: paascompute10
+  used-by: server
+10.40.10.42:
+  addr: 10.40.10.42
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0011
+  persisted: false
+  server-id: paascompute11
+  used-by: server
+10.40.10.43:
+  addr: 10.40.10.43
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0012
+  persisted: false
+  server-id: paascompute12
+  used-by: server
+10.40.10.44:
+  addr: 10.40.10.44
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0013
+  persisted: false
+  server-id: paascompute13
+  used-by: server
+10.40.10.45:
+  addr: 10.40.10.45
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0014
+  persisted: false
+  server-id: paascompute14
+  used-by: server
+10.40.10.46:
+  addr: 10.40.10.46
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0015
+  persisted: false
+  server-id: paascompute15
+  used-by: server
+10.40.10.47:
+  addr: 10.40.10.47
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+10.40.10.48:
+  addr: 10.40.10.48
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+10.40.10.49:
+  addr: 10.40.10.49
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+10.40.10.50:
+  addr: 10.40.10.50
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+10.40.10.51:
+  addr: 10.40.10.51
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+10.40.10.52:
+  addr: 10.40.10.52
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0006
+  persisted: false
+  server-id: compute6
+  used-by: server
+10.40.10.53:
+  addr: 10.40.10.53
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0007
+  persisted: false
+  server-id: compute7
+  used-by: server
+10.40.10.54:
+  addr: 10.40.10.54
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0008
+  persisted: false
+  server-id: compute8
+  used-by: server
+10.40.10.55:
+  addr: 10.40.10.55
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0009
+  persisted: false
+  server-id: compute9
+  used-by: server
+10.40.10.56:
+  addr: 10.40.10.56
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0010
+  persisted: false
+  server-id: computedev1
+  used-by: server
+10.40.10.57:
+  addr: 10.40.10.57
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0011
+  persisted: false
+  server-id: computedev2
+  used-by: server
+10.40.10.58:
+  addr: 10.40.10.58
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0012
+  persisted: false
+  server-id: computedev3
+  used-by: server
+10.40.10.59:
+  addr: 10.40.10.59
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0013
+  persisted: false
+  server-id: computedev4
+  used-by: server
+10.40.10.60:
+  addr: 10.40.10.60
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0014
+  persisted: false
+  server-id: computedev5
+  used-by: server
+10.40.10.61:
+  addr: 10.40.10.61
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0015
+  persisted: false
+  server-id: computedev6
+  used-by: server
+10.40.10.62:
+  addr: 10.40.10.62
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0016
+  persisted: false
+  server-id: computedev7
+  used-by: server
+10.40.10.63:
+  addr: 10.40.10.63
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0017
+  persisted: false
+  server-id: computedev8
+  used-by: server
+10.40.10.64:
+  addr: 10.40.10.64
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0018
+  persisted: false
+  server-id: computedev9
+  used-by: server
+10.40.10.65:
+  addr: 10.40.10.65
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0001
+  persisted: false
+  server-id: osd1
+  used-by: server
+10.40.10.66:
+  addr: 10.40.10.66
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0002
+  persisted: false
+  server-id: osd2
+  used-by: server
+10.40.10.67:
+  addr: 10.40.10.67
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0003
+  persisted: false
+  server-id: osd3
+  used-by: server
+10.40.10.68:
+  addr: 10.40.10.68
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0004
+  persisted: false
+  server-id: osd4
+  used-by: server
+10.40.10.69:
+  addr: 10.40.10.69
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0005
+  persisted: false
+  server-id: osd5
+  used-by: server
+10.40.10.70:
+  addr: 10.40.10.70
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb
+192.168.54.20:
+  addr: 192.168.54.20
+  allocated: true
+  free: false
+  host: ardana-cp1-alm-m1
+  persisted: false
+  server-id: lifecycle-manager
+  used-by: server
+192.168.54.21:
+  addr: 192.168.54.21
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+192.168.54.22:
+  addr: 192.168.54.22
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+192.168.54.23:
+  addr: 192.168.54.23
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+192.168.54.24:
+  addr: 192.168.54.24
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m1
+  persisted: false
+  server-id: swpaco1
+  used-by: server
+192.168.54.25:
+  addr: 192.168.54.25
+  allocated: true
+  free: false
+  host: ardana-cp1-swpac-m2
+  persisted: false
+  server-id: swpaco2
+  used-by: server
+192.168.54.26:
+  addr: 192.168.54.26
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m1
+  persisted: false
+  server-id: mon1
+  used-by: server
+192.168.54.27:
+  addr: 192.168.54.27
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m2
+  persisted: false
+  server-id: mon2
+  used-by: server
+192.168.54.28:
+  addr: 192.168.54.28
+  allocated: true
+  free: false
+  host: ardana-cp1-mtrmon-m3
+  persisted: false
+  server-id: mon3
+  used-by: server
+192.168.54.31:
+  addr: 192.168.54.31
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+192.168.54.32:
+  addr: 192.168.54.32
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+192.168.54.33:
+  addr: 192.168.54.33
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+192.168.54.34:
+  addr: 192.168.54.34
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+192.168.54.35:
+  addr: 192.168.54.35
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+192.168.54.36:
+  addr: 192.168.54.36
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0006
+  persisted: false
+  server-id: compute6
+  used-by: server
+192.168.54.37:
+  addr: 192.168.54.37
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0007
+  persisted: false
+  server-id: compute7
+  used-by: server
+192.168.54.38:
+  addr: 192.168.54.38
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0008
+  persisted: false
+  server-id: compute8
+  used-by: server
+192.168.54.39:
+  addr: 192.168.54.39
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0009
+  persisted: false
+  server-id: compute9
+  used-by: server
+192.168.54.40:
+  addr: 192.168.54.40
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0001
+  persisted: false
+  server-id: paascompute1
+  used-by: server
+192.168.54.41:
+  addr: 192.168.54.41
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0002
+  persisted: false
+  server-id: paascompute2
+  used-by: server
+192.168.54.42:
+  addr: 192.168.54.42
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0003
+  persisted: false
+  server-id: paascompute3
+  used-by: server
+192.168.54.43:
+  addr: 192.168.54.43
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0004
+  persisted: false
+  server-id: paascompute4
+  used-by: server
+192.168.54.44:
+  addr: 192.168.54.44
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0005
+  persisted: false
+  server-id: paascompute5
+  used-by: server
+192.168.54.45:
+  addr: 192.168.54.45
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0006
+  persisted: false
+  server-id: paascompute6
+  used-by: server
+192.168.54.46:
+  addr: 192.168.54.46
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0007
+  persisted: false
+  server-id: paascompute7
+  used-by: server
+192.168.54.47:
+  addr: 192.168.54.47
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0008
+  persisted: false
+  server-id: paascompute8
+  used-by: server
+192.168.54.48:
+  addr: 192.168.54.48
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0009
+  persisted: false
+  server-id: paascompute9
+  used-by: server
+192.168.54.49:
+  addr: 192.168.54.49
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0010
+  persisted: false
+  server-id: paascompute10
+  used-by: server
+192.168.54.50:
+  addr: 192.168.54.50
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0011
+  persisted: false
+  server-id: paascompute11
+  used-by: server
+192.168.54.51:
+  addr: 192.168.54.51
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0012
+  persisted: false
+  server-id: paascompute12
+  used-by: server
+192.168.54.52:
+  addr: 192.168.54.52
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0013
+  persisted: false
+  server-id: paascompute13
+  used-by: server
+192.168.54.53:
+  addr: 192.168.54.53
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0014
+  persisted: false
+  server-id: paascompute14
+  used-by: server
+192.168.54.54:
+  addr: 192.168.54.54
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0015
+  persisted: false
+  server-id: paascompute15
+  used-by: server
+192.168.54.55:
+  addr: 192.168.54.55
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0010
+  persisted: false
+  server-id: computedev1
+  used-by: server
+192.168.54.56:
+  addr: 192.168.54.56
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0011
+  persisted: false
+  server-id: computedev2
+  used-by: server
+192.168.54.57:
+  addr: 192.168.54.57
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0012
+  persisted: false
+  server-id: computedev3
+  used-by: server
+192.168.54.58:
+  addr: 192.168.54.58
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0013
+  persisted: false
+  server-id: computedev4
+  used-by: server
+192.168.54.59:
+  addr: 192.168.54.59
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0014
+  persisted: false
+  server-id: computedev5
+  used-by: server
+192.168.54.60:
+  addr: 192.168.54.60
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0015
+  persisted: false
+  server-id: computedev6
+  used-by: server
+192.168.54.61:
+  addr: 192.168.54.61
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0016
+  persisted: false
+  server-id: computedev7
+  used-by: server
+192.168.54.62:
+  addr: 192.168.54.62
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0017
+  persisted: false
+  server-id: computedev8
+  used-by: server
+192.168.54.63:
+  addr: 192.168.54.63
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0018
+  persisted: false
+  server-id: computedev9
+  used-by: server
+192.168.54.64:
+  addr: 192.168.54.64
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m3
+  persisted: false
+  server-id: cephmon1
+  used-by: server
+192.168.54.65:
+  addr: 192.168.54.65
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m1
+  persisted: false
+  server-id: cephmon2
+  used-by: server
+192.168.54.66:
+  addr: 192.168.54.66
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m2
+  persisted: false
+  server-id: cephmon3
+  used-by: server
+192.168.54.67:
+  addr: 192.168.54.67
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0001
+  persisted: false
+  server-id: osd1
+  used-by: server
+192.168.54.68:
+  addr: 192.168.54.68
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0002
+  persisted: false
+  server-id: osd2
+  used-by: server
+192.168.54.69:
+  addr: 192.168.54.69
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0003
+  persisted: false
+  server-id: osd3
+  used-by: server
+192.168.54.70:
+  addr: 192.168.54.70
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0004
+  persisted: false
+  server-id: osd4
+  used-by: server
+192.168.54.71:
+  addr: 192.168.54.71
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0005
+  persisted: false
+  server-id: osd5
+  used-by: server
+192.168.55.20:
+  addr: 192.168.55.20
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+192.168.55.21:
+  addr: 192.168.55.21
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+192.168.55.22:
+  addr: 192.168.55.22
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+192.168.55.23:
+  addr: 192.168.55.23
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m1
+  persisted: false
+  server-id: cephmon2
+  used-by: server
+192.168.55.24:
+  addr: 192.168.55.24
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m2
+  persisted: false
+  server-id: cephmon3
+  used-by: server
+192.168.55.25:
+  addr: 192.168.55.25
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m3
+  persisted: false
+  server-id: cephmon1
+  used-by: server
+192.168.55.26:
+  addr: 192.168.55.26
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0001
+  persisted: false
+  server-id: paascompute1
+  used-by: server
+192.168.55.27:
+  addr: 192.168.55.27
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0002
+  persisted: false
+  server-id: paascompute2
+  used-by: server
+192.168.55.28:
+  addr: 192.168.55.28
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0003
+  persisted: false
+  server-id: paascompute3
+  used-by: server
+192.168.55.29:
+  addr: 192.168.55.29
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0004
+  persisted: false
+  server-id: paascompute4
+  used-by: server
+192.168.55.30:
+  addr: 192.168.55.30
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0005
+  persisted: false
+  server-id: paascompute5
+  used-by: server
+192.168.55.31:
+  addr: 192.168.55.31
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0006
+  persisted: false
+  server-id: paascompute6
+  used-by: server
+192.168.55.32:
+  addr: 192.168.55.32
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0007
+  persisted: false
+  server-id: paascompute7
+  used-by: server
+192.168.55.33:
+  addr: 192.168.55.33
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0008
+  persisted: false
+  server-id: paascompute8
+  used-by: server
+192.168.55.34:
+  addr: 192.168.55.34
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0009
+  persisted: false
+  server-id: paascompute9
+  used-by: server
+192.168.55.35:
+  addr: 192.168.55.35
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0010
+  persisted: false
+  server-id: paascompute10
+  used-by: server
+192.168.55.36:
+  addr: 192.168.55.36
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0011
+  persisted: false
+  server-id: paascompute11
+  used-by: server
+192.168.55.37:
+  addr: 192.168.55.37
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0012
+  persisted: false
+  server-id: paascompute12
+  used-by: server
+192.168.55.38:
+  addr: 192.168.55.38
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0013
+  persisted: false
+  server-id: paascompute13
+  used-by: server
+192.168.55.39:
+  addr: 192.168.55.39
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0014
+  persisted: false
+  server-id: paascompute14
+  used-by: server
+192.168.55.40:
+  addr: 192.168.55.40
+  allocated: true
+  free: false
+  host: ardana-cp1-paas-compute-0015
+  persisted: false
+  server-id: paascompute15
+  used-by: server
+192.168.55.41:
+  addr: 192.168.55.41
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0001
+  persisted: false
+  server-id: compute1
+  used-by: server
+192.168.55.42:
+  addr: 192.168.55.42
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0002
+  persisted: false
+  server-id: compute2
+  used-by: server
+192.168.55.43:
+  addr: 192.168.55.43
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0003
+  persisted: false
+  server-id: compute3
+  used-by: server
+192.168.55.44:
+  addr: 192.168.55.44
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0004
+  persisted: false
+  server-id: compute4
+  used-by: server
+192.168.55.45:
+  addr: 192.168.55.45
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0005
+  persisted: false
+  server-id: compute5
+  used-by: server
+192.168.55.46:
+  addr: 192.168.55.46
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0006
+  persisted: false
+  server-id: compute6
+  used-by: server
+192.168.55.47:
+  addr: 192.168.55.47
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0007
+  persisted: false
+  server-id: compute7
+  used-by: server
+192.168.55.48:
+  addr: 192.168.55.48
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0008
+  persisted: false
+  server-id: compute8
+  used-by: server
+192.168.55.49:
+  addr: 192.168.55.49
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0009
+  persisted: false
+  server-id: compute9
+  used-by: server
+192.168.55.50:
+  addr: 192.168.55.50
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0010
+  persisted: false
+  server-id: computedev1
+  used-by: server
+192.168.55.51:
+  addr: 192.168.55.51
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0011
+  persisted: false
+  server-id: computedev2
+  used-by: server
+192.168.55.52:
+  addr: 192.168.55.52
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0012
+  persisted: false
+  server-id: computedev3
+  used-by: server
+192.168.55.53:
+  addr: 192.168.55.53
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0013
+  persisted: false
+  server-id: computedev4
+  used-by: server
+192.168.55.54:
+  addr: 192.168.55.54
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0014
+  persisted: false
+  server-id: computedev5
+  used-by: server
+192.168.55.55:
+  addr: 192.168.55.55
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0015
+  persisted: false
+  server-id: computedev6
+  used-by: server
+192.168.55.56:
+  addr: 192.168.55.56
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0016
+  persisted: false
+  server-id: computedev7
+  used-by: server
+192.168.55.57:
+  addr: 192.168.55.57
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0017
+  persisted: false
+  server-id: computedev8
+  used-by: server
+192.168.55.58:
+  addr: 192.168.55.58
+  allocated: true
+  free: false
+  host: ardana-cp1-compute-0018
+  persisted: false
+  server-id: computedev9
+  used-by: server
+192.168.55.59:
+  addr: 192.168.55.59
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0001
+  persisted: false
+  server-id: osd1
+  used-by: server
+192.168.55.60:
+  addr: 192.168.55.60
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0002
+  persisted: false
+  server-id: osd2
+  used-by: server
+192.168.55.61:
+  addr: 192.168.55.61
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0003
+  persisted: false
+  server-id: osd3
+  used-by: server
+192.168.55.62:
+  addr: 192.168.55.62
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0004
+  persisted: false
+  server-id: osd4
+  used-by: server
+192.168.55.63:
+  addr: 192.168.55.63
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0005
+  persisted: false
+  server-id: osd5
+  used-by: server
+192.168.56.20:
+  addr: 192.168.56.20
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m1
+  persisted: false
+  server-id: cephmon2
+  used-by: server
+192.168.56.21:
+  addr: 192.168.56.21
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m2
+  persisted: false
+  server-id: cephmon3
+  used-by: server
+192.168.56.22:
+  addr: 192.168.56.22
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph-mon-m3
+  persisted: false
+  server-id: cephmon1
+  used-by: server
+192.168.56.23:
+  addr: 192.168.56.23
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0001
+  persisted: false
+  server-id: osd1
+  used-by: server
+192.168.56.24:
+  addr: 192.168.56.24
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0002
+  persisted: false
+  server-id: osd2
+  used-by: server
+192.168.56.25:
+  addr: 192.168.56.25
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0003
+  persisted: false
+  server-id: osd3
+  used-by: server
+192.168.56.26:
+  addr: 192.168.56.26
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0004
+  persisted: false
+  server-id: osd4
+  used-by: server
+192.168.56.27:
+  addr: 192.168.56.27
+  allocated: true
+  free: false
+  host: ardana-cp1-ceph0005
+  persisted: false
+  server-id: osd5
+  used-by: server
+192.168.57.20:
+  addr: 192.168.57.20
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m1
+  persisted: false
+  server-id: controller1
+  used-by: server
+192.168.57.21:
+  addr: 192.168.57.21
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m2
+  persisted: false
+  server-id: controller2
+  used-by: server
+192.168.57.22:
+  addr: 192.168.57.22
+  allocated: true
+  free: false
+  host: ardana-cp1-controller-m3
+  persisted: false
+  server-id: controller3
+  used-by: server
+192.168.57.23:
+  addr: 192.168.57.23
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb

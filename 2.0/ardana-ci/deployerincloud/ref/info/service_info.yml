@@ -1,0 +1,188 @@
+ccp:
+    ceilometer:
+        ceilometer-agent-central:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ceilometer-agent-notification:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ceilometer-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ceilometer-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ceilometer-collector:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ceilometer-common:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ceilometer-expirer:
+        - deployerincloud-ccp-c0-m1-mgmt
+    cinder:
+        cinder-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        cinder-backup:
+        - deployerincloud-ccp-c0-m1-mgmt
+        cinder-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        cinder-scheduler:
+        - deployerincloud-ccp-c0-m1-mgmt
+        cinder-volume:
+        - deployerincloud-ccp-c0-m1-mgmt
+    foundation:
+        apache2:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ip-cluster:
+        - deployerincloud-ccp-c0-m1-mgmt
+        kafka:
+        - deployerincloud-ccp-c0-m1-mgmt
+        memcached:
+        - deployerincloud-ccp-c0-m1-mgmt
+        mysql:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ntp-client:
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        ntp-server:
+        - deployerincloud-ccp-c0-m1-mgmt
+        openstack-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        rabbitmq:
+        - deployerincloud-ccp-c0-m1-mgmt
+        sherpa-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        storm:
+        - deployerincloud-ccp-c0-m1-mgmt
+        stunnel:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        swift-common:
+        - deployerincloud-ccp-c0-m1-mgmt
+        swift-rsync:
+        - deployerincloud-ccp-c0-m1-mgmt
+        vertica:
+        - deployerincloud-ccp-c0-m1-mgmt
+        zookeeper:
+        - deployerincloud-ccp-c0-m1-mgmt
+    freezer:
+        freezer-agent:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        freezer-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+    glance:
+        glance-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        glance-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        glance-registry:
+        - deployerincloud-ccp-c0-m1-mgmt
+    heat:
+        heat-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        heat-api-cfn:
+        - deployerincloud-ccp-c0-m1-mgmt
+        heat-api-cloudwatch:
+        - deployerincloud-ccp-c0-m1-mgmt
+        heat-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        heat-engine:
+        - deployerincloud-ccp-c0-m1-mgmt
+    horizon:
+        horizon:
+        - deployerincloud-ccp-c0-m1-mgmt
+    keystone:
+        keystone-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        keystone-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+    logging:
+        logging-producer:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        logging-server:
+        - deployerincloud-ccp-c0-m1-mgmt
+    monasca:
+        monasca-agent:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        monasca-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        monasca-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        monasca-notifier:
+        - deployerincloud-ccp-c0-m1-mgmt
+        monasca-persister:
+        - deployerincloud-ccp-c0-m1-mgmt
+        monasca-threshold:
+        - deployerincloud-ccp-c0-m1-mgmt
+    neutron:
+        neutron-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        neutron-dhcp-agent:
+        - deployerincloud-ccp-c0-m1-mgmt
+        neutron-l3-agent:
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        neutron-lbaasv2-agent:
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        neutron-metadata-agent:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        neutron-ml2-plugin:
+        - deployerincloud-ccp-c0-m1-mgmt
+        neutron-openvswitch-agent:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        neutron-server:
+        - deployerincloud-ccp-c0-m1-mgmt
+        neutron-vpn-agent:
+        - deployerincloud-ccp-c0-m1-mgmt
+    nova:
+        nova-api:
+        - deployerincloud-ccp-c0-m1-mgmt
+        nova-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        nova-compute:
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        nova-conductor:
+        - deployerincloud-ccp-c0-m1-mgmt
+        nova-console-auth:
+        - deployerincloud-ccp-c0-m1-mgmt
+        nova-kvm:
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        nova-metadata:
+        - deployerincloud-ccp-c0-m1-mgmt
+        nova-novncproxy:
+        - deployerincloud-ccp-c0-m1-mgmt
+        nova-scheduler:
+        - deployerincloud-ccp-c0-m1-mgmt
+    operations:
+        lifecycle-manager:
+        - deployerincloud-ccp-c0-m1-mgmt
+        lifecycle-manager-target:
+        - deployerincloud-ccp-c0-m1-mgmt
+        - deployerincloud-ccp-compute0001-mgmt
+        - deployerincloud-ccp-compute0002-mgmt
+        ops-console-monitor:
+        - deployerincloud-ccp-c0-m1-mgmt
+        ops-console-web:
+        - deployerincloud-ccp-c0-m1-mgmt
+    swift:
+        swift-account:
+        - deployerincloud-ccp-c0-m1-mgmt
+        swift-client:
+        - deployerincloud-ccp-c0-m1-mgmt
+        swift-container:
+        - deployerincloud-ccp-c0-m1-mgmt
+        swift-object:
+        - deployerincloud-ccp-c0-m1-mgmt
+        swift-proxy:
+        - deployerincloud-ccp-c0-m1-mgmt
+        swift-ring-builder:
+        - deployerincloud-ccp-c0-m1-mgmt

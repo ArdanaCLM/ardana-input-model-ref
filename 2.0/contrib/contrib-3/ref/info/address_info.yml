@@ -1,0 +1,111 @@
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        15.124.132.2:
+        - eu-em2-cp1-c1-m1-extapi
+        15.124.132.3:
+        - eu-em2-cp1-c1-m2-extapi
+        15.124.132.4:
+        - eu-em2-cp1-c1-m3-extapi
+        15.124.132.5:
+        - eu-em2-cp1-vip-public-CEI-API-extapi
+        - eu-em2-cp1-vip-public-CND-API-extapi
+        - eu-em2-cp1-vip-public-FRE-API-extapi
+        - eu-em2-cp1-vip-public-GLA-API-extapi
+        - eu-em2-cp1-vip-public-HEA-ACF-extapi
+        - eu-em2-cp1-vip-public-HEA-ACW-extapi
+        - eu-em2-cp1-vip-public-HEA-API-extapi
+        - eu-em2-cp1-vip-public-HZN-WEB-extapi
+        - eu-em2-cp1-vip-public-KEY-API-extapi
+        - eu-em2-cp1-vip-public-MON-API-extapi
+        - eu-em2-cp1-vip-public-NEU-SVR-extapi
+        - eu-em2-cp1-vip-public-NOV-API-extapi
+        - eu-em2-cp1-vip-public-NOV-VNC-extapi
+        - eu-em2-cp1-vip-public-OPS-WEB-extapi
+        - eu-em2-cp1-vip-public-SHP-API-extapi
+        - eu-em2-cp1-vip-public-SWF-PRX-extapi
+EXTERNAL-VM:
+    EXTERNAL-VM-NET: {}
+GUEST:
+    GUEST-NET:
+        10.16.81.2:
+        - eu-em2-cp1-c1-m1-guest
+        10.16.81.3:
+        - eu-em2-cp1-c1-m2-guest
+        10.16.81.4:
+        - eu-em2-cp1-c1-m3-guest
+        10.16.81.5:
+        - eu-em2-cp1-comp0001-guest
+        10.16.81.6:
+        - eu-em2-cp1-comp0002-guest
+        10.16.81.7:
+        - eu-em2-cp1-comp0003-guest
+        10.16.81.8:
+        - eu-em2-cp1-comp0004-guest
+        10.16.81.9:
+        - eu-em2-cp1-comp0005-guest
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.16.80.10:
+        - eu-em2-cp1-c0-m1-mgmt
+        10.16.80.11:
+        - eu-em2-cp1-c1-m1-mgmt
+        10.16.80.12:
+        - eu-em2-cp1-c1-m2-mgmt
+        10.16.80.13:
+        - eu-em2-cp1-c1-m3-mgmt
+        10.16.80.14:
+        - eu-em2-cp1-comp0001-mgmt
+        10.16.80.15:
+        - eu-em2-cp1-comp0002-mgmt
+        10.16.80.16:
+        - eu-em2-cp1-comp0003-mgmt
+        10.16.80.17:
+        - eu-em2-cp1-comp0004-mgmt
+        10.16.80.18:
+        - eu-em2-cp1-comp0005-mgmt
+        10.16.80.19:
+        - eu-em2-cp1-vsa0001-mgmt
+        10.16.80.2:
+        - eu-em2-cp1-vsa0001-VSA-BLK-mgmt
+        10.16.80.20:
+        - eu-em2-cp1-vsa0002-mgmt
+        10.16.80.21:
+        - eu-em2-cp1-vsa0003-mgmt
+        10.16.80.3:
+        - eu-em2-cp1-vsa-VSA-BLK-mgmt
+        10.16.80.4:
+        - eu-em2-cp1-vsa0002-VSA-BLK-mgmt
+        10.16.80.5:
+        - eu-em2-cp1-vsa0003-VSA-BLK-mgmt
+        10.16.80.6:
+        - eu-em2-cp1-vip-CEI-API-mgmt
+        - eu-em2-cp1-vip-CND-API-mgmt
+        - eu-em2-cp1-vip-FND-MDB-mgmt
+        - eu-em2-cp1-vip-FND-RMQ-mgmt
+        - eu-em2-cp1-vip-FND-VDB-mgmt
+        - eu-em2-cp1-vip-FRE-API-mgmt
+        - eu-em2-cp1-vip-GLA-API-mgmt
+        - eu-em2-cp1-vip-GLA-REG-mgmt
+        - eu-em2-cp1-vip-HEA-ACF-mgmt
+        - eu-em2-cp1-vip-HEA-ACW-mgmt
+        - eu-em2-cp1-vip-HEA-API-mgmt
+        - eu-em2-cp1-vip-HZN-WEB-mgmt
+        - eu-em2-cp1-vip-KEY-API-mgmt
+        - eu-em2-cp1-vip-LOG-SVR-mgmt
+        - eu-em2-cp1-vip-MON-API-mgmt
+        - eu-em2-cp1-vip-NEU-SVR-mgmt
+        - eu-em2-cp1-vip-NOV-API-mgmt
+        - eu-em2-cp1-vip-NOV-MTD-mgmt
+        - eu-em2-cp1-vip-OPS-WEB-mgmt
+        - eu-em2-cp1-vip-SHP-API-mgmt
+        - eu-em2-cp1-vip-SWF-PRX-mgmt
+        - eu-em2-cp1-vip-admin-CEI-API-mgmt
+        - eu-em2-cp1-vip-admin-CND-API-mgmt
+        - eu-em2-cp1-vip-admin-FND-MDB-mgmt
+        - eu-em2-cp1-vip-admin-FRE-API-mgmt
+        - eu-em2-cp1-vip-admin-GLA-API-mgmt
+        - eu-em2-cp1-vip-admin-KEY-API-mgmt
+        - eu-em2-cp1-vip-admin-NEU-SVR-mgmt
+        - eu-em2-cp1-vip-admin-NOV-API-mgmt
+        - eu-em2-cp1-vip-admin-SHP-API-mgmt
+        - eu-em2-cp1-vip-admin-SWF-PRX-mgmt

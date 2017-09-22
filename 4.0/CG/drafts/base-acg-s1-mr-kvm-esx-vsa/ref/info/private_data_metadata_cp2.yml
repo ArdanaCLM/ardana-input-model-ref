@@ -1,0 +1,260 @@
+ceilometer_metering_secret:
+  metadata:
+  - clusters:
+    - controller
+    component: ceilometer-common
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+erlang_cookie:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+haproxy_stats_password:
+  metadata:
+  - clusters:
+    - controller
+    component: ip-cluster
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+heartbeat_key:
+  metadata:
+  - clusters:
+    - controller
+    component: octavia-api
+    consumes: octavia-health-manager
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+keepalive_vrrp_password:
+  metadata:
+  - clusters:
+    - controller
+    component: ip-cluster
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+keepalived_vrrp_index:
+  metadata:
+  - clusters:
+    - controller
+    component: ip-cluster
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+metadata_proxy_shared_secret:
+  metadata:
+  - clusters:
+    - controller
+    component: nova-metadata
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_admin_password:
+  metadata:
+  - clusters:
+    - controller
+    component: ceilometer
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  - clusters:
+    - controller
+    - compute
+    component: nova
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  - clusters:
+    - controller
+    component: heat
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  - clusters:
+    - controller
+    - compute
+    - network
+    component: neutron
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_cluster_name:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_clustercheck_pwd:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_monasca_api_password:
+  metadata:
+  - clusters:
+    - controller
+    - compute
+    - network
+    - ardana-hypervisor
+    - rmq-mysql
+    component: monasca
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_monasca_notifier_password:
+  metadata:
+  - clusters:
+    - controller
+    - compute
+    - network
+    - ardana-hypervisor
+    - rmq-mysql
+    component: monasca
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_monasca_thresh_password:
+  metadata:
+  - clusters:
+    - controller
+    - compute
+    - network
+    - ardana-hypervisor
+    - rmq-mysql
+    component: monasca
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_nova_api_password:
+  metadata:
+  - clusters:
+    - controller
+    component: nova-api
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_octavia_password:
+  metadata:
+  - clusters:
+    - controller
+    component: octavia
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_root_pwd:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+mysql_sst_password:
+  metadata:
+  - clusters:
+    - rmq-mysql
+    component: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+nova_ssh_key:
+  metadata:
+  - clusters:
+    - compute
+    component: nova-compute-kvm
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - network
+    - compute
+    component: freezer-agent
+    consumes: mysql
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+rmq_ceilometer_password:
+  metadata:
+  - clusters:
+    - controller
+    component: ceilometer
+    consumes: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+rmq_monasca_monitor_password:
+  metadata:
+  - clusters:
+    - ardana-hypervisor
+    - controller
+    - rmq-mysql
+    - network
+    - compute
+    component: monasca-agent
+    consumes: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+rmq_nova_password:
+  metadata:
+  - clusters:
+    - controller
+    - compute
+    component: nova
+    consumes: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+rmq_octavia_password:
+  metadata:
+  - clusters:
+    - controller
+    component: octavia
+    consumes: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'
+rmq_service_password:
+  metadata:
+  - clusters:
+    - controller
+    component: heat
+    consumes: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  - clusters:
+    - controller
+    - compute
+    - network
+    component: neutron
+    consumes: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  - clusters:
+    - rmq-mysql
+    component: rabbitmq
+    consuming-cp: cp2
+    cp: cp2
+  version: '2.0'

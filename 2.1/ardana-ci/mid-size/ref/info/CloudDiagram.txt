@@ -1,0 +1,318 @@
++-ControlPlane: region1 (control-plane-1)--------------+
+|                                                      |
+| +-Cluster core ()----------------------------------+ |
+| |                                                  | |
+| | +-mid-size-cp1-core-m1 (192.168.10.4)----------+ | |
+| | |                                              | | |
+| | | cinder                                       | | |
+| | |   cinder-api                                 | | |
+| | |   cinder-backup                              | | |
+| | |   cinder-client                              | | |
+| | |   cinder-scheduler                           | | |
+| | |   cinder-volume                              | | |
+| | | foundation                                   | | |
+| | |   apache2                                    | | |
+| | |   ip-cluster                                 | | |
+| | |   memcached                                  | | |
+| | |   ntp-server                                 | | |
+| | |   openstack-client                           | | |
+| | |   sherpa-api                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | glance                                       | | |
+| | |   glance-api                                 | | |
+| | |   glance-client                              | | |
+| | |   glance-registry                            | | |
+| | | heat                                         | | |
+| | |   heat-api                                   | | |
+| | |   heat-api-cfn                               | | |
+| | |   heat-api-cloudwatch                        | | |
+| | |   heat-client                                | | |
+| | |   heat-engine                                | | |
+| | | horizon                                      | | |
+| | |   horizon                                    | | |
+| | | keystone                                     | | |
+| | |   keystone-client                            | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-client                             | | |
+| | |   neutron-ml2-plugin                         | | |
+| | |   neutron-server                             | | |
+| | | nova                                         | | |
+| | |   nova-api                                   | | |
+| | |   nova-client                                | | |
+| | |   nova-conductor                             | | |
+| | |   nova-console-auth                          | | |
+| | |   nova-metadata                              | | |
+| | |   nova-novncproxy                            | | |
+| | |   nova-scheduler                             | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | |   ops-console-monitor                        | | |
+| | |   ops-console-web                            | | |
+| | | vsa-storage                                  | | |
+| | |   cmc-service                                | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.2)       | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.4)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster mtrmon ()--------------------------------+ |
+| |                                                  | |
+| | +-mid-size-cp1-mtrmon-m1 (192.168.10.6)--------+ | |
+| | |                                              | | |
+| | | ceilometer                                   | | |
+| | |   ceilometer-agent-central                   | | |
+| | |   ceilometer-agent-notification              | | |
+| | |   ceilometer-api                             | | |
+| | |   ceilometer-client                          | | |
+| | |   ceilometer-collector                       | | |
+| | |   ceilometer-common                          | | |
+| | |   ceilometer-expirer                         | | |
+| | | foundation                                   | | |
+| | |   apache2                                    | | |
+| | |   influxdb                                   | | |
+| | |   kafka                                      | | |
+| | |   ntp-client                                 | | |
+| | |   storm                                      | | |
+| | |   stunnel                                    | | |
+| | |   vertica                                    | | |
+| | |   zookeeper                                  | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | |   freezer-api                                | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-server                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | |   monasca-api                                | | |
+| | |   monasca-client                             | | |
+| | |   monasca-notifier                           | | |
+| | |   monasca-persister                          | | |
+| | |   monasca-threshold                          | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.3)       | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.6)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster dbmq ()----------------------------------+ |
+| |                                                  | |
+| | +-mid-size-cp1-dbmq-m1 (192.168.10.5)----------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   apache2                                    | | |
+| | |   mysql                                      | | |
+| | |   ntp-client                                 | | |
+| | |   rabbitmq                                   | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | keystone                                     | | |
+| | |   keystone-api                               | | |
+| | |   keystone-client                            | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.4)       | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.5)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster swpac ()---------------------------------+ |
+| |                                                  | |
+| | +-mid-size-cp1-swpac-m1 (192.168.10.7)---------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | |   swift-common                               | | |
+| | |   swift-rsync                                | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | | swift                                        | | |
+| | |   swift-account                              | | |
+| | |   swift-client                               | | |
+| | |   swift-container                            | | |
+| | |   swift-proxy                                | | |
+| | |   swift-ring-builder                         | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.5)       | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.7)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster neut ()----------------------------------+ |
+| |                                                  | |
+| | +-mid-size-cp1-neut-m1 (192.168.10.9)----------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-dhcp-agent                         | | |
+| | |   neutron-metadata-agent                     | | |
+| | |   neutron-openvswitch-agent                  | | |
+| | |   neutron-vpn-agent                          | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   EXTERNAL-VM-NET                            | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.6)       | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.9)                    | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-Cluster singleton ()-----------------------------+ |
+| |                                                  | |
+| | +-mid-size-cp1-singleton-m1 (192.168.10.10)----+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.7)       | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.10)                   | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-compute------------------------------------------+ |
+| |                                                  | |
+| | +-COMPUTE-ROLE (AZ1) (1 servers)---------------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-l3-agent                           | | |
+| | |   neutron-lbaasv2-agent                      | | |
+| | |   neutron-metadata-agent                     | | |
+| | |   neutron-openvswitch-agent                  | | |
+| | | nova                                         | | |
+| | |   nova-compute                               | | |
+| | |   nova-compute-kvm                           | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   EXTERNAL-VM-NET                            | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.0/28)    | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.0/24)                 | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| +--------------------------------------------------+ |
+|                                                      |
+|                                                      |
+|                                                      |
+| +-swobj--------------------------------------------+ |
+| |                                                  | |
+| | +-SWOBJ-ROLE (AZ1) (1 servers)-----------------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | |   swift-common                               | | |
+| | |   swift-rsync                                | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | | swift                                        | | |
+| | |   swift-object                               | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | bond0 (eth1, eth3)                           | | |
+| | |   MANAGEMENT-NET-RACK1 (192.168.245.0/28)    | | |
+| | | eth2                                         | | |
+| | |   CONF-NET (192.168.10.0/24)                 | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| +--------------------------------------------------+ |
+|                                                      |
+|                                                      |
+|                                                      |
++------------------------------------------------------+
+

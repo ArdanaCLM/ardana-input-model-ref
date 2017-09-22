@@ -1,0 +1,132 @@
+compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+compute2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: compute
+  state: allocated
+  type: resource
+compute3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: compute
+  state: allocated
+  type: resource
+core1:
+  cluster_name: core
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+core2:
+  cluster_name: core
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+dbmq1:
+  cluster_name: dbmq
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+dbmq2:
+  cluster_name: dbmq
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+dbmq3:
+  cluster_name: dbmq
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+mtrmon1:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mtrmon2:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+mtrmon3:
+  cluster_name: mtrmon
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+neut1:
+  cluster_name: neut
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+neut2:
+  cluster_name: neut
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+swobj1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: swobj
+  state: allocated
+  type: resource
+swobj2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: swobj
+  state: allocated
+  type: resource
+swobj3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: swobj
+  state: allocated
+  type: resource
+swpac1:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+swpac2:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+swpac3:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+vsa1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: vsa
+  state: allocated
+  type: resource

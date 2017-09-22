@@ -1,0 +1,306 @@
+
+Add required services to control plane control-plane-1
+======================================================
+control-plane-1: Added swift-common required by swift-proxy
+control-plane-1: Added swift-rsync required by swift-container
+control-plane-1: Added ardana-ux-services required by lifecycle-manager
+swobj: Added swift-common required by swift-object
+swobj: Added swift-rsync required by swift-object
+
+Allocate Servers for control plane control-plane-1
+==================================================
+
+cluster: swpac
+--------------
+  Persisted allocation for server 'swpac1' (AZ1)
+  Persisted allocation for server 'swpac2' (AZ2)
+  Persisted allocation for server 'swpac3' (AZ3)
+
+resource: swobj
+---------------
+  Persisted allocation for server 'swobj1' (AZ1)
+  Persisted allocation for server 'swobj2' (AZ2)
+  Persisted allocation for server 'swobj3' (AZ3)
+  Searching for server with role ['SWOBJ-ROLE'] in zones: set(['AZ1', 'AZ2', 'AZ3'])
+
+Resolve Networks for Servers
+============================
+
+server: ardana-cp1-c1-m1
+------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add SWIFT for component swift-container
+  add SWIFT for component swift-rsync
+  add SWIFT for component swift-account
+  add MANAGEMENT for ardana-ux-services (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for ceilometer-polling (default)
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for logging-server (default)
+  Using persisted address 10.0.1.2 for server ardana-cp1-c1-m1 on network EXTERNAL-API-NET
+  Using address 10.241.17.11 for server ardana-cp1-c1-m1 on network MANAGEMENT-NET
+  Using persisted address 10.1.1.2 for server ardana-cp1-c1-m1 on network SWIFT-NET
+
+server: ardana-cp1-c1-m2
+------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add SWIFT for component swift-container
+  add SWIFT for component swift-rsync
+  add SWIFT for component swift-account
+  add MANAGEMENT for ardana-ux-services (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for ceilometer-polling (default)
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for logging-server (default)
+  Using persisted address 10.0.1.3 for server ardana-cp1-c1-m2 on network EXTERNAL-API-NET
+  Using address 10.241.17.12 for server ardana-cp1-c1-m2 on network MANAGEMENT-NET
+  Using persisted address 10.1.1.3 for server ardana-cp1-c1-m2 on network SWIFT-NET
+
+server: ardana-cp1-c1-m3
+------------------------
+  add EXTERNAL-API for component ip-cluster
+  add MANAGEMENT for component ip-cluster
+  add SWIFT for component swift-container
+  add SWIFT for component swift-rsync
+  add SWIFT for component swift-account
+  add MANAGEMENT for ardana-ux-services (default)
+  add MANAGEMENT for zookeeper (default)
+  add MANAGEMENT for stunnel (default)
+  add MANAGEMENT for keystone-api (default)
+  add MANAGEMENT for swift-proxy (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for mysql (default)
+  add MANAGEMENT for ceilometer-common (default)
+  add MANAGEMENT for ceilometer-agent-notification (default)
+  add MANAGEMENT for keystone-client (default)
+  add MANAGEMENT for ceilometer-client (default)
+  add MANAGEMENT for vertica (default)
+  add MANAGEMENT for freezer-api (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for monasca-api (default)
+  add MANAGEMENT for apache2 (default)
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for monasca-notifier (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for storm (default)
+  add MANAGEMENT for ops-console-web (default)
+  add MANAGEMENT for memcached (default)
+  add MANAGEMENT for swift-ring-builder (default)
+  add MANAGEMENT for swift-client (default)
+  add MANAGEMENT for ceilometer-polling (default)
+  add MANAGEMENT for ntp-server (default)
+  add MANAGEMENT for ops-console-monitor (default)
+  add MANAGEMENT for monasca-persister (default)
+  add MANAGEMENT for kafka (default)
+  add MANAGEMENT for monasca-threshold (default)
+  add MANAGEMENT for monasca-client (default)
+  add MANAGEMENT for ceilometer-api (default)
+  add MANAGEMENT for rabbitmq (default)
+  add MANAGEMENT for horizon (default)
+  add MANAGEMENT for lifecycle-manager (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for logging-server (default)
+  Using persisted address 10.0.1.4 for server ardana-cp1-c1-m3 on network EXTERNAL-API-NET
+  Using address 10.241.17.13 for server ardana-cp1-c1-m3 on network MANAGEMENT-NET
+  Using persisted address 10.1.1.4 for server ardana-cp1-c1-m3 on network SWIFT-NET
+
+server: ardana-cp1-swobj0001
+----------------------------
+  add SWIFT for component swift-rsync
+  add SWIFT for component swift-object
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for stunnel (default)
+  Using address 10.241.17.14 for server ardana-cp1-swobj0001 on network MANAGEMENT-NET
+  Using persisted address 10.1.1.5 for server ardana-cp1-swobj0001 on network SWIFT-NET
+
+server: ardana-cp1-swobj0002
+----------------------------
+  add SWIFT for component swift-rsync
+  add SWIFT for component swift-object
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for stunnel (default)
+  Using address 10.241.17.15 for server ardana-cp1-swobj0002 on network MANAGEMENT-NET
+  Using persisted address 10.1.1.6 for server ardana-cp1-swobj0002 on network SWIFT-NET
+
+server: ardana-cp1-swobj0003
+----------------------------
+  add SWIFT for component swift-rsync
+  add SWIFT for component swift-object
+  add MANAGEMENT for freezer-agent (default)
+  add MANAGEMENT for logging-producer (default)
+  add MANAGEMENT for swift-common (default)
+  add MANAGEMENT for monasca-agent (default)
+  add MANAGEMENT for lifecycle-manager-target (default)
+  add MANAGEMENT for ntp-client (default)
+  add MANAGEMENT for stunnel (default)
+  Using address 10.241.17.16 for server ardana-cp1-swobj0003 on network MANAGEMENT-NET
+  Using persisted address 10.1.1.7 for server ardana-cp1-swobj0003 on network SWIFT-NET
+
+Resolve Network Routes
+======================
+Add route from MANAGEMENT-NET to 0.0.0.0/0 (default)
+
+Resolve Network Routes for each server
+======================================
+
+server: ardana-cp1-c1-m1
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: ardana-cp1-c1-m2
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: ardana-cp1-c1-m3
+------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: ardana-cp1-swobj0001
+----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: ardana-cp1-swobj0002
+----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+server: ardana-cp1-swobj0003
+----------------------------
+  Add MANAGEMENT-NET -> 0.0.0.0/0 (None)
+
+Define load balancers
+=====================
+
+Load balancer: extlb
+--------------------
+  Using persisted address 10.0.1.5 for vip extlb ardana-cp1-vip-extlb-extapi on network EXTERNAL-API-NET
+  Add ardana-ux-services for roles ['public'] due to 'default'
+  Add keystone-api for roles ['public'] due to 'default'
+  Add swift-proxy for roles ['public'] due to 'default'
+  Add freezer-api for roles ['public'] due to 'default'
+  Add monasca-api for roles ['public'] due to 'default'
+  Add ops-console-web for roles ['public'] due to 'default'
+  Add ceilometer-api for roles ['public'] due to 'default'
+  Add horizon for roles ['public'] due to 'default'
+
+Load balancer: lb
+-----------------
+  Using persisted address 10.241.17.2 for vip lb ardana-cp1-vip-lb-mgmt on network MANAGEMENT-NET
+  Add ardana-ux-services for roles ['internal', 'admin'] due to 'default'
+  Add keystone-api for roles ['internal'] due to 'default'
+  Add keystone-api for roles ['admin'] due to 'default'
+  Add swift-proxy for roles ['internal', 'admin'] due to 'default'
+  Add vertica for roles ['internal'] due to 'default'
+  Add freezer-api for roles ['internal', 'admin'] due to 'default'
+  Add monasca-api for roles ['internal', 'admin'] due to 'default'
+  Add ops-console-web for roles ['internal', 'admin'] due to 'default'
+  Add mysql for roles ['internal', 'admin'] due to 'default'
+  Add ceilometer-api for roles ['internal', 'admin'] due to 'default'
+  Add rabbitmq for roles ['internal'] due to 'default'
+  Add horizon for roles ['internal', 'admin'] due to 'default'
+  Add logging-server for roles ['internal'] due to 'default'
+
+Map load balancers to providers
+===============================
+
+Network EXTERNAL-API-NET
+------------------------
+  10.0.1.5: ip-cluster ardana-ux-services roles: ['public'] vip-port: 9085 host-port: 9085
+  10.0.1.5: ip-cluster keystone-api roles: ['public'] vip-port: 5000 host-port: 5000
+  10.0.1.5: ip-cluster swift-proxy roles: ['public'] vip-port: 8080 host-port: 8080
+  10.0.1.5: ip-cluster freezer-api roles: ['public'] vip-port: 9090 host-port: 9090
+  10.0.1.5: ip-cluster monasca-api roles: ['public'] vip-port: 8070 host-port: 8070
+  10.0.1.5: ip-cluster ops-console-web roles: ['public'] vip-port: 9095 host-port: 9095
+  10.0.1.5: ip-cluster ceilometer-api roles: ['public'] vip-port: 8777 host-port: 8777
+  10.0.1.5: ip-cluster horizon roles: ['public'] vip-port: 443 host-port: 80
+
+Network MANAGEMENT-NET
+----------------------
+  10.241.17.2: ip-cluster ardana-ux-services roles: ['internal', 'admin'] vip-port: 9085 host-port: 9085
+  10.241.17.2: ip-cluster keystone-api roles: ['internal'] vip-port: 5000 host-port: 5000
+  10.241.17.2: ip-cluster keystone-api roles: ['admin'] vip-port: 35357 host-port: 35357
+  10.241.17.2: ip-cluster swift-proxy roles: ['internal', 'admin'] vip-port: 8080 host-port: 8080
+  10.241.17.2: ip-cluster vertica roles: ['internal'] vip-port: 15433 host-port: 5433
+  10.241.17.2: ip-cluster freezer-api roles: ['internal', 'admin'] vip-port: 9090 host-port: 9090
+  10.241.17.2: ip-cluster monasca-api roles: ['internal', 'admin'] vip-port: 8070 host-port: 8070
+  10.241.17.2: ip-cluster ops-console-web roles: ['internal', 'admin'] vip-port: 9095 host-port: 9095
+  10.241.17.2: ip-cluster mysql roles: ['internal', 'admin'] vip-port: 3306 host-port: 3306
+  10.241.17.2: ip-cluster ceilometer-api roles: ['internal', 'admin'] vip-port: 8777 host-port: 8777
+  10.241.17.2: ip-cluster rabbitmq roles: ['internal'] vip-port: 5672 host-port: 5672
+  10.241.17.2: ip-cluster horizon roles: ['internal', 'admin'] vip-port: 443 host-port: 80
+  10.241.17.2: ip-cluster logging-server roles: ['internal'] vip-port: 5601 host-port: 5601

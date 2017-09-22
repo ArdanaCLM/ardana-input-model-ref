@@ -1,0 +1,21 @@
+#
+# Copyright(c) 2016 Hewlett Packard Enterprise Development Company LP
+# Copyright(c) 2017 SUSE LLC
+#
+---
+  product:
+    version: 2
+
+  cloud:
+    name: cs10cloud
+    hostname-data:
+      host-prefix: cs
+      member-prefix: -m
+
+    ntp-servers:
+      - 10.254.72.64
+
+    firewall-settings:
+        enable: true
+        # log dropped packets
+        logging: true

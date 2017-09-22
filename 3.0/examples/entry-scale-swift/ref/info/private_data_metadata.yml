@@ -1,0 +1,342 @@
+ceilometer_metering_secret:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ceilometer-common
+        cp: control-plane-1
+    version: '2.0'
+dbadmin_user_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: vertica
+        cp: control-plane-1
+    version: '2.0'
+erlang_cookie:
+    metadata:
+    -   clusters:
+        - swpac
+        component: rabbitmq
+        cp: control-plane-1
+    version: '2.0'
+haproxy_stats_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ip-cluster
+        cp: control-plane-1
+    version: '2.0'
+horizon_secret_key:
+    metadata:
+    -   clusters:
+        - swpac
+        component: horizon
+        cp: control-plane-1
+    version: '2.0'
+influxdb_monasca_api_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: monasca-api
+        consumes: influxdb
+        cp: control-plane-1
+    version: '2.0'
+influxdb_monasca_persister_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: monasca-persister
+        consumes: influxdb
+        cp: control-plane-1
+    version: '2.0'
+keepalive_vrrp_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ip-cluster
+        cp: control-plane-1
+    version: '2.0'
+keepalived_vrrp_index:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ip-cluster
+        cp: control-plane-1
+    version: '2.0'
+keystone_admin_pwd:
+    metadata:
+    -   clusters:
+        - swpac
+        component: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_admin_token:
+    metadata:
+    -   clusters:
+        - swpac
+        component: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_backup_password:
+    metadata:
+    -   clusters:
+        - swpac
+        - swobj
+        component: freezer-agent
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_ceilometer_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ceilometer-common
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_demo_pwd:
+    metadata:
+    -   clusters:
+        - swpac
+        component: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_freezer_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: freezer-api
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_monasca_agent_password:
+    metadata:
+    -   clusters:
+        - swpac
+        - swobj
+        component: monasca-agent
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_monasca_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: monasca-api
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_swift_dispersion_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: swift-proxy
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_swift_monitor_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: swift-proxy
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+keystone_swift_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: swift-proxy
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+logging_keystone_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: logging-server
+        consumes: keystone-api
+        cp: control-plane-1
+    version: '2.0'
+logging_kibana_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: logging-server
+        cp: control-plane-1
+    version: '2.0'
+monitor_user_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: vertica
+        cp: control-plane-1
+    version: '2.0'
+mysql_admin_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ceilometer
+        consumes: mysql
+        cp: control-plane-1
+    -   clusters:
+        - swpac
+        component: keystone
+        consumes: mysql
+        cp: control-plane-1
+    -   clusters:
+        - swpac
+        component: horizon
+        consumes: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_cluster_name:
+    metadata:
+    -   clusters:
+        - swpac
+        component: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_clustercheck_pwd:
+    metadata:
+    -   clusters:
+        - swpac
+        component: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_monasca_api_password:
+    metadata:
+    -   clusters:
+        - swobj
+        - swpac
+        component: monasca
+        consumes: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_monasca_notifier_password:
+    metadata:
+    -   clusters:
+        - swobj
+        - swpac
+        component: monasca
+        consumes: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_monasca_thresh_password:
+    metadata:
+    -   clusters:
+        - swobj
+        - swpac
+        component: monasca
+        consumes: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_root_pwd:
+    metadata:
+    -   clusters:
+        - swpac
+        component: mysql
+        cp: control-plane-1
+    version: '2.0'
+mysql_sst_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: mysql
+        cp: control-plane-1
+    version: '2.0'
+ops_mon_mdb_password:
+    metadata:
+    -   clusters:
+        - swobj
+        - swpac
+        component: operations
+        consumes: mysql
+        cp: control-plane-1
+    version: '2.0'
+password:
+    metadata:
+    -   clusters:
+        - swpac
+        - swobj
+        component: freezer-agent
+        consumes: mysql
+        cp: control-plane-1
+    version: '2.0'
+rmq_ceilometer_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: ceilometer
+        consumes: rabbitmq
+        cp: control-plane-1
+    version: '2.0'
+rmq_keystone_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: keystone
+        consumes: rabbitmq
+        cp: control-plane-1
+    version: '2.0'
+rmq_monasca_monitor_password:
+    metadata:
+    -   clusters:
+        - swpac
+        - swobj
+        component: monasca-agent
+        consumes: rabbitmq
+        cp: control-plane-1
+    version: '2.0'
+rmq_service_password:
+    metadata:
+    -   clusters:
+        - swobj
+        - swpac
+        component: logging
+        consumes: rabbitmq
+        cp: control-plane-1
+    -   clusters:
+        - swpac
+        component: rabbitmq
+        cp: control-plane-1
+    version: '2.0'
+swift_hash_path_prefix:
+    metadata:
+    -   clusters:
+        - swpac
+        - swobj
+        component: swift-common
+        cp: control-plane-1
+    version: '2.0'
+swift_hash_path_suffix:
+    metadata:
+    -   clusters:
+        - swpac
+        - swobj
+        component: swift-common
+        cp: control-plane-1
+    version: '2.0'
+swift_intracluster_sync_key:
+    metadata:
+    -   clusters:
+        - swpac
+        component: swift-container
+        cp: control-plane-1
+    version: '2.0'
+vertica_monasca_api_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: monasca-api
+        consumes: vertica
+        cp: control-plane-1
+    version: '2.0'
+vertica_monasca_persister_password:
+    metadata:
+    -   clusters:
+        - swpac
+        component: monasca-persister
+        consumes: vertica
+        cp: control-plane-1
+    version: '2.0'

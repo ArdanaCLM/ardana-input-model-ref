@@ -1,0 +1,456 @@
+compute1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: compute
+  state: allocated
+  type: resource
+compute10:
+  cp_name: control-plane-1
+  member_id: 4
+  resource_name: compute
+  state: allocated
+  type: resource
+compute11:
+  cp_name: control-plane-1
+  member_id: 26
+  resource_name: compute
+  state: allocated
+  type: resource
+compute12:
+  cp_name: control-plane-1
+  member_id: 47
+  resource_name: compute
+  state: allocated
+  type: resource
+compute13:
+  cp_name: control-plane-1
+  member_id: 5
+  resource_name: compute
+  state: allocated
+  type: resource
+compute14:
+  cp_name: control-plane-1
+  member_id: 27
+  resource_name: compute
+  state: allocated
+  type: resource
+compute15:
+  cp_name: control-plane-1
+  member_id: 48
+  resource_name: compute
+  state: allocated
+  type: resource
+compute16:
+  cp_name: control-plane-1
+  member_id: 6
+  resource_name: compute
+  state: allocated
+  type: resource
+compute17:
+  cp_name: control-plane-1
+  member_id: 28
+  resource_name: compute
+  state: allocated
+  type: resource
+compute18:
+  cp_name: control-plane-1
+  member_id: 49
+  resource_name: compute
+  state: allocated
+  type: resource
+compute19:
+  cp_name: control-plane-1
+  member_id: 7
+  resource_name: compute
+  state: allocated
+  type: resource
+compute2:
+  cp_name: control-plane-1
+  member_id: 23
+  resource_name: compute
+  state: allocated
+  type: resource
+compute20:
+  cp_name: control-plane-1
+  member_id: 29
+  resource_name: compute
+  state: allocated
+  type: resource
+compute21:
+  cp_name: control-plane-1
+  member_id: 50
+  resource_name: compute
+  state: allocated
+  type: resource
+compute22:
+  cp_name: control-plane-1
+  member_id: 8
+  resource_name: compute
+  state: allocated
+  type: resource
+compute23:
+  cp_name: control-plane-1
+  member_id: 30
+  resource_name: compute
+  state: allocated
+  type: resource
+compute24:
+  cp_name: control-plane-1
+  member_id: 51
+  resource_name: compute
+  state: allocated
+  type: resource
+compute25:
+  cp_name: control-plane-1
+  member_id: 9
+  resource_name: compute
+  state: allocated
+  type: resource
+compute26:
+  cp_name: control-plane-1
+  member_id: 31
+  resource_name: compute
+  state: allocated
+  type: resource
+compute27:
+  cp_name: control-plane-1
+  member_id: 52
+  resource_name: compute
+  state: allocated
+  type: resource
+compute28:
+  cp_name: control-plane-1
+  member_id: 10
+  resource_name: compute
+  state: allocated
+  type: resource
+compute29:
+  cp_name: control-plane-1
+  member_id: 32
+  resource_name: compute
+  state: allocated
+  type: resource
+compute3:
+  cp_name: control-plane-1
+  member_id: 44
+  resource_name: compute
+  state: allocated
+  type: resource
+compute30:
+  cp_name: control-plane-1
+  member_id: 53
+  resource_name: compute
+  state: allocated
+  type: resource
+compute31:
+  cp_name: control-plane-1
+  member_id: 11
+  resource_name: compute
+  state: allocated
+  type: resource
+compute32:
+  cp_name: control-plane-1
+  member_id: 33
+  resource_name: compute
+  state: allocated
+  type: resource
+compute33:
+  cp_name: control-plane-1
+  member_id: 54
+  resource_name: compute
+  state: allocated
+  type: resource
+compute34:
+  cp_name: control-plane-1
+  member_id: 12
+  resource_name: compute
+  state: allocated
+  type: resource
+compute35:
+  cp_name: control-plane-1
+  member_id: 34
+  resource_name: compute
+  state: allocated
+  type: resource
+compute36:
+  cp_name: control-plane-1
+  member_id: 55
+  resource_name: compute
+  state: allocated
+  type: resource
+compute37:
+  cp_name: control-plane-1
+  member_id: 13
+  resource_name: compute
+  state: allocated
+  type: resource
+compute38:
+  cp_name: control-plane-1
+  member_id: 35
+  resource_name: compute
+  state: allocated
+  type: resource
+compute39:
+  cp_name: control-plane-1
+  member_id: 56
+  resource_name: compute
+  state: allocated
+  type: resource
+compute4:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: compute
+  state: allocated
+  type: resource
+compute40:
+  cp_name: control-plane-1
+  member_id: 14
+  resource_name: compute
+  state: allocated
+  type: resource
+compute41:
+  cp_name: control-plane-1
+  member_id: 36
+  resource_name: compute
+  state: allocated
+  type: resource
+compute42:
+  cp_name: control-plane-1
+  member_id: 57
+  resource_name: compute
+  state: allocated
+  type: resource
+compute43:
+  cp_name: control-plane-1
+  member_id: 15
+  resource_name: compute
+  state: allocated
+  type: resource
+compute44:
+  cp_name: control-plane-1
+  member_id: 37
+  resource_name: compute
+  state: allocated
+  type: resource
+compute45:
+  cp_name: control-plane-1
+  member_id: 58
+  resource_name: compute
+  state: allocated
+  type: resource
+compute46:
+  cp_name: control-plane-1
+  member_id: 16
+  resource_name: compute
+  state: allocated
+  type: resource
+compute47:
+  cp_name: control-plane-1
+  member_id: 38
+  resource_name: compute
+  state: allocated
+  type: resource
+compute48:
+  cp_name: control-plane-1
+  member_id: 59
+  resource_name: compute
+  state: allocated
+  type: resource
+compute49:
+  cp_name: control-plane-1
+  member_id: 17
+  resource_name: compute
+  state: allocated
+  type: resource
+compute5:
+  cp_name: control-plane-1
+  member_id: 24
+  resource_name: compute
+  state: allocated
+  type: resource
+compute50:
+  cp_name: control-plane-1
+  member_id: 39
+  resource_name: compute
+  state: allocated
+  type: resource
+compute51:
+  cp_name: control-plane-1
+  member_id: 60
+  resource_name: compute
+  state: allocated
+  type: resource
+compute52:
+  cp_name: control-plane-1
+  member_id: 18
+  resource_name: compute
+  state: allocated
+  type: resource
+compute53:
+  cp_name: control-plane-1
+  member_id: 40
+  resource_name: compute
+  state: allocated
+  type: resource
+compute54:
+  cp_name: control-plane-1
+  member_id: 61
+  resource_name: compute
+  state: allocated
+  type: resource
+compute55:
+  cp_name: control-plane-1
+  member_id: 19
+  resource_name: compute
+  state: allocated
+  type: resource
+compute56:
+  cp_name: control-plane-1
+  member_id: 41
+  resource_name: compute
+  state: allocated
+  type: resource
+compute57:
+  cp_name: control-plane-1
+  member_id: 62
+  resource_name: compute
+  state: allocated
+  type: resource
+compute58:
+  cp_name: control-plane-1
+  member_id: 20
+  resource_name: compute
+  state: allocated
+  type: resource
+compute59:
+  cp_name: control-plane-1
+  member_id: 42
+  resource_name: compute
+  state: allocated
+  type: resource
+compute6:
+  cp_name: control-plane-1
+  member_id: 45
+  resource_name: compute
+  state: allocated
+  type: resource
+compute60:
+  cp_name: control-plane-1
+  member_id: 63
+  resource_name: compute
+  state: allocated
+  type: resource
+compute61:
+  cp_name: control-plane-1
+  member_id: 21
+  resource_name: compute
+  state: allocated
+  type: resource
+compute62:
+  cp_name: control-plane-1
+  member_id: 43
+  resource_name: compute
+  state: allocated
+  type: resource
+compute63:
+  cp_name: control-plane-1
+  member_id: 64
+  resource_name: compute
+  state: allocated
+  type: resource
+compute64:
+  cp_name: control-plane-1
+  member_id: 22
+  resource_name: compute
+  state: allocated
+  type: resource
+compute7:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: compute
+  state: allocated
+  type: resource
+compute8:
+  cp_name: control-plane-1
+  member_id: 25
+  resource_name: compute
+  state: allocated
+  type: resource
+compute9:
+  cp_name: control-plane-1
+  member_id: 46
+  resource_name: compute
+  state: allocated
+  type: resource
+controller1:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+controller2:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+dbmq1:
+  cluster_name: cluster3
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+dbmq2:
+  cluster_name: cluster3
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+dbmq3:
+  cluster_name: cluster3
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+lifecycle-manager:
+  cluster_name: cluster0
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mtrmon1:
+  cluster_name: cluster2
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+mtrmon2:
+  cluster_name: cluster2
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+mtrmon3:
+  cluster_name: cluster2
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster
+vsa1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: vsa
+  state: allocated
+  type: resource
+vsa3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: vsa
+  state: allocated
+  type: resource

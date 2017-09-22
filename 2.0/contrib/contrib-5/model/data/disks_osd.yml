@@ -1,0 +1,194 @@
+# Copyright 2015 Hewlett-Packard Development Company, L.P
+# Copyright 2017 SUSE LLC
+---
+  product:
+    version: 2
+
+  disk-models:
+  - name: OSD-DISKS
+    # /dev/sda1 is used as a Volume Group for /, /var/log, and /var/crash
+    volume-groups:
+      - name: ardana-vg
+        physical-volumes:
+          - /dev/sda_root
+        logical-volumes:
+          - name: root
+            size: 20%
+            fstype: ext4
+            mount: /
+          - name: LV_LOG
+            size: 40%
+            mount: /var/log
+            fstype: ext4
+            mkfs-opts: -O large_file
+          - name: LV_CRASH
+            size: 20%
+            mount: /var/crash
+            fstype: ext4
+            mkfs-opts: -O large_file
+        consumer:
+           name: os
+
+    # Additional disk group defined for OSD
+    # If available, you can add additional disks to the "devices" list.
+    # Only list disks that are present at deployment time.
+    device-groups:
+      - name: ceph-osd-data-and-journal-0
+        devices:
+          - name: /dev/sdb
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-1
+        devices:
+          - name: /dev/sdc
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-2
+        devices:
+          - name: /dev/sdd
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-3
+        devices:
+          - name: /dev/sde
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-4
+        devices:
+          - name: /dev/sdf
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-5
+        devices:
+          - name: /dev/sdg
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-6
+        devices:
+          - name: /dev/sdh
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-7
+        devices:
+          - name: /dev/sdi
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-8
+        devices:
+          - name: /dev/sdj
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-9
+        devices:
+          - name: /dev/sdk
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-10
+        devices:
+          - name: /dev/sdl
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-11
+        devices:
+          - name: /dev/sdm
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-12
+        devices:
+          - name: /dev/sdn
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-13
+        devices:
+          - name: /dev/sdo
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-14
+        devices:
+          - name: /dev/sdp
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-15
+        devices:
+          - name: /dev/sdq
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-16
+        devices:
+          - name: /dev/sdr
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-17
+        devices:
+          - name: /dev/sds
+        consumer:
+          name: ceph
+          attrs:
+            usage: data
+
+      - name: ceph-osd-data-and-journal-18
+        devices:
+          - name: /dev/sdt
+        consumer:
+           name: ceph
+           attrs:
+             usage: data
+
+      - name: ceph-osd-data-and-journal-19
+        devices:
+          - name: /dev/sdu
+        consumer:
+           name: ceph
+           attrs:
+             usage: data

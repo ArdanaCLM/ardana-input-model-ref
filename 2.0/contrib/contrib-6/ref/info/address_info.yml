@@ -1,0 +1,487 @@
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        10.243.189.4:
+        - ipc1-cp1-c1-m1-extapi
+        10.243.189.5:
+        - ipc1-cp1-c1-m2-extapi
+        10.243.189.6:
+        - ipc1-cp1-vip-public-CEI-API-extapi
+        - ipc1-cp1-vip-public-CND-API-extapi
+        - ipc1-cp1-vip-public-FRE-API-extapi
+        - ipc1-cp1-vip-public-GLA-API-extapi
+        - ipc1-cp1-vip-public-HEA-ACF-extapi
+        - ipc1-cp1-vip-public-HEA-ACW-extapi
+        - ipc1-cp1-vip-public-HEA-API-extapi
+        - ipc1-cp1-vip-public-HZN-WEB-extapi
+        - ipc1-cp1-vip-public-KEY-API-extapi
+        - ipc1-cp1-vip-public-MON-API-extapi
+        - ipc1-cp1-vip-public-NEU-SVR-extapi
+        - ipc1-cp1-vip-public-NOV-API-extapi
+        - ipc1-cp1-vip-public-NOV-VNC-extapi
+        - ipc1-cp1-vip-public-OPS-WEB-extapi
+        - ipc1-cp1-vip-public-SHP-API-extapi
+        - ipc1-cp1-vip-public-SWF-PRX-extapi
+EXTERNAL-VM:
+    EXTERNAL-VM-NET:
+        10.243.192.10:
+        - ipc1-cp1-comp0005-EXTERNAL-VM
+        10.243.192.11:
+        - ipc1-cp1-comp0006-EXTERNAL-VM
+        10.243.192.12:
+        - ipc1-cp1-comp0007-EXTERNAL-VM
+        10.243.192.13:
+        - ipc1-cp1-comp0008-EXTERNAL-VM
+        10.243.192.14:
+        - ipc1-cp1-comp0009-EXTERNAL-VM
+        10.243.192.15:
+        - ipc1-cp1-comp0010-EXTERNAL-VM
+        10.243.192.16:
+        - ipc1-cp1-comp0011-EXTERNAL-VM
+        10.243.192.17:
+        - ipc1-cp1-comp0012-EXTERNAL-VM
+        10.243.192.18:
+        - ipc1-cp1-comp0013-EXTERNAL-VM
+        10.243.192.19:
+        - ipc1-cp1-comp0014-EXTERNAL-VM
+        10.243.192.20:
+        - ipc1-cp1-comp0015-EXTERNAL-VM
+        10.243.192.21:
+        - ipc1-cp1-comp0016-EXTERNAL-VM
+        10.243.192.22:
+        - ipc1-cp1-comp0017-EXTERNAL-VM
+        10.243.192.23:
+        - ipc1-cp1-comp0018-EXTERNAL-VM
+        10.243.192.24:
+        - ipc1-cp1-comp0019-EXTERNAL-VM
+        10.243.192.25:
+        - ipc1-cp1-comp0020-EXTERNAL-VM
+        10.243.192.26:
+        - ipc1-cp1-comp0021-EXTERNAL-VM
+        10.243.192.27:
+        - ipc1-cp1-comp0022-EXTERNAL-VM
+        10.243.192.28:
+        - ipc1-cp1-comp0023-EXTERNAL-VM
+        10.243.192.29:
+        - ipc1-cp1-comp0024-EXTERNAL-VM
+        10.243.192.30:
+        - ipc1-cp1-comp0025-EXTERNAL-VM
+        10.243.192.31:
+        - ipc1-cp1-comp0026-EXTERNAL-VM
+        10.243.192.32:
+        - ipc1-cp1-comp0027-EXTERNAL-VM
+        10.243.192.33:
+        - ipc1-cp1-comp0028-EXTERNAL-VM
+        10.243.192.34:
+        - ipc1-cp1-comp0029-EXTERNAL-VM
+        10.243.192.35:
+        - ipc1-cp1-comp0030-EXTERNAL-VM
+        10.243.192.36:
+        - ipc1-cp1-comp0031-EXTERNAL-VM
+        10.243.192.37:
+        - ipc1-cp1-comp0032-EXTERNAL-VM
+        10.243.192.38:
+        - ipc1-cp1-comp0033-EXTERNAL-VM
+        10.243.192.39:
+        - ipc1-cp1-comp0034-EXTERNAL-VM
+        10.243.192.4:
+        - ipc1-cp1-c1-m1-EXTERNAL-VM
+        10.243.192.40:
+        - ipc1-cp1-comp0035-EXTERNAL-VM
+        10.243.192.41:
+        - ipc1-cp1-comp0036-EXTERNAL-VM
+        10.243.192.42:
+        - ipc1-cp1-comp0037-EXTERNAL-VM
+        10.243.192.43:
+        - ipc1-cp1-comp0038-EXTERNAL-VM
+        10.243.192.44:
+        - ipc1-cp1-comp0039-EXTERNAL-VM
+        10.243.192.45:
+        - ipc1-cp1-comp0040-EXTERNAL-VM
+        10.243.192.46:
+        - ipc1-cp1-comp0041-EXTERNAL-VM
+        10.243.192.47:
+        - ipc1-cp1-comp0042-EXTERNAL-VM
+        10.243.192.48:
+        - ipc1-cp1-comp0043-EXTERNAL-VM
+        10.243.192.49:
+        - ipc1-cp1-comp0044-EXTERNAL-VM
+        10.243.192.5:
+        - ipc1-cp1-c1-m2-EXTERNAL-VM
+        10.243.192.50:
+        - ipc1-cp1-comp0045-EXTERNAL-VM
+        10.243.192.51:
+        - ipc1-cp1-comp0046-EXTERNAL-VM
+        10.243.192.52:
+        - ipc1-cp1-comp0047-EXTERNAL-VM
+        10.243.192.53:
+        - ipc1-cp1-comp0048-EXTERNAL-VM
+        10.243.192.54:
+        - ipc1-cp1-comp0049-EXTERNAL-VM
+        10.243.192.55:
+        - ipc1-cp1-comp0050-EXTERNAL-VM
+        10.243.192.56:
+        - ipc1-cp1-comp0051-EXTERNAL-VM
+        10.243.192.57:
+        - ipc1-cp1-comp0052-EXTERNAL-VM
+        10.243.192.58:
+        - ipc1-cp1-comp0053-EXTERNAL-VM
+        10.243.192.59:
+        - ipc1-cp1-comp0054-EXTERNAL-VM
+        10.243.192.6:
+        - ipc1-cp1-comp0001-EXTERNAL-VM
+        10.243.192.60:
+        - ipc1-cp1-comp0055-EXTERNAL-VM
+        10.243.192.61:
+        - ipc1-cp1-comp0056-EXTERNAL-VM
+        10.243.192.62:
+        - ipc1-cp1-comp0057-EXTERNAL-VM
+        10.243.192.63:
+        - ipc1-cp1-comp0058-EXTERNAL-VM
+        10.243.192.64:
+        - ipc1-cp1-comp0059-EXTERNAL-VM
+        10.243.192.65:
+        - ipc1-cp1-comp0060-EXTERNAL-VM
+        10.243.192.66:
+        - ipc1-cp1-comp0061-EXTERNAL-VM
+        10.243.192.67:
+        - ipc1-cp1-comp0062-EXTERNAL-VM
+        10.243.192.68:
+        - ipc1-cp1-comp0063-EXTERNAL-VM
+        10.243.192.69:
+        - ipc1-cp1-comp0064-EXTERNAL-VM
+        10.243.192.7:
+        - ipc1-cp1-comp0002-EXTERNAL-VM
+        10.243.192.8:
+        - ipc1-cp1-comp0003-EXTERNAL-VM
+        10.243.192.9:
+        - ipc1-cp1-comp0004-EXTERNAL-VM
+GUEST:
+    GUEST-NET:
+        10.243.188.10:
+        - ipc1-cp1-comp0005-guest
+        10.243.188.11:
+        - ipc1-cp1-comp0006-guest
+        10.243.188.12:
+        - ipc1-cp1-comp0007-guest
+        10.243.188.13:
+        - ipc1-cp1-comp0008-guest
+        10.243.188.14:
+        - ipc1-cp1-comp0009-guest
+        10.243.188.15:
+        - ipc1-cp1-comp0010-guest
+        10.243.188.16:
+        - ipc1-cp1-comp0011-guest
+        10.243.188.17:
+        - ipc1-cp1-comp0012-guest
+        10.243.188.18:
+        - ipc1-cp1-comp0013-guest
+        10.243.188.19:
+        - ipc1-cp1-comp0014-guest
+        10.243.188.20:
+        - ipc1-cp1-comp0015-guest
+        10.243.188.21:
+        - ipc1-cp1-comp0016-guest
+        10.243.188.22:
+        - ipc1-cp1-comp0017-guest
+        10.243.188.23:
+        - ipc1-cp1-comp0018-guest
+        10.243.188.24:
+        - ipc1-cp1-comp0019-guest
+        10.243.188.25:
+        - ipc1-cp1-comp0020-guest
+        10.243.188.26:
+        - ipc1-cp1-comp0021-guest
+        10.243.188.27:
+        - ipc1-cp1-comp0022-guest
+        10.243.188.28:
+        - ipc1-cp1-comp0023-guest
+        10.243.188.29:
+        - ipc1-cp1-comp0024-guest
+        10.243.188.30:
+        - ipc1-cp1-comp0025-guest
+        10.243.188.31:
+        - ipc1-cp1-comp0026-guest
+        10.243.188.32:
+        - ipc1-cp1-comp0027-guest
+        10.243.188.33:
+        - ipc1-cp1-comp0028-guest
+        10.243.188.34:
+        - ipc1-cp1-comp0029-guest
+        10.243.188.35:
+        - ipc1-cp1-comp0030-guest
+        10.243.188.36:
+        - ipc1-cp1-comp0031-guest
+        10.243.188.37:
+        - ipc1-cp1-comp0032-guest
+        10.243.188.38:
+        - ipc1-cp1-comp0033-guest
+        10.243.188.39:
+        - ipc1-cp1-comp0034-guest
+        10.243.188.4:
+        - ipc1-cp1-c1-m1-guest
+        10.243.188.40:
+        - ipc1-cp1-comp0035-guest
+        10.243.188.41:
+        - ipc1-cp1-comp0036-guest
+        10.243.188.42:
+        - ipc1-cp1-comp0037-guest
+        10.243.188.43:
+        - ipc1-cp1-comp0038-guest
+        10.243.188.44:
+        - ipc1-cp1-comp0039-guest
+        10.243.188.45:
+        - ipc1-cp1-comp0040-guest
+        10.243.188.46:
+        - ipc1-cp1-comp0041-guest
+        10.243.188.47:
+        - ipc1-cp1-comp0042-guest
+        10.243.188.48:
+        - ipc1-cp1-comp0043-guest
+        10.243.188.49:
+        - ipc1-cp1-comp0044-guest
+        10.243.188.5:
+        - ipc1-cp1-c1-m2-guest
+        10.243.188.50:
+        - ipc1-cp1-comp0045-guest
+        10.243.188.51:
+        - ipc1-cp1-comp0046-guest
+        10.243.188.52:
+        - ipc1-cp1-comp0047-guest
+        10.243.188.53:
+        - ipc1-cp1-comp0048-guest
+        10.243.188.54:
+        - ipc1-cp1-comp0049-guest
+        10.243.188.55:
+        - ipc1-cp1-comp0050-guest
+        10.243.188.56:
+        - ipc1-cp1-comp0051-guest
+        10.243.188.57:
+        - ipc1-cp1-comp0052-guest
+        10.243.188.58:
+        - ipc1-cp1-comp0053-guest
+        10.243.188.59:
+        - ipc1-cp1-comp0054-guest
+        10.243.188.6:
+        - ipc1-cp1-comp0001-guest
+        10.243.188.60:
+        - ipc1-cp1-comp0055-guest
+        10.243.188.61:
+        - ipc1-cp1-comp0056-guest
+        10.243.188.62:
+        - ipc1-cp1-comp0057-guest
+        10.243.188.63:
+        - ipc1-cp1-comp0058-guest
+        10.243.188.64:
+        - ipc1-cp1-comp0059-guest
+        10.243.188.65:
+        - ipc1-cp1-comp0060-guest
+        10.243.188.66:
+        - ipc1-cp1-comp0061-guest
+        10.243.188.67:
+        - ipc1-cp1-comp0062-guest
+        10.243.188.68:
+        - ipc1-cp1-comp0063-guest
+        10.243.188.69:
+        - ipc1-cp1-comp0064-guest
+        10.243.188.7:
+        - ipc1-cp1-comp0002-guest
+        10.243.188.8:
+        - ipc1-cp1-comp0003-guest
+        10.243.188.9:
+        - ipc1-cp1-comp0004-guest
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.241.67.10:
+        - ipc1-cp1-c3-m1-mgmt
+        10.241.67.11:
+        - ipc1-cp1-c3-m2-mgmt
+        10.241.67.12:
+        - ipc1-cp1-c3-m3-mgmt
+        10.241.67.13:
+        - ipc1-cp1-vsa0001-mgmt
+        10.241.67.14:
+        - ipc1-cp1-vsa0002-mgmt
+        10.241.67.15:
+        - ipc1-cp1-vsa0003-mgmt
+        10.241.67.16:
+        - ipc1-cp1-comp0001-mgmt
+        10.241.67.17:
+        - ipc1-cp1-comp0023-mgmt
+        10.241.67.18:
+        - ipc1-cp1-comp0044-mgmt
+        10.241.67.19:
+        - ipc1-cp1-comp0002-mgmt
+        10.241.67.20:
+        - ipc1-cp1-comp0024-mgmt
+        10.241.67.21:
+        - ipc1-cp1-comp0045-mgmt
+        10.241.67.22:
+        - ipc1-cp1-comp0003-mgmt
+        10.241.67.23:
+        - ipc1-cp1-comp0025-mgmt
+        10.241.67.24:
+        - ipc1-cp1-comp0046-mgmt
+        10.241.67.25:
+        - ipc1-cp1-comp0004-mgmt
+        10.241.67.26:
+        - ipc1-cp1-comp0026-mgmt
+        10.241.67.27:
+        - ipc1-cp1-comp0047-mgmt
+        10.241.67.28:
+        - ipc1-cp1-comp0005-mgmt
+        10.241.67.29:
+        - ipc1-cp1-comp0027-mgmt
+        10.241.67.30:
+        - ipc1-cp1-comp0048-mgmt
+        10.241.67.31:
+        - ipc1-cp1-comp0006-mgmt
+        10.241.67.32:
+        - ipc1-cp1-comp0028-mgmt
+        10.241.67.33:
+        - ipc1-cp1-comp0049-mgmt
+        10.241.67.34:
+        - ipc1-cp1-comp0007-mgmt
+        10.241.67.35:
+        - ipc1-cp1-comp0029-mgmt
+        10.241.67.36:
+        - ipc1-cp1-comp0050-mgmt
+        10.241.67.37:
+        - ipc1-cp1-comp0008-mgmt
+        10.241.67.38:
+        - ipc1-cp1-comp0030-mgmt
+        10.241.67.39:
+        - ipc1-cp1-comp0051-mgmt
+        10.241.67.4:
+        - ipc1-cp1-c0-m1-mgmt
+        10.241.67.40:
+        - ipc1-cp1-comp0009-mgmt
+        10.241.67.41:
+        - ipc1-cp1-comp0031-mgmt
+        10.241.67.42:
+        - ipc1-cp1-comp0052-mgmt
+        10.241.67.43:
+        - ipc1-cp1-comp0010-mgmt
+        10.241.67.44:
+        - ipc1-cp1-comp0032-mgmt
+        10.241.67.45:
+        - ipc1-cp1-comp0053-mgmt
+        10.241.67.46:
+        - ipc1-cp1-comp0011-mgmt
+        10.241.67.47:
+        - ipc1-cp1-comp0033-mgmt
+        10.241.67.48:
+        - ipc1-cp1-comp0054-mgmt
+        10.241.67.49:
+        - ipc1-cp1-comp0012-mgmt
+        10.241.67.5:
+        - ipc1-cp1-c1-m1-mgmt
+        10.241.67.50:
+        - ipc1-cp1-comp0034-mgmt
+        10.241.67.51:
+        - ipc1-cp1-comp0055-mgmt
+        10.241.67.52:
+        - ipc1-cp1-comp0013-mgmt
+        10.241.67.53:
+        - ipc1-cp1-comp0035-mgmt
+        10.241.67.54:
+        - ipc1-cp1-comp0056-mgmt
+        10.241.67.55:
+        - ipc1-cp1-comp0014-mgmt
+        10.241.67.56:
+        - ipc1-cp1-comp0036-mgmt
+        10.241.67.57:
+        - ipc1-cp1-comp0057-mgmt
+        10.241.67.58:
+        - ipc1-cp1-comp0015-mgmt
+        10.241.67.59:
+        - ipc1-cp1-comp0037-mgmt
+        10.241.67.6:
+        - ipc1-cp1-c1-m2-mgmt
+        10.241.67.60:
+        - ipc1-cp1-comp0058-mgmt
+        10.241.67.61:
+        - ipc1-cp1-comp0016-mgmt
+        10.241.67.62:
+        - ipc1-cp1-comp0038-mgmt
+        10.241.67.63:
+        - ipc1-cp1-comp0059-mgmt
+        10.241.67.64:
+        - ipc1-cp1-comp0017-mgmt
+        10.241.67.65:
+        - ipc1-cp1-comp0039-mgmt
+        10.241.67.66:
+        - ipc1-cp1-comp0060-mgmt
+        10.241.67.67:
+        - ipc1-cp1-comp0018-mgmt
+        10.241.67.68:
+        - ipc1-cp1-comp0040-mgmt
+        10.241.67.69:
+        - ipc1-cp1-comp0061-mgmt
+        10.241.67.7:
+        - ipc1-cp1-c2-m1-mgmt
+        10.241.67.70:
+        - ipc1-cp1-comp0019-mgmt
+        10.241.67.71:
+        - ipc1-cp1-comp0041-mgmt
+        10.241.67.72:
+        - ipc1-cp1-comp0062-mgmt
+        10.241.67.73:
+        - ipc1-cp1-comp0020-mgmt
+        10.241.67.74:
+        - ipc1-cp1-comp0042-mgmt
+        10.241.67.75:
+        - ipc1-cp1-comp0063-mgmt
+        10.241.67.76:
+        - ipc1-cp1-comp0021-mgmt
+        10.241.67.77:
+        - ipc1-cp1-comp0043-mgmt
+        10.241.67.78:
+        - ipc1-cp1-comp0064-mgmt
+        10.241.67.79:
+        - ipc1-cp1-comp0022-mgmt
+        10.241.67.8:
+        - ipc1-cp1-c2-m2-mgmt
+        10.241.67.80:
+        - ipc1-cp1-vsa0001-VSA-BLK-mgmt
+        10.241.67.81:
+        - ipc1-cp1-vsa-VSA-BLK-mgmt
+        10.241.67.82:
+        - ipc1-cp1-vsa0002-VSA-BLK-mgmt
+        10.241.67.83:
+        - ipc1-cp1-vsa0003-VSA-BLK-mgmt
+        10.241.67.84:
+        - ipc1-cp1-vip-CEI-API-mgmt
+        - ipc1-cp1-vip-CND-API-mgmt
+        - ipc1-cp1-vip-FND-MDB-mgmt
+        - ipc1-cp1-vip-FND-RMQ-mgmt
+        - ipc1-cp1-vip-FND-VDB-mgmt
+        - ipc1-cp1-vip-FRE-API-mgmt
+        - ipc1-cp1-vip-GLA-API-mgmt
+        - ipc1-cp1-vip-GLA-REG-mgmt
+        - ipc1-cp1-vip-HEA-ACF-mgmt
+        - ipc1-cp1-vip-HEA-ACW-mgmt
+        - ipc1-cp1-vip-HEA-API-mgmt
+        - ipc1-cp1-vip-HZN-WEB-mgmt
+        - ipc1-cp1-vip-KEY-API-mgmt
+        - ipc1-cp1-vip-LOG-SVR-mgmt
+        - ipc1-cp1-vip-MON-API-mgmt
+        - ipc1-cp1-vip-NEU-SVR-mgmt
+        - ipc1-cp1-vip-NOV-API-mgmt
+        - ipc1-cp1-vip-NOV-MTD-mgmt
+        - ipc1-cp1-vip-OPS-WEB-mgmt
+        - ipc1-cp1-vip-SHP-API-mgmt
+        - ipc1-cp1-vip-SWF-PRX-mgmt
+        - ipc1-cp1-vip-admin-CEI-API-mgmt
+        - ipc1-cp1-vip-admin-CND-API-mgmt
+        - ipc1-cp1-vip-admin-FND-MDB-mgmt
+        - ipc1-cp1-vip-admin-FRE-API-mgmt
+        - ipc1-cp1-vip-admin-GLA-API-mgmt
+        - ipc1-cp1-vip-admin-KEY-API-mgmt
+        - ipc1-cp1-vip-admin-NEU-SVR-mgmt
+        - ipc1-cp1-vip-admin-NOV-API-mgmt
+        - ipc1-cp1-vip-admin-SHP-API-mgmt
+        - ipc1-cp1-vip-admin-SWF-PRX-mgmt
+        10.241.67.9:
+        - ipc1-cp1-c2-m3-mgmt
+SERVICE:
+    SERVICE-NET: {}

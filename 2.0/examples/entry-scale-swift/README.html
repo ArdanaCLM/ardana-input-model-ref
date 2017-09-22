@@ -1,0 +1,21 @@
+<dl class="dl-horizontal">
+  <dt>Compute Hypervisor</dt><dd>KVM</dd>
+  <dt>Object Storage</dt><dd>Swift</dd>
+</dl>
+<p><b>Node roles</b></p>
+<ul>
+  <li>Control Plane (3), includes deployer</li>
+  <li>Swift object storage nodes (3)</li>
+</ul>
+
+<p>This example separates network traffic into three logical networks which are carried on a pair of bonded NICs on two physical ports.</p>
+
+<p><b>Logical network separation:</b></p>
+<ol>
+<li>External API - used by consumers of the cloud to make requests to the cloud APIs</li>
+<li>Management - used for all internal traffic between the cloud services. This network is also used to provision and configure the cloud servers.</li>
+<li>SWIFT - used for internal Swift communications between the Swift servers</li>
+</ol>
+<p>
+In addition, each server is connected to a dedicated IPMI/iLO network.
+</p>

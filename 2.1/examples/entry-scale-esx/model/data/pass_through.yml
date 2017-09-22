@@ -1,0 +1,55 @@
+#
+# (c) Copyright 2015-2016 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+pass-through:
+      global:
+            esx_cloud: true
+      servers:
+      -     data:
+                  vmware:
+                        cert_check: false
+                        vcenter_cluster: Cluster1
+                        vcenter_id: BC9DED4E-1639-481D-B190-2B54A2BF5674
+                        vcenter_ip: 10.1.200.41
+                        vcenter_port: 443
+                        vcenter_username: administrator@vsphere.local
+            id: 7d8c415b541ca9ecf9608b35b32261e6c0bf275a
+      -     data:
+                  vmware:
+                        cert_check: false
+                        cluster_dvs_mapping: DC1/host/Cluster1:ardana-Trunk
+                        esx_hostname: 10.1.200.66
+                        vcenter_cluster: Cluster1
+                        vcenter_id: BC9DED4E-1639-481D-B190-2B54A2BF5674
+                        vcenter_ip: 10.1.200.41
+                        vcenter_port: 443
+                        vcenter_username: administrator@vsphere.local
+            id: 23537a1742972553251f159521058890e8f945d8
+      -     data:
+                  vmware:
+                        cert_check: false
+                        cluster_dvs_mapping: DC1/host/Cluster1:ardana-Trunk
+                        esx_hostname: 10.1.200.33
+                        vcenter_cluster: Cluster1
+                        vcenter_id: BC9DED4E-1639-481D-B190-2B54A2BF5674
+                        vcenter_ip: 10.1.200.41
+                        vcenter_port: 443
+                        vcenter_username: administrator@vsphere.local
+            id: 5d9ac33807943abd4b4a4485f8ee8dd13f50f230
+product:
+      version: 2
+

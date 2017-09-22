@@ -1,0 +1,144 @@
++-ControlPlane: region1 (ccp)--------------------------+
+|                                                      |
+| +-Cluster cluster0 ()------------------------------+ |
+| |                                                  | |
+| | +-deployerincloud-ccp-c0-m1 (192.168.10.3)-----+ | |
+| | |                                              | | |
+| | | ceilometer                                   | | |
+| | |   ceilometer-agent-central                   | | |
+| | |   ceilometer-agent-notification              | | |
+| | |   ceilometer-api                             | | |
+| | |   ceilometer-client                          | | |
+| | |   ceilometer-collector                       | | |
+| | |   ceilometer-common                          | | |
+| | |   ceilometer-expirer                         | | |
+| | | cinder                                       | | |
+| | |   cinder-api                                 | | |
+| | |   cinder-backup                              | | |
+| | |   cinder-client                              | | |
+| | |   cinder-scheduler                           | | |
+| | |   cinder-volume                              | | |
+| | | foundation                                   | | |
+| | |   apache2                                    | | |
+| | |   ip-cluster                                 | | |
+| | |   kafka                                      | | |
+| | |   memcached                                  | | |
+| | |   mysql                                      | | |
+| | |   ntp-server                                 | | |
+| | |   openstack-client                           | | |
+| | |   rabbitmq                                   | | |
+| | |   sherpa-api                                 | | |
+| | |   storm                                      | | |
+| | |   stunnel                                    | | |
+| | |   swift-common                               | | |
+| | |   swift-rsync                                | | |
+| | |   vertica                                    | | |
+| | |   zookeeper                                  | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | |   freezer-api                                | | |
+| | | glance                                       | | |
+| | |   glance-api                                 | | |
+| | |   glance-client                              | | |
+| | |   glance-registry                            | | |
+| | | heat                                         | | |
+| | |   heat-api                                   | | |
+| | |   heat-api-cfn                               | | |
+| | |   heat-api-cloudwatch                        | | |
+| | |   heat-client                                | | |
+| | |   heat-engine                                | | |
+| | | horizon                                      | | |
+| | |   horizon                                    | | |
+| | | keystone                                     | | |
+| | |   keystone-api                               | | |
+| | |   keystone-client                            | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | |   logging-server                             | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | |   monasca-api                                | | |
+| | |   monasca-client                             | | |
+| | |   monasca-notifier                           | | |
+| | |   monasca-persister                          | | |
+| | |   monasca-threshold                          | | |
+| | | neutron                                      | | |
+| | |   neutron-client                             | | |
+| | |   neutron-dhcp-agent                         | | |
+| | |   neutron-metadata-agent                     | | |
+| | |   neutron-ml2-plugin                         | | |
+| | |   neutron-openvswitch-agent                  | | |
+| | |   neutron-server                             | | |
+| | |   neutron-vpn-agent                          | | |
+| | | nova                                         | | |
+| | |   nova-api                                   | | |
+| | |   nova-client                                | | |
+| | |   nova-conductor                             | | |
+| | |   nova-console-auth                          | | |
+| | |   nova-metadata                              | | |
+| | |   nova-novncproxy                            | | |
+| | |   nova-scheduler                             | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager                          | | |
+| | |   lifecycle-manager-target                   | | |
+| | |   ops-console-monitor                        | | |
+| | |   ops-console-web                            | | |
+| | | swift                                        | | |
+| | |   swift-account                              | | |
+| | |   swift-client                               | | |
+| | |   swift-container                            | | |
+| | |   swift-object                               | | |
+| | |   swift-proxy                                | | |
+| | |   swift-ring-builder                         | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | eth1                                         | | |
+| | |   MANAGEMENT-NET (192.168.245.2)             | | |
+| | | eth2                                         | | |
+| | |   ARDANA-NET (192.168.10.3)                     | | |
+| | | eth3                                         | | |
+| | |   EXTERNAL-VM-NET                            | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| |                                                  | |
+| +--------------------------------------------------+ |
+|                                                      |
+| +-compute------------------------------------------+ |
+| |                                                  | |
+| | +-COMPUTE-ROLE (None) (2 servers)--------------+ | |
+| | |                                              | | |
+| | | foundation                                   | | |
+| | |   ntp-client                                 | | |
+| | |   stunnel                                    | | |
+| | | freezer                                      | | |
+| | |   freezer-agent                              | | |
+| | | logging                                      | | |
+| | |   logging-producer                           | | |
+| | | monasca                                      | | |
+| | |   monasca-agent                              | | |
+| | | neutron                                      | | |
+| | |   neutron-l3-agent                           | | |
+| | |   neutron-lbaasv2-agent                      | | |
+| | |   neutron-metadata-agent                     | | |
+| | |   neutron-openvswitch-agent                  | | |
+| | | nova                                         | | |
+| | |   nova-compute                               | | |
+| | |   nova-kvm                                   | | |
+| | | operations                                   | | |
+| | |   lifecycle-manager-target                   | | |
+| | |                                              | | |
+| | | -------------------------------------------- | | |
+| | |                                              | | |
+| | | eth1                                         | | |
+| | |   MANAGEMENT-NET (192.168.245.0/24)          | | |
+| | | eth2                                         | | |
+| | |   ARDANA-NET (192.168.10.0/24)                  | | |
+| | | eth3                                         | | |
+| | |   EXTERNAL-VM-NET                            | | |
+| | |                                              | | |
+| | +----------------------------------------------+ | |
+| +--------------------------------------------------+ |
+|                                                      |
++------------------------------------------------------+
+

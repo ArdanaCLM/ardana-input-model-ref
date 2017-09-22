@@ -1,0 +1,36 @@
+swobj1:
+  cp_name: control-plane-1
+  member_id: 1
+  resource_name: swobj
+  state: allocated
+  type: resource
+swobj2:
+  cp_name: control-plane-1
+  member_id: 2
+  resource_name: swobj
+  state: allocated
+  type: resource
+swobj3:
+  cp_name: control-plane-1
+  member_id: 3
+  resource_name: swobj
+  state: allocated
+  type: resource
+swpac1:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 1
+  state: allocated
+  type: cluster
+swpac2:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 2
+  state: allocated
+  type: cluster
+swpac3:
+  cluster_name: swpac
+  cp_name: control-plane-1
+  member_id: 3
+  state: allocated
+  type: cluster

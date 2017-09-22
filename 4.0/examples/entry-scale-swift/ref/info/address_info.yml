@@ -1,0 +1,70 @@
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        10.0.1.2:
+        - ardana-cp1-c1-m1-extapi
+        10.0.1.3:
+        - ardana-cp1-c1-m2-extapi
+        10.0.1.4:
+        - ardana-cp1-c1-m3-extapi
+        10.0.1.5:
+        - ardana-cp1-vip-public-CEI-API-extapi
+        - ardana-cp1-vip-public-FRE-API-extapi
+        - ardana-cp1-vip-public-HUX-SVC-extapi
+        - ardana-cp1-vip-public-HZN-WEB-extapi
+        - ardana-cp1-vip-public-KEY-API-extapi
+        - ardana-cp1-vip-public-LOG-API-extapi
+        - ardana-cp1-vip-public-MON-API-extapi
+        - ardana-cp1-vip-public-OPS-WEB-extapi
+        - ardana-cp1-vip-public-SWF-PRX-extapi
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.241.17.11:
+        - ardana-cp1-c1-m1-mgmt
+        10.241.17.12:
+        - ardana-cp1-c1-m2-mgmt
+        10.241.17.13:
+        - ardana-cp1-c1-m3-mgmt
+        10.241.17.14:
+        - ardana-cp1-swobj0001-mgmt
+        10.241.17.15:
+        - ardana-cp1-swobj0002-mgmt
+        10.241.17.16:
+        - ardana-cp1-swobj0003-mgmt
+        10.241.17.2:
+        - ardana-cp1-vip-CEI-API-mgmt
+        - ardana-cp1-vip-FND-MDB-mgmt
+        - ardana-cp1-vip-FND-VDB-mgmt
+        - ardana-cp1-vip-FRE-API-mgmt
+        - ardana-cp1-vip-HUX-SVC-mgmt
+        - ardana-cp1-vip-HZN-WEB-mgmt
+        - ardana-cp1-vip-KEY-API-mgmt
+        - ardana-cp1-vip-LOG-API-mgmt
+        - ardana-cp1-vip-LOG-SVR-mgmt
+        - ardana-cp1-vip-MON-API-mgmt
+        - ardana-cp1-vip-OPS-WEB-mgmt
+        - ardana-cp1-vip-SWF-PRX-mgmt
+        - ardana-cp1-vip-admin-CEI-API-mgmt
+        - ardana-cp1-vip-admin-FND-MDB-mgmt
+        - ardana-cp1-vip-admin-FRE-API-mgmt
+        - ardana-cp1-vip-admin-HUX-SVC-mgmt
+        - ardana-cp1-vip-admin-HZN-WEB-mgmt
+        - ardana-cp1-vip-admin-KEY-API-mgmt
+        - ardana-cp1-vip-admin-LOG-API-mgmt
+        - ardana-cp1-vip-admin-LOG-SVR-mgmt
+        - ardana-cp1-vip-admin-MON-API-mgmt
+        - ardana-cp1-vip-admin-OPS-WEB-mgmt
+        - ardana-cp1-vip-admin-SWF-PRX-mgmt
+SWIFT:
+    SWIFT-NET:
+        10.1.1.2:
+        - ardana-cp1-c1-m1-swift
+        10.1.1.3:
+        - ardana-cp1-c1-m2-swift
+        10.1.1.4:
+        - ardana-cp1-c1-m3-swift
+        10.1.1.5:
+        - ardana-cp1-swobj0001-swift
+        10.1.1.6:
+        - ardana-cp1-swobj0002-swift
+        10.1.1.7:
+        - ardana-cp1-swobj0003-swift

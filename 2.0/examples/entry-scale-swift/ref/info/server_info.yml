@@ -1,0 +1,96 @@
+swobj1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-swobj0001-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.17.14
+                tagged-vlan: false
+                vlan-id: 100
+            SWIFT-NET:
+                addr: 10.1.1.5
+                tagged-vlan: true
+                vlan-id: 102
+    state: allocated
+swobj2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-swobj0002-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.17.15
+                tagged-vlan: false
+                vlan-id: 100
+            SWIFT-NET:
+                addr: 10.1.1.6
+                tagged-vlan: true
+                vlan-id: 102
+    state: allocated
+swobj3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-swobj0003-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.17.16
+                tagged-vlan: false
+                vlan-id: 100
+            SWIFT-NET:
+                addr: 10.1.1.7
+                tagged-vlan: true
+                vlan-id: 102
+    state: allocated
+swpac1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-c1-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.0.1.2
+                tagged-vlan: true
+                vlan-id: 101
+            MANAGEMENT-NET:
+                addr: 10.241.17.11
+                tagged-vlan: false
+                vlan-id: 100
+            SWIFT-NET:
+                addr: 10.1.1.2
+                tagged-vlan: true
+                vlan-id: 102
+    state: allocated
+swpac2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-c1-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.0.1.3
+                tagged-vlan: true
+                vlan-id: 101
+            MANAGEMENT-NET:
+                addr: 10.241.17.12
+                tagged-vlan: false
+                vlan-id: 100
+            SWIFT-NET:
+                addr: 10.1.1.3
+                tagged-vlan: true
+                vlan-id: 102
+    state: allocated
+swpac3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-c1-m3-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.0.1.4
+                tagged-vlan: true
+                vlan-id: 101
+            MANAGEMENT-NET:
+                addr: 10.241.17.13
+                tagged-vlan: false
+                vlan-id: 100
+            SWIFT-NET:
+                addr: 10.1.1.4
+                tagged-vlan: true
+                vlan-id: 102
+    state: allocated

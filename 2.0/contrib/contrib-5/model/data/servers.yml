@@ -1,0 +1,534 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  baremetal:
+    # NOTE: These values need to be changed to match your environment.
+    # Define the network range that contains the ip-addr values for
+    # the individual servers listed below.
+    subnet: 192.168.34.0
+    netmask: 255.255.255.0
+
+  servers:
+    # NOTE: Addresses of servers need to be changed to match your environment.
+    #
+    #       Add additional servers as required
+    #
+    
+    #Lifecycle-manager
+    - id: lifecycle-manager
+      ip-addr: 192.168.54.20
+      role: LIFECYCLE-MANAGER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_8PORT
+      # ipmi information is not needed
+
+    # Controllers
+    - id: controller1
+      ip-addr: 192.168.54.21
+      role: CONTROLLER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_10PORT
+      mac-addr: 3c:a8:2a:1c:b4:74
+      ilo-ip: 192.168.53.11
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: controller2
+      ip-addr: 192.168.54.22
+      role: CONTROLLER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_10PORT
+      mac-addr: 3c:a8:2a:1d:63:40
+      ilo-ip: 192.168.53.12
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: controller3
+      ip-addr: 192.168.54.23
+      role: CONTROLLER-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_10PORT
+      mac-addr: 3c:a8:2a:1c:79:3c
+      ilo-ip: 192.168.53.13
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: mon1
+      ip-addr: 192.168.54.26
+      role: MTRMON-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:c2:a4
+      ilo-ip: 192.168.53.25
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: mon2
+      ip-addr: 192.168.54.27
+      role: MTRMON-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:1d:58
+      ilo-ip: 192.168.53.22
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: mon3
+      ip-addr: 192.168.54.28
+      role: MTRMON-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:70:c8
+      ilo-ip: 192.168.53.21
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    # Compute Nodes
+    - id: compute1
+      ip-addr: 192.168.54.31
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:02:30
+      ilo-ip: 192.168.53.30
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: compute2
+      ip-addr: 192.168.54.32
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:8f:58
+      ilo-ip: 192.168.53.31
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: compute3
+      ip-addr: 192.168.54.33
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:00:00
+      ilo-ip: 192.168.53.32
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: compute4
+      ip-addr: 192.168.54.34
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:0d:80
+      ilo-ip: 192.168.53.33
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: compute5
+      ip-addr: 192.168.54.35
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:12:44
+      ilo-ip: 192.168.53.34
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: compute6
+      ip-addr: 192.168.54.36
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:02:58
+      ilo-ip: 192.168.53.35
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: compute7
+      ip-addr: 192.168.54.37
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:fc:c8
+      ilo-ip: 192.168.53.36
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: compute8
+      ip-addr: 192.168.54.38
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:02:c8
+      ilo-ip: 192.168.53.37
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: compute9
+      ip-addr: 192.168.54.39
+      role: COMPUTE-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:12:fc
+      ilo-ip: 192.168.53.38
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: paascompute1
+      ip-addr: 192.168.54.40
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:61:78
+      ilo-ip: 192.168.53.61
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute2
+      ip-addr: 192.168.54.41
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:2f:7c
+      ilo-ip: 192.168.53.62
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute3
+      ip-addr: 192.168.54.42
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:1e:1c
+      ilo-ip: 192.168.53.63
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute4
+      ip-addr: 192.168.54.43
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:fc:f0
+      ilo-ip: 192.168.53.64
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute5
+      ip-addr: 192.168.54.44
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:61:30
+      ilo-ip: 192.168.53.65
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute6
+      ip-addr: 192.168.54.45
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:7b:a8
+      ilo-ip: 192.168.53.66
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute7
+      ip-addr: 192.168.54.46
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:7d:30
+      ilo-ip: 192.168.53.67
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute8
+      ip-addr: 192.168.54.47
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:41:d4
+      ilo-ip: 192.168.53.68
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute9
+      ip-addr: 192.168.54.48
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:db:b0
+      ilo-ip: 192.168.53.69
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute10
+      ip-addr: 192.168.54.49
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:9f:18
+      ilo-ip: 192.168.53.70
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute11
+      ip-addr: 192.168.54.50
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:87:28
+      ilo-ip: 192.168.53.71
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute12
+      ip-addr: 192.168.54.51
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:4b:dc
+      ilo-ip: 192.168.53.72
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute13
+      ip-addr: 192.168.54.52
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:60:28
+      ilo-ip: 192.168.53.73
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute14
+      ip-addr: 192.168.54.53
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:6b:a4
+      ilo-ip: 192.168.53.74
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: paascompute15
+      ip-addr: 192.168.54.54
+      role: PAAS-COMPUTE-ROLE
+      server-group: RACK5
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:8b:b4
+      ilo-ip: 192.168.53.75
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev1
+      ip-addr: 192.168.54.55
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:c0:44
+      ilo-ip: 192.168.53.39
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev2
+      ip-addr: 192.168.54.56
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:ef:c0
+      ilo-ip: 192.168.53.40
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev3
+      ip-addr: 192.168.54.57
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:f1:1c
+      ilo-ip: 192.168.53.41
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev4
+      ip-addr: 192.168.54.58
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:fc:e8
+      ilo-ip: 192.168.53.42
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev5
+      ip-addr: 192.168.54.59
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:50:a0
+      ilo-ip: 192.168.53.43
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev6
+      ip-addr: 192.168.54.60
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:fc:68
+      ilo-ip: 192.168.53.44
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev7
+      ip-addr: 192.168.54.61
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:17:80
+      ilo-ip: 192.168.53.45
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev8
+      ip-addr: 192.168.54.62
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1d:02:04
+      ilo-ip: 192.168.53.46
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: computedev9
+      ip-addr: 192.168.54.63
+      role: COMPUTE-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_12PORT
+      mac-addr: 3c:a8:2a:1c:0f:6c
+      ilo-ip: 192.168.53.47
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+
+    # Ceph OSD Nodes
+    - id: osd1
+      ip-addr: 192.168.54.67
+      role: OSD-ROLE
+      server-group: RACK4
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:2a:f8
+      ilo-ip: 192.168.53.52
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: osd2
+      ip-addr: 192.168.54.68
+      role: OSD-ROLE
+      server-group: RACK4
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:1a:f0
+      ilo-ip: 192.168.53.53
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: osd3
+      ip-addr: 192.168.54.69
+      role: OSD-ROLE
+      server-group: RACK4
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:b9:90
+      ilo-ip: 192.168.53.54
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: osd4
+      ip-addr: 192.168.54.70
+      role: OSD-ROLE
+      server-group: RACK4
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:96:18
+      ilo-ip: 192.168.53.55
+      ilo-password: ardana1.0!
+      ilo-user: admin
+
+    - id: osd5
+      ip-addr: 192.168.54.71
+      role: OSD-ROLE
+      server-group: RACK4
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:b9:78
+      ilo-ip: 192.168.53.56
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: cephmon1
+      ip-addr: 192.168.54.64
+      role: CEPH-MON-ROLE
+      server-group: RACK4
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:ad:10
+      ilo-ip: 192.168.53.48
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: cephmon2
+      ip-addr: 192.168.54.65
+      role: CEPH-MON-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:0f:a0
+      ilo-ip: 192.168.53.49
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: cephmon3
+      ip-addr: 192.168.54.66
+      role: CEPH-MON-ROLE
+      server-group: RACK3
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1c:27:34
+      ilo-ip: 192.168.53.50
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: swpaco1
+      ip-addr: 192.168.54.24
+      role: SWPACO-ROLE
+      server-group: RACK1
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:1d:ad:38
+      ilo-ip: 192.168.53.14
+      ilo-password: ardana1.0!
+      ilo-user: admin
+      
+    - id: swpaco2
+      ip-addr: 192.168.54.25
+      role: SWPACO-ROLE
+      server-group: RACK2
+      nic-mapping: ARDANA_DL_8PORT
+      mac-addr: 3c:a8:2a:0e:22:68
+      ilo-ip: 192.168.53.15
+      ilo-password: ardana1.0!
+      ilo-user: admin

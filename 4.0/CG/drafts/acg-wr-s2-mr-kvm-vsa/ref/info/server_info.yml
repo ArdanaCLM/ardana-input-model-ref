@@ -1,0 +1,212 @@
+controller1:
+    failure-zone: AZ1
+    hostname: hcg-cp1-controller-m1-clm
+    net_data:
+        hed1:
+            BLS-NET:
+                addr: 10.244.47.14
+                tagged-vlan: true
+                vlan-id: 3537
+            CAN-NET:
+                addr: 10.244.45.12
+                tagged-vlan: true
+                vlan-id: 3535
+            CLM-NET:
+                addr: 10.244.44.14
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.105
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+controller2:
+    failure-zone: AZ2
+    hostname: hcg-cp1-controller-m2-clm
+    net_data:
+        hed1:
+            BLS-NET:
+                addr: 10.244.47.15
+                tagged-vlan: true
+                vlan-id: 3537
+            CAN-NET:
+                addr: 10.244.45.13
+                tagged-vlan: true
+                vlan-id: 3535
+            CLM-NET:
+                addr: 10.244.44.15
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.106
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+controller3:
+    failure-zone: AZ2
+    hostname: hcg-cp1-controller-m3-clm
+    net_data:
+        hed1:
+            BLS-NET:
+                addr: 10.244.47.16
+                tagged-vlan: true
+                vlan-id: 3537
+            CAN-NET:
+                addr: 10.244.45.14
+                tagged-vlan: true
+                vlan-id: 3535
+            CLM-NET:
+                addr: 10.244.44.16
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.107
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+hypervisor1:
+    failure-zone: AZ1
+    hostname: hcg-cp1-alm-hyp-m1-clm
+    net_data:
+        BOND0:
+            BLS-NET:
+                addr: 10.244.47.12
+                tagged-vlan: true
+                vlan-id: 3537
+            CAN-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3535
+            CLM-NET:
+                addr: 10.244.44.12
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.102
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+hypervisor2:
+    failure-zone: AZ2
+    hostname: hcg-cp1-alm-hyp-m2-clm
+    net_data:
+        BOND0:
+            BLS-NET:
+                addr: 10.244.47.13
+                tagged-vlan: true
+                vlan-id: 3537
+            CAN-NET:
+                addr: null
+                tagged-vlan: true
+                vlan-id: 3535
+            CLM-NET:
+                addr: 10.244.44.13
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.103
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+mml1:
+    failure-zone: AZ1
+    hostname: hcg-cp1-mml-m1-clm
+    net_data:
+        hed1:
+            CLM-NET:
+                addr: 10.244.44.20
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.111
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+mml2:
+    failure-zone: AZ2
+    hostname: hcg-cp1-mml-m2-clm
+    net_data:
+        hed1:
+            CLM-NET:
+                addr: 10.244.44.21
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.112
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+mml3:
+    failure-zone: AZ2
+    hostname: hcg-cp1-mml-m3-clm
+    net_data:
+        hed1:
+            CLM-NET:
+                addr: 10.244.44.22
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.113
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+rmq-mysql1:
+    failure-zone: AZ1
+    hostname: hcg-cp1-rmq-mysql-m1-clm
+    net_data:
+        hed1:
+            CLM-NET:
+                addr: 10.244.44.17
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.108
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+rmq-mysql2:
+    failure-zone: AZ2
+    hostname: hcg-cp1-rmq-mysql-m2-clm
+    net_data:
+        hed1:
+            CLM-NET:
+                addr: 10.244.44.18
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.109
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+rmq-mysql3:
+    failure-zone: AZ2
+    hostname: hcg-cp1-rmq-mysql-m3-clm
+    net_data:
+        hed1:
+            CLM-NET:
+                addr: 10.244.44.19
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.110
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: hcg-cp1-vsa0001-clm
+    net_data:
+        BOND0:
+            BLS-NET:
+                addr: 10.244.47.17
+                tagged-vlan: true
+                vlan-id: 3537
+            CLM-NET:
+                addr: 10.244.44.23
+                tagged-vlan: true
+                vlan-id: 3534
+            PXE-NET:
+                addr: 10.244.43.117
+                tagged-vlan: false
+                vlan-id: 3533
+    state: allocated

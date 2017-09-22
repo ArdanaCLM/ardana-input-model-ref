@@ -1,0 +1,107 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  disk-models:
+  - name: MTRMON-DISKS
+
+    # This example is based on using a single 500GB disk for a volume
+    # group that contains all file systems on a controller with 64GB
+    # of memory.
+    #
+    # Additional disks can be added to the 'physical-volumes' section.
+    # 
+    #
+
+    volume-groups:
+      - name: ardana-vg
+        physical-volumes:
+
+          # NOTE: 'sda_root' is a templated value. This value is checked in
+          # os-config and replaced by the partition actually used on sda
+          #e.g. sda1 or sda5
+          - /dev/sda_root
+
+          # Add any additional disks for the volume group here
+          # -/dev/sdx
+          # -/dev/sdy
+
+        logical-volumes:
+          # The policy is not to consume 100% of the space of each volume group.
+          # 5% should be left free for snapshots and to allow for some flexibility.
+
+          - name: root
+            size: 95%
+            fstype: ext4
+            mount: /
+
+        consumer:
+           name: os
+
+      - name: ardana-log
+        physical-volumes:
+
+          # Dedicated volume group and disks for the logging and monitoring
+          - /dev/sdb
+#          - /dev/sdc
+#          - /dev/sdd
+
+        logical-volumes:
+
+          # Local Log files.
+          - name: log
+            size: 15%
+            mount: /var/log
+            fstype: ext4
+            mkfs-opts: -O large_file
+
+          # Database storage for event monitoring (Monasca).  Events are generally
+          # small data objects.
+          - name: vertica
+            size: 8%
+            mount: /var/vertica
+            fstype: ext4
+            mkfs-opts: -O large_file
+            consumer:
+              name: vertica
+
+          # Messaging system for monitoring.
+          - name: kafka
+            size: 6%
+            mount: /var/kafka
+            fstype: ext4
+            mkfs-opts: -O large_file
+            consumer:
+              name: kafka
+
+          # Data storage for centralized logging. This holds log entries from all
+          # servers in the cloud and hence can require a lot of disk space.
+          - name: elasticsearch
+            size: 60%
+            mount: /var/lib/elasticsearch
+            fstype: ext4
+
+          # Zookeeper is used to provide cluster co-ordination in the monitoring
+          # system.  Although not a high user of disc space we have seen issues 
+          # with zookeeper snapshots filling up filesystems so we keep it in its
+          # own space for stability. 
+          - name: zookeeper
+            size: 6%
+            mount: /var/lib/zookeeper
+            fstype: ext4

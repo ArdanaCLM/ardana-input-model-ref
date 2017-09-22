@@ -1,0 +1,85 @@
+#
+# (c) Copyright 2015 Hewlett Packard Enterprise Development Company LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+
+  networks:
+    #
+    # This example uses the following networks
+    #
+    # Network       CIDR             VLAN
+    # -------       ----             ----
+    # External API  10.0.1.0/24      101 (tagged)
+    # External VM   see note 1       102 (tagged)
+    # Guest         10.1.1.0/24      103 (tagged)
+    # Mgmt          10.2.1.0/24      100 (untagged)
+    #
+    # Notes:
+    # 1. Defined as part of Neutron configuration
+    #
+    # vlan-389- 10.241.67.0/24 one untagged routed VLAN of size /24 – "Management VLAN for IPC-1 Environment"
+    # vlan-390- 10.243.192.0/20 one tagged routed VLAN of size /20 – "External VLAN for IPC-1 Environment"
+    # vlan-391- 10.241.72.0/24 one tagged routed VLAN of size /24 – "Service VLAN for IPC-1 Environment"
+    # vlan-574- 10.243.188.0/24 one tagged routed VLAN of size /24 – "VXLAN VLAN for IPC-1"
+    # vlan-575- 10.243.189.0/24 one tagged routed VLAN of size /24 – "API VLAN for IPC-1"
+    #
+    - name: EXTERNAL-API-NET
+      vlanid: 575
+      tagged-vlan: true
+      cidr: 10.243.189.0/24
+      start-address: 10.243.189.4
+      end-address: 10.243.189.254
+      gateway-ip: 10.243.189.1
+      network-group: EXTERNAL-API
+
+    - name: EXTERNAL-VM-NET
+      vlanid: 390
+      tagged-vlan: true
+      cidr: 10.243.192.0/20
+      start-address: 10.243.192.4
+      end-address: 10.243.207.254
+      gateway-ip: 10.243.192.1
+      network-group: EXTERNAL-VM
+
+    - name: GUEST-NET
+      vlanid: 574
+      tagged-vlan: true
+      cidr: 10.243.188.0/24
+      start-address: 10.243.188.4
+      end-address: 10.243.188.254
+      gateway-ip: 10.243.188.1
+      network-group: GUEST
+
+    - name: MANAGEMENT-NET
+      vlanid: 389
+      tagged-vlan: false
+      cidr: 10.241.67.0/24
+      start-address: 10.241.67.4
+      end-address: 10.241.67.254
+      gateway-ip: 10.241.67.1
+      network-group: MANAGEMENT
+
+    - name: SERVICE-NET
+      vlanid: 391
+      tagged-vlan: true
+      cidr: 10.241.72.0/24
+      start-address: 10.241.72.4
+      end-address: 10.241.72.254
+      gateway-ip: 10.241.72.1
+      network-group: SERVICE
+

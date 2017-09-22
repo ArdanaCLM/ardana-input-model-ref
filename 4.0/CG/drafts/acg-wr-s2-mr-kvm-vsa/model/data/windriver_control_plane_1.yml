@@ -1,0 +1,63 @@
+#
+# (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+# (c) Copyright 2017 SUSE LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License"); you may
+# not use this file except in compliance with the License. You may obtain
+# a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+# License for the specific language governing permissions and limitations
+# under the License.
+#
+---
+  product:
+    version: 2
+  control-planes:
+    - name: wr1
+      control-plane-prefix: wr1
+      uses:
+        - from: cp1
+          service-components:
+            - glance-api
+            - keystone-api
+            - cinder-api
+            # These services are needed by lifecycle-manager-target
+            - lifecycle-manager
+      common-service-components:
+            # This service must be installed to avoid Ardana OpenStack errors
+            - lifecycle-manager-target
+      configuration-data:
+        - WINDRIVER-CONFIG-1
+      load-balancers:
+        - provider: windriver-consumer
+          name: wr-lb
+          components:
+            - default
+          roles:
+            - internal
+            - admin
+        - provider: windriver-consumer
+          name: wr-extlb
+          #external-name: myardana-wr1.test
+          tls-components:
+            - default
+          roles:
+            - public
+          cert-file: my-public-cert-wr1
+      clusters:
+        - name: cluster1
+          cluster-prefix: c1
+          server-role: WR-ROLE
+          min-count: 0
+          allocation-policy: strict
+          use-localhost: True
+          service-components:
+            - windriver-consumer
+            # Include the WRV service below when
+            # WRV 3rd party plugin is imported
+#            - windriver-config

@@ -1,0 +1,143 @@
+EXTERNAL_API:
+    NET_EXTERNAL_API:
+        100.100.60.225:
+        - ardana-control-plane-cluster1-m1-extapi
+        100.100.60.226:
+        - ardana-control-plane-cluster1-m2-extapi
+        100.100.60.227:
+        - ardana-control-plane-cluster1-m3-extapi
+        100.100.60.228:
+        - ardana-control-plane-vip-public-CEI-API-extapi
+        - ardana-control-plane-vip-public-CND-API-extapi
+        - ardana-control-plane-vip-public-FRE-API-extapi
+        - ardana-control-plane-vip-public-GLA-API-extapi
+        - ardana-control-plane-vip-public-HEA-ACF-extapi
+        - ardana-control-plane-vip-public-HEA-ACW-extapi
+        - ardana-control-plane-vip-public-HEA-API-extapi
+        - ardana-control-plane-vip-public-HZN-WEB-extapi
+        - ardana-control-plane-vip-public-KEY-API-extapi
+        - ardana-control-plane-vip-public-MON-API-extapi
+        - ardana-control-plane-vip-public-NEU-SVR-extapi
+        - ardana-control-plane-vip-public-NOV-API-extapi
+        - ardana-control-plane-vip-public-NOV-VNC-extapi
+        - ardana-control-plane-vip-public-OPS-WEB-extapi
+        - ardana-control-plane-vip-public-SHP-API-extapi
+        - ardana-control-plane-vip-public-SWF-PRX-extapi
+ARDANA:
+    NET_ARDANA:
+        10.10.206.66:
+        - ardana-control-plane-cluster1-m2-alm
+        10.10.206.67:
+        - ardana-control-plane-cluster1-m3-alm
+        10.10.206.68:
+        - ardana-control-plane-comp0001-alm
+        10.10.206.69:
+        - ardana-control-plane-comp0002-alm
+        10.10.206.70:
+        - ardana-control-plane-comp0003-alm
+        10.10.206.71:
+        - ardana-control-plane-comp0004-alm
+        10.10.206.72:
+        - ardana-control-plane-vsa0001-alm
+        10.10.206.73:
+        - ardana-control-plane-vsa0002-alm
+        10.10.206.74:
+        - ardana-control-plane-vsa0003-alm
+        10.10.206.75:
+        - ardana-control-plane-cluster1-m1-alm
+        10.10.206.76:
+        - ardana-control-plane-comp0005-alm
+        10.10.206.77:
+        - ardana-control-plane-comp0006-alm
+ISCSI:
+    NET_ISCSI:
+        101.0.0.34:
+        - ardana-control-plane-cluster1-m1-iscsi
+        101.0.0.35:
+        - ardana-control-plane-cluster1-m2-iscsi
+        101.0.0.36:
+        - ardana-control-plane-cluster1-m3-iscsi
+        101.0.0.37:
+        - ardana-control-plane-vsa0001-iscsi
+        101.0.0.38:
+        - ardana-control-plane-vsa0001-VSA-BLK-iscsi
+        101.0.0.39:
+        - ardana-control-plane-vsa-VSA-BLK-iscsi
+        101.0.0.40:
+        - ardana-control-plane-vsa0002-iscsi
+        101.0.0.41:
+        - ardana-control-plane-vsa0002-VSA-BLK-iscsi
+        101.0.0.42:
+        - ardana-control-plane-vsa0003-iscsi
+        101.0.0.43:
+        - ardana-control-plane-vsa0003-VSA-BLK-iscsi
+        101.0.0.44:
+        - ardana-control-plane-comp0001-iscsi
+        101.0.0.45:
+        - ardana-control-plane-comp0002-iscsi
+        101.0.0.46:
+        - ardana-control-plane-comp0003-iscsi
+        101.0.0.47:
+        - ardana-control-plane-comp0004-iscsi
+        101.0.0.48:
+        - ardana-control-plane-comp0005-iscsi
+        101.0.0.49:
+        - ardana-control-plane-comp0006-iscsi
+MGMT:
+    NET_MGMT:
+        100.100.60.65:
+        - ardana-control-plane-cluster1-m1-mgmt
+        100.100.60.66:
+        - ardana-control-plane-cluster1-m2-mgmt
+        100.100.60.67:
+        - ardana-control-plane-cluster1-m3-mgmt
+        100.100.60.68:
+        - ardana-control-plane-vsa0001-mgmt
+        100.100.60.69:
+        - ardana-control-plane-vsa0002-mgmt
+        100.100.60.70:
+        - ardana-control-plane-vsa0003-mgmt
+        100.100.60.71:
+        - ardana-control-plane-comp0001-mgmt
+        100.100.60.72:
+        - ardana-control-plane-comp0002-mgmt
+        100.100.60.73:
+        - ardana-control-plane-comp0003-mgmt
+        100.100.60.74:
+        - ardana-control-plane-comp0004-mgmt
+        100.100.60.75:
+        - ardana-control-plane-comp0005-mgmt
+        100.100.60.76:
+        - ardana-control-plane-comp0006-mgmt
+        100.100.60.77:
+        - ardana-control-plane-vip-CEI-API-mgmt
+        - ardana-control-plane-vip-CND-API-mgmt
+        - ardana-control-plane-vip-FND-MDB-mgmt
+        - ardana-control-plane-vip-FND-RMQ-mgmt
+        - ardana-control-plane-vip-FND-VDB-mgmt
+        - ardana-control-plane-vip-FRE-API-mgmt
+        - ardana-control-plane-vip-GLA-API-mgmt
+        - ardana-control-plane-vip-GLA-REG-mgmt
+        - ardana-control-plane-vip-HEA-ACF-mgmt
+        - ardana-control-plane-vip-HEA-ACW-mgmt
+        - ardana-control-plane-vip-HEA-API-mgmt
+        - ardana-control-plane-vip-HZN-WEB-mgmt
+        - ardana-control-plane-vip-KEY-API-mgmt
+        - ardana-control-plane-vip-LOG-SVR-mgmt
+        - ardana-control-plane-vip-MON-API-mgmt
+        - ardana-control-plane-vip-NEU-SVR-mgmt
+        - ardana-control-plane-vip-NOV-API-mgmt
+        - ardana-control-plane-vip-NOV-MTD-mgmt
+        - ardana-control-plane-vip-OPS-WEB-mgmt
+        - ardana-control-plane-vip-SHP-API-mgmt
+        - ardana-control-plane-vip-SWF-PRX-mgmt
+        - ardana-control-plane-vip-admin-CEI-API-mgmt
+        - ardana-control-plane-vip-admin-CND-API-mgmt
+        - ardana-control-plane-vip-admin-FND-MDB-mgmt
+        - ardana-control-plane-vip-admin-FRE-API-mgmt
+        - ardana-control-plane-vip-admin-GLA-API-mgmt
+        - ardana-control-plane-vip-admin-KEY-API-mgmt
+        - ardana-control-plane-vip-admin-NEU-SVR-mgmt
+        - ardana-control-plane-vip-admin-NOV-API-mgmt
+        - ardana-control-plane-vip-admin-SHP-API-mgmt
+        - ardana-control-plane-vip-admin-SWF-PRX-mgmt

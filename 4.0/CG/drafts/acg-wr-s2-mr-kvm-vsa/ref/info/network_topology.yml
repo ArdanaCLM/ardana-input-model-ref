@@ -1,0 +1,116 @@
+network_groups:
+    BLS:
+        BLS-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.47.14
+                                hcg-cp1-controller-m2: 10.244.47.15
+                                hcg-cp1-controller-m3: 10.244.47.16
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: 10.244.47.12
+                                hcg-cp1-alm-hyp-m2: 10.244.47.13
+                    resources:
+                        vsa:
+                            servers:
+                                hcg-cp1-vsa0001: 10.244.47.17
+                            service_ips:
+                                vsa:
+                                    hosts:
+                                        hcg-cp1-vsa0001: 10.244.47.18
+                                    vip: 10.244.47.19
+        BLS-WR-1:
+            control_planes: {}
+        BLS-WR-2:
+            control_planes: {}
+    CAN:
+        CAN-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.45.12
+                                hcg-cp1-controller-m2: 10.244.45.13
+                                hcg-cp1-controller-m3: 10.244.45.14
+                            vips:
+                                10.244.45.15: extlb
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: null
+                                hcg-cp1-alm-hyp-m2: null
+        CAN-WR-1:
+            control_planes: {}
+        CAN-WR-2:
+            control_planes: {}
+    CLM:
+        CLM-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.44.14
+                                hcg-cp1-controller-m2: 10.244.44.15
+                                hcg-cp1-controller-m3: 10.244.44.16
+                            vips:
+                                10.244.44.24: lb
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: 10.244.44.12
+                                hcg-cp1-alm-hyp-m2: 10.244.44.13
+                        mml:
+                            servers:
+                                hcg-cp1-mml-m1: 10.244.44.20
+                                hcg-cp1-mml-m2: 10.244.44.21
+                                hcg-cp1-mml-m3: 10.244.44.22
+                        rmq-mysql:
+                            servers:
+                                hcg-cp1-rmq-mysql-m1: 10.244.44.17
+                                hcg-cp1-rmq-mysql-m2: 10.244.44.18
+                                hcg-cp1-rmq-mysql-m3: 10.244.44.19
+                    resources:
+                        vsa:
+                            servers:
+                                hcg-cp1-vsa0001: 10.244.44.23
+        CLM-WR-1:
+            control_planes: {}
+        CLM-WR-2:
+            control_planes: {}
+    PXE:
+        PXE-NET:
+            control_planes:
+                cp1:
+                    clusters:
+                        controller:
+                            servers:
+                                hcg-cp1-controller-m1: 10.244.43.105
+                                hcg-cp1-controller-m2: 10.244.43.106
+                                hcg-cp1-controller-m3: 10.244.43.107
+                        ardana-hypervisor:
+                            servers:
+                                hcg-cp1-alm-hyp-m1: 10.244.43.102
+                                hcg-cp1-alm-hyp-m2: 10.244.43.103
+                        mml:
+                            servers:
+                                hcg-cp1-mml-m1: 10.244.43.111
+                                hcg-cp1-mml-m2: 10.244.43.112
+                                hcg-cp1-mml-m3: 10.244.43.113
+                        rmq-mysql:
+                            servers:
+                                hcg-cp1-rmq-mysql-m1: 10.244.43.108
+                                hcg-cp1-rmq-mysql-m2: 10.244.43.109
+                                hcg-cp1-rmq-mysql-m3: 10.244.43.110
+                    resources:
+                        vsa:
+                            servers:
+                                hcg-cp1-vsa0001: 10.244.43.117
+    PXE-WR-1:
+        PXE-WR-1:
+            control_planes: {}
+    PXE-WR-2:
+        PXE-WR-2:
+            control_planes: {}

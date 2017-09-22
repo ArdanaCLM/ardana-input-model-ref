@@ -1,0 +1,371 @@
+CEPH-CLIENT:
+    CEPH-CLIENT-NET:
+        192.168.55.20:
+        - ardana-cp1-controller-m1-cephclient
+        192.168.55.21:
+        - ardana-cp1-controller-m2-cephclient
+        192.168.55.22:
+        - ardana-cp1-controller-m3-cephclient
+        192.168.55.23:
+        - ardana-cp1-ceph-mon-m1-cephclient
+        192.168.55.24:
+        - ardana-cp1-ceph-mon-m2-cephclient
+        192.168.55.25:
+        - ardana-cp1-ceph-mon-m3-cephclient
+        192.168.55.26:
+        - ardana-cp1-paas-compute-0001-cephclient
+        192.168.55.27:
+        - ardana-cp1-paas-compute-0002-cephclient
+        192.168.55.28:
+        - ardana-cp1-paas-compute-0003-cephclient
+        192.168.55.29:
+        - ardana-cp1-paas-compute-0004-cephclient
+        192.168.55.30:
+        - ardana-cp1-paas-compute-0005-cephclient
+        192.168.55.31:
+        - ardana-cp1-paas-compute-0006-cephclient
+        192.168.55.32:
+        - ardana-cp1-paas-compute-0007-cephclient
+        192.168.55.33:
+        - ardana-cp1-paas-compute-0008-cephclient
+        192.168.55.34:
+        - ardana-cp1-paas-compute-0009-cephclient
+        192.168.55.35:
+        - ardana-cp1-paas-compute-0010-cephclient
+        192.168.55.36:
+        - ardana-cp1-paas-compute-0011-cephclient
+        192.168.55.37:
+        - ardana-cp1-paas-compute-0012-cephclient
+        192.168.55.38:
+        - ardana-cp1-paas-compute-0013-cephclient
+        192.168.55.39:
+        - ardana-cp1-paas-compute-0014-cephclient
+        192.168.55.40:
+        - ardana-cp1-paas-compute-0015-cephclient
+        192.168.55.41:
+        - ardana-cp1-compute-0001-cephclient
+        192.168.55.42:
+        - ardana-cp1-compute-0002-cephclient
+        192.168.55.43:
+        - ardana-cp1-compute-0003-cephclient
+        192.168.55.44:
+        - ardana-cp1-compute-0004-cephclient
+        192.168.55.45:
+        - ardana-cp1-compute-0005-cephclient
+        192.168.55.46:
+        - ardana-cp1-compute-0006-cephclient
+        192.168.55.47:
+        - ardana-cp1-compute-0007-cephclient
+        192.168.55.48:
+        - ardana-cp1-compute-0008-cephclient
+        192.168.55.49:
+        - ardana-cp1-compute-0009-cephclient
+        192.168.55.50:
+        - ardana-cp1-compute-0010-cephclient
+        192.168.55.51:
+        - ardana-cp1-compute-0011-cephclient
+        192.168.55.52:
+        - ardana-cp1-compute-0012-cephclient
+        192.168.55.53:
+        - ardana-cp1-compute-0013-cephclient
+        192.168.55.54:
+        - ardana-cp1-compute-0014-cephclient
+        192.168.55.55:
+        - ardana-cp1-compute-0015-cephclient
+        192.168.55.56:
+        - ardana-cp1-compute-0016-cephclient
+        192.168.55.57:
+        - ardana-cp1-compute-0017-cephclient
+        192.168.55.58:
+        - ardana-cp1-compute-0018-cephclient
+        192.168.55.59:
+        - ardana-cp1-ceph0001-cephclient
+        192.168.55.60:
+        - ardana-cp1-ceph0002-cephclient
+        192.168.55.61:
+        - ardana-cp1-ceph0003-cephclient
+        192.168.55.62:
+        - ardana-cp1-ceph0004-cephclient
+        192.168.55.63:
+        - ardana-cp1-ceph0005-cephclient
+CEPH-CLUSTER:
+    CEPH-CLUSTER-NET:
+        192.168.56.20:
+        - ardana-cp1-ceph-mon-m1-cephcluster
+        192.168.56.21:
+        - ardana-cp1-ceph-mon-m2-cephcluster
+        192.168.56.22:
+        - ardana-cp1-ceph-mon-m3-cephcluster
+        192.168.56.23:
+        - ardana-cp1-ceph0001-cephcluster
+        192.168.56.24:
+        - ardana-cp1-ceph0002-cephcluster
+        192.168.56.25:
+        - ardana-cp1-ceph0003-cephcluster
+        192.168.56.26:
+        - ardana-cp1-ceph0004-cephcluster
+        192.168.56.27:
+        - ardana-cp1-ceph0005-cephcluster
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        192.168.57.20:
+        - ardana-cp1-controller-m1-extapi
+        192.168.57.21:
+        - ardana-cp1-controller-m2-extapi
+        192.168.57.22:
+        - ardana-cp1-controller-m3-extapi
+        192.168.57.23:
+        - ardana-cp1-vip-public-CEI-API-extapi
+        - ardana-cp1-vip-public-CND-API-extapi
+        - ardana-cp1-vip-public-FRE-API-extapi
+        - ardana-cp1-vip-public-GLA-API-extapi
+        - ardana-cp1-vip-public-HEA-ACF-extapi
+        - ardana-cp1-vip-public-HEA-ACW-extapi
+        - ardana-cp1-vip-public-HEA-API-extapi
+        - ardana-cp1-vip-public-HZN-WEB-extapi
+        - ardana-cp1-vip-public-KEY-API-extapi
+        - ardana-cp1-vip-public-MON-API-extapi
+        - ardana-cp1-vip-public-NEU-SVR-extapi
+        - ardana-cp1-vip-public-NOV-API-extapi
+        - ardana-cp1-vip-public-NOV-VNC-extapi
+        - ardana-cp1-vip-public-OPS-WEB-extapi
+        - ardana-cp1-vip-public-SHP-API-extapi
+        - ardana-cp1-vip-public-SWF-PRX-extapi
+ARDANA:
+    ARDANA-NET:
+        192.168.54.20:
+        - ardana-cp1-alm-m1-alm
+        192.168.54.21:
+        - ardana-cp1-controller-m1-alm
+        192.168.54.22:
+        - ardana-cp1-controller-m2-alm
+        192.168.54.23:
+        - ardana-cp1-controller-m3-alm
+        192.168.54.24:
+        - ardana-cp1-swpac-m1-alm
+        192.168.54.25:
+        - ardana-cp1-swpac-m2-alm
+        192.168.54.26:
+        - ardana-cp1-mtrmon-m1-alm
+        192.168.54.27:
+        - ardana-cp1-mtrmon-m2-alm
+        192.168.54.28:
+        - ardana-cp1-mtrmon-m3-alm
+        192.168.54.31:
+        - ardana-cp1-compute-0001-alm
+        192.168.54.32:
+        - ardana-cp1-compute-0002-alm
+        192.168.54.33:
+        - ardana-cp1-compute-0003-alm
+        192.168.54.34:
+        - ardana-cp1-compute-0004-alm
+        192.168.54.35:
+        - ardana-cp1-compute-0005-alm
+        192.168.54.36:
+        - ardana-cp1-compute-0006-alm
+        192.168.54.37:
+        - ardana-cp1-compute-0007-alm
+        192.168.54.38:
+        - ardana-cp1-compute-0008-alm
+        192.168.54.39:
+        - ardana-cp1-compute-0009-alm
+        192.168.54.40:
+        - ardana-cp1-paas-compute-0001-alm
+        192.168.54.41:
+        - ardana-cp1-paas-compute-0002-alm
+        192.168.54.42:
+        - ardana-cp1-paas-compute-0003-alm
+        192.168.54.43:
+        - ardana-cp1-paas-compute-0004-alm
+        192.168.54.44:
+        - ardana-cp1-paas-compute-0005-alm
+        192.168.54.45:
+        - ardana-cp1-paas-compute-0006-alm
+        192.168.54.46:
+        - ardana-cp1-paas-compute-0007-alm
+        192.168.54.47:
+        - ardana-cp1-paas-compute-0008-alm
+        192.168.54.48:
+        - ardana-cp1-paas-compute-0009-alm
+        192.168.54.49:
+        - ardana-cp1-paas-compute-0010-alm
+        192.168.54.50:
+        - ardana-cp1-paas-compute-0011-alm
+        192.168.54.51:
+        - ardana-cp1-paas-compute-0012-alm
+        192.168.54.52:
+        - ardana-cp1-paas-compute-0013-alm
+        192.168.54.53:
+        - ardana-cp1-paas-compute-0014-alm
+        192.168.54.54:
+        - ardana-cp1-paas-compute-0015-alm
+        192.168.54.55:
+        - ardana-cp1-compute-0010-alm
+        192.168.54.56:
+        - ardana-cp1-compute-0011-alm
+        192.168.54.57:
+        - ardana-cp1-compute-0012-alm
+        192.168.54.58:
+        - ardana-cp1-compute-0013-alm
+        192.168.54.59:
+        - ardana-cp1-compute-0014-alm
+        192.168.54.60:
+        - ardana-cp1-compute-0015-alm
+        192.168.54.61:
+        - ardana-cp1-compute-0016-alm
+        192.168.54.62:
+        - ardana-cp1-compute-0017-alm
+        192.168.54.63:
+        - ardana-cp1-compute-0018-alm
+        192.168.54.64:
+        - ardana-cp1-ceph-mon-m3-alm
+        192.168.54.65:
+        - ardana-cp1-ceph-mon-m1-alm
+        192.168.54.66:
+        - ardana-cp1-ceph-mon-m2-alm
+        192.168.54.67:
+        - ardana-cp1-ceph0001-alm
+        192.168.54.68:
+        - ardana-cp1-ceph0002-alm
+        192.168.54.69:
+        - ardana-cp1-ceph0003-alm
+        192.168.54.70:
+        - ardana-cp1-ceph0004-alm
+        192.168.54.71:
+        - ardana-cp1-ceph0005-alm
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.40.10.20:
+        - ardana-cp1-alm-m1-mgmt
+        10.40.10.21:
+        - ardana-cp1-controller-m1-mgmt
+        10.40.10.22:
+        - ardana-cp1-controller-m2-mgmt
+        10.40.10.23:
+        - ardana-cp1-controller-m3-mgmt
+        10.40.10.24:
+        - ardana-cp1-mtrmon-m1-mgmt
+        10.40.10.25:
+        - ardana-cp1-mtrmon-m2-mgmt
+        10.40.10.26:
+        - ardana-cp1-mtrmon-m3-mgmt
+        10.40.10.27:
+        - ardana-cp1-swpac-m1-mgmt
+        10.40.10.28:
+        - ardana-cp1-swpac-m2-mgmt
+        10.40.10.29:
+        - ardana-cp1-ceph-mon-m1-mgmt
+        10.40.10.30:
+        - ardana-cp1-ceph-mon-m2-mgmt
+        10.40.10.31:
+        - ardana-cp1-ceph-mon-m3-mgmt
+        10.40.10.32:
+        - ardana-cp1-paas-compute-0001-mgmt
+        10.40.10.33:
+        - ardana-cp1-paas-compute-0002-mgmt
+        10.40.10.34:
+        - ardana-cp1-paas-compute-0003-mgmt
+        10.40.10.35:
+        - ardana-cp1-paas-compute-0004-mgmt
+        10.40.10.36:
+        - ardana-cp1-paas-compute-0005-mgmt
+        10.40.10.37:
+        - ardana-cp1-paas-compute-0006-mgmt
+        10.40.10.38:
+        - ardana-cp1-paas-compute-0007-mgmt
+        10.40.10.39:
+        - ardana-cp1-paas-compute-0008-mgmt
+        10.40.10.40:
+        - ardana-cp1-paas-compute-0009-mgmt
+        10.40.10.41:
+        - ardana-cp1-paas-compute-0010-mgmt
+        10.40.10.42:
+        - ardana-cp1-paas-compute-0011-mgmt
+        10.40.10.43:
+        - ardana-cp1-paas-compute-0012-mgmt
+        10.40.10.44:
+        - ardana-cp1-paas-compute-0013-mgmt
+        10.40.10.45:
+        - ardana-cp1-paas-compute-0014-mgmt
+        10.40.10.46:
+        - ardana-cp1-paas-compute-0015-mgmt
+        10.40.10.47:
+        - ardana-cp1-compute-0001-mgmt
+        10.40.10.48:
+        - ardana-cp1-compute-0002-mgmt
+        10.40.10.49:
+        - ardana-cp1-compute-0003-mgmt
+        10.40.10.50:
+        - ardana-cp1-compute-0004-mgmt
+        10.40.10.51:
+        - ardana-cp1-compute-0005-mgmt
+        10.40.10.52:
+        - ardana-cp1-compute-0006-mgmt
+        10.40.10.53:
+        - ardana-cp1-compute-0007-mgmt
+        10.40.10.54:
+        - ardana-cp1-compute-0008-mgmt
+        10.40.10.55:
+        - ardana-cp1-compute-0009-mgmt
+        10.40.10.56:
+        - ardana-cp1-compute-0010-mgmt
+        10.40.10.57:
+        - ardana-cp1-compute-0011-mgmt
+        10.40.10.58:
+        - ardana-cp1-compute-0012-mgmt
+        10.40.10.59:
+        - ardana-cp1-compute-0013-mgmt
+        10.40.10.60:
+        - ardana-cp1-compute-0014-mgmt
+        10.40.10.61:
+        - ardana-cp1-compute-0015-mgmt
+        10.40.10.62:
+        - ardana-cp1-compute-0016-mgmt
+        10.40.10.63:
+        - ardana-cp1-compute-0017-mgmt
+        10.40.10.64:
+        - ardana-cp1-compute-0018-mgmt
+        10.40.10.65:
+        - ardana-cp1-ceph0001-mgmt
+        10.40.10.66:
+        - ardana-cp1-ceph0002-mgmt
+        10.40.10.67:
+        - ardana-cp1-ceph0003-mgmt
+        10.40.10.68:
+        - ardana-cp1-ceph0004-mgmt
+        10.40.10.69:
+        - ardana-cp1-ceph0005-mgmt
+        10.40.10.70:
+        - ardana-cp1-vip-CEI-API-mgmt
+        - ardana-cp1-vip-CND-API-mgmt
+        - ardana-cp1-vip-FND-MDB-mgmt
+        - ardana-cp1-vip-FND-RMQ-mgmt
+        - ardana-cp1-vip-FND-VDB-mgmt
+        - ardana-cp1-vip-FRE-API-mgmt
+        - ardana-cp1-vip-GLA-API-mgmt
+        - ardana-cp1-vip-GLA-REG-mgmt
+        - ardana-cp1-vip-HEA-ACF-mgmt
+        - ardana-cp1-vip-HEA-ACW-mgmt
+        - ardana-cp1-vip-HEA-API-mgmt
+        - ardana-cp1-vip-HZN-WEB-mgmt
+        - ardana-cp1-vip-KEY-API-mgmt
+        - ardana-cp1-vip-LOG-SVR-mgmt
+        - ardana-cp1-vip-MON-API-mgmt
+        - ardana-cp1-vip-NEU-SVR-mgmt
+        - ardana-cp1-vip-NOV-API-mgmt
+        - ardana-cp1-vip-NOV-MTD-mgmt
+        - ardana-cp1-vip-OPS-WEB-mgmt
+        - ardana-cp1-vip-SHP-API-mgmt
+        - ardana-cp1-vip-SWF-PRX-mgmt
+        - ardana-cp1-vip-admin-CEI-API-mgmt
+        - ardana-cp1-vip-admin-CND-API-mgmt
+        - ardana-cp1-vip-admin-FND-MDB-mgmt
+        - ardana-cp1-vip-admin-FRE-API-mgmt
+        - ardana-cp1-vip-admin-GLA-API-mgmt
+        - ardana-cp1-vip-admin-KEY-API-mgmt
+        - ardana-cp1-vip-admin-NEU-SVR-mgmt
+        - ardana-cp1-vip-admin-NOV-API-mgmt
+        - ardana-cp1-vip-admin-SHP-API-mgmt
+        - ardana-cp1-vip-admin-SWF-PRX-mgmt
+SERVICE:
+    SERVICE-NET: {}

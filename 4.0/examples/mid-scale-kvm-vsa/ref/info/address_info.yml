@@ -1,0 +1,231 @@
+CONF:
+    CONF-NET:
+        10.243.140.10:
+        - ardana-cp1-core-m1-conf
+        10.243.140.11:
+        - ardana-cp1-mtrmon-m1-conf
+        10.243.140.12:
+        - ardana-cp1-dbmq-m1-conf
+        10.243.140.13:
+        - ardana-cp1-swpac-m1-conf
+        10.243.140.14:
+        - ardana-cp1-neut-m1-conf
+        10.243.140.15:
+        - ardana-cp1-swobj0001-conf
+        10.243.140.16:
+        - ardana-cp1-comp0001-conf
+        10.243.140.17:
+        - ardana-cp1-vsa0001-conf
+        10.243.140.18:
+        - ardana-cp1-core-m2-conf
+        10.243.140.19:
+        - ardana-cp1-mtrmon-m2-conf
+        10.243.140.20:
+        - ardana-cp1-dbmq-m2-conf
+        10.243.140.21:
+        - ardana-cp1-swpac-m2-conf
+        10.243.140.22:
+        - ardana-cp1-neut-m2-conf
+        10.243.140.23:
+        - ardana-cp1-swobj0002-conf
+        10.243.140.24:
+        - ardana-cp1-comp0002-conf
+        10.243.140.25:
+        - ardana-cp1-vsa0002-conf
+        10.243.140.26:
+        - ardana-cp1-mtrmon-m3-conf
+        10.243.140.27:
+        - ardana-cp1-dbmq-m3-conf
+        10.243.140.28:
+        - ardana-cp1-swpac-m3-conf
+        10.243.140.29:
+        - ardana-cp1-swobj0003-conf
+        10.243.140.30:
+        - ardana-cp1-comp0003-conf
+        10.243.140.31:
+        - ardana-cp1-vsa0003-conf
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        10.243.125.2:
+        - ardana-cp1-core-m1-extapi
+        10.243.125.3:
+        - ardana-cp1-core-m2-extapi
+        10.243.125.4:
+        - ardana-cp1-vip-public-CEI-API-extapi
+        - ardana-cp1-vip-public-CND-API-extapi
+        - ardana-cp1-vip-public-DES-API-extapi
+        - ardana-cp1-vip-public-FRE-API-extapi
+        - ardana-cp1-vip-public-GLA-API-extapi
+        - ardana-cp1-vip-public-HEA-ACF-extapi
+        - ardana-cp1-vip-public-HEA-ACW-extapi
+        - ardana-cp1-vip-public-HEA-API-extapi
+        - ardana-cp1-vip-public-HUX-SVC-extapi
+        - ardana-cp1-vip-public-HZN-WEB-extapi
+        - ardana-cp1-vip-public-KEY-API-extapi
+        - ardana-cp1-vip-public-KEYMGR-API-extapi
+        - ardana-cp1-vip-public-LOG-API-extapi
+        - ardana-cp1-vip-public-MON-API-extapi
+        - ardana-cp1-vip-public-NEU-SVR-extapi
+        - ardana-cp1-vip-public-NOV-API-extapi
+        - ardana-cp1-vip-public-NOV-VNC-extapi
+        - ardana-cp1-vip-public-OPS-WEB-extapi
+        - ardana-cp1-vip-public-SWF-PRX-extapi
+EXTERNAL-VM:
+    EXTERNAL-VM-NET: {}
+GUEST:
+    GUEST-NET-RACK1:
+        10.243.127.2:
+        - ardana-cp1-neut-m1-guest
+        10.243.127.3:
+        - ardana-cp1-comp0001-guest
+    GUEST-NET-RACK2:
+        10.243.128.2:
+        - ardana-cp1-neut-m2-guest
+        10.243.128.3:
+        - ardana-cp1-comp0002-guest
+    GUEST-NET-RACK3:
+        10.243.129.2:
+        - ardana-cp1-comp0003-guest
+INTERNAL-API:
+    INTERNAL-API-NET:
+        10.243.126.2:
+        - ardana-cp1-core-m1-intapi
+        10.243.126.3:
+        - ardana-cp1-core-m2-intapi
+        10.243.126.4:
+        - ardana-cp1-vip-CEI-API-intapi
+        - ardana-cp1-vip-CND-API-intapi
+        - ardana-cp1-vip-DES-API-intapi
+        - ardana-cp1-vip-FND-MDB-intapi
+        - ardana-cp1-vip-FND-VDB-intapi
+        - ardana-cp1-vip-FRE-API-intapi
+        - ardana-cp1-vip-GLA-API-intapi
+        - ardana-cp1-vip-GLA-REG-intapi
+        - ardana-cp1-vip-HEA-ACF-intapi
+        - ardana-cp1-vip-HEA-ACW-intapi
+        - ardana-cp1-vip-HEA-API-intapi
+        - ardana-cp1-vip-HUX-SVC-intapi
+        - ardana-cp1-vip-HZN-WEB-intapi
+        - ardana-cp1-vip-KEY-API-intapi
+        - ardana-cp1-vip-KEYMGR-API-intapi
+        - ardana-cp1-vip-LOG-API-intapi
+        - ardana-cp1-vip-LOG-SVR-intapi
+        - ardana-cp1-vip-MON-API-intapi
+        - ardana-cp1-vip-NEU-SVR-intapi
+        - ardana-cp1-vip-NOV-API-intapi
+        - ardana-cp1-vip-NOV-MTD-intapi
+        - ardana-cp1-vip-OCT-API-intapi
+        - ardana-cp1-vip-OPS-WEB-intapi
+        - ardana-cp1-vip-SWF-PRX-intapi
+        - ardana-cp1-vip-admin-CEI-API-intapi
+        - ardana-cp1-vip-admin-CND-API-intapi
+        - ardana-cp1-vip-admin-DES-API-intapi
+        - ardana-cp1-vip-admin-FND-MDB-intapi
+        - ardana-cp1-vip-admin-FRE-API-intapi
+        - ardana-cp1-vip-admin-GLA-API-intapi
+        - ardana-cp1-vip-admin-HEA-ACF-intapi
+        - ardana-cp1-vip-admin-HEA-ACW-intapi
+        - ardana-cp1-vip-admin-HEA-API-intapi
+        - ardana-cp1-vip-admin-HUX-SVC-intapi
+        - ardana-cp1-vip-admin-HZN-WEB-intapi
+        - ardana-cp1-vip-admin-KEY-API-intapi
+        - ardana-cp1-vip-admin-KEYMGR-API-intapi
+        - ardana-cp1-vip-admin-LOG-API-intapi
+        - ardana-cp1-vip-admin-LOG-SVR-intapi
+        - ardana-cp1-vip-admin-MON-API-intapi
+        - ardana-cp1-vip-admin-NEU-SVR-intapi
+        - ardana-cp1-vip-admin-NOV-API-intapi
+        - ardana-cp1-vip-admin-OPS-WEB-intapi
+        - ardana-cp1-vip-admin-SWF-PRX-intapi
+ISCSI:
+    ISCSI-NET:
+        10.243.133.10:
+        - ardana-cp1-vsa0003-VSA-BLK-iscsi
+        10.243.133.11:
+        - ardana-cp1-comp0001-iscsi
+        10.243.133.12:
+        - ardana-cp1-comp0002-iscsi
+        10.243.133.13:
+        - ardana-cp1-comp0003-iscsi
+        10.243.133.2:
+        - ardana-cp1-core-m1-iscsi
+        10.243.133.3:
+        - ardana-cp1-core-m2-iscsi
+        10.243.133.4:
+        - ardana-cp1-vsa0001-iscsi
+        10.243.133.5:
+        - ardana-cp1-vsa0001-VSA-BLK-iscsi
+        10.243.133.6:
+        - ardana-cp1-vsa-VSA-BLK-iscsi
+        10.243.133.7:
+        - ardana-cp1-vsa0002-iscsi
+        10.243.133.8:
+        - ardana-cp1-vsa0002-VSA-BLK-iscsi
+        10.243.133.9:
+        - ardana-cp1-vsa0003-iscsi
+MANAGEMENT:
+    MANAGEMENT-NET-RACK1:
+        10.243.130.2:
+        - ardana-cp1-core-m1-mgmt
+        10.243.130.3:
+        - ardana-cp1-mtrmon-m1-mgmt
+        10.243.130.4:
+        - ardana-cp1-dbmq-m1-mgmt
+        10.243.130.5:
+        - ardana-cp1-swpac-m1-mgmt
+        10.243.130.6:
+        - ardana-cp1-neut-m1-mgmt
+        10.243.130.7:
+        - ardana-cp1-swobj0001-mgmt
+        10.243.130.8:
+        - ardana-cp1-vsa0001-mgmt
+        10.243.130.9:
+        - ardana-cp1-comp0001-mgmt
+    MANAGEMENT-NET-RACK2:
+        10.243.131.2:
+        - ardana-cp1-core-m2-mgmt
+        10.243.131.3:
+        - ardana-cp1-mtrmon-m2-mgmt
+        10.243.131.4:
+        - ardana-cp1-dbmq-m2-mgmt
+        10.243.131.5:
+        - ardana-cp1-swpac-m2-mgmt
+        10.243.131.6:
+        - ardana-cp1-neut-m2-mgmt
+        10.243.131.7:
+        - ardana-cp1-swobj0002-mgmt
+        10.243.131.8:
+        - ardana-cp1-vsa0002-mgmt
+        10.243.131.9:
+        - ardana-cp1-comp0002-mgmt
+    MANAGEMENT-NET-RACK3:
+        10.243.132.2:
+        - ardana-cp1-mtrmon-m3-mgmt
+        10.243.132.3:
+        - ardana-cp1-dbmq-m3-mgmt
+        10.243.132.4:
+        - ardana-cp1-swpac-m3-mgmt
+        10.243.132.5:
+        - ardana-cp1-swobj0003-mgmt
+        10.243.132.6:
+        - ardana-cp1-vsa0003-mgmt
+        10.243.132.7:
+        - ardana-cp1-comp0003-mgmt
+OCTAVIA-MGMT-NET:
+    OCTAVIA-MGMT-NET: {}
+SWIFT:
+    SWIFT-NET-RACK1:
+        10.243.136.2:
+        - ardana-cp1-swpac-m1-swift
+        10.243.136.3:
+        - ardana-cp1-swobj0001-swift
+    SWIFT-NET-RACK2:
+        10.243.137.2:
+        - ardana-cp1-swpac-m2-swift
+        10.243.137.3:
+        - ardana-cp1-swobj0002-swift
+    SWIFT-NET-RACK3:
+        10.243.138.2:
+        - ardana-cp1-swpac-m3-swift
+        10.243.138.3:
+        - ardana-cp1-swobj0003-swift

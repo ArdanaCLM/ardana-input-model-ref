@@ -1,0 +1,136 @@
+10.0.1.2:
+  addr: 10.0.1.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+10.0.1.3:
+  addr: 10.0.1.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: swpac2
+  used-by: server
+10.0.1.4:
+  addr: 10.0.1.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: swpac3
+  used-by: server
+10.0.1.5:
+  addr: 10.0.1.5
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-extlb-extapi
+  persisted: false
+  server-id: null
+  used-by: vip extlb
+10.1.1.2:
+  addr: 10.1.1.2
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+10.1.1.3:
+  addr: 10.1.1.3
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: swpac2
+  used-by: server
+10.1.1.4:
+  addr: 10.1.1.4
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: swpac3
+  used-by: server
+10.1.1.5:
+  addr: 10.1.1.5
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+10.1.1.6:
+  addr: 10.1.1.6
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0002
+  persisted: false
+  server-id: swobj2
+  used-by: server
+10.1.1.7:
+  addr: 10.1.1.7
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0003
+  persisted: false
+  server-id: swobj3
+  used-by: server
+10.241.17.11:
+  addr: 10.241.17.11
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m1
+  persisted: false
+  server-id: swpac1
+  used-by: server
+10.241.17.12:
+  addr: 10.241.17.12
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m2
+  persisted: false
+  server-id: swpac2
+  used-by: server
+10.241.17.13:
+  addr: 10.241.17.13
+  allocated: true
+  free: false
+  host: ardana-cp1-c1-m3
+  persisted: false
+  server-id: swpac3
+  used-by: server
+10.241.17.14:
+  addr: 10.241.17.14
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0001
+  persisted: false
+  server-id: swobj1
+  used-by: server
+10.241.17.15:
+  addr: 10.241.17.15
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0002
+  persisted: false
+  server-id: swobj2
+  used-by: server
+10.241.17.16:
+  addr: 10.241.17.16
+  allocated: true
+  free: false
+  host: ardana-cp1-swobj0003
+  persisted: false
+  server-id: swobj3
+  used-by: server
+10.241.17.2:
+  addr: 10.241.17.2
+  allocated: true
+  free: false
+  host: ardana-cp1-vip-lb-mgmt
+  persisted: false
+  server-id: null
+  used-by: vip lb

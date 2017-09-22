@@ -1,0 +1,1296 @@
+compute1:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0001-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.6
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.6
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.16
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute10:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0004-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.9
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.9
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.25
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute11:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0026-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.31
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.31
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.26
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute12:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0047-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.52
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.52
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.27
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute13:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0005-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.10
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.10
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.28
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute14:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0027-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.32
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.32
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.29
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute15:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0048-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.53
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.53
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.30
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute16:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0006-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.11
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.11
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.31
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute17:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0028-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.33
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.33
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.32
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute18:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0049-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.54
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.54
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.33
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute19:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0007-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.12
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.12
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.34
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute2:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0023-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.28
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.28
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.17
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute20:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0029-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.34
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.34
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.35
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute21:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0050-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.55
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.55
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.36
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute22:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0008-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.13
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.13
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.37
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute23:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0030-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.35
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.35
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.38
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute24:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0051-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.56
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.56
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.39
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute25:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0009-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.14
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.14
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.40
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute26:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0031-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.36
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.36
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.41
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute27:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0052-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.57
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.57
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.42
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute28:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0010-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.15
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.15
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.43
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute29:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0032-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.37
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.37
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.44
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute3:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0044-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.49
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.49
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.18
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute30:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0053-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.58
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.58
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.45
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute31:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0011-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.16
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.16
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.46
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute32:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0033-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.38
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.38
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.47
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute33:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0054-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.59
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.59
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.48
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute34:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0012-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.17
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.17
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.49
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute35:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0034-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.39
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.39
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.50
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute36:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0055-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.60
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.60
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.51
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute37:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0013-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.18
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.18
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.52
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute38:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0035-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.40
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.40
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.53
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute39:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0056-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.61
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.61
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.54
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute4:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0002-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.7
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.7
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.19
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute40:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0014-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.19
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.19
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.55
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute41:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0036-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.41
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.41
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.56
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute42:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0057-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.62
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.62
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.57
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute43:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0015-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.20
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.20
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.58
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute44:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0037-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.42
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.42
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.59
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute45:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0058-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.63
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.63
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.60
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute46:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0016-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.21
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.21
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.61
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute47:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0038-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.43
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.43
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.62
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute48:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0059-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.64
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.64
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.63
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute49:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0017-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.22
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.22
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.64
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute5:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0024-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.29
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.29
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.20
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute50:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0039-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.44
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.44
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.65
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute51:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0060-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.65
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.65
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.66
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute52:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0018-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.23
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.23
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.67
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute53:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0040-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.45
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.45
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.68
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute54:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0061-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.66
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.66
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.69
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute55:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0019-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.24
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.24
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.70
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute56:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0041-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.46
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.46
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.71
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute57:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0062-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.67
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.67
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.72
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute58:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0020-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.25
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.25
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.73
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute59:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0042-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.47
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.47
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.74
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute6:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0045-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.50
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.50
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.21
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute60:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0063-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.68
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.68
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.75
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute61:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0021-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.26
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.26
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.76
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute62:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0043-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.48
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.48
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.77
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute63:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0064-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.69
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.69
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.78
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute64:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0022-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.27
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.27
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.79
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute7:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-comp0003-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.8
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.8
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.22
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute8:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-comp0025-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.30
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.30
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.23
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+compute9:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-comp0046-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.51
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.51
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.24
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+controller1:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-c1-m1-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.243.189.4
+                tagged-vlan: true
+                vlan-id: 575
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.4
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.4
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.5
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+controller2:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-c1-m2-mgmt
+    net_data:
+        BOND0:
+            EXTERNAL-API-NET:
+                addr: 10.243.189.5
+                tagged-vlan: true
+                vlan-id: 575
+            EXTERNAL-VM-NET:
+                addr: 10.243.192.5
+                tagged-vlan: true
+                vlan-id: 390
+            GUEST-NET:
+                addr: 10.243.188.5
+                tagged-vlan: true
+                vlan-id: 574
+            MANAGEMENT-NET:
+                addr: 10.241.67.6
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+dbmq1:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-c3-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.10
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+dbmq2:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-c3-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.11
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+dbmq3:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-c3-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.12
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+lifecycle-manager:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-c0-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.4
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+mtrmon1:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-c2-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.7
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+mtrmon2:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-c2-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.8
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+mtrmon3:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-c2-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.9
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+vsa1:
+    failure-zone: AZ1
+    hostname: ipc1-cp1-vsa0001-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.13
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+vsa2:
+    failure-zone: AZ2
+    hostname: ipc1-cp1-vsa0002-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.14
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated
+vsa3:
+    failure-zone: AZ3
+    hostname: ipc1-cp1-vsa0003-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.241.67.15
+                tagged-vlan: false
+                vlan-id: 389
+    state: allocated

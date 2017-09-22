@@ -1,0 +1,22 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+
+[ req_distinguished_name ]
+CN = "ardana-vip"
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = "hcg-cp2-vip-public-HEA-ACF-can"
+DNS.2 = "hcg-cp2-vip-public-HEA-ACW-can"
+DNS.3 = "hcg-cp2-vip-public-HEA-API-can"
+DNS.4 = "hcg-cp2-vip-public-NEU-SVR-can"
+DNS.5 = "hcg-cp2-vip-public-NOV-API-can"
+DNS.6 = "hcg-cp2-vip-public-NOV-VNC-can"
+DNS.7 = "10.244.45.109"
+IP.1 = "10.244.45.109"

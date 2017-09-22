@@ -1,0 +1,84 @@
+CONF:
+    ESX-CONF-NET:
+        10.107.26.224:
+        - ardana-cp1-esx-comp0001-conf
+        10.107.26.225:
+        - ardana-cp1-esx-ovsvapp0001-conf
+        10.107.26.226:
+        - ardana-cp1-esx-ovsvapp0002-conf
+EXTERNAL-API:
+    EXTERNAL-API-NET:
+        10.107.26.14:
+        - ardana-cp1-c1-m1-extapi
+        10.107.26.15:
+        - ardana-cp1-c1-m2-extapi
+        10.107.26.16:
+        - ardana-cp1-c1-m3-extapi
+        10.107.26.17:
+        - ardana-cp1-vip-public-CEI-API-extapi
+        - ardana-cp1-vip-public-CND-API-extapi
+        - ardana-cp1-vip-public-EON-API-extapi
+        - ardana-cp1-vip-public-FRE-API-extapi
+        - ardana-cp1-vip-public-GLA-API-extapi
+        - ardana-cp1-vip-public-HEA-ACF-extapi
+        - ardana-cp1-vip-public-HEA-ACW-extapi
+        - ardana-cp1-vip-public-HEA-API-extapi
+        - ardana-cp1-vip-public-HZN-WEB-extapi
+        - ardana-cp1-vip-public-KEY-API-extapi
+        - ardana-cp1-vip-public-MON-API-extapi
+        - ardana-cp1-vip-public-NEU-SVR-extapi
+        - ardana-cp1-vip-public-NOV-API-extapi
+        - ardana-cp1-vip-public-NOV-VNC-extapi
+        - ardana-cp1-vip-public-OPS-WEB-extapi
+        - ardana-cp1-vip-public-SHP-API-extapi
+        - ardana-cp1-vip-public-SWF-PRX-extapi
+MANAGEMENT:
+    MANAGEMENT-NET:
+        10.107.26.130:
+        - ardana-cp1-esx-ovsvapp0001-mgmt
+        10.107.26.131:
+        - ardana-cp1-esx-ovsvapp0002-mgmt
+        10.107.26.132:
+        - ardana-cp1-esx-comp0001-mgmt
+        10.107.26.133:
+        - ardana-cp1-vip-CEI-API-mgmt
+        - ardana-cp1-vip-CND-API-mgmt
+        - ardana-cp1-vip-EON-API-mgmt
+        - ardana-cp1-vip-FND-MDB-mgmt
+        - ardana-cp1-vip-FND-RMQ-mgmt
+        - ardana-cp1-vip-FND-VDB-mgmt
+        - ardana-cp1-vip-FRE-API-mgmt
+        - ardana-cp1-vip-GLA-API-mgmt
+        - ardana-cp1-vip-GLA-REG-mgmt
+        - ardana-cp1-vip-HEA-ACF-mgmt
+        - ardana-cp1-vip-HEA-ACW-mgmt
+        - ardana-cp1-vip-HEA-API-mgmt
+        - ardana-cp1-vip-HZN-WEB-mgmt
+        - ardana-cp1-vip-KEY-API-mgmt
+        - ardana-cp1-vip-LOG-SVR-mgmt
+        - ardana-cp1-vip-MON-API-mgmt
+        - ardana-cp1-vip-NEU-SVR-mgmt
+        - ardana-cp1-vip-NOV-API-mgmt
+        - ardana-cp1-vip-NOV-MTD-mgmt
+        - ardana-cp1-vip-OPS-WEB-mgmt
+        - ardana-cp1-vip-SHP-API-mgmt
+        - ardana-cp1-vip-SWF-PRX-mgmt
+        - ardana-cp1-vip-admin-CEI-API-mgmt
+        - ardana-cp1-vip-admin-CND-API-mgmt
+        - ardana-cp1-vip-admin-EON-API-mgmt
+        - ardana-cp1-vip-admin-FND-MDB-mgmt
+        - ardana-cp1-vip-admin-FRE-API-mgmt
+        - ardana-cp1-vip-admin-GLA-API-mgmt
+        - ardana-cp1-vip-admin-KEY-API-mgmt
+        - ardana-cp1-vip-admin-NEU-SVR-mgmt
+        - ardana-cp1-vip-admin-NOV-API-mgmt
+        - ardana-cp1-vip-admin-SHP-API-mgmt
+        - ardana-cp1-vip-admin-SWF-PRX-mgmt
+        10.107.26.168:
+        - ardana-cp1-c1-m1-mgmt
+        10.107.26.169:
+        - ardana-cp1-c1-m2-mgmt
+        10.107.26.170:
+        - ardana-cp1-c1-m3-mgmt
+TRUNK:
+    TRUNK-NET: {}

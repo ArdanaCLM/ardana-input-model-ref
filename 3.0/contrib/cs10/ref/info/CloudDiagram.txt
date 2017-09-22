@@ -1,0 +1,268 @@
++-ControlPlane: region1 (ccp)------------------------------------------------------------------------------+
+|                                                                                                          |
+| +-Cluster deployer ()------------------------------+                                                     |
+| |                                                  |                                                     |
+| | +-cs-ccp-c0-m1 (10.254.5.30)-------------------+ |                                                     |
+| | |                                              | |                                                     |
+| | | foundation                                   | |                                                     |
+| | |   ardana-ux-services                            | |                                                     |
+| | |   ntp-client                                 | |                                                     |
+| | |   stunnel                                    | |                                                     |
+| | | freezer                                      | |                                                     |
+| | |   freezer-agent                              | |                                                     |
+| | | logging                                      | |                                                     |
+| | |   logging-producer                           | |                                                     |
+| | | monasca                                      | |                                                     |
+| | |   monasca-agent                              | |                                                     |
+| | | operations                                   | |                                                     |
+| | |   lifecycle-manager                          | |                                                     |
+| | |   lifecycle-manager-target                   | |                                                     |
+| | |                                              | |                                                     |
+| | | -------------------------------------------- | |                                                     |
+| | |                                              | |                                                     |
+| | | eth0                                         | |                                                     |
+| | |   CLM-R1 (25.25.0.1)                         | |                                                     |
+| | |   CONF-R1 (10.254.5.30)                      | |                                                     |
+| | |   DCM-R1 (192.168.219.36)                    | |                                                     |
+| | |                                              | |                                                     |
+| | +----------------------------------------------+ |                                                     |
+| |                                                  |                                                     |
+| +--------------------------------------------------+                                                     |
+|                                                                                                          |
+| +-Cluster management ()----------------------------+                                                     |
+| |                                                  |                                                     |
+| | +-cs-ccp-mgmt-m1 (10.254.5.31)-----------------+ |                                                     |
+| | |                                              | |                                                     |
+| | | eon                                          | |                                                     |
+| | |   eon-api                                    | |                                                     |
+| | |   eon-conductor                              | |                                                     |
+| | | foundation                                   | |                                                     |
+| | |   apache2                                    | |                                                     |
+| | |   eon-client                                 | |                                                     |
+| | |   ip-cluster                                 | |                                                     |
+| | |   memcached                                  | |                                                     |
+| | |   ntp-server                                 | |                                                     |
+| | |   openstack-client                           | |                                                     |
+| | |   stunnel                                    | |                                                     |
+| | | freezer                                      | |                                                     |
+| | |   freezer-agent                              | |                                                     |
+| | | keystone                                     | |                                                     |
+| | |   keystone-api                               | |                                                     |
+| | |   keystone-client                            | |                                                     |
+| | | logging                                      | |                                                     |
+| | |   logging-producer                           | |                                                     |
+| | | monasca                                      | |                                                     |
+| | |   monasca-agent                              | |                                                     |
+| | | neutron                                      | |                                                     |
+| | |   neutron-client                             | |                                                     |
+| | | nova                                         | |                                                     |
+| | |   nova-client                                | |                                                     |
+| | | operations                                   | |                                                     |
+| | |   lifecycle-manager-target                   | |                                                     |
+| | |   ops-console-web                            | |                                                     |
+| | |                                              | |                                                     |
+| | | -------------------------------------------- | |                                                     |
+| | |                                              | |                                                     |
+| | | eth0                                         | |                                                     |
+| | |   CAN-R1 (10.200.192.221)                    | |                                                     |
+| | |   CLM-R1 (25.25.0.2)                         | |                                                     |
+| | |   CONF-R1 (10.254.5.31)                      | |                                                     |
+| | |   DCM-R1 (192.168.219.37)                    | |                                                     |
+| | |                                              | |                                                     |
+| | +----------------------------------------------+ |                                                     |
+| |                                                  |                                                     |
+| +--------------------------------------------------+                                                     |
+|                                                                                                          |
+| +-Cluster monitoring ()----------------------------+                                                     |
+| |                                                  |                                                     |
+| | +-cs-ccp-mon-m1 (10.254.5.32)------------------+ |                                                     |
+| | |                                              | |                                                     |
+| | | ceilometer                                   | |                                                     |
+| | |   ceilometer-agent-notification              | |                                                     |
+| | |   ceilometer-api                             | |                                                     |
+| | |   ceilometer-client                          | |                                                     |
+| | |   ceilometer-common                          | |                                                     |
+| | |   ceilometer-polling                         | |                                                     |
+| | | foundation                                   | |                                                     |
+| | |   apache2                                    | |                                                     |
+| | |   kafka                                      | |                                                     |
+| | |   ntp-client                                 | |                                                     |
+| | |   storm                                      | |                                                     |
+| | |   stunnel                                    | |                                                     |
+| | |   vertica                                    | |                                                     |
+| | |   zookeeper                                  | |                                                     |
+| | | freezer                                      | |                                                     |
+| | |   freezer-agent                              | |                                                     |
+| | |   freezer-api                                | |                                                     |
+| | | logging                                      | |                                                     |
+| | |   logging-producer                           | |                                                     |
+| | |   logging-server                             | |                                                     |
+| | | monasca                                      | |                                                     |
+| | |   monasca-agent                              | |                                                     |
+| | |   monasca-api                                | |                                                     |
+| | |   monasca-client                             | |                                                     |
+| | |   monasca-notifier                           | |                                                     |
+| | |   monasca-persister                          | |                                                     |
+| | |   monasca-threshold                          | |                                                     |
+| | | operations                                   | |                                                     |
+| | |   lifecycle-manager-target                   | |                                                     |
+| | |                                              | |                                                     |
+| | | -------------------------------------------- | |                                                     |
+| | |                                              | |                                                     |
+| | | eth0                                         | |                                                     |
+| | |   CLM-R1 (25.25.0.3)                         | |                                                     |
+| | |   CONF-R1 (10.254.5.32)                      | |                                                     |
+| | |                                              | |                                                     |
+| | +----------------------------------------------+ |                                                     |
+| |                                                  |                                                     |
+| +--------------------------------------------------+                                                     |
+|                                                                                                          |
+| +-Cluster db_rabbit ()-----------------------------+                                                     |
+| |                                                  |                                                     |
+| | +-cs-ccp-db-m1 (10.254.5.33)-------------------+ |                                                     |
+| | |                                              | |                                                     |
+| | | foundation                                   | |                                                     |
+| | |   mysql                                      | |                                                     |
+| | |   ntp-client                                 | |                                                     |
+| | |   rabbitmq                                   | |                                                     |
+| | |   stunnel                                    | |                                                     |
+| | | freezer                                      | |                                                     |
+| | |   freezer-agent                              | |                                                     |
+| | | logging                                      | |                                                     |
+| | |   logging-producer                           | |                                                     |
+| | | monasca                                      | |                                                     |
+| | |   monasca-agent                              | |                                                     |
+| | | operations                                   | |                                                     |
+| | |   lifecycle-manager-target                   | |                                                     |
+| | |                                              | |                                                     |
+| | | -------------------------------------------- | |                                                     |
+| | |                                              | |                                                     |
+| | | eth0                                         | |                                                     |
+| | |   CLM-R1 (25.25.0.4)                         | |                                                     |
+| | |   CONF-R1 (10.254.5.33)                      | |                                                     |
+| | |                                              | |                                                     |
+| | +----------------------------------------------+ |                                                     |
+| |                                                  |                                                     |
+| +--------------------------------------------------+                                                     |
+|                                                                                                          |
+| +-Cluster controller ()----------------------------+                                                     |
+| |                                                  |                                                     |
+| | +-cs-ccp-cc-m1 (10.254.5.34)-------------------+ |                                                     |
+| | |                                              | |                                                     |
+| | | barbican                                     | |                                                     |
+| | |   barbican-api                               | |                                                     |
+| | |   barbican-worker                            | |                                                     |
+| | | cinder                                       | |                                                     |
+| | |   cinder-api                                 | |                                                     |
+| | |   cinder-backup                              | |                                                     |
+| | |   cinder-client                              | |                                                     |
+| | |   cinder-scheduler                           | |                                                     |
+| | |   cinder-volume                              | |                                                     |
+| | | designate                                    | |                                                     |
+| | |   designate-api                              | |                                                     |
+| | |   designate-central                          | |                                                     |
+| | |   designate-mdns                             | |                                                     |
+| | |   designate-pool-manager                     | |                                                     |
+| | |   designate-zone-manager                     | |                                                     |
+| | | foundation                                   | |                                                     |
+| | |   apache2                                    | |                                                     |
+| | |   barbican-client                            | |                                                     |
+| | |   designate-client                           | |                                                     |
+| | |   memcached                                  | |                                                     |
+| | |   ntp-client                                 | |                                                     |
+| | |   openstack-client                           | |                                                     |
+| | |   powerdns                                   | |                                                     |
+| | |   stunnel                                    | |                                                     |
+| | |   swift-common                               | |                                                     |
+| | |   swift-rsync                                | |                                                     |
+| | | freezer                                      | |                                                     |
+| | |   freezer-agent                              | |                                                     |
+| | | glance                                       | |                                                     |
+| | |   glance-api                                 | |                                                     |
+| | |   glance-client                              | |                                                     |
+| | |   glance-registry                            | |                                                     |
+| | | heat                                         | |                                                     |
+| | |   heat-api                                   | |                                                     |
+| | |   heat-api-cfn                               | |                                                     |
+| | |   heat-api-cloudwatch                        | |                                                     |
+| | |   heat-client                                | |                                                     |
+| | |   heat-engine                                | |                                                     |
+| | | horizon                                      | |                                                     |
+| | |   horizon                                    | |                                                     |
+| | | keystone                                     | |                                                     |
+| | |   keystone-client                            | |                                                     |
+| | | logging                                      | |                                                     |
+| | |   logging-producer                           | |                                                     |
+| | | monasca                                      | |                                                     |
+| | |   monasca-agent                              | |                                                     |
+| | | neutron                                      | |                                                     |
+| | |   neutron-client                             | |                                                     |
+| | |   neutron-ml2-plugin                         | |                                                     |
+| | |   neutron-server                             | |                                                     |
+| | | nova                                         | |                                                     |
+| | |   nova-api                                   | |                                                     |
+| | |   nova-client                                | |                                                     |
+| | |   nova-conductor                             | |                                                     |
+| | |   nova-console-auth                          | |                                                     |
+| | |   nova-metadata                              | |                                                     |
+| | |   nova-novncproxy                            | |                                                     |
+| | |   nova-scheduler                             | |                                                     |
+| | | operations                                   | |                                                     |
+| | |   lifecycle-manager-target                   | |                                                     |
+| | | swift                                        | |                                                     |
+| | |   swift-account                              | |                                                     |
+| | |   swift-client                               | |                                                     |
+| | |   swift-container                            | |                                                     |
+| | |   swift-object                               | |                                                     |
+| | |   swift-proxy                                | |                                                     |
+| | |   swift-ring-builder                         | |                                                     |
+| | | vsa-storage                                  | |                                                     |
+| | |   cmc-service                                | |                                                     |
+| | |                                              | |                                                     |
+| | | -------------------------------------------- | |                                                     |
+| | |                                              | |                                                     |
+| | | eth0                                         | |                                                     |
+| | |   CLM-R1 (25.25.0.5)                         | |                                                     |
+| | |   CONF-R1 (10.254.5.34)                      | |                                                     |
+| | |   DCM-R1 (192.168.219.38)                    | |                                                     |
+| | |                                              | |                                                     |
+| | +----------------------------------------------+ |                                                     |
+| |                                                  |                                                     |
+| +--------------------------------------------------+                                                     |
+|                                                                                                          |
+| +-Cluster network ()-----------------------------------------------------------------------------------+ |
+| |                                                                                                      | |
+| | +-cs-ccp-nn-m1 (10.254.5.35)-------------------+    +-cs-ccp-nn-m2 (10.254.5.36)-------------------+ | |
+| | |                                              |    |                                              | | |
+| | | foundation                                   |    | foundation                                   | | |
+| | |   stunnel                                    |    |   stunnel                                    | | |
+| | | freezer                                      |    | freezer                                      | | |
+| | |   freezer-agent                              |    |   freezer-agent                              | | |
+| | | logging                                      |    | logging                                      | | |
+| | |   logging-producer                           |    |   logging-producer                           | | |
+| | | monasca                                      |    | monasca                                      | | |
+| | |   monasca-agent                              |    |   monasca-agent                              | | |
+| | | neutron                                      |    | neutron                                      | | |
+| | |   neutron-dhcp-agent                         |    |   neutron-dhcp-agent                         | | |
+| | |   neutron-metadata-agent                     |    |   neutron-metadata-agent                     | | |
+| | |   neutron-openvswitch-agent                  |    |   neutron-openvswitch-agent                  | | |
+| | |   neutron-vpn-agent                          |    |   neutron-vpn-agent                          | | |
+| | | operations                                   |    | operations                                   | | |
+| | |   lifecycle-manager-target                   |    |   lifecycle-manager-target                   | | |
+| | |                                              |    |                                              | | |
+| | | -------------------------------------------- |    | -------------------------------------------- | | |
+| | |                                              |    |                                              | | |
+| | | eth0                                         |    | eth0                                         | | |
+| | |   CAN-R1 (10.200.192.222)                    |    |   CAN-R1 (10.200.192.223)                    | | |
+| | |   CLM-R1 (25.25.0.6)                         |    |   CLM-R1 (25.25.0.7)                         | | |
+| | |   CONF-R1 (10.254.5.35)                      |    |   CONF-R1 (10.254.5.36)                      | | |
+| | |   DCM-R1 (192.168.219.39)                    |    |   DCM-R1 (192.168.219.40)                    | | |
+| | | eth1                                         |    | eth1                                         | | |
+| | |   VxLAN-R1 (25.0.2.1)                        |    |   VxLAN-R1 (25.0.2.2)                        | | |
+| | |                                              |    |                                              | | |
+| | +----------------------------------------------+    +----------------------------------------------+ | |
+| |                                                                                                      | |
+| +------------------------------------------------------------------------------------------------------+ |
+|                                                                                                          |
++----------------------------------------------------------------------------------------------------------+
+

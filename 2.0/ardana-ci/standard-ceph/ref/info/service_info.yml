@@ -1,0 +1,348 @@
+ccp:
+    ceilometer:
+        ceilometer-agent-central:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceilometer-agent-notification:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceilometer-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceilometer-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceilometer-collector:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceilometer-common:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceilometer-expirer:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    ceph:
+        ceph-monitor:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ceph-osd:
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+    cinder:
+        cinder-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        cinder-backup:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        cinder-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        cinder-scheduler:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        cinder-volume:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    foundation:
+        apache2:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ip-cluster:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        kafka:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        memcached:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        mysql:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ntp-client:
+        - standard-ceph-ccp-comp0001-mgmt
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+        ntp-server:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        openstack-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        rabbitmq:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        sherpa-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        storm:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        stunnel:
+        - standard-ceph-ccp-c0-m1-mgmt
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+        swift-common:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        swift-rsync:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        vertica:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        zookeeper:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    freezer:
+        freezer-agent:
+        - standard-ceph-ccp-c0-m1-mgmt
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+        freezer-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    glance:
+        glance-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        glance-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        glance-registry:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    heat:
+        heat-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        heat-api-cfn:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        heat-api-cloudwatch:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        heat-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        heat-engine:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    horizon:
+        horizon:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    keystone:
+        keystone-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        keystone-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    logging:
+        logging-producer:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+        logging-server:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    monasca:
+        monasca-agent:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+        monasca-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        monasca-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        monasca-notifier:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        monasca-persister:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        monasca-threshold:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    neutron:
+        neutron-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        neutron-dhcp-agent:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        neutron-l3-agent:
+        - standard-ceph-ccp-comp0001-mgmt
+        neutron-lbaasv2-agent:
+        - standard-ceph-ccp-comp0001-mgmt
+        neutron-metadata-agent:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        neutron-ml2-plugin:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        neutron-openvswitch-agent:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        neutron-server:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        neutron-vpn-agent:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    nova:
+        nova-api:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        nova-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        nova-compute:
+        - standard-ceph-ccp-comp0001-mgmt
+        nova-compute-kvm:
+        - standard-ceph-ccp-comp0001-mgmt
+        nova-conductor:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        nova-console-auth:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        nova-metadata:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        nova-novncproxy:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        nova-scheduler:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    operations:
+        lifecycle-manager:
+        - standard-ceph-ccp-c0-m1-mgmt
+        lifecycle-manager-target:
+        - standard-ceph-ccp-c0-m1-mgmt
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        - standard-ceph-ccp-comp0001-mgmt
+        - standard-ceph-ccp-ceph0001-mgmt
+        - standard-ceph-ccp-ceph0002-mgmt
+        - standard-ceph-ccp-ceph0003-mgmt
+        ops-console-monitor:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        ops-console-web:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+    swift:
+        swift-account:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        swift-client:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        swift-container:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        swift-object:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        swift-proxy:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt
+        swift-ring-builder:
+        - standard-ceph-ccp-c1-m1-mgmt
+        - standard-ceph-ccp-c1-m2-mgmt
+        - standard-ceph-ccp-c1-m3-mgmt

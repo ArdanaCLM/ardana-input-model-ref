@@ -1,0 +1,72 @@
+network_groups:
+    EXTERNAL-API:
+        EXTERNAL-API-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        cluster1:
+                            servers:
+                                ardana-cp1-c1-m1: 10.0.1.2
+                                ardana-cp1-c1-m2: 10.0.1.3
+                                ardana-cp1-c1-m3: 10.0.1.4
+                            vips:
+                                10.0.1.5: extlb
+    EXTERNAL-VM:
+        EXTERNAL-VM-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        cluster1:
+                            servers:
+                                ardana-cp1-c1-m1: null
+                                ardana-cp1-c1-m2: null
+                                ardana-cp1-c1-m3: null
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: null
+    GUEST:
+        GUEST-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        cluster1:
+                            servers:
+                                ardana-cp1-c1-m1: 10.1.1.2
+                                ardana-cp1-c1-m2: 10.1.1.3
+                                ardana-cp1-c1-m3: 10.1.1.4
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: 10.1.1.5
+    MANAGEMENT:
+        MANAGEMENT-NET:
+            control_planes:
+                control-plane-1:
+                    clusters:
+                        cluster1:
+                            servers:
+                                ardana-cp1-c1-m1: 192.168.10.3
+                                ardana-cp1-c1-m2: 192.168.10.4
+                                ardana-cp1-c1-m3: 192.168.10.5
+                            vips:
+                                192.168.10.13: lb
+                    resources:
+                        compute:
+                            servers:
+                                ardana-cp1-comp0001: 192.168.10.6
+                        vsa:
+                            servers:
+                                ardana-cp1-vsa0001: 192.168.10.9
+                                ardana-cp1-vsa0002: 192.168.10.10
+                                ardana-cp1-vsa0003: 192.168.10.11
+                            service_ips:
+                                vsa:
+                                    hosts:
+                                        ardana-cp1-vsa0001: 192.168.10.2
+                                        ardana-cp1-vsa0002: 192.168.10.8
+                                        ardana-cp1-vsa0003: 192.168.10.12
+                                    vip: 192.168.10.7
+    OCTAVIA-MGMT-NET:
+        OCTAVIA-MGMT-NET:
+            control_planes: {}

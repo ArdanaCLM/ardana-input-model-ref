@@ -1,0 +1,1740 @@
+compute1:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.6
+    ansible_options: null
+    cluster-name: compute
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      neutron-l3-agent: {}
+      neutron-lbaasv2-agent: {}
+      neutron-metadata-agent: {}
+      neutron-openvswitch-agent: {}
+      nova-compute: {}
+      nova-compute-kvm: {}
+      ntp-client: {}
+      stunnel: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      name: COMPUTE-DISKS
+      volume-groups:
+      - logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 35%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 50%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 10%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+      - logical-volumes:
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/nova
+          name: compute
+          size: 95%
+        name: vg-comp
+        physical-volumes:
+        - /dev/sdb
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: compute1
+    if-model: COMPUTE-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      networks:
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 1
+    name: ardana-cp1-comp0001
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: COMPUTE-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      neutron:
+      - neutron-openvswitch-agent
+      - neutron-metadata-agent
+      - neutron-lbaasv2-agent
+      - neutron-l3-agent
+      nova:
+      - nova-compute
+      - nova-compute-kvm
+    state: allocated
+    vm-factory: false
+  resource_name: compute
+  state: allocated
+  type: resource
+  vm-factory: false
+controller1:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.3
+    ansible_options: null
+    cluster-name: cluster1
+    components:
+      apache2: {}
+      barbican-api: {}
+      barbican-client: {}
+      barbican-worker: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      designate-api: {}
+      designate-central: {}
+      designate-client: {}
+      designate-mdns: {}
+      designate-pool-manager: {}
+      designate-zone-manager: {}
+      freezer-agent: {}
+      freezer-api: {}
+      glance-api: {}
+      glance-client: {}
+      glance-registry: {}
+      heat-api: {}
+      heat-api-cfn: {}
+      heat-api-cloudwatch: {}
+      heat-client: {}
+      heat-engine: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      monasca-transform: {}
+      mysql: {}
+      neutron-client: {}
+      neutron-dhcp-agent: {}
+      neutron-metadata-agent: {}
+      neutron-ml2-plugin: {}
+      neutron-openvswitch-agent: {}
+      neutron-server: {}
+      neutron-vpn-agent: {}
+      nova-api: {}
+      nova-client: {}
+      nova-conductor: {}
+      nova-console-auth: {}
+      nova-metadata: {}
+      nova-novncproxy: {}
+      nova-scheduler: {}
+      ntp-server: {}
+      octavia-api: {}
+      octavia-health-manager: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      powerdns: {}
+      powerdns-ext: {}
+      rabbitmq: {}
+      spark: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftobj
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: controller1
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 101
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 1
+    name: ardana-cp1-c1-m1
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:07:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:08:00.0'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:09:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: 0000:0a:00.0
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      barbican:
+      - barbican-api
+      - barbican-worker
+      ceilometer:
+      - ceilometer-api
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-polling
+      cinder:
+      - cinder-backup
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      clients:
+      - designate-client
+      - nova-client
+      - neutron-client
+      - ceilometer-client
+      - cinder-client
+      - keystone-client
+      - heat-client
+      - monasca-client
+      - barbican-client
+      - openstack-client
+      - swift-client
+      - glance-client
+      designate:
+      - designate-api
+      - designate-central
+      - designate-pool-manager
+      - designate-mdns
+      - designate-zone-manager
+      foundation:
+      - ip-cluster
+      - mysql
+      - apache2
+      - storm
+      - kafka
+      - stunnel
+      - memcached
+      - rabbitmq
+      - powerdns
+      - zookeeper
+      - vertica
+      - ntp-server
+      - spark
+      - ardana-ca
+      - powerdns-ext
+      freezer:
+      - freezer-api
+      - freezer-agent
+      glance:
+      - glance-registry
+      - glance-api
+      heat:
+      - heat-api-cfn
+      - heat-api
+      - heat-engine
+      - heat-api-cloudwatch
+      ardana:
+      - lifecycle-manager-target
+      - ardana-ux-services
+      - lifecycle-manager
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      logging:
+      - logging-api
+      - logging-server
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-notifier
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-transform
+      - monasca-agent
+      neutron:
+      - neutron-ml2-plugin
+      - neutron-openvswitch-agent
+      - neutron-server
+      - neutron-vpn-agent
+      - neutron-dhcp-agent
+      - neutron-metadata-agent
+      nova:
+      - nova-api
+      - nova-novncproxy
+      - nova-conductor
+      - nova-console-auth
+      - nova-scheduler
+      - nova-metadata
+      octavia:
+      - octavia-api
+      - octavia-health-manager
+      operations:
+      - ops-console-monitor
+      - ops-console-web
+      swift:
+      - swift-container
+      - swift-common
+      - swift-rsync
+      - swift-object
+      - swift-proxy
+      - swift-ring-builder
+      - swift-account
+      tempest:
+      - tempest
+      vsa-storage:
+      - cmc-service
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+controller2:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 2
+  previous_config:
+    addr: 192.168.10.4
+    ansible_options: null
+    cluster-name: cluster1
+    components:
+      apache2: {}
+      barbican-api: {}
+      barbican-client: {}
+      barbican-worker: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      designate-api: {}
+      designate-central: {}
+      designate-client: {}
+      designate-mdns: {}
+      designate-pool-manager: {}
+      designate-zone-manager: {}
+      freezer-agent: {}
+      freezer-api: {}
+      glance-api: {}
+      glance-client: {}
+      glance-registry: {}
+      heat-api: {}
+      heat-api-cfn: {}
+      heat-api-cloudwatch: {}
+      heat-client: {}
+      heat-engine: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      monasca-transform: {}
+      mysql: {}
+      neutron-client: {}
+      neutron-dhcp-agent: {}
+      neutron-metadata-agent: {}
+      neutron-ml2-plugin: {}
+      neutron-openvswitch-agent: {}
+      neutron-server: {}
+      neutron-vpn-agent: {}
+      nova-api: {}
+      nova-client: {}
+      nova-conductor: {}
+      nova-console-auth: {}
+      nova-metadata: {}
+      nova-novncproxy: {}
+      nova-scheduler: {}
+      ntp-server: {}
+      octavia-api: {}
+      octavia-health-manager: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      powerdns: {}
+      powerdns-ext: {}
+      rabbitmq: {}
+      spark: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftobj
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: controller2
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 101
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 2
+    name: ardana-cp1-c1-m2
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:07:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:08:00.0'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:09:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: 0000:0a:00.0
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      barbican:
+      - barbican-api
+      - barbican-worker
+      ceilometer:
+      - ceilometer-api
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-polling
+      cinder:
+      - cinder-backup
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      clients:
+      - designate-client
+      - nova-client
+      - neutron-client
+      - ceilometer-client
+      - cinder-client
+      - keystone-client
+      - heat-client
+      - monasca-client
+      - barbican-client
+      - openstack-client
+      - swift-client
+      - glance-client
+      designate:
+      - designate-api
+      - designate-central
+      - designate-pool-manager
+      - designate-mdns
+      - designate-zone-manager
+      foundation:
+      - ip-cluster
+      - mysql
+      - apache2
+      - storm
+      - kafka
+      - stunnel
+      - memcached
+      - rabbitmq
+      - powerdns
+      - zookeeper
+      - vertica
+      - ntp-server
+      - spark
+      - ardana-ca
+      - powerdns-ext
+      freezer:
+      - freezer-api
+      - freezer-agent
+      glance:
+      - glance-registry
+      - glance-api
+      heat:
+      - heat-api-cfn
+      - heat-api
+      - heat-engine
+      - heat-api-cloudwatch
+      ardana:
+      - lifecycle-manager-target
+      - ardana-ux-services
+      - lifecycle-manager
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      logging:
+      - logging-api
+      - logging-server
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-notifier
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-transform
+      - monasca-agent
+      neutron:
+      - neutron-ml2-plugin
+      - neutron-openvswitch-agent
+      - neutron-server
+      - neutron-vpn-agent
+      - neutron-dhcp-agent
+      - neutron-metadata-agent
+      nova:
+      - nova-api
+      - nova-novncproxy
+      - nova-conductor
+      - nova-console-auth
+      - nova-scheduler
+      - nova-metadata
+      octavia:
+      - octavia-api
+      - octavia-health-manager
+      operations:
+      - ops-console-monitor
+      - ops-console-web
+      swift:
+      - swift-container
+      - swift-common
+      - swift-rsync
+      - swift-object
+      - swift-proxy
+      - swift-ring-builder
+      - swift-account
+      tempest:
+      - tempest
+      vsa-storage:
+      - cmc-service
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+controller3:
+  cluster_name: cluster1
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 3
+  previous_config:
+    addr: 192.168.10.5
+    ansible_options: null
+    cluster-name: cluster1
+    components:
+      apache2: {}
+      barbican-api: {}
+      barbican-client: {}
+      barbican-worker: {}
+      ceilometer-agent-notification: {}
+      ceilometer-api: {}
+      ceilometer-client: {}
+      ceilometer-common: {}
+      ceilometer-polling: {}
+      cinder-api: {}
+      cinder-backup: {}
+      cinder-client: {}
+      cinder-scheduler: {}
+      cinder-volume: {}
+      cmc-service: {}
+      designate-api: {}
+      designate-central: {}
+      designate-client: {}
+      designate-mdns: {}
+      designate-pool-manager: {}
+      designate-zone-manager: {}
+      freezer-agent: {}
+      freezer-api: {}
+      glance-api: {}
+      glance-client: {}
+      glance-registry: {}
+      heat-api: {}
+      heat-api-cfn: {}
+      heat-api-cloudwatch: {}
+      heat-client: {}
+      heat-engine: {}
+      ardana-ca: {}
+      ardana-ux-services: {}
+      horizon: {}
+      ip-cluster: {}
+      kafka: {}
+      keystone-api: {}
+      keystone-client: {}
+      lifecycle-manager: {}
+      lifecycle-manager-target: {}
+      logging-api: {}
+      logging-producer: {}
+      logging-rotate: {}
+      logging-server: {}
+      memcached: {}
+      monasca-agent: {}
+      monasca-api: {}
+      monasca-client: {}
+      monasca-liveness-check: {}
+      monasca-notifier: {}
+      monasca-persister: {}
+      monasca-threshold: {}
+      monasca-transform: {}
+      mysql: {}
+      neutron-client: {}
+      neutron-dhcp-agent: {}
+      neutron-metadata-agent: {}
+      neutron-ml2-plugin: {}
+      neutron-openvswitch-agent: {}
+      neutron-server: {}
+      neutron-vpn-agent: {}
+      nova-api: {}
+      nova-client: {}
+      nova-conductor: {}
+      nova-console-auth: {}
+      nova-metadata: {}
+      nova-novncproxy: {}
+      nova-scheduler: {}
+      ntp-server: {}
+      octavia-api: {}
+      octavia-health-manager: {}
+      openstack-client: {}
+      ops-console-monitor: {}
+      ops-console-web: {}
+      powerdns: {}
+      powerdns-ext: {}
+      rabbitmq: {}
+      spark: {}
+      storm: {}
+      stunnel: {}
+      swift-account: {}
+      swift-client: {}
+      swift-common: {}
+      swift-container: {}
+      swift-object: {}
+      swift-proxy: {}
+      swift-ring-builder: {}
+      swift-rsync: {}
+      tempest: {}
+      vertica: {}
+      zookeeper: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          attrs:
+            rings:
+            - account
+            - container
+            - object-0
+          name: swift
+        devices:
+        - name: /dev/sdb
+        - name: /dev/sdc
+        name: swiftobj
+      name: CONTROLLER-1TB-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 6%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 16%
+        - consumer:
+            name: mysql
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/mysql
+          name: mysql
+          size: 6%
+        - consumer:
+            name: rabbitmq
+            rabbitmq_env: home
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/lib/rabbitmq
+          name: rabbitmq
+          size: 7%
+        - consumer:
+            name: vertica
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/vertica
+          name: vertica
+          size: 19%
+        - consumer:
+            name: kafka
+          fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/kafka
+          name: kafka
+          size: 7%
+        - fstype: ext4
+          mount: /var/lib/elasticsearch
+          name: elasticsearch
+          size: 13%
+        - fstype: ext4
+          mount: /var/lib/zookeeper
+          name: zookeeper
+          size: 1%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ3
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: controller3
+    if-model: CONTROLLER-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - EXTERNAL-API
+      - EXTERNAL-VM
+      - GUEST
+      - MANAGEMENT
+      networks:
+        EXTERNAL-API-NET:
+          addresses:
+          - 10.0.1.1-10.0.1.254
+          cidr: 10.0.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.0.1.1
+          mtu: 1500
+          name: EXTERNAL-API-NET
+          network-group: EXTERNAL-API
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 101
+        EXTERNAL-VM-NET:
+          explicit_mtu: false
+          forced: false
+          mtu: 1500
+          name: EXTERNAL-VM-NET
+          network-group: EXTERNAL-VM
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 102
+        GUEST-NET:
+          addresses:
+          - 10.1.1.1-10.1.1.254
+          cidr: 10.1.1.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 10.1.1.1
+          mtu: 1500
+          name: GUEST-NET
+          network-group: GUEST
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: true
+          vlanid: 103
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 3
+    name: ardana-cp1-c1-m3
+    nic_map:
+      name: ARDANA-DL360-4PORT
+      physical-ports:
+      - bus-address: '0000:07:00.0'
+        logical-name: hed1
+        type: simple-port
+      - bus-address: '0000:08:00.0'
+        logical-name: hed2
+        type: simple-port
+      - bus-address: '0000:09:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: 0000:0a:00.0
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: CONTROLLER-ROLE
+    server-group-list:
+    - RACK3
+    - AZ3
+    - CLOUD
+    server_group: RACK3
+    services:
+      barbican:
+      - barbican-api
+      - barbican-worker
+      ceilometer:
+      - ceilometer-api
+      - ceilometer-common
+      - ceilometer-agent-notification
+      - ceilometer-polling
+      cinder:
+      - cinder-backup
+      - cinder-api
+      - cinder-volume
+      - cinder-scheduler
+      clients:
+      - designate-client
+      - nova-client
+      - neutron-client
+      - ceilometer-client
+      - cinder-client
+      - keystone-client
+      - heat-client
+      - monasca-client
+      - barbican-client
+      - openstack-client
+      - swift-client
+      - glance-client
+      designate:
+      - designate-api
+      - designate-central
+      - designate-pool-manager
+      - designate-mdns
+      - designate-zone-manager
+      foundation:
+      - ip-cluster
+      - mysql
+      - apache2
+      - storm
+      - kafka
+      - stunnel
+      - memcached
+      - rabbitmq
+      - powerdns
+      - zookeeper
+      - vertica
+      - ntp-server
+      - spark
+      - ardana-ca
+      - powerdns-ext
+      freezer:
+      - freezer-api
+      - freezer-agent
+      glance:
+      - glance-registry
+      - glance-api
+      heat:
+      - heat-api-cfn
+      - heat-api
+      - heat-engine
+      - heat-api-cloudwatch
+      ardana:
+      - lifecycle-manager-target
+      - ardana-ux-services
+      - lifecycle-manager
+      horizon:
+      - horizon
+      keystone:
+      - keystone-api
+      logging:
+      - logging-api
+      - logging-server
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-notifier
+      - monasca-api
+      - monasca-persister
+      - monasca-threshold
+      - monasca-liveness-check
+      - monasca-transform
+      - monasca-agent
+      neutron:
+      - neutron-ml2-plugin
+      - neutron-openvswitch-agent
+      - neutron-server
+      - neutron-vpn-agent
+      - neutron-dhcp-agent
+      - neutron-metadata-agent
+      nova:
+      - nova-api
+      - nova-novncproxy
+      - nova-conductor
+      - nova-console-auth
+      - nova-scheduler
+      - nova-metadata
+      octavia:
+      - octavia-api
+      - octavia-health-manager
+      operations:
+      - ops-console-monitor
+      - ops-console-web
+      swift:
+      - swift-container
+      - swift-common
+      - swift-rsync
+      - swift-object
+      - swift-proxy
+      - swift-ring-builder
+      - swift-account
+      tempest:
+      - tempest
+      vsa-storage:
+      - cmc-service
+    state: allocated
+    vm-factory: false
+  state: allocated
+  type: cluster
+  vm-factory: false
+vsa1:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 1
+  previous_config:
+    addr: 192.168.10.9
+    ansible_options: null
+    cluster-name: vsa
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      vsa: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          name: vsa
+          usage: data
+        devices:
+        - name: /dev/sdc
+        name: vsa-data
+      - consumer:
+          name: vsa
+          usage: adaptive-optimization
+        devices:
+        - name: /dev/sdb
+        name: vsa-cache
+      name: VSA-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ1
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: vsa1
+    if-model: VSA-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 1
+    name: ardana-cp1-vsa0001
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: VSA-ROLE
+    server-group-list:
+    - RACK1
+    - AZ1
+    - CLOUD
+    server_group: RACK1
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      vsa-storage:
+      - vsa
+    state: allocated
+    vm-factory: false
+  resource_name: vsa
+  state: allocated
+  type: resource
+  vm-factory: false
+vsa2:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 2
+  previous_config:
+    addr: 192.168.10.10
+    ansible_options: null
+    cluster-name: vsa
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      vsa: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          name: vsa
+          usage: data
+        devices:
+        - name: /dev/sdc
+        name: vsa-data
+      - consumer:
+          name: vsa
+          usage: adaptive-optimization
+        devices:
+        - name: /dev/sdb
+        name: vsa-cache
+      name: VSA-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ2
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: vsa2
+    if-model: VSA-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 2
+    name: ardana-cp1-vsa0002
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: VSA-ROLE
+    server-group-list:
+    - RACK2
+    - AZ2
+    - CLOUD
+    server_group: RACK2
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      vsa-storage:
+      - vsa
+    state: allocated
+    vm-factory: false
+  resource_name: vsa
+  state: allocated
+  type: resource
+  vm-factory: false
+vsa3:
+  cp_name: control-plane-1
+  hypervisor-id: null
+  member_id: 3
+  previous_config:
+    addr: 192.168.10.11
+    ansible_options: null
+    cluster-name: vsa
+    components:
+      freezer-agent: {}
+      lifecycle-manager-target: {}
+      logging-producer: {}
+      logging-rotate: {}
+      monasca-agent: {}
+      ntp-client: {}
+      stunnel: {}
+      vsa: {}
+    control-plane-name: control-plane-1
+    disk-model:
+      device-groups:
+      - consumer:
+          name: vsa
+          usage: data
+        devices:
+        - name: /dev/sdc
+        name: vsa-data
+      - consumer:
+          name: vsa
+          usage: adaptive-optimization
+        devices:
+        - name: /dev/sdb
+        name: vsa-cache
+      name: VSA-DISKS
+      volume-groups:
+      - consumer:
+          name: os
+        logical-volumes:
+        - fstype: ext4
+          mount: /
+          name: root
+          size: 30%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/log
+          name: log
+          size: 45%
+        - fstype: ext4
+          mkfs-opts: -O large_file
+          mount: /var/crash
+          name: crash
+          size: 20%
+        name: ardana-vg
+        physical-volumes:
+        - /dev/sda_root
+    failure-zone: AZ3
+    fcoe_interfaces: []
+    hostname: null
+    hypervisor-id: null
+    id: vsa3
+    if-model: VSA-INTERFACES
+    interfaces:
+    - bond-data:
+        devices:
+        - name: hed3
+        - name: hed4
+        options:
+          miimon: 200
+          mode: active-backup
+          primary: hed3
+        provider: linux
+      device:
+        name: bond0
+      name: BOND0
+      network-groups:
+      - MANAGEMENT
+      networks:
+        MANAGEMENT-NET:
+          addresses:
+          - 192.168.10.1-192.168.10.254
+          cidr: 192.168.10.0/24
+          explicit_mtu: false
+          forced: false
+          gateway-ip: 192.168.10.1
+          mtu: 1500
+          name: MANAGEMENT-NET
+          network-group: MANAGEMENT
+          passthrough: false
+          passthrough-only: false
+          tagged-vlan: false
+          vlanid: 100
+    member_id: 3
+    name: ardana-cp1-vsa0003
+    nic_map:
+      name: MY-2PORT-SERVER
+      physical-ports:
+      - bus-address: '0000:04:00.0'
+        logical-name: hed3
+        type: simple-port
+      - bus-address: '0000:04:00.1'
+        logical-name: hed4
+        type: simple-port
+    port-groups: []
+    rack: null
+    region: region1
+    role: VSA-ROLE
+    server-group-list:
+    - RACK3
+    - AZ3
+    - CLOUD
+    server_group: RACK3
+    services:
+      foundation:
+      - stunnel
+      - ntp-client
+      freezer:
+      - freezer-agent
+      ardana:
+      - lifecycle-manager-target
+      logging:
+      - logging-producer
+      - logging-rotate
+      monasca:
+      - monasca-agent
+      vsa-storage:
+      - vsa
+    state: allocated
+    vm-factory: false
+  resource_name: vsa
+  state: allocated
+  type: resource
+  vm-factory: false

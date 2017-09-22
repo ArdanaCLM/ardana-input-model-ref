@@ -1,0 +1,978 @@
+cephmon1:
+    failure-zone: AZ4
+    hostname: ardana-cp1-ceph-mon-m3-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.25
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.31
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.64
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.22
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+cephmon2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-ceph-mon-m1-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.23
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.29
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.65
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.20
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+cephmon3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-ceph-mon-m2-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.24
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.30
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.66
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.21
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+compute1:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0001-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.41
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.47
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.31
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0002-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.42
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.48
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.32
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute3:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0003-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.43
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.49
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.33
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute4:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0004-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.44
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.50
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.34
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute5:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0005-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.45
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.51
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.35
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute6:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0006-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.46
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.52
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.36
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute7:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0007-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.47
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.53
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.37
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute8:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0008-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.48
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.54
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.38
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+compute9:
+    failure-zone: AZ2
+    hostname: ardana-cp1-compute-0009-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.49
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.55
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.39
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev1:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0010-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.50
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.56
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.55
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev2:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0011-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.51
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.57
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.56
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev3:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0012-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.52
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.58
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.57
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev4:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0013-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.53
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.59
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.58
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev5:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0014-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.54
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.60
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.59
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev6:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0015-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.55
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.61
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.60
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev7:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0016-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.56
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.62
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.61
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev8:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0017-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.57
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.63
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.62
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+computedev9:
+    failure-zone: AZ3
+    hostname: ardana-cp1-compute-0018-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.58
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.64
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.63
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+controller1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-controller-m1-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.20
+                tagged-vlan: true
+                vlan-id: 106
+            EXTERNAL-API-NET:
+                addr: 192.168.57.20
+                tagged-vlan: true
+                vlan-id: 103
+            MANAGEMENT-NET:
+                addr: 10.40.10.21
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.21
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+controller2:
+    failure-zone: AZ1
+    hostname: ardana-cp1-controller-m2-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.21
+                tagged-vlan: true
+                vlan-id: 106
+            EXTERNAL-API-NET:
+                addr: 192.168.57.21
+                tagged-vlan: true
+                vlan-id: 103
+            MANAGEMENT-NET:
+                addr: 10.40.10.22
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.22
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+controller3:
+    failure-zone: AZ1
+    hostname: ardana-cp1-controller-m3-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.22
+                tagged-vlan: true
+                vlan-id: 106
+            EXTERNAL-API-NET:
+                addr: 192.168.57.22
+                tagged-vlan: true
+                vlan-id: 103
+            MANAGEMENT-NET:
+                addr: 10.40.10.23
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.23
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+lifecycle-manager:
+    failure-zone: AZ1
+    hostname: ardana-cp1-alm-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.20
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port2:
+            ARDANA-NET:
+                addr: 192.168.54.20
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+mon1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-mtrmon-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.24
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.26
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+mon2:
+    failure-zone: AZ1
+    hostname: ardana-cp1-mtrmon-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.25
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.27
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+mon3:
+    failure-zone: AZ1
+    hostname: ardana-cp1-mtrmon-m3-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.26
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.28
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+osd1:
+    failure-zone: AZ4
+    hostname: ardana-cp1-ceph0001-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.65
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.67
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.59
+                tagged-vlan: true
+                vlan-id: 106
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.23
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+osd2:
+    failure-zone: AZ4
+    hostname: ardana-cp1-ceph0002-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.66
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.68
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.60
+                tagged-vlan: true
+                vlan-id: 106
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.24
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+osd3:
+    failure-zone: AZ4
+    hostname: ardana-cp1-ceph0003-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.67
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.69
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.61
+                tagged-vlan: true
+                vlan-id: 106
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.25
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+osd4:
+    failure-zone: AZ4
+    hostname: ardana-cp1-ceph0004-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.68
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.70
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.62
+                tagged-vlan: true
+                vlan-id: 106
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.26
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+osd5:
+    failure-zone: AZ4
+    hostname: ardana-cp1-ceph0005-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.69
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.71
+                tagged-vlan: false
+                vlan-id: 107
+        nic2port2:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.63
+                tagged-vlan: true
+                vlan-id: 106
+            CEPH-CLUSTER-NET:
+                addr: 192.168.56.27
+                tagged-vlan: true
+                vlan-id: 105
+    state: allocated
+paascompute1:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0001-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.26
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.32
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.40
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute10:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0010-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.35
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.41
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.49
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute11:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0011-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.36
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.42
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.50
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute12:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0012-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.37
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.43
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.51
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute13:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0013-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.38
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.44
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.52
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute14:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0014-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.39
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.45
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.53
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute15:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0015-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.40
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.46
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.54
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute2:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0002-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.27
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.33
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.41
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute3:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0003-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.28
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.34
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.42
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute4:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0004-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.29
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.35
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.43
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute5:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0005-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.30
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.36
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.44
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute6:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0006-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.31
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.37
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.45
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute7:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0007-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.32
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.38
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.46
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute8:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0008-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.33
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.39
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.47
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+paascompute9:
+    failure-zone: AZ5
+    hostname: ardana-cp1-paas-compute-0009-mgmt
+    net_data:
+        BOND0:
+            CEPH-CLIENT-NET:
+                addr: 192.168.55.34
+                tagged-vlan: true
+                vlan-id: 106
+            MANAGEMENT-NET:
+                addr: 10.40.10.40
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.48
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+swpaco1:
+    failure-zone: AZ1
+    hostname: ardana-cp1-swpac-m1-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.27
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.24
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
+swpaco2:
+    failure-zone: AZ2
+    hostname: ardana-cp1-swpac-m2-mgmt
+    net_data:
+        BOND0:
+            MANAGEMENT-NET:
+                addr: 10.40.10.28
+                tagged-vlan: false
+                vlan-id: 100
+        nic1port1:
+            ARDANA-NET:
+                addr: 192.168.54.25
+                tagged-vlan: false
+                vlan-id: 107
+    state: allocated
